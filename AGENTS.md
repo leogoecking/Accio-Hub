@@ -42,7 +42,9 @@ redimensionamento livre ainda é uma evolução futura.
 
 - HTML, CSS e JavaScript sem backend, em prototype/.
 - Estado persistido no localStorage pela chave accio-hub-p0.3-studio.
-- Tarefas e notas demonstrativas editáveis; projetos fixos.
+- Schema explícito 1, migração com cópia recuperável e proteção de dados incompatíveis.
+- Tarefas e notas demonstrativas editáveis; quatro projetos iniciais persistidos.
+- Projetos, tarefas e notas têm IDs estáveis; relações usam IDs.
 - Conhecimento usa lista plana e editor de texto Markdown, sem Vault real.
 - Accio Music é global e opcional, com barra visual e painel expandido;
   ainda não reproduz áudio.
@@ -126,6 +128,8 @@ Não conectar APIs externas nesta fase.
 Não implementar armazenamento real em arquivos Markdown nesta fase.
 
 O plano incremental da P0.4 está em docs/ROADMAP.md.
-Autorização atual: exclusivamente Etapa 1 — Alinhamento da documentação.
-Após verificá-la e apresentar arquivos, mudanças, divergências e pendências,
-aguardar aprovação do usuário antes de iniciar a Etapa 2.
+Etapa 1 aprovada e registrada no commit documental 1d83387.
+Autorização atual: exclusivamente Etapa 2 — Preparação do estado,
+identificadores estáveis e persistência versionada.
+Após verificá-la e apresentar evidências, mudanças e pendências,
+aguardar aprovação do usuário antes de iniciar a Etapa 3.

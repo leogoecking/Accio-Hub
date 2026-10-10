@@ -2,7 +2,7 @@
 
 > **Versão:** 0.2 (protótipo atual e arquitetura definitiva planejada)<br>
 > **Data-base:** 2026-10-09<br>
-> **Estado:** P0.4, Etapa 1; arquitetura Rails/Vault futura, com contratos sujeitos a spikes<br>
+> **Estado:** P0.4, Etapa 2; arquitetura Rails/Vault futura, com contratos sujeitos a spikes<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ROADMAP.md](ROADMAP.md)
 
 ## 0. Arquitetura atual do protótipo e limites da P0.4
@@ -16,7 +16,8 @@ definitiva planejada, não infraestrutura já instalada neste checkout.
 |---|---|
 | `prototype/index.html` | Entrada HTML, fontes, CSS e script de módulo |
 | `prototype/style.css` | Tokens, claro/escuro, fundos, docks, widgets e breakpoints |
-| `prototype/app.js` | Estado compartilhado, templates HTML, eventos, navegação por hash e persistência |
+| `prototype/app.js` | Estado compartilhado, templates HTML, eventos e navegação por hash |
+| `prototype/state.mjs` | Validação, migração pura, IDs e adapter de persistência local |
 
 **Fluxo atual:** evento de interface → alteração de `state` → `persist()` no
 localStorage → `render()`. A renderização recria o shell, incluindo a barra
@@ -25,12 +26,23 @@ Accio Music; o estado é compartilhado entre telas, mas não há componente de
 fontes Google Fonts, com fallbacks no CSS; não há integração de dados com APIs.
 
 **Persistência atual:** chave `accio-hub-p0.3-studio`, contendo tarefas, notas,
-layout e preferências. Há leitura legada de tarefas/notas em `accio-hub-p0-v1`,
-sem alterar essa chave. Ainda não há versão explícita de schema ou migrações
-versionadas. Projetos são definições fixas identificadas por nome; tarefas e
-notas têm IDs numéricos, e seus vínculos com projetos usam nomes.
+layout e preferências, agora com `schemaVersion: 1`. A chave `accio-hub-p0-v1`
+permanece intacta; suas coleções são importadas somente quando ausentes na P0.3.
+Projetos são persistidos com IDs; tarefas usam `projectId` e notas `projectIds`.
+IDs numéricos legados são mantidos, novos registros recebem UUIDs, e nome/título
+não definem identidade. `Pessoal` significa ausência de projeto (salvo projeto
+explícito com esse nome). A seleção usa `projectId`/`noteId`.
 
-**Contrato para a evolução da P0.4, ainda a implementar:**
+A migração valida antes de gravar e conserva o JSON original em uma chave
+`accio-hub-p0.3-studio:backup:pre-schema-1` (com sufixo único se já houver outra
+cópia). Sem backup confirmado, o formato antigo não é substituído. JSON inválido,
+schema desconhecido/futuro e estruturas incompatíveis bloqueiam gravações;
+os dados existentes permanecem intactos. Falhas de gravação são visíveis e podem
+ser tentadas novamente; alterações ficam somente em memória até sucesso.
+Uma alteração externa detectada na chave bloqueia a sessão antiga.
+Detalhes e recuperação em [P0.4_STATE_VERIFICATION.md](P0.4_STATE_VERIFICATION.md).
+
+**Contrato para a evolução da P0.4 (preparação de dados na Etapa 2):**
 
 - Preservar dados e preferências existentes; não reinicializar o estado como
   estratégia de atualização.
@@ -48,7 +60,8 @@ notas têm IDs numéricos, e seus vínculos com projetos usam nomes.
 Biblioteca, propriedades e pastas do Conhecimento continuarão simuladas no
 navegador. A P0.4 não inicia Rails, não conecta APIs externas e não escreve
 arquivos Markdown reais. Accio Music permanece global, opcional e visual.
-Somente a Etapa 1 documental está autorizada agora; Etapa 2 depende de aprovação.
+Etapa 1 aprovada (`1d83387`); somente a Etapa 2 está autorizada agora.
+Não avançar para a Etapa 3 sem nova aprovação.
 
 ## 1. Direção arquitetural
 

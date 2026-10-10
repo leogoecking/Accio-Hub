@@ -83,5 +83,6 @@ Projetos e Conhecimento evoluirão com componentes existentes, dados no
 localStorage, IDs estáveis e migrações compatíveis. Rails, APIs externas e
 Vault com arquivos reais estão fora desta fase.
 
-Apenas a Etapa 1 — Alinhamento da documentação está autorizada para execução
-agora. A Etapa 2 depende de nova aprovação, conforme [ROADMAP.md](ROADMAP.md).
+A Etapa 1 documental foi aprovada e registrada no commit `1d83387`.
+Está autorizada exclusivamente a Etapa 2 — Estado, IDs estáveis e persistência
+versionada. A Etapa 3 depende de nova aprovação, conforme [ROADMAP.md](ROADMAP.md).

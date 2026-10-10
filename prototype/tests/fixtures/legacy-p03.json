@@ -1,0 +1,108 @@
+{
+  "theme": "light",
+  "wallpaper": "ember",
+  "accent": "#d498e7",
+  "density": "comfortable",
+  "edit": false,
+  "music": false,
+  "musicExpanded": false,
+  "focusMin": 25,
+  "focusLeft": 1500,
+  "focusRunning": false,
+  "focusEnd": null,
+  "focusRuns": 0,
+  "page": "home",
+  "widgets": [
+    {
+      "id": "notes",
+      "span": 8,
+      "visible": true
+    },
+    {
+      "id": "tasks",
+      "span": 4,
+      "visible": true
+    },
+    {
+      "id": "focus",
+      "span": 3,
+      "visible": false
+    },
+    {
+      "id": "projects",
+      "span": 12,
+      "visible": true
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Tarefa pessoal preservada",
+      "project": "AccioCAD",
+      "done": false,
+      "priority": "Normal",
+      "attachment": {
+        "source": "fixture"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Estudar arquitetura de computadores",
+      "project": "Faculdade",
+      "done": false,
+      "priority": "Alta"
+    },
+    {
+      "id": 3,
+      "title": "Refinar o visual do Accio Hub",
+      "project": "Accio Hub",
+      "done": false,
+      "priority": "Normal"
+    },
+    {
+      "id": 4,
+      "title": "Organizar referências de estudo",
+      "project": "Faculdade",
+      "done": true,
+      "priority": "Normal"
+    }
+  ],
+  "notes": [
+    {
+      "id": 1,
+      "title": "Ideias para o Accio Hub",
+      "project": "Accio Hub",
+      "body": "# Nota pessoal\n\nTexto com acentuação, **Markdown** e [[Outra nota]].\n"
+    },
+    {
+      "id": 2,
+      "title": "Arquitetura de computadores",
+      "project": "Faculdade",
+      "body": "# Arquitetura de Computadores\n\n## Fundamentos\n\n- CPU e registradores\n- Memória\n- Conversão de bases\n\n[[Sistema binário]]"
+    }
+  ],
+  "noteId": 1,
+  "modal": null,
+  "drawer": false,
+  "search": false,
+  "query": "",
+  "project": "AccioCAD",
+  "projectTab": "overview",
+  "dockOrder": [
+    "knowledge",
+    "projects",
+    "tasks",
+    "focus",
+    "email",
+    "calendar",
+    "backup",
+    "feed"
+  ],
+  "dockHidden": [
+    "email",
+    "feed"
+  ],
+  "extension": {
+    "preserve": "campo futuro sem mudança de versão"
+  }
+}

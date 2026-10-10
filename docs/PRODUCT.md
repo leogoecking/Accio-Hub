@@ -2,7 +2,7 @@
 
 > **Versão:** 0.2 (alinhamento documental da P0.4; alvo funcional v0.1)<br>
 > **Data-base:** 2026-10-09<br>
-> **Estado:** P0.3 aprovada visualmente; P0.4 em andamento, com execução restrita à Etapa 1<br>
+> **Estado:** P0.3 aprovada visualmente; P0.4 em andamento, com execução restrita à Etapa 2<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [ARCHITECTURE.md](ARCHITECTURE.md) · [ROADMAP.md](ROADMAP.md)
 
 ## 1. Visão
@@ -35,15 +35,16 @@ A identidade aprovada é **Dock + Widgets**, com a sensação de um desktop pess
 O protótipo em `prototype/` usa HTML/CSS/JavaScript e localStorage, sem backend.
 A P0.3 está **aprovada visualmente**; a P0.4 aprofundará Projetos e Conhecimento
 preservando navegação, temas, fontes, personalização, widgets e Accio Music.
-O plano foi aprovado, mas a execução atual está limitada ao alinhamento da
-documentação (Etapa 1). A Etapa 2 aguarda nova aprovação.
+A Etapa 1 documental foi aprovada e commitada (`1d83387`). A autorização atual
+abrange somente a Etapa 2: estado, IDs estáveis e persistência versionada.
+Biblioteca de Projetos e novas telas dependem das etapas posteriores.
 
-| Área | Implementação atual da P0.3 | Evolução planejada |
+| Área | Implementação atual do protótipo | Evolução planejada |
 |---|---|---|
 | Meu espaço | Dock lateral compacta, dock do board, widgets reordenáveis e tamanhos predefinidos | Preservar na P0.4 |
 | Aparência | Claro/escuro, destaque, quatro fundos, ordem e visibilidade de widgets/atalhos | Preservar preferências existentes |
 | Tarefas | Criar e concluir; lista compartilhada com o widget | Contextualizar em Projetos na P0.4; domínio completo em P2 |
-| Projetos | Quatro definições fixas; seleção e atalhos para telas gerais, sem filtro do projeto | Biblioteca e detalhe contextualizados na P0.4 |
+| Projetos | Quatro projetos iniciais persistidos com IDs; seleção e atalhos para telas gerais, sem filtro do projeto | Biblioteca e detalhe contextualizados na P0.4 |
 | Conhecimento | Lista plana; criar, abrir e editar texto Markdown no navegador | Biblioteca, propriedades, busca e prévia/leitura demonstrativas na P0.4 |
 | Foco | Timer 25/45 minutos, pausa/reinício e contagem por timestamps | Preservar; vínculo e contabilização confiável pertencem à implementação funcional |
 | Busca/captura | Ctrl+K busca telas e títulos de tarefas/notas; Ctrl+Shift+N captura nota | Preservar; ampliar contexto nas entregas pertinentes |
@@ -53,9 +54,10 @@ documentação (Etapa 1). A Etapa 2 aguarda nova aprovação.
 **Limites da P0.4:** sem Rails, APIs externas ou armazenamento real em arquivos
 Markdown. Organização de pastas e relações será demonstrativa no navegador.
 Dados e preferências existentes devem ser preservados por migrações versionadas,
-não destrutivas e testáveis quando o modelo mudar. Projetos e notas terão IDs
-estáveis, independentes de nomes e caminhos, preparando o futuro Vault.
-Não considerar esses requisitos já implementados na P0.3.
+não destrutivas e testáveis quando o modelo mudar. A Etapa 2 introduz schema 1,
+IDs estáveis e vínculos por ID para projetos, tarefas e notas, com proteção de
+estados incompatíveis e aviso de falhas de gravação. Esses requisitos não
+existiam na P0.3 original. Notas continuam no navegador, preparando o futuro Vault.
 
 ## 2. Decisões já aprovadas
 

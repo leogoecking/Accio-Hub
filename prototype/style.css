@@ -45,3 +45,5 @@
 [data-theme=light] .search-field input{color:#172436}
 [data-theme=light] .search-results button{color:#172436}
 [data-theme=light] .notes-grid .note-preview{background:rgba(182,146,175,.17)}
+/* Aviso exibido somente quando a persistência falha ou protege dados incompatíveis. */
+.storage-notice:not([hidden]){position:fixed;z-index:1000;bottom:16px;left:50%;transform:translateX(-50%);width:min(680px,calc(100% - 32px));padding:14px 18px;border:1px solid #dfad65;border-radius:12px;background:#30261b;color:#fff3df;font:14px/1.5 'DM Sans',sans-serif;box-shadow:0 8px 28px #0006}
