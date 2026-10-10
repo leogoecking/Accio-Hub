@@ -51,8 +51,36 @@ const clickAction=(action,id)=>browser('click',`[data-project-action="${action}"
 const filter=value=>browser('click',`[data-project-filter="${value}"]`);
 const submit=()=>browser('click','#project-form button[type="submit"]');
 const focus=()=>evaluate('document.activeElement?.id||document.activeElement?.dataset.projectAction');
+function auditDialog(name){
+  const audit=browser('a11y','--selector','.project-dialog');
+  writeFileSync(resolve(evidence,`post-audit-axe-${name}.json`),JSON.stringify(audit,null,2));
+  // Contraste do eyebrow no tema claro é um achado anterior, fora das ISSUE-01/02.
+  // Salvar a varredura completa e rejeitar qualquer outra violação.
+  const unexpected=audit.violations.filter(v=>!(v.id==='color-contrast'&&v.nodes.every(n=>n.target.join()==='.block-top > div > .eyebrow')));
+  assert.deepEqual(unexpected,[],JSON.stringify(unexpected));
+}
 try{
   browser('--init-script',init,'open',new URL('/prototype/',origin).href);browser('set','viewport','1440','1000');
+  scenario('Pós-auditoria: concordância 0/1/3 e semântica do diálogo com axe-core',()=>{
+    seed(schema1);
+    const s=saved(),id=s.projects[0].id;
+    s.tasks=s.tasks.filter(t=>t.projectId!==id);
+    const labels=[];
+    for(const count of [0,1,3]){
+      const tasks=Array.from({length:count},(_,i)=>({...schema1.tasks[0],id:`qa-open-${i}`,projectId:id,done:false}));
+      seed({...s,tasks:[...s.tasks,...tasks,{...schema1.tasks[0],id:'qa-done',projectId:id,done:true}]});
+      labels.push(evaluate(`document.querySelector('[data-open-project="${id}"] small').textContent`));
+    }
+    route('projects');browser('click','[data-project-action="new"]');snap('post-audit-dialog');
+    capture('post-audit-dialog');
+    writeFileSync(resolve(evidence,'post-audit-dialog-geometry.json'),JSON.stringify(evaluate(`Array.from(document.querySelectorAll('.project-dialog,#project-form input,#project-form textarea,#project-form select,#project-form button')).map(el=>{const r=el.getBoundingClientRect();return {id:el.id,text:el.textContent,x:r.x,y:r.y,width:r.width,height:r.height};})`),null,2));
+    auditDialog('create');
+    writeFileSync(resolve(evidence,'post-audit-widget-labels.json'),JSON.stringify(labels,null,2));
+    assert.deepEqual(labels,['0 tarefas abertas','1 tarefa aberta','3 tarefas abertas']);
+    assert.equal(evaluate('document.querySelector("#project-form").getAttribute("role")'),null);
+    assert.equal(evaluate('document.querySelector("[role=dialog][aria-modal=true]").contains(document.querySelector("#project-form"))'),true);
+    browser('press','Escape');
+  });
   scenario('Schema 1 real migra sem perda de dados e biblioteca mostra registros existentes',()=>{
     seed(schema1);assert.equal(saved().schemaVersion,2);assert.deepEqual(saved().tasks,schema1.tasks);assert.deepEqual(saved().notes,schema1.notes);assert.equal(evaluate(`localStorage.getItem(${JSON.stringify(STATE_KEY+':backup:pre-schema-2')})`),JSON.stringify(schema1));route('projects');assert.equal(cards().length,4);snap('library-migrated-light');capture('library-migrated-light');
   });
@@ -94,6 +122,36 @@ try{
     for(const width of [390,320]){browser('set','viewport',String(width),'844');assert.equal(evaluate(`Array.from(document.querySelectorAll('.project-library [data-project-action],.project-library input,.project-library select,.project-card')).every(el=>{const r=el.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth;})`),true);browser('click','[data-project-action="new"]');assert.equal(evaluate(`document.querySelector('#project-form').getBoundingClientRect().right<=innerWidth`),true);if(width===390)capture('project-form-mobile');browser('press','Escape');}
     const longId=saved().projects.find(p=>p.name.startsWith('Um nome')).id;browser('set','viewport','390','844');browser('scrollintoview',`[data-project-card="${longId}"]`);browser('wait','--fn',`document.querySelector('[data-project-card="${longId}"]').getBoundingClientRect().bottom<=innerHeight`);capture('library-mobile-long-name');assert.equal(evaluate(`document.querySelector('[data-project-card="${longId}"] .project-description').textContent.includes('<tags>')`),true);assert.equal(evaluate(`document.querySelectorAll('[data-project-card="${longId}"] img').length`),0);
     route('settings');browser('select','#theme-select','light');browser('click','[data-wallpaper="ocean"]');route('projects');browser('set','viewport','390','844');browser('scrollintoview','.project-library-heading');capture('library-mobile-light');browser('set','viewport','1440','1000');capture('library-desktop-light');
+  });
+  scenario('Pós-auditoria: criação/edição, axe-core e foco em desktop/mobile e claro/escuro',()=>{
+    for(const theme of ['light','dark'])for(const width of [1440,390,320])for(const mode of ['create','edit']){
+      browser('set','viewport',String(width),'844');seed({...schema1,theme});route('projects');
+      const id='project-accio-hub',before=raw();
+      if(mode==='create')browser('click','[data-project-action="new"]');else clickAction('edit',id);
+      snap(`post-audit-${mode}-${theme}-${width}`);
+      assert.equal(focus(),'project-name');assert.equal(evaluate('document.querySelector(".shell").inert'),true);
+      assert.equal(evaluate('document.querySelector("#project-form").getAttribute("role")'),null);
+      auditDialog(`${mode}-${theme}-${width}`);capture(`post-audit-${mode}-${theme}-${width}`);
+      assert.equal(evaluate(`(()=>{const r=document.querySelector('.project-dialog').getBoundingClientRect();return r.left>=0&&r.right<=innerWidth&&r.top>=0&&r.bottom<=innerHeight;})()`),true);
+      browser('press','Shift+Tab');assert.equal(focus(),'close');browser('press','Shift+Tab');assert.equal(evaluate('document.activeElement.type'),'submit');
+      browser('press','Tab');assert.equal(focus(),'close');browser('press','Tab');assert.equal(focus(),'project-name');
+      browser('fill','#project-name','Alteração descartada');browser('press','Escape');
+      assert.equal(focus(),mode==='create'?'new':'edit');
+      assert.equal(evaluate('document.querySelector(".shell").inert'),false);
+      assert.equal(evaluate('document.querySelector("[role=dialog]")'),null);
+      assert.deepEqual(saved().projects,JSON.parse(before).projects);
+    }
+  });
+  scenario('Pós-auditoria: validação nativa, envio por Enter e fechamento por botões',()=>{
+    browser('set','viewport','1440','1000');seed(schema1);route('projects');
+    browser('click','[data-project-action="new"]');browser('press','Enter');
+    assert.equal(focus(),'project-name');assert.equal(evaluate('document.querySelector("#project-name").validity.valueMissing'),true);
+    browser('fill','#project-name','Projeto via teclado');browser('press','Enter');
+    const p=saved().projects.find(p=>p.name==='Projeto via teclado');assert.ok(p);assert.equal(focus(),'edit');
+    clickAction('edit',p.id);browser('fill','#project-name','Edição via teclado');browser('press','Enter');assert.equal(project(p.id).name,'Edição via teclado');assert.equal(focus(),'edit');
+    clickAction('edit',p.id);browser('click','#project-form .project-form-actions [data-project-action="close"]');assert.equal(focus(),'edit');
+    clickAction('edit',p.id);browser('click','#project-form .project-close');assert.equal(focus(),'edit');
+    browser('reload');browser('wait','[data-project-card]');assert.equal(project(p.id).name,'Edição via teclado');
   });
   console.log(JSON.stringify({result:'PASS',scenarios:results.length,evidence},null,2));
 }finally{try{browser('close');}catch{}}

@@ -33,7 +33,7 @@ export function createProjectLibrary({state,esc,icon,persist,render}) {
   }
   function dialog() {
     const project=editingId===null?null:projectById(editingId);
-    return `<div class="scrim"><form class="dialog project-dialog" id="project-form" role="dialog" aria-modal="true" aria-labelledby="project-dialog-title" aria-describedby="project-form-hint">
+    return `<div class="scrim"><div class="dialog project-dialog" role="dialog" aria-modal="true" aria-labelledby="project-dialog-title" aria-describedby="project-form-hint"><form id="project-form">
       <div class="block-top"><div><div class="eyebrow">SEU ESPAÇO, SEU JEITO</div><h2 id="project-dialog-title">${project?'Editar projeto':'Novo projeto'}</h2></div><button type="button" class="project-close" data-project-action="close" aria-label="Fechar formulário de projeto">${icon('x',19)}</button></div>
       <div id="project-preview" class="project-form-preview" style="--project-color:${project?projectColor(project):PROJECT_COLORS.mint}"><span class="project-emblem">${icon(project?.icon??'grid',24)}</span><strong>${esc(project?.name??'Seu próximo projeto')}</strong></div>
       <label for="project-name">Nome<input id="project-name" name="name" required maxlength="80" autocomplete="off" value="${esc(project?.name??'')}" placeholder="Dê um nome ao seu espaço"></label>
@@ -41,7 +41,7 @@ export function createProjectLibrary({state,esc,icon,persist,render}) {
       <div class="project-form-properties"><label for="project-icon">Ícone<select id="project-icon" name="icon">${project&&!Object.hasOwn(PROJECT_ICONS,project.icon)?`<option value="${esc(project.icon)}">Ícone atual</option>`:''}${Object.entries(PROJECT_ICONS).map(([id,label])=>`<option value="${id}" ${project?.icon===id?'selected':''}>${label}</option>`).join('')}</select></label><label for="project-color">Cor<input id="project-color" name="color" type="color" value="${project?projectColor(project):PROJECT_COLORS.mint}"><input id="project-color-hex" aria-label="Cor hexadecimal" type="text" required pattern="#[0-9a-fA-F]{6}" maxlength="7" value="${project?projectColor(project):PROJECT_COLORS.mint}" spellcheck="false"></label></div>
       <p id="project-form-error" role="alert" class="project-form-error"></p><p id="project-form-hint">${project?'O ID e os vínculos com tarefas e notas serão preservados.':'Você poderá pausar, favoritar ou arquivar este espaço depois.'}</p>
       <div class="project-form-actions"><button type="button" class="button tertiary" data-project-action="close">Cancelar</button><button type="submit" class="button">${icon('check',16)} ${project?'Salvar alterações':'Criar projeto'}</button></div>
-    </form></div>`;
+    </form></div></div>`;
   }
   function refresh(focus) {
     const scroll=document.querySelector('.viewport')?.scrollTop??0;
