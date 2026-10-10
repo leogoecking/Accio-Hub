@@ -21,7 +21,7 @@ function memory(initial = {}) {
 const load = storage => openState({storage, defaults});
 const rawFixture = JSON.stringify(fixture);
 
-test('sem dados: grava schema 3 com exemplos apenas na primeira inicialização e IDs persistentes', () => {
+test('sem dados: grava schema 4 com exemplos apenas na primeira inicialização e IDs persistentes', () => {
   const storage = memory(), first = load(storage);
   assert.equal(first.status.code, 'ok');
   assert.equal(first.state.schemaVersion, SCHEMA_VERSION);
@@ -165,7 +165,7 @@ test('falha após backup preserva ambos os JSONs; gravação pode ser repetida s
 });
 
 test('backup anterior diferente nunca é sobrescrito', () => {
-  const base=`${STATE_KEY}:backup:pre-schema-3`,storage=memory({[STATE_KEY]:rawFixture,[base]:'cópia anterior'});
+  const base=`${STATE_KEY}:backup:pre-schema-4`,storage=memory({[STATE_KEY]:rawFixture,[base]:'cópia anterior'});
   const session=load(storage);
   assert.notEqual(session.status.backupKey,base);assert.equal(storage.getItem(base),'cópia anterior');
   assert.equal(storage.getItem(session.status.backupKey),rawFixture);

@@ -86,9 +86,13 @@ Vault com arquivos reais estão fora desta fase.
 A Etapa 1 documental foi aprovada e registrada no commit `1d83387`.
 A Etapa 2 foi aprovada e registrada em `cd3589d`. A Etapa 3 foi homologada
 nos commits `6c7a719` e `c759e61`, após auditoria independente.
-Está autorizada exclusivamente a Etapa 4 — Espaço Interno dos Projetos.
+A Etapa 4 foi aprovada e registrada em `e88d772`.
+A Etapa 5 — Accio Knowledge foi homologada após auditoria independente.
 As quatro abas reutilizam tokens, superfícies e grade do Studio; shell e board
 permanecem a referência P0.3. A composição de widgets do projeto é independente
 do board e prepara personalização futura, sem um editor de widgets nesta etapa.
-As alterações ficam sem commit até revisão. A Etapa 5 depende de nova aprovação,
+A biblioteca expressiva, os painéis recolhíveis e a escrita central usam os mesmos
+tokens, fundos, superfícies e fontes. Nenhuma alteração na identidade aprovada.
+O BUG-01 padroniza o fechamento dos diálogos com o X compacto de Projetos.
+O registro da Etapa 5 em commit foi autorizado. A Etapa 6 depende de nova aprovação,
 conforme [ROADMAP.md](ROADMAP.md).

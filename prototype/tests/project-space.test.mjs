@@ -9,8 +9,9 @@ const fresh=()=>migrateState(schema2,schema2);
 const hub='project-accio-hub',cad='project-accio-cad';
 test('schema 2 real: migração pura adiciona apenas referências; origem copiada exatamente e reabertura idempotente',()=>{
   const raw=JSON.stringify(schema2),entries=new Map([[STATE_KEY,raw]]),storage={getItem:k=>entries.get(k)??null,setItem:(k,v)=>entries.set(k,v)};
-  const session=openState({storage,defaults:schema2});assert.equal(session.state.schemaVersion,3);assert.deepEqual(session.state.references,[]);
-  for(const key of Object.keys(schema2).filter(k=>k!=='schemaVersion'))assert.deepEqual(session.state[key],schema2[key],key);
+  const session=openState({storage,defaults:schema2});assert.equal(session.state.schemaVersion,4);assert.deepEqual(session.state.references,[]);
+  for(const key of Object.keys(schema2).filter(k=>!['schemaVersion','notes'].includes(k)))assert.deepEqual(session.state[key],schema2[key],key);
+  schema2.notes.forEach((n,i)=>{for(const k of Object.keys(n))assert.deepEqual(session.state.notes[i][k],n[k]);});
   assert.equal(entries.get(session.status.backupKey),raw);assert.equal(entries.size,2);assert.deepEqual(openState({storage,defaults:schema2}).state,session.state);assert.equal(entries.size,2);
 });
 test('falha no backup de schema 2 impede substituição; schema 2 inválido não é promovido',()=>{

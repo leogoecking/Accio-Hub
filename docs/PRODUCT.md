@@ -2,7 +2,7 @@
 
 > **Versão:** 0.3 (alinhamento documental da P0.4; alvo funcional v0.1)<br>
 > **Data-base:** 2026-10-10<br>
-> **Estado:** P0.3 aprovada visualmente; P0.4 em andamento, com execução restrita à Etapa 4<br>
+> **Estado:** P0.3 aprovada visualmente; P0.4 em andamento, com Etapa 5 homologada e Etapa 6 não iniciada<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [ARCHITECTURE.md](ARCHITECTURE.md) · [ROADMAP.md](ROADMAP.md)
 
 ## 1. Visão
@@ -36,19 +36,20 @@ O protótipo em `prototype/` usa HTML/CSS/JavaScript e localStorage, sem backend
 A P0.3 está **aprovada visualmente**; a P0.4 aprofundará Projetos e Conhecimento
 preservando navegação, temas, fontes, personalização, widgets e Accio Music.
 A Etapa 1 documental (`1d83387`) e a Etapa 2 de estado (`cd3589d`) foram aprovadas.
-A Etapa 3 foi homologada após auditoria (`6c7a719`, `c759e61`). A autorização
-atual abrange exclusivamente a Etapa 4: Espaço Interno dos Projetos. As alterações
-ficam sem commit até revisão; a Etapa 5 de Conhecimento depende de nova aprovação.
+A Etapa 3 foi homologada após auditoria (`6c7a719`, `c759e61`).
+A Etapa 4 foi aprovada e registrada no commit `e88d772`. A Etapa 5: Biblioteca e
+Editor de Conhecimento foi homologada após auditoria e correção do BUG-01,
+com registro em commit autorizado; a Etapa 6 depende de nova aprovação.
 
 | Área | Implementação atual do protótipo | Evolução planejada |
 |---|---|---|
 | Meu espaço | Dock lateral compacta, dock do board, widgets reordenáveis e tamanhos predefinidos | Preservar na P0.4 |
 | Aparência | Claro/escuro, destaque, quatro fundos, ordem e visibilidade de widgets/atalhos | Preservar preferências existentes |
 | Tarefas | Criar e concluir; lista compartilhada com o widget | Criação/edição contextualizada por projeto na Etapa 4; domínio completo em P2 |
-| Projetos | Biblioteca em grade, busca por nome/descrição, filtros, favoritos, ordenação, criar/editar ícone e cor, pausar/ativar e arquivar/restaurar; IDs e vínculos preservados | Espaço interno com Visão Geral, Tarefas, Conhecimento e Referências na Etapa 4, em revisão |
-| Conhecimento | Lista plana; criar, abrir e editar texto Markdown no navegador | Biblioteca, propriedades, busca e prévia/leitura demonstrativas na P0.4 |
+| Projetos | Biblioteca em grade, busca por nome/descrição, filtros, favoritos, ordenação, criar/editar ícone e cor, pausar/ativar e arquivar/restaurar; IDs e vínculos preservados | Espaço interno com Visão Geral, Tarefas, Conhecimento e Referências homologado na Etapa 4 |
+| Conhecimento | Pastas/subpastas por ID; Recentes, Favoritos, Capturas e Diário; busca por título/corpo/tags, filtro por projeto; propriedades e Markdown com prévia segura/leitura/autosave | Etapa 5 homologada; Vault real apenas na implementação definitiva |
 | Foco | Timer 25/45 minutos, pausa/reinício e contagem por timestamps | Preservar; vínculo e contabilização confiável pertencem à implementação funcional |
-| Busca/captura | Ctrl+K busca telas e títulos de tarefas/notas; Ctrl+Shift+N captura nota | Preservar; ampliar contexto nas entregas pertinentes |
+| Busca/captura | Ctrl+K busca telas/tarefas e notas por título, conteúdo e tags; Ctrl+Shift+N captura nota | Coleção Capturas integrada à biblioteca e ao widget de notas |
 | Accio Music | Barra global opcional e painel expandido; sem áudio | Preservar; rádios e regras de foco em P5 |
 | Agenda, Feed, Backups e E-mails | Exemplos visuais ou telas em preparação; sem dados reais conectados | Implementação definitiva nas fases previstas |
 
@@ -65,6 +66,15 @@ recuperável da origem. Notas compartilhadas usam um único registro com `projec
 novas notas/edições recebem datas para ordenação recente. Referências aceitam links
 http/https e descrições de materiais, sem upload de arquivos. Notas continuam no
 navegador, preparando o futuro Vault.
+A Etapa 5 eleva o schema para 4 com `noteFolders`, `folderId`, `tags`, `favorite`,
+`collection` e `noteLinks` derivados por ID. Título, corpo e vínculos existentes
+são preservados. Diário é uma coleção selecionável, sem criação automática por dia.
+Autosave conserva o rascunho na sessão em caso de falha; exibe indicação pendente
+ou não persistida e permite retentativa. Prévia e leitura geram apenas elementos
+Markdown permitidos, sem interpretar HTML bruto ou buscar imagens externas.
+Links externos aceitam somente HTTP/HTTPS sem credenciais. Links `[[Nota]]` com
+título único podem navegar por ID; referências ausentes/ambíguas são indicadas.
+Não há backlinks/grafo, exclusão de notas ou editor visual rico nesta entrega.
 
 Na biblioteca atual, status são **ativo, pausado e arquivado**. Restaurar retorna
 ao status anterior; arquivar preserva tarefas/notas. Favoritos e filtros/ordenação

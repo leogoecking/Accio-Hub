@@ -1,0 +1,173 @@
+{
+  "theme": "light",
+  "wallpaper": "ember",
+  "accent": "#d498e7",
+  "density": "comfortable",
+  "edit": false,
+  "music": false,
+  "musicExpanded": false,
+  "focusMin": 25,
+  "focusLeft": 1500,
+  "focusRunning": false,
+  "focusEnd": null,
+  "focusRuns": 0,
+  "page": "home",
+  "widgets": [
+    {
+      "span": 8,
+      "visible": true,
+      "id": "notes"
+    },
+    {
+      "span": 4,
+      "visible": true,
+      "id": "tasks"
+    },
+    {
+      "span": 3,
+      "visible": false,
+      "id": "focus"
+    },
+    {
+      "span": 12,
+      "visible": true,
+      "id": "projects"
+    }
+  ],
+  "tasks": [
+    {
+      "title": "Tarefa pessoal preservada",
+      "done": false,
+      "priority": "Normal",
+      "id": 1,
+      "attachment": {
+        "source": "fixture"
+      },
+      "projectId": "project-accio-cad"
+    },
+    {
+      "title": "Estudar arquitetura de computadores",
+      "done": false,
+      "priority": "Alta",
+      "id": 2,
+      "projectId": "project-faculdade"
+    },
+    {
+      "title": "Refinar o visual do Accio Hub",
+      "done": false,
+      "priority": "Normal",
+      "id": 3,
+      "projectId": "project-accio-hub"
+    },
+    {
+      "title": "Organizar referências de estudo",
+      "done": true,
+      "priority": "Normal",
+      "id": 4,
+      "projectId": "project-faculdade"
+    }
+  ],
+  "notes": [
+    {
+      "title": "Ideias para o Accio Hub",
+      "body": "# Nota pessoal\n\nTexto com acentuação, **Markdown** e [[Outra nota]].\n",
+      "id": 1,
+      "projectIds": [
+        "project-accio-hub"
+      ]
+    },
+    {
+      "title": "Arquitetura de computadores",
+      "body": "# Arquitetura de Computadores\n\n## Fundamentos\n\n- CPU e registradores\n- Memória\n- Conversão de bases\n\n[[Sistema binário]]",
+      "id": 2,
+      "projectIds": [
+        "project-faculdade"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "status": "active",
+      "favorite": false,
+      "color": null,
+      "createdAt": null,
+      "updatedAt": null,
+      "archivedFrom": null,
+      "description": "Geometria, memorial e validação profissional.",
+      "icon": "code",
+      "tint": "mint",
+      "id": "project-accio-cad",
+      "name": "AccioCAD"
+    },
+    {
+      "status": "active",
+      "favorite": false,
+      "color": null,
+      "createdAt": null,
+      "updatedAt": null,
+      "archivedFrom": null,
+      "description": "Seu espaço pessoal em construção.",
+      "icon": "grid",
+      "tint": "pink",
+      "id": "project-accio-hub",
+      "name": "Accio Hub"
+    },
+    {
+      "status": "active",
+      "favorite": false,
+      "color": null,
+      "createdAt": null,
+      "updatedAt": null,
+      "archivedFrom": null,
+      "description": "Aprendizado, notas e sessões de estudo.",
+      "icon": "book",
+      "tint": "purple",
+      "id": "project-faculdade",
+      "name": "Faculdade"
+    },
+    {
+      "status": "active",
+      "favorite": false,
+      "color": null,
+      "createdAt": null,
+      "updatedAt": null,
+      "archivedFrom": null,
+      "description": "Curadoria de tecnologia e desenvolvimento.",
+      "icon": "rss",
+      "tint": "orange",
+      "id": "project-accio-feed",
+      "name": "AccioFeed"
+    }
+  ],
+  "dockOrder": [
+    "knowledge",
+    "projects",
+    "tasks",
+    "focus",
+    "email",
+    "calendar",
+    "backup",
+    "feed"
+  ],
+  "dockHidden": [
+    "email",
+    "feed"
+  ],
+  "noteId": 1,
+  "modal": null,
+  "drawer": false,
+  "search": false,
+  "query": "",
+  "projectId": "project-accio-cad",
+  "projectTab": "overview",
+  "extension": {
+    "preserve": "campo futuro sem mudança de versão"
+  },
+  "schemaVersion": 3,
+  "projectLibrary": {
+    "status": "all",
+    "sort": "name",
+    "favoritesOnly": false
+  },
+  "references": []
+}

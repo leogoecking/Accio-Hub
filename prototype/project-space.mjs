@@ -1,5 +1,6 @@
 import {sameId, newId} from './state.mjs';
 import {touchProjects} from './projects.mjs';
+import {prepareNote,resolveNoteLinks} from './knowledge.mjs';
 
 export const SPACE_TABS={overview:'Visão Geral',tasks:'Tarefas',knowledge:'Conhecimento',references:'Referências'};
 // Contrato de composição local, independente do board; editor de widgets futuro.
@@ -26,7 +27,7 @@ function title(input) {
   const value=String(input.title??'').trim();if(!value||value.length>120)throw new Error('Informe um título de até 120 caracteres.');return value;
 }
 function idFor(state,createId) {
-  let id;do{id=createId();}while([...state.projects,...state.tasks,...state.notes,...state.references].some(r=>sameId(r.id,id)));return id;
+  let id;do{id=createId();}while([...state.projects,...state.tasks,...state.notes,...state.references,...(state.noteFolders??[])].some(r=>sameId(r.id,id)));return id;
 }
 export function saveSpaceItem(state,projectId,kind,input,{id=null,createId=newId,now=Date.now()}={}) {
   projectId=editable(state,projectId);
@@ -53,8 +54,9 @@ export function saveSpaceItem(state,projectId,kind,input,{id=null,createId=newId
     fields={...fields,projectId,kind:input.kind,url,description};
   }
   const stamp=new Date(now).toISOString(),oldIds=current?.projectIds??[];
-  const record=current??{id:idFor(state,createId),createdAt:stamp};
+  const record=current??{...(kind==='note'?prepareNote({}):{}),id:idFor(state,createId),createdAt:stamp};
   Object.assign(record,fields,{updatedAt:stamp});if(!current)collection.unshift(record);
+  if(kind==='note')for(const note of state.notes)note.noteLinks=resolveNoteLinks(state,note);
   touchProjects(state,[projectId,...oldIds,...(record.projectIds??[])],now);
   return record;
 }

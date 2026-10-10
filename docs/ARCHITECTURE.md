@@ -2,7 +2,7 @@
 
 > **Versão:** 0.3 (protótipo atual e arquitetura definitiva planejada)<br>
 > **Data-base:** 2026-10-10<br>
-> **Estado:** P0.4, Etapa 4; arquitetura Rails/Vault futura, com contratos sujeitos a spikes<br>
+> **Estado:** P0.4, Etapa 5; arquitetura Rails/Vault futura, com contratos sujeitos a spikes<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ROADMAP.md](ROADMAP.md)
 
 ## 0. Arquitetura atual do protótipo e limites da P0.4
@@ -22,6 +22,9 @@ definitiva planejada, não infraestrutura já instalada neste checkout.
 | `prototype/project-library.mjs` | Biblioteca, formulário, feedback, preferências e gestão de foco/teclado |
 | `prototype/project-space.mjs` | Rotas por ID, seleção contextual, tarefas/notas/referências e composição de widgets |
 | `prototype/project-space-view.mjs` | Quatro abas, formulários contextuais, compartilhamento e gestão de foco/teclado |
+| `prototype/knowledge.mjs` | Pastas e notas por ID, propriedades, busca, coleções, vínculos derivados e validação |
+| `prototype/markdown.mjs` | Subconjunto Markdown seguro por lista de permissões; HTML bruto escapado |
+| `prototype/knowledge-view.mjs` | Biblioteca/editor/leitura, painéis, autosave e foco/teclado |
 
 **Fluxo atual:** evento de interface → alteração de `state` → `persist()` no
 localStorage → `render()`. A renderização recria o shell, incluindo a barra
@@ -30,7 +33,7 @@ Accio Music; o estado é compartilhado entre telas, mas não há componente de
 fontes Google Fonts, com fallbacks no CSS; não há integração de dados com APIs.
 
 **Persistência atual:** chave `accio-hub-p0.3-studio`, contendo tarefas, notas,
-layout e preferências, agora com `schemaVersion: 3`. A chave `accio-hub-p0-v1`
+layout e preferências, agora com `schemaVersion: 4`. A chave `accio-hub-p0-v1`
 permanece intacta; suas coleções são importadas somente quando ausentes na P0.3.
 Projetos são persistidos com IDs; tarefas usam `projectId` e notas `projectIds`.
 IDs numéricos legados são mantidos, novos registros recebem UUIDs, e nome/título
@@ -38,13 +41,13 @@ não definem identidade. `Pessoal` significa ausência de projeto (salvo projeto
 explícito com esse nome). A seleção usa `projectId`/`noteId`.
 
 A migração valida antes de gravar e conserva o JSON original em uma chave
-`accio-hub-p0.3-studio:backup:pre-schema-3` (com sufixo único se já houver outra
+`accio-hub-p0.3-studio:backup:pre-schema-4` (com sufixo único se já houver outra
 cópia). Sem backup confirmado, o formato antigo não é substituído. JSON inválido,
 schema desconhecido/futuro e estruturas incompatíveis bloqueiam gravações;
 os dados existentes permanecem intactos. Falhas de gravação são visíveis e podem
 ser tentadas novamente; alterações ficam somente em memória até sucesso.
 Uma alteração externa detectada na chave bloqueia a sessão antiga.
-Cópias `pre-schema-1` e `pre-schema-2` das etapas anteriores permanecem intactas. A migração de schema 1
+Cópias `pre-schema-1`, `pre-schema-2` e `pre-schema-3` das etapas anteriores permanecem intactas. A migração de schema 1
 valida e copia seus dados, conservando IDs, conteúdo e campos extras. Projetos
 recebem `status`, `favorite`, `color`, `createdAt`, `updatedAt` e `archivedFrom`;
 o estado recebe `projectLibrary: {status, sort, favoritesOnly}`. Cores legadas
@@ -74,14 +77,16 @@ Biblioteca, propriedades e pastas do Conhecimento continuarão simuladas no
 navegador. A P0.4 não inicia Rails, não conecta APIs externas e não escreve
 arquivos Markdown reais. Accio Music permanece global, opcional e visual.
 Etapas 1 (`1d83387`), 2 (`cd3589d`) e 3 (`6c7a719`, `c759e61`) homologadas;
-somente a Etapa 4 está autorizada, com alterações sem commit até revisão.
+Etapa 4 homologada no commit `e88d772`;
+Etapa 5 homologada após auditoria independente e correção do BUG-01,
+com registro das alterações verificadas autorizado em commit específico.
 O widget usa projetos ativos e contagens de tarefas por ID. Arquivamento apenas
 altera status, com restauração ao estado anterior, sem excluir vínculos.
 Duplicações de nome equivalente são rejeitadas nas operações, inclusive entre
 arquivados; registros legados não são mesclados ou eliminados automaticamente.
 A ordenação recente registra mudanças do projeto e das tarefas/notas vinculadas,
 sem alterar a ordem persistida da coleção. Favoritar não inventa atividade.
-Não avançar para Conhecimento (Etapa 5) sem nova aprovação.
+Não avançar para a Etapa 6 sem nova aprovação.
 
 **Espaço interno:** rotas `#/projects/<ID codificado>/<aba>`, com retorno à
 Biblioteca e estado de projeto inexistente. Arquivados são consultáveis; criação
@@ -100,6 +105,32 @@ por `projectIds`. O formulário fixa o projeto de origem e permite outros víncu
 notas existentes podem ser vinculadas sem cópia. Edições atualizam a atividade de
 todos os projetos envolvidos. Notas sem datas preservam sua ordem de origem;
 datas são atribuídas apenas às novas notas ou às edições observadas.
+
+**Accio Knowledge:** schema 3 → 4 valida a origem, copia o JSON exatamente para
+`backup:pre-schema-4` e acrescenta pastas/propriedades sem mudar conteúdo, IDs,
+relações e preferências. Extensões preexistentes compatíveis são preservadas;
+extensões incompatíveis protegem a origem. `noteFolders` contém `{id,name,parentId}`;
+a validação rejeita ciclos. `folderId` da nota aponta para a pasta, nunca para seu
+nome/caminho. Mover ou renomear não altera seu ID ou `projectIds`.
+
+Notas recebem `tags`, `favorite`, `collection` (`notes`, `capture`, `journal`) e
+`noteLinks: [{label,targetId}]`. O corpo é mantido literalmente; a prévia não é
+fonte de verdade. `[[Título]]` pode resolver título único e guardar destino por ID,
+preservando links após renomeação. Ausências/ambiguidades não escolhem um destino.
+Não há grafo ou motor de backlinks. Metadados prepararam contratos futuros;
+nenhum frontmatter é escrito em arquivos nesta fase.
+
+A biblioteca filtra os mesmos registros usados nos projetos e no dashboard.
+O editor modifica a nota em memória e tenta salvar após 450 ms sem digitação;
+seleção, navegação, troca de modo e Ctrl+S também tentam salvar. O indicador só
+confirma persistência após sucesso do adapter. Falhas preservam o JSON anterior e
+o rascunho em memória; há retentativa e aviso antes de sair. Conflito com outra aba
+continua bloqueando sobrescrita. Isso não é sincronização ou merge entre abas.
+
+`markdown.mjs` escapa texto e produz somente tags permitidas para títulos, listas,
+citações, links HTTP/HTTPS, ênfase e código. Não interpreta HTML, imagens externas,
+scripts ou eventos. Não usa parser de HTML não confiável nem `eval`. O formato é
+um subconjunto de Markdown; não promete paridade completa com CommonMark.
 
 ## 1. Direção arquitetural
 

@@ -82,7 +82,7 @@ try{
     browser('press','Escape');
   });
   scenario('Schema 1 real migra sem perda de dados e biblioteca mostra registros existentes',()=>{
-    seed(schema1);assert.equal(saved().schemaVersion,3);assert.deepEqual(saved().tasks,schema1.tasks);assert.deepEqual(saved().notes,schema1.notes);assert.equal(evaluate(`localStorage.getItem(${JSON.stringify(STATE_KEY+':backup:pre-schema-3')})`),JSON.stringify(schema1));route('projects');assert.equal(cards().length,4);snap('library-migrated-light');capture('library-migrated-light');
+    seed(schema1);assert.equal(saved().schemaVersion,4);assert.deepEqual(saved().tasks,schema1.tasks);schema1.notes.forEach((n,i)=>{for(const k of Object.keys(n))assert.deepEqual(saved().notes[i][k],n[k]);});assert.equal(evaluate(`localStorage.getItem(${JSON.stringify(STATE_KEY+':backup:pre-schema-4')})`),JSON.stringify(schema1));route('projects');assert.equal(cards().length,4);snap('library-migrated-light');capture('library-migrated-light');
   });
   scenario('Criação por formulário e persistência após recarga',()=>{
     browser('click','[data-project-action="new"]');assert.equal(focus(),'project-name');browser('fill','#project-name','Laboratório orbital');browser('fill','#project-description','Exploração de ideias e astronomia');browser('select','#project-icon','code');browser('fill','#project-color-hex','#799cdb');submit();

@@ -10,7 +10,7 @@ assert.ok(['127.0.0.1','localhost'].includes(origin.hostname));
 const evidence=resolve(root,'tmp/p04-space-verification');mkdirSync(evidence,{recursive:true});
 const init=resolve(evidence,'init.js');writeFileSync(init,`window.__qaErrors=[];window.addEventListener('error',e=>window.__qaErrors.push(e.message));const original=Storage.prototype.setItem;Storage.prototype.setItem=function(k,v){if(window.__failWrites&&this===localStorage)throw new DOMException('QA quota','QuotaExceededError');return original.call(this,k,v)};`);
 const args=['--namespace','accio-p04','--session',`accio-space-qa-${process.pid}`,'--json'];if(process.env.ACCIO_BROWSER_NO_SANDBOX==='1')args.push('--args','--no-sandbox');
-function browser(...command){const result=JSON.parse(execFileSync('agent-browser',[...args,...command],{env:{...process.env,XDG_RUNTIME_DIR:'/tmp'},encoding:'utf8',timeout:45000}));assert.equal(result.success,true,JSON.stringify(result));return result.data;}
+function browser(...command){const result=JSON.parse(execFileSync('agent-browser',[...args,...command],{env:{...process.env,XDG_RUNTIME_DIR:'/tmp'},encoding:'utf8',timeout:45000}));assert.equal(result.success,true,JSON.stringify(result));if(command[0]==='fill'&&command[1]==='#note-editor')browser('wait','--fn',"!document.querySelector('#knowledge-save-status').textContent.includes('pendentes')");return result.data;}
 const evaluate=code=>browser('eval','-b',Buffer.from(code).toString('base64')).result;
 const saved=()=>evaluate(`JSON.parse(localStorage.getItem(${JSON.stringify(STATE_KEY)}))`);
 const capture=name=>browser('screenshot',resolve(evidence,name+'.png'));
@@ -27,10 +27,10 @@ const active=()=>evaluate('document.activeElement?.id||document.activeElement?.d
 function audit(name,selector='.project-space'){const result=browser('a11y','--selector',selector);writeFileSync(resolve(evidence,'axe-'+name+'.json'),JSON.stringify(result,null,2));assert.deepEqual(result.violations,[],JSON.stringify(result.violations));}
 try{
   browser('--init-script',init,'open',new URL('/prototype/',origin).href);browser('set','viewport','1440','1000');seed();
-  scenario('Schema 2 migra para 3 sem alterar preferências, tarefas/notas ou origem',()=>{
-    const state=saved();assert.equal(state.schemaVersion,3);assert.deepEqual(state.tasks,fixture.tasks);assert.deepEqual(state.notes,fixture.notes);assert.deepEqual(state.references,[]);
+  scenario('Schema 2 migra para 4 sem alterar preferências, tarefas/notas ou origem',()=>{
+    const state=saved();assert.equal(state.schemaVersion,4);assert.deepEqual(state.tasks,fixture.tasks);fixture.notes.forEach((n,i)=>{for(const k of Object.keys(n))assert.deepEqual(state.notes[i][k],n[k]);});assert.deepEqual(state.references,[]);
     for(const k of ['theme','wallpaper','accent','widgets','dockOrder','dockHidden','music','musicExpanded'])assert.deepEqual(state[k],fixture[k]);
-    assert.equal(evaluate(`localStorage.getItem(${JSON.stringify(STATE_KEY+':backup:pre-schema-3')})`),JSON.stringify(fixture));
+    assert.equal(evaluate(`localStorage.getItem(${JSON.stringify(STATE_KEY+':backup:pre-schema-4')})`),JSON.stringify(fixture));
   });
   scenario('Biblioteca e widget abrem espaço por ID; abas, Voltar e projetos inexistentes',()=>{
     click('.rail-icons [data-route="projects"]');click(`[href="#/projects/${hub}/overview"]`);assert.match(evaluate('document.querySelector("#space-title").textContent'),/Accio Hub/);capture('overview-light-desktop');audit('overview-light');

@@ -1,8 +1,9 @@
 // Persistência do protótipo. Nenhuma operação acessa arquivos ou serviços externos.
 import {prepareProject, validateProject, libraryDefaults, validateLibrary} from './projects.mjs';
+import {prepareKnowledge,validateKnowledge} from './knowledge.mjs';
 export const STATE_KEY = 'accio-hub-p0.3-studio';
 export const LEGACY_KEY = 'accio-hub-p0-v1';
-export const SCHEMA_VERSION = 3;
+export const SCHEMA_VERSION = 4;
 export const newId = () => crypto.randomUUID();
 export const sameId = (a, b) => a != null && b != null && String(a) === String(b);
 const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
@@ -41,13 +42,14 @@ function uniqueIds(items, createId) {
 export function migrateState(input, defaults, createId = newId) {
   if (!object(input)) throw new Error('Estado não é um objeto');
   if (own(input, 'schemaVersion')) {
-    if (input.schemaVersion === 1 || input.schemaVersion === 2) {
+    if ([1,2,3].includes(input.schemaVersion)) {
       validateState(input, defaults, input.schemaVersion);
       const next=copy(input);
       next.schemaVersion=SCHEMA_VERSION;
       next.projects=next.projects.map(prepareProject);
       next.projectLibrary=next.projectLibrary??libraryDefaults();
       next.references=own(next,'references')?next.references:[];
+      prepareKnowledge(next);
       validateState(next,defaults);
       return next;
     }
@@ -109,6 +111,7 @@ export function migrateState(input, defaults, createId = newId) {
   result.projects = projects.map(prepareProject);
   result.projectLibrary = input.projectLibrary ?? libraryDefaults();
   result.references = own(input,'references')?input.references:[];
+  prepareKnowledge(result);
   result.widgets = records(input.widgets === undefined ? defaults.widgets : input.widgets, 'widgets').map(w => {
     const suggested = defaults.widgets.find(x => x.id === w.id);
     return {span:suggested?.span ?? 4, visible:true, ...w};
@@ -139,6 +142,7 @@ export function validateState(state, defaults, version = SCHEMA_VERSION) {
   }
   if (state.tasks.some(t => typeof t.title !== 'string' || typeof t.done !== 'boolean' || !exists(t.projectId))) throw new Error('Tarefa inválida');
   if (state.notes.some(n => typeof n.title !== 'string' || typeof n.body !== 'string' || !Array.isArray(n.projectIds) || n.projectIds.some(id => id === null || !exists(id)))) throw new Error('Nota inválida');
+  if(version>=4)validateKnowledge(state);
   if (!exists(state.projectId)) throw new Error('Seleção de projeto inválida');
   if (!Array.isArray(state.widgets) || state.widgets.some(w => !object(w) || typeof w.id !== 'string' || !Number.isInteger(w.span) || w.span < 1 || w.span > 12 || typeof w.visible !== 'boolean')) throw new Error('Widgets inválidos');
   for (const field of ['dockOrder', 'dockHidden']) if (!Array.isArray(state[field]) || state[field].some(x => typeof x !== 'string')) throw new Error('Dock inválida');

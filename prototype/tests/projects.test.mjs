@@ -13,9 +13,10 @@ const now=Date.parse('2026-10-10T12:00:00Z');
 function storage(raw){const entries=new Map([[STATE_KEY,raw],[STATE_KEY+':backup:pre-schema-1','backup antigo']]);return {entries,writes:[],fail:false,getItem:k=>entries.get(k)??null,setItem(k,v){if(this.fail)throw Error('Quota');this.writes.push(k);entries.set(k,v);}};}
 test('schema 1 real: preserva IDs, conteúdo, extras, preferências e backup anterior',()=>{
   const raw=JSON.stringify(schema1),s=storage(raw),session=openState({storage:s,defaults});
-  assert.equal(session.state.schemaVersion,3);assert.equal(s.getItem(session.status.backupKey),raw);
+  assert.equal(session.state.schemaVersion,4);assert.equal(s.getItem(session.status.backupKey),raw);
   assert.equal(s.getItem(STATE_KEY+':backup:pre-schema-1'),'backup antigo');
-  for(const key of Object.keys(schema1).filter(k=>!['schemaVersion','projects'].includes(k)))assert.deepEqual(session.state[key],schema1[key],key);
+  for(const key of Object.keys(schema1).filter(k=>!['schemaVersion','projects','notes'].includes(k)))assert.deepEqual(session.state[key],schema1[key],key);
+  schema1.notes.forEach((n,i)=>{for(const k of Object.keys(n))assert.deepEqual(session.state.notes[i][k],n[k]);});
   session.state.projects.forEach((p,i)=>{for(const k of Object.keys(schema1.projects[i]))assert.deepEqual(p[k],schema1.projects[i][k]);assert.equal(p.status,'active');assert.equal(p.favorite,false);assert.equal(p.updatedAt,null);assert.equal(p.color,null);});
   const before=s.getItem(STATE_KEY),writes=s.writes.length;openState({storage:s,defaults});assert.equal(s.getItem(STATE_KEY),before);assert.equal(s.writes.length,writes);
 });
@@ -54,6 +55,6 @@ test('biblioteca vazia permanece vazia até criação explícita',()=>{
 test('campos inválidos não causam mutação parcial',()=>{
   for(const invalid of [{name:''},{name:'x'.repeat(81)},{description:'x'.repeat(501)},{icon:'__proto__'},{color:'red'}]){const state=fresh(),before=structuredClone(state);assert.throws(()=>createProject(state,{...input,...invalid}));assert.deepEqual(state,before);}
 });
-test('schema 3 inválido/futuro é protegido sem sobrescrita',()=>{
+test('schema 4 inválido/futuro é protegido sem sobrescrita',()=>{
   for(const mutate of [s=>s.schemaVersion=99,s=>s.projects[0].status='deleted',s=>s.projects[0].favorite='yes',s=>s.projects[0].updatedAt='invalid',s=>s.projectLibrary.sort='unknown']){const state=fresh();mutate(state);const raw=JSON.stringify(state),s=storage(raw),session=openState({storage:s,defaults});assert.equal(session.status.code,'blocked');assert.equal(session.save(session.state),false);assert.equal(s.getItem(STATE_KEY),raw);assert.deepEqual(s.writes,[]);}
 });
