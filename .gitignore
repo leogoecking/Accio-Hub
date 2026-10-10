@@ -1,0 +1,23 @@
+# Protótipos antigos preservados localmente
+/accio-hub-p0-prototipo/
+
+# Ambiente
+.env
+.env.*
+!.env.example
+node_modules/
+vendor/bundle/
+tmp/
+log/
+
+# Dados e credenciais
+*.sqlite
+*.sqlite3
+*.db
+*.key
+*.pem
+*.secret
+
+# Outros
+*.zip
+.DS_Store
