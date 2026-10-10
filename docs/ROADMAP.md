@@ -1,9 +1,9 @@
 # Accio Hub — Roadmap de implementação (ROADMAP)
 
-> **Versão:** 0.1 (plano proposto)  
-> **Data-base:** 2026-10-09  
-> **Estado:** planejamento; **nenhuma fase de implementação foi marcada como concluída**  
-> **Documentos relacionados:** [PRODUCT.md](PRODUCT.md) · [ARCHITECTURE.md](ARCHITECTURE.md)
+> **Versão:** 0.2 (alinhamento documental da P0.4)<br>
+> **Data-base:** 2026-10-09<br>
+> **Estado:** P0.3 aprovada visualmente; P0.4 em andamento, execução atual somente da Etapa 1; P1–P10 não iniciadas<br>
+> **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ARCHITECTURE.md](ARCHITECTURE.md)
 
 ## 1. Objetivo do roadmap
 
@@ -27,14 +27,24 @@ Entregar um **aplicativo pessoal realmente utilizável** antes de expandir integ
 
 **Nota de escopo:** “v0.1” é a **primeira versão utilizável completa**, não significa que todos os itens sejam desenvolvidos de uma vez. Cada fase libera algo testável.
 
+P0.3/P0.4 são revisões do protótipo dentro de P0; não são releases funcionais
+v0.3/v0.4. A aprovação visual da P0.3 não conclui todos os critérios de P0.
+
 ## 2. Fases detalhadas
 
 ### P0 — Definição e protótipo (antes do código de produção)
 
-**Meta:** validar experiência do dashboard modular, Conhecimento, Projetos, Tarefas, Planejador e Foco.
+**Meta:** validar experiência Dock + Widgets, Conhecimento, Projetos, Tarefas, Planejador e Foco, preservando a baseline visual aprovada.
+
+**Marco confirmado:** P0.3 aprovada visualmente, commit `0018bb4`. Já existem
+docks, claro/escuro, fundos, fontes, widgets reordenáveis por arraste/botões,
+tamanhos predefinidos, tarefas/notas demonstrativas editáveis, timer e barra
+Accio Music global sem áudio. Projetos são fixos; Conhecimento usa lista plana
+e texto Markdown no localStorage. Inventário em [PRODUCT.md](PRODUCT.md), §1.3.
 
 **Entregáveis**
 - `docs/PRODUCT.md`, `docs/ARCHITECTURE.md`, `docs/ROADMAP.md` versionados.
+- `docs/DESIGN_BASELINE.md` com referência imutável à P0.3 e limites da aprovação.
 - Mapa de rotas, wireframes mobile/desktop e biblioteca mínima de componentes visuais.
 - Tokens de design: claro/escuro, cor de destaque, densidade, tipografia, espaços e estados.
 - Protótipo navegável com dados **de demonstração claramente identificados**.
@@ -42,22 +52,54 @@ Entregar um **aplicativo pessoal realmente utilizável** antes de expandir integ
 
 **Aceitação**
 - [ ] É possível percorrer as telas sem links mortos ou áreas que fingem estar conectadas.
-- [ ] A tela Hoje aceita reorganização/visibilidade conceitual dos widgets.
+- [ ] Reordenação por arraste/botões, visibilidade e tamanho predefinido continuam funcionando após evoluir as telas.
 - [ ] Navegação funciona nos formatos de monitor desktop e celular.
-- [ ] Menu recolhível e player global não obstruem conteúdo.
-- [ ] Usuário aprova hierarquia e organização **antes de construir as integrações**.
+- [ ] Dock compacta e player global não obstruem conteúdo.
+- [x] Usuário aprova hierarquia e organização visual da P0.3 **antes de construir as integrações** (baseline `0018bb4`).
 
 **Não inclui:** APIs reais, autenticação de terceiros, parser Markdown definitivo.
+
+### P0.4 — Projetos e Conhecimento (protótipo)
+
+**Escopo aprovado:** evoluir com componentes existentes e dados demonstrativos
+no navegador. Preservar navegação, temas, fontes, fundos, personalização,
+widgets e Accio Music. Sem Rails, APIs externas ou arquivos Markdown reais.
+Evitar refatorações grandes sem necessidade.
+
+| Etapa | Entrega | Situação |
+|---|---|---|
+| 1 — Alinhamento da documentação | Baseline, estado atual, limites e contratos futuros consistentes | Única etapa autorizada para execução agora |
+| 2 — Estado e componentes | IDs estáveis para projetos/notas, relações e migrações versionadas compatíveis; separação mínima de responsabilidades | Aguardar aprovação após Etapa 1 |
+| 3 — Biblioteca de Projetos | Busca, status, favoritos, criação/edição e arquivamento reversível | Planejada, não iniciada |
+| 4 — Espaço do projeto | Visão Geral com widgets, Tarefas, Conhecimento e Referências contextualizados | Planejada, não iniciada |
+| 5 — Conhecimento | Biblioteca/pastas simuladas, propriedades, busca, Markdown, prévia/leitura e vínculos | Planejada, não iniciada |
+| 6 — Verificação e fechamento | Testes de dados/relações e fluxos; comparação visual desktop/mobile com P0.3 | Planejada, não iniciada |
+
+Planejamento e Tempo poderão indicar “em preparação”, sem implementar calendário
+ou contabilização funcional nesta revisão. A execução da Etapa 1 não autoriza
+avançar automaticamente para a Etapa 2.
+
+**Critérios de evolução:**
+- Migrações versionadas, não destrutivas e testáveis preservam dados e
+  preferências existentes, inclusive quando reaplicadas ou diante de falha.
+- IDs de projetos/notas permanecem estáveis após renomeação; relações não
+  dependem da pasta da nota. Arquivar projeto preserva tarefas e notas.
+- Conteúdo contextualizado usa os mesmos dados do board, sem cópias divergentes.
+- Recarga preserva edições e configurações; falha de salvamento é comunicada.
+- Fluxo projeto → tarefa → nota → edição → retorno funciona no navegador.
+- Testes automatizados relevantes e `verification` acompanham as alterações;
+  `agent-browser`, quando disponível, valida interface e responsividade.
+  Sintaxe válida não comprova funcionamento nem aprovação visual.
 
 ### P1 — Fundação e aplicação local
 
 **Meta:** aplicação Rails funcional com armazenamento persistente e navegação estável.
 
 **Entregáveis**
-- Projeto em `~/Projects/accio-hub`, Git privado, README operacional, .gitignore e padrões de commits.
+- Reutilizar o checkout existente `Accio-HUB`, com README operacional, .gitignore e padrões de commits; confirmar configuração privada do remoto antes de publicar código.
 - Rails 8 + Hotwire + Tailwind + SQLite + Active Job/Solid Queue configurados e validados.
 - Autenticação pessoal, sessão segura, setup inicial e layouts responsivos.
-- Preferências básicas de tema, cor, densidade e sidebar com persistência.
+- Preservar docks, fontes, tema, cor, fundos, ordem/visibilidade/tamanho dos widgets e atalhos com persistência; acrescentar densidade e recolhimento da navegação conforme PRODUCT.
 - Navegação e telas vazias **honestas** para recursos ainda não implementados.
 - Testes básicos, lint/CI inicial e documentação de execução no Ubuntu.
 
@@ -164,6 +206,7 @@ Entregar um **aplicativo pessoal realmente utilizável** antes de expandir integ
 **Entregáveis**
 - Tela Hoje com widgets Tarefas, Pomodoro, Agenda, Notas e Projetos.
 - Visibilidade, ordem e tamanho predefinido persistentes, por usuário.
+- Preservar reordenação por arraste/botões, fundos e ordem/visibilidade da dock já presentes na P0.3.
 - Estados carregando/vazio/erro/desativado; proteção contra layout inválido.
 - Pesquisa inicial local e acessibilidade/atalhos fundamentais.
 - Exportação básica de dados essenciais, documentação de backup e **teste de restauração isolada** de SQLite/Vault.
@@ -234,14 +277,14 @@ Entregar um **aplicativo pessoal realmente utilizável** antes de expandir integ
 - Gráfico de notas e backlinks avançados.
 - Busca semântica e pesquisa federada com ai-memory, opt-in e referências de origem.
 - Música YouTube/Spotify nos players oficiais, conforme requisitos das plataformas.
-- Arrastar/redimensionar widgets e múltiplos layouts (casa/trabalho).
+- Redimensionamento livre de widgets e múltiplos layouts (casa/trabalho); reordenação por arraste/botões já pertence à baseline P0.3.
 - Recursos offline em clientes remotos com sincronização e resolução de conflitos.
 - Mais templates, Kanban, métricas e notificações externas.
 
 ## 3. Dependências críticas e ordem recomendada
 
 ```text
-P0 Protótipo
+P0 Protótipo (P0.3 visual aprovada → P0.4 em evolução)
   │
   ▼
 P1 Fundação Rails
@@ -316,17 +359,19 @@ Não é necessário rodar `agent-browser` em **todo commit**; priorizar mudança
 
 ## 7. Checklist de preparação para a primeira implementação
 
-- [ ] Validar estes três documentos como **baseline v0.1** (revisão do usuário).
-- [ ] Criar repositório privado `accio-hub` e diretório local em `~/Projects/accio-hub` **quando autorizado**.
-- [ ] Versionar `docs/` e adicionar README inicial com objetivo e decisões.
-- [ ] Definir primeira versão do sistema visual (tema, widgets e componentes).
-- [ ] Criar protótipo navegável P0.
+- [x] Checkout Git existente em `~/Projects/Accio-HUB`.
+- [x] Documentos PRODUCT/ARCHITECTURE/ROADMAP/DESIGN_BASELINE versionados na baseline `0018bb4`.
+- [x] Sistema visual Dock + Widgets aprovado na P0.3.
+- [x] Protótipo navegável P0.3 existente; guia de execução em `prototype/README.md`.
+- [ ] Revisar o alinhamento documental da P0.4 e autorizar Etapa 2.
+- [ ] Concluir e validar Projetos/Conhecimento e os demais critérios de P0.
+- [ ] Confirmar configuração privada do remoto e preparar README operacional para Rails em P1.
 - [ ] Registrar questões abertas e resultados de prototipagem.
-- [ ] Realizar spike Rails 8 + Hotwire + SQLite + Solid Queue.
-- [ ] Iniciar P1 apenas após P0 aprovado.
+- [ ] Realizar spike Rails 8 + Hotwire + SQLite + Solid Queue quando autorizada a transição para P1.
+- [ ] Iniciar P1 apenas após aprovação do protótipo navegável e autorização específica.
 
 ## 8. Próximo passo imediato
 
-**Próxima atividade sugerida: P0 — protótipo navegável do Accio Hub, começando pela tela Hoje, barra superior com Accio Music e navegação para Projetos e Conhecimento.**
+**Atividade atual: Etapa 1 da P0.4 — Alinhamento da documentação.** Após as alterações, apresentar arquivos, resumo, divergências resolvidas, verificações, pendências e riscos. Aguardar aprovação antes da Etapa 2.
 
-Depois comparar com o uso real no monitor de 27” e em tela móvel, ajustar layout e só então avançar para banco de dados e integrações. O bootstrap de recuperação do Ubuntu foi **explicitamente adiado** e não faz parte do roadmap do Accio Hub.
+As próximas entregas serão comparadas com a P0.3 no monitor de 27” e em tela móvel. Banco de dados, Vault real e integrações seguem nas fases definitivas, após autorização. O bootstrap de recuperação do Ubuntu foi **explicitamente adiado** e não faz parte do roadmap do Accio Hub.

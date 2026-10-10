@@ -1,13 +1,58 @@
 # Accio Hub — Arquitetura (ARCHITECTURE)
 
-> **Versão:** 0.1 (arquitetura proposta)  
-> **Data-base:** 2026-10-09  
-> **Estado:** decisões principais acordadas; contratos técnicos sujeitos a validação no spike inicial  
-> **Documentos relacionados:** [PRODUCT.md](PRODUCT.md) · [ROADMAP.md](ROADMAP.md)
+> **Versão:** 0.2 (protótipo atual e arquitetura definitiva planejada)<br>
+> **Data-base:** 2026-10-09<br>
+> **Estado:** P0.4, Etapa 1; arquitetura Rails/Vault futura, com contratos sujeitos a spikes<br>
+> **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ROADMAP.md](ROADMAP.md)
+
+## 0. Arquitetura atual do protótipo e limites da P0.4
+
+O código executável atual está em `prototype/`. A baseline visual aprovada é
+P0.3, commit `0018bb4`; sua identidade é definida em
+[DESIGN_BASELINE.md](DESIGN_BASELINE.md). As seções 1–13 descrevem a implementação
+definitiva planejada, não infraestrutura já instalada neste checkout.
+
+| Arquivo | Responsabilidade atual |
+|---|---|
+| `prototype/index.html` | Entrada HTML, fontes, CSS e script de módulo |
+| `prototype/style.css` | Tokens, claro/escuro, fundos, docks, widgets e breakpoints |
+| `prototype/app.js` | Estado compartilhado, templates HTML, eventos, navegação por hash e persistência |
+
+**Fluxo atual:** evento de interface → alteração de `state` → `persist()` no
+localStorage → `render()`. A renderização recria o shell, incluindo a barra
+Accio Music; o estado é compartilhado entre telas, mas não há componente de
+áudio persistente. Os únicos recursos remotos carregados pela entrada atual são
+fontes Google Fonts, com fallbacks no CSS; não há integração de dados com APIs.
+
+**Persistência atual:** chave `accio-hub-p0.3-studio`, contendo tarefas, notas,
+layout e preferências. Há leitura legada de tarefas/notas em `accio-hub-p0-v1`,
+sem alterar essa chave. Ainda não há versão explícita de schema ou migrações
+versionadas. Projetos são definições fixas identificadas por nome; tarefas e
+notas têm IDs numéricos, e seus vínculos com projetos usam nomes.
+
+**Contrato para a evolução da P0.4, ainda a implementar:**
+
+- Preservar dados e preferências existentes; não reinicializar o estado como
+  estratégia de atualização.
+- Quando houver mudança de schema, usar versão explícita e migrações não
+  destrutivas, testáveis e seguras para reaplicação. Validar antes de substituir
+  o estado salvo e preservar a origem diante de falha.
+- Preservar IDs existentes das notas ou manter mapeamento explícito se uma
+  conversão for necessária; atribuir IDs estáveis aos projetos. Nome, título e
+  caminho não definem identidade.
+- Relações por ID devem sobreviver a renomeação e permitir associar nota a
+  projeto independentemente da pasta. Arquivar projeto preserva seus dados.
+- Separar apenas responsabilidades necessárias, reutilizando componentes,
+  tokens e shell existentes; evitar refatoração ampla.
+
+Biblioteca, propriedades e pastas do Conhecimento continuarão simuladas no
+navegador. A P0.4 não inicia Rails, não conecta APIs externas e não escreve
+arquivos Markdown reais. Accio Music permanece global, opcional e visual.
+Somente a Etapa 1 documental está autorizada agora; Etapa 2 depende de aprovação.
 
 ## 1. Direção arquitetural
 
-**Forma de entrega:** aplicação web local em **Ruby on Rails 8 + Hotwire + Tailwind CSS**, com manifest/PWA e interface desktop-first responsiva. O servidor roda no Ubuntu; numa etapa posterior pode ser exposto apenas aos dispositivos autorizados por Tailscale, com autenticação da aplicação.
+**Forma de entrega definitiva planejada:** aplicação web local em **Ruby on Rails 8 + Hotwire + Tailwind CSS**, com manifest/PWA e interface desktop-first responsiva, preservando Dock + Widgets. O servidor rodará no Ubuntu; numa etapa posterior poderá ser exposto apenas aos dispositivos autorizados por Tailscale, com autenticação da aplicação. Iniciar P1 exige aprovação do protótipo navegável e autorização específica; a aprovação visual da P0.3 não basta.
 
 **Persistência mista deliberada:**
 - **SQLite:** entidades transacionais (tarefas, projetos, eventos, blocos de tempo, sessões de foco, preferências e relacionamentos). Pode haver bancos SQLite separados para fila/cache conforme configuração Rails.
@@ -70,7 +115,9 @@ O sistema terá um único backend Rails para o MVP. **Não** introduzir microser
 ## 2. Estrutura de diretórios proposta
 
 ```text
-/home/goecking/Projects/accio-hub/
+Accio-HUB/                 # checkout existente; estrutura Rails futura
+├── AGENTS.md
+├── prototype/             # referência P0.3 e evolução P0.4
 ├── app/                    # Rails (models/controllers/views/jobs/services)
 ├── config/                 # configuração Rails, segredos via env/credentials
 ├── db/                     # migrations + índices
@@ -78,7 +125,8 @@ O sistema terá um único backend Rails para o MVP. **Não** introduzir microser
 ├── docs/
 │   ├── PRODUCT.md
 │   ├── ARCHITECTURE.md
-│   └── ROADMAP.md
+│   ├── ROADMAP.md
+│   └── DESIGN_BASELINE.md
 └── ...
 
 # Dados do usuário, FORA do checkout:
@@ -103,8 +151,9 @@ As tabelas abaixo são conceituais; nomes finais e migrations serão estabilizad
 | Entidade | Campos/chaves essenciais | Regras importantes |
 |---|---|---|
 | `users` | `id`, `email/login`, `password_digest`, locale/timezone | Conta local única no MVP; identidade preparada para isolamento |
-| `user_preferences` | `user_id`, `theme`, `accent`, `density`, `sidebar`, settings JSON | Validação e valores padrão; nunca segredos em JSON público |
+| `user_preferences` | `user_id`, `theme`, `accent`, `wallpaper`, `density`, `sidebar`, settings JSON | Validação e valores padrão; navegação conforme baseline; nunca segredos em JSON público |
 | `dashboard_widgets` | `user_id`, `context`, `kind`, `visible`, `position`, `size`, options JSON | Contexto `home` ou `project:{id}`; allowlist de tipos/opções |
+| `dock_apps` | `user_id`, `kind`, `visible`, `position` | Ordem/visibilidade dos atalhos do board; ocultar não desativa módulo |
 | `projects` | ID estável, nome, descrição, status, cor, ícone, template | Arquivamento não exclui dados relacionados |
 | `tasks` | ID, título, descrição, status, prioridade, `project_id?`, `parent_id?`, `planned_on?`, `due_at?`, estimativa | Sem projeto/data obrigatórios; subtarefa sem ciclos |
 | `task_occurrences` | ID, `task_id`, data, status, conclusão | Para recorrência; não concluir ocorrências futuras |
@@ -125,6 +174,11 @@ As tabelas abaixo são conceituais; nomes finais e migrations serão estabilizad
 **Integridade:** IDs estáveis, FK onde aplicável, índices para filtros por dia/projeto e unicidade transacional de sessão ativa; não inferir identidade de entidade de seu nome ou do título de nota.
 
 ## 4. Vault Markdown: contrato v0.1
+
+Este contrato pertence à implementação definitiva, principalmente P3. As notas
+da P0.4 permanecem no localStorage; IDs e relações prepararão uma futura migração
+para o Vault, cujo fluxo de exportação/importação ainda precisará ser definido
+e testado. Não confundir organização visual em pastas com escrita no disco.
 
 ### 4.1 Fonte de verdade
 
@@ -202,6 +256,13 @@ O ai-memory já usa Markdown versionado e índice derivado, mas é uma solução
 - Integrações Spotify/YouTube futuras devem usar SDKs/embeds oficiais sob seus termos; não planejar extração de áudio.
 
 ## 6. Widgets e personalização
+
+Personalização é requisito central. A implementação definitiva deve preservar
+a baseline: docks, temas, fontes, fundos, widgets, reordenação por arraste/botões,
+tamanhos predefinidos e Accio Music global. O protótipo já guarda `wallpaper`,
+`dockOrder`, `dockHidden` e `widgets` no estado local; o contrato futuro deve
+contemplar essas preferências. Redimensionamento livre e layouts por contexto
+continuam como evolução posterior.
 
 Cada widget expõe contrato interno conceitual:
 

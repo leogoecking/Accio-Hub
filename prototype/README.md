@@ -2,6 +2,11 @@
 
 Protótipo visual e interativo, com direção de design totalmente reformulada a partir do feedback da P0.2. O conceito aproxima o Accio Hub de um *desktop pessoal*: dock de acesso rápido, quadros com widgets e personalização visual. **Não utiliza os serviços reais do Ubuntu.**
 
+**Baseline visual aprovada:** P0.3, commit `0018bb4`. Referência:
+[DESIGN_BASELINE.md](../docs/DESIGN_BASELINE.md). A fase atual é P0.4; somente
+a Etapa 1 documental está em execução. Os arquivos HTML/CSS/JavaScript continuam
+na P0.3. A aprovação visual não comprova todos os comportamentos ou breakpoints.
+
 ## Executar
 
 Na raiz do projeto que contém a pasta `prototype/`:
@@ -23,6 +28,15 @@ Abra `http://127.0.0.1:4173/`.
 - Projetos demonstrativos, navegação pelos módulos, busca rápida (Ctrl+K), captura rápida (Ctrl+Shift+N), barra Accio Music apenas visual.
 - Relógio local; interface adaptável para telas pequenas.
 
+Projetos são quatro definições fixas: seus atalhos abrem Tarefas, Conhecimento
+e Foco gerais, sem filtro/vínculo ao projeto selecionado. Conhecimento possui
+lista plana e textarea Markdown, sem árvore de pastas, prévia ou backlinks.
+A busca rápida encontra telas e títulos de tarefas/notas, não o corpo das notas.
+O Accio Music é global e opcional, com visibilidade e painel expandido; não há
+reprodução de áudio. Ocultar aplicativos na dock do board não os remove da dock
+lateral nem desativa módulos. Essas descrições refletem o código atual;
+validação visual das próximas alterações continua necessária.
+
 ## O que NÃO funciona ainda
 
 - AccioFeed real, Gmail, Google Calendar, status real de backups, reprodução de áudio, sincronização casa/trabalho, Vault Markdown real ou autenticação.
@@ -33,23 +47,35 @@ Abra `http://127.0.0.1:4173/`.
 
 Os dados de tarefas/notas são armazenados no navegador usando a chave `accio-hub-p0.3-studio`. Na primeira visita, a prévia tenta importar apenas tarefas e notas locais da P0/P0.2 (chave `accio-hub-p0-v1`) se estiverem no mesmo domínio/porta. Nada é enviado para um servidor. A P0.3 não altera a chave de dados da P0.2.
 
+Preferências de temas, fundos, widgets e dock também ficam nessa chave.
+O localStorage pertence à origem do navegador (protocolo, host e porta);
+mudar de origem não transfere os dados. Não há migrações versionadas hoje.
+Na evolução da P0.4, mudanças de schema deverão preservar dados e preferências,
+com migrações versionadas, não destrutivas e testáveis, e IDs estáveis para
+projetos/notas. Não limpar o armazenamento para atualizar o protótipo.
+
 As fontes **DM Sans, Space Grotesk e JetBrains Mono** são solicitadas ao Google Fonts apenas quando existe internet. O CSS contém fontes fallback para operar offline. A versão final deve preferir fontes distribuídas adequadamente e carregadas localmente, em função da política de privacidade adotada.
 
-## Atualizar a P0.2 sem perder rollback
+## Evolução da P0.4
 
-Se o protótipo estiver em `~/Projects/Accio-HUB/accio-hub-p0-prototipo`, faça uma cópia de segurança antes de extrair o novo ZIP:
+O trabalho continua neste checkout, preservando a P0.3 no histórico Git.
+O fluxo antigo de extrair ZIP sobre a P0.2 não é necessário para este repositório.
+Plano incremental e critérios em [ROADMAP.md](../docs/ROADMAP.md).
 
-```bash
-cd ~/Projects/Accio-HUB/accio-hub-p0-prototipo
-cp -a prototype prototype-p0.2-backup
-unzip -o ~/Downloads/accio-hub-p0.3-docks-widgets.zip -d .
-```
+Projetos e Conhecimento evoluirão com os componentes existentes. Personalização
+é central: manter navegação, docks, widgets, temas, fundos, fontes e Accio Music.
+Pastas, relações e edição continuarão demonstrativas no navegador; Rails,
+APIs externas e armazenamento real em `.md` estão fora da P0.4.
+O futuro Vault terá arquivos Markdown como fonte de verdade e índice derivado,
+conforme [ARCHITECTURE.md](../docs/ARCHITECTURE.md), §4.
 
-Se o servidor local ainda estiver rodando, basta atualizar com `Ctrl+Shift+R`. A porta de acesso permanece 4173.
+Antes de iniciar a Etapa 2, aguardar aprovação do usuário sobre a Etapa 1.
 
-## Próxima validação
+## Verificação das próximas alterações de interface
 
-- A dock deve fazer sentido para iniciar o dia.
-- A grade deve ser útil sem parecer um painel genérico de métricas.
-- Os diferentes tamanhos de widget devem comunicar hierarquia.
-- O layout deve parecer um aplicativo pessoal e não um dashboard administrativo.
+- Utilizar `verification` e testes automatizados relevantes, além de sintaxe.
+- Comparar visualmente com o commit `0018bb4`, usando `agent-browser` quando disponível.
+- Verificar desktop/mobile, claro/escuro, teclado, captura, busca e personalização.
+- Exercitar recarga, migrações, relações e o fluxo projeto → tarefa → nota → retorno.
+- Preservar hierarquia dos widgets, dock e aparência de desktop pessoal aprovada.
+- Registrar resultados e limitações; não marcar funcionalidade aprovada sem evidência.

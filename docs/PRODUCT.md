@@ -1,21 +1,21 @@
 # Accio Hub — Produto e experiência (PRODUCT)
 
-> **Versão:** 0.1 (especificação inicial)  
-> **Data-base:** 2026-10-09  
-> **Estado:** rascunho para validação; decisões aprovadas e hipóteses estão identificadas  
-> **Documentos relacionados:** [ARCHITECTURE.md](ARCHITECTURE.md) · [ROADMAP.md](ROADMAP.md)
+> **Versão:** 0.2 (alinhamento documental da P0.4; alvo funcional v0.1)<br>
+> **Data-base:** 2026-10-09<br>
+> **Estado:** P0.3 aprovada visualmente; P0.4 em andamento, com execução restrita à Etapa 1<br>
+> **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [ARCHITECTURE.md](ARCHITECTURE.md) · [ROADMAP.md](ROADMAP.md)
 
 ## 1. Visão
 
 O **Accio Hub** é uma central pessoal, modular e personalizável para **planejar, executar e registrar atividades**, reunir conhecimento em arquivos Markdown e acompanhar fontes de informação e serviços pessoais em um só lugar.
 
-A referência de experiência é o **Super Productivity** para organização e foco; o módulo de conhecimento combina a liberdade de arquivos do **Obsidian** com a experiência visual de páginas do **Notion**; a tela inicial é um **dashboard modular**, não uma lista de tarefas ampliada.
+A identidade aprovada é **Dock + Widgets**, com a sensação de um desktop pessoal e inspiração no **Homarr**. O **Super Productivity** orienta organização e foco; Conhecimento combina a liberdade de arquivos do **Obsidian** com a experiência visual de páginas do **Notion**. A tela inicial organiza widgets com hierarquia visual, conforme a P0.3 no commit `0018bb4` e o [DESIGN_BASELINE.md](DESIGN_BASELINE.md).
 
 **Objetivo principal:** o usuário abre o Accio Hub e consegue, em poucos segundos, identificar prioridades, iniciar uma atividade e consultar o que merece atenção, sem saltar entre diversas aplicações.
 
 ### 1.1 Princípios de produto
 
-1. **Personalização real:** tema, cor de destaque, densidade, painéis e composição dos widgets; preferências persistentes.
+1. **Personalização real, requisito central:** tema, cor de destaque, fundos, densidade, painéis, ordem/visibilidade dos aplicativos da dock e composição/tamanho dos widgets; preferências persistentes.
 2. **Arquivos sob controle do usuário:** notas como `.md` reais em um Vault configurável, acessível também por Obsidian/VS Code.
 3. **Integração sem aprisionamento:** tarefas, notas, projetos e temporizador funcionam sem AccioFeed, Gmail, GitHub ou IA.
 4. **Informação confiável:** cada integração exibe última atualização, estado de conexão e origem dos dados; não confundir *última execução bem-sucedida* com *saúde atual*.
@@ -30,11 +30,38 @@ A referência de experiência é o **Super Productivity** para organização e f
 - **Modelo de distribuição aprovado:** aplicação **Rails + PWA**, com interface semelhante a um programa em navegadores que suportam instalação; não haverá aplicativo Tauri no MVP.
 - **Usuário do MVP:** uma pessoa. Múltiplos usuários, espaços de trabalho e permissões colaborativas ficam para depois.
 
+### 1.3 Estado atual e escopo da P0.4
+
+O protótipo em `prototype/` usa HTML/CSS/JavaScript e localStorage, sem backend.
+A P0.3 está **aprovada visualmente**; a P0.4 aprofundará Projetos e Conhecimento
+preservando navegação, temas, fontes, personalização, widgets e Accio Music.
+O plano foi aprovado, mas a execução atual está limitada ao alinhamento da
+documentação (Etapa 1). A Etapa 2 aguarda nova aprovação.
+
+| Área | Implementação atual da P0.3 | Evolução planejada |
+|---|---|---|
+| Meu espaço | Dock lateral compacta, dock do board, widgets reordenáveis e tamanhos predefinidos | Preservar na P0.4 |
+| Aparência | Claro/escuro, destaque, quatro fundos, ordem e visibilidade de widgets/atalhos | Preservar preferências existentes |
+| Tarefas | Criar e concluir; lista compartilhada com o widget | Contextualizar em Projetos na P0.4; domínio completo em P2 |
+| Projetos | Quatro definições fixas; seleção e atalhos para telas gerais, sem filtro do projeto | Biblioteca e detalhe contextualizados na P0.4 |
+| Conhecimento | Lista plana; criar, abrir e editar texto Markdown no navegador | Biblioteca, propriedades, busca e prévia/leitura demonstrativas na P0.4 |
+| Foco | Timer 25/45 minutos, pausa/reinício e contagem por timestamps | Preservar; vínculo e contabilização confiável pertencem à implementação funcional |
+| Busca/captura | Ctrl+K busca telas e títulos de tarefas/notas; Ctrl+Shift+N captura nota | Preservar; ampliar contexto nas entregas pertinentes |
+| Accio Music | Barra global opcional e painel expandido; sem áudio | Preservar; rádios e regras de foco em P5 |
+| Agenda, Feed, Backups e E-mails | Exemplos visuais ou telas em preparação; sem dados reais conectados | Implementação definitiva nas fases previstas |
+
+**Limites da P0.4:** sem Rails, APIs externas ou armazenamento real em arquivos
+Markdown. Organização de pastas e relações será demonstrativa no navegador.
+Dados e preferências existentes devem ser preservados por migrações versionadas,
+não destrutivas e testáveis quando o modelo mudar. Projetos e notas terão IDs
+estáveis, independentes de nomes e caminhos, preparando o futuro Vault.
+Não considerar esses requisitos já implementados na P0.3.
+
 ## 2. Decisões já aprovadas
 
 | ID | Decisão | Situação |
 |---|---|---|
-| DEC-001 | Tela Hoje = **dashboard modular** (opção B) | Aprovada |
+| DEC-001 | Tela Hoje com composição modular de widgets (opção B), apresentada como **Dock + Widgets** | Aprovada; visual consolidado na P0.3 |
 | DEC-002 | Identidade visual própria, **cores/temas configuráveis** | Aprovada |
 | DEC-003 | Conhecimento = **híbrido Obsidian + Notion**, com `.md` reais (opção C) | Aprovada |
 | DEC-004 | Projetos = espaços de trabalho com tarefas, notas, foco e referências | Aprovada |
@@ -44,10 +71,13 @@ A referência de experiência é o **Super Productivity** para organização e f
 | DEC-008 | Player ligado ao Pomodoro; início com **web rádios**; YouTube/Spotify futuros | Aprovada |
 | DEC-009 | Plataforma principal = Rails + PWA, com possibilidade de cliente desktop posterior | Direção técnica acordada |
 | DEC-010 | ai-memory como inspiração e possível integração futura, **não** repositório primário de notas | Direção arquitetural acordada |
+| DEC-011 | P0.3 = baseline visual **Dock + Widgets**, commit `0018bb4`, personalização central | Aprovada visualmente |
 
 ## 3. Navegação principal
 
-Menu lateral recolhível, persistente no desktop e adaptado para navegação móvel:
+Dock lateral compacta compartilhada entre telas e dock de aplicativos personalizável no board inicial, adaptadas a telas menores. O recolhimento da navegação continua como requisito funcional planejado para v0.1, com apresentação a validar conforme o baseline; não está implementado na P0.3.
+
+A tabela abaixo descreve os módulos funcionais planejados. Hoje aparece no protótipo como **Início/Meu espaço**; Planejador como **Agenda/Calendário**; **Vault** é o atalho para Conhecimento. Entrada continua prevista, mas não possui acesso próprio na navegação atual. Esses nomes não exigem alterações de interface nesta etapa.
 
 | Grupo | Tela | Propósito | Entrega |
 |---|---|---|---|
@@ -67,11 +97,11 @@ Menu lateral recolhível, persistente no desktop e adaptado para navegação mó
 
 ## 4. Telas e comportamentos
 
-### 4.1 Hoje — dashboard modular
+### 4.1 Hoje — Meu espaço, Dock + Widgets
 
 **Cabeçalho:** pesquisa global (evolutiva), botão de captura rápida, preferências, indicador resumido do Pomodoro e **barra Accio Music**, se habilitada.
 
-**Layout desktop:** menu lateral + grade responsiva de até 12 colunas e largura máxima de conteúdo confortável. **Mobile:** widgets empilhados, ações acessíveis, menu compacto.
+**Layout desktop aprovado:** dock lateral compacta, dock de aplicativos no board e grade responsiva de 12 colunas com largura máxima confortável. **Mobile:** widgets empilhados e dock adaptada. Preservar a hierarquia, os fundos e a tipografia da P0.3.
 
 **Widgets planejados:**
 
@@ -86,7 +116,7 @@ Menu lateral recolhível, persistente no desktop e adaptado para navegação mó
 | Backups | Estado separado de backup local e cloud | Ver causa e histórico |
 | E-mails | Quantidade e resumo de prioridades | Abrir Gmail (futuro) |
 
-**Configuração v0.1:** ativar/ocultar widgets disponíveis, alterar ordem, escolher entre tamanhos predefinidos e salvar preferências. **Futuro:** drag-and-drop, redimensionamento livre, presets por contexto.
+**Configuração v0.1:** preservar a personalização validada no protótipo: visibilidade, ordem por arraste ou botões, tamanhos predefinidos dos widgets, fundos e ordem/visibilidade dos aplicativos da dock. Ocultar atalhos não desativa módulos. **Futuro:** redimensionamento livre e presets por contexto.
 
 **Estados obrigatórios por widget:** carregando, vazio, normal, erro, sem configuração e dado desatualizado. Uma integração falha não pode derrubar a página.
 
@@ -171,7 +201,7 @@ Gmail inicialmente em modo leitura, com resumo de mensagens, filtros por import�
 
 **Fluxo A — Dia produtivo:** abrir Hoje → ver prioridades → iniciar foco de uma tarefa → player opcional reproduz rádio → fazer anotação relacionada → concluir foco e, se desejado, concluir tarefa.
 
-**Fluxo B — Captura/estudo:** Ctrl+K ou botão global de captura → anotar informação → salvar no Inbox do Conhecimento → organizar em pasta/projeto → conectar nota a tarefa → agendar bloco de estudo.
+**Fluxo B — Captura/estudo:** Ctrl+Shift+N ou botão global de captura → anotar informação → salvar no Inbox do Conhecimento → organizar em pasta/projeto → conectar nota a tarefa → agendar bloco de estudo. Ctrl+K abre a busca global.
 
 **Fluxo C — Pesquisa técnica:** abrir projeto → procurar nota Markdown → seguir `[[links]]` → consultar tarefas e tempo ligados à nota → registrar decisão ou solução.
 
@@ -181,7 +211,7 @@ Gmail inicialmente em modo leitura, com resumo de mensagens, filtros por import�
 
 ## 6. Personalização e acessibilidade
 
-**v0.1:** tema claro/escuro/automático; cor de destaque, fonte/tamanho, densidade; menu recolhível; layout persistido; ordem/visibilidade/tamanho dos widgets; preferência de player; atalhos documentados. **Depois:** drag-and-drop, múltiplos layouts (casa/trabalho), presets e reordenação avançada.
+**Base a preservar:** claro/escuro, cor de destaque, fundos, fontes aprovadas, layout persistido, ordem por arraste/botões, visibilidade e tamanho predefinido dos widgets, ordem/visibilidade da dock e preferência de player global. **Requisitos adicionais v0.1:** tema automático, configuração de fonte/tamanho, densidade e recolhimento da navegação respeitando o baseline. **Depois:** redimensionamento livre, múltiplos layouts (casa/trabalho) e presets. As configurações adicionais não estão implementadas na P0.3.
 
 **Qualidade UX:** navegação por teclado, foco visível, contraste adequado, textos legíveis em monitor 27”, responsividade no celular, ausência de flashes/animacões excessivas, horários no fuso do usuário, labels acessíveis e suporte a movimento reduzido.
 
@@ -208,9 +238,9 @@ Gmail inicialmente em modo leitura, com resumo de mensagens, filtros por import�
 
 ## 9. Questões a validar no protótipo
 
-1. Largura do menu lateral e densidade ideal dos widgets no monitor principal.
-2. Ordem padrão dos widgets em desktop e no Poco X7 Pro.
-3. Melhor UX de captura rápida: modal simples, painel lateral ou comando global.
+1. Usabilidade da dock compacta e densidade dos novos conteúdos, preservando a composição visual aprovada.
+2. Responsividade da ordem/tamanho dos widgets e das novas telas em desktop e no Poco X7 Pro.
+3. Adequação do modal de captura existente aos fluxos de Projetos e Conhecimento.
 4. Política de conclusão do Pomodoro interrompido e mudança de tarefa no meio da sessão.
 5. Biblioteca/Editor: sincronização de alteração externa imediata ou por varredura periódica com botão de atualizar.
 6. Preferência inicial de armazenamento do Vault (pasta proposta vs seleção na primeira execução).
