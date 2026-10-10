@@ -1,8 +1,8 @@
 # Accio Hub — Produto e experiência (PRODUCT)
 
-> **Versão:** 0.2 (alinhamento documental da P0.4; alvo funcional v0.1)<br>
-> **Data-base:** 2026-10-09<br>
-> **Estado:** P0.3 aprovada visualmente; P0.4 em andamento, com execução restrita à Etapa 2<br>
+> **Versão:** 0.3 (alinhamento documental da P0.4; alvo funcional v0.1)<br>
+> **Data-base:** 2026-10-10<br>
+> **Estado:** P0.3 aprovada visualmente; P0.4 em andamento, com execução restrita à Etapa 3<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [ARCHITECTURE.md](ARCHITECTURE.md) · [ROADMAP.md](ROADMAP.md)
 
 ## 1. Visão
@@ -35,16 +35,16 @@ A identidade aprovada é **Dock + Widgets**, com a sensação de um desktop pess
 O protótipo em `prototype/` usa HTML/CSS/JavaScript e localStorage, sem backend.
 A P0.3 está **aprovada visualmente**; a P0.4 aprofundará Projetos e Conhecimento
 preservando navegação, temas, fontes, personalização, widgets e Accio Music.
-A Etapa 1 documental foi aprovada e commitada (`1d83387`). A autorização atual
-abrange somente a Etapa 2: estado, IDs estáveis e persistência versionada.
-Biblioteca de Projetos e novas telas dependem das etapas posteriores.
+A Etapa 1 documental (`1d83387`) e a Etapa 2 de estado (`cd3589d`) foram aprovadas.
+A autorização atual abrange somente a Etapa 3: Biblioteca de Projetos. O espaço
+interno dos projetos e a evolução de Conhecimento dependem de aprovação posterior.
 
 | Área | Implementação atual do protótipo | Evolução planejada |
 |---|---|---|
 | Meu espaço | Dock lateral compacta, dock do board, widgets reordenáveis e tamanhos predefinidos | Preservar na P0.4 |
 | Aparência | Claro/escuro, destaque, quatro fundos, ordem e visibilidade de widgets/atalhos | Preservar preferências existentes |
 | Tarefas | Criar e concluir; lista compartilhada com o widget | Contextualizar em Projetos na P0.4; domínio completo em P2 |
-| Projetos | Quatro projetos iniciais persistidos com IDs; seleção e atalhos para telas gerais, sem filtro do projeto | Biblioteca e detalhe contextualizados na P0.4 |
+| Projetos | Biblioteca em grade, busca por nome/descrição, filtros, favoritos, ordenação, criar/editar ícone e cor, pausar/ativar e arquivar/restaurar; IDs e vínculos preservados | Espaço interno contextualizado na Etapa 4, ainda não autorizado |
 | Conhecimento | Lista plana; criar, abrir e editar texto Markdown no navegador | Biblioteca, propriedades, busca e prévia/leitura demonstrativas na P0.4 |
 | Foco | Timer 25/45 minutos, pausa/reinício e contagem por timestamps | Preservar; vínculo e contabilização confiável pertencem à implementação funcional |
 | Busca/captura | Ctrl+K busca telas e títulos de tarefas/notas; Ctrl+Shift+N captura nota | Preservar; ampliar contexto nas entregas pertinentes |
@@ -57,7 +57,17 @@ Dados e preferências existentes devem ser preservados por migrações versionad
 não destrutivas e testáveis quando o modelo mudar. A Etapa 2 introduz schema 1,
 IDs estáveis e vínculos por ID para projetos, tarefas e notas, com proteção de
 estados incompatíveis e aviso de falhas de gravação. Esses requisitos não
-existiam na P0.3 original. Notas continuam no navegador, preparando o futuro Vault.
+existiam na P0.3 original. A Etapa 3 eleva o schema para 2 e acrescenta propriedades
+dos projetos e preferências da biblioteca com cópia recuperável da origem.
+Notas continuam no navegador, preparando o futuro Vault.
+
+Na biblioteca atual, status são **ativo, pausado e arquivado**. Restaurar retorna
+ao status anterior; arquivar preserva tarefas/notas. Favoritos e filtros/ordenação
+ficam salvos; a pesquisa vale para a sessão. Atividade recente considera criação,
+edição, mudança de status e alterações em tarefas/notas vinculadas. Dados antigos
+sem datas aparecem como “Sem atividade registrada”. O widget mostra apenas
+projetos ativos e suas tarefas abertas por ID. Modelos, conclusão e visualização
+em lista continuam como planejamento funcional futuro, sem implementação nesta etapa.
 
 ## 2. Decisões já aprovadas
 

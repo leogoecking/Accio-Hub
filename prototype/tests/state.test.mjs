@@ -2,10 +2,10 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {runInNewContext} from 'node:vm';
-import {migrateState, openState, STATE_KEY, LEGACY_KEY, sameId, snapshot} from '../state.mjs';
+import {migrateState, openState, STATE_KEY, LEGACY_KEY, SCHEMA_VERSION, sameId, snapshot} from '../state.mjs';
 
 // Exercitar os mesmos dados iniciais passados pelo app, sem inicializar sua UI.
-const preamble = readFileSync(new URL('../app.js', import.meta.url), 'utf8').split('function showStorageStatus')[0].replace(/^import .*;$/m, '');
+const preamble = readFileSync(new URL('../app.js', import.meta.url), 'utf8').split('function showStorageStatus')[0].replace(/^import .*;$/gm, '');
 const defaults = JSON.parse(JSON.stringify(runInNewContext(`${preamble};defaults`)));
 const fixture = JSON.parse(readFileSync(new URL('./fixtures/legacy-p03.json', import.meta.url), 'utf8'));
 const clone = x => structuredClone(x);
@@ -21,10 +21,10 @@ function memory(initial = {}) {
 const load = storage => openState({storage, defaults});
 const rawFixture = JSON.stringify(fixture);
 
-test('sem dados: grava schema 1 com exemplos apenas na primeira inicialização e IDs persistentes', () => {
+test('sem dados: grava schema 2 com exemplos apenas na primeira inicialização e IDs persistentes', () => {
   const storage = memory(), first = load(storage);
   assert.equal(first.status.code, 'ok');
-  assert.equal(first.state.schemaVersion, 1);
+  assert.equal(first.state.schemaVersion, SCHEMA_VERSION);
   assert.equal(first.state.projects.length, 4);
   assert.equal(first.state.tasks.length, 4);
   assert.equal(first.state.notes.length, 2);
@@ -165,7 +165,7 @@ test('falha após backup preserva ambos os JSONs; gravação pode ser repetida s
 });
 
 test('backup anterior diferente nunca é sobrescrito', () => {
-  const base=`${STATE_KEY}:backup:pre-schema-1`,storage=memory({[STATE_KEY]:rawFixture,[base]:'cópia anterior'});
+  const base=`${STATE_KEY}:backup:pre-schema-2`,storage=memory({[STATE_KEY]:rawFixture,[base]:'cópia anterior'});
   const session=load(storage);
   assert.notEqual(session.status.backupKey,base);assert.equal(storage.getItem(base),'cópia anterior');
   assert.equal(storage.getItem(session.status.backupKey),rawFixture);
@@ -181,7 +181,7 @@ test('falha de gravação normal mantém estado salvo e informa estado só em me
 });
 
 test('outra aba/versão futura bloqueia sessão antiga e preserva o valor novo', () => {
-  const storage=memory(),session=load(storage),future='{"schemaVersion":2,"opaque":"do not touch"}';
+  const storage=memory(),session=load(storage),future='{"schemaVersion":99,"opaque":"do not touch"}';
   storage.entries.set(STATE_KEY,future);session.state.theme='light';
   assert.equal(session.save(session.state),false);assert.equal(session.status.code,'conflict');
   assert.equal(storage.getItem(STATE_KEY),future);

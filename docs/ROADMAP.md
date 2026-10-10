@@ -1,8 +1,8 @@
 # Accio Hub — Roadmap de implementação (ROADMAP)
 
-> **Versão:** 0.2 (alinhamento documental da P0.4)<br>
-> **Data-base:** 2026-10-09<br>
-> **Estado:** P0.3 aprovada visualmente; P0.4 em andamento, execução atual somente da Etapa 2; P1–P10 não iniciadas<br>
+> **Versão:** 0.3 (alinhamento documental da P0.4)<br>
+> **Data-base:** 2026-10-10<br>
+> **Estado:** P0.3 aprovada visualmente; P0.4 em andamento, execução atual somente da Etapa 3; P1–P10 não iniciadas<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ARCHITECTURE.md](ARCHITECTURE.md)
 
 ## 1. Objetivo do roadmap
@@ -69,15 +69,15 @@ Evitar refatorações grandes sem necessidade.
 | Etapa | Entrega | Situação |
 |---|---|---|
 | 1 — Alinhamento da documentação | Baseline, estado atual, limites e contratos futuros consistentes | Aprovada, commit `1d83387` |
-| 2 — Preparação do estado | IDs estáveis para projetos/tarefas/notas, relações e persistência versionada compatível; separação mínima de responsabilidades | Implementada e verificada; aguardando revisão do usuário |
-| 3 — Biblioteca de Projetos | Busca, status, favoritos, criação/edição e arquivamento reversível | Planejada, não iniciada |
+| 2 — Preparação do estado | IDs estáveis para projetos/tarefas/notas, relações e persistência versionada compatível; separação mínima de responsabilidades | Aprovada, commit `cd3589d` |
+| 3 — Biblioteca de Projetos | Grade, busca, filtros, favoritos, ordenação, criação/edição com ícone/cor e arquivamento reversível | Implementada; evidências em P0.4_PROJECTS_VERIFICATION.md; aguardando revisão do usuário |
 | 4 — Espaço do projeto | Visão Geral com widgets, Tarefas, Conhecimento e Referências contextualizados | Planejada, não iniciada |
 | 5 — Conhecimento | Biblioteca/pastas simuladas, propriedades, busca, Markdown, prévia/leitura e vínculos | Planejada, não iniciada |
 | 6 — Verificação e fechamento | Testes de dados/relações e fluxos; comparação visual desktop/mobile com P0.3 | Planejada, não iniciada |
 
 Planejamento e Tempo poderão indicar “em preparação”, sem implementar calendário
-ou contabilização funcional nesta revisão. A aprovação da Etapa 2 não autoriza
-avançar automaticamente para a Etapa 3.
+ou contabilização funcional nesta revisão. A autorização específica atual abrange a Etapa 3. Sua conclusão não autoriza
+avançar automaticamente para a Etapa 4.
 
 Modelo, migração, resultados e limitações da Etapa 2 estão registrados em
 [P0.4_STATE_VERIFICATION.md](P0.4_STATE_VERIFICATION.md). A aprovação visual
@@ -376,6 +376,6 @@ Não é necessário rodar `agent-browser` em **todo commit**; priorizar mudança
 
 ## 8. Próximo passo imediato
 
-**Atividade atual: Etapa 2 da P0.4 — Preparação do estado.** Entregar modelo antigo/novo, estratégia de migração, evidências de preservação, testes, problemas e riscos. Aguardar aprovação antes da Etapa 3.
+**Atividade atual: Etapa 3 da P0.4 — Biblioteca de Projetos.** Entregar funcionalidades, arquivos, testes, comparação visual com P0.3 e limitações, conforme [P0.4_PROJECTS_VERIFICATION.md](P0.4_PROJECTS_VERIFICATION.md). Aguardar aprovação antes de implementar o espaço interno (Etapa 4).
 
 As próximas entregas serão comparadas com a P0.3 no monitor de 27” e em tela móvel. Banco de dados, Vault real e integrações seguem nas fases definitivas, após autorização. O bootstrap de recuperação do Ubuntu foi **explicitamente adiado** e não faz parte do roadmap do Accio Hub.

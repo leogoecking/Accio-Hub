@@ -4,8 +4,8 @@ Protótipo visual e interativo, com direção de design totalmente reformulada a
 
 **Baseline visual aprovada:** P0.3, commit `0018bb4`. Referência:
 [DESIGN_BASELINE.md](../docs/DESIGN_BASELINE.md). A fase atual é P0.4; Etapa 1
-aprovada e commitada (`1d83387`), com execução restrita à Etapa 2 (estado e
-persistência). A identidade continua P0.3. A aprovação visual não comprova todos
+aprovada e commitada (`1d83387`), Etapa 2 aprovada (`cd3589d`) e execução restrita
+à Etapa 3 (Biblioteca de Projetos). A identidade continua P0.3. A aprovação visual não comprova todos
 os comportamentos ou breakpoints.
 
 ## Executar
@@ -26,13 +26,17 @@ Abra `http://127.0.0.1:4173/`.
 - Tarefas: marcar como concluída, criar novas.
 - Notas Markdown demonstrativas: criar, abrir e editar (somente no `localStorage`; **não** cria arquivos `.md` reais).
 - Pomodoro: iniciar, pausar, reiniciar, alternar duração 25/45, contagem por timestamps (sessão não representa trabalho efetivo se navegador/PC ficar inativo).
-- Projetos demonstrativos, navegação pelos módulos, busca rápida (Ctrl+K), captura rápida (Ctrl+Shift+N), barra Accio Music apenas visual.
+- Biblioteca de Projetos em grade: pesquisa por nome/descrição, filtros Todos/Ativos/Pausados/Arquivados, favoritos e ordem por nome/atividade.
+- Criar/editar projetos com nome, descrição, ícone e cor; pausar/ativar, arquivar e restaurar ao status anterior.
+- Navegação pelos módulos, busca rápida (Ctrl+K), captura rápida (Ctrl+Shift+N), barra Accio Music apenas visual.
 - Relógio local; interface adaptável para telas pequenas.
 
-Projetos são quatro registros iniciais persistidos com IDs estáveis. Seus atalhos
-abrem Tarefas, Conhecimento e Foco gerais, sem filtro do projeto selecionado.
-Tarefas e notas armazenam vínculos por ID; renomear um projeto no estado não
-rompe esses vínculos. A interface de edição de projetos virá em etapa posterior.
+Projetos têm IDs estáveis. Quatro exemplos são inseridos somente na primeira
+inicialização sem dados. Renomear e arquivar preserva vínculos com tarefas/notas.
+O widget reflete os projetos ativos, seus nomes/ícones/cores e contagens por ID.
+Favoritos, filtros e ordem são persistidos; pesquisa permanece na sessão.
+Atividade recente inclui criação/edição/status e mudanças em tarefas/notas
+vinculadas; histórico ausente não é inventado. O espaço interno pertence à Etapa 4.
 Conhecimento possui
 lista plana e textarea Markdown, sem árvore de pastas, prévia ou backlinks.
 A busca rápida encontra telas e títulos de tarefas/notas, não o corpo das notas.
@@ -50,7 +54,7 @@ validação visual das próximas alterações continua necessária.
 ## Dados e privacidade
 
 Os dados de projetos/tarefas/notas são armazenados no navegador usando a chave
-`accio-hub-p0.3-studio`, com `schemaVersion: 1`. A chave antiga `accio-hub-p0-v1`
+`accio-hub-p0.3-studio`, com `schemaVersion: 2`. A chave antiga `accio-hub-p0-v1`
 continua intacta: quando necessário, suas tarefas/notas preenchem somente
 coleções ausentes. Nada é enviado para um servidor. Exemplos iniciais são
 inseridos somente quando não existe estado em nenhuma das duas chaves.
@@ -59,8 +63,9 @@ Preferências de temas, fundos, widgets e dock também ficam nessa chave.
 O localStorage pertence à origem do navegador (protocolo, host e porta);
 mudar de origem não transfere os dados. A migração versionada preserva IDs e
 conteúdo legados, atribui IDs faltantes e grava uma cópia do JSON anterior em
-`accio-hub-p0.3-studio:backup:pre-schema-1` antes de substituir seu formato.
-Cópias diferentes recebem sufixo único e nunca são sobrescritas.
+`accio-hub-p0.3-studio:backup:pre-schema-2` antes de substituir seu formato.
+Cópias diferentes recebem sufixo único e nunca são sobrescritas. A migração aceita
+P0.3 sem versão e schema 1 da Etapa 2; backups `pre-schema-1` existentes ficam intactos.
 
 JSON inválido, formatos incompatíveis e versões desconhecidas/futuras bloqueiam
 gravações. O protótipo abre um estado vazio em memória, com aviso visível, e
@@ -84,14 +89,15 @@ APIs externas e armazenamento real em `.md` estão fora da P0.4.
 O futuro Vault terá arquivos Markdown como fonte de verdade e índice derivado,
 conforme [ARCHITECTURE.md](../docs/ARCHITECTURE.md), §4.
 
-Não iniciar a Etapa 3 sem aprovação específica do usuário.
+Não iniciar a Etapa 4 sem aprovação específica do usuário. Evidências da biblioteca
+em [P0.4_PROJECTS_VERIFICATION.md](../docs/P0.4_PROJECTS_VERIFICATION.md).
 
-## Testes da preparação do estado
+## Testes do estado e da biblioteca
 
 Sem instalar dependências:
 
 ```bash
-node --test --test-isolation=none prototype/tests/state.test.mjs
+node --test --test-isolation=none prototype/tests/state.test.mjs prototype/tests/projects.test.mjs
 ```
 
 Para a suíte de navegador, iniciar um servidor na **raiz** do checkout:
@@ -99,6 +105,7 @@ Para a suíte de navegador, iniciar um servidor na **raiz** do checkout:
 ```bash
 python3 -m http.server 4174 --bind 127.0.0.1
 node prototype/tests/browser-check.mjs http://127.0.0.1:4174
+node prototype/tests/projects-browser-check.mjs http://127.0.0.1:4174
 ```
 
 Requer `agent-browser` e Chromium já instalados. No ambiente Ubuntu usado na
@@ -106,7 +113,7 @@ verificação, foi necessário executar com `ACCIO_BROWSER_NO_SANDBOX=1`; essa
 opção afeta somente o navegador isolado de teste e não é necessária em ambientes
 com sandbox Chromium funcional. A suíte usa dados sintéticos e uma sessão própria,
 compara com `0018bb4` e produz screenshots/snapshots em `tmp/p04-verification/`
-(ignorado pelo Git). Não manipula dados de sessões pessoais.
+e `tmp/p04-projects-verification/` (ignorados pelo Git). Não manipula dados de sessões pessoais.
 
 ## Verificação das próximas alterações de interface
 

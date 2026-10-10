@@ -84,5 +84,8 @@ localStorage, IDs estáveis e migrações compatíveis. Rails, APIs externas e
 Vault com arquivos reais estão fora desta fase.
 
 A Etapa 1 documental foi aprovada e registrada no commit `1d83387`.
-Está autorizada exclusivamente a Etapa 2 — Estado, IDs estáveis e persistência
-versionada. A Etapa 3 depende de nova aprovação, conforme [ROADMAP.md](ROADMAP.md).
+A Etapa 2 foi aprovada e registrada em `cd3589d`. Está autorizada exclusivamente
+a Etapa 3 — Biblioteca de Projetos. Cards com ícones e cores personalizados
+reutilizam os tokens existentes; o shell e o board permanecem a referência P0.3.
+O espaço interno dos projetos (Etapa 4) depende de nova aprovação, conforme
+[ROADMAP.md](ROADMAP.md).

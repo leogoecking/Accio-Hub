@@ -42,6 +42,7 @@ function seed(value){
 function route(name){snap(`before-${name}`);browser('click',`.rail-icons [data-route="${name}"]`);browser('wait','--fn',`location.hash==='#/${name}'`);}
 function scenario(name,check){check();assert.deepEqual(evaluate('window.__qaErrors'),[]);results.push({name,result:'PASS'});console.log(`PASS ${name}`);writeFileSync(resolve(evidence,'results.json'),JSON.stringify(results,null,2));}
 const fixture=JSON.parse(readFileSync(new URL('./fixtures/legacy-p03.json',import.meta.url),'utf8'));
+const typography=()=>evaluate(`Array.from(document.querySelectorAll('.panel-heading h3')).map(el=>{const r=el.getBoundingClientRect(),s=getComputedStyle(el);return {text:el.textContent,x:r.x,y:r.y,width:r.width,height:r.height,font:s.font,fontWeight:s.fontWeight,letterSpacing:s.letterSpacing,color:s.color};})`);
 const geometry=()=>evaluate(`Array.from(document.querySelectorAll('.rail,.app-dock,.music-zone,[data-widget]')).map(el=>{const r=el.getBoundingClientRect(),s=getComputedStyle(el);return {key:el.dataset.widget??el.className,x:r.x,y:r.y,width:r.width,height:r.height,font:s.fontFamily,color:s.color};})`);
 
 try{
@@ -49,17 +50,17 @@ try{
   browser('set','viewport','1440','1000');evaluate('localStorage.clear()');browser('reload');browser('wait','.board');evaluate('document.fonts.ready');snap('baseline-desktop');capture('baseline-desktop');const baselineGeometry=geometry();
   scenario('Inicialização vazia e baseline desktop',()=>{
     seed(null);evaluate('document.fonts.ready');snap('current-desktop');capture('current-desktop');
-    assert.equal(saved().schemaVersion,1);assert.equal(saved().tasks.length,4);assert.equal(saved().notes.length,2);
+    assert.equal(saved().schemaVersion,2);assert.equal(saved().tasks.length,4);assert.equal(saved().notes.length,2);
     assert.deepEqual(geometry(),baselineGeometry);
     assert.equal(evaluate('document.querySelector("#storage-notice").hidden'),true);
   });
   scenario('Migração P0.3, cópia recuperável e personalização',()=>{
     seed(fixture);const s=saved();
-    assert.equal(s.schemaVersion,1);assert.deepEqual(s.widgets,fixture.widgets);assert.deepEqual(s.dockOrder,fixture.dockOrder);assert.deepEqual(s.dockHidden,fixture.dockHidden);
+    assert.equal(s.schemaVersion,2);assert.deepEqual(s.widgets,fixture.widgets);assert.deepEqual(s.dockOrder,fixture.dockOrder);assert.deepEqual(s.dockHidden,fixture.dockHidden);
     assert.equal(evaluate('document.documentElement.dataset.theme'),'light');assert.equal(evaluate('document.documentElement.dataset.wallpaper'),'ember');
     assert.equal(evaluate('document.querySelectorAll(".music-zone").length'),0);
     assert.equal(evaluate('document.querySelectorAll("[data-widget]").length'),3);
-    assert.equal(evaluate(`localStorage.getItem(${JSON.stringify(STATE_KEY+':backup:pre-schema-1')})`),JSON.stringify(fixture));
+    assert.equal(evaluate(`localStorage.getItem(${JSON.stringify(STATE_KEY+':backup:pre-schema-2')})`),JSON.stringify(fixture));
     assert.equal(s.notes[0].body,fixture.notes[0].body);snap('migrated-light');capture('migrated-light');
   });
   scenario('Recargas repetidas sem duplicações',()=>{
@@ -71,7 +72,7 @@ try{
     assert.match(evaluate('document.querySelector(".project-strip").innerText'),/Hub renomeado\s+1 tarefa/);
     route('tasks');assert.match(evaluate('document.querySelector(".viewport").innerText'),/Hub renomeado/);
     route('home');assert.match(evaluate('document.querySelector(".notes-grid").innerText'),/Hub renomeado/);
-    route('projects');browser('click','[data-open-project="project-accio-hub"]');assert.equal(saved().projectId,'project-accio-hub');
+    route('projects');browser('click','[data-project-action="edit"][data-project-id="project-accio-hub"]');browser('click','[aria-label="Fechar formulário de projeto"]');assert.equal(saved().projectId,'project-accio-hub');
   });
   scenario('Criar tarefa e nota com UUID, editar, buscar e recarregar',()=>{
     route('tasks');snap('new-task');browser('click','[data-modal="task"]');snap('task-form');browser('fill','input[name="title"]','Tarefa QA persistente');assert.equal(evaluate('document.querySelector("input[name=title]").value'),'Tarefa QA persistente');browser('select','select[name="project"]','project-accio-hub');assert.equal(evaluate('document.querySelector("input[name=title]").value'),'Tarefa QA persistente');
@@ -121,11 +122,11 @@ try{
   scenario('Falha durante migração preserva origem até backup poder ser gravado',()=>{
     seed(null);evaluate(`localStorage.clear();localStorage.setItem('${STATE_KEY}',${JSON.stringify(JSON.stringify(fixture))});sessionStorage.setItem('accio-qa-fail-writes','yes');`);browser('reload');browser('wait','.board');assert.equal(raw(),JSON.stringify(fixture));
     assert.match(evaluate('document.querySelector("#storage-notice").textContent'),/não foram persistidas/);
-    evaluate('window.__failWrites=false;sessionStorage.removeItem("accio-qa-fail-writes")');route('tasks');assert.equal(saved().schemaVersion,1);assert.equal(saved().notes[0].body,fixture.notes[0].body);
+    evaluate('window.__failWrites=false;sessionStorage.removeItem("accio-qa-fail-writes")');route('tasks');assert.equal(saved().schemaVersion,2);assert.equal(saved().notes[0].body,fixture.notes[0].body);
   });
   scenario('Baseline mobile preservada e editor responsivo',()=>{
-    seed(null);browser('set','viewport','390','844');snap('current-mobile');capture('current-mobile');const currentGeometry=geometry();
-    evaluate('localStorage.clear()');browser('open',new URL('/tmp/p04-baseline/',origin).href);browser('wait','.board');evaluate('document.fonts.ready');capture('baseline-mobile');assert.deepEqual(geometry(),currentGeometry);
+    seed(null);browser('set','viewport','390','844');evaluate('document.fonts.ready');snap('current-mobile');capture('current-mobile');const currentGeometry=geometry(),currentTypography=typography();writeFileSync(resolve(evidence,'current-mobile-typography.json'),JSON.stringify(currentTypography,null,2));
+    evaluate('localStorage.clear()');browser('open',new URL('/tmp/p04-baseline/',origin).href);browser('wait','.board');evaluate('document.fonts.ready');capture('baseline-mobile');assert.deepEqual(geometry(),currentGeometry);const baselineTypography=typography();writeFileSync(resolve(evidence,'baseline-mobile-typography.json'),JSON.stringify(baselineTypography,null,2));assert.deepEqual(baselineTypography,currentTypography);
     seed(null);route('knowledge');assert.ok(evaluate('document.querySelector("#note-editor").getBoundingClientRect().right<=innerWidth'));
     capture('mobile-editor');
   });

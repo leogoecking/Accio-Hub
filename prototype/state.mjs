@@ -1,7 +1,8 @@
 // Persistência do protótipo. Nenhuma operação acessa arquivos ou serviços externos.
+import {prepareProject, validateProject, libraryDefaults, validateLibrary} from './projects.mjs';
 export const STATE_KEY = 'accio-hub-p0.3-studio';
 export const LEGACY_KEY = 'accio-hub-p0-v1';
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 export const newId = () => crypto.randomUUID();
 export const sameId = (a, b) => a != null && b != null && String(a) === String(b);
 const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
@@ -40,6 +41,15 @@ function uniqueIds(items, createId) {
 export function migrateState(input, defaults, createId = newId) {
   if (!object(input)) throw new Error('Estado não é um objeto');
   if (own(input, 'schemaVersion')) {
+    if (input.schemaVersion === 1) {
+      validateState(input, defaults, 1);
+      const next=copy(input);
+      next.schemaVersion=SCHEMA_VERSION;
+      next.projects=next.projects.map(prepareProject);
+      next.projectLibrary=next.projectLibrary??libraryDefaults();
+      validateState(next,defaults);
+      return next;
+    }
     if (input.schemaVersion !== SCHEMA_VERSION) throw new Error('Versão de schema desconhecida');
     validateState(input, defaults);
     return copy(input);
@@ -95,7 +105,8 @@ export function migrateState(input, defaults, createId = newId) {
   result.projectId = own(input, 'projectId') ? projectForId(input.projectId)
     : own(input, 'project') ? projectForName(input.project) : projects[0]?.id ?? null;
   delete result.project;
-  result.projects = projects;
+  result.projects = projects.map(prepareProject);
+  result.projectLibrary = input.projectLibrary ?? libraryDefaults();
   result.widgets = records(input.widgets === undefined ? defaults.widgets : input.widgets, 'widgets').map(w => {
     const suggested = defaults.widgets.find(x => x.id === w.id);
     return {span:suggested?.span ?? 4, visible:true, ...w};
@@ -107,8 +118,8 @@ export function migrateState(input, defaults, createId = newId) {
   return result;
 }
 
-export function validateState(state, defaults) {
-  if (!object(state) || state.schemaVersion !== SCHEMA_VERSION) throw new Error('Schema inválido');
+export function validateState(state, defaults, version = SCHEMA_VERSION) {
+  if (!object(state) || state.schemaVersion !== version) throw new Error('Schema inválido');
   for (const field of ['projects', 'tasks', 'notes']) {
     const list = records(state[field], field);
     if (!Array.isArray(state[field]) || list.some(x => !validId(x.id)) || new Set(list.map(x => String(x.id))).size !== list.length)
@@ -116,6 +127,7 @@ export function validateState(state, defaults) {
   }
   const exists = id => id === null || state.projects.some(p => sameId(p.id, id));
   if (state.projects.some(p => typeof p.name !== 'string' || typeof p.description !== 'string' || typeof p.icon !== 'string' || typeof p.tint !== 'string')) throw new Error('Projeto inválido');
+  if (version===SCHEMA_VERSION) {state.projects.forEach(validateProject);validateLibrary(state.projectLibrary);}
   if (state.tasks.some(t => typeof t.title !== 'string' || typeof t.done !== 'boolean' || !exists(t.projectId))) throw new Error('Tarefa inválida');
   if (state.notes.some(n => typeof n.title !== 'string' || typeof n.body !== 'string' || !Array.isArray(n.projectIds) || n.projectIds.some(id => id === null || !exists(id)))) throw new Error('Nota inválida');
   if (!exists(state.projectId)) throw new Error('Seleção de projeto inválida');
@@ -155,7 +167,7 @@ export function openState({storage, defaults, createId = newId, onStatus = () =>
         }
       }
       state = migrateState(parsed, defaults, createId);
-      needsBackup = sourceKey !== STATE_KEY || !own(parsed, 'schemaVersion');
+      needsBackup = sourceKey !== STATE_KEY || parsed.schemaVersion !== SCHEMA_VERSION;
     }
   } catch (error) {
     blocked = true;
