@@ -84,8 +84,11 @@ localStorage, IDs estáveis e migrações compatíveis. Rails, APIs externas e
 Vault com arquivos reais estão fora desta fase.
 
 A Etapa 1 documental foi aprovada e registrada no commit `1d83387`.
-A Etapa 2 foi aprovada e registrada em `cd3589d`. Está autorizada exclusivamente
-a Etapa 3 — Biblioteca de Projetos. Cards com ícones e cores personalizados
-reutilizam os tokens existentes; o shell e o board permanecem a referência P0.3.
-O espaço interno dos projetos (Etapa 4) depende de nova aprovação, conforme
-[ROADMAP.md](ROADMAP.md).
+A Etapa 2 foi aprovada e registrada em `cd3589d`. A Etapa 3 foi homologada
+nos commits `6c7a719` e `c759e61`, após auditoria independente.
+Está autorizada exclusivamente a Etapa 4 — Espaço Interno dos Projetos.
+As quatro abas reutilizam tokens, superfícies e grade do Studio; shell e board
+permanecem a referência P0.3. A composição de widgets do projeto é independente
+do board e prepara personalização futura, sem um editor de widgets nesta etapa.
+As alterações ficam sem commit até revisão. A Etapa 5 depende de nova aprovação,
+conforme [ROADMAP.md](ROADMAP.md).

@@ -1,3 +1,4 @@
+import {spaceHash} from './project-space.mjs';
 import {PROJECT_STATUS, PROJECT_ICONS, PROJECT_COLORS, projectColor, projectCounts, selectProjects,
   createProject, updateProject, favoriteProject, changeProjectStatus, restoreProject} from './projects.mjs';
 
@@ -14,7 +15,7 @@ export function createProjectLibrary({state,esc,icon,persist,render}) {
     const button=(action,label,ic)=>`<button type="button" class="project-control" data-project-action="${action}" data-project-id="${esc(project.id)}" aria-label="${esc(label+' '+project.name)}">${icon(ic,15)} ${label}</button>`;
     return `<article class="project-card ${project.status==='archived'?'is-archived':''}" style="--project-color:${color}" data-project-card="${esc(project.id)}" aria-label="${esc(project.name)}">
       <div class="project-card-top"><span class="project-emblem">${icon(project.icon,25)}</span><span class="project-status status-${project.status}"><i></i>${PROJECT_STATUS[project.status]}</span><button type="button" class="project-favorite ${project.favorite?'is-favorite':''}" data-project-action="favorite" data-project-id="${esc(project.id)}" aria-pressed="${project.favorite}" aria-label="${esc((project.favorite?'Desfavoritar ':'Favoritar ')+project.name)}">${icon('star',19)}</button></div>
-      <h2>${esc(project.name)}</h2><p class="project-description">${esc(project.description||'Um espaço pronto para suas próximas ideias.')}</p>
+      <h2><a class="project-space-link" href="${spaceHash(project.id)}">${esc(project.name)} ${icon('chevron',16)}</a></h2><p class="project-description">${esc(project.description||'Um espaço pronto para suas próximas ideias.')}</p>
       <div class="project-relations"><span>${icon('check',15)} <strong>${counts.open}</strong> aberta${counts.open===1?'':'s'}</span><span>${icon('book',15)} <strong>${counts.notes}</strong> nota${counts.notes===1?'':'s'}</span></div>
       <div class="project-card-bottom"><span class="project-activity" title="Alterações do projeto e de tarefas/notas vinculadas, registradas a partir desta etapa">${activity}</span><div class="project-controls">${button('edit','Editar','edit')}${project.status==='archived'?button('restore','Restaurar','restore'):button(project.status==='active'?'pause':'activate',project.status==='active'?'Pausar':'Ativar',project.status==='active'?'pause':'play')+button('archive','Arquivar','archive')}</div></div>
     </article>`;

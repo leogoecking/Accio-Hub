@@ -2,7 +2,7 @@
 
 > **Versão:** 0.3 (protótipo atual e arquitetura definitiva planejada)<br>
 > **Data-base:** 2026-10-10<br>
-> **Estado:** P0.4, Etapa 3; arquitetura Rails/Vault futura, com contratos sujeitos a spikes<br>
+> **Estado:** P0.4, Etapa 4; arquitetura Rails/Vault futura, com contratos sujeitos a spikes<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ROADMAP.md](ROADMAP.md)
 
 ## 0. Arquitetura atual do protótipo e limites da P0.4
@@ -20,6 +20,8 @@ definitiva planejada, não infraestrutura já instalada neste checkout.
 | `prototype/state.mjs` | Validação, migração pura, IDs e adapter de persistência local |
 | `prototype/projects.mjs` | Regras de projetos, validação, busca/ordenação, status, atividade e contagens por ID |
 | `prototype/project-library.mjs` | Biblioteca, formulário, feedback, preferências e gestão de foco/teclado |
+| `prototype/project-space.mjs` | Rotas por ID, seleção contextual, tarefas/notas/referências e composição de widgets |
+| `prototype/project-space-view.mjs` | Quatro abas, formulários contextuais, compartilhamento e gestão de foco/teclado |
 
 **Fluxo atual:** evento de interface → alteração de `state` → `persist()` no
 localStorage → `render()`. A renderização recria o shell, incluindo a barra
@@ -28,7 +30,7 @@ Accio Music; o estado é compartilhado entre telas, mas não há componente de
 fontes Google Fonts, com fallbacks no CSS; não há integração de dados com APIs.
 
 **Persistência atual:** chave `accio-hub-p0.3-studio`, contendo tarefas, notas,
-layout e preferências, agora com `schemaVersion: 2`. A chave `accio-hub-p0-v1`
+layout e preferências, agora com `schemaVersion: 3`. A chave `accio-hub-p0-v1`
 permanece intacta; suas coleções são importadas somente quando ausentes na P0.3.
 Projetos são persistidos com IDs; tarefas usam `projectId` e notas `projectIds`.
 IDs numéricos legados são mantidos, novos registros recebem UUIDs, e nome/título
@@ -36,13 +38,13 @@ não definem identidade. `Pessoal` significa ausência de projeto (salvo projeto
 explícito com esse nome). A seleção usa `projectId`/`noteId`.
 
 A migração valida antes de gravar e conserva o JSON original em uma chave
-`accio-hub-p0.3-studio:backup:pre-schema-2` (com sufixo único se já houver outra
+`accio-hub-p0.3-studio:backup:pre-schema-3` (com sufixo único se já houver outra
 cópia). Sem backup confirmado, o formato antigo não é substituído. JSON inválido,
 schema desconhecido/futuro e estruturas incompatíveis bloqueiam gravações;
 os dados existentes permanecem intactos. Falhas de gravação são visíveis e podem
 ser tentadas novamente; alterações ficam somente em memória até sucesso.
 Uma alteração externa detectada na chave bloqueia a sessão antiga.
-Cópias `pre-schema-1` da etapa anterior permanecem intactas. A migração de schema 1
+Cópias `pre-schema-1` e `pre-schema-2` das etapas anteriores permanecem intactas. A migração de schema 1
 valida e copia seus dados, conservando IDs, conteúdo e campos extras. Projetos
 recebem `status`, `favorite`, `color`, `createdAt`, `updatedAt` e `archivedFrom`;
 o estado recebe `projectLibrary: {status, sort, favoritesOnly}`. Cores legadas
@@ -50,7 +52,8 @@ continuam em `tint` com `color: null`; datas antigas não são inventadas.
 
 Detalhes históricos da preparação e recuperação em
 [P0.4_STATE_VERIFICATION.md](P0.4_STATE_VERIFICATION.md); evolução e evidências
-atuais em [P0.4_PROJECTS_VERIFICATION.md](P0.4_PROJECTS_VERIFICATION.md).
+da Biblioteca em [P0.4_PROJECTS_VERIFICATION.md](P0.4_PROJECTS_VERIFICATION.md);
+espaço interno em [P0.4_PROJECT_SPACE_VERIFICATION.md](P0.4_PROJECT_SPACE_VERIFICATION.md).
 
 **Contrato para a evolução da P0.4:**
 
@@ -70,14 +73,33 @@ atuais em [P0.4_PROJECTS_VERIFICATION.md](P0.4_PROJECTS_VERIFICATION.md).
 Biblioteca, propriedades e pastas do Conhecimento continuarão simuladas no
 navegador. A P0.4 não inicia Rails, não conecta APIs externas e não escreve
 arquivos Markdown reais. Accio Music permanece global, opcional e visual.
-Etapas 1 (`1d83387`) e 2 (`cd3589d`) aprovadas; somente a Etapa 3 está autorizada.
+Etapas 1 (`1d83387`), 2 (`cd3589d`) e 3 (`6c7a719`, `c759e61`) homologadas;
+somente a Etapa 4 está autorizada, com alterações sem commit até revisão.
 O widget usa projetos ativos e contagens de tarefas por ID. Arquivamento apenas
 altera status, com restauração ao estado anterior, sem excluir vínculos.
 Duplicações de nome equivalente são rejeitadas nas operações, inclusive entre
 arquivados; registros legados não são mesclados ou eliminados automaticamente.
 A ordenação recente registra mudanças do projeto e das tarefas/notas vinculadas,
 sem alterar a ordem persistida da coleção. Favoritar não inventa atividade.
-Não avançar para o espaço interno (Etapa 4) sem nova aprovação.
+Não avançar para Conhecimento (Etapa 5) sem nova aprovação.
+
+**Espaço interno:** rotas `#/projects/<ID codificado>/<aba>`, com retorno à
+Biblioteca e estado de projeto inexistente. Arquivados são consultáveis; criação
+e edição contextual ficam bloqueadas até restauração. `SPACE_WIDGETS` define a
+composição modular da Visão Geral sem alterar `state.widgets` do dashboard.
+O widget de foco reutiliza o mesmo template, timestamps e controles globais.
+
+Schema 2 → 3 valida a origem, copia-a antes de gravar e acrescenta `references: []`.
+Cada referência possui `id`, `projectId`, `title`, `kind` (`link`/`material`),
+`url`, `description`, `createdAt`, `updatedAt`. URL é obrigatória para links;
+materiais podem ser descritos sem URL. Somente http/https sem credenciais;
+links externos usam `noopener noreferrer`. Não há leitura de arquivos ou uploads.
+
+Notas usam um único registro, título e corpo Markdown textual, compartilhado
+por `projectIds`. O formulário fixa o projeto de origem e permite outros vínculos;
+notas existentes podem ser vinculadas sem cópia. Edições atualizam a atividade de
+todos os projetos envolvidos. Notas sem datas preservam sua ordem de origem;
+datas são atribuídas apenas às novas notas ou às edições observadas.
 
 ## 1. Direção arquitetural
 

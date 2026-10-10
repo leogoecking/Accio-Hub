@@ -2,7 +2,7 @@
 import {prepareProject, validateProject, libraryDefaults, validateLibrary} from './projects.mjs';
 export const STATE_KEY = 'accio-hub-p0.3-studio';
 export const LEGACY_KEY = 'accio-hub-p0-v1';
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 3;
 export const newId = () => crypto.randomUUID();
 export const sameId = (a, b) => a != null && b != null && String(a) === String(b);
 const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
@@ -37,16 +37,17 @@ function uniqueIds(items, createId) {
   });
 }
 
-// Migração pura: o argumento nunca é alterado. A versão 1 validada é um no-op.
+// Migração pura: versões anteriores são validadas antes de acrescentar campos.
 export function migrateState(input, defaults, createId = newId) {
   if (!object(input)) throw new Error('Estado não é um objeto');
   if (own(input, 'schemaVersion')) {
-    if (input.schemaVersion === 1) {
-      validateState(input, defaults, 1);
+    if (input.schemaVersion === 1 || input.schemaVersion === 2) {
+      validateState(input, defaults, input.schemaVersion);
       const next=copy(input);
       next.schemaVersion=SCHEMA_VERSION;
       next.projects=next.projects.map(prepareProject);
       next.projectLibrary=next.projectLibrary??libraryDefaults();
+      next.references=own(next,'references')?next.references:[];
       validateState(next,defaults);
       return next;
     }
@@ -107,6 +108,7 @@ export function migrateState(input, defaults, createId = newId) {
   delete result.project;
   result.projects = projects.map(prepareProject);
   result.projectLibrary = input.projectLibrary ?? libraryDefaults();
+  result.references = own(input,'references')?input.references:[];
   result.widgets = records(input.widgets === undefined ? defaults.widgets : input.widgets, 'widgets').map(w => {
     const suggested = defaults.widgets.find(x => x.id === w.id);
     return {span:suggested?.span ?? 4, visible:true, ...w};
@@ -127,7 +129,14 @@ export function validateState(state, defaults, version = SCHEMA_VERSION) {
   }
   const exists = id => id === null || state.projects.some(p => sameId(p.id, id));
   if (state.projects.some(p => typeof p.name !== 'string' || typeof p.description !== 'string' || typeof p.icon !== 'string' || typeof p.tint !== 'string')) throw new Error('Projeto inválido');
-  if (version===SCHEMA_VERSION) {state.projects.forEach(validateProject);validateLibrary(state.projectLibrary);}
+  if (version>=2) {state.projects.forEach(validateProject);validateLibrary(state.projectLibrary);}
+  if (version>=3) {
+    if (!Array.isArray(state.references) || state.references.some(r=>!object(r)||!validId(r.id)) || new Set(state.references.map(r=>String(r.id))).size!==state.references.length) throw new Error('Referências inválidas');
+    for (const r of state.references) {
+      if (r.projectId===null || !exists(r.projectId) || typeof r.title!=='string' || !r.title.trim() || !['link','material'].includes(r.kind) || typeof r.description!=='string' || typeof r.url!=='string' || (r.kind==='link'&&!r.url)) throw new Error('Referência inválida');
+      if (r.url) {let url;try{url=new URL(r.url);}catch{throw new Error('URL inválida');}if(!['http:','https:'].includes(url.protocol)||url.username||url.password)throw new Error('URL inválida');}
+    }
+  }
   if (state.tasks.some(t => typeof t.title !== 'string' || typeof t.done !== 'boolean' || !exists(t.projectId))) throw new Error('Tarefa inválida');
   if (state.notes.some(n => typeof n.title !== 'string' || typeof n.body !== 'string' || !Array.isArray(n.projectIds) || n.projectIds.some(id => id === null || !exists(id)))) throw new Error('Nota inválida');
   if (!exists(state.projectId)) throw new Error('Seleção de projeto inválida');

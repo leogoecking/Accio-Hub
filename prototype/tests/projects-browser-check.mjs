@@ -82,7 +82,7 @@ try{
     browser('press','Escape');
   });
   scenario('Schema 1 real migra sem perda de dados e biblioteca mostra registros existentes',()=>{
-    seed(schema1);assert.equal(saved().schemaVersion,2);assert.deepEqual(saved().tasks,schema1.tasks);assert.deepEqual(saved().notes,schema1.notes);assert.equal(evaluate(`localStorage.getItem(${JSON.stringify(STATE_KEY+':backup:pre-schema-2')})`),JSON.stringify(schema1));route('projects');assert.equal(cards().length,4);snap('library-migrated-light');capture('library-migrated-light');
+    seed(schema1);assert.equal(saved().schemaVersion,3);assert.deepEqual(saved().tasks,schema1.tasks);assert.deepEqual(saved().notes,schema1.notes);assert.equal(evaluate(`localStorage.getItem(${JSON.stringify(STATE_KEY+':backup:pre-schema-3')})`),JSON.stringify(schema1));route('projects');assert.equal(cards().length,4);snap('library-migrated-light');capture('library-migrated-light');
   });
   scenario('Criação por formulário e persistência após recarga',()=>{
     browser('click','[data-project-action="new"]');assert.equal(focus(),'project-name');browser('fill','#project-name','Laboratório orbital');browser('fill','#project-description','Exploração de ideias e astronomia');browser('select','#project-icon','code');browser('fill','#project-color-hex','#799cdb');submit();
@@ -105,7 +105,7 @@ try{
   });
   scenario('Widgets, contagens por ID e preferências da P0.3 preservadas',()=>{
     const s=saved();for(const key of ['theme','wallpaper','accent','density','music','musicExpanded','widgets','dockOrder','dockHidden'])assert.deepEqual(s[key],schema1[key],key);
-    route('home');assert.match(evaluate('document.querySelector(".project-strip").innerText'),/Hub renovado\s+1 tarefa/);route('projects');clickAction('archive','project-accio-hub');route('home');assert.ok(!evaluate('document.querySelector(".project-strip").innerText').includes('Hub renovado'));browser('click','[data-open-project="project-accio-cad"]');assert.equal(saved().projectLibrary.status,'all');assert.equal(saved().projectLibrary.favoritesOnly,false);assert.equal(focus(),'edit');filter('archived');clickAction('restore','project-accio-hub');filter('all');
+    route('home');assert.match(evaluate('document.querySelector(".project-strip").innerText'),/Hub renovado\s+1 tarefa/);route('projects');clickAction('archive','project-accio-hub');route('home');assert.ok(!evaluate('document.querySelector(".project-strip").innerText').includes('Hub renovado'));browser('click','[data-open-project="project-accio-cad"]');assert.equal(evaluate('location.hash'),'#/projects/project-accio-cad/overview');assert.ok(evaluate('document.querySelector(".project-space")!==null'));route('projects');filter('archived');clickAction('restore','project-accio-hub');filter('all');
   });
   scenario('Teclado: Tab/Shift Tab, Escape e retorno de foco',()=>{
     browser('click','[data-project-action="new"]');browser('press','Shift+Tab');assert.equal(focus(),'close');browser('press','Shift+Tab');assert.equal(evaluate('document.activeElement.type'),'submit');browser('press','Tab');assert.equal(focus(),'close');browser('press','Escape');assert.equal(focus(),'new');browser('press','Enter');assert.equal(focus(),'project-name');browser('press','Control+k');assert.equal(evaluate('document.querySelectorAll(".search-modal").length'),0);browser('press','Escape');

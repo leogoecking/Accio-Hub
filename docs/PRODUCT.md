@@ -2,7 +2,7 @@
 
 > **Versão:** 0.3 (alinhamento documental da P0.4; alvo funcional v0.1)<br>
 > **Data-base:** 2026-10-10<br>
-> **Estado:** P0.3 aprovada visualmente; P0.4 em andamento, com execução restrita à Etapa 3<br>
+> **Estado:** P0.3 aprovada visualmente; P0.4 em andamento, com execução restrita à Etapa 4<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [ARCHITECTURE.md](ARCHITECTURE.md) · [ROADMAP.md](ROADMAP.md)
 
 ## 1. Visão
@@ -36,15 +36,16 @@ O protótipo em `prototype/` usa HTML/CSS/JavaScript e localStorage, sem backend
 A P0.3 está **aprovada visualmente**; a P0.4 aprofundará Projetos e Conhecimento
 preservando navegação, temas, fontes, personalização, widgets e Accio Music.
 A Etapa 1 documental (`1d83387`) e a Etapa 2 de estado (`cd3589d`) foram aprovadas.
-A autorização atual abrange somente a Etapa 3: Biblioteca de Projetos. O espaço
-interno dos projetos e a evolução de Conhecimento dependem de aprovação posterior.
+A Etapa 3 foi homologada após auditoria (`6c7a719`, `c759e61`). A autorização
+atual abrange exclusivamente a Etapa 4: Espaço Interno dos Projetos. As alterações
+ficam sem commit até revisão; a Etapa 5 de Conhecimento depende de nova aprovação.
 
 | Área | Implementação atual do protótipo | Evolução planejada |
 |---|---|---|
 | Meu espaço | Dock lateral compacta, dock do board, widgets reordenáveis e tamanhos predefinidos | Preservar na P0.4 |
 | Aparência | Claro/escuro, destaque, quatro fundos, ordem e visibilidade de widgets/atalhos | Preservar preferências existentes |
-| Tarefas | Criar e concluir; lista compartilhada com o widget | Contextualizar em Projetos na P0.4; domínio completo em P2 |
-| Projetos | Biblioteca em grade, busca por nome/descrição, filtros, favoritos, ordenação, criar/editar ícone e cor, pausar/ativar e arquivar/restaurar; IDs e vínculos preservados | Espaço interno contextualizado na Etapa 4, ainda não autorizado |
+| Tarefas | Criar e concluir; lista compartilhada com o widget | Criação/edição contextualizada por projeto na Etapa 4; domínio completo em P2 |
+| Projetos | Biblioteca em grade, busca por nome/descrição, filtros, favoritos, ordenação, criar/editar ícone e cor, pausar/ativar e arquivar/restaurar; IDs e vínculos preservados | Espaço interno com Visão Geral, Tarefas, Conhecimento e Referências na Etapa 4, em revisão |
 | Conhecimento | Lista plana; criar, abrir e editar texto Markdown no navegador | Biblioteca, propriedades, busca e prévia/leitura demonstrativas na P0.4 |
 | Foco | Timer 25/45 minutos, pausa/reinício e contagem por timestamps | Preservar; vínculo e contabilização confiável pertencem à implementação funcional |
 | Busca/captura | Ctrl+K busca telas e títulos de tarefas/notas; Ctrl+Shift+N captura nota | Preservar; ampliar contexto nas entregas pertinentes |
@@ -59,7 +60,11 @@ IDs estáveis e vínculos por ID para projetos, tarefas e notas, com proteção 
 estados incompatíveis e aviso de falhas de gravação. Esses requisitos não
 existiam na P0.3 original. A Etapa 3 eleva o schema para 2 e acrescenta propriedades
 dos projetos e preferências da biblioteca com cópia recuperável da origem.
-Notas continuam no navegador, preparando o futuro Vault.
+A Etapa 4 eleva o schema para 3, com `references` por ID de projeto e backup
+recuperável da origem. Notas compartilhadas usam um único registro com `projectIds`;
+novas notas/edições recebem datas para ordenação recente. Referências aceitam links
+http/https e descrições de materiais, sem upload de arquivos. Notas continuam no
+navegador, preparando o futuro Vault.
 
 Na biblioteca atual, status são **ativo, pausado e arquivado**. Restaurar retorna
 ao status anterior; arquivar preserva tarefas/notas. Favoritos e filtros/ordenação

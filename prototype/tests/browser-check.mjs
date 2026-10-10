@@ -50,17 +50,17 @@ try{
   browser('set','viewport','1440','1000');evaluate('localStorage.clear()');browser('reload');browser('wait','.board');evaluate('document.fonts.ready');snap('baseline-desktop');capture('baseline-desktop');const baselineGeometry=geometry();
   scenario('Inicialização vazia e baseline desktop',()=>{
     seed(null);evaluate('document.fonts.ready');snap('current-desktop');capture('current-desktop');
-    assert.equal(saved().schemaVersion,2);assert.equal(saved().tasks.length,4);assert.equal(saved().notes.length,2);
+    assert.equal(saved().schemaVersion,3);assert.equal(saved().tasks.length,4);assert.equal(saved().notes.length,2);
     assert.deepEqual(geometry(),baselineGeometry);
     assert.equal(evaluate('document.querySelector("#storage-notice").hidden'),true);
   });
   scenario('Migração P0.3, cópia recuperável e personalização',()=>{
     seed(fixture);const s=saved();
-    assert.equal(s.schemaVersion,2);assert.deepEqual(s.widgets,fixture.widgets);assert.deepEqual(s.dockOrder,fixture.dockOrder);assert.deepEqual(s.dockHidden,fixture.dockHidden);
+    assert.equal(s.schemaVersion,3);assert.deepEqual(s.widgets,fixture.widgets);assert.deepEqual(s.dockOrder,fixture.dockOrder);assert.deepEqual(s.dockHidden,fixture.dockHidden);
     assert.equal(evaluate('document.documentElement.dataset.theme'),'light');assert.equal(evaluate('document.documentElement.dataset.wallpaper'),'ember');
     assert.equal(evaluate('document.querySelectorAll(".music-zone").length'),0);
     assert.equal(evaluate('document.querySelectorAll("[data-widget]").length'),3);
-    assert.equal(evaluate(`localStorage.getItem(${JSON.stringify(STATE_KEY+':backup:pre-schema-2')})`),JSON.stringify(fixture));
+    assert.equal(evaluate(`localStorage.getItem(${JSON.stringify(STATE_KEY+':backup:pre-schema-3')})`),JSON.stringify(fixture));
     assert.equal(s.notes[0].body,fixture.notes[0].body);snap('migrated-light');capture('migrated-light');
   });
   scenario('Recargas repetidas sem duplicações',()=>{
@@ -122,7 +122,7 @@ try{
   scenario('Falha durante migração preserva origem até backup poder ser gravado',()=>{
     seed(null);evaluate(`localStorage.clear();localStorage.setItem('${STATE_KEY}',${JSON.stringify(JSON.stringify(fixture))});sessionStorage.setItem('accio-qa-fail-writes','yes');`);browser('reload');browser('wait','.board');assert.equal(raw(),JSON.stringify(fixture));
     assert.match(evaluate('document.querySelector("#storage-notice").textContent'),/não foram persistidas/);
-    evaluate('window.__failWrites=false;sessionStorage.removeItem("accio-qa-fail-writes")');route('tasks');assert.equal(saved().schemaVersion,2);assert.equal(saved().notes[0].body,fixture.notes[0].body);
+    evaluate('window.__failWrites=false;sessionStorage.removeItem("accio-qa-fail-writes")');route('tasks');assert.equal(saved().schemaVersion,3);assert.equal(saved().notes[0].body,fixture.notes[0].body);
   });
   scenario('Baseline mobile preservada e editor responsivo',()=>{
     seed(null);browser('set','viewport','390','844');evaluate('document.fonts.ready');snap('current-mobile');capture('current-mobile');const currentGeometry=geometry(),currentTypography=typography();writeFileSync(resolve(evidence,'current-mobile-typography.json'),JSON.stringify(currentTypography,null,2));
