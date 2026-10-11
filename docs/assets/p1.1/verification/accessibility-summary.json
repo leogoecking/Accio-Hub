@@ -1,0 +1,383 @@
+{
+  "audits": 34,
+  "violation_occurrences": {},
+  "incomplete_occurrences": {
+    "color-contrast": 1318
+  },
+  "results": [
+    {
+      "file": "axe-drawer-dark-1440.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    {
+      "file": "axe-drawer-dark-1920.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    {
+      "file": "axe-drawer-dark-320.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    {
+      "file": "axe-drawer-dark-390.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    {
+      "file": "axe-drawer-dark-768.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    {
+      "file": "axe-drawer-light-1440.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    {
+      "file": "axe-drawer-light-1920.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    {
+      "file": "axe-drawer-light-320.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    {
+      "file": "axe-drawer-light-390.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    {
+      "file": "axe-drawer-light-768.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    {
+      "file": "axe-login-dark-320.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 9
+        }
+      ]
+    },
+    {
+      "file": "axe-login-light-320.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 9
+        }
+      ]
+    },
+    {
+      "file": "axe-search-dark-1440.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 18
+        }
+      ]
+    },
+    {
+      "file": "axe-search-light-1440.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 18
+        }
+      ]
+    },
+    {
+      "file": "axe-settings-dark-1440.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "file": "axe-settings-dark-1920.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "file": "axe-settings-dark-320.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    {
+      "file": "axe-settings-dark-390.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    {
+      "file": "axe-settings-dark-768.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    {
+      "file": "axe-settings-light-1440.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "file": "axe-settings-light-1920.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "file": "axe-settings-light-320.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    {
+      "file": "axe-settings-light-390.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    {
+      "file": "axe-settings-light-768.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    {
+      "file": "axe-shell-dark-1440.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 64
+        }
+      ]
+    },
+    {
+      "file": "axe-shell-dark-1920.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 72
+        }
+      ]
+    },
+    {
+      "file": "axe-shell-dark-320.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 34
+        }
+      ]
+    },
+    {
+      "file": "axe-shell-dark-390.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 34
+        }
+      ]
+    },
+    {
+      "file": "axe-shell-dark-768.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 34
+        }
+      ]
+    },
+    {
+      "file": "axe-shell-light-1440.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 64
+        }
+      ]
+    },
+    {
+      "file": "axe-shell-light-1920.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 72
+        }
+      ]
+    },
+    {
+      "file": "axe-shell-light-320.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 34
+        }
+      ]
+    },
+    {
+      "file": "axe-shell-light-390.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 34
+        }
+      ]
+    },
+    {
+      "file": "axe-shell-light-768.json",
+      "axe_version": "4.12.1",
+      "violations": 0,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "nodes": 34
+        }
+      ]
+    }
+  ]
+}

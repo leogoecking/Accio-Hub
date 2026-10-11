@@ -1,0 +1,16 @@
+PASS Arraste real do Dock e widgets, tamanho e persistência
+PASS Todos os fundos e foco após reordenação por teclado
+PASS Busca dark: Meta K, região, Tab e fechamento pelo fundo
+PASS Configurações dark 320px
+PASS Configurações dark 390px
+PASS Configurações dark 768px
+PASS Configurações dark 1440px
+PASS Configurações dark 1920px
+PASS Busca light: Meta K, região, Tab e fechamento pelo fundo
+PASS Configurações light 320px
+PASS Configurações light 390px
+PASS Configurações light 768px
+PASS Configurações light 1440px
+PASS Configurações light 1920px
+PASS Login preserva tema claro depois do logout
+15 cenários adicionais PASS

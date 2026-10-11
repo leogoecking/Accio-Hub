@@ -1,0 +1,117 @@
+{
+  "axeVersion": "4.12.1",
+  "counts": {
+    "inapplicable": 67,
+    "incomplete": 1,
+    "passes": 21,
+    "violations": 0
+  },
+  "incomplete": [
+    {
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axeAPI",
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodeCount": 18,
+      "nodes": [
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<input id=\"command-search\" aria-label=\"Buscar aplicativos\" autocomplete=\"off\" placeholder=\"Buscar aplicativos...\" data-action=\"input-&gt;studio#search keydown-&gt;studio#searchKeys\">",
+          "target": [
+            "#command-search"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<span>ESC</span>",
+          "target": [
+            ".search-field > span"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<span>Tarefas<small>Aplicativo · Demonstração P1.1</small></span>",
+          "target": [
+            "a[data-search-result=\"Tarefas\"] > span"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<small>Aplicativo · Demonstração P1.1</small>",
+          "target": [
+            "a[data-search-result=\"Tarefas\"] > span > small"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<span>Agenda<small>Aplicativo · Demonstração P1.1</small></span>",
+          "target": [
+            "a[data-search-result=\"Agenda\"] > span"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<small>Aplicativo · Demonstração P1.1</small>",
+          "target": [
+            "a[data-search-result=\"Agenda\"] > span > small"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<span>Foco<small>Aplicativo · Demonstração P1.1</small></span>",
+          "target": [
+            "a[data-search-result=\"Foco\"] > span"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<small>Aplicativo · Demonstração P1.1</small>",
+          "target": [
+            "a[data-search-result=\"Foco\"] > span > small"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<span>Projetos<small>Aplicativo · Demonstração P1.1</small></span>",
+          "target": [
+            "a[data-search-result=\"Projetos\"] > span"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<small>Aplicativo · Demonstração P1.1</small>",
+          "target": [
+            "a[data-search-result=\"Projetos\"] > span > small"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ]
+    }
+  ],
+  "lifecycle": {
+    "effectiveLaunch": {
+      "browserLaunched": true,
+      "engine": "chrome",
+      "launchHash": 16228916338243422000
+    },
+    "launched": false,
+    "relaunchedBrowser": false,
+    "restartedBackground": false,
+    "restoreStatus": "not_configured",
+    "reused": true,
+    "saveStatus": "not_attempted"
+  },
+  "url": "http://127.0.0.1:3111/",
+  "violations": []
+}

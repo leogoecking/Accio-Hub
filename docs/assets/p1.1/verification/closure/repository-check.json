@@ -1,0 +1,45 @@
+{
+  "branch": "p1-foundation",
+  "head_before_closure": "8d56c0646d0890c665b3759bdea382d3835ad97c",
+  "p0_4_tag_object": "3432fefde4f3263066b5e27a810e11bcccd7fb15",
+  "p0_4_tag_commit": "0d8bd98621cea42424373214ea5b5dc2b7faca85",
+  "p0_4_tag_integrity": "PASS",
+  "prototype_unchanged": "PASS",
+  "diff_check": "PASS",
+  "cached_diff_check": "PASS",
+  "reviewed_files_before_this_evidence": 246,
+  "secret_scan_patterns": [
+    "private_key",
+    "provider_token",
+    "bcrypt_digest",
+    "credential_in_url",
+    "password_json_value"
+  ],
+  "secret_scan_findings": [],
+  "runtime_and_installed_dependencies_in_index": [],
+  "ignore_rules_for_runtime_and_credentials": "PASS",
+  "bundle_check": "PASS",
+  "bundle_path": "vendor/bundle (ignored)",
+  "installations_in_closure": "none",
+  "rails_tests": {
+    "runs": 23,
+    "assertions": 224,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "database": "tmp/p11-admin-reset-tests.sqlite3 (isolated synthetic)"
+  },
+  "firefox_validation": {
+    "source": "user confirmation in closure authorization",
+    "kind": "manual",
+    "automated_run": false,
+    "browser_version_or_detailed_matrix_provided": false
+  },
+  "whitespace_only_normalization": [
+    "rails/app/assets/fonts/dmsans-OFL.txt",
+    "rails/app/assets/fonts/jetbrainsmono-OFL.txt",
+    "rails/app/assets/fonts/spacegrotesk-OFL.txt",
+    "docs/assets/p1.1/verification/brakeman.log",
+    "docs/assets/p1.1/verification/post-audit-password-reset/brakeman.log"
+  ]
+}

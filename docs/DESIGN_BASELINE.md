@@ -74,25 +74,19 @@ Suas regras funcionais futuras permanecem em [PRODUCT.md](PRODUCT.md), §4.7.
 
 ## Fase atual
 
-P0.4 — Projetos e Conhecimento.
+P0.4 encerrada e homologada, tag anotada `p0.4-approved`. A referência de
+identidade permanece P0.3, commit `0018bb4`; a referência completa incorpora
+as correções de acessibilidade e o Pomodoro adaptativo aprovados na P0.4,
+incluindo validação visual manual no Firefox.
 
-A identidade da P0.3 deve ser preservada enquanto
-as novas telas são desenvolvidas.
+P1.0 arquitetural aprovada; P1.1 encerrada e homologada em 2026-10-11,
+tag anotada `p1.1-approved`. O usuário confirmou validação manual no Firefox
+da aplicação Rails; evidência informada, separada da automação Chromium.
+Reproduzir o shell em `rails/`, preservando classes, geometria, tokens,
+responsividade, fontes, temas e backgrounds. O CSS aprovado será preservado,
+sem conversão para Tailwind. `prototype/` continua intacto como referência.
 
-Projetos e Conhecimento evoluirão com componentes existentes, dados no
-localStorage, IDs estáveis e migrações compatíveis. Rails, APIs externas e
-Vault com arquivos reais estão fora desta fase.
-
-A Etapa 1 documental foi aprovada e registrada no commit `1d83387`.
-A Etapa 2 foi aprovada e registrada em `cd3589d`. A Etapa 3 foi homologada
-nos commits `6c7a719` e `c759e61`, após auditoria independente.
-A Etapa 4 foi aprovada e registrada em `e88d772`.
-A Etapa 5 — Accio Knowledge foi homologada após auditoria independente.
-As quatro abas reutilizam tokens, superfícies e grade do Studio; shell e board
-permanecem a referência P0.3. A composição de widgets do projeto é independente
-do board e prepara personalização futura, sem um editor de widgets nesta etapa.
-A biblioteca expressiva, os painéis recolhíveis e a escrita central usam os mesmos
-tokens, fundos, superfícies e fontes. Nenhuma alteração na identidade aprovada.
-O BUG-01 padroniza o fechamento dos diálogos com o X compacto de Projetos.
-O registro da Etapa 5 em commit foi autorizado. A Etapa 6 depende de nova aprovação,
-conforme [ROADMAP.md](ROADMAP.md).
+Os módulos de produto da fundação são demonstrativos de leitura; autenticação,
+navegação e personalização fundamental devem funcionar. Nenhum redesenho ou
+mudança de identidade foi autorizado. Verificação e diferenças em
+[P1.1_FOUNDATION_VERIFICATION.md](P1.1_FOUNDATION_VERIFICATION.md).

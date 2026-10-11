@@ -1,9 +1,33 @@
 # Accio Hub — Arquitetura (ARCHITECTURE)
 
 > **Versão:** 0.3 (protótipo atual e arquitetura definitiva planejada)<br>
-> **Data-base:** 2026-10-10<br>
-> **Estado:** P0.4, Etapa 5; arquitetura Rails/Vault futura, com contratos sujeitos a spikes<br>
+> **Data-base:** 2026-10-11<br>
+> **Estado:** P0.4 homologada; P1.0 aprovada; P1.1 encerrada e homologada; P1.2 não iniciada<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ROADMAP.md](ROADMAP.md)
+
+## Fundação homologada — P1.1
+
+O [plano arquitetural P1.0](P1.0_ARCHITECTURE_PLAN.md) foi aprovado em 2026-10-11.
+Ele rege a evolução incremental P1.1–P1.5 e prevalece sobre os desenhos futuros
+das seções seguintes quando houver divergência de etapa ou tecnologia.
+
+A fundação está em `rails/`: Rails 8.1.3.1, Ruby 3.3.6, SQLite, ERB,
+Turbo Drive, Stimulus, Importmap e Propshaft. O CSS homologado é preservado;
+Tailwind e Solid Queue não são adicionados nesta etapa. Fontes são locais.
+
+Somente `User` e `AuthSession` persistem no SQLite. A conta única é criada
+localmente, sem cadastro público; segredo e bancos são ignorados pelo Git.
+O launcher/Puma usam loopback, com middleware que também rejeita pares remotos.
+`bin/rails admin:reset` permite recuperação local interativa, sem endpoint HTTP,
+com validações de senha e revogação transacional das sessões.
+`Studio` normaliza preferências limitadas em cookie criptografado e compõe
+fixtures estáticas de leitura. Não há importação de localStorage, modelos de
+produto, timer funcional ou Vault. Personalização transacional será P1.2.
+
+O protótipo em `prototype/` permanece intacto. Interfaces e comportamentos de
+produto ainda não transportados são explicitamente demonstrativos. Estrutura,
+execução e limites em [../rails/README.md](../rails/README.md); evidências em
+[P1.1_FOUNDATION_VERIFICATION.md](P1.1_FOUNDATION_VERIFICATION.md).
 
 ## 0. Arquitetura atual do protótipo e limites da P0.4
 
@@ -86,7 +110,7 @@ Duplicações de nome equivalente são rejeitadas nas operações, inclusive ent
 arquivados; registros legados não são mesclados ou eliminados automaticamente.
 A ordenação recente registra mudanças do projeto e das tarefas/notas vinculadas,
 sem alterar a ordem persistida da coleção. Favoritar não inventa atividade.
-Não avançar para a Etapa 6 sem nova aprovação.
+A Etapa 6 e as correções finais foram homologadas; histórico preservado em [P0.4_FINAL_VERIFICATION.md](P0.4_FINAL_VERIFICATION.md).
 
 **Espaço interno:** rotas `#/projects/<ID codificado>/<aba>`, com retorno à
 Biblioteca e estado de projeto inexistente. Arquivados são consultáveis; criação
@@ -134,7 +158,7 @@ um subconjunto de Markdown; não promete paridade completa com CommonMark.
 
 ## 1. Direção arquitetural
 
-**Forma de entrega definitiva planejada:** aplicação web local em **Ruby on Rails 8 + Hotwire + Tailwind CSS**, com manifest/PWA e interface desktop-first responsiva, preservando Dock + Widgets. O servidor rodará no Ubuntu; numa etapa posterior poderá ser exposto apenas aos dispositivos autorizados por Tailscale, com autenticação da aplicação. Iniciar P1 exige aprovação do protótipo navegável e autorização específica; a aprovação visual da P0.3 não basta.
+**Forma de entrega definitiva planejada:** aplicação web local em **Ruby on Rails 8 + Hotwire + CSS homologado preservado**, com manifest/PWA e interface desktop-first responsiva, preservando Dock + Widgets. O servidor rodará no Ubuntu; numa etapa posterior poderá ser exposto apenas aos dispositivos autorizados por Tailscale, com autenticação da aplicação. Iniciar P1 exige aprovação do protótipo navegável e autorização específica; a aprovação visual da P0.3 não basta.
 
 **Persistência mista deliberada:**
 - **SQLite:** entidades transacionais (tarefas, projetos, eventos, blocos de tempo, sessões de foco, preferências e relacionamentos). Pode haver bancos SQLite separados para fila/cache conforme configuração Rails.
@@ -257,10 +281,11 @@ As tabelas abaixo são conceituais; nomes finais e migrations serão estabilizad
 
 ## 4. Vault Markdown: contrato v0.1
 
-Este contrato pertence à implementação definitiva, principalmente P3. As notas
-da P0.4 permanecem no localStorage; IDs e relações prepararão uma futura migração
-para o Vault, cujo fluxo de exportação/importação ainda precisará ser definido
-e testado. Não confundir organização visual em pastas com escrita no disco.
+Este contrato descreve a implementação futura do Vault. A P1.0 aprovada define
+sua entrega básica na P1.3 e a migração na P1.4, com contratos detalhados no plano.
+As notas da P0.4 permanecem no localStorage até exportação/importação autorizadas.
+A P1.1 não escreve notas no disco. Recursos avançados deste desenho continuam
+fora da fundação; organização visual em pastas não equivale a escrita no disco.
 
 ### 4.1 Fonte de verdade
 

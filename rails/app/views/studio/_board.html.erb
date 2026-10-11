@@ -1,0 +1,14 @@
+<div class="board">
+  <div class="board-titleline"><div><div class="eyebrow"><span class="tiny-light"></span> BOARD 01 <span class="eyebrow-sep">/</span> INÍCIO</div><h1>Seu espaço<span class="title-stop">.</span></h1><p>Organização, informação e um pouco de inspiração.</p></div><div class="board-clock"><span data-now-time></span><small data-now-date></small></div></div>
+  <div class="board-toolbar"><span class="board-count"><b>3</b> pendentes no radar <span class="separator">/</span> <b>4</b> projetos</span><div class="toolbar-actions"><span class="demo-chip">P1.1 · DADOS DEMONSTRATIVOS</span><button class="button tertiary" data-open="customize"><%= studio_icon("sliders", 17) %> Aparência</button><button class="button" data-edit aria-pressed="false"><%= studio_icon("move", 17) %><span data-edit-label>Organizar board</span></button></div></div>
+  <nav class="dock-box" aria-label="Dock de aplicativos"><div class="section-label"><span>APLICATIVOS</span><span>SEUS ATALHOS</span></div><div class="app-dock">
+    <% @appearance["dockOrder"].each do |id| %><% key, label, icon, tint = Studio::DOCK.find { |d| d.first == id } %>
+      <%= link_to studio_path(key), class: "dock-tile", data: {dock: key}, hidden: @appearance["dockHidden"].include?(key), title: "Abrir #{label}", draggable: false do %><span class="dock-icon tint-<%= tint %>"><%= studio_icon(icon, 23) %></span><span><%= label %></span><% end %>
+    <% end %>
+  </div></nav>
+  <div class="widgets-title"><div><div class="section-label-alone">WIDGETS <span class="line"></span></div><h2>Seu painel <span>em tempo real, quando conectado</span></h2></div><button class="secondary-link" data-open="customize"><%= studio_icon("plus", 16) %> Adicionar widget</button></div>
+  <div class="widget-grid" id="widget-grid">
+    <% @appearance["widgets"].each do |placement| %><%= render "widget", placement: placement %><% end %>
+  </div>
+  <div class="board-foot">ACCIO HUB / STUDIO <span>·</span> Tudo aqui é seu para organizar.</div>
+</div>

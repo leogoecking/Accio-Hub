@@ -1,0 +1,36 @@
+<div class="shell" data-page="<%= @page %>" data-controller="studio" data-studio-appearance-value="<%= @appearance.to_json %>" data-studio-defaults-value="<%= Studio.defaults.to_json %>" data-action="click->studio#click change->studio#change dragstart->studio#dragStart dragover->studio#dragOver drop->studio#drop dragend->studio#dragEnd">
+  <a class="skip-link" href="#main-content">Ir para o conteúdo</a>
+  <aside class="rail" aria-label="Barra de aplicativos">
+    <%= link_to root_path, class: "brand-glyph", aria: {label: "Accio Hub — Início"} do %>a<span class="brand-dot"></span><% end %>
+    <div class="rail-divider"></div>
+    <nav class="rail-icons" aria-label="Navegação principal">
+      <% Studio::NAV.each do |id, label, icon| %>
+        <%= link_to studio_path(id), class: "rail-icon #{'active' if @page == id}", title: label, aria: {label: label, current: (@page == id ? "page" : nil)} do %><%= studio_icon(icon, 20) %><span><%= label %></span><% end %>
+      <% end %>
+    </nav>
+    <div class="rail-bottom">
+      <%= link_to app_path("settings"), class: "rail-icon #{'active' if @page == 'settings'}", title: "Configurações", aria: {label: "Configurações", current: (@page == "settings" ? "page" : nil)} do %><%= studio_icon("settings", 20) %><% end %>
+      <%= button_to session_path, method: :delete, class: "rail-avatar", title: "Sair da conta local", aria: {label: "Sair da conta local"} do %>A<% end %>
+    </div>
+  </aside>
+  <div class="workspace">
+    <header class="headbar">
+      <div class="head-left"><span class="wordmark">accio<span>hub</span></span><span class="head-path"><%= studio_icon("chevron", 13) %><%= Studio::LABELS[@page] %></span></div>
+      <%= link_to "accio", root_path, class: "mobile-brand", aria: {label: "Accio Hub — Início"} %>
+      <div class="head-right">
+        <button class="command-button" data-open="search" aria-label="Buscar aplicativos"><%= studio_icon("search", 16) %><span>Buscar no seu espaço</span><kbd>⌘ K</kbd></button>
+        <span class="header-divider"></span><span class="live-rail-dot" aria-hidden="true"></span><span class="mini-time" data-now-time></span>
+        <button class="head-icon" data-demo="capture" aria-label="Captura rápida demonstrativa" title="Capturar ideia · Ctrl/⌘ Shift N"><%= studio_icon("plus", 20) %></button>
+        <button class="head-icon" data-open="customize" aria-label="Personalizar seu espaço" title="Personalizar"><%= studio_icon("sliders", 20) %></button>
+      </div>
+    </header>
+    <%= render "music" %>
+    <main class="viewport" id="main-content" tabindex="-1">
+      <% if @page == "home" %><%= render "board" %><% elsif @page == "settings" %>
+        <div class="inner-page settings-page"><div class="subhead"><div class="eyebrow">ACCIO HUB / SEU ESPAÇO</div><h1>Personalização<span class="title-stop">.</span></h1></div><div class="inner-block"><%= render "settings", prefix: "page", level: 2 %></div></div>
+      <% else %><%= render "module" %><% end %>
+    </main>
+  </div>
+  <%= render "dialogs" %>
+  <div class="foundation-notice" role="status" aria-live="polite" hidden data-save-status><span data-save-message></span><button class="mini-control" data-retry aria-label="Tentar salvar preferências novamente">↻</button></div>
+</div>

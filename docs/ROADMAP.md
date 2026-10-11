@@ -1,8 +1,8 @@
 # Accio Hub — Roadmap de implementação (ROADMAP)
 
 > **Versão:** 0.4 (encerramento da P0.4 e backlog futuro)<br>
-> **Data-base:** 2026-10-10<br>
-> **Estado:** P0.3 aprovada visualmente; P0.4 homologada, Etapas 1–6 concluídas; P1–P10 não iniciadas<br>
+> **Data-base:** 2026-10-11<br>
+> **Estado:** P0.3 aprovada visualmente; P0.4 homologada, Etapas 1–6 concluídas; P1.0 aprovada e P1.1 homologada; demais etapas não iniciadas<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ARCHITECTURE.md](ARCHITECTURE.md)
 
 ## 1. Objetivo do roadmap
@@ -99,26 +99,36 @@ da P0.3 permanece distinta da revisão desta implementação.
   `agent-browser`, quando disponível, valida interface e responsividade.
   Sintaxe válida não comprova funcionamento nem aprovação visual.
 
-### P1 — Fundação e aplicação local
+### P1 — Fundação Rails e migração incremental
 
-**Meta:** aplicação Rails funcional com armazenamento persistente e navegação estável.
+O [plano P1.0](P1.0_ARCHITECTURE_PLAN.md) foi aprovado em 2026-10-11 e passa a reger
+esta fase. Preservar o CSS homologado; Tailwind adiado. Vault básico e migração
+passam a integrar P1.3/P1.4. Os módulos e ampliações das fases posteriores
+continuam no backlog, sem autorização implícita.
 
-**Entregáveis**
-- Reutilizar o checkout existente `Accio-HUB`, com README operacional, .gitignore e padrões de commits; confirmar configuração privada do remoto antes de publicar código.
-- Rails 8 + Hotwire + Tailwind + SQLite + Active Job/Solid Queue configurados e validados.
-- Autenticação pessoal, sessão segura, setup inicial e layouts responsivos.
-- Preservar docks, fontes, tema, cor, fundos, ordem/visibilidade/tamanho dos widgets e atalhos com persistência; acrescentar densidade e recolhimento da navegação conforme PRODUCT.
-- Navegação e telas vazias **honestas** para recursos ainda não implementados.
-- Testes básicos, lint/CI inicial e documentação de execução no Ubuntu.
+| Etapa | Entrega | Estado |
+|---|---|---|
+| P1.1 — Fundação Rails | Autenticação local e recuperação de senha por CLI, shell ERB/Turbo, temas, fundos, fontes, Dock, widgets e Music demonstrativo; personalização fundamental | Encerrada e homologada; tag anotada `p1.1-approved` |
+| P1.2 — SQLite | Modelos transacionais de projetos, tarefas, referências, preferências e foco global | Não iniciada; exige autorização |
+| P1.3 — Vault Markdown | Arquivos reais, índice reconstruível, escrita segura, conflitos e recuperação | Não iniciada; exige autorização |
+| P1.4 — Migração | Exportação/importação versionada, simulação, relatório e recuperação | Não iniciada; exige autorização |
+| P1.5 — Verificação final | Equivalência, segurança, visual e restauração | Não iniciada; exige autorização |
 
-**Aceitação**
-- [ ] Reiniciar o processo não perde preferências/dados.
-- [ ] Rotas protegidas não exibem conteúdo sem autenticação.
-- [ ] A aplicação inicia em loopback sem expor portas à LAN/internet.
-- [ ] Componentes comuns respondem corretamente a Turbo navigation.
-- [ ] Testes e verificação de qualidade executáveis por um comando documentado.
+Objetivos, dependências, riscos, testes e critérios de avanço detalhados no plano.
+A P1.1 utiliza apenas modelos de autenticação e fixtures sintéticas de leitura.
+As preferências fundamentais são um cookie criptografado deste navegador,
+sem modelo de produto ou acesso ao localStorage do protótipo. Persistência
+transacional de preferências será tratada na P1.2.
 
-**Spike obrigatório:** confirmar compatibilidade Rails 8, SQLite, Solid Queue e persistência dos volumes.
+**Aceitação da P1.1:** rotas protegidas, ausência de cadastro público, servidor
+loopback, navegação Turbo, personalização por teclado, foco e responsividade
+nos cinco tamanhos aprovados. Comparação com P0.4 e limites registrados em
+[P1.1_FOUNDATION_VERIFICATION.md](P1.1_FOUNDATION_VERIFICATION.md).
+
+Auditoria independente do Antigravity aprovada e validação manual no Firefox
+confirmada pelo usuário no encerramento. Limpeza de sessões expiradas fica para
+P1.2; suporte IPv4-mapped IPv6 será avaliado quando houver necessidade de dual-stack.
+Essas melhorias não foram implementadas e P1.2 depende de nova autorização.
 
 ### P2 — Projetos, Entrada e Tarefas
 
@@ -402,8 +412,8 @@ Não é necessário rodar `agent-browser` em **todo commit**; priorizar mudança
 - [x] Concluir e validar Projetos/Conhecimento e os critérios do protótipo P0.4, conforme verificação final e homologação do usuário.
 - [ ] Confirmar configuração privada do remoto e preparar README operacional para Rails em P1.
 - [ ] Registrar questões abertas e resultados de prototipagem.
-- [ ] Realizar spike Rails 8 + Hotwire + SQLite + Solid Queue quando autorizada a transição para P1.
-- [ ] Iniciar P1 apenas após aprovação do protótipo navegável e autorização específica.
+- [x] Compatibilidade Rails 8 + Hotwire + adapter SQLite/FTS5 conferida na P1.1. Solid Queue adiado até necessidade de indexação.
+- [x] P1.0 aprovada e P1.1 autorizada explicitamente em 2026-10-11.
 
 ## 8. Próximo passo imediato
 
@@ -414,7 +424,7 @@ manual no Firefox informada pelo usuário. O relatório
 evidências, limites e pendências futuras. O commit final é identificado pela
 tag anotada `p0.4-approved`.
 
-Aguardar autorização específica antes de iniciar P1. A personalização avançada
-do Pomodoro permanece exclusivamente no backlog futuro de P10.
+Revisar a entrega da P1.1; não iniciar P1.2 nem criar commit sem aprovação.
+A personalização avançada do Pomodoro permanece no backlog futuro de P10.
 
 As próximas entregas serão comparadas com a P0.3 no monitor de 27” e em tela móvel. Banco de dados, Vault real e integrações seguem nas fases definitivas, após autorização. O bootstrap de recuperação do Ubuntu foi **explicitamente adiado** e não faz parte do roadmap do Accio Hub.
