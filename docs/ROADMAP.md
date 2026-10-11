@@ -1,8 +1,8 @@
 # Accio Hub — Roadmap de implementação (ROADMAP)
 
-> **Versão:** 0.3 (alinhamento documental da P0.4)<br>
+> **Versão:** 0.4 (encerramento da P0.4 e backlog futuro)<br>
 > **Data-base:** 2026-10-10<br>
-> **Estado:** P0.3 aprovada visualmente; P0.4 em andamento, Etapa 5 homologada; Etapa 6 não iniciada; P1–P10 não iniciadas<br>
+> **Estado:** P0.3 aprovada visualmente; P0.4 homologada, Etapas 1–6 concluídas; P1–P10 não iniciadas<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ARCHITECTURE.md](ARCHITECTURE.md)
 
 ## 1. Objetivo do roadmap
@@ -72,12 +72,16 @@ Evitar refatorações grandes sem necessidade.
 | 2 — Preparação do estado | IDs estáveis para projetos/tarefas/notas, relações e persistência versionada compatível; separação mínima de responsabilidades | Aprovada, commit `cd3589d` |
 | 3 — Biblioteca de Projetos | Grade, busca, filtros, favoritos, ordenação, criação/edição com ícone/cor e arquivamento reversível | Homologada após auditoria; commits `6c7a719` e `c759e61` |
 | 4 — Espaço do projeto | Visão Geral com widgets, Tarefas, Conhecimento e Referências contextualizados | Aprovada, commit `e88d772`; evidências em P0.4_PROJECT_SPACE_VERIFICATION.md |
-| 5 — Conhecimento | Biblioteca/pastas simuladas, propriedades, busca, Markdown, prévia/leitura e vínculos | Homologada após auditoria e correção do BUG-01; registro em commit autorizado; evidências em P0.4_KNOWLEDGE_VERIFICATION.md |
-| 6 — Verificação e fechamento | Testes de dados/relações e fluxos; comparação visual desktop/mobile com P0.3 | Planejada, não iniciada |
+| 5 — Conhecimento | Biblioteca/pastas simuladas, propriedades, busca, Markdown, prévia/leitura e vínculos | Homologada após auditoria e correção do BUG-01; commit `8d79186`; evidências em P0.4_KNOWLEDGE_VERIFICATION.md |
+| 6 — Verificação e fechamento | Testes de dados/relações e fluxos; comparação visual desktop/mobile com P0.3 | Concluída e homologada, após correções F01–F08 e ajuste visual do Pomodoro; evidências em [P0.4_FINAL_VERIFICATION.md](P0.4_FINAL_VERIFICATION.md) |
 
-Planejamento e Tempo poderão indicar “em preparação”, sem implementar calendário
-ou contabilização funcional nesta revisão. A Etapa 5 foi homologada e seu registro
-em commit autorizado. Não avançar à Etapa 6 sem nova aprovação.
+Planejamento e Tempo permanecem “em preparação”, sem calendário completo ou
+contabilização funcional nesta revisão. A P0.4 foi homologada pelo usuário,
+incluindo aprovação visual no Firefox do Pomodoro adaptativo. As limitações e
+observações da verificação final permanecem registradas; a homologação não
+declara conformidade global de acessibilidade ou validação de fluxos Firefox
+que não foram exercitados pelo agente. Marco de encerramento: tag anotada
+`p0.4-approved` no commit final. P1 depende de autorização específica.
 
 Modelo, migração, resultados e limitações da Etapa 2 estão registrados em
 [P0.4_STATE_VERIFICATION.md](P0.4_STATE_VERIFICATION.md). A aprovação visual
@@ -285,10 +289,37 @@ da P0.3 permanece distinta da revisão desta implementação.
 - Recursos offline em clientes remotos com sincronização e resolução de conflitos.
 - Mais templates, Kanban, métricas e notificações externas.
 
+#### Personalização avançada do Pomodoro — módulo futuro
+
+**Situação:** backlog futuro, sem implementação e fora do escopo concluído da
+P0.4. A adaptação visual ao tema já homologada não constitui este módulo.
+Detalhamento, priorização e implementação dependem de autorização posterior;
+este registro não inicia P1 ou qualquer outra fase.
+
+- **Duração configurável:** tempos personalizados de foco, pausas curtas e
+  longas, além das opções predefinidas.
+- **Ciclos:** configuração da sequência de foco/pausas, quantidade de sessões
+  e intervalo até a pausa longa.
+- **Notificações:** avisos visuais e sonoros opcionais para transições e fim de
+  sessão, respeitando preferências e permissões do navegador.
+- **Temas do temporizador:** aparência personalizável, preservando o formato
+  circular, acessibilidade e consistência com os temas do Hub.
+- **Perfis de foco:** conjuntos reutilizáveis de duração, ciclos, aparência e
+  preferências, por exemplo para estudos ou desenvolvimento.
+- **Integração com Accio Music:** iniciar, pausar, atenuar ou retomar o player
+  global durante sessões, mediante configuração opcional.
+- **Estatísticas:** histórico, totais e evolução de sessões por perfil,
+  tarefa/projeto, considerando apenas tempo confirmado.
+
+O módulo reutilizará o Pomodoro global, sem temporizadores independentes por
+projeto. Depende do núcleo de sessões planejado em P4 e do player funcional
+planejado em P5; não altera os entregáveis já aprovados da P0.4 nem promete
+uma data de release.
+
 ## 3. Dependências críticas e ordem recomendada
 
 ```text
-P0 Protótipo (P0.3 visual aprovada → P0.4 em evolução)
+P0 Protótipo (P0.3 visual aprovada → P0.4 homologada)
   │
   ▼
 P1 Fundação Rails
@@ -368,7 +399,7 @@ Não é necessário rodar `agent-browser` em **todo commit**; priorizar mudança
 - [x] Sistema visual Dock + Widgets aprovado na P0.3.
 - [x] Protótipo navegável P0.3 existente; guia de execução em `prototype/README.md`.
 - [x] Revisar o alinhamento documental da P0.4 e autorizar Etapa 2.
-- [ ] Concluir e validar Projetos/Conhecimento e os demais critérios de P0.
+- [x] Concluir e validar Projetos/Conhecimento e os critérios do protótipo P0.4, conforme verificação final e homologação do usuário.
 - [ ] Confirmar configuração privada do remoto e preparar README operacional para Rails em P1.
 - [ ] Registrar questões abertas e resultados de prototipagem.
 - [ ] Realizar spike Rails 8 + Hotwire + SQLite + Solid Queue quando autorizada a transição para P1.
@@ -376,10 +407,14 @@ Não é necessário rodar `agent-browser` em **todo commit**; priorizar mudança
 
 ## 8. Próximo passo imediato
 
-**Etapa 5 da P0.4 — Biblioteca e Editor de Conhecimento homologada.**
-Etapa 4 aprovada e commitada em `e88d772`. Registro da Etapa 5 em commit autorizado
-após auditoria e correção do BUG-01, conforme
-[P0.4_KNOWLEDGE_VERIFICATION.md](P0.4_KNOWLEDGE_VERIFICATION.md).
-Não iniciar a Etapa 6 sem aprovação.
+**P0.4 encerrada e homologada.** Etapas 1–6 aprovadas; Etapa 5 registrada em
+`8d79186`; correções finais e Pomodoro adaptativo aprovados, com validação visual
+manual no Firefox informada pelo usuário. O relatório
+[P0.4_FINAL_VERIFICATION.md](P0.4_FINAL_VERIFICATION.md) conserva testes,
+evidências, limites e pendências futuras. O commit final é identificado pela
+tag anotada `p0.4-approved`.
+
+Aguardar autorização específica antes de iniciar P1. A personalização avançada
+do Pomodoro permanece exclusivamente no backlog futuro de P10.
 
 As próximas entregas serão comparadas com a P0.3 no monitor de 27” e em tela móvel. Banco de dados, Vault real e integrações seguem nas fases definitivas, após autorização. O bootstrap de recuperação do Ubuntu foi **explicitamente adiado** e não faz parte do roadmap do Accio Hub.

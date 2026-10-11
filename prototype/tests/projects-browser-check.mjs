@@ -54,10 +54,7 @@ const focus=()=>evaluate('document.activeElement?.id||document.activeElement?.da
 function auditDialog(name){
   const audit=browser('a11y','--selector','.project-dialog');
   writeFileSync(resolve(evidence,`post-audit-axe-${name}.json`),JSON.stringify(audit,null,2));
-  // Contraste do eyebrow no tema claro é um achado anterior, fora das ISSUE-01/02.
-  // Salvar a varredura completa e rejeitar qualquer outra violação.
-  const unexpected=audit.violations.filter(v=>!(v.id==='color-contrast'&&v.nodes.every(n=>n.target.join()==='.block-top > div > .eyebrow')));
-  assert.deepEqual(unexpected,[],JSON.stringify(unexpected));
+  assert.deepEqual(audit.violations,[],JSON.stringify(audit.violations));
 }
 try{
   browser('--init-script',init,'open',new URL('/prototype/',origin).href);browser('set','viewport','1440','1000');
