@@ -1,0 +1,42 @@
+<div class="shell" data-page="<%= @page %>" data-controller="studio" data-studio-appearance-value="<%= @appearance.to_json %>" data-studio-version-value="<%= @preference_version %>" data-studio-bootstrap-value="<%= @bootstrap %>" data-studio-defaults-value="<%= Studio.defaults.to_json %>" data-action="click->studio#click change->studio#change dragstart->studio#dragStart dragover->studio#dragOver drop->studio#drop dragend->studio#dragEnd">
+  <a class="skip-link" href="#main-content">Ir para o conteúdo</a>
+  <aside class="rail" aria-label="Barra de aplicativos">
+    <%= link_to root_path, class: "brand-glyph", aria: {label: "Accio Hub — Início"} do %>a<span class="brand-dot"></span><% end %>
+    <div class="rail-divider"></div>
+    <nav class="rail-icons" aria-label="Navegação principal">
+      <% Studio::NAV.each do |id, label, icon| %>
+        <%= link_to studio_path(id), class: "rail-icon #{'active' if @page == id}", title: label, aria: {label: label, current: (@page == id ? "page" : nil)} do %><%= studio_icon(icon, 20) %><span><%= label %></span><% end %>
+      <% end %>
+    </nav>
+    <div class="rail-bottom">
+      <%= link_to app_path("settings"), class: "rail-icon #{'active' if @page == 'settings'}", title: "Configurações", aria: {label: "Configurações", current: (@page == "settings" ? "page" : nil)} do %><%= studio_icon("settings", 20) %><% end %>
+      <%= button_to session_path, method: :delete, class: "rail-avatar", title: "Sair da conta local", aria: {label: "Sair da conta local"} do %>A<% end %>
+    </div>
+  </aside>
+  <div class="workspace">
+    <header class="headbar">
+      <div class="head-left"><span class="wordmark">accio<span>hub</span></span><span class="head-path"><%= studio_icon("chevron", 13) %><%= Studio::LABELS[@page] %></span></div>
+      <%= link_to "accio", root_path, class: "mobile-brand", aria: {label: "Accio Hub — Início"} %>
+      <div class="head-right">
+        <button class="command-button" data-open="search" aria-label="Buscar aplicativos"><%= studio_icon("search", 16) %><span>Buscar no seu espaço</span><kbd>⌘ K</kbd></button>
+        <span class="header-divider"></span><span class="live-rail-dot" aria-hidden="true"></span><span class="mini-time" data-now-time></span>
+        <button class="head-icon" data-demo="capture" aria-label="Captura rápida demonstrativa" title="Capturar ideia · Ctrl/⌘ Shift N"><%= studio_icon("plus", 20) %></button>
+        <button class="head-icon" data-open="customize" aria-label="Personalizar seu espaço" title="Personalizar"><%= studio_icon("sliders", 20) %></button>
+      </div>
+    </header>
+    <%= render "studio/music" %>
+    <main class="viewport" id="main-content" tabindex="-1">
+      <%= yield %>
+    </main>
+  </div>
+  <%= render "studio/dialogs" %>
+  <turbo-frame id="project-modal" data-controller="project-modal" <% if @modal_src %>src="<%= @modal_src %>" data-return-url="<%= projects_path %>"<% end %>></turbo-frame>
+  <div class="foundation-notice" role="status" aria-live="polite" hidden data-save-status><span data-save-message></span><div class="preference-recovery-actions">
+    <button class="mini-control" data-retry aria-label="Tentar salvar preferências novamente" hidden>↻</button>
+    <button class="mini-control" data-recovery="export" hidden>Exportar recuperação</button>
+    <button class="mini-control" data-recovery="defaults" hidden>Usar padrão e preservar cópia</button>
+    <button class="mini-control" data-recovery="keep" hidden>Manter preferências do banco</button>
+    <button class="mini-control" data-recovery="apply" hidden>Reaplicar minha edição</button>
+    <button class="mini-control" data-recovery="remote" hidden>Usar versão salva e descartar edição local</button>
+  </div></div>
+</div>

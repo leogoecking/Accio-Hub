@@ -1,0 +1,7 @@
+<turbo-frame id="project-modal">
+  <dialog class="dialog project-dialog project-native-dialog" data-project-dialog data-controller="project-form" data-action="cancel->project-form#cancel close->project-form#afterClose keydown->project-form#keys" aria-labelledby="project-unavailable-title" aria-describedby="project-unavailable-message">
+    <div class="block-top"><h2 id="project-unavailable-title">Projeto indisponível para edição</h2><button type="button" class="project-close" data-action="project-form#close" aria-label="Fechar aviso do projeto"><%= studio_icon("x", 19) %></button></div>
+    <p id="project-unavailable-message" role="status"><%= @unavailable_message %></p>
+    <%= link_to "Voltar à Biblioteca", projects_path, class: "button tertiary", data: {turbo_frame: "_top"} %>
+  </dialog>
+</turbo-frame>

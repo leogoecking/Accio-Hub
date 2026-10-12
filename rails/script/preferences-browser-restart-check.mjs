@@ -22,11 +22,11 @@ if(process.argv[2]==="capture") {
  b("tab",second);click("[data-open=customize]");b("wait","#customize[open]");b("select","#drawer-theme",evaluate("document.documentElement.dataset.theme==='dark'?'light':'dark'"));b("wait","[data-recovery=apply]:not([hidden])");click("[data-recovery=apply]");b("wait","--fn","document.querySelector('[data-save-status]').hidden");
  assert.equal(evaluate("document.querySelector('#customize').contains(document.activeElement)"),true);b("press","Escape");assert.equal(evaluate("document.activeElement.dataset.open"),"customize");b("tab","close",first);
  b("reload");ready();writeFileSync(resolve(workspace,"before-restart.json"),JSON.stringify(state()));
- b("screenshot",resolve(root,"docs/assets/p1.2c/before-restart.png"));
+ b("screenshot",resolve(process.env.ACCIO_QA_EVIDENCE || resolve(root,"docs/assets/p1.2c"),"before-restart.png"));
  console.log("PASS recuperação mantém foco no diálogo e Escape retorna ao acionador; estado pré-reinício capturado");
 } else {
  b("reload");ready();assert.deepEqual(state(),JSON.parse(readFileSync(resolve(workspace,"before-restart.json"),"utf8")));
- b("screenshot",resolve(root,"docs/assets/p1.2c/after-restart.png"));
- writeFileSync(resolve(root,"docs/assets/p1.2c/browser-restart-results.json"),JSON.stringify({real_rails_server_restart:true,appearance_and_version_preserved:true,authenticated_session_preserved:true,recovery_focus_and_escape:true},null,2)+"\n");
+ b("screenshot",resolve(process.env.ACCIO_QA_EVIDENCE || resolve(root,"docs/assets/p1.2c"),"after-restart.png"));
+ writeFileSync(resolve(process.env.ACCIO_QA_EVIDENCE || resolve(root,"docs/assets/p1.2c"),"browser-restart-results.json"),JSON.stringify({real_rails_server_restart:true,appearance_and_version_preserved:true,authenticated_session_preserved:true,recovery_focus_and_escape:true},null,2)+"\n");
  b("close");console.log("PASS servidor Rails reiniciado conserva aparência, versão e sessão autenticada");
 }

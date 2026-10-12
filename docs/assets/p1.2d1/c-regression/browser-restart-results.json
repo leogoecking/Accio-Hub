@@ -1,0 +1,6 @@
+{
+  "real_rails_server_restart": true,
+  "appearance_and_version_preserved": true,
+  "authenticated_session_preserved": true,
+  "recovery_focus_and_escape": true
+}

@@ -2,7 +2,7 @@
 
 > **Versão:** 0.4 (encerramento da P0.4 e backlog futuro)<br>
 > **Data-base:** 2026-10-11<br>
-> **Estado:** P0.3 aprovada visualmente; P0.4 e P1.1 homologadas; P1.0/P1.2A aprovadas; P1.2B homologada; P1.2C aprovada tecnicamente; P1.2D somente em planejamento<br>
+> **Estado:** P0.3 aprovada visualmente; P0.4 e P1.1 homologadas; P1.0/P1.2A aprovadas; P1.2B homologada; P1.2C aprovada tecnicamente; planejamento P1.2D aprovado; D1 implementada em revisão<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ARCHITECTURE.md](ARCHITECTURE.md)
 
 ## 1. Objetivo do roadmap
@@ -431,7 +431,7 @@ manual no Firefox informada pelo usuário. O relatório
 evidências, limites e pendências futuras. O commit final é identificado pela
 tag anotada `p0.4-approved`.
 
-Registrar a [P1.2C aprovada](P1.2C_VERIFICATION.md) e planejar a P1.2D; implementação D depende de nova aprovação.
+P1.2C registrada em `a7f11ab`. [Planejamento D aprovado](P1.2D_PLAN.md) registrado em `7313e6e`; exclusivamente D1 autorizada. Revisar a [biblioteca persistente e espaço interno](P1.2D1_VERIFICATION.md) antes de autorizar D2.
 Firefox C e contraste permanecem pendentes; retenção/descarte de snapshots legados fica preferencialmente na P1.2F.
 A personalização avançada do Pomodoro permanece no backlog futuro de P10.
 

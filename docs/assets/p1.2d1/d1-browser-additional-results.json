@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Nome equivalente é rejeitado com todos os campos preservados",
+    "result": "PASS"
+  },
+  {
+    "name": "UID legado especial navega por URL e relações reais aparecem somente para consulta",
+    "result": "PASS"
+  },
+  {
+    "name": "Arquivamento e restauração preservam tarefas e referências visíveis",
+    "result": "PASS"
+  },
+  {
+    "name": "503 mantém edição e retentativa conserva cor herdada de projeto legado",
+    "result": "PASS"
+  },
+  {
+    "name": "Filtro confirmado preservado quando aparência obsoleta é reaplicada",
+    "result": "PASS"
+  },
+  {
+    "name": "Link de edição obsoleto após arquivamento abre aviso acessível com Escape e retorno",
+    "result": "PASS"
+  },
+  {
+    "name": "Foco de fallback fica visível quando um comando remove o card da seleção",
+    "result": "PASS"
+  },
+  {
+    "name": "Comparação visual P0.4 dark 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Comparação visual P0.4 dark 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Comparação visual P0.4 dark 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Comparação visual P0.4 dark 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Comparação visual P0.4 dark 1920px",
+    "result": "PASS"
+  },
+  {
+    "name": "Comparação visual P0.4 light 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Comparação visual P0.4 light 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Comparação visual P0.4 light 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Comparação visual P0.4 light 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Comparação visual P0.4 light 1920px",
+    "result": "PASS"
+  },
+  {
+    "name": "Endereços diretos de formulários mantêm shell, cancelamento e URL da biblioteca",
+    "result": "PASS"
+  },
+  {
+    "name": "Estado inexistente apresenta retorno acessível para a biblioteca",
+    "result": "PASS"
+  }
+]

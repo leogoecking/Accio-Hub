@@ -7,7 +7,7 @@ require "fileutils"
 require "timeout"
 
 root = File.expand_path("..", __dir__)
-evidence = File.expand_path("../../docs/assets/p1.2c", __dir__)
+evidence = ENV.fetch("ACCIO_QA_EVIDENCE", File.expand_path("../../docs/assets/p1.2c", __dir__))
 FileUtils.mkdir_p(evidence)
 results = {}
 Dir.mktmpdir("p12c-contract-", File.join(root, "tmp")) do |directory|

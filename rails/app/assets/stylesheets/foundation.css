@@ -4,3 +4,21 @@
 
 /* Recovery controls use the approved surfaces and stay within mobile viewports. */
 .foundation-notice{flex-wrap:wrap;max-height:45dvh;overflow:auto}.preference-recovery-actions{display:flex;flex-wrap:wrap;gap:8px}.preference-recovery-actions .mini-control{width:auto;height:auto;padding:8px;white-space:normal}.foundation-notice [data-save-message]{max-width:55ch}
+
+/* Native dialog and Rails form wrappers around the approved project fragments. */
+.project-native-dialog { position: fixed; inset: 0; margin: auto; display: block; color: var(--ink); }
+.project-native-dialog:not([open]) { display: none; }
+.project-native-dialog::backdrop { background: rgba(7, 11, 19, .66); backdrop-filter: blur(8px); }
+.project-command { display: inline-flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+.project-command [data-project-notice]:empty { display: none; }
+.project-command [data-project-notice] { max-width: 240px; }
+.project-conflict-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.project-native-dialog [data-project-remote] { overflow-wrap: anywhere; }
+.space-tabs a { padding: 10px 16px; border-radius: 9px; text-decoration: none; color: var(--muted); }
+.space-tabs a[aria-selected=true] { color: var(--ink); background: var(--panel2); }
+@media (max-width: 600px) { .project-search { flex-basis: 100%; } .project-controls { flex-wrap: wrap; } .space-tabs a { padding: 10px 8px; } }
+
+.project-card-top > .project-command { margin-left: auto; }
+.space-tabs a { white-space: nowrap; border: 1px solid transparent; }
+@media(max-width:800px) { .space-tabs a { flex: 1 1 calc(50% - 6px); text-align: center; } }
+a.project-control,a.mini-project { text-decoration: none; }

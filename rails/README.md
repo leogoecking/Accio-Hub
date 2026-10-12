@@ -3,8 +3,8 @@
 Fundação encerrada e homologada em 2026-10-11, tag anotada `p1.1-approved`.
 Auditoria independente aprovada, recuperação local de senha verificada e
 validação manual no Firefox confirmada pelo usuário.
-P1.2A/B/C aprovadas tecnicamente; B registrada em `ddf6715`. Commit C autorizado;
-P1.2D somente em planejamento. Firefox C, contraste e retenção dos snapshots
+P1.2A/B/C aprovadas tecnicamente; B registrada em `ddf6715`, C em `a7f11ab`. Planejamento D aprovado em `7313e6e`;
+exclusivamente D1 autorizada, implementada e em revisão sem commit. Firefox C, contraste e retenção dos snapshots
 legados (preferencialmente P1.2F) permanecem pendentes.
 Referência completa: P0.4 homologada; identidade Dock + Widgets: `0018bb4`.
 
@@ -78,12 +78,16 @@ Conflitos preservam edição local e oferecem reaplicação por campo ou descart
 explícito. Contenção e falhas oferecem retentativa. Alterações pendentes ficam na
 memória da aba, com aviso antes de sair; fechar/recarregar forçadamente pode perdê-las.
 
-Projetos, tarefas, notas, calendário, foco, Feed, backups e e-mails são fixtures
-sintéticas identificadas, de leitura. Controles de criação/foco/captura explicam
+A Biblioteca, os espaços e o widget de Projetos consultam registros reais do SQLite.
+Projetos podem ser criados, editados, favoritados, ativados/pausados e arquivados/restaurados.
+Arquivados são somente leitura; nenhum projeto é excluído fisicamente. Os filtros
+compartilham a versão do agregado de aparência. Tarefas/referências vinculadas são
+apenas consulta; Conhecimento indica a futura integração P1.3. Os módulos globais de
+tarefas, notas, calendário, foco, Feed, backups e e-mails continuam demonstrativos. Controles de criação/foco/captura explicam
 a demonstração. Não há timer funcional, áudio, Vault, APIs ou migração pessoal.
 Na P1.2B foram acrescentadas oito tabelas de domínio, ainda sem conexão com essas
-telas de produto. Na C, apenas as preferências foram conectadas ao SQLite. O contrato e a verificação estão em
-[P1.2A](../docs/P1.2A_SQLITE_PLAN.md) e [P1.2B](../docs/P1.2B_VERIFICATION.md) e [P1.2C](../docs/P1.2C_VERIFICATION.md).
+telas de produto. Na C, apenas as preferências foram conectadas ao SQLite. Na D1, projetos foram conectados com tokens assinados de intenção e versões de registro. O contrato e a verificação estão em
+[P1.2A](../docs/P1.2A_SQLITE_PLAN.md) e [P1.2B](../docs/P1.2B_VERIFICATION.md) e [P1.2C](../docs/P1.2C_VERIFICATION.md) e [P1.2D1](../docs/P1.2D1_VERIFICATION.md).
 Não executar `db:prepare` em instalação existente/pessoal para esta revisão;
 as verificações desta entrega usam somente bancos temporários sintéticos.
 
@@ -177,3 +181,22 @@ recebem a senha por stdin e salvam capturas/resultados sem credenciais em
 `docs/assets/p1.2c/`. O cenário de cookie inválido exige que `empty.sqlite3` ainda
 não tenha preferências; uma repetição completa requer novo setup e novos servidores.
 Encerrar os dois servidores ao terminar. Firefox não foi exercitado por esses scripts.
+
+## Verificação isolada da D1
+
+Em `rails/`, `ruby script/projects-check.rb` cria e remove um banco temporário,
+executa toda a suíte e verifica duas requisições concorrentes, contenção HTTP e
+reabertura. Não aponta para o banco de desenvolvimento padrão.
+
+`ruby script/projects-browser-setup.rb` prepara somente NOVOS bancos privados em
+`rails/tmp/p12d-browser-*` e guarda credenciais sintéticas em arquivo 0600 ignorado.
+`tmp/p12d-workspace` identifica o diretório dessa execução. Para os scripts de navegador,
+iniciar Rails em loopback/3124 usando `ACCIO_DATABASE_PATH` desse diretório, executar
+`node script/projects-browser-check.mjs`, preparar vínculos exclusivamente sintéticos
+com `ACCIO_QA_WORKSPACE` e `bin/rails runner script/projects-browser-seed.rb`, e executar
+`node script/projects-browser-additional-check.mjs`. A comparação adicional usa um
+servidor estático local/3112 para `prototype/`, sem modificar seu conteúdo.
+
+As credenciais são lidas por stdin para preencher o navegador; não copiá-las para
+argumentos, documentação ou Git. Nunca usar esses scripts sobre uma instalação pessoal.
+A entrega e seus limites estão em `docs/P1.2D1_VERIFICATION.md` na raiz do repositório.

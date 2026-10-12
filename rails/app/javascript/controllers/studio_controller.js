@@ -38,7 +38,7 @@ export default class extends Controller {
     window.removeEventListener("beforeunload", this.unloadHandler)
     document.removeEventListener("keydown", this.keyHandler)
     document.removeEventListener("turbo:before-visit", this.visitHandler)
-    this.element.querySelectorAll("dialog[open]").forEach(dialog => dialog.close())
+    this.element.querySelectorAll("dialog[open]:not([data-project-dialog])").forEach(dialog => dialog.close())
   }
 
   all(selector) { return Array.from(this.element.querySelectorAll(selector)) }
@@ -302,7 +302,7 @@ export default class extends Controller {
   }
 
   closeDialog() {
-    this.element.querySelectorAll("dialog[open]").forEach(dialog => {
+    this.element.querySelectorAll("dialog[open]:not([data-project-dialog])").forEach(dialog => {
       dialog.close()
       this.afterClose({ target: dialog })
     })
@@ -316,6 +316,7 @@ export default class extends Controller {
   }
 
   keydown(event) {
+    if (this.element.querySelector("[data-project-dialog][open]")) return
     const dialog = this.element.querySelector("dialog[open]")
     if (event.key === "Tab" && dialog) {
       const controls = Array.from(dialog.querySelectorAll("a[href], button, input, select, textarea, [tabindex]"))

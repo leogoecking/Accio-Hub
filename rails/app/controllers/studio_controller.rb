@@ -7,6 +7,12 @@ class StudioController < ApplicationController
   def show
     @page = params.fetch(:page, "home")
     return head :not_found unless Studio::PAGES.include?(@page)
+    return redirect_to projects_path if @page == "projects"
+    load_studio
+  end
+
+  def load_studio
+    @page ||= "projects"
     stored = preferences.read
     @appearance = stored ? stored[:appearance] : Studio.appearance(cookies.encrypted[:accio_appearance])
     @preference_version = stored ? stored[:version] : 0
