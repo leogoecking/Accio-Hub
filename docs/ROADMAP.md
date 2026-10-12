@@ -2,7 +2,7 @@
 
 > **Versão:** 0.4 (encerramento da P0.4 e backlog futuro)<br>
 > **Data-base:** 2026-10-11<br>
-> **Estado:** P0.3 aprovada visualmente; P0.4 homologada, Etapas 1–6 concluídas; P1.0 aprovada e P1.1 homologada; demais etapas não iniciadas<br>
+> **Estado:** P0.3 aprovada visualmente; P0.4 e P1.1 homologadas; P1.0/P1.2A aprovadas; P1.2B em revisão; etapas posteriores não iniciadas<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ARCHITECTURE.md](ARCHITECTURE.md)
 
 ## 1. Objetivo do roadmap
@@ -109,7 +109,7 @@ continuam no backlog, sem autorização implícita.
 | Etapa | Entrega | Estado |
 |---|---|---|
 | P1.1 — Fundação Rails | Autenticação local e recuperação de senha por CLI, shell ERB/Turbo, temas, fundos, fontes, Dock, widgets e Music demonstrativo; personalização fundamental | Encerrada e homologada; tag anotada `p1.1-approved` |
-| P1.2 — SQLite | Modelos transacionais de projetos, tarefas, referências, preferências e foco global | Não iniciada; exige autorização |
+| P1.2 — SQLite | Modelos transacionais de projetos, tarefas, referências, preferências e foco global | A aprovada; B autorizada e implementada para revisão; C–F não iniciadas |
 | P1.3 — Vault Markdown | Arquivos reais, índice reconstruível, escrita segura, conflitos e recuperação | Não iniciada; exige autorização |
 | P1.4 — Migração | Exportação/importação versionada, simulação, relatório e recuperação | Não iniciada; exige autorização |
 | P1.5 — Verificação final | Equivalência, segurança, visual e restauração | Não iniciada; exige autorização |
@@ -128,7 +128,14 @@ nos cinco tamanhos aprovados. Comparação com P0.4 e limites registrados em
 Auditoria independente do Antigravity aprovada e validação manual no Firefox
 confirmada pelo usuário no encerramento. Limpeza de sessões expiradas fica para
 P1.2; suporte IPv4-mapped IPv6 será avaliado quando houver necessidade de dual-stack.
-Essas melhorias não foram implementadas e P1.2 depende de nova autorização.
+Essas melhorias não foram implementadas. Limpeza fica na P1.2F.
+
+Divisão aprovada em [P1.2A_SQLITE_PLAN.md](P1.2A_SQLITE_PLAN.md): A planejamento;
+B modelos/migrações/integridade; C preferências; D projetos/tarefas/referências;
+E foco global; F integração e verificação. A entrega B preserva o fluxo funcional
+de cookies e todas as telas demonstrativas da P1.1. Revisão em
+[P1.2B_VERIFICATION.md](P1.2B_VERIFICATION.md). Nenhuma etapa seguinte é autorizada
+por esse registro.
 
 ### P2 — Projetos, Entrada e Tarefas
 
@@ -424,7 +431,7 @@ manual no Firefox informada pelo usuário. O relatório
 evidências, limites e pendências futuras. O commit final é identificado pela
 tag anotada `p0.4-approved`.
 
-Revisar a entrega da P1.1; não iniciar P1.2 nem criar commit sem aprovação.
+Revisar a entrega P1.2B; não iniciar P1.2C nem criar commit sem aprovação.
 A personalização avançada do Pomodoro permanece no backlog futuro de P10.
 
 As próximas entregas serão comparadas com a P0.3 no monitor de 27” e em tela móvel. Banco de dados, Vault real e integrações seguem nas fases definitivas, após autorização. O bootstrap de recuperação do Ubuntu foi **explicitamente adiado** e não faz parte do roadmap do Accio Hub.

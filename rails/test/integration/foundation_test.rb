@@ -62,6 +62,7 @@ class FoundationTest < ActionDispatch::IntegrationTest
 
   test "preferences survive reload and do not write domain records" do
     sign_in
+    domain_counts = [ Project, Task, ProjectReference, UserPreference, DockShortcut, WidgetPlacement, FocusSession, FocusCommand ].to_h { |model| [ model.name, model.count ] }
     preferences = Studio.defaults.merge("theme" => "light", "accent" => "#aabbcc", "wallpaper" => "ember", "music" => false)
     preferences["widgets"].first["span"] = 8
     patch "/appearance", params: { appearance: preferences }, as: :json, headers: local_headers
@@ -70,7 +71,8 @@ class FoundationTest < ActionDispatch::IntegrationTest
     get root_path, headers: local_headers
     assert_select "html[data-theme=light][data-wallpaper=ember]"
     assert_select ".panel-tasks.span-8"
-    assert_equal %w[ar_internal_metadata auth_sessions schema_migrations users], ActiveRecord::Base.connection.tables.sort
+    assert_equal domain_counts, [ Project, Task, ProjectReference, UserPreference, DockShortcut, WidgetPlacement, FocusSession, FocusCommand ].to_h { |model| [ model.name, model.count ] }
+    assert_equal %w[ar_internal_metadata auth_sessions dock_shortcuts focus_commands focus_sessions project_references projects schema_migrations tasks user_preferences users widget_placements], ActiveRecord::Base.connection.tables.sort
   end
 
   test "appearance validates adversarial values" do
@@ -78,6 +80,21 @@ class FoundationTest < ActionDispatch::IntegrationTest
     patch "/appearance", params: { appearance: { theme: "<script>", accent: "red;display:none", dockOrder: [ "tasks", nil ], widgets: [ { span: 3 } ], unexpected: "ignored" } }, as: :json, headers: local_headers
     assert_response :success
     assert_equal Studio.defaults, response.parsed_body["appearance"]
+  end
+
+  test "new preference tables do not replace the approved cookie flow" do
+    user = sign_in
+    preference = user.create_user_preference!(theme: "light", wallpaper: "ocean")
+    original = preference.attributes
+    get root_path, headers: local_headers
+    assert_select "html[data-theme=dark][data-wallpaper=northern]"
+    patch "/appearance", params: { appearance: Studio.defaults.merge("wallpaper" => "ember") }, as: :json, headers: local_headers
+    assert_response :success
+    get root_path, headers: local_headers
+    assert_select "html[data-theme=dark][data-wallpaper=ember]"
+    assert_equal original, preference.reload.attributes
+    assert_equal 0, DockShortcut.count
+    assert_equal 0, WidgetPlacement.count
   end
 
   test "login keeps the saved browser appearance after logout" do

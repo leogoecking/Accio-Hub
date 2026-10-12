@@ -67,7 +67,7 @@ preparando o futuro Vault Markdown. Evitar refatorações grandes sem necessidad
 - PWA
 
 P0.4 homologada, P1.0 arquitetural aprovada e P1.1 encerrada e homologada.
-P1.2 depende de nova autorização, conforme docs/P1.0_ARCHITECTURE_PLAN.md.
+P1.2A aprovada; exclusivamente P1.2B autorizada, conforme docs/P1.2A_SQLITE_PLAN.md.
 A aprovação visual da P0.3 não autoriza iniciar Rails na P0.4.
 
 ## Arquitetura
@@ -118,21 +118,25 @@ Utilizar quando apropriado:
 
 ## Fase atual
 
-P1.1 — Fundação Rails, encerrada e homologada em 2026-10-11, tag anotada `p1.1-approved`.
+P1.2B — Fundação relacional SQLite, autorizada em 2026-10-12 após aprovação da P1.2A.
 
 - Aplicação em `rails/`; preservar integralmente `prototype/`.
 - Rails 8, Hotwire/Turbo/Stimulus, SQLite, ERB, Importmap e CSS aprovado.
 - Autenticação local por sessão, um administrador, sem cadastro público.
 - Execução somente em loopback; credenciais fora do Git.
-- Shell Dock + Widgets, temas, fontes, fundos, Music demonstrativo e personalização fundamental.
-- Somente modelos de autenticação. Projetos, tarefas, notas, foco e integrações são demonstrações identificadas e somente de leitura.
-- Nenhuma migração de dados pessoais, Vault real, API externa ou P1.2 nesta entrega.
-- Auditoria independente do Antigravity aprovada; recuperação local via `bin/rails admin:reset` verificada.
-- Validação manual no Firefox confirmada pelo usuário, separada dos testes automatizados.
-- Encerramento autorizado em commit; P1.2 não iniciada e exige nova autorização.
+- Modelos de projetos, tarefas, referências, preferências, Dock, widgets, foco e recibos técnicos; integridade SQL e versões.
+- Interface continua demonstrativa; preferências funcionais continuam em cookies até autorização da P1.2C.
+- Nenhum formulário conectado, timer funcional, nota em SQLite, Vault, API externa ou importação pessoal.
+- Migrações e testes somente em bancos novos, temporários e sintéticos nesta entrega.
+- Alterações sem commit até revisão; P1.2C não autorizada.
+
+P1.1 homologada em 2026-10-11, tag `p1.1-approved`, com auditoria independente,
+recuperação local via `bin/rails admin:reset` e validação manual no Firefox.
+Esse histórico não constitui validação de interface das fases posteriores.
 
 O plano aprovado está em [docs/P1.0_ARCHITECTURE_PLAN.md](docs/P1.0_ARCHITECTURE_PLAN.md).
-A verificação está em [docs/P1.1_FOUNDATION_VERIFICATION.md](docs/P1.1_FOUNDATION_VERIFICATION.md).
+A P1.2A aprovada está em [docs/P1.2A_SQLITE_PLAN.md](docs/P1.2A_SQLITE_PLAN.md).
+Verificações: [P1.1](docs/P1.1_FOUNDATION_VERIFICATION.md) e [P1.2B](docs/P1.2B_VERIFICATION.md).
 
 P0.4 encerrada e homologada: tag anotada `p0.4-approved`, incluindo validação
 visual manual no Firefox e Pomodoro adaptativo. A identidade P0.3 permanece

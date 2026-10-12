@@ -1,0 +1,100 @@
+{
+  "upgrade_from_p11": {
+    "auth_preserved": true,
+    "sessions_preserved": true,
+    "empty_domain_tables": true
+  },
+  "schema_load": {
+    "identical_triggers_and_indexes": true,
+    "trigger_count": 25
+  },
+  "rails_suite": "51 runs, 440 assertions, 0 failures, 0 errors, 0 skips",
+  "process_reopen": {
+    "records_preserved": true,
+    "replay_after_restart": true,
+    "foreign_keys": 1,
+    "journal_mode": "wal",
+    "synchronous": 2,
+    "triggers": 25
+  },
+  "version": [
+    {
+      "operation": "version",
+      "worker": "0",
+      "result": "committed"
+    },
+    {
+      "operation": "version",
+      "worker": "1",
+      "result": "stale_rejected"
+    }
+  ],
+  "order": [
+    {
+      "operation": "order",
+      "worker": "0",
+      "result": "stale_rejected"
+    },
+    {
+      "operation": "order",
+      "worker": "1",
+      "result": "committed"
+    }
+  ],
+  "command": [
+    {
+      "operation": "command",
+      "worker": "0",
+      "result": "receipt",
+      "receipt_id": 2
+    },
+    {
+      "operation": "command",
+      "worker": "1",
+      "result": "receipt",
+      "receipt_id": 2
+    }
+  ],
+  "global": [
+    {
+      "operation": "global",
+      "worker": "0",
+      "result": "committed"
+    },
+    {
+      "operation": "global",
+      "worker": "1",
+      "result": "unique_rejected"
+    }
+  ],
+  "race_verification": {
+    "stale_writes_rejected": true,
+    "order_preserved": true,
+    "receipt_and_effect_once": true,
+    "one_global_occupant": true
+  },
+  "durability": {
+    "NORMAL": {
+      "synchronous": 1,
+      "transactions_per_round": 200,
+      "seconds": [
+        0.011067949992138892,
+        0.0047548489819746464,
+        0.004700278979726136
+      ],
+      "median_seconds": 0.0047548489819746464,
+      "committed_rows_after_reopen": 600
+    },
+    "FULL": {
+      "synchronous": 2,
+      "transactions_per_round": 200,
+      "seconds": [
+        0.14168446700205095,
+        0.1224853589956183,
+        0.11884842501603998
+      ],
+      "median_seconds": 0.1224853589956183,
+      "committed_rows_after_reopen": 600
+    }
+  }
+}

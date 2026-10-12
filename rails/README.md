@@ -1,8 +1,9 @@
-# Accio Hub — P1.1: Fundação Rails
+# Accio Hub — Fundação Rails e relacional SQLite
 
 Fundação encerrada e homologada em 2026-10-11, tag anotada `p1.1-approved`.
 Auditoria independente aprovada, recuperação local de senha verificada e
-validação manual no Firefox confirmada pelo usuário. P1.2 não iniciada.
+validação manual no Firefox confirmada pelo usuário.
+P1.2A aprovada; P1.2B implementada para revisão, sem commit. P1.2C não iniciada.
 Referência completa: P0.4 homologada; identidade Dock + Widgets: `0018bb4`.
 
 ## Ambiente e instalação local
@@ -73,7 +74,11 @@ recarregar com falha pendente perde somente essas preferências ainda não salva
 Projetos, tarefas, notas, calendário, foco, Feed, backups e e-mails são fixtures
 sintéticas identificadas, de leitura. Controles de criação/foco/captura explicam
 a demonstração. Não há timer funcional, áudio, Vault, APIs ou migração pessoal.
-Somente `users` e `auth_sessions` são tabelas funcionais. Não iniciar P1.2.
+Na P1.2B foram acrescentadas oito tabelas de domínio, ainda sem conexão com essas
+telas ou com o fluxo de cookies. O contrato e a verificação estão em
+[P1.2A](../docs/P1.2A_SQLITE_PLAN.md) e [P1.2B](../docs/P1.2B_VERIFICATION.md).
+Não executar `db:prepare` em instalação existente/pessoal para esta revisão;
+as verificações desta entrega usam somente bancos temporários sintéticos.
 
 ## Estrutura
 
@@ -91,6 +96,19 @@ Não executar o script de reaproveitamento após alterar fixtures sem revisar o 
 Ele lê apenas defaults do código, nunca armazenamento do navegador.
 
 ## Verificação
+
+Para verificar a P1.2B e toda a suíte Rails com bancos privados temporários:
+
+```sh
+bundle exec ruby script/relational-check.rb
+```
+
+O script cria os bancos em `tmp/`, verifica evolução desde a P1.1, carga do schema,
+suíte Rails, concorrência em processos independentes, reabertura e WAL/FULL.
+Não aceita caminho de banco pessoal e grava evidências sintéticas em
+`../docs/assets/p1.2b/`. Não altera o fluxo de cookies. Para outros comandos que
+acessam banco, utilizar `RAILS_ENV=test` e `ACCIO_DATABASE_PATH` apontando para
+banco sintético isolado. Os comandos da fundação abaixo continuam disponíveis:
 
 ```sh
 bin/rails test

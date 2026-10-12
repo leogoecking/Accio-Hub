@@ -1,8 +1,8 @@
 # Accio Hub — Arquitetura (ARCHITECTURE)
 
 > **Versão:** 0.3 (protótipo atual e arquitetura definitiva planejada)<br>
-> **Data-base:** 2026-10-11<br>
-> **Estado:** P0.4 homologada; P1.0 aprovada; P1.1 encerrada e homologada; P1.2 não iniciada<br>
+> **Data-base:** 2026-10-12<br>
+> **Estado:** P0.4 e P1.1 homologadas; P1.0/P1.2A aprovadas; P1.2B implementada para revisão<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ROADMAP.md](ROADMAP.md)
 
 ## Fundação homologada — P1.1
@@ -15,7 +15,7 @@ A fundação está em `rails/`: Rails 8.1.3.1, Ruby 3.3.6, SQLite, ERB,
 Turbo Drive, Stimulus, Importmap e Propshaft. O CSS homologado é preservado;
 Tailwind e Solid Queue não são adicionados nesta etapa. Fontes são locais.
 
-Somente `User` e `AuthSession` persistem no SQLite. A conta única é criada
+Na entrega P1.1, somente `User` e `AuthSession` persistiam no SQLite. A conta única é criada
 localmente, sem cadastro público; segredo e bancos são ignorados pelo Git.
 O launcher/Puma usam loopback, com middleware que também rejeita pares remotos.
 `bin/rails admin:reset` permite recuperação local interativa, sem endpoint HTTP,
@@ -28,6 +28,22 @@ O protótipo em `prototype/` permanece intacto. Interfaces e comportamentos de
 produto ainda não transportados são explicitamente demonstrativos. Estrutura,
 execução e limites em [../rails/README.md](../rails/README.md); evidências em
 [P1.1_FOUNDATION_VERIFICATION.md](P1.1_FOUNDATION_VERIFICATION.md).
+
+## Fundação relacional — P1.2B, em revisão
+
+O [planejamento aprovado P1.2A](P1.2A_SQLITE_PLAN.md) detalha os contratos.
+O backend agora possui `Project`, `Task`, `ProjectReference`, `UserPreference`,
+`DockShortcut`, `WidgetPlacement`, `FocusSession` e `FocusCommand`.
+UIDs opacos são preservados; FKs compostas incluem proprietário, versões protegem
+edições e índices parciais limitam o foco global e os contextos dos widgets.
+Gatilhos SQL protegem identidades, arquivamento e recibos imutáveis.
+`schema.rb` conserva esses gatilhos para reconstrução equivalente dos bancos.
+
+WAL/FULL são configurados somente nas conexões da aplicação, verificados em
+bancos temporários. Não há migração pessoal nem novas tabelas de notas.
+Controllers, formulários, aparência em cookies e temporizador demonstrativo
+continuam com o comportamento P1.1. A transição operacional depende da P1.2C/E.
+Evidências e limites em [P1.2B_VERIFICATION.md](P1.2B_VERIFICATION.md).
 
 ## 0. Arquitetura atual do protótipo e limites da P0.4
 
