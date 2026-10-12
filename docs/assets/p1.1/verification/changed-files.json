@@ -1,0 +1,531 @@
+{
+  "branch": "p1-foundation",
+  "base_head": "8d56c0646d0890c665b3759bdea382d3835ad97c",
+  "approved_tag_commit": "0d8bd98621cea42424373214ea5b5dc2b7faca85",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "d3c01a8a38958f7634eb7cd05915393599d4acf2fa884aff57ca96d5052a7bdf"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "c8121ee302a39b57501a23f06df122549750772c5bd6db3ba79cd5e243866b89"
+    },
+    {
+      "path": "docs/DESIGN_BASELINE.md",
+      "sha256": "5e45450792ff8d0870fe4321010ab4c5bc3b535e063d0b9f6c7a90b6fdb1a108"
+    },
+    {
+      "path": "docs/P1.0_ARCHITECTURE_PLAN.md",
+      "sha256": "98b9fffe046c195133901c660b662d43f89c7925b8f1e2886cd4b797e7ac8687"
+    },
+    {
+      "path": "docs/P1.1_FOUNDATION_VERIFICATION.md",
+      "sha256": "276b35611d5bb35ef1c4b52a5bc38ac1160bc14470a745ea9670156de42215ce"
+    },
+    {
+      "path": "docs/PRODUCT.md",
+      "sha256": "70008f039a0793d9d9cf654187c24f5f71e70737d5d13597055326d4a57fd6e0"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "sha256": "13b40b5c5f5e27ba38bd6c4007643d3c8c9c71eea9a461028d61b127a56f657b"
+    },
+    {
+      "path": "rails/.gitignore",
+      "sha256": "84a2e32e23acb330dd8d48e376792df4be03a89ceca10b27d0f187000212a122"
+    },
+    {
+      "path": "rails/.rubocop.yml",
+      "sha256": "474497601d8ff521eed710adf606b77417a88b8d51d3d323b177097f1b74677a"
+    },
+    {
+      "path": "rails/.ruby-version",
+      "sha256": "6706507ec7c311437d851166dde6cf7178acbdcc307dde303057a9110f47be57"
+    },
+    {
+      "path": "rails/Gemfile",
+      "sha256": "d8e53e698c606c03646cdf2068649f4e3b6b6b23533479283c13f37735bba6ef"
+    },
+    {
+      "path": "rails/Gemfile.lock",
+      "sha256": "08f98bc32640bbc5bf1446c24381130a8f21fd573854b3ccdc6d019bb6ee8f3f"
+    },
+    {
+      "path": "rails/README.md",
+      "sha256": "0709c4a7093a5c9dc6de0bb6766c7ae8315cffecdb0451d054237b8a3e1e1063"
+    },
+    {
+      "path": "rails/Rakefile",
+      "sha256": "895c6a69d01c14f0dd437c0eb44914754006ce317807264ca7ffbd1c79a91ebf"
+    },
+    {
+      "path": "rails/app/assets/fonts/accio-2a8e7f713ee7.ttf",
+      "sha256": "2a8e7f713ee79fbccdef3cef5c787aff47580299f7da60144961e7db2ec08211"
+    },
+    {
+      "path": "rails/app/assets/fonts/accio-3386a05f6ece.ttf",
+      "sha256": "3386a05f6ece969e4537de6be894170d20558e82f7d56c8c5d332972ef172160"
+    },
+    {
+      "path": "rails/app/assets/fonts/accio-376427b53221.ttf",
+      "sha256": "376427b5322148d8de1e03f263bcca4935a2d60ba71d9f94f4947ab664c711ae"
+    },
+    {
+      "path": "rails/app/assets/fonts/accio-3e699ead1876.ttf",
+      "sha256": "3e699ead1876244fa392243054ddefe7cf631b488438828a8a100731a22ab995"
+    },
+    {
+      "path": "rails/app/assets/fonts/accio-3e756954468f.ttf",
+      "sha256": "3e756954468ff1cb302dae0414262e72f76a67d87bef3fa1f3226cd0fb9b2d85"
+    },
+    {
+      "path": "rails/app/assets/fonts/accio-44ce4a84f20d.ttf",
+      "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3"
+    },
+    {
+      "path": "rails/app/assets/fonts/accio-6c0346b8d297.ttf",
+      "sha256": "6c0346b8d297ebdc225832833e03e884a26ad99d265ecd3924d46e1ba285ea87"
+    },
+    {
+      "path": "rails/app/assets/fonts/accio-b0ae3e89a7d3.ttf",
+      "sha256": "b0ae3e89a7d3ef2b1838bb4b1ceb0b17cc3435af061eee809d76aa623ff116e9"
+    },
+    {
+      "path": "rails/app/assets/fonts/accio-b79a2ea7a38f.ttf",
+      "sha256": "b79a2ea7a38f33fd96a282fadb9ce97626bb0724a44d21075859f0e50239993a"
+    },
+    {
+      "path": "rails/app/assets/fonts/accio-df54dbfafba6.ttf",
+      "sha256": "df54dbfafba61d4911eb3dab9bba2d20531fb009f01d64dd42fa96ab862584d8"
+    },
+    {
+      "path": "rails/app/assets/fonts/accio-ec926d5065ea.ttf",
+      "sha256": "ec926d5065eaca49a48f96e312bbae0bbc5733c24215cf5dfabbdccee926fef7"
+    },
+    {
+      "path": "rails/app/assets/fonts/dmsans-OFL.txt",
+      "sha256": "7ec15e79c59bc14b86436a17e5eb7926b46cbcaeb08e1a7e6c110b415e6eb2a2"
+    },
+    {
+      "path": "rails/app/assets/fonts/jetbrainsmono-OFL.txt",
+      "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d"
+    },
+    {
+      "path": "rails/app/assets/fonts/spacegrotesk-OFL.txt",
+      "sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+    },
+    {
+      "path": "rails/app/assets/images/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "rails/app/assets/stylesheets/application.css",
+      "sha256": "478b66b3effc220e394a0ba1a9065c367d723bd73b2036067ea87f91094b2cdf"
+    },
+    {
+      "path": "rails/app/assets/stylesheets/fonts.css",
+      "sha256": "54da67c3b04fee53360b6d91705427c4dfa277da4bed3b5405fd630cbe016bf1"
+    },
+    {
+      "path": "rails/app/assets/stylesheets/foundation.css",
+      "sha256": "f0037d3008ec8cbf571faf32622d94afd9a8335492c88a3d75c2166cd2c4de4f"
+    },
+    {
+      "path": "rails/app/assets/stylesheets/studio.css",
+      "sha256": "a4180ac8e476ed2b90ff08a30011156a672408d23945d6741700914081cb41b0"
+    },
+    {
+      "path": "rails/app/controllers/application_controller.rb",
+      "sha256": "f70afd16bd05e6d6ffc0b257ef875bd297dfca1ab25ec297d691ddafb918ef6d"
+    },
+    {
+      "path": "rails/app/controllers/concerns/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "rails/app/controllers/concerns/authentication.rb",
+      "sha256": "6e945e60da57e2589c496302e20c56ba7c6a328bc53f44d0a9caba99c2805899"
+    },
+    {
+      "path": "rails/app/controllers/sessions_controller.rb",
+      "sha256": "2df47bd9620e0c0dfac4775dfb5b417743379592fb38de6949d519f3c6781474"
+    },
+    {
+      "path": "rails/app/controllers/studio_controller.rb",
+      "sha256": "b89e1e514b59b0999f36976d5ea56e4284793ad4088b39e6cab78422abac925f"
+    },
+    {
+      "path": "rails/app/helpers/application_helper.rb",
+      "sha256": "f77fac5ea412dbed92c4524fe0ed180acb2b7239f84daf758da989032301f5c8"
+    },
+    {
+      "path": "rails/app/helpers/studio_helper.rb",
+      "sha256": "7b9550e34e450c53010c33f2170076ac844ac1b07d56b820775dd21a7d617788"
+    },
+    {
+      "path": "rails/app/javascript/application.js",
+      "sha256": "f5aa94beee1d2f544e0c30dacccfcb6520f0aa4a25e943d27dfe83f97ffb3453"
+    },
+    {
+      "path": "rails/app/javascript/controllers/studio_controller.js",
+      "sha256": "86bffe86f56ca4e5b1a82491640e6e6b6343113f0fd5955956e5b5a1cf420b11"
+    },
+    {
+      "path": "rails/app/jobs/application_job.rb",
+      "sha256": "d51e125007521b0f59765422cf3cf949b59b2054cdac6567a95b4a7aeaf1d722"
+    },
+    {
+      "path": "rails/app/models/application_record.rb",
+      "sha256": "12bf7d0eaefce4d50e0719991e19b48a36a7865aeb7ac745980584806155fdc1"
+    },
+    {
+      "path": "rails/app/models/auth_session.rb",
+      "sha256": "fd9a372ed7b511c243a7af112a342079451a17834a2f95bf255c0e027c2526e6"
+    },
+    {
+      "path": "rails/app/models/concerns/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "rails/app/models/current.rb",
+      "sha256": "b03128162d1e1e77d5be14084a7debb77c8390f42e215c060a26822bd02502a4"
+    },
+    {
+      "path": "rails/app/models/user.rb",
+      "sha256": "58e445a820a7b5c047e3af9cdb7f57beb04bf3b60ca5138727215c4cf0d0ccdb"
+    },
+    {
+      "path": "rails/app/presenters/studio.rb",
+      "sha256": "5eb286664a94d891d208ca913441a762fc794e120d640e12cc646c7cb7d0409f"
+    },
+    {
+      "path": "rails/app/services/admin_password_reset.rb",
+      "sha256": "9bbca0dfcbdd8e7764ddb2f1dc24a929d6dffe2fbc0b13219f7a2b781e0e459a"
+    },
+    {
+      "path": "rails/app/views/layouts/application.html.erb",
+      "sha256": "ad146875ed16669f53acbb66796cce13806892a55c8bb547aaa0e051c382aa5d"
+    },
+    {
+      "path": "rails/app/views/pwa/manifest.json.erb",
+      "sha256": "25509e678d8f7e113691f38be7fb3ecf85b3b1796f6887579d0b2e5e1d645c5f"
+    },
+    {
+      "path": "rails/app/views/pwa/service-worker.js",
+      "sha256": "54bba97f108ac8d65af816aab152cc1860c9d9809641ba845231131db56d59bf"
+    },
+    {
+      "path": "rails/app/views/sessions/new.html.erb",
+      "sha256": "fc5bbb61e4d91522f9d46582b929934209d0e997302822a885e1bb94e5d73d67"
+    },
+    {
+      "path": "rails/app/views/studio/_board.html.erb",
+      "sha256": "0db87f4999eb255df5cf663f04b45e43560763d2903be8968ab2e652ec1f07bd"
+    },
+    {
+      "path": "rails/app/views/studio/_dialogs.html.erb",
+      "sha256": "e74d1832e15b064f473494e4cac060583877861ad922ca792a9cfa734ac50c7d"
+    },
+    {
+      "path": "rails/app/views/studio/_module.html.erb",
+      "sha256": "32e314c07204839f71b32dcf8c5947d0c5c5b9cf4bd75af5c759b2982a5b357b"
+    },
+    {
+      "path": "rails/app/views/studio/_music.html.erb",
+      "sha256": "fcfbbfa839d0c8d537e19f4635e192e6b3ecd2d68c60dc08caff0ba1b0a7363f"
+    },
+    {
+      "path": "rails/app/views/studio/_settings.html.erb",
+      "sha256": "137d2524b9c6d275fd35cf6cc79b3ecd2eb53231696157ea0b56fd71fd0f200d"
+    },
+    {
+      "path": "rails/app/views/studio/_widget.html.erb",
+      "sha256": "70ba5112ce0061d03981f34ad5dc13dfc16cdb46aebcf135911cad5478e177b6"
+    },
+    {
+      "path": "rails/app/views/studio/show.html.erb",
+      "sha256": "842c43b75017f5e92bbdb3815da39de13baa881c76fb8f1fff16f4bf076280f5"
+    },
+    {
+      "path": "rails/app/views/studio/widgets/_backup.html.erb",
+      "sha256": "156d90128bee5e07aac172ddf2dc6fba5c99a45b348070d6581d8723f385eebe"
+    },
+    {
+      "path": "rails/app/views/studio/widgets/_calendar.html.erb",
+      "sha256": "2eaf77bb7de8bac8b40c5556b9cc0f4a6099d09c9b54879d56307b76e10d72d3"
+    },
+    {
+      "path": "rails/app/views/studio/widgets/_feed.html.erb",
+      "sha256": "e510f43128b091b9e7da684a3cde91d4df0c03800ff747617e07ed09af2745a4"
+    },
+    {
+      "path": "rails/app/views/studio/widgets/_focus.html.erb",
+      "sha256": "59d42b49f90b0f643bcb41e56562281769421c6221117a4b73c3582f48693be8"
+    },
+    {
+      "path": "rails/app/views/studio/widgets/_notes.html.erb",
+      "sha256": "12146e4c93cff3b2f447731add3fa41d6ff27028d2d95ba46bbf395c0f23ae67"
+    },
+    {
+      "path": "rails/app/views/studio/widgets/_projects.html.erb",
+      "sha256": "5889446715e0f37f783ad504753dc6784cebd38e7607a8c2a745be980c0e3f1e"
+    },
+    {
+      "path": "rails/app/views/studio/widgets/_tasks.html.erb",
+      "sha256": "518366200c99b33dce520e8208859cb4c7576e52a0879472b16c142e02a31eaa"
+    },
+    {
+      "path": "rails/bin/admin",
+      "sha256": "97e58f06da65474419ebaaa74c98ee158fc3da52c64f5d00a495d6a181dedc93"
+    },
+    {
+      "path": "rails/bin/brakeman",
+      "sha256": "7825743df15f32a7a7a36b2098aec1dd56767031af0181d288f8a563c2c225b0"
+    },
+    {
+      "path": "rails/bin/ci",
+      "sha256": "ee240fa535e83197c3b79489f56454ec9e1b24f9b7db15eb26c35fc858e12c02"
+    },
+    {
+      "path": "rails/bin/dev",
+      "sha256": "008fa7a0e48ff000ff24622483666be60a0bc49549d69112deecda9eb0545571"
+    },
+    {
+      "path": "rails/bin/rails",
+      "sha256": "48b1069eff5db3e414424ecc05b5423917d4ad36164cd2fb18d4033ff69dcba7"
+    },
+    {
+      "path": "rails/bin/rake",
+      "sha256": "5943c3811dc345727b5f330b599c4c6c45abc04816dd8f4201aeed88cf268cb3"
+    },
+    {
+      "path": "rails/bin/rubocop",
+      "sha256": "62c9fd75681308e1d161f75e96b6af1a837a2f56c9fc9ddf641f1cebf0d7f717"
+    },
+    {
+      "path": "rails/bin/setup",
+      "sha256": "a47d63531db1c7ffe65384e433196f8b3a1858a96a558b05c1af8520f0c74be7"
+    },
+    {
+      "path": "rails/config.ru",
+      "sha256": "1a5090e57cf9301e8bda3fec3abe4c72fbc001f6cd4909fd80b6cd488ab531b9"
+    },
+    {
+      "path": "rails/config/application.rb",
+      "sha256": "3474bcab4015c5044834ebd2b07981af73e57e16f5afe7704a7423804be273b9"
+    },
+    {
+      "path": "rails/config/boot.rb",
+      "sha256": "bb5a9499136e72c70c557bc3ff4d2661cc9b05dc5b848fb720540e3fe716e4ea"
+    },
+    {
+      "path": "rails/config/ci.rb",
+      "sha256": "38b99071f4909e8a445ee37ffd2286999303b9d87d49f723525457f7d295c9e4"
+    },
+    {
+      "path": "rails/config/database.yml",
+      "sha256": "423fd7bcce3b8611918a5a111a5ba6d8acc79099965e5d378301e3eaf1f68f6f"
+    },
+    {
+      "path": "rails/config/environment.rb",
+      "sha256": "73b2e731e02cedb9dc0335e1a35c3a2b7738032e3aa7e62ac32cbb8432b43c69"
+    },
+    {
+      "path": "rails/config/environments/development.rb",
+      "sha256": "a619a8b37974c7eeff2a056a9259d9a674ec8dcc59b490b4df6d3e61853d3543"
+    },
+    {
+      "path": "rails/config/environments/production.rb",
+      "sha256": "1a861915797a05fe08d94dfe797c6277f2f24af0a1e3fcb6777f228542d33212"
+    },
+    {
+      "path": "rails/config/environments/test.rb",
+      "sha256": "f5bab5327be1568716411029d7752fa3e08d5b64059666852d73fbc06638157d"
+    },
+    {
+      "path": "rails/config/importmap.rb",
+      "sha256": "1328e3835f66ae154e3abff8280250a4b164a42077dc9780556d7041d63f7e23"
+    },
+    {
+      "path": "rails/config/initializers/assets.rb",
+      "sha256": "f55d4ce66ec2b48256ff492c99c7105b7cc1726c78789dffdbee2611e193c1a6"
+    },
+    {
+      "path": "rails/config/initializers/content_security_policy.rb",
+      "sha256": "7210b185b810731a9d4f17a4995734d8434ec3e262ae461bc48ec964089324cd"
+    },
+    {
+      "path": "rails/config/initializers/filter_parameter_logging.rb",
+      "sha256": "f864bd67e7bdaa63a5331b9fc15446613c410c3a314cd70d1b6a7c8b566b6120"
+    },
+    {
+      "path": "rails/config/initializers/inflections.rb",
+      "sha256": "e2c18b803625a073b25e4ee4460677da33a8bf19bbbcad629718a8e15c58acc2"
+    },
+    {
+      "path": "rails/config/initializers/production_storage.rb",
+      "sha256": "6c9c9214279c9c117ca9820a737453a231d81b7d7db8c5c26076c573fa4cb772"
+    },
+    {
+      "path": "rails/config/initializers/session_store.rb",
+      "sha256": "9d9699715a825b5c5d436a8eb64bff47cf111c90e73d42a5914eac0a2c9af26d"
+    },
+    {
+      "path": "rails/config/locales/en.yml",
+      "sha256": "ad72af216ad0a67a1155c685535698fdd2a7138810c7e6dcb5eab7f0cc1c5922"
+    },
+    {
+      "path": "rails/config/prototype_assets.json",
+      "sha256": "fb341b0ceef89b0052b0edce9fa512b26a73c474bde220d28f17c941ceb70be3"
+    },
+    {
+      "path": "rails/config/puma.rb",
+      "sha256": "a7d43de1cde6fb9d253fab82a5609aef4eaaf87f586e505008b99ec48d6b7c53"
+    },
+    {
+      "path": "rails/config/routes.rb",
+      "sha256": "3da2e4ec92618dee9520fc49fbad8d179b8f2702932ca06931cc82463324ee17"
+    },
+    {
+      "path": "rails/config/studio_fixture.json",
+      "sha256": "44c796a021108e3b1625d2a2eb6f813d7df2c653fd2bf33e5450338fa9d1d932"
+    },
+    {
+      "path": "rails/db/migrate/20261011010000_create_authentication.rb",
+      "sha256": "15013e20d41e38ccd46f955ff062edd6d8af5247850b09ec3090704c9a38d50b"
+    },
+    {
+      "path": "rails/db/schema.rb",
+      "sha256": "a7f7ea7387a4208d395f951ed921a98bd3fe7a68bd123ca821ad048732ce8c5e"
+    },
+    {
+      "path": "rails/db/seeds.rb",
+      "sha256": "4f24f361a5a875f32518a44f68f2d99a6495fcee5f9c54c30f8c3d7f8614512f"
+    },
+    {
+      "path": "rails/lib/loopback_only.rb",
+      "sha256": "50e8ce74e8bdf54042ac29d3521bc8edf92403fb9cbc78120944b0af908f6207"
+    },
+    {
+      "path": "rails/lib/tasks/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "rails/lib/tasks/admin.rake",
+      "sha256": "61c2b6a14ef8eabf72ff236e4aeb75833c1c6a5043e24e0a8e575a480bd0c30d"
+    },
+    {
+      "path": "rails/public/400.html",
+      "sha256": "e4611b7ecd95c05bc42597702de6f2775aa5414c1bec28a8173165e143159371"
+    },
+    {
+      "path": "rails/public/404.html",
+      "sha256": "6f48aec35400a1e5fb88b7cef034a18d55ce810653b04f93d7162e02053745d0"
+    },
+    {
+      "path": "rails/public/406-unsupported-browser.html",
+      "sha256": "37e250b92c485478422b11e0bf4686d5bcc919f4a6877115aa2bf9e4753c1e08"
+    },
+    {
+      "path": "rails/public/422.html",
+      "sha256": "f91269998d46c1b59f51c933cb86d8079e3155f4e48fe1566e2f1a34c946287f"
+    },
+    {
+      "path": "rails/public/500.html",
+      "sha256": "0e135e717e9d1a5dd6db932ec70bd9524363064979cd2d8b216ee1c0300e36b5"
+    },
+    {
+      "path": "rails/public/icon.png",
+      "sha256": "2e29c62b03e514c5a15f289f8fdc0abca6e22d0e91970503c9e2b7e0552c911c"
+    },
+    {
+      "path": "rails/public/icon.svg",
+      "sha256": "601dfb4db252852f3880ffc355bce0d4507b01afca6879189d10a65470ae6e3a"
+    },
+    {
+      "path": "rails/public/robots.txt",
+      "sha256": "2f15987e4606501202b9d337085439339e53a374e3d194847192c12f85ba78f8"
+    },
+    {
+      "path": "rails/script/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "rails/script/admin-reset-check.py",
+      "sha256": "0ee13a90c7edd2abcb05e14efee4592b97bca1594e1bba61cec3a71579814e98"
+    },
+    {
+      "path": "rails/script/compare-prototype.mjs",
+      "sha256": "e1e5aeec348dad260ea79603ff0dfc221dc2bbed8045e633e7651416b652193e"
+    },
+    {
+      "path": "rails/script/foundation-additional-check.mjs",
+      "sha256": "263985d3a4e0a385d6df1e51c6c5adecdc629a533186a598be0d82c307369503"
+    },
+    {
+      "path": "rails/script/foundation-browser-check.mjs",
+      "sha256": "28f271c66fc4d54ae1869516b26790fdaa471bbe9e08490f14da6da7caecf671"
+    },
+    {
+      "path": "rails/script/prepare-browser-fixture.rb",
+      "sha256": "fddcf69f7248441005f4657af3da19c92f578b2c541f7336d60616f5d03da9f0"
+    },
+    {
+      "path": "rails/script/reuse_prototype.mjs",
+      "sha256": "3069c1ed8800ee4c19f8f1896e82fd8589a7560642d714ed112f87adde8e5658"
+    },
+    {
+      "path": "rails/storage/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "rails/test/controllers/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "rails/test/fixtures/files/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "rails/test/helpers/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "rails/test/integration/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "rails/test/integration/admin_password_reset_test.rb",
+      "sha256": "f25d6af2418e59bca95458cada72843996096a649b9ccf85d28e7cacd4d87eb8"
+    },
+    {
+      "path": "rails/test/integration/foundation_test.rb",
+      "sha256": "9f72434252b71fe1d9434ccb95dd6b3c921db48705a7b8b72932f1b933712a60"
+    },
+    {
+      "path": "rails/test/lib/loopback_test.rb",
+      "sha256": "f8bb04966c9f986428dae9cfc90cea594cbf3a638c22d54d17a375b05207a126"
+    },
+    {
+      "path": "rails/test/models/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "rails/test/models/foundation_test.rb",
+      "sha256": "a8d012c07988419b5c658a934dadb73e2bf0a5c23d2270374d411cfddb61b179"
+    },
+    {
+      "path": "rails/test/services/admin_password_reset_test.rb",
+      "sha256": "bcd1ceaf9c1f98890b95f52e89814d06b1c9292395c74a38874c9cf2adb22675"
+    },
+    {
+      "path": "rails/test/test_helper.rb",
+      "sha256": "3bc223136e0052e3a7a745f955a937b55e9006067f0be1879fc3e319156f95ba"
+    },
+    {
+      "path": "rails/vendor/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

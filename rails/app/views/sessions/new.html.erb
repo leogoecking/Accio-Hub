@@ -1,0 +1,16 @@
+<main class="shell login-shell">
+  <section class="dialog login-card" aria-labelledby="login-title">
+    <div class="eyebrow">ACCIO HUB / ACESSO LOCAL</div>
+    <h1 id="login-title">Seu espaço<span class="title-stop">.</span></h1>
+    <p class="muted">Entre com a conta de administrador deste computador.</p>
+    <% if flash[:alert] %><p role="alert" class="auth-error"><%= flash[:alert] %></p><% end %>
+    <%= form_with url: session_path do |form| %>
+      <%= form.label :email_address, "E-mail" %>
+      <%= form.email_field :email_address, required: true, autocomplete: "username", autofocus: true, maxlength: 254 %>
+      <%= form.label :password, "Senha" %>
+      <%= form.password_field :password, required: true, autocomplete: "current-password", maxlength: 128 %>
+      <%= form.submit "Entrar", class: "button" %>
+    <% end %>
+    <p class="setting-note">P1.1 · Fundação Rails. Acesso restrito ao administrador local.</p>
+  </section>
+</main>

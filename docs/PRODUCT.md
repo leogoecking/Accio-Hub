@@ -1,9 +1,14 @@
 # Accio Hub — Produto e experiência (PRODUCT)
 
 > **Versão:** 0.3 (alinhamento documental da P0.4; alvo funcional v0.1)<br>
-> **Data-base:** 2026-10-10<br>
-> **Estado:** P0.3 aprovada visualmente; P0.4 em andamento, com Etapa 5 homologada e Etapa 6 não iniciada<br>
+> **Data-base:** 2026-10-11<br>
+> **Estado:** P0.4 homologada; P1.0 arquitetural aprovada; P1.1 encerrada e homologada; P1.2 não iniciada<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [ARCHITECTURE.md](ARCHITECTURE.md) · [ROADMAP.md](ROADMAP.md)
+
+A P1.1 reproduz o shell aprovado em Rails com autenticação local e
+personalização fundamental. Os módulos de produto utilizam fixtures sintéticas
+e somente de leitura. Este registro não amplia funcionalidades autorizadas;
+o transporte funcional segue o [plano P1.0 aprovado](P1.0_ARCHITECTURE_PLAN.md).
 
 ## 1. Visão
 

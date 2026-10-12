@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+if ARGV.first == "server" || ARGV.first == "s"
+  binding = ARGV.each_with_index.filter_map do |arg, i|
+    ARGV[i + 1] if ["-b", "--binding"].include?(arg)
+  end
+  binding += ARGV.filter_map { |arg| arg.delete_prefix("-b") if arg.start_with?("-b") && arg != "-b" }
+  binding += ARGV.filter_map { |arg| arg.split("=", 2)[1] if arg.start_with?("--binding=") }
+  abort "P1.1 permite somente binding 127.0.0.1, localhost ou ::1." unless binding.all? { |host| ["127.0.0.1", "localhost", "::1"].include?(host) }
+  ARGV.concat(["--binding", "127.0.0.1"]) if binding.empty?
+end
+
+APP_PATH = File.expand_path("../config/application", __dir__)
+require_relative "../config/boot"
+require "rails/commands"

@@ -1,0 +1,186 @@
+{
+  "widgets": {
+    "tasks": {
+      "title": "Tarefas em andamento",
+      "icon": "check",
+      "tint": "mint",
+      "span": 5
+    },
+    "focus": {
+      "title": "Focus session",
+      "icon": "target",
+      "tint": "purple",
+      "span": 3
+    },
+    "calendar": {
+      "title": "Agenda",
+      "icon": "calendar",
+      "tint": "blue",
+      "span": 4
+    },
+    "feed": {
+      "title": "AccioFeed",
+      "icon": "rss",
+      "tint": "orange",
+      "span": 5
+    },
+    "notes": {
+      "title": "Seu conhecimento",
+      "icon": "book",
+      "tint": "pink",
+      "span": 4
+    },
+    "backup": {
+      "title": "Backups",
+      "icon": "cloud",
+      "tint": "blue",
+      "span": 3
+    },
+    "projects": {
+      "title": "Projetos ativos",
+      "icon": "grid",
+      "tint": "mint",
+      "span": 12
+    }
+  },
+  "nav": [
+    [
+      "home",
+      "Início",
+      "home"
+    ],
+    [
+      "tasks",
+      "Tarefas",
+      "check"
+    ],
+    [
+      "calendar",
+      "Agenda",
+      "calendar"
+    ],
+    [
+      "focus",
+      "Foco",
+      "target"
+    ],
+    [
+      "projects",
+      "Projetos",
+      "grid"
+    ],
+    [
+      "knowledge",
+      "Conhecimento",
+      "book"
+    ],
+    [
+      "feed",
+      "AccioFeed",
+      "rss"
+    ],
+    [
+      "backup",
+      "Backups",
+      "cloud"
+    ],
+    [
+      "email",
+      "E-mails",
+      "mail"
+    ]
+  ],
+  "dock": [
+    [
+      "tasks",
+      "Tarefas",
+      "check",
+      "mint"
+    ],
+    [
+      "calendar",
+      "Calendário",
+      "calendar",
+      "blue"
+    ],
+    [
+      "focus",
+      "Foco",
+      "target",
+      "purple"
+    ],
+    [
+      "knowledge",
+      "Vault",
+      "book",
+      "pink"
+    ],
+    [
+      "projects",
+      "Projetos",
+      "grid",
+      "gold"
+    ],
+    [
+      "feed",
+      "AccioFeed",
+      "rss",
+      "orange"
+    ],
+    [
+      "backup",
+      "Backups",
+      "cloud",
+      "blue"
+    ],
+    [
+      "email",
+      "E-mails",
+      "mail",
+      "pink"
+    ]
+  ],
+  "labels": {
+    "home": "Meu espaço",
+    "tasks": "Tarefas",
+    "calendar": "Agenda",
+    "focus": "Foco",
+    "projects": "Projetos",
+    "knowledge": "Conhecimento",
+    "feed": "AccioFeed",
+    "backup": "Backups",
+    "email": "E-mails",
+    "settings": "Configurações"
+  },
+  "icons": {
+    "home": "<path d=\"m3 10 9-7 9 7v10H3V10Z\"/><path d=\"M9 20v-7h6v7\"/>",
+    "grid": "<rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"1.5\"/>",
+    "check": "<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"4\"/><path d=\"m8 12 3 3 5-6\"/>",
+    "book": "<path d=\"M12 6C9 4 6 4 3 5v15c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1Z\"/><path d=\"M12 6v15\"/>",
+    "target": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><circle cx=\"12\" cy=\"12\" r=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/>",
+    "calendar": "<rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M7 3v4M17 3v4M3 10h18\"/>",
+    "rss": "<path d=\"M4 11c5 0 9 4 9 9M4 5c9 0 15 6 15 15\"/><circle cx=\"5\" cy=\"19\" r=\"1\"/>",
+    "cloud": "<path d=\"M6 18a4 4 0 0 1-1-7.9 7 7 0 0 1 13.1-.4A4.3 4.3 0 0 1 18 18H6Z\"/><path d=\"m9 14 3 3 3-3M12 17v-7\"/>",
+    "mail": "<rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"3\"/><path d=\"m4 7 8 6 8-6\"/>",
+    "inbox": "<rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"3\"/><path d=\"M3 13h5l2 3h4l2-3h5\"/>",
+    "settings": "<circle cx=\"12\" cy=\"12\" r=\"3\"/><path d=\"M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2\"/>",
+    "search": "<circle cx=\"10.8\" cy=\"10.8\" r=\"7\"/><path d=\"m16 16 5 5\"/>",
+    "edit": "<path d=\"m4 16 12-12 4 4L8 20H4v-4Z\"/>",
+    "plus": "<path d=\"M12 4v16M4 12h16\"/>",
+    "play": "<path d=\"m8 5 11 7-11 7V5Z\"/>",
+    "pause": "<path d=\"M8 5v14M16 5v14\"/>",
+    "music": "<path d=\"M9 18V5l12-2v13\"/><circle cx=\"6\" cy=\"18\" r=\"3\"/><circle cx=\"18\" cy=\"16\" r=\"3\"/>",
+    "link": "<path d=\"M7 17 17 7M8 7h9v9\"/>",
+    "move": "<path d=\"M12 3v18M3 12h18m-4-4 4 4-4 4M8 7l4-4 4 4M7 16l-4-4 4-4M8 17l4 4 4-4\"/>",
+    "sliders": "<path d=\"M4 7h16M4 17h16\"/><circle cx=\"9\" cy=\"7\" r=\"2\"/><circle cx=\"15\" cy=\"17\" r=\"2\"/>",
+    "x": "<path d=\"M5 5 19 19M19 5 5 19\"/>",
+    "layers": "<path d=\"m12 3 10 6-10 6L2 9l10-6ZM2 14l10 6 10-6\"/>",
+    "clock": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 6v6l4 2\"/>",
+    "code": "<path d=\"m8 6-6 6 6 6M16 6l6 6-6 6M14 3l-4 18\"/>",
+    "dots": "<circle cx=\"5\" cy=\"12\" r=\"1\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/><circle cx=\"19\" cy=\"12\" r=\"1\"/>",
+    "star": "<path d=\"m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z\"/>",
+    "archive": "<rect x=\"3\" y=\"3\" width=\"18\" height=\"5\" rx=\"1\"/><path d=\"M5 8v13h14V8M10 12h4\"/>",
+    "restore": "<path d=\"M3 10a9 9 0 1 1 2 9M3 4v6h6M12 7v5l3 2\"/>",
+    "chevron": "<path d=\"m9 6 6 6-6 6\"/>"
+  }
+}

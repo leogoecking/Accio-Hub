@@ -62,12 +62,12 @@ preparando o futuro Vault Markdown. Evitar refatorações grandes sem necessidad
 
 - Ruby on Rails 8
 - Hotwire / Stimulus
-- Tailwind CSS
+- CSS homologado preservado; Tailwind adiado conforme P1.0 aprovada
 - SQLite
 - PWA
 
-A implementação definitiva começará após a aprovação
-do protótipo navegável e autorização para iniciar P1.
+P0.4 homologada, P1.0 arquitetural aprovada e P1.1 encerrada e homologada.
+P1.2 depende de nova autorização, conforme docs/P1.0_ARCHITECTURE_PLAN.md.
 A aprovação visual da P0.3 não autoriza iniciar Rails na P0.4.
 
 ## Arquitetura
@@ -118,24 +118,23 @@ Utilizar quando apropriado:
 
 ## Fase atual
 
-P0.4 — Evolução do protótipo navegável.
+P1.1 — Fundação Rails, encerrada e homologada em 2026-10-11, tag anotada `p1.1-approved`.
 
-Prioridades:
-1. Preservar a interface P0.3.
-2. Detalhar e implementar Projetos.
-3. Detalhar e implementar Conhecimento.
-4. Validar interações e responsividade.
+- Aplicação em `rails/`; preservar integralmente `prototype/`.
+- Rails 8, Hotwire/Turbo/Stimulus, SQLite, ERB, Importmap e CSS aprovado.
+- Autenticação local por sessão, um administrador, sem cadastro público.
+- Execução somente em loopback; credenciais fora do Git.
+- Shell Dock + Widgets, temas, fontes, fundos, Music demonstrativo e personalização fundamental.
+- Somente modelos de autenticação. Projetos, tarefas, notas, foco e integrações são demonstrações identificadas e somente de leitura.
+- Nenhuma migração de dados pessoais, Vault real, API externa ou P1.2 nesta entrega.
+- Auditoria independente do Antigravity aprovada; recuperação local via `bin/rails admin:reset` verificada.
+- Validação manual no Firefox confirmada pelo usuário, separada dos testes automatizados.
+- Encerramento autorizado em commit; P1.2 não iniciada e exige nova autorização.
 
-Não iniciar Rails nesta fase.
-Não conectar APIs externas nesta fase.
-Não implementar armazenamento real em arquivos Markdown nesta fase.
+O plano aprovado está em [docs/P1.0_ARCHITECTURE_PLAN.md](docs/P1.0_ARCHITECTURE_PLAN.md).
+A verificação está em [docs/P1.1_FOUNDATION_VERIFICATION.md](docs/P1.1_FOUNDATION_VERIFICATION.md).
 
-O plano incremental da P0.4 está em docs/ROADMAP.md.
-Etapa 1 aprovada e registrada no commit documental 1d83387.
-Etapa 2 aprovada e registrada no commit cd3589d.
-Etapa 3 homologada após auditoria; commits `6c7a719` e `c759e61`.
-Etapa 4 aprovada e registrada no commit `e88d772`.
-Etapa 5 homologada após auditoria independente e correção do BUG-01.
-Registro das alterações verificadas autorizado em commit específico.
-OBS-02 e sugestões futuras permanecem fora desta correção.
-Aguardar nova autorização antes de iniciar a Etapa 6 (verificação e fechamento).
+P0.4 encerrada e homologada: tag anotada `p0.4-approved`, incluindo validação
+visual manual no Firefox e Pomodoro adaptativo. A identidade P0.3 permanece
+referenciada por `0018bb4`. Histórico e evidências em
+[docs/P0.4_FINAL_VERIFICATION.md](docs/P0.4_FINAL_VERIFICATION.md).

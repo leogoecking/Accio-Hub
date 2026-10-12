@@ -1,0 +1,24 @@
+PASS Acesso protegido e login inválido
+PASS Login local válido e shell
+PASS Navegação Turbo pelos nove destinos
+PASS Busca, atalhos, Escape e retorno de foco
+PASS Atalho de captura demonstra escopo sem criar dados
+PASS Personalização por teclado, Tab e Shift Tab
+PASS Tema, fundo, destaque e persistência
+PASS Dock e widgets: ordem, visibilidade e tamanho
+PASS Configurações reutilizam preferências do painel
+PASS Music global, expansão e visibilidade
+PASS Falha de salvamento mantém preferências pendentes e permite recuperar
+PASS Personalização não gera modelos nem estado de Pomodoro
+PASS Shell dark 320px
+PASS Shell dark 390px
+PASS Shell dark 768px
+PASS Shell dark 1440px
+PASS Shell dark 1920px
+PASS Shell light 320px
+PASS Shell light 390px
+PASS Shell light 768px
+PASS Shell light 1440px
+PASS Shell light 1920px
+PASS Logout e proteção após recarga
+23 cenários PASS; sessão accio-p11-1003321

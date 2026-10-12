@@ -1,0 +1,1 @@
+Warning: You are precompiling assets in development. Rails will not serve any changed assets until you delete public/assets/.manifest.json

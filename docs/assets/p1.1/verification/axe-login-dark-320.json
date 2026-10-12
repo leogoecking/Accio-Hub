@@ -1,0 +1,110 @@
+{
+  "axeVersion": "4.12.1",
+  "counts": {
+    "inapplicable": 61,
+    "incomplete": 1,
+    "passes": 27,
+    "violations": 0
+  },
+  "incomplete": [
+    {
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axeAPI",
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodeCount": 9,
+      "nodes": [
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<div class=\"eyebrow\">ACCIO HUB / ACESSO LOCAL</div>",
+          "target": [
+            "div"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<h1 id=\"login-title\">Seu espaço<span class=\"title-stop\">.</span></h1>",
+          "target": [
+            "#login-title"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<p class=\"muted\">Entre com a conta de administrador deste computador.</p>",
+          "target": [
+            ".muted"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<label for=\"email_address\">E-mail</label>",
+          "target": [
+            "label[for=\"email_address\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<input required=\"required\" autocomplete=\"username\" autofocus=\"autofocus\" maxlength=\"254\" size=\"254\" type=\"email\" name=\"email_address\" id=\"email_address\">",
+          "target": [
+            "#email_address"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<label for=\"password\">Senha</label>",
+          "target": [
+            "label[for=\"password\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<input required=\"required\" autocomplete=\"current-password\" maxlength=\"128\" size=\"128\" type=\"password\" name=\"password\" id=\"password\">",
+          "target": [
+            "#password"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<input type=\"submit\" name=\"commit\" value=\"Entrar\" class=\"button\" data-disable-with=\"Entrar\">",
+          "target": [
+            ".button"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<p class=\"setting-note\">P1.1 · Fundação Rails. Acesso restrito ao administrador local.</p>",
+          "target": [
+            ".setting-note"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ]
+    }
+  ],
+  "lifecycle": {
+    "effectiveLaunch": {
+      "browserLaunched": true,
+      "engine": "chrome",
+      "launchHash": 16228916338243422000
+    },
+    "launched": false,
+    "relaunchedBrowser": false,
+    "restartedBackground": false,
+    "restoreStatus": "not_configured",
+    "reused": true,
+    "saveStatus": "not_attempted"
+  },
+  "url": "http://127.0.0.1:3111/session/new",
+  "violations": []
+}

@@ -1,0 +1,2172 @@
+[
+  {
+    "theme": "dark",
+    "width": 320,
+    "differences": [],
+    "rails": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "key": "headbar",
+        "width": 271,
+        "x": 49,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 271,
+        "x": 49,
+        "y": 57
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 131,
+        "key": "board-titleline",
+        "width": 241,
+        "x": 64,
+        "y": 128
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 231,
+        "key": "app-dock",
+        "width": 211,
+        "x": 79,
+        "y": 403
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 2147.6875,
+        "key": "widget-grid",
+        "width": 241,
+        "x": 64,
+        "y": 768
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 319.953125,
+        "key": "tasks",
+        "width": 241,
+        "x": 64,
+        "y": 768
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 305,
+        "key": "focus",
+        "width": 241,
+        "x": 64,
+        "y": 1098.953125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "calendar",
+        "width": 241,
+        "x": 64,
+        "y": 1414.953125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 344.734375,
+        "key": "feed",
+        "width": 241,
+        "x": 64,
+        "y": 1673.953125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 241,
+        "x": 64,
+        "y": 2029.6875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 241,
+        "x": 64,
+        "y": 2288.6875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 368,
+        "key": "projects",
+        "width": 241,
+        "x": 64,
+        "y": 2547.6875
+      }
+    ],
+    "prototype": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "key": "headbar",
+        "width": 271,
+        "x": 49,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 271,
+        "x": 49,
+        "y": 57
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 131,
+        "key": "board-titleline",
+        "width": 241,
+        "x": 64,
+        "y": 128
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 231,
+        "key": "app-dock",
+        "width": 211,
+        "x": 79,
+        "y": 403
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 2147.6875,
+        "key": "widget-grid",
+        "width": 241,
+        "x": 64,
+        "y": 768
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 319.953125,
+        "key": "tasks",
+        "width": 241,
+        "x": 64,
+        "y": 768
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 305,
+        "key": "focus",
+        "width": 241,
+        "x": 64,
+        "y": 1098.953125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "calendar",
+        "width": 241,
+        "x": 64,
+        "y": 1414.953125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 344.734375,
+        "key": "feed",
+        "width": 241,
+        "x": 64,
+        "y": 1673.953125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 241,
+        "x": 64,
+        "y": 2029.6875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 241,
+        "x": 64,
+        "y": 2288.6875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 368,
+        "key": "projects",
+        "width": 241,
+        "x": 64,
+        "y": 2547.6875
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "differences": [],
+    "rails": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "key": "headbar",
+        "width": 341,
+        "x": 49,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 341,
+        "x": 49,
+        "y": 57
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 98.046875,
+        "key": "board-titleline",
+        "width": 311,
+        "x": 64,
+        "y": 128
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 231,
+        "key": "app-dock",
+        "width": 281,
+        "x": 79,
+        "y": 370.046875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 2066.625,
+        "key": "widget-grid",
+        "width": 311,
+        "x": 64,
+        "y": 721.046875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 315.984375,
+        "key": "tasks",
+        "width": 311,
+        "x": 64,
+        "y": 721.046875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 305,
+        "key": "focus",
+        "width": 311,
+        "x": 64,
+        "y": 1048.03125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "calendar",
+        "width": 311,
+        "x": 64,
+        "y": 1364.03125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 267.640625,
+        "key": "feed",
+        "width": 311,
+        "x": 64,
+        "y": 1623.03125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 311,
+        "x": 64,
+        "y": 1901.671875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 311,
+        "x": 64,
+        "y": 2160.671875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 368,
+        "key": "projects",
+        "width": 311,
+        "x": 64,
+        "y": 2419.671875
+      }
+    ],
+    "prototype": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "key": "headbar",
+        "width": 341,
+        "x": 49,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 341,
+        "x": 49,
+        "y": 57
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 98.046875,
+        "key": "board-titleline",
+        "width": 311,
+        "x": 64,
+        "y": 128
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 231,
+        "key": "app-dock",
+        "width": 281,
+        "x": 79,
+        "y": 370.046875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 2066.625,
+        "key": "widget-grid",
+        "width": 311,
+        "x": 64,
+        "y": 721.046875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 315.984375,
+        "key": "tasks",
+        "width": 311,
+        "x": 64,
+        "y": 721.046875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 305,
+        "key": "focus",
+        "width": 311,
+        "x": 64,
+        "y": 1048.03125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "calendar",
+        "width": 311,
+        "x": 64,
+        "y": 1364.03125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 267.640625,
+        "key": "feed",
+        "width": 311,
+        "x": 64,
+        "y": 1623.03125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 311,
+        "x": 64,
+        "y": 1901.671875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 311,
+        "x": 64,
+        "y": 2160.671875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 368,
+        "key": "projects",
+        "width": 311,
+        "x": 64,
+        "y": 2419.671875
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 768,
+    "differences": [],
+    "rails": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 61,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "key": "headbar",
+        "width": 707,
+        "x": 61,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 707,
+        "x": 61,
+        "y": 57
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 91.296875,
+        "key": "board-titleline",
+        "width": 677,
+        "x": 76,
+        "y": 128
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 267,
+        "key": "app-dock",
+        "width": 647,
+        "x": 91,
+        "y": 345.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1899,
+        "key": "widget-grid",
+        "width": 677,
+        "x": 76,
+        "y": 736.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "tasks",
+        "width": 677,
+        "x": 76,
+        "y": 736.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 305,
+        "key": "focus",
+        "width": 677,
+        "x": 76,
+        "y": 1061.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "calendar",
+        "width": 677,
+        "x": 76,
+        "y": 1377.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "feed",
+        "width": 677,
+        "x": 76,
+        "y": 1636.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 677,
+        "x": 76,
+        "y": 1895.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 677,
+        "x": 76,
+        "y": 2154.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 222,
+        "key": "projects",
+        "width": 677,
+        "x": 76,
+        "y": 2413.296875
+      }
+    ],
+    "prototype": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 61,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "key": "headbar",
+        "width": 707,
+        "x": 61,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 707,
+        "x": 61,
+        "y": 57
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 91.296875,
+        "key": "board-titleline",
+        "width": 677,
+        "x": 76,
+        "y": 128
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 267,
+        "key": "app-dock",
+        "width": 647,
+        "x": 91,
+        "y": 345.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1899,
+        "key": "widget-grid",
+        "width": 677,
+        "x": 76,
+        "y": 736.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "tasks",
+        "width": 677,
+        "x": 76,
+        "y": 736.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 305,
+        "key": "focus",
+        "width": 677,
+        "x": 76,
+        "y": 1061.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "calendar",
+        "width": 677,
+        "x": 76,
+        "y": 1377.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "feed",
+        "width": 677,
+        "x": 76,
+        "y": 1636.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 677,
+        "x": 76,
+        "y": 1895.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 677,
+        "x": 76,
+        "y": 2154.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 222,
+        "key": "projects",
+        "width": 677,
+        "x": 76,
+        "y": 2413.296875
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 1440,
+    "differences": [],
+    "rails": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 76,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "key": "headbar",
+        "width": 1364,
+        "x": 76,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 1364,
+        "x": 76,
+        "y": 67
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 104.53125,
+        "key": "board-titleline",
+        "width": 1306,
+        "x": 105,
+        "y": 144
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 129,
+        "key": "app-dock",
+        "width": 1266,
+        "x": 125,
+        "y": 378.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 739,
+        "key": "widget-grid",
+        "width": 1306,
+        "x": 105,
+        "y": 619.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "tasks",
+        "width": 536,
+        "x": 105,
+        "y": 619.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "focus",
+        "width": 316,
+        "x": 655,
+        "y": 619.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "calendar",
+        "width": 426,
+        "x": 985,
+        "y": 619.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "feed",
+        "width": 536,
+        "x": 105,
+        "y": 947.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 426,
+        "x": 655,
+        "y": 947.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 316,
+        "x": 1095,
+        "y": 947.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 149,
+        "key": "projects",
+        "width": 1306,
+        "x": 105,
+        "y": 1209.53125
+      }
+    ],
+    "prototype": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 76,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "key": "headbar",
+        "width": 1364,
+        "x": 76,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 1364,
+        "x": 76,
+        "y": 67
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 104.53125,
+        "key": "board-titleline",
+        "width": 1306,
+        "x": 105,
+        "y": 144
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 129,
+        "key": "app-dock",
+        "width": 1266,
+        "x": 125,
+        "y": 378.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 739,
+        "key": "widget-grid",
+        "width": 1306,
+        "x": 105,
+        "y": 619.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "tasks",
+        "width": 536,
+        "x": 105,
+        "y": 619.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "focus",
+        "width": 316,
+        "x": 655,
+        "y": 619.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "calendar",
+        "width": 426,
+        "x": 985,
+        "y": 619.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "feed",
+        "width": 536,
+        "x": 105,
+        "y": 947.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 426,
+        "x": 655,
+        "y": 947.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 316,
+        "x": 1095,
+        "y": 947.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 149,
+        "key": "projects",
+        "width": 1306,
+        "x": 105,
+        "y": 1209.53125
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 1920,
+    "differences": [],
+    "rails": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 76,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "key": "headbar",
+        "width": 1844,
+        "x": 76,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 1844,
+        "x": 76,
+        "y": 67
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 107.78125,
+        "key": "board-titleline",
+        "width": 1478,
+        "x": 259,
+        "y": 144
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 60,
+        "key": "app-dock",
+        "width": 1438,
+        "x": 279,
+        "y": 381.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 739,
+        "key": "widget-grid",
+        "width": 1478,
+        "x": 259,
+        "y": 553.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "tasks",
+        "width": 607.65625,
+        "x": 259,
+        "y": 553.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "focus",
+        "width": 359,
+        "x": 880.65625,
+        "y": 553.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "calendar",
+        "width": 483.34375,
+        "x": 1253.65625,
+        "y": 553.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "feed",
+        "width": 607.65625,
+        "x": 259,
+        "y": 881.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 483.34375,
+        "x": 880.65625,
+        "y": 881.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 359,
+        "x": 1378,
+        "y": 881.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 149,
+        "key": "projects",
+        "width": 1478,
+        "x": 259,
+        "y": 1143.78125
+      }
+    ],
+    "prototype": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 76,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "key": "headbar",
+        "width": 1844,
+        "x": 76,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 1844,
+        "x": 76,
+        "y": 67
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 107.78125,
+        "key": "board-titleline",
+        "width": 1478,
+        "x": 259,
+        "y": 144
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 60,
+        "key": "app-dock",
+        "width": 1438,
+        "x": 279,
+        "y": 381.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 739,
+        "key": "widget-grid",
+        "width": 1478,
+        "x": 259,
+        "y": 553.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "tasks",
+        "width": 607.65625,
+        "x": 259,
+        "y": 553.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "focus",
+        "width": 359,
+        "x": 880.65625,
+        "y": 553.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "calendar",
+        "width": 483.34375,
+        "x": 1253.65625,
+        "y": 553.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "feed",
+        "width": 607.65625,
+        "x": 259,
+        "y": 881.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 483.34375,
+        "x": 880.65625,
+        "y": 881.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 359,
+        "x": 1378,
+        "y": 881.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 149,
+        "key": "projects",
+        "width": 1478,
+        "x": 259,
+        "y": 1143.78125
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 320,
+    "differences": [],
+    "rails": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "key": "headbar",
+        "width": 271,
+        "x": 49,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 271,
+        "x": 49,
+        "y": 57
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 131,
+        "key": "board-titleline",
+        "width": 241,
+        "x": 64,
+        "y": 128
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 231,
+        "key": "app-dock",
+        "width": 211,
+        "x": 79,
+        "y": 403
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 2147.6875,
+        "key": "widget-grid",
+        "width": 241,
+        "x": 64,
+        "y": 768
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 319.953125,
+        "key": "tasks",
+        "width": 241,
+        "x": 64,
+        "y": 768
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 305,
+        "key": "focus",
+        "width": 241,
+        "x": 64,
+        "y": 1098.953125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "calendar",
+        "width": 241,
+        "x": 64,
+        "y": 1414.953125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 344.734375,
+        "key": "feed",
+        "width": 241,
+        "x": 64,
+        "y": 1673.953125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 241,
+        "x": 64,
+        "y": 2029.6875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 241,
+        "x": 64,
+        "y": 2288.6875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 368,
+        "key": "projects",
+        "width": 241,
+        "x": 64,
+        "y": 2547.6875
+      }
+    ],
+    "prototype": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "key": "headbar",
+        "width": 271,
+        "x": 49,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 271,
+        "x": 49,
+        "y": 57
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 131,
+        "key": "board-titleline",
+        "width": 241,
+        "x": 64,
+        "y": 128
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 231,
+        "key": "app-dock",
+        "width": 211,
+        "x": 79,
+        "y": 403
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 2147.6875,
+        "key": "widget-grid",
+        "width": 241,
+        "x": 64,
+        "y": 768
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 319.953125,
+        "key": "tasks",
+        "width": 241,
+        "x": 64,
+        "y": 768
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 305,
+        "key": "focus",
+        "width": 241,
+        "x": 64,
+        "y": 1098.953125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "calendar",
+        "width": 241,
+        "x": 64,
+        "y": 1414.953125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 344.734375,
+        "key": "feed",
+        "width": 241,
+        "x": 64,
+        "y": 1673.953125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 241,
+        "x": 64,
+        "y": 2029.6875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 241,
+        "x": 64,
+        "y": 2288.6875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 368,
+        "key": "projects",
+        "width": 241,
+        "x": 64,
+        "y": 2547.6875
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 390,
+    "differences": [],
+    "rails": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "key": "headbar",
+        "width": 341,
+        "x": 49,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 341,
+        "x": 49,
+        "y": 57
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 98.046875,
+        "key": "board-titleline",
+        "width": 311,
+        "x": 64,
+        "y": 128
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 231,
+        "key": "app-dock",
+        "width": 281,
+        "x": 79,
+        "y": 370.046875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 2066.625,
+        "key": "widget-grid",
+        "width": 311,
+        "x": 64,
+        "y": 721.046875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 315.984375,
+        "key": "tasks",
+        "width": 311,
+        "x": 64,
+        "y": 721.046875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 305,
+        "key": "focus",
+        "width": 311,
+        "x": 64,
+        "y": 1048.03125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "calendar",
+        "width": 311,
+        "x": 64,
+        "y": 1364.03125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 267.640625,
+        "key": "feed",
+        "width": 311,
+        "x": 64,
+        "y": 1623.03125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 311,
+        "x": 64,
+        "y": 1901.671875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 311,
+        "x": 64,
+        "y": 2160.671875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 368,
+        "key": "projects",
+        "width": 311,
+        "x": 64,
+        "y": 2419.671875
+      }
+    ],
+    "prototype": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "key": "headbar",
+        "width": 341,
+        "x": 49,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 341,
+        "x": 49,
+        "y": 57
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 98.046875,
+        "key": "board-titleline",
+        "width": 311,
+        "x": 64,
+        "y": 128
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 231,
+        "key": "app-dock",
+        "width": 281,
+        "x": 79,
+        "y": 370.046875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 2066.625,
+        "key": "widget-grid",
+        "width": 311,
+        "x": 64,
+        "y": 721.046875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 315.984375,
+        "key": "tasks",
+        "width": 311,
+        "x": 64,
+        "y": 721.046875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 305,
+        "key": "focus",
+        "width": 311,
+        "x": 64,
+        "y": 1048.03125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "calendar",
+        "width": 311,
+        "x": 64,
+        "y": 1364.03125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 267.640625,
+        "key": "feed",
+        "width": 311,
+        "x": 64,
+        "y": 1623.03125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 311,
+        "x": 64,
+        "y": 1901.671875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 311,
+        "x": 64,
+        "y": 2160.671875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 368,
+        "key": "projects",
+        "width": 311,
+        "x": 64,
+        "y": 2419.671875
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 768,
+    "differences": [],
+    "rails": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 61,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "key": "headbar",
+        "width": 707,
+        "x": 61,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 707,
+        "x": 61,
+        "y": 57
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 91.296875,
+        "key": "board-titleline",
+        "width": 677,
+        "x": 76,
+        "y": 128
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 267,
+        "key": "app-dock",
+        "width": 647,
+        "x": 91,
+        "y": 345.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1899,
+        "key": "widget-grid",
+        "width": 677,
+        "x": 76,
+        "y": 736.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "tasks",
+        "width": 677,
+        "x": 76,
+        "y": 736.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 305,
+        "key": "focus",
+        "width": 677,
+        "x": 76,
+        "y": 1061.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "calendar",
+        "width": 677,
+        "x": 76,
+        "y": 1377.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "feed",
+        "width": 677,
+        "x": 76,
+        "y": 1636.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 677,
+        "x": 76,
+        "y": 1895.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 677,
+        "x": 76,
+        "y": 2154.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 222,
+        "key": "projects",
+        "width": 677,
+        "x": 76,
+        "y": 2413.296875
+      }
+    ],
+    "prototype": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 61,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "key": "headbar",
+        "width": 707,
+        "x": 61,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 707,
+        "x": 61,
+        "y": 57
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 91.296875,
+        "key": "board-titleline",
+        "width": 677,
+        "x": 76,
+        "y": 128
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 267,
+        "key": "app-dock",
+        "width": 647,
+        "x": 91,
+        "y": 345.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1899,
+        "key": "widget-grid",
+        "width": 677,
+        "x": 76,
+        "y": 736.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "tasks",
+        "width": 677,
+        "x": 76,
+        "y": 736.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 305,
+        "key": "focus",
+        "width": 677,
+        "x": 76,
+        "y": 1061.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "calendar",
+        "width": 677,
+        "x": 76,
+        "y": 1377.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "feed",
+        "width": 677,
+        "x": 76,
+        "y": 1636.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 677,
+        "x": 76,
+        "y": 1895.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 677,
+        "x": 76,
+        "y": 2154.296875
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 222,
+        "key": "projects",
+        "width": 677,
+        "x": 76,
+        "y": 2413.296875
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 1440,
+    "differences": [],
+    "rails": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 76,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "key": "headbar",
+        "width": 1364,
+        "x": 76,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 1364,
+        "x": 76,
+        "y": 67
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 104.53125,
+        "key": "board-titleline",
+        "width": 1306,
+        "x": 105,
+        "y": 144
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 129,
+        "key": "app-dock",
+        "width": 1266,
+        "x": 125,
+        "y": 378.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 739,
+        "key": "widget-grid",
+        "width": 1306,
+        "x": 105,
+        "y": 619.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "tasks",
+        "width": 536,
+        "x": 105,
+        "y": 619.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "focus",
+        "width": 316,
+        "x": 655,
+        "y": 619.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "calendar",
+        "width": 426,
+        "x": 985,
+        "y": 619.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "feed",
+        "width": 536,
+        "x": 105,
+        "y": 947.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 426,
+        "x": 655,
+        "y": 947.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 316,
+        "x": 1095,
+        "y": 947.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 149,
+        "key": "projects",
+        "width": 1306,
+        "x": 105,
+        "y": 1209.53125
+      }
+    ],
+    "prototype": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 76,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "key": "headbar",
+        "width": 1364,
+        "x": 76,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 1364,
+        "x": 76,
+        "y": 67
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 104.53125,
+        "key": "board-titleline",
+        "width": 1306,
+        "x": 105,
+        "y": 144
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 129,
+        "key": "app-dock",
+        "width": 1266,
+        "x": 125,
+        "y": 378.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 739,
+        "key": "widget-grid",
+        "width": 1306,
+        "x": 105,
+        "y": 619.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "tasks",
+        "width": 536,
+        "x": 105,
+        "y": 619.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "focus",
+        "width": 316,
+        "x": 655,
+        "y": 619.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "calendar",
+        "width": 426,
+        "x": 985,
+        "y": 619.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "feed",
+        "width": 536,
+        "x": 105,
+        "y": 947.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 426,
+        "x": 655,
+        "y": 947.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 316,
+        "x": 1095,
+        "y": 947.53125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 149,
+        "key": "projects",
+        "width": 1306,
+        "x": 105,
+        "y": 1209.53125
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 1920,
+    "differences": [],
+    "rails": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 76,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "key": "headbar",
+        "width": 1844,
+        "x": 76,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 1844,
+        "x": 76,
+        "y": 67
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 107.78125,
+        "key": "board-titleline",
+        "width": 1478,
+        "x": 259,
+        "y": 144
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 60,
+        "key": "app-dock",
+        "width": 1438,
+        "x": 279,
+        "y": 381.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 739,
+        "key": "widget-grid",
+        "width": 1478,
+        "x": 259,
+        "y": 553.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "tasks",
+        "width": 607.65625,
+        "x": 259,
+        "y": 553.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "focus",
+        "width": 359,
+        "x": 880.65625,
+        "y": 553.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "calendar",
+        "width": 483.34375,
+        "x": 1253.65625,
+        "y": 553.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "feed",
+        "width": 607.65625,
+        "x": 259,
+        "y": 881.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 483.34375,
+        "x": 880.65625,
+        "y": 881.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 359,
+        "x": 1378,
+        "y": 881.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 149,
+        "key": "projects",
+        "width": 1478,
+        "x": 259,
+        "y": 1143.78125
+      }
+    ],
+    "prototype": [
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "key": "rail",
+        "width": 76,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "key": "headbar",
+        "width": 1844,
+        "x": 76,
+        "y": 0
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "key": "music-zone",
+        "width": 1844,
+        "x": 76,
+        "y": 67
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 107.78125,
+        "key": "board-titleline",
+        "width": 1478,
+        "x": 259,
+        "y": 144
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 60,
+        "key": "app-dock",
+        "width": 1438,
+        "x": 279,
+        "y": 381.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 739,
+        "key": "widget-grid",
+        "width": 1478,
+        "x": 259,
+        "y": 553.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "tasks",
+        "width": 607.65625,
+        "x": 259,
+        "y": 553.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "focus",
+        "width": 359,
+        "x": 880.65625,
+        "y": 553.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 314,
+        "key": "calendar",
+        "width": 483.34375,
+        "x": 1253.65625,
+        "y": 553.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "feed",
+        "width": 607.65625,
+        "x": 259,
+        "y": 881.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "notes",
+        "width": 483.34375,
+        "x": 880.65625,
+        "y": 881.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 248,
+        "key": "backup",
+        "width": 359,
+        "x": 1378,
+        "y": 881.78125
+      },
+      {
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 149,
+        "key": "projects",
+        "width": 1478,
+        "x": 259,
+        "y": 1143.78125
+      }
+    ]
+  }
+]

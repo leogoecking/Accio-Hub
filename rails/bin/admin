@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+require "io/console"
+require "rbconfig"
+
+abort "Use um terminal interativo para criar o administrador." unless $stdin.tty?
+print "E-mail do administrador: "
+ENV["ACCIO_ADMIN_EMAIL"] = $stdin.gets.to_s.strip
+print "Senha (mínimo 12 caracteres): "
+password = $stdin.noecho(&:gets).to_s.chomp
+puts
+print "Confirme a senha: "
+confirmation = $stdin.noecho(&:gets).to_s.chomp
+puts
+abort "As senhas não coincidem; nenhuma conta foi criada." unless password == confirmation
+ENV["ACCIO_ADMIN_PASSWORD"] = password
+exec RbConfig.ruby, File.expand_path("rails", __dir__), "admin:create"

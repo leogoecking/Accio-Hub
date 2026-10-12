@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Arraste real do Dock e widgets, tamanho e persistência",
+    "result": "PASS"
+  },
+  {
+    "name": "Todos os fundos e foco após reordenação por teclado",
+    "result": "PASS"
+  },
+  {
+    "name": "Busca dark: Meta K, região, Tab e fechamento pelo fundo",
+    "result": "PASS"
+  },
+  {
+    "name": "Configurações dark 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Configurações dark 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Configurações dark 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Configurações dark 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Configurações dark 1920px",
+    "result": "PASS"
+  },
+  {
+    "name": "Busca light: Meta K, região, Tab e fechamento pelo fundo",
+    "result": "PASS"
+  },
+  {
+    "name": "Configurações light 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Configurações light 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Configurações light 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Configurações light 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Configurações light 1920px",
+    "result": "PASS"
+  },
+  {
+    "name": "Login preserva tema claro depois do logout",
+    "result": "PASS"
+  }
+]

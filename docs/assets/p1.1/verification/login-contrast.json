@@ -1,0 +1,23 @@
+[
+  {
+    "theme": "light",
+    "target": "login eyebrow / auxiliary",
+    "foreground": "#536578",
+    "background": "#f6f9fc",
+    "contrast": 5.68
+  },
+  {
+    "theme": "dark",
+    "target": "login eyebrow / auxiliary",
+    "foreground": "#9da9b9",
+    "background": "#172332",
+    "contrast": 6.66
+  },
+  {
+    "theme": "light",
+    "target": "login focus outline",
+    "foreground": "#172436",
+    "background": "#f6f9fc",
+    "contrast": 14.81
+  }
+]

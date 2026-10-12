@@ -1,0 +1,8 @@
+<% id = placement["id"]; widget = Studio::WIDGETS.fetch(id); route = id == "notes" ? "knowledge" : id %>
+<section class="panel panel-<%= id %> span-<%= placement['span'] %>" data-widget="<%= id %>" aria-labelledby="widget-<%= id %>-title" <%= "hidden" unless placement["visible"] %>>
+  <div class="panel-top"><div class="panel-heading"><span class="widget-icon tint-<%= widget['tint'] %>"><%= studio_icon(widget["icon"], 18) %></span><h3 id="widget-<%= id %>-title"><%= widget["title"] %></h3></div><div class="panel-controls">
+    <span data-widget-action><% if id == "focus" %><span class="badge">POMODORO</span><% elsif id == "backup" %><span class="badge warn">NÃO CONECTADO</span><% else %><%= link_to studio_path(route), class: "quiet-link", aria: {label: "Ver #{widget['title']} — demonstração"} do %><%= {"tasks" => "Ver tudo", "calendar" => "Abrir", "feed" => "Ler feed", "notes" => "Biblioteca", "projects" => "Explorar"}.fetch(id) %> <%= studio_icon("link", 14) %><% end %><% end %></span>
+    <button hidden class="mini-control" data-zoom="<%= id %>" aria-label="Alternar tamanho de <%= widget['title'] %>">↔</button><span hidden class="mini-control handle" data-handle aria-hidden="true"><%= studio_icon("move", 17) %></span>
+  </div></div>
+  <%= render "studio/widgets/#{id}" %>
+</section>
