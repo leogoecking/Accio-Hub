@@ -15,6 +15,11 @@ class User < ApplicationRecord
   validate :single_administrator, on: :create
   before_create { self.id = 1 }
 
+  # Avoid a has_one cached in memory after a rolled-back bootstrap.
+  def user_preferences_scope
+    UserPreference.where(user_id: id)
+  end
+
   private
 
   def single_administrator

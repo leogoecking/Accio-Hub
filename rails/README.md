@@ -3,7 +3,9 @@
 Fundação encerrada e homologada em 2026-10-11, tag anotada `p1.1-approved`.
 Auditoria independente aprovada, recuperação local de senha verificada e
 validação manual no Firefox confirmada pelo usuário.
-P1.2A aprovada; P1.2B implementada para revisão, sem commit. P1.2C não iniciada.
+P1.2A/B/C aprovadas tecnicamente; B registrada em `ddf6715`. Commit C autorizado;
+P1.2D somente em planejamento. Firefox C, contraste e retenção dos snapshots
+legados (preferencialmente P1.2F) permanecem pendentes.
 Referência completa: P0.4 homologada; identidade Dock + Widgets: `0018bb4`.
 
 ## Ambiente e instalação local
@@ -66,17 +68,22 @@ aplicativos/atalhos, temas, quatro fundos, destaque, ordem/visibilidade/tamanho
 predefinido dos widgets, Dock, painel de Personalizar e Configurações, Music
 visual global expansível e opcional. Arraste tem controles equivalentes por teclado.
 
-Preferências ficam em cookie criptografado HttpOnly/SameSite Strict deste navegador.
-Elas não são modelo de produto e não leem o localStorage da P0.4. O navegador
-mantém alterações pendentes em memória diante de falha e oferece retentativa;
-recarregar com falha pendente perde somente essas preferências ainda não salvas.
+Preferências autenticadas são persistidas em SQLite por um agregado versionado.
+A primeira inicialização usa POST autenticado/CSRF; migra cookie P1.1 válido e
+preserva cópia/digest. Cookie diferente do banco ou inválido exige revisão explícita;
+nenhum default sobrescreve registros existentes. O cookie do login guarda somente
+tema/fundo/destaque confirmados e nunca é importado. Nenhum localStorage P0.4 é lido.
+
+Conflitos preservam edição local e oferecem reaplicação por campo ou descarte
+explícito. Contenção e falhas oferecem retentativa. Alterações pendentes ficam na
+memória da aba, com aviso antes de sair; fechar/recarregar forçadamente pode perdê-las.
 
 Projetos, tarefas, notas, calendário, foco, Feed, backups e e-mails são fixtures
 sintéticas identificadas, de leitura. Controles de criação/foco/captura explicam
 a demonstração. Não há timer funcional, áudio, Vault, APIs ou migração pessoal.
 Na P1.2B foram acrescentadas oito tabelas de domínio, ainda sem conexão com essas
-telas ou com o fluxo de cookies. O contrato e a verificação estão em
-[P1.2A](../docs/P1.2A_SQLITE_PLAN.md) e [P1.2B](../docs/P1.2B_VERIFICATION.md).
+telas de produto. Na C, apenas as preferências foram conectadas ao SQLite. O contrato e a verificação estão em
+[P1.2A](../docs/P1.2A_SQLITE_PLAN.md) e [P1.2B](../docs/P1.2B_VERIFICATION.md) e [P1.2C](../docs/P1.2C_VERIFICATION.md).
 Não executar `db:prepare` em instalação existente/pessoal para esta revisão;
 as verificações desta entrega usam somente bancos temporários sintéticos.
 
@@ -97,16 +104,17 @@ Ele lê apenas defaults do código, nunca armazenamento do navegador.
 
 ## Verificação
 
-Para verificar a P1.2B e toda a suíte Rails com bancos privados temporários:
+Para verificar a P1.2C e a regressão da P1.2B com bancos privados temporários:
 
 ```sh
-bundle exec ruby script/relational-check.rb
+bundle exec ruby script/preferences-check.rb
 ```
 
-O script cria os bancos em `tmp/`, verifica evolução desde a P1.1, carga do schema,
-suíte Rails, concorrência em processos independentes, reabertura e WAL/FULL.
+O script cria os bancos em `tmp/` e verifica a suíte Rails, inicialização/edição
+concorrentes, reabertura, os 25 gatilhos e contenção real com HTTP 503.
 Não aceita caminho de banco pessoal e grava evidências sintéticas em
-`../docs/assets/p1.2b/`. Não altera o fluxo de cookies. Para outros comandos que
+`../docs/assets/p1.2c/`. O script B permanece como histórico; não sobrescrever suas
+evidências homologadas durante a revisão C. Para outros comandos que
 acessam banco, utilizar `RAILS_ENV=test` e `ACCIO_DATABASE_PATH` apontando para
 banco sintético isolado. Os comandos da fundação abaixo continuam disponíveis:
 
@@ -127,3 +135,45 @@ Esse script utiliza uma sessão própria, exige credenciais sintéticas em arqui
 ignorado e não deve receber uma origem/profile de dados pessoais.
 
 Histórico, evidências, matriz visual e pendências no relatório de verificação.
+
+### Navegador isolado — P1.2C
+
+Com agent-browser disponível, executar de `rails/`:
+
+```sh
+bundle exec ruby script/preferences-browser-setup.rb
+```
+
+Esse comando cria dois bancos novos e credenciais sintéticas privadas em `tmp/`.
+Iniciar cada servidor em um terminal separado, usando o diretório indicado:
+
+```sh
+P12C_DIR="$(cat tmp/p12c-workspace)"
+RAILS_ENV=development ACCIO_DATABASE_PATH="$P12C_DIR/synthetic.sqlite3" bin/rails server -p 3122 --pid "$P12C_DIR/server.pid"
+```
+
+```sh
+P12C_DIR="$(cat tmp/p12c-workspace)"
+RAILS_ENV=development ACCIO_DATABASE_PATH="$P12C_DIR/empty.sqlite3" bin/rails server -p 3123 --pid "$P12C_DIR/empty-server.pid"
+```
+
+Em outro terminal, a partir da raiz do repositório:
+
+```sh
+node rails/script/preferences-browser-check.mjs
+node rails/script/preferences-browser-recovery-check.mjs
+node rails/script/preferences-browser-restart-check.mjs capture
+```
+
+Após `capture`, interromper somente o servidor sintético 3122 e reiniciá-lo com
+o mesmo comando, banco e diretório. Então executar:
+
+```sh
+node rails/script/preferences-browser-restart-check.mjs verify
+```
+
+Não repetir o setup entre captura e conferência. Os scripts usam sessões próprias,
+recebem a senha por stdin e salvam capturas/resultados sem credenciais em
+`docs/assets/p1.2c/`. O cenário de cookie inválido exige que `empty.sqlite3` ainda
+não tenha preferências; uma repetição completa requer novo setup e novos servidores.
+Encerrar os dois servidores ao terminar. Firefox não foi exercitado por esses scripts.

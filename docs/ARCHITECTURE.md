@@ -2,7 +2,7 @@
 
 > **Versão:** 0.3 (protótipo atual e arquitetura definitiva planejada)<br>
 > **Data-base:** 2026-10-12<br>
-> **Estado:** P0.4 e P1.1 homologadas; P1.0/P1.2A aprovadas; P1.2B implementada para revisão<br>
+> **Estado:** P0.4 e P1.1 homologadas; P1.0/P1.2A aprovadas; P1.2B homologada; P1.2C aprovada tecnicamente; P1.2D somente em planejamento<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ROADMAP.md](ROADMAP.md)
 
 ## Fundação homologada — P1.1
@@ -29,7 +29,7 @@ produto ainda não transportados são explicitamente demonstrativos. Estrutura,
 execução e limites em [../rails/README.md](../rails/README.md); evidências em
 [P1.1_FOUNDATION_VERIFICATION.md](P1.1_FOUNDATION_VERIFICATION.md).
 
-## Fundação relacional — P1.2B, em revisão
+## Fundação relacional — P1.2B homologada
 
 O [planejamento aprovado P1.2A](P1.2A_SQLITE_PLAN.md) detalha os contratos.
 O backend agora possui `Project`, `Task`, `ProjectReference`, `UserPreference`,
@@ -41,9 +41,32 @@ Gatilhos SQL protegem identidades, arquivamento e recibos imutáveis.
 
 WAL/FULL são configurados somente nas conexões da aplicação, verificados em
 bancos temporários. Não há migração pessoal nem novas tabelas de notas.
-Controllers, formulários, aparência em cookies e temporizador demonstrativo
-continuam com o comportamento P1.1. A transição operacional depende da P1.2C/E.
+Na entrega B, controllers, formulários, cookies e temporizador continuavam com
+o comportamento P1.1. B foi aprovada após auditoria independente, registrada no
+commit `ddf6715`. O temporizador funcional continua reservado à P1.2E.
 Evidências e limites em [P1.2B_VERIFICATION.md](P1.2B_VERIFICATION.md).
+
+## Preferências operacionais — P1.2C aprovada tecnicamente
+
+`AppearancePreferences` administra um agregado de preferência, Dock e widgets
+home, com transação SQLite e versão única em `UserPreference`. Mantém o DTO do
+Stimulus. Leituras usam snapshots frescos; o bootstrap materializa a transação
+antes de verificar ausência do singleton, evitando competição entre processos.
+
+O POST autenticado/CSRF valida o cookie P1.1 e conserva cópia/digest. Só retira o
+cookie após confirmação pós-commit. Banco inicializado prevalece; cookies distintos
+ou inválidos exigem revisão explícita, com exportação e recuperação. PATCH exige
+versão do agregado; conflito mantém edição local e oferece reaplicação por campo.
+Contenção retorna 503 recuperável. Não há sincronização em tempo real.
+
+Tema/fundo/destaque confirmados derivam um cookie mínimo para login. Esse cache
+não é fonte operacional nem candidato de importação. Sem mudança de schema,
+CRUD de produto, foco funcional ou Vault. Relatório em
+[P1.2C_VERIFICATION.md](P1.2C_VERIFICATION.md).
+
+Auditoria independente aprovada, conforme confirmação do usuário. Permanecem
+pendentes Firefox manual da C, contraste inconclusivo e política de retenção/descarte
+dos snapshots legados, preferencialmente na P1.2F. Somente planejamento D autorizado.
 
 ## 0. Arquitetura atual do protótipo e limites da P0.4
 

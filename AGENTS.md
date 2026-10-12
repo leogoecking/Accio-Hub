@@ -67,7 +67,7 @@ preparando o futuro Vault Markdown. Evitar refatorações grandes sem necessidad
 - PWA
 
 P0.4 homologada, P1.0 arquitetural aprovada e P1.1 encerrada e homologada.
-P1.2A aprovada; exclusivamente P1.2B autorizada, conforme docs/P1.2A_SQLITE_PLAN.md.
+P1.2A/P1.2B/P1.2C aprovadas tecnicamente; somente planejamento P1.2D autorizado.
 A aprovação visual da P0.3 não autoriza iniciar Rails na P0.4.
 
 ## Arquitetura
@@ -118,17 +118,23 @@ Utilizar quando apropriado:
 
 ## Fase atual
 
-P1.2B — Fundação relacional SQLite, autorizada em 2026-10-12 após aprovação da P1.2A.
+P1.2C — Encerramento técnico aprovado em 2026-10-12 após auditoria independente do Antigravity.
+P1.2D — Somente planejamento autorizado; implementação depende de nova aprovação.
 
 - Aplicação em `rails/`; preservar integralmente `prototype/`.
 - Rails 8, Hotwire/Turbo/Stimulus, SQLite, ERB, Importmap e CSS aprovado.
 - Autenticação local por sessão, um administrador, sem cadastro público.
 - Execução somente em loopback; credenciais fora do Git.
 - Modelos de projetos, tarefas, referências, preferências, Dock, widgets, foco e recibos técnicos; integridade SQL e versões.
-- Interface continua demonstrativa; preferências funcionais continuam em cookies até autorização da P1.2C.
+- Preferências autenticadas, Dock e widgets persistem no SQLite; bootstrap autenticado/CSRF e controle de versão do agregado.
+- Cookie legado é somente candidato de importação; cookie mínimo do login deriva de dados confirmados e nunca inicializa o banco.
+- Projetos, tarefas, notas e foco continuam demonstrativos.
 - Nenhum formulário conectado, timer funcional, nota em SQLite, Vault, API externa ou importação pessoal.
 - Migrações e testes somente em bancos novos, temporários e sintéticos nesta entrega.
-- Alterações sem commit até revisão; P1.2C não autorizada.
+- P1.2B registrada em `ddf671585a7f1908b40a63d89417cb378454e218`; nenhuma tag/merge.
+- Commit específico da P1.2C autorizado; não criar tag nem merge na main.
+- Pendências C: Firefox manual, contraste inconclusivo e retenção/descarte de legacy_cookie_backup (preferencialmente P1.2F).
+- Nenhum CRUD P1.2D autorizado nesta sessão.
 
 P1.1 homologada em 2026-10-11, tag `p1.1-approved`, com auditoria independente,
 recuperação local via `bin/rails admin:reset` e validação manual no Firefox.
@@ -136,7 +142,7 @@ Esse histórico não constitui validação de interface das fases posteriores.
 
 O plano aprovado está em [docs/P1.0_ARCHITECTURE_PLAN.md](docs/P1.0_ARCHITECTURE_PLAN.md).
 A P1.2A aprovada está em [docs/P1.2A_SQLITE_PLAN.md](docs/P1.2A_SQLITE_PLAN.md).
-Verificações: [P1.1](docs/P1.1_FOUNDATION_VERIFICATION.md) e [P1.2B](docs/P1.2B_VERIFICATION.md).
+Verificações: [P1.1](docs/P1.1_FOUNDATION_VERIFICATION.md) [P1.2B](docs/P1.2B_VERIFICATION.md) e [P1.2C](docs/P1.2C_VERIFICATION.md).
 
 P0.4 encerrada e homologada: tag anotada `p0.4-approved`, incluindo validação
 visual manual no Firefox e Pomodoro adaptativo. A identidade P0.3 permanece

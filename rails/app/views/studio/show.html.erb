@@ -1,4 +1,4 @@
-<div class="shell" data-page="<%= @page %>" data-controller="studio" data-studio-appearance-value="<%= @appearance.to_json %>" data-studio-defaults-value="<%= Studio.defaults.to_json %>" data-action="click->studio#click change->studio#change dragstart->studio#dragStart dragover->studio#dragOver drop->studio#drop dragend->studio#dragEnd">
+<div class="shell" data-page="<%= @page %>" data-controller="studio" data-studio-appearance-value="<%= @appearance.to_json %>" data-studio-version-value="<%= @preference_version %>" data-studio-bootstrap-value="<%= @bootstrap %>" data-studio-defaults-value="<%= Studio.defaults.to_json %>" data-action="click->studio#click change->studio#change dragstart->studio#dragStart dragover->studio#dragOver drop->studio#drop dragend->studio#dragEnd">
   <a class="skip-link" href="#main-content">Ir para o conteúdo</a>
   <aside class="rail" aria-label="Barra de aplicativos">
     <%= link_to root_path, class: "brand-glyph", aria: {label: "Accio Hub — Início"} do %>a<span class="brand-dot"></span><% end %>
@@ -32,5 +32,12 @@
     </main>
   </div>
   <%= render "dialogs" %>
-  <div class="foundation-notice" role="status" aria-live="polite" hidden data-save-status><span data-save-message></span><button class="mini-control" data-retry aria-label="Tentar salvar preferências novamente">↻</button></div>
+  <div class="foundation-notice" role="status" aria-live="polite" hidden data-save-status><span data-save-message></span><div class="preference-recovery-actions">
+    <button class="mini-control" data-retry aria-label="Tentar salvar preferências novamente" hidden>↻</button>
+    <button class="mini-control" data-recovery="export" hidden>Exportar recuperação</button>
+    <button class="mini-control" data-recovery="defaults" hidden>Usar padrão e preservar cópia</button>
+    <button class="mini-control" data-recovery="keep" hidden>Manter preferências do banco</button>
+    <button class="mini-control" data-recovery="apply" hidden>Reaplicar minha edição</button>
+    <button class="mini-control" data-recovery="remote" hidden>Usar versão salva e descartar edição local</button>
+  </div></div>
 </div>
