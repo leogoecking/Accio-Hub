@@ -24,3 +24,7 @@ import TaskCommandController from 'controllers/task_command_controller'
 application.register('task-command', TaskCommandController)
 import TaskSearchController from 'controllers/task_search_controller'
 application.register('task-search', TaskSearchController)
+import ReferenceFormController from 'controllers/reference_form_controller'
+application.register('reference-form', ReferenceFormController)
+import ReferenceModalController from 'controllers/reference_modal_controller'
+application.register('reference-modal', ReferenceModalController)

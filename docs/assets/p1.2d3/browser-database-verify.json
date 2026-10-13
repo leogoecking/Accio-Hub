@@ -1,0 +1,13 @@
+{
+  "mode": "verify",
+  "reference_count": 2,
+  "task_count": 2,
+  "project_count": 2,
+  "uid_links_intact": true,
+  "focus_empty": true,
+  "triggers": 25,
+  "foreign_keys_intact": true,
+  "wal": "wal",
+  "synchronous": 2,
+  "database_digest": "474cbd7742f9ceaaead2a037d43b4a65f9fdec74022f04da9eb05ca46089daee"
+}

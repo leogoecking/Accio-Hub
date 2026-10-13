@@ -2,7 +2,7 @@
 
 > **Versão:** 0.4 (encerramento da P0.4 e backlog futuro)<br>
 > **Data-base:** 2026-10-11<br>
-> **Estado:** P0.3 aprovada visualmente; P0.4 e P1.1 homologadas; P1.0/P1.2A aprovadas; P1.2B homologada; P1.2C aprovada tecnicamente; planejamento P1.2D aprovado; D1 aprovada com ressalvas; D2 autorizada em implementação<br>
+> **Estado:** P0.3 aprovada visualmente; P0.4 e P1.1 homologadas; P1.0/P1.2A aprovadas; P1.2B homologada; P1.2C aprovada tecnicamente; planejamento P1.2D aprovado; D1 aprovada com ressalvas; D2 aprovada; D3 aprovada tecnicamente<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ARCHITECTURE.md](ARCHITECTURE.md)
 
 ## 1. Objetivo do roadmap
@@ -109,7 +109,7 @@ continuam no backlog, sem autorização implícita.
 | Etapa | Entrega | Estado |
 |---|---|---|
 | P1.1 — Fundação Rails | Autenticação local e recuperação de senha por CLI, shell ERB/Turbo, temas, fundos, fontes, Dock, widgets e Music demonstrativo; personalização fundamental | Encerrada e homologada; tag anotada `p1.1-approved` |
-| P1.2 — SQLite | Modelos transacionais de projetos, tarefas, referências, preferências e foco global | A/B/C aprovadas tecnicamente; B registrada em `ddf6715`; C registrada em `a7f11ab`; D1 encerrada em `af5e24b`; D2 em revisão sem commit; D3/E/F não iniciadas |
+| P1.2 — SQLite | Modelos transacionais de projetos, tarefas, referências, preferências e foco global | A/B/C aprovadas tecnicamente; B registrada em `ddf6715`; C registrada em `a7f11ab`; D1 encerrada em `af5e24b`; D2 registrada em `cf95461`; D3 aprovada tecnicamente sem commit; E/F não iniciadas |
 | P1.3 — Vault Markdown | Arquivos reais, índice reconstruível, escrita segura, conflitos e recuperação | Não iniciada; exige autorização |
 | P1.4 — Migração | Exportação/importação versionada, simulação, relatório e recuperação | Não iniciada; exige autorização |
 | P1.5 — Verificação final | Equivalência, segurança, visual e restauração | Não iniciada; exige autorização |
@@ -436,3 +436,7 @@ Firefox C e contraste permanecem pendentes; retenção/descarte de snapshots leg
 A personalização avançada do Pomodoro permanece no backlog futuro de P10.
 
 As próximas entregas serão comparadas com a P0.3 no monitor de 27” e em tela móvel. Banco de dados, Vault real e integrações seguem nas fases definitivas, após autorização. O bootstrap de recuperação do Ubuntu foi **explicitamente adiado** e não faz parte do roadmap do Accio Hub.
+
+### Situação D3 — 2026-10-13
+
+P1.2D2 aprovada tecnicamente após auditoria independente e registrada em `cf95461`. P1.2D3 implementa referências persistentes e verifica a integração Projetos → Tarefas → Referências → Dashboard; entrega aprovada pelo Antigravity, conforme confirmação do usuário, sem bloqueadores confirmados; encerramento em commit autorizado. Implementação P1.2E/F não autorizada. Mantidas pendências de Firefox manual C/D, contraste inconclusivo, retenção/descarte legacy_cookie_backup (preferencialmente F) e rascunhos em memória.

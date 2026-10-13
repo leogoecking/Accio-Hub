@@ -1,0 +1,16 @@
+Run options: --name /strict_URL/ --seed 36466
+
+# Running:
+
+F
+
+Failure:
+ProjectReferencesTest#test_strict_URL_policy_rejects_dangerous_malformed_and_ambiguous_hosts_without_partial_writes [test/integration/project_references_test.rb:75]:
+https://example.test?email=qa@example.test#section@1
+
+bin/rails test test/integration/project_references_test.rb:63
+
+
+
+Finished in 0.529208s, 1.8896 runs/s, 173.8447 assertions/s.
+1 runs, 92 assertions, 1 failures, 0 errors, 0 skips

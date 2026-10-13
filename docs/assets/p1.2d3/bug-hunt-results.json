@@ -1,0 +1,17 @@
+{
+  "charter": "Hipóteses adicionais D3, somente dados sintéticos, budget leve",
+  "results": [
+    {
+      "name": "Trocar Link para Material não contorna protocolos perigosos e não grava conteúdo",
+      "result": "PASS"
+    },
+    {
+      "name": "Mesmo UID sob outro projeto retorna aviso 404 sem abrir editor",
+      "result": "PASS"
+    },
+    {
+      "name": "Material sem URL depois de conversão abre edição fiel e preserva UID",
+      "result": "PASS"
+    }
+  ]
+}

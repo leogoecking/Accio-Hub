@@ -12,7 +12,8 @@ const session=process.env.ACCIO_QA_SESSION || `accio-p12d-${process.pid}`;
 const origin=process.env.ACCIO_QA_URL || 'http://127.0.0.1:3124';
 assert.ok(['127.0.0.1','localhost'].includes(new URL(origin).hostname));
 const args=['--session',session,'--json'];
-const results=[];
+const resume=Number(process.env.ACCIO_QA_RESUME || 0);let scenarioIndex=0;
+const results=resume?JSON.parse(readFileSync(resolve(output,'results.json'),'utf8')).slice(0,resume):[];
 const init=resolve(output,'init.js');writeFileSync(init,'window.__qaErrors=[];window.addEventListener("error",e=>window.__qaErrors.push(e.message));window.addEventListener("unhandledrejection",e=>window.__qaErrors.push(String(e.reason?.stack || e.reason)));');
 function b(...cmd){const result=JSON.parse(execFileSync('agent-browser',[...args,...cmd],{encoding:'utf8',timeout:45000,env:{...process.env,XDG_RUNTIME_DIR:'/tmp'}}));assert.equal(result.success,true,JSON.stringify(result));return result.data;}
 const evaluate=code=>{const r=JSON.parse(execFileSync('agent-browser',[...args,'eval','--stdin'],{input:code,encoding:'utf8',timeout:45000,env:{...process.env,XDG_RUNTIME_DIR:'/tmp'}}));assert.equal(r.success,true);return r.data.result;};
@@ -20,7 +21,7 @@ const enterPassword=()=>evaluate('document.querySelector("#password").value='+JS
 const ready=()=>b('wait','--fn',"document.querySelector('[data-controller=studio][data-ready=true]')?.dataset.page === (location.pathname.startsWith('/projects') ? 'projects' : (location.pathname.split('/')[2] || 'home')) && !document.documentElement.hasAttribute('data-turbo-preview') && !document.documentElement.hasAttribute('aria-busy')");
 const saved=()=>b('wait','--fn',"document.querySelector('[data-save-status]').hidden");
 const screenshot=name=>b('screenshot',resolve(evidence,`${name}.png`));
-function scenario(name,check){check();assert.deepEqual(evaluate('window.__qaErrors || []'),[]);results.push({name,result:'PASS'});writeFileSync(resolve(output,'results.json'),JSON.stringify(results,null,2));console.log(`PASS ${name}`);}
+function scenario(name,check){if(scenarioIndex++<resume)return;check();assert.deepEqual(evaluate('window.__qaErrors || []'),[]);results.push({name,result:'PASS'});writeFileSync(resolve(output,'results.json'),JSON.stringify(results,null,2));console.log(`PASS ${name}`);}
 const click=selector=>{
  b('snapshot','-i');b('scrollintoview',selector);
  evaluate('window.__qaStablePoint=null;true');
@@ -39,6 +40,7 @@ let projectPath;
 try {
  b('--args','--no-sandbox','--init-script',init,'open',origin);b('set','viewport','1440','1000');b('wait','#email_address');
  b('fill','#email_address',credentials.email);enterPassword();click('input[type=submit]');ready();saved();nav('projects');
+ if(resume){b('fill','#project-search','Navegador');b('press','Enter');b('wait','.project-card');projectPath=evaluate('document.querySelector(".project-space-link").getAttribute("href")');}
  scenario('Biblioteca apresenta registros reais sem fixtures da P0.4',()=>{assert.ok(!evaluate('document.querySelector(".project-library").innerText').includes('AccioCAD'));});
  scenario('Formulário: foco inicial, Tab/Shift Tab, Escape, X e cancelar',()=>{
   formOpen();assert.equal(evaluate('document.activeElement.id'),'project-name');
@@ -64,7 +66,7 @@ try {
  scenario('Edição preserva UID, campos e apresenta conflitos entre abas',()=>{
   const first=b('tab','list').tabs.find(t=>t.active).tabId;
   const editSelector=firstCard()+' a[data-project-opener]';click(editSelector);b('wait','[data-project-dialog][open]');b('fill','#project-name','Projeto Navegador QA local');
-  b('tab','new',origin+projectPath);ready();const second=b('tab','list').tabs.find(t=>t.active).tabId;click('a[data-project-opener]');b('wait','[data-project-dialog][open]');b('fill','#project-description','Versão remota sintética');click('#project-form [type=submit]');b('wait','--fn',"!document.querySelector('[data-project-dialog][open]')");
+  b('tab','new',origin+projectPath);ready();const second=b('tab','list').tabs.find(t=>t.active).tabId;click('a[data-project-opener]');b('wait','[data-project-dialog][open]');b('wait','--fn',"document.activeElement.id==='project-name'");b('fill','#project-description','Versão remota sintética');click('#project-form [type=submit]');b('wait','--fn',"!document.querySelector('[data-project-dialog][open]')");
   b('tab',first);click('#project-form [type=submit]');b('wait','[data-project-reapply]:not([hidden])');assert.equal(evaluate('document.querySelector("#project-name").value'),'Projeto Navegador QA local');screenshot('edit-conflict');
   click('[data-project-dialog] [data-project-reapply]');formDone();assert.equal(evaluate('document.querySelector(".project-space-link").getAttribute("href")'),projectPath);b('tab','close',second);
  });
@@ -83,7 +85,7 @@ try {
  });
  scenario('Espaço real: abas por teclado e escopo de tarefas referências Vault e foco',()=>{
   click('.project-space-link');b('wait','#space-title');click('#space-tab-tasks');b('wait','--fn',"document.querySelector('#space-tab-tasks').getAttribute('aria-selected')==='true' && document.activeElement.id==='space-tab-tasks'");assert.match(evaluate('document.querySelector("#space-content").innerText'),/Nenhuma tarefa/);
-  b('press','ArrowRight');b('wait','--fn',"document.activeElement.id==='space-tab-knowledge'");assert.match(evaluate('document.querySelector("#space-content").innerText'),/P1.3/);b('press','End');b('wait','--fn',"document.activeElement.id==='space-tab-references'");assert.match(evaluate('document.querySelector("#space-content").innerText'),/P1.2D3/);b('press','Home');b('wait','--fn',"document.activeElement.id==='space-tab-overview'");
+  b('press','ArrowRight');b('wait','--fn',"document.activeElement.id==='space-tab-knowledge'");assert.match(evaluate('document.querySelector("#space-content").innerText'),/P1.3/);b('press','End');b('wait','--fn',"document.activeElement.id==='space-tab-references'");assert.equal(evaluate('document.querySelectorAll("[data-reference-uid]").length'),0);assert.ok(evaluate('!!document.querySelector("#reference-new")'));b('press','Home');b('wait','--fn',"document.activeElement.id==='space-tab-overview'");
   click('[data-demo=focus]');b('wait','#demo[open]');assert.match(evaluate('document.querySelector("[data-demo-message]").textContent'),/referência visual/);b('press','Escape');
  });
  scenario('Navegação Turbo, dashboard e recarga usam o mesmo projeto',()=>{

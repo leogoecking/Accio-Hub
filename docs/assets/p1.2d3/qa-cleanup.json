@@ -1,0 +1,29 @@
+{
+  "stoppedOwnedServers": [
+    {
+      "port": 3122,
+      "ownedPid": 263865
+    },
+    {
+      "port": 3123,
+      "ownedPid": 272083
+    },
+    {
+      "port": 3124,
+      "ownedPid": 263989
+    },
+    {
+      "port": 3125,
+      "ownedPid": 264075
+    },
+    {
+      "port": 3126,
+      "ownedPid": 1216469
+    },
+    {
+      "port": 3112,
+      "ownedPid": 261543
+    }
+  ],
+  "unownedProcessesUntouched": true
+}

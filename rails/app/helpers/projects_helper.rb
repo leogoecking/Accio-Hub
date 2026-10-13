@@ -22,9 +22,6 @@ module ProjectsHelper
   end
 
   def safe_reference_url(url)
-    parsed = URI.parse(url.to_s)
-    url if parsed.is_a?(URI::HTTP) && parsed.host.present? && parsed.userinfo.nil?
-  rescue URI::InvalidURIError
-    nil
+    SafeReferenceUrl.call(url)
   end
 end

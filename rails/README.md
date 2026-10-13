@@ -214,3 +214,9 @@ ruby script/tasks-browser-setup.rb
 ```
 
 O setup imprime um diretório privado novo e grava `tmp/p12d2-workspace`. Inicie Rails com `ACCIO_DATABASE_PATH` apontando para `synthetic.sqlite3` desse diretório, `-b 127.0.0.1 -p 3125` e PID/log dentro dele; nunca use banco pessoal. `node script/tasks-browser-check.mjs` usa agent-browser em sessão própria. Roteiros adicionais, conferência do banco e reinício estão documentados em [P1.2D2_VERIFICATION.md](../docs/P1.2D2_VERIFICATION.md). Credenciais aleatórias ficam somente no diretório privado ignorado. D2 permanece sem commit até revisão.
+
+### Referências do projeto — P1.2D3
+
+Criação/edição em `/projects/:project_uid/references`, com IDs públicos codificados e projeto fixado pela rota autenticada. Tipos Link (URL obrigatória) e Material (URL opcional), sem upload/exclusão. Somente HTTP/HTTPS, host válido e sem credenciais; endereços incompatíveis existentes são exibidos com link desativado. Política local de parsing, sem downloads/preview/DNS. Índices/modelos/gatilhos B intactos.
+
+QA: `bundle exec ruby script/references-check.rb` cria um banco novo sintético temporário, exercita a suíte e processos concorrentes. `ruby script/references-browser-setup.rb` prepara bancos novos privados; somente esses caminhos podem alimentar QA de navegador em loopback 3126. Roteiros `references-browser-check.mjs`, `references-browser-additional-check.mjs`, `references-browser-restart-check.mjs` e `references-browser-state-check.rb` registram evidências em `docs/assets/p1.2d3/`. Não utilizar banco pessoal. Relatório: `docs/P1.2D3_VERIFICATION.md`. D3 aprovada após auditoria independente, conforme confirmação do usuário; encerramento em commit autorizado. Implementação E/F não iniciada.

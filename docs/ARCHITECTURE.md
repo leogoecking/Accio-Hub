@@ -2,7 +2,7 @@
 
 > **Versão:** 0.3 (protótipo atual e arquitetura definitiva planejada)<br>
 > **Data-base:** 2026-10-12<br>
-> **Estado:** P0.4 e P1.1 homologadas; P1.0/P1.2A aprovadas; P1.2B homologada; P1.2C aprovada tecnicamente; planejamento P1.2D aprovado; D1 aprovada com ressalvas; D2 autorizada em implementação<br>
+> **Estado:** P0.4 e P1.1 homologadas; P1.0/P1.2A aprovadas; P1.2B homologada; P1.2C aprovada tecnicamente; planejamento P1.2D aprovado; D1 aprovada com ressalvas; D2 aprovada; D3 aprovada tecnicamente<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ROADMAP.md](ROADMAP.md)
 
 ## Fundação homologada — P1.1
@@ -66,7 +66,7 @@ CRUD de produto, foco funcional ou Vault. Relatório em
 
 Auditoria independente aprovada, conforme confirmação do usuário. Permanecem
 pendentes Firefox manual da C, contraste inconclusivo e política de retenção/descarte
-dos snapshots legados, preferencialmente na P1.2F. Planejamento D aprovado; D1 registrada em af5e24b; exclusivamente D2 autorizada, sem commit até revisão.
+dos snapshots legados, preferencialmente na P1.2F. Planejamento D aprovado; D1 registrada em af5e24b; D2 aprovada e registrada em cf95461; D3 aprovada e encerramento em commit autorizado. Implementação E/F depende de autorização.
 
 ## Biblioteca e espaço de projetos — P1.2D1 aprovada com ressalvas
 
@@ -87,11 +87,17 @@ formulário, comandos, filtros, abertura e teclado das abas. Tarefas/referência
 consulta somente leitura; Conhecimento indica P1.3 e foco permanece demonstrativo.
 Evidências e limites: [P1.2D1_VERIFICATION.md](P1.2D1_VERIFICATION.md).
 
-## Tarefas persistentes — P1.2D2 em revisão
+## Tarefas persistentes — P1.2D2 aprovada
 
 `TasksController` usa associações autenticadas globais/contextuais. `TaskCommands` materializa transações antes de consultar versões, valida projetos de origem/destino e atualiza tarefa/atividade dos projetos conjuntamente. `lock_version` e os 25 gatilhos existentes continuam intactos. Tokens assinados vinculam usuário, operação, UID e contexto de criação; retentativas equivalentes não regravam atividade ou timestamps. Concluir/reabrir recebe estado desejado; `completed_at` é controlado no servidor.
 
 ERB reutiliza linhas/formulários entre dashboard, lista global e espaços, sem cópias dos registros. Turbo atualiza regiões de dados sem substituir o agregado de aparência. Controllers Stimulus pequenos reutilizam o ciclo acessível de diálogo da D1, tratam conflitos/rascunhos e consultam tarefas reais na busca global. Referências permanecem somente leitura; foco demonstrativo e Conhecimento P1.3. Nenhum modelo, schema, migração, gatilho, armazenamento pessoal ou dependência foi alterado. Relatório: [P1.2D2_VERIFICATION.md](P1.2D2_VERIFICATION.md).
+
+## Referências persistentes — P1.2D3 aprovada tecnicamente
+
+`ProjectReferencesController` consulta o projeto do administrador pela rota e suas referências. `ReferenceCommands` materializa a transação antes de validar arquivamento/versões e grava referência/atividade do projeto juntas. Intenções assinadas incluem usuário, operação, UID e projeto; retentativas equivalentes não regravam registros. URLs são verificadas pelo modelo existente e pela política compartilhada `SafeReferenceUrl`, sem DNS ou acesso remoto. A apresentação recusa links incompatíveis e escapa textos. Não há uploads ou exclusões.
+
+Dois controllers Stimulus especializados reutilizam o ciclo dos diálogos D1, com foco, teclado, retentativas, conflitos e campos mantidos. Conteúdo da região do projeto é atualizado por Turbo Streams, preservando a raiz de aparência. SQLite, schema e 25 gatilhos permanecem intactos. Conhecimento aguarda P1.3 e foco funcional P1.2E. Evidências em [P1.2D3_VERIFICATION.md](P1.2D3_VERIFICATION.md).
 
 ## 0. Arquitetura atual do protótipo e limites da P0.4
 

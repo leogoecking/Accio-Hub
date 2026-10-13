@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   patch "projects/filters", to: "projects#filters", as: :project_filters
   resources :projects, only: %i[index show new create edit update], param: :uid do
     patch :command, on: :member
+    resources :references, controller: "project_references", only: %i[new create edit update], param: :uid
     resources :tasks, only: %i[new create edit update], param: :uid do
       patch :status, on: :member
     end

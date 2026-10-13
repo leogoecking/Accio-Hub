@@ -22,7 +22,10 @@ class ProjectsController < StudioController
     if params[:task_dialog].present?
       @task_modal_src = params[:task_dialog] == "new" ? new_project_task_path(@project) : edit_project_task_path(@project, Current.user.tasks.where(project: @project).find_by!(uid: PublicUid.decode(params[:task_dialog])))
     end
-    @references = Current.user.project_references.where(project: @project).order(:position, :uid).to_a
+    if params[:reference_dialog].present?
+      @reference_modal_src = params[:reference_dialog] == "new" ? new_project_reference_path(@project) : edit_project_reference_path(@project, @project.project_references.where(user: Current.user).find_by!(uid: reference_dialog_uid))
+    end
+    @references = Current.user.project_references.where(project: @project).order(position: :desc, uid: :asc).to_a
   end
 
   def new
@@ -89,6 +92,12 @@ class ProjectsController < StudioController
     value = params[:version]
     return value if value.is_a?(Integer) && value >= 0
     value.to_i if value.is_a?(String) && value.match?(/\A\d+\z/)
+  end
+
+  def reference_dialog_uid
+    PublicUid.decode(params[:reference_dialog])
+  rescue ArgumentError
+    raise ActiveRecord::RecordNotFound
   end
 
   def project_params

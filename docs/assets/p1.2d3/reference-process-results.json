@@ -1,0 +1,147 @@
+{
+  "suite": "103 runs, 1029 assertions, 0 failures, 0 errors, 0 skips",
+  "create": {
+    "responses": [
+      {
+        "worker": "0",
+        "http": 200,
+        "parent_archived": false,
+        "reference_title": null
+      },
+      {
+        "worker": "1",
+        "http": 200,
+        "parent_archived": false,
+        "reference_title": null
+      }
+    ],
+    "before": {
+      "references": 0,
+      "unique_uids": 0,
+      "parent_version": 0
+    },
+    "after": {
+      "references": 1,
+      "unique_uids": 1,
+      "parent_version": 1
+    }
+  },
+  "incompatible": {
+    "responses": [
+      {
+        "worker": "0",
+        "http": 200,
+        "parent_archived": false,
+        "reference_title": "Race QA"
+      },
+      {
+        "worker": "1",
+        "http": 409,
+        "parent_archived": false,
+        "reference_title": "Race QA"
+      }
+    ],
+    "before": {
+      "references": 1,
+      "unique_uids": 1,
+      "parent_version": 1
+    },
+    "after": {
+      "references": 2,
+      "unique_uids": 2,
+      "parent_version": 2
+    }
+  },
+  "edit": {
+    "responses": [
+      {
+        "worker": "0",
+        "http": 200,
+        "parent_archived": false,
+        "reference_title": "Edit 0"
+      },
+      {
+        "worker": "1",
+        "http": 409,
+        "parent_archived": false,
+        "reference_title": "Edit 0"
+      }
+    ],
+    "before": {
+      "references": 2,
+      "unique_uids": 2,
+      "parent_version": 2
+    },
+    "after": {
+      "references": 2,
+      "unique_uids": 2,
+      "parent_version": 3
+    }
+  },
+  "archive_edit": {
+    "responses": [
+      {
+        "worker": "0",
+        "http": 409,
+        "parent_archived": false,
+        "reference_title": "Concurrent"
+      },
+      {
+        "worker": "1",
+        "http": 200,
+        "parent_archived": false,
+        "reference_title": "Concurrent"
+      }
+    ],
+    "before": {
+      "references": 2,
+      "unique_uids": 2,
+      "parent_version": 3
+    },
+    "after": {
+      "references": 2,
+      "unique_uids": 2,
+      "parent_version": 4
+    }
+  },
+  "archive_create": {
+    "responses": [
+      {
+        "worker": "0",
+        "http": 409,
+        "parent_archived": false,
+        "reference_title": "Concurrent"
+      },
+      {
+        "worker": "1",
+        "http": 200,
+        "parent_archived": false,
+        "reference_title": "Concurrent"
+      }
+    ],
+    "before": {
+      "references": 2,
+      "unique_uids": 2,
+      "parent_version": 4
+    },
+    "after": {
+      "references": 3,
+      "unique_uids": 3,
+      "parent_version": 5
+    }
+  },
+  "integrity": {
+    "references": 3,
+    "triggers": 25,
+    "foreign_keys": true
+  },
+  "reopen": {
+    "new_process_identical": true
+  },
+  "contention": {
+    "writer_contention_http": 503
+  },
+  "rollback_reopen": {
+    "new_process_identical": true
+  }
+}

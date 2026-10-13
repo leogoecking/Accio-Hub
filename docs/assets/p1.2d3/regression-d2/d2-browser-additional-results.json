@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Conclusão obsoleta mostra versão remota e reaplica estado desejado",
+    "result": "PASS"
+  },
+  {
+    "name": "Rascunho impede navegação Turbo e CtrlK não rouba foco do formulário",
+    "result": "PASS"
+  },
+  {
+    "name": "Clique de ponteiro no checkbox conclui a mesma tarefa",
+    "result": "PASS"
+  },
+  {
+    "name": "Projeto arquivado no destino rejeita rascunho em vez de movê-lo para Pessoal",
+    "result": "PASS"
+  }
+]

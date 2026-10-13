@@ -1,0 +1,117 @@
+{
+  "axeVersion": "4.12.1",
+  "counts": {
+    "inapplicable": 63,
+    "incomplete": 1,
+    "passes": 25,
+    "violations": 0
+  },
+  "incomplete": [
+    {
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axeAPI",
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodeCount": 15,
+      "nodes": [
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<div class=\"eyebrow\">SEU ESPAÇO, SEU JEITO</div>",
+          "target": [
+            ".block-top > div > .eyebrow"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<h2 id=\"project-dialog-title\">Novo projeto</h2>",
+          "target": [
+            "#project-dialog-title"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<strong data-preview-name=\"\">Seu próximo projeto</strong>",
+          "target": [
+            "strong[data-preview-name=\"\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<label for=\"project-name\">Nome<input id=\"project-name\" required=\"required\" maxlength=\"80\" autocomplete=\"off\" autofocus=\"autofocus\" size=\"80\" type=\"text\" name=\"project[name]\"></label>",
+          "target": [
+            "label[for=\"project-name\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<input id=\"project-name\" required=\"required\" maxlength=\"80\" autocomplete=\"off\" autofocus=\"autofocus\" size=\"80\" type=\"text\" name=\"project[name]\">",
+          "target": [
+            "#project-name"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<label for=\"project-description\">Descrição <span class=\"project-optional\">opcional</span><textarea id=\"project-description\" maxlength=\"500\" rows=\"3\" name=\"project[description]\"></textarea></label>",
+          "target": [
+            "label[for=\"project-description\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<span class=\"project-optional\">opcional</span>",
+          "target": [
+            ".project-optional"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<textarea id=\"project-description\" maxlength=\"500\" rows=\"3\" name=\"project[description]\"></textarea>",
+          "target": [
+            "#project-description"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<label for=\"project-icon\">",
+          "target": [
+            "label[for=\"project-icon\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<select id=\"project-icon\" name=\"project[icon]\">",
+          "target": [
+            "#project-icon"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ]
+    }
+  ],
+  "lifecycle": {
+    "effectiveLaunch": {
+      "browserLaunched": true,
+      "engine": "chrome",
+      "launchHash": 12826012967103664000
+    },
+    "launched": false,
+    "relaunchedBrowser": false,
+    "restartedBackground": false,
+    "restoreStatus": "not_configured",
+    "reused": true,
+    "saveStatus": "not_attempted"
+  },
+  "url": "http://127.0.0.1:3124/projects",
+  "violations": []
+}
