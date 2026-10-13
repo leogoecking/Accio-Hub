@@ -1,0 +1,21 @@
+PASS Tarefas e formulário dark 320px
+PASS Dashboard e espaço dark 320px
+PASS Tarefas e formulário dark 390px
+PASS Dashboard e espaço dark 390px
+PASS Tarefas e formulário dark 768px
+PASS Dashboard e espaço dark 768px
+PASS Tarefas e formulário dark 1440px
+PASS Dashboard e espaço dark 1440px
+PASS Tarefas e formulário dark 1920px
+PASS Dashboard e espaço dark 1920px
+PASS Tarefas e formulário light 320px
+PASS Dashboard e espaço light 320px
+PASS Tarefas e formulário light 390px
+PASS Dashboard e espaço light 390px
+PASS Tarefas e formulário light 768px
+PASS Dashboard e espaço light 768px
+PASS Tarefas e formulário light 1440px
+PASS Dashboard e espaço light 1440px
+PASS Tarefas e formulário light 1920px
+PASS Dashboard e espaço light 1920px
+{"passed":36,"session":"accio-p12d2-3634335","workspace":"/home/goecking/Projects/Accio-HUB/rails/tmp/p12d2-browser-20261012-3610915-3pmcn"}

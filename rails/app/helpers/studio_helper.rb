@@ -1,6 +1,7 @@
 module StudioHelper
   def studio_path(page)
     return projects_path if page == "projects"
+    return tasks_path if page == "tasks"
     page == "home" ? root_path : app_path(page: page)
   end
 

@@ -18,7 +18,10 @@ class ProjectsController < StudioController
     @project = owned_project
     @tab = params.fetch(:tab, "overview")
     return head :not_found unless %w[overview tasks knowledge references].include?(@tab)
-    @tasks = Current.user.tasks.where(project: @project).order(:position, :uid).to_a
+    @tasks = Current.user.tasks.where(project: @project).order(position: :desc, uid: :asc).to_a
+    if params[:task_dialog].present?
+      @task_modal_src = params[:task_dialog] == "new" ? new_project_task_path(@project) : edit_project_task_path(@project, Current.user.tasks.where(project: @project).find_by!(uid: PublicUid.decode(params[:task_dialog])))
+    end
     @references = Current.user.project_references.where(project: @project).order(:position, :uid).to_a
   end
 

@@ -22,3 +22,11 @@
 .space-tabs a { white-space: nowrap; border: 1px solid transparent; }
 @media(max-width:800px) { .space-tabs a { flex: 1 1 calc(50% - 6px); text-align: center; } }
 a.project-control,a.mini-project { text-decoration: none; }
+/* Task rows reuse the approved labels; Rails forms do not add a visual column. */
+.task-status-form { display: contents; }
+.task-item { flex-wrap: wrap; }
+.task-item [role=alert]:empty { display: none; }
+.task-item [role=alert] { flex-basis: 100%; overflow-wrap: anywhere; font-size: 12px; }
+.task-item .task-name { overflow-wrap: anywhere; }
+a.task-play, a.add-row { text-decoration: none; color: inherit; }
+.task-item [data-task-reapply] { font-size: 12px; }

@@ -1,0 +1,9 @@
+<% context = local_assigns[:context]; editable = task.project&.status != "archived"; key = task.to_param %>
+<div class="task-item <%= 'is-done' if task.status == 'completed' %>" data-task-uid="<%= key %>">
+  <%= form_with url: task_status_url(task, context), method: :patch, class: "task-status-form", data: {controller: "task-command", action: "submit->task-command#submit change->task-command#change"} do %>
+    <%= hidden_field_tag :version, task.lock_version %><%= hidden_field_tag :status, task.status == "completed" ? "pending" : "completed" %>
+    <label class="task-label"><input type="checkbox" id="task-check-<%= key %>" <%= 'checked' if task.status == 'completed' %> <%= 'disabled' unless editable %> aria-label="<%= task.status == 'completed' ? 'Reabrir' : 'Concluir' %> <%= task.title %>"><span class="task-name"><%= task.title %><small><%= task.project&.name || "Pessoal" %><%= ' · Alta prioridade' if task.priority == 'high' %><%= ' · Arquivado · somente leitura' unless editable %></small></span></label>
+    <span role="alert" data-project-notice></span><button type="button" class="quiet-link" hidden data-task-reapply data-action="task-command#reapply">Reaplicar após conferir</button>
+  <% end %>
+  <% if editable %><%= link_to task_edit_url(task, context), class: "task-play tip", id: "task-edit-#{key}", title: "Editar tarefa", aria: {label: "Editar #{task.title}"}, data: {turbo_frame: "task-modal", task_opener: true} do %><%= studio_icon("sliders", 15) %><% end %><% end %>
+</div>

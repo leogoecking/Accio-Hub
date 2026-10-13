@@ -16,3 +16,11 @@ import ProjectModalController from "controllers/project_modal_controller"
 application.register("project-modal", ProjectModalController)
 import ProjectTabsController from "controllers/project_tabs_controller"
 application.register("project-tabs", ProjectTabsController)
+import TaskFormController from 'controllers/task_form_controller'
+application.register('task-form', TaskFormController)
+import TaskModalController from 'controllers/task_modal_controller'
+application.register('task-modal', TaskModalController)
+import TaskCommandController from 'controllers/task_command_controller'
+application.register('task-command', TaskCommandController)
+import TaskSearchController from 'controllers/task_search_controller'
+application.register('task-search', TaskSearchController)

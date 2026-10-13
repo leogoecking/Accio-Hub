@@ -1,0 +1,30 @@
+PASS Biblioteca apresenta registros reais sem fixtures da P0.4
+PASS Formulário: foco inicial, Tab/Shift Tab, Escape, X e cancelar
+PASS Criação com resposta perdida confirma retentativa sem duplicação
+PASS Pesquisa insensível a acentos, estados vazios e ordenação
+PASS Edição preserva UID, campos e apresenta conflitos entre abas
+PASS Favoritos, pausa, arquivamento somente leitura e restauração
+PASS Filtros versus aparência em abas distintas não sobrescrevem configurações
+PASS Espaço real: abas por teclado e escopo de tarefas referências Vault e foco
+PASS Navegação Turbo, dashboard e recarga usam o mesmo projeto
+PASS Biblioteca dark 320px
+PASS Espaço dark 320px
+PASS Biblioteca dark 390px
+PASS Espaço dark 390px
+PASS Biblioteca dark 768px
+PASS Espaço dark 768px
+PASS Biblioteca dark 1440px
+PASS Espaço dark 1440px
+PASS Biblioteca dark 1920px
+PASS Espaço dark 1920px
+PASS Biblioteca light 320px
+PASS Espaço light 320px
+PASS Biblioteca light 390px
+PASS Espaço light 390px
+PASS Biblioteca light 768px
+PASS Espaço light 768px
+PASS Biblioteca light 1440px
+PASS Espaço light 1440px
+PASS Biblioteca light 1920px
+PASS Espaço light 1920px
+29 cenários D1 PASS

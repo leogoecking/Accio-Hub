@@ -39,6 +39,6 @@ export function notice(element, message) {
 }
 
 export function restoreFocus(id) {
-  const target = document.getElementById(id) || document.getElementById('project-new') || document.getElementById('space-title')
+  const target = document.getElementById(id) || document.getElementById('task-new-context') || document.getElementById('task-new') || document.getElementById('project-new') || document.getElementById('space-title')
   target?.focus()
 }

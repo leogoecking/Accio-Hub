@@ -1,4 +1,4 @@
-<div class="project-strip">
+<div class="project-strip" id="dashboard-projects">
   <% counts = Current.user.tasks.where(status: "pending").group(:project_id).count %>
   <% Current.user.projects.where(status: "active").order(:created_at, :id).limit(4).each do |project| %><%= link_to project_path(project), class: "mini-project" do %><span class="project-logo tint-<%= project.tint %>" style="<%= project_style(project) %>"><%= studio_icon(project.icon, 22) %></span><span><strong><%= project.name %></strong><% count = counts.fetch(project.id, 0) %><small><%= count %> tarefa<%= 's' unless count == 1 %> aberta<%= 's' unless count == 1 %></small></span><%= studio_icon("chevron", 16) %><% end %><% end %>
   <% unless Current.user.projects.where(status: "active").exists? %><p class="space-empty">Nenhum projeto ativo. <%= link_to "Criar seu primeiro projeto", projects_path %></p><% end %>

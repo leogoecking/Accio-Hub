@@ -1,0 +1,31 @@
+PASS Conclusão obsoleta mostra versão remota e reaplica estado desejado
+PASS Rascunho impede navegação Turbo e CtrlK não rouba foco do formulário
+PASS Clique de ponteiro no checkbox conclui a mesma tarefa
+node:internal/errors:985
+  const err = new Error(message);
+              ^
+
+Error: Command failed: agent-browser --session accio-d2-extra-3620474 --json wait --fn document.querySelector('[data-task-dialog] [data-project-notice]').textContent.includes('arquivado')
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:942:11)
+    at execFileSync (node:child_process:978:15)
+    at b (file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-additional-check.mjs:4:39)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-additional-check.mjs:25:432
+    at scenario (file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-additional-check.mjs:8:45)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-additional-check.mjs:24:2
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26 {
+  status: 1,
+  signal: null,
+  output: [
+    null,
+    '{"success":false,"data":null,"error":"Wait timed out after 25000ms"}\n',
+    ''
+  ],
+  pid: 3621045,
+  stdout: '{"success":false,"data":null,"error":"Wait timed out after 25000ms"}\n',
+  stderr: ''
+}
+
+Node.js v24.19.0

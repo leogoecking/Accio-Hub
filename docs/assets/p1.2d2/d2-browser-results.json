@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Dashboard e lista vazios sem tarefas fictícias",
+    "result": "PASS"
+  },
+  {
+    "name": "Diálogo inicial teclado Tab ShiftTab Escape X cancelar e foco",
+    "result": "PASS"
+  },
+  {
+    "name": "Criação pessoal com resposta perdida retenta sem duplicar",
+    "result": "PASS"
+  },
+  {
+    "name": "Projetos D1 criados e tarefa contextual vinculada pela rota",
+    "result": "PASS"
+  },
+  {
+    "name": "Mesmo UID na lista global no espaço e widget com contadores reais",
+    "result": "PASS"
+  },
+  {
+    "name": "Conclusão no dashboard e reabertura global atualizam estado e contagens",
+    "result": "PASS"
+  },
+  {
+    "name": "Editar título prioridade e mover entre projetos no editor global",
+    "result": "PASS"
+  },
+  {
+    "name": "Editor contextual preserva vínculo e nova tarefa não duplica listas",
+    "result": "PASS"
+  },
+  {
+    "name": "Conflito entre abas conserva campos e reaplicação exige ação explícita",
+    "result": "PASS"
+  },
+  {
+    "name": "Contenção 503 e validação 422 preservam edição e intenção",
+    "result": "PASS"
+  },
+  {
+    "name": "Arquivamento entre abas bloqueia edição conclusão e retirada do projeto",
+    "result": "PASS"
+  },
+  {
+    "name": "Mover para Pessoal conserva UID e remove somente o vínculo",
+    "result": "PASS"
+  },
+  {
+    "name": "Busca global pesquisa tarefa real navega e Escape retorna foco",
+    "result": "PASS"
+  },
+  {
+    "name": "Endereço direto formulário mantém lista e cancelamento volta ao URL canônico",
+    "result": "PASS"
+  },
+  {
+    "name": "Recarga conserva tarefas sem duplicação e tema destaque preferências",
+    "result": "PASS"
+  },
+  {
+    "name": "Contexto com título longo conserva vínculo antes da matriz",
+    "result": "PASS"
+  },
+  {
+    "name": "Tarefas e formulário dark 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Dashboard e espaço dark 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Tarefas e formulário dark 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Dashboard e espaço dark 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Tarefas e formulário dark 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Dashboard e espaço dark 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Tarefas e formulário dark 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Dashboard e espaço dark 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Tarefas e formulário dark 1920px",
+    "result": "PASS"
+  },
+  {
+    "name": "Dashboard e espaço dark 1920px",
+    "result": "PASS"
+  },
+  {
+    "name": "Tarefas e formulário light 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Dashboard e espaço light 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Tarefas e formulário light 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Dashboard e espaço light 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Tarefas e formulário light 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Dashboard e espaço light 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Tarefas e formulário light 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Dashboard e espaço light 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Tarefas e formulário light 1920px",
+    "result": "PASS"
+  },
+  {
+    "name": "Dashboard e espaço light 1920px",
+    "result": "PASS"
+  }
+]

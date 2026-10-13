@@ -25,7 +25,7 @@ const click=selector=>{
  b('snapshot','-i');b('scrollintoview',selector);
  evaluate('window.__qaStablePoint=null;true');
  b('wait','--fn',`(()=>{const el=document.querySelector(${JSON.stringify(selector)});if(!el)return false;const r=el.getBoundingClientRect(),key=[r.left,r.top,r.width,r.height].join('|'),old=window.__qaStablePoint;window.__qaStablePoint=key;return old===key && el.contains(document.elementFromPoint(r.left+r.width/2,r.top+r.height/2))})()`);
- b('click',selector);
+ b('snapshot','-i');b('click',selector);
 };
 function nav(page){const path=page==='home'?'/':page==='projects'?'/projects':'/apps/'+page;click(`.rail-icons a[href='${path}']`);b('wait','--url',origin+path);ready();}
 function drawer(){click('[data-open=customize]');b('wait','#customize[open]');}
@@ -82,7 +82,7 @@ try {
   drawer();evaluate('document.querySelector("#drawer-accent").value="#a78bfa";document.querySelector("#drawer-accent").dispatchEvent(new Event("change",{bubbles:true}))');saved();b('press','Escape');b('reload');ready();assert.equal(evaluate('document.documentElement.dataset.theme'),old==='light'?'dark':'light');click('#project-filter-all');b('wait','--fn',"document.querySelector('#project-filter-all').getAttribute('aria-pressed')==='true'");b('tab','close',second);
  });
  scenario('Espaço real: abas por teclado e escopo de tarefas referências Vault e foco',()=>{
-  click('.project-space-link');b('wait','#space-title');click('#space-tab-tasks');b('wait','--fn',"document.querySelector('#space-tab-tasks').getAttribute('aria-selected')==='true' && document.activeElement.id==='space-tab-tasks'");assert.match(evaluate('document.querySelector("#space-content").innerText'),/P1.2D2/);
+  click('.project-space-link');b('wait','#space-title');click('#space-tab-tasks');b('wait','--fn',"document.querySelector('#space-tab-tasks').getAttribute('aria-selected')==='true' && document.activeElement.id==='space-tab-tasks'");assert.match(evaluate('document.querySelector("#space-content").innerText'),/Nenhuma tarefa/);
   b('press','ArrowRight');b('wait','--fn',"document.activeElement.id==='space-tab-knowledge'");assert.match(evaluate('document.querySelector("#space-content").innerText'),/P1.3/);b('press','End');b('wait','--fn',"document.activeElement.id==='space-tab-references'");assert.match(evaluate('document.querySelector("#space-content").innerText'),/P1.2D3/);b('press','Home');b('wait','--fn',"document.activeElement.id==='space-tab-overview'");
   click('[data-demo=focus]');b('wait','#demo[open]');assert.match(evaluate('document.querySelector("[data-demo-message]").textContent'),/referência visual/);b('press','Escape');
  });

@@ -200,3 +200,17 @@ servidor estático local/3112 para `prototype/`, sem modificar seu conteúdo.
 As credenciais são lidas por stdin para preencher o navegador; não copiá-las para
 argumentos, documentação ou Git. Nunca usar esses scripts sobre uma instalação pessoal.
 A entrega e seus limites estão em `docs/P1.2D1_VERIFICATION.md` na raiz do repositório.
+
+## P1.2D2 — tarefas persistentes em revisão
+
+D1 foi encerrada tecnicamente em `af5e24bab30d90bbb89c19b9798b69b20d1d9185`, com ressalvas mantidas. D2 utiliza o modelo Task existente, sem alterações no schema/gatilhos: `/tasks`, formulários globais/contextuais, prioridade, conclusão/reabertura, mudança de projeto pelo editor global e widgets/contadores compartilhados. Referências, foco e Vault seguem nas etapas próprias.
+
+Verificação exclusivamente sintética:
+
+```bash
+cd rails
+ruby script/tasks-check.rb
+ruby script/tasks-browser-setup.rb
+```
+
+O setup imprime um diretório privado novo e grava `tmp/p12d2-workspace`. Inicie Rails com `ACCIO_DATABASE_PATH` apontando para `synthetic.sqlite3` desse diretório, `-b 127.0.0.1 -p 3125` e PID/log dentro dele; nunca use banco pessoal. `node script/tasks-browser-check.mjs` usa agent-browser em sessão própria. Roteiros adicionais, conferência do banco e reinício estão documentados em [P1.2D2_VERIFICATION.md](../docs/P1.2D2_VERIFICATION.md). Credenciais aleatórias ficam somente no diretório privado ignorado. D2 permanece sem commit até revisão.

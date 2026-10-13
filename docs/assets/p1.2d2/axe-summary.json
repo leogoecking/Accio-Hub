@@ -1,0 +1,289 @@
+[
+  {
+    "file": "axe-completed-light.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-dashboard-dark-1440.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-dashboard-dark-1920.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-dashboard-dark-320.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-dashboard-dark-390.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-dashboard-dark-768.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-dashboard-light-1440.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-dashboard-light-1920.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-dashboard-light-320.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-dashboard-light-390.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-dashboard-light-768.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-form-dark-1440.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-form-dark-1920.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-form-dark-320.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-form-dark-390.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-form-dark-768.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-form-light-1440.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-form-light-1920.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-form-light-320.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-form-light-390.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-form-light-768.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-space-dark-1440.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-space-dark-1920.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-space-dark-320.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-space-dark-390.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-space-dark-768.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-space-light-1440.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-space-light-1920.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-space-light-320.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-space-light-390.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-space-light-768.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-tasks-dark-1440.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-tasks-dark-1920.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-tasks-dark-320.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-tasks-dark-390.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-tasks-dark-768.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-tasks-light-1440.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-tasks-light-1920.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-tasks-light-320.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-tasks-light-390.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "file": "axe-tasks-light-768.json",
+    "violations": 0,
+    "incomplete": [
+      "color-contrast"
+    ]
+  }
+]

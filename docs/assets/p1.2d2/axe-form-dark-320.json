@@ -1,0 +1,117 @@
+{
+  "axeVersion": "4.12.1",
+  "counts": {
+    "inapplicable": 64,
+    "incomplete": 1,
+    "passes": 24,
+    "violations": 0
+  },
+  "incomplete": [
+    {
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axeAPI",
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodeCount": 10,
+      "nodes": [
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<h2 id=\"task-dialog-title\">Nova tarefa</h2>",
+          "target": [
+            "#task-dialog-title"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<label for=\"task-title\">Título<input id=\"task-title\" required=\"required\" maxlength=\"120\" autocomplete=\"off\" autofocus=\"autofocus\" placeholder=\"O que precisa fazer?\" size=\"120\" type=\"text\" name=\"task[title]\"></label>",
+          "target": [
+            "label[for=\"task-title\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<input id=\"task-title\" required=\"required\" maxlength=\"120\" autocomplete=\"off\" autofocus=\"autofocus\" placeholder=\"O que precisa fazer?\" size=\"120\" type=\"text\" name=\"task[title]\">",
+          "target": [
+            "#task-title"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<label for=\"task-priority\">Prioridade<select id=\"task-priority\" name=\"task[priority]\"><option selected=\"selected\" value=\"normal\">Normal</option>\n<option value=\"high\">Alta</option></select></label>",
+          "target": [
+            "label[for=\"task-priority\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<select id=\"task-priority\" name=\"task[priority]\"><option selected=\"selected\" value=\"normal\">Normal</option>\n<option value=\"high\">Alta</option></select>",
+          "target": [
+            "#task-priority"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<label for=\"task-project\">",
+          "target": [
+            "label[for=\"task-project\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<select id=\"task-project\" name=\"task[project_uid]\"><option value=\"\">Pessoal</option>\n<option value=\"u-YTE1NWYyNjMtZjgxNy00YTkxLTk3YTMtMTRkNDEzOTllYmJi\">Destino tarefas QA</option>\n<option value=\"u-YmJmMDQ4N2UtOTIyYS00YjYzLTk3ZTYtZjliMmM4ZmYzMjhj\">Origem tarefas QA</option></select>",
+          "target": [
+            "#task-project"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<p id=\"task-form-hint\" class=\"muted\">Salva no SQLite. O ID e a data de conclusão serão preservados ao editar.</p>",
+          "target": [
+            "#task-form-hint"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<button type=\"button\" class=\"button tertiary\" data-action=\"task-form#close\">Cancelar</button>",
+          "target": [
+            ".tertiary[data-action=\"task-form#close\"][type=\"button\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<button type=\"submit\" class=\"button\">",
+          "target": [
+            ".button[type=\"submit\"]"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ]
+    }
+  ],
+  "lifecycle": {
+    "effectiveLaunch": {
+      "browserLaunched": true,
+      "engine": "chrome",
+      "launchHash": 3336315147935987700
+    },
+    "launched": false,
+    "relaunchedBrowser": false,
+    "restartedBackground": false,
+    "restoreStatus": "not_configured",
+    "reused": true,
+    "saveStatus": "not_attempted"
+  },
+  "url": "http://127.0.0.1:3125/tasks",
+  "violations": []
+}

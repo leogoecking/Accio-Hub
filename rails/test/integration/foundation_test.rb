@@ -43,7 +43,7 @@ class FoundationTest < ActionDispatch::IntegrationTest
     sign_in
     Studio::PAGES.each do |page|
       get studio_path_for_test(page), headers: local_headers
-      follow_redirect! if page == "projects"
+      follow_redirect! if %w[projects tasks].include?(page)
       assert_response :success
       assert_select "main", count: 1
       assert_select "nav[aria-label='Navegação principal']", count: 1

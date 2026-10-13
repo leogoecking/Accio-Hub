@@ -8,6 +8,7 @@ class StudioController < ApplicationController
     @page = params.fetch(:page, "home")
     return head :not_found unless Studio::PAGES.include?(@page)
     return redirect_to projects_path if @page == "projects"
+    return redirect_to tasks_path if @page == "tasks"
     load_studio
   end
 

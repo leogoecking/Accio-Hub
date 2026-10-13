@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Acesso protegido e login inválido",
+    "result": "PASS"
+  },
+  {
+    "name": "Login local válido e shell",
+    "result": "PASS"
+  },
+  {
+    "name": "Navegação Turbo pelos nove destinos",
+    "result": "PASS"
+  },
+  {
+    "name": "Busca, atalhos, Escape e retorno de foco",
+    "result": "PASS"
+  },
+  {
+    "name": "Atalho de captura demonstra escopo sem criar dados",
+    "result": "PASS"
+  },
+  {
+    "name": "Personalização por teclado, Tab e Shift Tab",
+    "result": "PASS"
+  },
+  {
+    "name": "Tema, fundo, destaque e persistência",
+    "result": "PASS"
+  },
+  {
+    "name": "Dock e widgets: ordem, visibilidade e tamanho",
+    "result": "PASS"
+  },
+  {
+    "name": "Configurações reutilizam preferências do painel",
+    "result": "PASS"
+  },
+  {
+    "name": "Music global, expansão e visibilidade",
+    "result": "PASS"
+  },
+  {
+    "name": "Falha de salvamento mantém preferências pendentes e permite recuperar",
+    "result": "PASS"
+  },
+  {
+    "name": "Personalização conserva demonstrações de produto sem estado de Pomodoro",
+    "result": "PASS"
+  },
+  {
+    "name": "Duas abas recusam versão obsoleta e reaplicam só campos editados",
+    "result": "PASS"
+  },
+  {
+    "name": "Shell dark 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Shell dark 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Shell dark 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Shell dark 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Shell dark 1920px",
+    "result": "PASS"
+  },
+  {
+    "name": "Shell light 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Shell light 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Shell light 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Shell light 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Shell light 1920px",
+    "result": "PASS"
+  },
+  {
+    "name": "Logout e proteção após recarga",
+    "result": "PASS"
+  }
+]

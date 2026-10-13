@@ -1,0 +1,4 @@
+<% context = local_assigns[:context] %>
+<div class="<%= local_assigns[:widget] ? 'tasks-in-card' : 'task-list' %>"><% tasks.each do |task| %><%= render "tasks/row", task: task, context: context %><% end %></div>
+<% if tasks.empty? %><p class="space-empty">Nenhuma tarefa nesta lista. Seu próximo passo começa aqui.</p><% end %>
+<% unless context&.status == "archived" %><%= link_to task_new_url(context), class: "add-row", id: "task-new#{context ? '-context' : ''}", data: {turbo_frame: "task-modal", task_opener: true} do %><%= studio_icon("plus", 16) %> Adicionar tarefa<% end %><% end %>

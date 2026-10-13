@@ -1,0 +1,1 @@
+Nenhum listener nos cinco ports de QA após encerramento.

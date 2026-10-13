@@ -3,6 +3,13 @@ Rails.application.routes.draw do
   patch "projects/filters", to: "projects#filters", as: :project_filters
   resources :projects, only: %i[index show new create edit update], param: :uid do
     patch :command, on: :member
+    resources :tasks, only: %i[new create edit update], param: :uid do
+      patch :status, on: :member
+    end
+  end
+  get "tasks/search", to: "tasks#search", as: :task_search
+  resources :tasks, only: %i[index new create edit update], param: :uid do
+    patch :status, on: :member
   end
   root "studio#show"
   get "apps/:page", to: "studio#show", as: :app
