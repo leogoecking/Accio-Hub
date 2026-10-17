@@ -590,3 +590,10 @@ Adapters separados, OAuth quando aplicável, menor escopo possível, tokens crip
 6. **Telemetria do backup**: desenho de JSON escrito pelos scripts sem afetar confiabilidade dos timers já validados.
 
 **Critério de arquitetura pronta para codificação:** esses spikes produzem evidências, decisões de implementação e testes, não só preferência por tecnologia.
+
+
+## Planejamento do foco global — P1.2E aprovado com ajustes
+
+D3 encerrada em `0e5323c5b823e2d2d531ad8c41c35a05a7ab2045`. O [plano E](P1.2E_PLAN.md) mapeia a implementação e os contratos B: uma sessão ocupante por usuário, quatro tipos de recibo imutável, contexto histórico e seis estados. Propõe cálculo por timestamps/checkpoints, tick somente visual e conclusão explícita; interrupção parcial incerta usa paused, pois awaiting_confirmation exige a duração integral. Não altera os modelos/schema/gatilhos nem inicia implementação E/F.
+
+Em 2026-10-17, o usuário aprovou o plano E com ajustes e autorizou exclusivamente E1: motor, comandos, tempo e recuperação. Sem tickets de observação ou heartbeats persistentes. Recuperação parcial usa paused e recibos imutáveis localizados por ID/versão. Modelos/schema/25 gatilhos preservados; interface E2 e verificação E3 não iniciadas. Implementação E1 permanece sem commit até revisão.

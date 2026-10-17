@@ -67,7 +67,7 @@ preparando o futuro Vault Markdown. Evitar refatorações grandes sem necessidad
 - PWA
 
 P0.4 homologada, P1.0 arquitetural aprovada e P1.1 encerrada e homologada.
-P1.2A/P1.2B/P1.2C aprovadas tecnicamente; planejamento P1.2D aprovado; D1 aprovada tecnicamente com ressalvas e registrada; D2/D3 aprovadas; somente planejamento P1.2E autorizado.
+P1.2A/P1.2B/P1.2C aprovadas tecnicamente; planejamento P1.2D aprovado; D1 aprovada tecnicamente com ressalvas e registrada; D2/D3 aprovadas; planejamento P1.2E aprovado com ajustes; exclusivamente E1 autorizada.
 A aprovação visual da P0.3 não autoriza iniciar Rails na P0.4.
 
 ## Arquitetura
@@ -121,7 +121,7 @@ Utilizar quando apropriado:
 P1.2C — Encerramento técnico aprovado em 2026-10-12 após auditoria independente do Antigravity.
 P1.2D1 encerrada tecnicamente em af5e24bab30d90bbb89c19b9798b69b20d1d9185 após aprovação independente com ressalvas.
 P1.2D2 — Tarefas Persistentes aprovada após auditoria independente sem bloqueadores, registrada em cf9546122255f5aeba5b56f5625d4b01cbf260af.
-P1.2D3 — Referências Persistentes e Integração aprovada após auditoria independente sem bloqueadores; encerramento em commit autorizado.
+P1.2D3 — Referências Persistentes e Integração aprovada após auditoria independente sem bloqueadores; registrada em 0e5323c5b823e2d2d531ad8c41c35a05a7ab2045.
 
 - Aplicação em `rails/`; preservar integralmente `prototype/`.
 - Rails 8, Hotwire/Turbo/Stimulus, SQLite, ERB, Importmap e CSS aprovado.
@@ -134,9 +134,9 @@ P1.2D3 — Referências Persistentes e Integração aprovada após auditoria ind
 - Formulários/comandos de projetos e tarefas conectados; sem exclusão física, timer funcional, nota em SQLite, Vault, API externa ou importação pessoal.
 - Migrações e testes somente em bancos novos, temporários e sintéticos nesta entrega.
 - P1.2B registrada em `ddf671585a7f1908b40a63d89417cb378454e218`; nenhuma tag/merge.
-- P1.2C registrada em `a7f11ab`; planejamento D aprovado registrado em `7313e6e`. D1 registrada em `af5e24b`; D2 registrada em `cf95461`; D3 aprovada; commit de encerramento autorizado, sem tag, push ou merge.
+- P1.2C registrada em `a7f11ab`; planejamento D aprovado registrado em `7313e6e`. D1 registrada em `af5e24b`; D2 registrada em `cf95461`; D3 registrada em `0e5323c`; plano E aprovado com ajustes; exclusivamente motor E1 autorizado, sem commit da implementação, tag, push ou merge.
 - Pendências C: Firefox manual, contraste inconclusivo e retenção/descarte de legacy_cookie_backup (preferencialmente P1.2F).
-- D3 aprovada. Somente planejamento E autorizado; implementação E/F depende de revisão e autorização; nenhum schema/modelo/gatilho alterado nesta entrega.
+- D3 aprovada. Plano E aprovado com ajustes; exclusivamente E1 autorizada, E2/E3/F dependem de revisão e autorização; nenhum schema/modelo/gatilho alterado nesta entrega.
 
 P1.1 homologada em 2026-10-11, tag `p1.1-approved`, com auditoria independente,
 recuperação local via `bin/rails admin:reset` e validação manual no Firefox.
@@ -150,3 +150,5 @@ P0.4 encerrada e homologada: tag anotada `p0.4-approved`, incluindo validação
 visual manual no Firefox e Pomodoro adaptativo. A identidade P0.3 permanece
 referenciada por `0018bb4`. Histórico e evidências em
 [docs/P0.4_FINAL_VERIFICATION.md](docs/P0.4_FINAL_VERIFICATION.md).
+
+Planejamento E aprovado com ajustes em 2026-10-17: [docs/P1.2E_PLAN.md](docs/P1.2E_PLAN.md). Somente o motor E1 está autorizado; manter sua implementação sem commit e a interface demonstrativa até aprovação da E2.

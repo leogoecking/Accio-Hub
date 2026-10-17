@@ -431,7 +431,7 @@ manual no Firefox informada pelo usuário. O relatório
 evidências, limites e pendências futuras. O commit final é identificado pela
 tag anotada `p0.4-approved`.
 
-P1.2C registrada em `a7f11ab`. [Planejamento D aprovado](P1.2D_PLAN.md) registrado em `7313e6e`; exclusivamente D1 autorizada. Revisar a [biblioteca persistente e espaço interno](P1.2D1_VERIFICATION.md) antes de autorizar D2.
+P1.2C registrada em `a7f11ab`; [plano D aprovado](P1.2D_PLAN.md) em `7313e6e`; D1 em `af5e24b`, D2 em `cf95461` e D3 em `0e5323c`. O próximo passo é revisar o [planejamento P1.2E](P1.2E_PLAN.md), sem iniciar sua implementação. F permanece não autorizada.
 Firefox C e contraste permanecem pendentes; retenção/descarte de snapshots legados fica preferencialmente na P1.2F.
 A personalização avançada do Pomodoro permanece no backlog futuro de P10.
 
@@ -440,3 +440,13 @@ As próximas entregas serão comparadas com a P0.3 no monitor de 27” e em tela
 ### Situação D3 — 2026-10-13
 
 P1.2D2 aprovada tecnicamente após auditoria independente e registrada em `cf95461`. P1.2D3 implementa referências persistentes e verifica a integração Projetos → Tarefas → Referências → Dashboard; entrega aprovada pelo Antigravity, conforme confirmação do usuário, sem bloqueadores confirmados; encerramento em commit autorizado. Implementação P1.2E/F não autorizada. Mantidas pendências de Firefox manual C/D, contraste inconclusivo, retenção/descarte legacy_cookie_backup (preferencialmente F) e rascunhos em memória.
+
+
+### Planejamento E — 2026-10-13
+
+D3 encerrada em `0e5323c5b823e2d2d531ad8c41c35a05a7ab2045`. [P1.2E_PLAN.md](P1.2E_PLAN.md) propõe Pomodoro global sobre FocusSession/FocusCommand existentes, checkpoints e recuperação conservadora, preservando presets 25/45 e identidade P0.4. Somente planejamento autorizado; nenhum modelo, migração, gatilho ou temporizador funcional alterado. Permanecem abertas validação Firefox C/D1/D2/D3, contraste, retenção de legacy_cookie_backup, hardening de hosts numéricos em SafeReferenceUrl e verificação operacional de backup/restauração.
+
+
+### Autorização E1 — 2026-10-17
+
+[Plano E](P1.2E_PLAN.md) aprovado com ajustes de contrato. Exclusivamente E1 autorizada: máquina de estados, persistência, comandos e recuperação de tempo; implementação sem commit até revisão. E2 (interface), E3 e F dependem de autorização própria. Sem novos modelos/migrações/gatilhos ou alterações no Ubuntu.
