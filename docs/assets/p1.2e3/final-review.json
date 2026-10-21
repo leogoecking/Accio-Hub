@@ -1,0 +1,13 @@
+{
+  "branch": "p1-persistence",
+  "head": "d2dc047d63c6eade280e2a27abbe80e415c652e4",
+  "sensitive_path_candidates": [],
+  "secret_pattern_candidates": [],
+  "new_text_whitespace_findings": [],
+  "missing_report_links": [],
+  "unexpected_application_model_schema_prototype_changes": [],
+  "prior_E2_evidence_unchanged": true,
+  "staged_changes": false,
+  "git_diff_check_exit": 0,
+  "state": "E3 uncommitted; no tag/push/merge; QA servers stopped"
+}

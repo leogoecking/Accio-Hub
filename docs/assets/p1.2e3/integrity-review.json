@@ -1,0 +1,15 @@
+{
+  "branch": "p1-persistence",
+  "head": "d2dc047d63c6eade280e2a27abbe80e415c652e4",
+  "unchanged_since_E1": [
+    "rails/app/models",
+    "rails/db",
+    "prototype",
+    "rails/app/services/focus_commands.rb",
+    "rails/app/services/focus_time.rb",
+    "rails/app/controllers/focus_controller.rb",
+    "rails/app/javascript/controllers/studio_controller.js",
+    "rails/app/assets/stylesheets/studio.css"
+  ],
+  "css_sha256": "a4180ac8e476ed2b90ff08a30011156a672408d23945d6741700914081cb41b0"
+}

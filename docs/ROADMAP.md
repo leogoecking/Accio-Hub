@@ -109,7 +109,7 @@ continuam no backlog, sem autorização implícita.
 | Etapa | Entrega | Estado |
 |---|---|---|
 | P1.1 — Fundação Rails | Autenticação local e recuperação de senha por CLI, shell ERB/Turbo, temas, fundos, fontes, Dock, widgets e Music demonstrativo; personalização fundamental | Encerrada e homologada; tag anotada `p1.1-approved` |
-| P1.2 — SQLite | Modelos transacionais de projetos, tarefas, referências, preferências e foco global | A/B/C aprovadas tecnicamente; B registrada em `ddf6715`; C registrada em `a7f11ab`; D1 encerrada em `af5e24b`; D2 registrada em `cf95461`; D3 aprovada tecnicamente sem commit; E/F não iniciadas |
+| P1.2 — SQLite | Modelos transacionais de projetos, tarefas, referências, preferências e foco global | A/B/C/D aprovadas e registradas; E1 em `0c74250`; E2 aprovada com ressalvas em `a0ab717`; E3 aprovada com ressalvas, encerramento autorizado; somente planejamento F autorizado |
 | P1.3 — Vault Markdown | Arquivos reais, índice reconstruível, escrita segura, conflitos e recuperação | Não iniciada; exige autorização |
 | P1.4 — Migração | Exportação/importação versionada, simulação, relatório e recuperação | Não iniciada; exige autorização |
 | P1.5 — Verificação final | Equivalência, segurança, visual e restauração | Não iniciada; exige autorização |
@@ -431,7 +431,7 @@ manual no Firefox informada pelo usuário. O relatório
 evidências, limites e pendências futuras. O commit final é identificado pela
 tag anotada `p0.4-approved`.
 
-P1.2C registrada em `a7f11ab`; [plano D aprovado](P1.2D_PLAN.md) em `7313e6e`; D1 em `af5e24b`, D2 em `cf95461` e D3 em `0e5323c`. O motor E1 foi homologado e registrado em `0c74250`; a interface E2 está entregue para revisão, sem commit. E3/F permanecem não autorizadas.
+P1.2C registrada em `a7f11ab`; [plano D aprovado](P1.2D_PLAN.md) em `7313e6e`; D1 em `af5e24b`, D2 em `cf95461` e D3 em `0e5323c`. Motor E1 homologado em `0c74250`; E2 aprovada com ressalvas e registrada em `a0ab717`. E3 integrada entregue para revisão, sem commit; F permanece não autorizada.
 Firefox C e contraste permanecem pendentes; retenção/descarte de snapshots legados fica preferencialmente na P1.2F.
 A personalização avançada do Pomodoro permanece no backlog futuro de P10.
 
@@ -465,3 +465,11 @@ E1 aprovada após auditoria independente do Antigravity, sem bloqueadores identi
 ### Entrega E2 para revisão — 2026-10-21
 
 E1 encerrada em `0c742503fa7c1df59523b4cdabf047b5e80c19c5`, com auditoria independente aprovada. Exclusivamente E2 autorizada e implementada: Pomodoro compartilhado no Dashboard, Foco e projetos, ações de tarefas, presets, recuperação e concorrência pela API E1. Relatório [P1.2E2_VERIFICATION.md](P1.2E2_VERIFICATION.md), evidências em assets/p1.2e2/. Implementação **sem commit**, aguardando revisão. Nenhuma alteração de modelo/schema/gatilho, protótipo, Vault, backup ou serviço real. Não iniciar E3/F. Pendências anteriores, inclusive Firefox C/D/E2 e contraste inconclusivo, preservadas.
+
+### Encerramento E2 e entrega E3 para revisão — 2026-10-21
+
+E2 aprovada com ressalvas pelo Antigravity, sem bloqueadores confirmados, e encerrada em `a0ab717f9497d6e3bf5209f7a26b16a8c2091053`; diretriz de portabilidade em `d2dc047`, sem empacotamento. Verificação E3 exclusivamente investigativa/integrada concluída nos cenários executados: [relatório](P1.2E3_VERIFICATION.md), 93 cenários de navegador, 25 gatilhos idênticos, suíte completa127/1.728 no gate desta sessão e E1 específico24/689. Recuperação após20min mensurou três ações para aceitar/retomar; limiares intactos. Sem nova funcionalidade. Firefox, contraste, retenção de cookies, SafeReferenceUrl, rascunhos e backup/restauração operacional mantidos. E3 sem commit para revisão. Recomendada revisão para eventual autorização de F; F/P1.3 não iniciadas.
+
+### Encerramento E3 e autorização de planejamento F — 2026-10-21
+
+Usuário aprovou E3 com ressalvas, sem bloqueadores funcionais/de integridade documentados, e autorizou seu commit e exclusivamente planejamento F1–F5. Não há autorização de correções F. Preservar recuperação/PATCH de preset como ressalvas, contraste inconclusivo e pendências operacionais. Firefox complementar, não bloqueante para a F, sem declarar teste inexistente. Encerramento final P1.2 exige evidências e auditoria independente; P1.3, importação pessoal, tags, push, merge e distribuição dependem de autorização própria.

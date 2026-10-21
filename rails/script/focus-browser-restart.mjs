@@ -4,7 +4,7 @@ import {resolve} from 'node:path'
 import assert from 'node:assert/strict'
 const root=resolve(import.meta.dirname,'../..'),rails=resolve(root,'rails'),directory=readFileSync(resolve(rails,'tmp/p12e2-workspace'),'utf8').trim()
 assert.ok(directory.startsWith(resolve(rails,'tmp/p12e2-browser-')))
-const args=['--session',process.env.ACCIO_QA_SESSION || 'accio-p12e2-live','--json'],evidence=resolve(root,'docs/assets/p1.2e2')
+const args=['--session',process.env.ACCIO_QA_SESSION || 'accio-p12e2-live','--json'],evidence=resolve(process.env.ACCIO_QA_EVIDENCE||resolve(root,'docs/assets/p1.2e2'))
 const b=(...cmd)=>{const r=JSON.parse(execFileSync('agent-browser',[...args,...cmd],{encoding:'utf8',timeout:45000}));assert.equal(r.success,true);return r.data}
 const ev=code=>{const r=JSON.parse(execFileSync('agent-browser',[...args,'eval','--stdin'],{input:code,encoding:'utf8',timeout:45000}));assert.equal(r.success,true);return r.data.result}
 const c=`window.Stimulus.getControllerForElementAndIdentifier(document.querySelector('[data-controller=focus]'),'focus')`

@@ -10,7 +10,7 @@ const workspace = readFileSync(resolve(rails, 'tmp/p12e2-workspace'), 'utf8').tr
 assert.ok(workspace.startsWith(resolve(rails, 'tmp/p12e2-browser-')))
 const credentials = JSON.parse(readFileSync(resolve(workspace, 'credentials.json'), 'utf8'))
 const ids = JSON.parse(readFileSync(resolve(workspace, 'state.json'), 'utf8'))
-const evidence = resolve(root, 'docs/assets/p1.2e2'); mkdirSync(evidence, { recursive: true })
+const evidence = resolve(process.env.ACCIO_QA_EVIDENCE || resolve(root, 'docs/assets/p1.2e2')); mkdirSync(evidence, { recursive: true })
 const session = process.env.ACCIO_QA_SESSION || 'accio-p12e2-check', origin = 'http://127.0.0.1:3127'
 const geometryResults = []
 const results = [], resume = Number(process.env.ACCIO_QA_RESUME || 0); let index = 0
@@ -39,7 +39,7 @@ const start = () => { click('[data-focus-primary]'); state('running') }
 function sql(code) { return JSON.parse(execFileSync('bin/rails', ['runner', `require 'json'; raise 'Synthetic only' unless ActiveRecord::Base.connection_db_config.database == File.join(ENV.fetch('E2_WORKSPACE'),'synthetic.sqlite3'); ${code}`], { cwd: rails, env: { ...process.env, RAILS_ENV: 'development', E2_WORKSPACE: workspace, ACCIO_DATABASE_PATH: resolve(workspace, 'synthetic.sqlite3') }, encoding: 'utf8', timeout: 45000 }).trim()) }
 const counts = () => sql('puts JSON.generate({sessions:FocusSession.count, commands:FocusCommand.count,versions:FocusSession.order(:id).pluck(:lock_version),occupants:FocusSession.occupying.count,completed:FocusSession.where(status:"completed").count})')
 function scenario(name, test) { if (index++ < resume) return; test(); const errors = b('errors'); assert.ok(!errors?.errors?.length, JSON.stringify(errors)); results.push({ name, result: 'PASS' }); writeFileSync(resolve(evidence, 'browser-results.json'), JSON.stringify(results, null, 2) + '\n'); console.log('PASS ' + name) }
-function appearance(key, value) { click('[data-open=customize]'); b('select', `#drawer-${key}`, value); wait('document.querySelector("[data-save-status]").hidden'); b('press', 'Escape') }
+function appearance(key, value) { click('[data-open=customize]'); b('select', `#drawer-${key}`, value); wait('document.querySelector("[data-save-status]").hidden'); click('#customize [data-close]'); wait('!document.querySelector("#customize").open') }
 function api(path, method, body) { return ev(`(async()=>{const r=await fetch(${JSON.stringify(path)},{method:${JSON.stringify(method)},headers:{Accept:'application/json','Content-Type':'application/json','X-CSRF-Token':document.querySelector('meta[name=csrf-token]').content},body:JSON.stringify(${JSON.stringify(body)})});return {status:r.status,data:await r.json()}})()`)}
 try {
  b('--args', '--no-sandbox', 'open', origin + '/session/new'); b('snapshot', '-i')

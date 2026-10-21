@@ -3,7 +3,7 @@ import {execFileSync} from 'node:child_process'
 import {readFileSync,writeFileSync} from 'node:fs'
 import {resolve} from 'node:path'
 import assert from 'node:assert/strict'
-const root=resolve(import.meta.dirname,'../..'),directory=readFileSync(resolve(root,'rails/tmp/p12e2-workspace'),'utf8').trim(),evidence=resolve(root,'docs/assets/p1.2e2')
+const root=resolve(import.meta.dirname,'../..'),directory=readFileSync(resolve(root,'rails/tmp/p12e2-workspace'),'utf8').trim(),evidence=resolve(process.env.ACCIO_QA_EVIDENCE||resolve(root,'docs/assets/p1.2e2'))
 assert.ok(directory.startsWith(resolve(root,'rails/tmp/p12e2-browser-')))
 const credentials=JSON.parse(readFileSync(resolve(directory,'credentials.json'),'utf8')),ids=JSON.parse(readFileSync(resolve(directory,'state.json'),'utf8'))
 const args=['--session',process.env.ACCIO_QA_SESSION || 'accio-p12e2-live','--json'],resume=Number(process.env.ACCIO_QA_RESUME||0),results=resume?JSON.parse(readFileSync(resolve(evidence,'browser-extra-results.json'),'utf8')).slice(0,resume):[];let index=0

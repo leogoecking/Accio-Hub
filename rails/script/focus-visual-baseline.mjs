@@ -2,7 +2,7 @@ import { execFileSync } from 'node:child_process'
 import { writeFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import assert from 'node:assert/strict'
-const evidence = resolve(import.meta.dirname, '../../docs/assets/p1.2e2'), args = ['--session', 'accio-e2-p04-visual', '--json']
+const evidence = resolve(process.env.ACCIO_QA_EVIDENCE || resolve(import.meta.dirname, '../../docs/assets/p1.2e2')), args = ['--session', process.env.ACCIO_QA_SESSION || 'accio-e2-p04-visual', '--json']
 const b = (...cmd) => { const r = JSON.parse(execFileSync('agent-browser', [...args, ...cmd], { encoding: 'utf8', timeout: 45000 })); assert.equal(r.success, true); return r.data }
 const ev = code => { const r = JSON.parse(execFileSync('agent-browser', [...args, 'eval', '--stdin'], { input: code, encoding: 'utf8', timeout: 45000 })); assert.equal(r.success, true); return r.data.result }
 const measurements = []

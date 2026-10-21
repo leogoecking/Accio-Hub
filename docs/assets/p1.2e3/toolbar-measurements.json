@@ -1,0 +1,42 @@
+[
+  {
+    "width": 1440,
+    "button": {
+      "left": 1141.234375,
+      "right": 1253.421875
+    },
+    "chip": {
+      "font": "500 9px \"JetBrains Mono\", monospace",
+      "left": 753.359375,
+      "right": 1127.234375,
+      "text": "PROJETOS, TAREFAS E FOCO REAIS · OUTROS MÓDULOS DEMONSTRATIVOS",
+      "width": 373.875
+    },
+    "text": {
+      "left": 753.359375,
+      "right": 1127.234375,
+      "width": 373.875
+    },
+    "text_overlaps_button": false
+  },
+  {
+    "width": 1920,
+    "button": {
+      "left": 1467.234375,
+      "right": 1579.421875
+    },
+    "chip": {
+      "font": "500 9px \"JetBrains Mono\", monospace",
+      "left": 1079.359375,
+      "right": 1453.234375,
+      "text": "PROJETOS, TAREFAS E FOCO REAIS · OUTROS MÓDULOS DEMONSTRATIVOS",
+      "width": 373.875
+    },
+    "text": {
+      "left": 1079.359375,
+      "right": 1453.234375,
+      "width": 373.875
+    },
+    "text_overlaps_button": false
+  }
+]

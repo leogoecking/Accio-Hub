@@ -1,0 +1,23 @@
+{
+  "base_head": "d2dc047d63c6eade280e2a27abbe80e415c652e4",
+  "branch": "p1-persistence",
+  "protected_application_changes": [],
+  "sensitive_candidates": [],
+  "secret_pattern_candidates": [],
+  "new_text_whitespace_findings": [],
+  "changed_QA_scripts_syntax": [
+    "rails/script/focus-browser-additional.mjs",
+    "rails/script/focus-browser-check.mjs",
+    "rails/script/focus-browser-restart.mjs",
+    "rails/script/focus-integrated-check.mjs",
+    "rails/script/focus-visual-baseline.mjs"
+  ],
+  "reviewed_paths": 242,
+  "prior_browser_results": {
+    "E2": 37,
+    "additional": 14,
+    "domain": 33,
+    "integrated": 8,
+    "restart": "PASS"
+  }
+}

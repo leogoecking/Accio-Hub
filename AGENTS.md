@@ -67,7 +67,7 @@ preparando o futuro Vault Markdown. Evitar refatorações grandes sem necessidad
 - PWA
 
 P0.4 homologada, P1.0 arquitetural aprovada e P1.1 encerrada e homologada.
-P1.2A/P1.2B/P1.2C aprovadas tecnicamente; planejamento P1.2D aprovado; D1 aprovada tecnicamente com ressalvas e registrada; D2/D3 aprovadas; planejamento P1.2E aprovado com ajustes; motor E1 aprovado e registrado; E2 aprovada com ressalvas e encerramento autorizado; exclusivamente verificação integrada E3 autorizada. P1.2F/P1.3 não autorizadas.
+P1.2A/P1.2B/P1.2C aprovadas tecnicamente; planejamento P1.2D aprovado; D1 aprovada tecnicamente com ressalvas e registrada; D2/D3 aprovadas; planejamento P1.2E aprovado com ajustes; motor E1 aprovado e registrado; E2 aprovada com ressalvas em a0ab717; E3 aprovada com ressalvas e encerramento em commit autorizado. Exclusivamente planejamento P1.2F autorizado; implementação F/P1.3 não autorizada.
 A aprovação visual da P0.3 não autoriza iniciar Rails na P0.4.
 
 ## Arquitetura
@@ -180,3 +180,11 @@ E1 aprovada pela auditoria independente, sem bloqueadores identificados, e regis
 ### Encerramento E2 e autorização E3 — 2026-10-21
 
 E2 aprovada pelo Antigravity como APROVADO COM RESSALVAS, sem bloqueadores confirmados; relatório existente em docs/P1.2E2_AUDIT.md. Encerramento autorizado após nova verificação de 127 testes/1.728 asserções, 11 testes JS, processos, rollback, contenção, 25 gatilhos e segurança. Preservar Firefox pendente, contraste inconclusivo e assimetria de retentativa do preset (409 após resposta perdida pós-commit), além das limitações anteriores. Exclusivamente E3 investigativa/integrada autorizada, com bancos/perfis sintéticos; relatório e eventuais correções sem commit para revisão. F/P1.3, tag, push e merge não autorizados. As seções anteriores são registros históricos e não ampliam o escopo atual.
+
+### E3 integrada para revisão — 2026-10-21
+
+E2 encerrada em `a0ab717f9497d6e3bf5209f7a26b16a8c2091053`; diretriz de portabilidade registrada separadamente em `d2dc047d63c6eade280e2a27abbe80e415c652e4`. [Verificação E3](docs/P1.2E3_VERIFICATION.md): 93 cenários de navegador, E1 específico 24 testes/689 asserções, 11 JS, 25 gatilhos idênticos e integridade SQLite. Suíte completa reexecutada no gate E2 desta sessão: 127/1.728; nenhuma alteração funcional depois. Recuperação após 20 minutos sintéticos preserva checkpoint e exige três ações para aceitar/retomar; registrar atrito cotidiano, sem mudar limiares15/60/5. Firefox pendente e contraste inconclusivo mantidos, além das demais ressalvas. Somente QA/documentação/evidências E3 alterados, **sem commit**; aguardar revisão, sem iniciar F/P1.3, tag, push ou merge.
+
+### Encerramento E3 e planejamento F — 2026-10-21
+
+E3 revisada e APROVADA COM RESSALVAS, conforme parecer informado pelo usuário; sem bloqueadores funcionais ou de integridade nos cenários documentados. Commit de encerramento autorizado, preservando testes e evidências. Exclusivamente planejamento F1–F5 autorizado, sem alterar aplicação/modelos/schema/gatilhos, limites15/60/5 ou contratos E1; documento F sem commit para revisão. Firefox passa a ser complementar e não bloqueante para a F, mantendo resultado histórico não testado. Auditoria independente continua obrigatória antes do encerramento final da P1.2. Sem implementação F/P1.3, dados pessoais, descarte de cookies/backups, tag, push, merge ou distribuição.

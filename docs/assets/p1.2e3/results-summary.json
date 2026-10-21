@@ -1,0 +1,14 @@
+{
+  "focus_regression": 37,
+  "additional": 14,
+  "domain_regression": 33,
+  "integrated": 8,
+  "restart": 1,
+  "total_browser_scenarios": 93,
+  "screenshots": 129,
+  "videos": 2,
+  "diagnostic_attempts_excluded_from_scenario_total": [
+    "regression-e2/browser.log (3 casos antes de interrupção)",
+    "integrated/browser.log (6 casos antes de erro do roteiro)"
+  ]
+}

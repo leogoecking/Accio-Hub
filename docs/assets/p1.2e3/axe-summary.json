@@ -1,0 +1,520 @@
+{
+  "audits": 57,
+  "audits_with_violations": 0,
+  "audits_with_incomplete": 57,
+  "results": [
+    {
+      "file": "regression-e2/axe-dialog-dark-777777.json",
+      "counts": {
+        "inapplicable": 69,
+        "incomplete": 1,
+        "passes": 19,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-dialog-dark-8050b0.json",
+      "counts": {
+        "inapplicable": 69,
+        "incomplete": 1,
+        "passes": 19,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-dialog-dark-b1f07d.json",
+      "counts": {
+        "inapplicable": 69,
+        "incomplete": 1,
+        "passes": 19,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-dialog-light-777777.json",
+      "counts": {
+        "inapplicable": 69,
+        "incomplete": 1,
+        "passes": 19,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-dialog-light-8050b0.json",
+      "counts": {
+        "inapplicable": 69,
+        "incomplete": 1,
+        "passes": 19,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-dialog-light-b1f07d.json",
+      "counts": {
+        "inapplicable": 69,
+        "incomplete": 1,
+        "passes": 19,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-dark-1440.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-dark-1920.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-dark-320.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-dark-390.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-dark-768.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-light-1440.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-light-1920.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-light-320.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-light-390.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-light-768.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-dashboard-dark-1440.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-dashboard-dark-1920.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-dashboard-dark-320.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-dashboard-dark-390.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-dashboard-dark-768.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-dashboard-light-1440.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-dashboard-light-1920.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-dashboard-light-320.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-dashboard-light-390.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-dashboard-light-768.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-form-dark-1440.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-form-dark-1920.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-form-dark-320.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-form-dark-390.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-form-dark-768.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-form-light-1440.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-form-light-1920.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-form-light-320.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-form-light-390.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-form-light-768.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-overview-dark-1440.json",
+      "counts": {
+        "inapplicable": 47,
+        "incomplete": 1,
+        "passes": 42,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-overview-dark-1920.json",
+      "counts": {
+        "inapplicable": 47,
+        "incomplete": 1,
+        "passes": 42,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-overview-dark-320.json",
+      "counts": {
+        "inapplicable": 46,
+        "incomplete": 1,
+        "passes": 43,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-overview-dark-390.json",
+      "counts": {
+        "inapplicable": 46,
+        "incomplete": 1,
+        "passes": 43,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-overview-dark-768.json",
+      "counts": {
+        "inapplicable": 46,
+        "incomplete": 1,
+        "passes": 43,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-overview-light-1440.json",
+      "counts": {
+        "inapplicable": 47,
+        "incomplete": 1,
+        "passes": 42,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-overview-light-1920.json",
+      "counts": {
+        "inapplicable": 47,
+        "incomplete": 1,
+        "passes": 42,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-overview-light-320.json",
+      "counts": {
+        "inapplicable": 46,
+        "incomplete": 1,
+        "passes": 43,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-overview-light-390.json",
+      "counts": {
+        "inapplicable": 46,
+        "incomplete": 1,
+        "passes": 43,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-overview-light-768.json",
+      "counts": {
+        "inapplicable": 46,
+        "incomplete": 1,
+        "passes": 43,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-references-dark-1440.json",
+      "counts": {
+        "inapplicable": 52,
+        "incomplete": 1,
+        "passes": 37,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-references-dark-1920.json",
+      "counts": {
+        "inapplicable": 52,
+        "incomplete": 1,
+        "passes": 37,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-references-dark-320.json",
+      "counts": {
+        "inapplicable": 51,
+        "incomplete": 1,
+        "passes": 38,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-references-dark-390.json",
+      "counts": {
+        "inapplicable": 51,
+        "incomplete": 1,
+        "passes": 38,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-references-dark-768.json",
+      "counts": {
+        "inapplicable": 52,
+        "incomplete": 1,
+        "passes": 37,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-references-light-1440.json",
+      "counts": {
+        "inapplicable": 52,
+        "incomplete": 1,
+        "passes": 37,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-references-light-1920.json",
+      "counts": {
+        "inapplicable": 52,
+        "incomplete": 1,
+        "passes": 37,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-references-light-320.json",
+      "counts": {
+        "inapplicable": 51,
+        "incomplete": 1,
+        "passes": 38,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-references-light-390.json",
+      "counts": {
+        "inapplicable": 51,
+        "incomplete": 1,
+        "passes": 38,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-d/axe-references-light-768.json",
+      "counts": {
+        "inapplicable": 52,
+        "incomplete": 1,
+        "passes": 37,
+        "violations": 0
+      }
+    },
+    {
+      "file": "integrated-final/axe-recovery.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    }
+  ]
+}
