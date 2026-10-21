@@ -1,0 +1,13 @@
+PASS Vazios reais e criação Projeto → Tarefas → Referências
+Error: Command failed: agent-browser --session accio-e2-regression-d --json wait --fn document.activeElement.getAttribute('aria-label')==='Fechar formulário de referência'
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:942:11)
+    at execFileSync (node:child_process:978:15)
+    at b (file:///home/goecking/Projects/Accio-HUB/rails/script/references-browser-check.mjs:19:44)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/references-browser-check.mjs:52:246
+    at scenario (file:///home/goecking/Projects/Accio-HUB/rails/script/references-browser-check.mjs:25:64)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/references-browser-check.mjs:51:2
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+{"lifecycle":{"effectiveLaunch":{"browserLaunched":true,"engine":"chrome","launchHash":702707544856437900},"launched":false,"relaunchedBrowser":false,"restartedBackground":false,"restoreStatus":"not_configured","reused":true,"saveStatus":"not_attempted"},"origin":"http://127.0.0.1:3126/projects/u-MDg2M2M1MzMtOTBiZC00ODI4LTgwOTYtNmRiNjQwNTcxM2Rh?tab=references","refs":{"e447":{"name":"Nova referência","role":"heading"},"e448":{"name":"Fechar formulário de referência","role":"button"},"e449":{"name":"Cancelar","role":"button"},"e450":{"name":"Salvar referência","role":"button"},"e451":{"name":"Título","role":"textbox"},"e452":{"name":"Tipo","role":"combobox"},"e453":{"name":"URL obrigatória para links","role":"textbox"},"e454":{"name":"Descrição do material ou link","role":"textbox"},"e455":{"name":"Link","role":"option"},"e456":{"name":"Material","role":"option"}},"removedRefs":["@e419","@e420","@e421","@e422","@e423","@e424","@e425","@e426","@e427","@e428","@e429","@e430","@e431","@e432","@e433","@e434","@e435","@e436","@e437","@e438","@e439","@e440","@e441","@e442","@e443","@e444","@e445","@e446"],"snapshot":"- heading \"Nova referência\" [level=2, ref=e447]\n- button \"Fechar formulário de referência\" [ref=e448]\n- textbox \"Título\" [required, ref=e451]\n- combobox \"Tipo\" [expanded=false, ref=e452]: Link\n  - option \"Link\" [selected, ref=e455]\n  - option \"Material\" [ref=e456]\n- textbox \"URL obrigatória para links\" [required, ref=e453]\n- textbox \"Descrição do material ou link\" [ref=e454]\n- button \"Cancelar\" [ref=e449]\n- button \"Salvar referência\" [ref=e450]"}

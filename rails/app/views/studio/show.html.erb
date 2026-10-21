@@ -1,5 +1,5 @@
 <%= render "studio/shell" do %>
-      <% if @page == "home" %><%= render "board" %><% elsif @page == "settings" %>
+      <% if @page == "home" %><%= render "board" %><% elsif @page == "focus" %><%= render "focus_page" %><% elsif @page == "settings" %>
         <div class="inner-page settings-page"><div class="subhead"><div class="eyebrow">ACCIO HUB / SEU ESPAÇO</div><h1>Personalização<span class="title-stop">.</span></h1></div><div class="inner-block"><%= render "settings", prefix: "page", level: 2 %></div></div>
       <% else %><%= render "module" %><% end %>
 <% end %>

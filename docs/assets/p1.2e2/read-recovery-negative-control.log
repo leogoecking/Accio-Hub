@@ -1,0 +1,22 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'Offline synthetic'
+- 'Estado confirmado pelo servidor.'
+
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/focus-client-check.mjs:55:83
+    at async check (file:///home/goecking/Projects/Accio-HUB/rails/script/focus-client-check.mjs:8:36)
+    at async file:///home/goecking/Projects/Accio-HUB/rails/script/focus-client-check.mjs:51:1 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'Offline synthetic',
+  expected: 'Estado confirmado pelo servidor.',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

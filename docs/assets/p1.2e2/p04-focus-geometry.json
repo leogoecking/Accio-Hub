@@ -1,0 +1,702 @@
+[
+  {
+    "theme": "dark",
+    "width": 320,
+    "elements": [
+      {
+        "background": "none",
+        "class": "rail",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 49
+      },
+      {
+        "background": "none",
+        "class": "headbar",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "width": 271
+      },
+      {
+        "background": "none",
+        "class": "music-zone",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 271
+      },
+      {
+        "background": "conic-gradient(rgb(195, 179, 255) 0%, rgba(179, 164, 238, 0.17) 0%)",
+        "class": "dial",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "width": 170
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(36, 36, 64), rgb(22, 30, 50))",
+        "class": "dial-inner",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "width": 152
+      },
+      {
+        "background": "none",
+        "class": "round-btn primary-action",
+        "color": "rgb(16, 32, 28)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 48
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(221, 216, 237)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(221, 216, 237)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "elements": [
+      {
+        "background": "none",
+        "class": "rail",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 49
+      },
+      {
+        "background": "none",
+        "class": "headbar",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "width": 341
+      },
+      {
+        "background": "none",
+        "class": "music-zone",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 341
+      },
+      {
+        "background": "conic-gradient(rgb(195, 179, 255) 0%, rgba(179, 164, 238, 0.17) 0%)",
+        "class": "dial",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "width": 170
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(36, 36, 64), rgb(22, 30, 50))",
+        "class": "dial-inner",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "width": 152
+      },
+      {
+        "background": "none",
+        "class": "round-btn primary-action",
+        "color": "rgb(16, 32, 28)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 48
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(221, 216, 237)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(221, 216, 237)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 768,
+    "elements": [
+      {
+        "background": "none",
+        "class": "rail",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 61
+      },
+      {
+        "background": "none",
+        "class": "headbar",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "width": 707
+      },
+      {
+        "background": "none",
+        "class": "music-zone",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 707
+      },
+      {
+        "background": "conic-gradient(rgb(195, 179, 255) 0%, rgba(179, 164, 238, 0.17) 0%)",
+        "class": "dial",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "width": 170
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(36, 36, 64), rgb(22, 30, 50))",
+        "class": "dial-inner",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "width": 152
+      },
+      {
+        "background": "none",
+        "class": "round-btn primary-action",
+        "color": "rgb(16, 32, 28)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 48
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(221, 216, 237)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(221, 216, 237)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 1440,
+    "elements": [
+      {
+        "background": "none",
+        "class": "rail",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 76
+      },
+      {
+        "background": "none",
+        "class": "headbar",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "width": 1364
+      },
+      {
+        "background": "none",
+        "class": "music-zone",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 1364
+      },
+      {
+        "background": "conic-gradient(rgb(195, 179, 255) 0%, rgba(179, 164, 238, 0.17) 0%)",
+        "class": "dial",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "width": 170
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(36, 36, 64), rgb(22, 30, 50))",
+        "class": "dial-inner",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "width": 152
+      },
+      {
+        "background": "none",
+        "class": "round-btn primary-action",
+        "color": "rgb(16, 32, 28)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 48
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(221, 216, 237)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(221, 216, 237)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 1920,
+    "elements": [
+      {
+        "background": "none",
+        "class": "rail",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 76
+      },
+      {
+        "background": "none",
+        "class": "headbar",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "width": 1844
+      },
+      {
+        "background": "none",
+        "class": "music-zone",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 1844
+      },
+      {
+        "background": "conic-gradient(rgb(195, 179, 255) 0%, rgba(179, 164, 238, 0.17) 0%)",
+        "class": "dial",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "width": 170
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(36, 36, 64), rgb(22, 30, 50))",
+        "class": "dial-inner",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "width": 152
+      },
+      {
+        "background": "none",
+        "class": "round-btn primary-action",
+        "color": "rgb(16, 32, 28)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 48
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(221, 216, 237)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(221, 216, 237)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 320,
+    "elements": [
+      {
+        "background": "none",
+        "class": "rail",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 49
+      },
+      {
+        "background": "none",
+        "class": "headbar",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "width": 271
+      },
+      {
+        "background": "none",
+        "class": "music-zone",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 271
+      },
+      {
+        "background": "conic-gradient(color(srgb 0.234314 0.201569 0.379216) 0%, rgb(221, 213, 237) 0%)",
+        "class": "dial",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "width": 170
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(252, 250, 255), rgb(238, 232, 251))",
+        "class": "dial-inner",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "width": 152
+      },
+      {
+        "background": "none",
+        "class": "round-btn primary-action",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 48
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 390,
+    "elements": [
+      {
+        "background": "none",
+        "class": "rail",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 49
+      },
+      {
+        "background": "none",
+        "class": "headbar",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "width": 341
+      },
+      {
+        "background": "none",
+        "class": "music-zone",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 341
+      },
+      {
+        "background": "conic-gradient(color(srgb 0.234314 0.201569 0.379216) 0%, rgb(221, 213, 237) 0%)",
+        "class": "dial",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "width": 170
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(252, 250, 255), rgb(238, 232, 251))",
+        "class": "dial-inner",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "width": 152
+      },
+      {
+        "background": "none",
+        "class": "round-btn primary-action",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 48
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 768,
+    "elements": [
+      {
+        "background": "none",
+        "class": "rail",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 61
+      },
+      {
+        "background": "none",
+        "class": "headbar",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "width": 707
+      },
+      {
+        "background": "none",
+        "class": "music-zone",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 707
+      },
+      {
+        "background": "conic-gradient(color(srgb 0.234314 0.201569 0.379216) 0%, rgb(221, 213, 237) 0%)",
+        "class": "dial",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "width": 170
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(252, 250, 255), rgb(238, 232, 251))",
+        "class": "dial-inner",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "width": 152
+      },
+      {
+        "background": "none",
+        "class": "round-btn primary-action",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 48
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 1440,
+    "elements": [
+      {
+        "background": "none",
+        "class": "rail",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 76
+      },
+      {
+        "background": "none",
+        "class": "headbar",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "width": 1364
+      },
+      {
+        "background": "none",
+        "class": "music-zone",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 1364
+      },
+      {
+        "background": "conic-gradient(color(srgb 0.234314 0.201569 0.379216) 0%, rgb(221, 213, 237) 0%)",
+        "class": "dial",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "width": 170
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(252, 250, 255), rgb(238, 232, 251))",
+        "class": "dial-inner",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "width": 152
+      },
+      {
+        "background": "none",
+        "class": "round-btn primary-action",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 48
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 1920,
+    "elements": [
+      {
+        "background": "none",
+        "class": "rail",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 76
+      },
+      {
+        "background": "none",
+        "class": "headbar",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "width": 1844
+      },
+      {
+        "background": "none",
+        "class": "music-zone",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 1844
+      },
+      {
+        "background": "conic-gradient(color(srgb 0.234314 0.201569 0.379216) 0%, rgb(221, 213, 237) 0%)",
+        "class": "dial",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "width": 170
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(252, 250, 255), rgb(238, 232, 251))",
+        "class": "dial-inner",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "width": 152
+      },
+      {
+        "background": "none",
+        "class": "round-btn primary-action",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 48
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      },
+      {
+        "background": "none",
+        "class": "round-btn",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"JetBrains Mono\", monospace",
+        "height": 36,
+        "width": 37
+      }
+    ]
+  }
+]

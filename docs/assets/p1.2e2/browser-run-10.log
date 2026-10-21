@@ -1,0 +1,30 @@
+PASS Read-only navigation and reload never create or start a session
+PASS Preset dialog initial focus Tab Shift+Tab Escape and return focus
+PASS Preset 45 and 25 persist without overwriting appearance
+PASS Start pause resume with confirmed checkpoint and immutable start timestamp
+PASS Theme and accent during active focus preserve UID duration and state
+PASS Active preset changes are refused visibly without modifying duration
+PASS Dashboard Focus and project show same global session without context reassignment
+PASS Explicit reset preserves history creates new ready UID and does not start automatically
+PASS Ready preset replacement is explicit and atomic
+PASS Lost HTTP response retains envelope and replay reconciles current state
+PASS Long interruption preserves checkpoint and pending recovery across reload
+PASS Accept only server estimate then resume; old recovery ID cannot apply twice
+PASS Invalid server clock estimate is not offered; keeping checkpoint preserves time
+PASS Nominal expiry never completes automatically; explicit reconcile and confirmation
+PASS Expiry with browser observation gap requires recovery before completion
+PASS Contextual task Unicode UID starts once; task controls still work
+PASS Personal task and project-only context remain global across navigation
+PASS Completed task cannot start focus; reopening restores action
+Error: Command failed: agent-browser --session accio-p12e2-live --json tab switch 0
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:942:11)
+    at execFileSync (node:child_process:978:15)
+    at b (file:///home/goecking/Projects/Accio-HUB/rails/script/focus-browser-check.mjs:15:48)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/focus-browser-check.mjs:78:166
+    at scenario (file:///home/goecking/Projects/Accio-HUB/rails/script/focus-browser-check.mjs:38:63)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/focus-browser-check.mjs:77:2
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+{"lifecycle":{"effectiveLaunch":{"browserLaunched":true,"engine":"chrome","launchHash":16228916338243422000},"launched":false,"relaunchedBrowser":false,"restartedBackground":false,"restoreStatus":"not_configured","reused":true,"saveStatus":"not_attempted"},"origin":"http://127.0.0.1:3127/apps/focus","refs":{"e1425":{"name":"Ir para o conteúdo","role":"link"},"e1426":{"name":"Accio Music","role":"region"},"e1427":{"name":"Accio Hub — Início","role":"link"},"e1428":{"name":"Navegação principal","role":"navigation"},"e1429":{"name":"Configurações","role":"link"},"e1430":{"name":"Buscar aplicativos","role":"button"},"e1431":{"name":"Captura rápida demonstrativa","role":"button"},"e1432":{"name":"Personalizar seu espaço","role":"button"},"e1433":{"name":"Reprodução demonstrativa","role":"button"},"e1434":{"name":"Expandir player","role":"button"},"e1435":{"name":"Foco.","role":"heading"},"e1436":{"name":"Pomodoro global","role":"region"},"e1437":{"name":"Início","role":"link"},"e1438":{"name":"Tarefas","role":"link"},"e1439":{"name":"Agenda","role":"link"},"e1440":{"name":"Foco","role":"link"},"e1441":{"name":"Projetos","role":"link"},"e1442":{"name":"Conhecimento","role":"link"},"e1443":{"name":"AccioFeed","role":"link"},"e1444":{"name":"Backups","role":"link"},"e1445":{"name":"E-mails","role":"link"},"e1446":{"name":"Sair da conta local","role":"button"},"e1447":{"name":"Pomodoro global","role":"heading"},"e1448":{"name":"Retomar Pomodoro","role":"button"},"e1449":{"name":"Reiniciar Pomodoro","role":"button"},"e1450":{"name":"Preset de 25 minutos. Selecionar 25 ou 45 minutos","role":"button"},"e1451":{"name":"Cancelar sessão","role":"button"},"e1452":{"name":"Atualizar estado","role":"button"},"e1453":{"name":"Um espaço para se concentrar","role":"heading"},"e1454":{"name":"Dispensar aviso","role":"button"},"e1455":{"name":"Abrir Foco","role":"link"}},"removedRefs":[],"snapshot":"- link \"Ir para o conteúdo\" [ref=e1425]\n- link \"Accio Hub — Início\" [ref=e1427]\n- navigation \"Navegação principal\" [ref=e1428]\n  - link \"Início\" [ref=e1437]\n  - link \"Tarefas\" [ref=e1438]\n  - link \"Agenda\" [ref=e1439]\n  - link \"Foco\" [ref=e1440]\n  - link \"Projetos\" [ref=e1441]\n  - link \"Conhecimento\" [ref=e1442]\n  - link \"AccioFeed\" [ref=e1443]\n  - link \"Backups\" [ref=e1444]\n  - link \"E-mails\" [ref=e1445]\n- link \"Configurações\" [ref=e1429]\n- button \"Sair da conta local\" [ref=e1446]\n- button \"Buscar aplicativos\" [ref=e1430]\n- button \"Captura rápida demonstrativa\" [ref=e1431]\n- button \"Personalizar seu espaço\" [ref=e1432]\n- region \"Accio Music\" [ref=e1426]\n  - button \"Reprodução demonstrativa\" [ref=e1433]\n  - button \"Expandir player\" [expanded=false, ref=e1434]\n- heading \"Foco.\" [level=1, ref=e1435]\n- region \"Pomodoro global\" [ref=e1436]\n  - heading \"Pomodoro global\" [level=2, ref=e1447]\n  - button \"Retomar Pomodoro\" [ref=e1448]\n  - button \"Reiniciar Pomodoro\" [ref=e1449]\n  - button \"Preset de 25 minutos. Selecionar 25 ou 45 minutos\" [ref=e1450]\n  - button \"Cancelar sessão\" [ref=e1451]\n  - button \"Atualizar estado\" [ref=e1452]\n- heading \"Um espaço para se concentrar\" [level=2, ref=e1453]\n- button \"Dispensar aviso\" [ref=e1454]\n- link \"Abrir Foco\" [ref=e1455]"}

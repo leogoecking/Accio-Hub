@@ -5,5 +5,6 @@
     <label class="task-label"><input type="checkbox" id="task-check-<%= key %>" <%= 'checked' if task.status == 'completed' %> <%= 'disabled' unless editable %> aria-label="<%= task.status == 'completed' ? 'Reabrir' : 'Concluir' %> <%= task.title %>"><span class="task-name"><%= task.title %><small><%= task.project&.name || "Pessoal" %><%= ' · Alta prioridade' if task.priority == 'high' %><%= ' · Arquivado · somente leitura' unless editable %></small></span></label>
     <span role="alert" data-project-notice></span><button type="button" class="quiet-link" hidden data-task-reapply data-action="task-command#reapply">Reaplicar após conferir</button>
   <% end %>
+  <% if editable && task.status == "pending" %><button type="button" class="task-play tip" id="task-focus-<%= key %>" title="Iniciar foco" aria-label="Iniciar foco em <%= task.title %>" data-focus-context="<%= focus_context(project: task.project, task: task).to_json %>" data-action="focus#startTask"><%= studio_icon("play", 15) %></button><% end %>
   <% if editable %><%= link_to task_edit_url(task, context), class: "task-play tip", id: "task-edit-#{key}", title: "Editar tarefa", aria: {label: "Editar #{task.title}"}, data: {turbo_frame: "task-modal", task_opener: true} do %><%= studio_icon("sliders", 15) %><% end %><% end %>
 </div>

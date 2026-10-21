@@ -79,9 +79,13 @@ class FocusTest < ActionDispatch::IntegrationTest
     assert_equal 1, FocusSession.count
   end
 
-  test "CSRF and authentication are preserved and timer interface stays demonstrative" do
+  test "CSRF and authentication are preserved with shared operational timer" do
     get root_path, headers: local_headers
-    assert_select "[data-demo=focus]"
+    assert_select "[data-demo=focus]", count: 0
+    assert_select "[data-controller~=focus]", count: 1
+    assert_select "[data-focus-primary]", count: 1
+    assert_select "dialog[data-focus-target=dialog][aria-labelledby=focus-dialog-title]"
+    assert_equal 0, FocusSession.count
     previous = ActionController::Base.allow_forgery_protection
     ActionController::Base.allow_forgery_protection = true
     post "/focus/intents", params: {}, as: :json, headers: local_headers.merge("HTTP_ORIGIN" => "https://evil.test")

@@ -67,7 +67,7 @@ preparando o futuro Vault Markdown. Evitar refatorações grandes sem necessidad
 - PWA
 
 P0.4 homologada, P1.0 arquitetural aprovada e P1.1 encerrada e homologada.
-P1.2A/P1.2B/P1.2C aprovadas tecnicamente; planejamento P1.2D aprovado; D1 aprovada tecnicamente com ressalvas e registrada; D2/D3 aprovadas; planejamento P1.2E aprovado com ajustes; exclusivamente E1 autorizada.
+P1.2A/P1.2B/P1.2C aprovadas tecnicamente; planejamento P1.2D aprovado; D1 aprovada tecnicamente com ressalvas e registrada; D2/D3 aprovadas; planejamento P1.2E aprovado com ajustes; motor E1 aprovado e registrado; E2 aprovada com ressalvas e encerramento autorizado; exclusivamente verificação integrada E3 autorizada. P1.2F/P1.3 não autorizadas.
 A aprovação visual da P0.3 não autoriza iniciar Rails na P0.4.
 
 ## Arquitetura
@@ -130,8 +130,8 @@ P1.2D3 — Referências Persistentes e Integração aprovada após auditoria ind
 - Modelos de projetos, tarefas, referências, preferências, Dock, widgets, foco e recibos técnicos; integridade SQL e versões.
 - Preferências autenticadas, Dock e widgets persistem no SQLite; bootstrap autenticado/CSRF e controle de versão do agregado.
 - Cookie legado é somente candidato de importação; cookie mínimo do login deriva de dados confirmados e nunca inicializa o banco.
-- Biblioteca e espaço de projetos utilizam SQLite; tarefas persistentes globais/contextuais aprovadas na D2; referências reais do projeto com criação/edição, versões e URLs seguras aprovadas na D3. Conhecimento aguarda Vault na P1.3; foco e os demais módulos continuam demonstrativos.
-- Formulários/comandos de projetos e tarefas conectados; sem exclusão física, timer funcional, nota em SQLite, Vault, API externa ou importação pessoal.
+- Biblioteca e espaço de projetos utilizam SQLite; tarefas persistentes globais/contextuais aprovadas na D2; referências reais do projeto com criação/edição, versões e URLs seguras aprovadas na D3. Conhecimento aguarda Vault na P1.3; interface compartilhada do foco integrada na E2 para revisão; demais módulos não conectados continuam demonstrativos.
+- Formulários/comandos de projetos e tarefas conectados; sem exclusão física, nota em SQLite, Vault, API externa ou importação pessoal. Motor de foco E1 homologado; interface E2 em revisão.
 - Migrações e testes somente em bancos novos, temporários e sintéticos nesta entrega.
 - P1.2B registrada em `ddf671585a7f1908b40a63d89417cb378454e218`; nenhuma tag/merge.
 - P1.2C registrada em `a7f11ab`; planejamento D aprovado registrado em `7313e6e`. D1 registrada em `af5e24b`; D2 registrada em `cf95461`; D3 registrada em `0e5323c`; plano E aprovado com ajustes; exclusivamente motor E1 autorizado, sem commit da implementação, tag, push ou merge.
@@ -160,3 +160,12 @@ P1.2E1 — Motor implementado para revisão em 2026-10-17, sem commit da impleme
 ### Encerramento E1 e autorização E2 — 2026-10-21
 
 E1 aprovada após auditoria independente do Antigravity, sem bloqueadores identificados; relatório existente em docs/P1.2E1_AUDIT.md. Encerramento em commit autorizado após nova verificação de 127 testes/1.714 asserções, processos, 25 gatilhos e segurança. Exclusivamente a interface compartilhada E2 está autorizada e deverá permanecer sem commit para revisão. E3/F, tag, push e merge não autorizados. Limitações anteriores preservadas.
+
+
+### P1.2E2 — Interface compartilhada para revisão — 2026-10-21
+
+E1 aprovada pela auditoria independente, sem bloqueadores identificados, e registrada em `0c742503fa7c1df59523b4cdabf047b5e80c19c5` após 127 testes/1.714 asserções e verificações de encerramento. Commit documental `573e739` preservado. E2 conecta exclusivamente a interface ERB/Stimulus aos endpoints homologados: Dashboard, Foco e projetos usam a mesma sessão SQLite; relógio visual monotônico, polling visível 15s, versões, intenções e recibos, recuperação explícita e preset versionado. Sem estado do timer em cookies/localStorage ou gravação por segundo. Alterações E2 permanecem **sem commit**, aguardando revisão. Modelos/schema/migrações/25 gatilhos, backend E1, protótipo e DTO de aparência intactos. Relatório: [docs/P1.2E2_VERIFICATION.md](docs/P1.2E2_VERIFICATION.md). E3/F não iniciadas. Sem tag/push/merge/importação pessoal. Firefox C/D/E2, contraste inconclusivo, retenção de cookies, SafeReferenceUrl, rascunhos e backup/restauração operacional continuam pendentes.
+
+### Encerramento E2 e autorização E3 — 2026-10-21
+
+E2 aprovada pelo Antigravity como APROVADO COM RESSALVAS, sem bloqueadores confirmados; relatório existente em docs/P1.2E2_AUDIT.md. Encerramento autorizado após nova verificação de 127 testes/1.728 asserções, 11 testes JS, processos, rollback, contenção, 25 gatilhos e segurança. Preservar Firefox pendente, contraste inconclusivo e assimetria de retentativa do preset (409 após resposta perdida pós-commit), além das limitações anteriores. Exclusivamente E3 investigativa/integrada autorizada, com bancos/perfis sintéticos; relatório e eventuais correções sem commit para revisão. F/P1.3, tag, push e merge não autorizados. As seções anteriores são registros históricos e não ampliam o escopo atual.

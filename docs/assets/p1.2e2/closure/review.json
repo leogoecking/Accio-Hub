@@ -1,0 +1,15 @@
+{
+  "sensitive_path_candidates": [],
+  "secret_pattern_file_candidates": [],
+  "javascript_syntax_files": 59,
+  "unchanged_contract_paths": [
+    "rails/app/models",
+    "rails/db",
+    "prototype",
+    "rails/app/services/focus_commands.rb",
+    "rails/app/services/focus_time.rb",
+    "rails/app/controllers/focus_controller.rb",
+    "rails/app/javascript/controllers/studio_controller.js",
+    "rails/app/assets/stylesheets/studio.css"
+  ]
+}

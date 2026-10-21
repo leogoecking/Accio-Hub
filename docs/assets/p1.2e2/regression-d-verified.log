@@ -1,0 +1,33 @@
+PASS Diálogo inicial Tab Shift Tab Escape cancelamento e X retornam foco
+PASS Criação link com resposta perdida retentativa sem duplicação e foco
+PASS Material sem URL e HTML como texto sem execução
+PASS Editar título tipo URL descrição mantém UID e ordenação
+PASS URL insegura 422 preserva campos e falha 503 permite retentativa
+PASS Duas abas conflito 409 preserva edição e reaplicação explícita
+PASS Conflito permite carregar versão confirmada com todos os campos
+PASS Arquivar após abrir formulário bloqueia escrita e restauração preserva filhos
+PASS Navegação suja bloqueada e atalhos não sobrepõem diálogos
+PASS Projetos Tarefas Referências Dashboard usam contagens e registros iguais
+PASS URLs diretas novo editar e inexistente preservam histórico e foco
+PASS Tema destaque Music e persistência após recarga
+PASS Referências e formulário dark 320px
+PASS Integração visual Dashboard e projeto dark 320px
+PASS Referências e formulário dark 390px
+PASS Integração visual Dashboard e projeto dark 390px
+PASS Referências e formulário dark 768px
+PASS Integração visual Dashboard e projeto dark 768px
+PASS Referências e formulário dark 1440px
+PASS Integração visual Dashboard e projeto dark 1440px
+PASS Referências e formulário dark 1920px
+PASS Integração visual Dashboard e projeto dark 1920px
+PASS Referências e formulário light 320px
+PASS Integração visual Dashboard e projeto light 320px
+PASS Referências e formulário light 390px
+PASS Integração visual Dashboard e projeto light 390px
+PASS Referências e formulário light 768px
+PASS Integração visual Dashboard e projeto light 768px
+PASS Referências e formulário light 1440px
+PASS Integração visual Dashboard e projeto light 1440px
+PASS Referências e formulário light 1920px
+PASS Integração visual Dashboard e projeto light 1920px
+{"passed":33}

@@ -28,3 +28,6 @@ import ReferenceFormController from 'controllers/reference_form_controller'
 application.register('reference-form', ReferenceFormController)
 import ReferenceModalController from 'controllers/reference_modal_controller'
 application.register('reference-modal', ReferenceModalController)
+
+import FocusController from 'controllers/focus_controller'
+application.register('focus', FocusController)

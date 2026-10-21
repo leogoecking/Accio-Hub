@@ -1,0 +1,6 @@
+<dialog class="dialog global-dialog project-dialog project-native-dialog focus-dialog" data-project-dialog data-focus-target="dialog" aria-labelledby="focus-dialog-title" aria-describedby="focus-dialog-description" data-action="cancel->focus#closeDialog close->focus#returnFocus keydown->focus#dialogKeys">
+  <div class="project-form-head"><div><div class="eyebrow">POMODORO GLOBAL</div><h2 id="focus-dialog-title" data-focus-target="dialogTitle">Conferir ação</h2></div><button type="button" class="mini-control" aria-label="Fechar diálogo do Pomodoro" data-action="focus#closeDialog"><%= studio_icon("x", 18) %></button></div>
+  <p id="focus-dialog-description" data-focus-target="dialogDescription"></p>
+  <p role="status" data-focus-target="dialogFeedback"></p>
+  <div class="project-form-actions"><button type="button" class="button tertiary" data-action="focus#closeDialog" autofocus>Voltar</button><button type="button" class="button primary" data-focus-target="dialogConfirm" data-action="focus#confirmDialog">Confirmar</button></div>
+</dialog>

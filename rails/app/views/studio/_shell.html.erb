@@ -13,6 +13,7 @@
       <%= button_to session_path, method: :delete, class: "rail-avatar", title: "Sair da conta local", aria: {label: "Sair da conta local"} do %>A<% end %>
     </div>
   </aside>
+  <div class="focus-shell" data-controller="focus" data-focus-user-value="<%= Current.user.id %>" data-focus-catalog-value="<%= focus_catalog.to_json %>">
   <div class="workspace">
     <header class="headbar">
       <div class="head-left"><span class="wordmark">accio<span>hub</span></span><span class="head-path"><%= studio_icon("chevron", 13) %><%= Studio::LABELS[@page] %></span></div>
@@ -30,6 +31,8 @@
     </main>
   </div>
   <%= render "studio/dialogs" %>
+  <%= render "studio/focus_dialog" %>
+  <div class="focus-transport" data-focus-target="transport" role="status" aria-live="polite" hidden><span data-focus-target="message"></span><button class="button tertiary" type="button" data-focus-target="retry" data-action="focus#retry" hidden>Tentar a mesma ação</button><button type="button" class="quiet-link" data-action="focus#dismiss">Dispensar aviso</button><%= link_to "Abrir Foco", app_path("focus"), class: "quiet-link" %></div>
   <turbo-frame id="project-modal" data-controller="project-modal" <% if @modal_src %>src="<%= @modal_src %>" data-return-url="<%= projects_path %>"<% end %>></turbo-frame>
   <turbo-frame id="task-modal" data-controller="task-modal" <% if @task_modal_src %>src="<%= @task_modal_src %>" data-return-url="<%= @project ? project_path(@project, tab: @tab) : tasks_path %>"<% end %>></turbo-frame>
   <turbo-frame id="reference-modal" data-controller="reference-modal" <% if @reference_modal_src %>src="<%= @reference_modal_src %>" data-return-url="<%= project_path(@project, tab: @tab) %>"<% end %>></turbo-frame>
@@ -41,4 +44,5 @@
     <button class="mini-control" data-recovery="apply" hidden>Reaplicar minha edição</button>
     <button class="mini-control" data-recovery="remote" hidden>Usar versão salva e descartar edição local</button>
   </div></div>
+</div>
 </div>

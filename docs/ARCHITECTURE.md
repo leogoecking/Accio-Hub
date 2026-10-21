@@ -609,3 +609,12 @@ Sem tickets de observação, heartbeats persistentes, dependências ou mudança 
 ### Encerramento E1 e autorização E2 — 2026-10-21
 
 E1 aprovada após auditoria independente do Antigravity, sem bloqueadores identificados; relatório existente em docs/P1.2E1_AUDIT.md. Encerramento em commit autorizado após nova verificação de 127 testes/1.714 asserções, processos, 25 gatilhos e segurança. Exclusivamente a interface compartilhada E2 está autorizada e deverá permanecer sem commit para revisão. E3/F, tag, push e merge não autorizados. Limitações anteriores preservadas.
+
+
+## Interface compartilhada do foco — P1.2E2 para revisão (2026-10-21)
+
+E1 homologada pelo Antigravity, conforme relatório existente e aprovação do usuário; commit `0c742503fa7c1df59523b4cdabf047b5e80c19c5`. E2 utiliza seus cinco endpoints sem alterações no motor ou contratos SQL. Um controller Stimulus de foco por shell apresenta todas as superfícies. Módulo de transporte conserva apenas snapshots e envelopes pendentes em memória por administrador; não utiliza armazenamento do navegador. SQLite continua autoritativo. Sequências de requisição e versões descartam leituras atrasadas; resultado histórico de replay nunca é usado como relógio corrente.
+
+Timestamps/checkpoints e decisões permanecem no servidor. `performance.now()` serve apenas à interpolação visual; leituras visíveis a cada 15s, sem escrita por tick. Navegação/reconexão retomam consultas, nunca criam sessão. Recuperação e conclusão exigem decisões explícitas. Presets 25/45 usam a versão do agregado C, preservando aparência e filtros; o DTO C não foi ampliado. Hints de nomes/contexto são obtidos de associações autenticadas e revalidados no E1 para cada intenção.
+
+Partials e CSS homologado preservados, com adaptações localizadas em foundation.css e controller dedicado, sem ampliar studio_controller.js. Evidências e limites: [P1.2E2_VERIFICATION.md](P1.2E2_VERIFICATION.md). E2 sem commit para revisão; E3/F não autorizadas.

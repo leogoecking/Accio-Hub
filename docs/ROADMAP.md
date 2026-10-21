@@ -431,7 +431,7 @@ manual no Firefox informada pelo usuário. O relatório
 evidências, limites e pendências futuras. O commit final é identificado pela
 tag anotada `p0.4-approved`.
 
-P1.2C registrada em `a7f11ab`; [plano D aprovado](P1.2D_PLAN.md) em `7313e6e`; D1 em `af5e24b`, D2 em `cf95461` e D3 em `0e5323c`. O próximo passo é revisar o [planejamento P1.2E](P1.2E_PLAN.md), sem iniciar sua implementação. F permanece não autorizada.
+P1.2C registrada em `a7f11ab`; [plano D aprovado](P1.2D_PLAN.md) em `7313e6e`; D1 em `af5e24b`, D2 em `cf95461` e D3 em `0e5323c`. O motor E1 foi homologado e registrado em `0c74250`; a interface E2 está entregue para revisão, sem commit. E3/F permanecem não autorizadas.
 Firefox C e contraste permanecem pendentes; retenção/descarte de snapshots legados fica preferencialmente na P1.2F.
 A personalização avançada do Pomodoro permanece no backlog futuro de P10.
 
@@ -460,3 +460,8 @@ Plano aprovado com ajustes registrado em `573e739`. Motor global, comandos e rec
 ### Encerramento E1 e autorização E2 — 2026-10-21
 
 E1 aprovada após auditoria independente do Antigravity, sem bloqueadores identificados; relatório existente em docs/P1.2E1_AUDIT.md. Encerramento em commit autorizado após nova verificação de 127 testes/1.714 asserções, processos, 25 gatilhos e segurança. Exclusivamente a interface compartilhada E2 está autorizada e deverá permanecer sem commit para revisão. E3/F, tag, push e merge não autorizados. Limitações anteriores preservadas.
+
+
+### Entrega E2 para revisão — 2026-10-21
+
+E1 encerrada em `0c742503fa7c1df59523b4cdabf047b5e80c19c5`, com auditoria independente aprovada. Exclusivamente E2 autorizada e implementada: Pomodoro compartilhado no Dashboard, Foco e projetos, ações de tarefas, presets, recuperação e concorrência pela API E1. Relatório [P1.2E2_VERIFICATION.md](P1.2E2_VERIFICATION.md), evidências em assets/p1.2e2/. Implementação **sem commit**, aguardando revisão. Nenhuma alteração de modelo/schema/gatilho, protótipo, Vault, backup ou serviço real. Não iniciar E3/F. Pendências anteriores, inclusive Firefox C/D/E2 e contraste inconclusivo, preservadas.

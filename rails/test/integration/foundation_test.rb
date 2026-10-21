@@ -47,7 +47,8 @@ class FoundationTest < ActionDispatch::IntegrationTest
       assert_response :success
       assert_select "main", count: 1
       assert_select "nav[aria-label='Navegação principal']", count: 1
-      assert_select "dialog", count: 3
+      assert_select "dialog", count: 4
+      assert_select "dialog.focus-dialog[aria-labelledby=focus-dialog-title]", count: 1
       assert_select "h1", count: 1
       assert_match "no-store", response.headers["Cache-Control"]
     end

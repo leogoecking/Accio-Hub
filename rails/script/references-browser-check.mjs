@@ -33,7 +33,8 @@ function nav(page){const path=page==='home'?'/':page==='projects'?'/projects':pa
 function drawer(){click('[data-open=customize]');b('wait','#customize[open]');}
 function preference(selector,value){b('select',selector,value);saved();}
 
-const formOpen=(selector='#reference-new')=>{click(selector);b('wait','[data-reference-dialog][open]');b('wait','--fn',"document.activeElement.id==='reference-title' && !!window.Stimulus.getControllerForElementAndIdentifier(document.querySelector('[data-reference-dialog]'),'reference-form')");};
+// Turbo applies autofocus after Stimulus connect; wait for the completed frame before keyboard assertions.
+const formOpen=(selector='#reference-new')=>{click(selector);b('wait','[data-reference-dialog][open]');b('wait','--fn',"document.activeElement.id==='reference-title' && document.querySelector('#reference-modal').hasAttribute('complete') && !document.querySelector('#reference-modal').hasAttribute('busy') && !!window.Stimulus.getControllerForElementAndIdentifier(document.querySelector('[data-reference-dialog]'),'reference-form')");};
 const formClose=()=>{b('press','Escape');b('wait','--fn',"!document.querySelector('[data-reference-dialog][open]')");};
 const submit=()=>{click('#reference-form [type=submit]');b('wait','--fn',"!document.querySelector('[data-reference-dialog][open]')");};
 const newProject=name=>{nav('projects');click('#project-new');b('wait','[data-project-dialog][open]');b('fill','#project-name',name);click('#project-form [type=submit]');b('wait','--fn',"!document.querySelector('[data-project-dialog][open]')");return evaluate(`Array.from(document.querySelectorAll('.project-card')).find(el=>el.innerText.includes(${JSON.stringify(name)})).querySelector('[data-project-opener]').pathname.split('/')[2]`);};

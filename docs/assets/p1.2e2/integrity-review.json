@@ -1,0 +1,16 @@
+{
+  "head": "0c742503fa7c1df59523b4cdabf047b5e80c19c5",
+  "branch": "p1-persistence",
+  "unchanged_paths": [
+    "rails/app/models",
+    "rails/db",
+    "prototype",
+    "rails/app/services/focus_commands.rb",
+    "rails/app/services/focus_time.rb",
+    "rails/app/controllers/focus_controller.rb",
+    "rails/app/javascript/controllers/studio_controller.js",
+    "rails/app/assets/stylesheets/studio.css"
+  ],
+  "sensitive_candidates": 0,
+  "new_files_reviewed": 260
+}
