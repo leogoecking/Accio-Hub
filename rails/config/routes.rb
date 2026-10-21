@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   resource :session, only: %i[new create destroy]
+  get "focus/state", to: "focus#state"
+  post "focus/intents", to: "focus#intention"
+  post "focus/prepare", to: "focus#prepare"
+  post "focus/:uid/commands", to: "focus#command"
+  patch "focus/preset", to: "focus#preset"
   patch "projects/filters", to: "projects#filters", as: :project_filters
   resources :projects, only: %i[index show new create edit update], param: :uid do
     patch :command, on: :member

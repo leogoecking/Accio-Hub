@@ -597,3 +597,15 @@ Adapters separados, OAuth quando aplicável, menor escopo possível, tokens crip
 D3 encerrada em `0e5323c5b823e2d2d531ad8c41c35a05a7ab2045`. O [plano E](P1.2E_PLAN.md) mapeia a implementação e os contratos B: uma sessão ocupante por usuário, quatro tipos de recibo imutável, contexto histórico e seis estados. Propõe cálculo por timestamps/checkpoints, tick somente visual e conclusão explícita; interrupção parcial incerta usa paused, pois awaiting_confirmation exige a duração integral. Não altera os modelos/schema/gatilhos nem inicia implementação E/F.
 
 Em 2026-10-17, o usuário aprovou o plano E com ajustes e autorizou exclusivamente E1: motor, comandos, tempo e recuperação. Sem tickets de observação ou heartbeats persistentes. Recuperação parcial usa paused e recibos imutáveis localizados por ID/versão. Modelos/schema/25 gatilhos preservados; interface E2 e verificação E3 não iniciadas. Implementação E1 permanece sem commit até revisão.
+
+
+## Motor de foco — P1.2E1 em revisão
+
+FocusCommands implementa os seis estados com os quatro kinds B e transação materializada; FocusTime separa projeção nominal, checkpoint e continuidade desconhecida com fonte de tempo injetável. Snapshot GET não grava dados. Recuperação parcial é paused com recibo imutável de maior ID e versão correspondente; resolução versionada gera novo recibo, preservando o anterior. Reset terminaliza a tentativa antiga e cria ready com outro UID na mesma transação. JSON retorna resultado histórico separado do estado corrente. Preset respeita a versão raiz C.
+
+Sem tickets de observação, heartbeats persistentes, dependências ou mudança de modelo/schema/gatilhos. Observações voláteis são sinais conservadores, sem garantia universal de continuidade. Endpoints autenticados/CSRF estão disponíveis como contrato de backend; views, CSS e Stimulus permanecem demonstrativos. Relatório [P1.2E1_VERIFICATION.md](P1.2E1_VERIFICATION.md). Exclusivamente E1 entregue para revisão; E2/E3/F não iniciadas.
+
+
+### Encerramento E1 e autorização E2 — 2026-10-21
+
+E1 aprovada após auditoria independente do Antigravity, sem bloqueadores identificados; relatório existente em docs/P1.2E1_AUDIT.md. Encerramento em commit autorizado após nova verificação de 127 testes/1.714 asserções, processos, 25 gatilhos e segurança. Exclusivamente a interface compartilhada E2 está autorizada e deverá permanecer sem commit para revisão. E3/F, tag, push e merge não autorizados. Limitações anteriores preservadas.

@@ -152,3 +152,11 @@ referenciada por `0018bb4`. Histórico e evidências em
 [docs/P0.4_FINAL_VERIFICATION.md](docs/P0.4_FINAL_VERIFICATION.md).
 
 Planejamento E aprovado com ajustes em 2026-10-17: [docs/P1.2E_PLAN.md](docs/P1.2E_PLAN.md). Somente o motor E1 está autorizado; manter sua implementação sem commit e a interface demonstrativa até aprovação da E2.
+
+
+P1.2E1 — Motor implementado para revisão em 2026-10-17, sem commit da implementação. Plano aprovado com ajustes registrado em `573e739d23b50dcd0111fe891687e7ca37e378c6`. Serviços FocusCommands/FocusTime e endpoints JSON usam os modelos/25 gatilhos B intactos; recuperação parcial em paused e recibos imutáveis por ID/versão. Nenhuma interface de foco conectada. E2/E3/F dependem de aprovação. Evidências: [docs/P1.2E1_VERIFICATION.md](docs/P1.2E1_VERIFICATION.md).
+
+
+### Encerramento E1 e autorização E2 — 2026-10-21
+
+E1 aprovada após auditoria independente do Antigravity, sem bloqueadores identificados; relatório existente em docs/P1.2E1_AUDIT.md. Encerramento em commit autorizado após nova verificação de 127 testes/1.714 asserções, processos, 25 gatilhos e segurança. Exclusivamente a interface compartilhada E2 está autorizada e deverá permanecer sem commit para revisão. E3/F, tag, push e merge não autorizados. Limitações anteriores preservadas.

@@ -450,3 +450,13 @@ D3 encerrada em `0e5323c5b823e2d2d531ad8c41c35a05a7ab2045`. [P1.2E_PLAN.md](P1.2
 ### Autorização E1 — 2026-10-17
 
 [Plano E](P1.2E_PLAN.md) aprovado com ajustes de contrato. Exclusivamente E1 autorizada: máquina de estados, persistência, comandos e recuperação de tempo; implementação sem commit até revisão. E2 (interface), E3 e F dependem de autorização própria. Sem novos modelos/migrações/gatilhos ou alterações no Ubuntu.
+
+
+### Entrega E1 para revisão — 2026-10-17
+
+Plano aprovado com ajustes registrado em `573e739`. Motor global, comandos e recuperação E1 implementados e verificados, sem commit: [relatório](P1.2E1_VERIFICATION.md). Suíte Rails: 127 testes/1.714 asserções; corridas entre processos, rollback, contenção 503 e reabertura. Os 25 gatilhos e os módulos C/D permanecem preservados. A interface continua demonstrativa; E2/E3/F aguardam autorização. Pendências anteriores não foram encerradas por testes de backend.
+
+
+### Encerramento E1 e autorização E2 — 2026-10-21
+
+E1 aprovada após auditoria independente do Antigravity, sem bloqueadores identificados; relatório existente em docs/P1.2E1_AUDIT.md. Encerramento em commit autorizado após nova verificação de 127 testes/1.714 asserções, processos, 25 gatilhos e segurança. Exclusivamente a interface compartilhada E2 está autorizada e deverá permanecer sem commit para revisão. E3/F, tag, push e merge não autorizados. Limitações anteriores preservadas.
