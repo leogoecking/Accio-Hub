@@ -72,6 +72,17 @@ A aprovação visual da P0.3 não autoriza iniciar Rails na P0.4.
 
 ## Arquitetura
 
+### Diretriz de portabilidade
+
+O Accio Hub é um aplicativo pessoal local-first, prioritariamente desenvolvido
+para Linux, com possibilidade futura de execução no Windows e distribuição para
+outras pessoas por instalações independentes. Preservar a separação entre
+Rails/SQLite, interface web e possíveis contêineres desktop. Cada instalação
+possui seus próprios dados e credenciais, sem compartilhamento implícito.
+Não introduzir dependências desnecessárias de caminhos absolutos ou APIs
+específicas de um sistema operacional. Esta diretriz não autoriza Electron,
+Tauri, PWA, empacotamento ou refatorações preventivas nesta etapa.
+
 - Aplicativo modular.
 - Notas Markdown reais como fonte da verdade.
 - SQLite para tarefas, projetos e metadados.
