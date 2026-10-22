@@ -234,3 +234,17 @@ Todas exigem RAILS_ENV=test, ACCIO_DATABASE_PATH explícito e ACCIO_SYNTHETIC_FI
 A partir de rails/, `ACCIO_QA_EVIDENCE=<diretório novo de evidências> bundle exec ruby script/legacy-snapshots-check.rb` cria fixtures sintéticas privadas e demonstra exportação/reabertura/recuperação em perfil novo, incluindo concorrência real. Não recebe banco pessoal. Arquivos privados temporários do ensaio não são evidências versionáveis.
 
 Formato 1 preserva bytes originais em Base64 e metadados/CAS observados; Base64 não é criptografia e SHA256 não autentica a origem. No Ubuntu, publicação usa arquivo0600/diretório0700 e hard link atômico sem sobrescrita. Windows/ACLs e outros filesystems exigem validação própria. SIGKILL pode deixar temporário privado não concluído; nenhum job limpa arquivos/snapshots. Detalhes e limites em [P1.2F3A_VERIFICATION.md](../docs/P1.2F3A_VERIFICATION.md).
+
+## P1.2F3b — backup SQLite completo e restore somente sintético
+
+Não executar sobre banco pessoal. Sem agendamento, integração com backups Ubuntu, expurgo ou manutenção da origem. Online Backup API com snapshot fixado em WAL; pacote TAR privado com SQLite offline e manifesto. Nenhum secret Rails é copiado. O pacote contém dados sensíveis do banco e não é criptografado.
+
+- `bin/rails sqlite_backups:create`: ACCIO_SQLITE_BACKUP aponta para arquivo .tar novo.
+- `bin/rails sqlite_backups:verify`: reabre/confere o pacote privado.
+- `bin/rails sqlite_backups:restore`: exige ACCIO_SQLITE_RESTORE_DIRECTORY novo; verifica fidelidade e revoga AuthSessions somente no destino antes de publicar prontidão.
+
+Todas exigem RAILS_ENV=test, ACCIO_DATABASE_PATH e ACCIO_SYNTHETIC_FIXTURE explícitos, conforme a guarda F3a; origem existente e diretórios/arquivos privados fora do checkout. Destinos existentes não são sobrescritos. Arquivo incompleto ou publicação com erro não é sucesso; SIGKILL pode deixar staging privado órfão, sem limpeza automática. Windows e outros filesystems ainda exigem validação.
+
+QA: `ACCIO_QA_EVIDENCE=<diretório novo> bundle exec ruby script/sqlite-backups-check.rb` gera dados fictícios próprios, testa WAL/concorrência, restaura e reinicia HTTP em loopback. Não recebe banco pessoal e não publica pacotes/chaves/dumps nas evidências.
+
+Para o HTTP da cópia sintética preparada, utilizar `bundle exec ruby script/restored-synthetic-server.rb`, com fixture/banco do destino, ACCIO_SQLITE_RESTORE_DIRECTORY, PORT e PIDFILE explícitos (arquivo .pid novo dentro do destino). O launcher verifica RESTORED.json e usa runtime-secret novo do destino, privado e fora do pacote; não reutilizar segredo da origem. Chave nova protege contra cookies antigos inclusive em colisão futura de IDs. Senha/digest do usuário preservados; formulários/intenções antigos devem ser reabertos. A tarefa restore não inicia HTTP. Detalhes/limites em [P1.2F3B_VERIFICATION.md](../docs/P1.2F3B_VERIFICATION.md).

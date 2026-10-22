@@ -1,0 +1,256 @@
+Run options: --seed 45738
+
+# Running:
+
+.E
+
+Error:
+SyntheticSqliteBackupTest#test_symlinks_public_directories_and_public_backup_files_are_rejected:
+Encoding::UndefinedConversionError: "\x95" from ASCII-8BIT to UTF-8
+    app/services/synthetic_sqlite_backup.rb:58:in `copy_stream'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (6 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `open'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (5 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (4 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:56:in `each'
+    app/services/synthetic_sqlite_backup.rb:56:in `block (3 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:55:in `block (2 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:54:in `open'
+    app/services/synthetic_sqlite_backup.rb:54:in `block in backup'
+    app/services/synthetic_sqlite_backup.rb:320:in `block in with_work'
+    app/services/synthetic_sqlite_backup.rb:320:in `with_work'
+    app/services/synthetic_sqlite_backup.rb:30:in `backup'
+    test/services/synthetic_sqlite_backup_test.rb:172:in `block in <class:SyntheticSqliteBackupTest>'
+
+bin/rails test test/services/synthetic_sqlite_backup_test.rb:164
+
+E
+
+Error:
+SyntheticSqliteBackupTest#test_failure_before_revoking_sessions_cannot_publish_a_servable_destination:
+Encoding::UndefinedConversionError: "\x95" from ASCII-8BIT to UTF-8
+    app/services/synthetic_sqlite_backup.rb:58:in `copy_stream'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (6 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `open'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (5 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (4 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:56:in `each'
+    app/services/synthetic_sqlite_backup.rb:56:in `block (3 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:55:in `block (2 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:54:in `open'
+    app/services/synthetic_sqlite_backup.rb:54:in `block in backup'
+    app/services/synthetic_sqlite_backup.rb:320:in `block in with_work'
+    app/services/synthetic_sqlite_backup.rb:320:in `with_work'
+    app/services/synthetic_sqlite_backup.rb:30:in `backup'
+    test/services/synthetic_sqlite_backup_test.rb:224:in `block in <class:SyntheticSqliteBackupTest>'
+
+bin/rails test test/services/synthetic_sqlite_backup_test.rb:222
+
+E
+
+Error:
+SyntheticSqliteBackupTest#test_restoration_verifies_fidelity_then_revokes_only_copied_sessions_before_publication:
+Encoding::UndefinedConversionError: "\x95" from ASCII-8BIT to UTF-8
+    app/services/synthetic_sqlite_backup.rb:58:in `copy_stream'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (6 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `open'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (5 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (4 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:56:in `each'
+    app/services/synthetic_sqlite_backup.rb:56:in `block (3 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:55:in `block (2 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:54:in `open'
+    app/services/synthetic_sqlite_backup.rb:54:in `block in backup'
+    app/services/synthetic_sqlite_backup.rb:320:in `block in with_work'
+    app/services/synthetic_sqlite_backup.rb:320:in `with_work'
+    app/services/synthetic_sqlite_backup.rb:30:in `backup'
+    test/services/synthetic_sqlite_backup_test.rb:70:in `block in <class:SyntheticSqliteBackupTest>'
+
+bin/rails test test/services/synthetic_sqlite_backup_test.rb:68
+
+E
+
+Error:
+SyntheticSqliteBackupTest#test_schema_without_application_rows_can_be_backed_up_without_inventing_an_administrator:
+Encoding::UndefinedConversionError: "\x95" from ASCII-8BIT to UTF-8
+    app/services/synthetic_sqlite_backup.rb:58:in `copy_stream'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (6 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `open'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (5 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (4 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:56:in `each'
+    app/services/synthetic_sqlite_backup.rb:56:in `block (3 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:55:in `block (2 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:54:in `open'
+    app/services/synthetic_sqlite_backup.rb:54:in `block in backup'
+    app/services/synthetic_sqlite_backup.rb:320:in `block in with_work'
+    app/services/synthetic_sqlite_backup.rb:320:in `with_work'
+    app/services/synthetic_sqlite_backup.rb:30:in `backup'
+    test/services/synthetic_sqlite_backup_test.rb:146:in `block in <class:SyntheticSqliteBackupTest>'
+
+bin/rails test test/services/synthetic_sqlite_backup_test.rb:143
+
+..E
+
+Error:
+SyntheticSqliteBackupTest#test_repeated_restore_is_refused_and_readiness_cannot_be_forged_by_an_empty_marker:
+Encoding::UndefinedConversionError: "\x95" from ASCII-8BIT to UTF-8
+    app/services/synthetic_sqlite_backup.rb:58:in `copy_stream'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (6 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `open'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (5 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (4 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:56:in `each'
+    app/services/synthetic_sqlite_backup.rb:56:in `block (3 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:55:in `block (2 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:54:in `open'
+    app/services/synthetic_sqlite_backup.rb:54:in `block in backup'
+    app/services/synthetic_sqlite_backup.rb:320:in `block in with_work'
+    app/services/synthetic_sqlite_backup.rb:320:in `with_work'
+    app/services/synthetic_sqlite_backup.rb:30:in `backup'
+    test/services/synthetic_sqlite_backup_test.rb:273:in `block in <class:SyntheticSqliteBackupTest>'
+
+bin/rails test test/services/synthetic_sqlite_backup_test.rb:272
+
+F
+
+Failure:
+SyntheticSqliteBackupTest#test_publication_and_fsync_errors_never_announce_success [test/services/synthetic_sqlite_backup_test.rb:206]:
+[SyntheticSqliteBackup::Invalid] exception expected, not
+Class: <Encoding::UndefinedConversionError>
+Message: <"\"\\x95\" from ASCII-8BIT to UTF-8">
+---Backtrace---
+app/services/synthetic_sqlite_backup.rb:58:in `copy_stream'
+app/services/synthetic_sqlite_backup.rb:58:in `block (6 levels) in backup'
+app/services/synthetic_sqlite_backup.rb:58:in `open'
+app/services/synthetic_sqlite_backup.rb:58:in `block (5 levels) in backup'
+app/services/synthetic_sqlite_backup.rb:58:in `block (4 levels) in backup'
+app/services/synthetic_sqlite_backup.rb:56:in `each'
+app/services/synthetic_sqlite_backup.rb:56:in `block (3 levels) in backup'
+app/services/synthetic_sqlite_backup.rb:55:in `block (2 levels) in backup'
+app/services/synthetic_sqlite_backup.rb:54:in `open'
+app/services/synthetic_sqlite_backup.rb:54:in `block in backup'
+app/services/synthetic_sqlite_backup.rb:320:in `block in with_work'
+app/services/synthetic_sqlite_backup.rb:320:in `with_work'
+app/services/synthetic_sqlite_backup.rb:30:in `backup'
+test/services/synthetic_sqlite_backup_test.rb:206:in `block (3 levels) in <class:SyntheticSqliteBackupTest>'
+test/services/synthetic_sqlite_backup_test.rb:206:in `block (2 levels) in <class:SyntheticSqliteBackupTest>'
+test/services/synthetic_sqlite_backup_test.rb:205:in `block in <class:SyntheticSqliteBackupTest>'
+---------------
+
+bin/rails test test/services/synthetic_sqlite_backup_test.rb:203
+
+E
+
+Error:
+SyntheticSqliteBackupTest#test_existing_backup_and_restore_destinations_never_get_overwritten:
+Encoding::UndefinedConversionError: "\x95" from ASCII-8BIT to UTF-8
+    app/services/synthetic_sqlite_backup.rb:58:in `copy_stream'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (6 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `open'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (5 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (4 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:56:in `each'
+    app/services/synthetic_sqlite_backup.rb:56:in `block (3 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:55:in `block (2 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:54:in `open'
+    app/services/synthetic_sqlite_backup.rb:54:in `block in backup'
+    app/services/synthetic_sqlite_backup.rb:320:in `block in with_work'
+    app/services/synthetic_sqlite_backup.rb:320:in `with_work'
+    app/services/synthetic_sqlite_backup.rb:30:in `backup'
+    test/services/synthetic_sqlite_backup_test.rb:157:in `block in <class:SyntheticSqliteBackupTest>'
+
+bin/rails test test/services/synthetic_sqlite_backup_test.rb:152
+
+E
+
+Error:
+SyntheticSqliteBackupTest#test_abrupt_death_during_backup_or_restore_leaves_no_completion_marker:
+Encoding::UndefinedConversionError: "\x95" from ASCII-8BIT to UTF-8
+    app/services/synthetic_sqlite_backup.rb:58:in `copy_stream'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (6 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `open'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (5 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (4 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:56:in `each'
+    app/services/synthetic_sqlite_backup.rb:56:in `block (3 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:55:in `block (2 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:54:in `open'
+    app/services/synthetic_sqlite_backup.rb:54:in `block in backup'
+    app/services/synthetic_sqlite_backup.rb:320:in `block in with_work'
+    app/services/synthetic_sqlite_backup.rb:320:in `with_work'
+    app/services/synthetic_sqlite_backup.rb:30:in `backup'
+    test/services/synthetic_sqlite_backup_test.rb:237:in `block in <class:SyntheticSqliteBackupTest>'
+
+bin/rails test test/services/synthetic_sqlite_backup_test.rb:235
+
+E
+
+Error:
+SyntheticSqliteBackupTest#test_source_remains_pinned_while_a_different_process_commits_during_backup:
+Encoding::UndefinedConversionError: "\x95" from ASCII-8BIT to UTF-8
+    app/services/synthetic_sqlite_backup.rb:58:in `copy_stream'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (6 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `open'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (5 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (4 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:56:in `each'
+    app/services/synthetic_sqlite_backup.rb:56:in `block (3 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:55:in `block (2 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:54:in `open'
+    app/services/synthetic_sqlite_backup.rb:54:in `block in backup'
+    app/services/synthetic_sqlite_backup.rb:320:in `block in with_work'
+    app/services/synthetic_sqlite_backup.rb:320:in `with_work'
+    app/services/synthetic_sqlite_backup.rb:30:in `backup'
+    test/services/synthetic_sqlite_backup_test.rb:92:in `block in <class:SyntheticSqliteBackupTest>'
+
+bin/rails test test/services/synthetic_sqlite_backup_test.rb:89
+
+E
+
+Error:
+SyntheticSqliteBackupTest#test_truncated_and_tampered_archives_cannot_be_restored:
+Encoding::UndefinedConversionError: "\x95" from ASCII-8BIT to UTF-8
+    app/services/synthetic_sqlite_backup.rb:58:in `copy_stream'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (6 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `open'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (5 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (4 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:56:in `each'
+    app/services/synthetic_sqlite_backup.rb:56:in `block (3 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:55:in `block (2 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:54:in `open'
+    app/services/synthetic_sqlite_backup.rb:54:in `block in backup'
+    app/services/synthetic_sqlite_backup.rb:320:in `block in with_work'
+    app/services/synthetic_sqlite_backup.rb:320:in `with_work'
+    app/services/synthetic_sqlite_backup.rb:30:in `backup'
+    test/services/synthetic_sqlite_backup_test.rb:178:in `block in <class:SyntheticSqliteBackupTest>'
+
+bin/rails test test/services/synthetic_sqlite_backup_test.rb:177
+
+E
+
+Error:
+SyntheticSqliteBackupTest#test_online_backup_preserves_all_data_schema_constraints_and_active_WAL_without_source_writes:
+Encoding::UndefinedConversionError: "\x95" from ASCII-8BIT to UTF-8
+    app/services/synthetic_sqlite_backup.rb:58:in `copy_stream'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (6 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `open'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (5 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:58:in `block (4 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:56:in `each'
+    app/services/synthetic_sqlite_backup.rb:56:in `block (3 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:55:in `block (2 levels) in backup'
+    app/services/synthetic_sqlite_backup.rb:54:in `open'
+    app/services/synthetic_sqlite_backup.rb:54:in `block in backup'
+    app/services/synthetic_sqlite_backup.rb:320:in `block in with_work'
+    app/services/synthetic_sqlite_backup.rb:320:in `with_work'
+    app/services/synthetic_sqlite_backup.rb:30:in `backup'
+    test/services/synthetic_sqlite_backup_test.rb:55:in `block in <class:SyntheticSqliteBackupTest>'
+
+bin/rails test test/services/synthetic_sqlite_backup_test.rb:52
+
+
+
+Finished in 11.494093s, 1.2180 runs/s, 2.9580 assertions/s.
+14 runs, 34 assertions, 1 failures, 10 errors, 0 skips
