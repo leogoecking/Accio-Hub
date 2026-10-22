@@ -1,0 +1,8 @@
+Inspecting 104 files
+.......................................................................................C................
+
+Offenses:
+
+test/integration/project_references_test.rb:283:1: C: [Correctable] Layout/EmptyLinesAroundClassBody: Extra empty line detected at class body end.
+
+104 files inspected, 1 offense detected, 1 offense autocorrectable

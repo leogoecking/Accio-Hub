@@ -1,0 +1,19 @@
+{
+  "base_commit": "b262ce6813d78a21d9454bb25e4e8a30b6f09ab8",
+  "unchanged_paths": [
+    "rails/app/models",
+    "rails/db",
+    "rails/app/controllers",
+    "rails/config",
+    "rails/app/assets",
+    "rails/app/javascript",
+    "prototype",
+    "rails/app/services/focus_commands.rb",
+    "rails/app/services/focus_time.rb",
+    "rails/app/services/appearance_preferences.rb",
+    "rails/app/services/reference_commands.rb",
+    "rails/Gemfile",
+    "rails/Gemfile.lock"
+  ],
+  "css_sha256": "a4180ac8e476ed2b90ff08a30011156a672408d23945d6741700914081cb41b0"
+}

@@ -1,0 +1,8 @@
+PASS Canonical DNS with numeric labels creates and edits through the existing dialog
+PASS Ambiguous numeric URLs and empty port receive 422 while fields and database remain unchanged
+PASS Synthetic legacy records keep Unicode UID original URL and show escaped text with no href
+PASS Incompatible legacy text fits approved light and dark reference layouts
+PASS Legacy edit preserves incompatible URL on rejected save then permits explicit repair without changing UID
+PASS Archived project preserves incompatible legacy text and blocks edits then restores safely
+PASS Reading and presenting reference URLs sends no resource request to a reference destination
+{"passed":7,"noReferenceNavigation":true}

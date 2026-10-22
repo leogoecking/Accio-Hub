@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Canonical DNS with numeric labels creates and edits through the existing dialog",
+    "result": "PASS"
+  },
+  {
+    "name": "Ambiguous numeric URLs and empty port receive 422 while fields and database remain unchanged",
+    "result": "PASS"
+  },
+  {
+    "name": "Synthetic legacy records keep Unicode UID original URL and show escaped text with no href",
+    "result": "PASS"
+  },
+  {
+    "name": "Incompatible legacy text fits approved light and dark reference layouts",
+    "result": "PASS"
+  },
+  {
+    "name": "Legacy edit preserves incompatible URL on rejected save then permits explicit repair without changing UID",
+    "result": "PASS"
+  },
+  {
+    "name": "Archived project preserves incompatible legacy text and blocks edits then restores safely",
+    "result": "PASS"
+  },
+  {
+    "name": "Reading and presenting reference URLs sends no resource request to a reference destination",
+    "result": "PASS"
+  }
+]

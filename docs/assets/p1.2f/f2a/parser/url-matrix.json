@@ -1,0 +1,2014 @@
+{
+  "browser": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "location": "about:blank",
+    "resourceRequests": 0
+  },
+  "count": 114,
+  "results": [
+    {
+      "accepted": true,
+      "group": "dns",
+      "id": "valid-dns-1",
+      "url": "http://example.test",
+      "whatwg": {
+        "anchorHref": "http://example.test/",
+        "host": "example.test",
+        "href": "http://example.test/",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "http://example.test",
+        "uri_host": "example.test",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": true,
+      "group": "dns",
+      "id": "valid-dns-2",
+      "url": "https://example.test/",
+      "whatwg": {
+        "anchorHref": "https://example.test/",
+        "host": "example.test",
+        "href": "https://example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://example.test/",
+        "uri_host": "example.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "dns",
+      "id": "valid-dns-3",
+      "url": "HTTPS://EXAMPLE.TEST/Path?q=1#frag",
+      "whatwg": {
+        "anchorHref": "https://example.test/Path?q=1#frag",
+        "host": "example.test",
+        "href": "https://example.test/Path?q=1#frag",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "HTTPS://EXAMPLE.TEST/Path?q=1#frag",
+        "uri_host": "EXAMPLE.TEST",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "dns",
+      "id": "valid-dns-4",
+      "url": "https://sub.example.test/a?email=qa@example.test#tag@1",
+      "whatwg": {
+        "anchorHref": "https://sub.example.test/a?email=qa@example.test#tag@1",
+        "host": "sub.example.test",
+        "href": "https://sub.example.test/a?email=qa@example.test#tag@1",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://sub.example.test/a?email=qa@example.test#tag@1",
+        "uri_host": "sub.example.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "dns",
+      "id": "valid-dns-5",
+      "url": "https://my-site.example.test",
+      "whatwg": {
+        "anchorHref": "https://my-site.example.test/",
+        "host": "my-site.example.test",
+        "href": "https://my-site.example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://my-site.example.test",
+        "uri_host": "my-site.example.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "dns",
+      "id": "valid-dns-6",
+      "url": "https://3com.example.test",
+      "whatwg": {
+        "anchorHref": "https://3com.example.test/",
+        "host": "3com.example.test",
+        "href": "https://3com.example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://3com.example.test",
+        "uri_host": "3com.example.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "dns",
+      "id": "valid-dns-7",
+      "url": "https://a.42.example",
+      "whatwg": {
+        "anchorHref": "https://a.42.example/",
+        "host": "a.42.example",
+        "href": "https://a.42.example/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://a.42.example",
+        "uri_host": "a.42.example",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "dns",
+      "id": "valid-dns-8",
+      "url": "https://42.example.test",
+      "whatwg": {
+        "anchorHref": "https://42.example.test/",
+        "host": "42.example.test",
+        "href": "https://42.example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://42.example.test",
+        "uri_host": "42.example.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "dns",
+      "id": "valid-dns-9",
+      "url": "https://a42.example",
+      "whatwg": {
+        "anchorHref": "https://a42.example/",
+        "host": "a42.example",
+        "href": "https://a42.example/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://a42.example",
+        "uri_host": "a42.example",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "dns",
+      "id": "valid-dns-10",
+      "url": "https://node.0xg",
+      "whatwg": {
+        "anchorHref": "https://node.0xg/",
+        "host": "node.0xg",
+        "href": "https://node.0xg/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://node.0xg",
+        "uri_host": "node.0xg",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "dns",
+      "id": "valid-dns-11",
+      "url": "https://example.test.",
+      "whatwg": {
+        "anchorHref": "https://example.test./",
+        "host": "example.test.",
+        "href": "https://example.test./",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://example.test.",
+        "uri_host": "example.test.",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "dns",
+      "id": "valid-dns-12",
+      "url": "http://localhost:3000",
+      "whatwg": {
+        "anchorHref": "http://localhost:3000/",
+        "host": "localhost",
+        "href": "http://localhost:3000/",
+        "port": "3000",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "http://localhost:3000",
+        "uri_host": "localhost",
+        "uri_port": 3000
+      }
+    },
+    {
+      "accepted": true,
+      "group": "dns",
+      "id": "valid-dns-13",
+      "url": "https://xn--caf-dma.test",
+      "whatwg": {
+        "anchorHref": "https://xn--caf-dma.test/",
+        "host": "xn--caf-dma.test",
+        "href": "https://xn--caf-dma.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://xn--caf-dma.test",
+        "uri_host": "xn--caf-dma.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "dns",
+      "id": "valid-dns-14",
+      "url": "https://xn--bcher-kva.example",
+      "whatwg": {
+        "anchorHref": "https://xn--bcher-kva.example/",
+        "host": "xn--bcher-kva.example",
+        "href": "https://xn--bcher-kva.example/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://xn--bcher-kva.example",
+        "uri_host": "xn--bcher-kva.example",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "ipv4",
+      "id": "valid-ipv4-1",
+      "url": "http://127.0.0.1",
+      "whatwg": {
+        "anchorHref": "http://127.0.0.1/",
+        "host": "127.0.0.1",
+        "href": "http://127.0.0.1/",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "http://127.0.0.1",
+        "uri_host": "127.0.0.1",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": true,
+      "group": "ipv4",
+      "id": "valid-ipv4-2",
+      "url": "https://0.0.0.0:1/a",
+      "whatwg": {
+        "anchorHref": "https://0.0.0.0:1/a",
+        "host": "0.0.0.0",
+        "href": "https://0.0.0.0:1/a",
+        "port": "1",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://0.0.0.0:1/a",
+        "uri_host": "0.0.0.0",
+        "uri_port": 1
+      }
+    },
+    {
+      "accepted": true,
+      "group": "ipv4",
+      "id": "valid-ipv4-3",
+      "url": "https://255.255.255.255:65535/a",
+      "whatwg": {
+        "anchorHref": "https://255.255.255.255:65535/a",
+        "host": "255.255.255.255",
+        "href": "https://255.255.255.255:65535/a",
+        "port": "65535",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://255.255.255.255:65535/a",
+        "uri_host": "255.255.255.255",
+        "uri_port": 65535
+      }
+    },
+    {
+      "accepted": true,
+      "group": "ipv4",
+      "id": "valid-ipv4-4",
+      "url": "https://192.168.1.2:8080",
+      "whatwg": {
+        "anchorHref": "https://192.168.1.2:8080/",
+        "host": "192.168.1.2",
+        "href": "https://192.168.1.2:8080/",
+        "port": "8080",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://192.168.1.2:8080",
+        "uri_host": "192.168.1.2",
+        "uri_port": 8080
+      }
+    },
+    {
+      "accepted": true,
+      "group": "ipv6",
+      "id": "valid-ipv6-1",
+      "url": "http://[::1]:3000",
+      "whatwg": {
+        "anchorHref": "http://[::1]:3000/",
+        "host": "[::1]",
+        "href": "http://[::1]:3000/",
+        "port": "3000",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "http://[::1]:3000",
+        "uri_host": "::1",
+        "uri_port": 3000
+      }
+    },
+    {
+      "accepted": true,
+      "group": "ipv6",
+      "id": "valid-ipv6-2",
+      "url": "https://[2001:db8::1]/a",
+      "whatwg": {
+        "anchorHref": "https://[2001:db8::1]/a",
+        "host": "[2001:db8::1]",
+        "href": "https://[2001:db8::1]/a",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://[2001:db8::1]/a",
+        "uri_host": "2001:db8::1",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "ipv6",
+      "id": "valid-ipv6-3",
+      "url": "https://[2001:DB8:0:0:0:0:0:1]:443",
+      "whatwg": {
+        "anchorHref": "https://[2001:db8::1]/",
+        "host": "[2001:db8::1]",
+        "href": "https://[2001:db8::1]/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://[2001:DB8:0:0:0:0:0:1]:443",
+        "uri_host": "2001:DB8:0:0:0:0:0:1",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "ipv6",
+      "id": "valid-ipv6-4",
+      "url": "https://[::ffff:127.0.0.1]/",
+      "whatwg": {
+        "anchorHref": "https://[::ffff:7f00:1]/",
+        "host": "[::ffff:7f00:1]",
+        "href": "https://[::ffff:7f00:1]/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://[::ffff:127.0.0.1]/",
+        "uri_host": "::ffff:127.0.0.1",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "port",
+      "id": "valid-port-1",
+      "url": "https://example.test:1",
+      "whatwg": {
+        "anchorHref": "https://example.test:1/",
+        "host": "example.test",
+        "href": "https://example.test:1/",
+        "port": "1",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://example.test:1",
+        "uri_host": "example.test",
+        "uri_port": 1
+      }
+    },
+    {
+      "accepted": true,
+      "group": "port",
+      "id": "valid-port-2",
+      "url": "https://example.test:65535",
+      "whatwg": {
+        "anchorHref": "https://example.test:65535/",
+        "host": "example.test",
+        "href": "https://example.test:65535/",
+        "port": "65535",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://example.test:65535",
+        "uri_host": "example.test",
+        "uri_port": 65535
+      }
+    },
+    {
+      "accepted": true,
+      "group": "port",
+      "id": "valid-port-3",
+      "url": "http://example.test:080",
+      "whatwg": {
+        "anchorHref": "http://example.test/",
+        "host": "example.test",
+        "href": "http://example.test/",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "http://example.test:080",
+        "uri_host": "example.test",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": true,
+      "group": "port",
+      "id": "valid-port-4",
+      "url": "https://example.test:00001",
+      "whatwg": {
+        "anchorHref": "https://example.test:1/",
+        "host": "example.test",
+        "href": "https://example.test:1/",
+        "port": "1",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://example.test:00001",
+        "uri_host": "example.test",
+        "uri_port": 1
+      }
+    },
+    {
+      "accepted": true,
+      "group": "path",
+      "id": "valid-path-1",
+      "url": "https://example.test/a%20b?q=%40#%23",
+      "whatwg": {
+        "anchorHref": "https://example.test/a%20b?q=%40#%23",
+        "host": "example.test",
+        "href": "https://example.test/a%20b?q=%40#%23",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://example.test/a%20b?q=%40#%23",
+        "uri_host": "example.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "path",
+      "id": "valid-path-2",
+      "url": "https://example.test/?a=1&b=2#ref",
+      "whatwg": {
+        "anchorHref": "https://example.test/?a=1&b=2#ref",
+        "host": "example.test",
+        "href": "https://example.test/?a=1&b=2#ref",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://example.test/?a=1&b=2#ref",
+        "uri_host": "example.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "path",
+      "id": "valid-path-3",
+      "url": "https://example.test/%E2%9C%93",
+      "whatwg": {
+        "anchorHref": "https://example.test/%E2%9C%93",
+        "host": "example.test",
+        "href": "https://example.test/%E2%9C%93",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://example.test/%E2%9C%93",
+        "uri_host": "example.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": true,
+      "group": "path",
+      "id": "valid-path-4",
+      "url": "https://example.test/path?q=%3Cscript%3E",
+      "whatwg": {
+        "anchorHref": "https://example.test/path?q=%3Cscript%3E",
+        "host": "example.test",
+        "href": "https://example.test/path?q=%3Cscript%3E",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": true,
+        "returned": "https://example.test/path?q=%3Cscript%3E",
+        "uri_host": "example.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-1",
+      "url": "https://0x7f.0.0.1",
+      "whatwg": {
+        "anchorHref": "https://127.0.0.1/",
+        "host": "127.0.0.1",
+        "href": "https://127.0.0.1/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "0x7f.0.0.1",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-2",
+      "url": "https://0x7f000001",
+      "whatwg": {
+        "anchorHref": "https://127.0.0.1/",
+        "host": "127.0.0.1",
+        "href": "https://127.0.0.1/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "0x7f000001",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-3",
+      "url": "https://0X7F000001",
+      "whatwg": {
+        "anchorHref": "https://127.0.0.1/",
+        "host": "127.0.0.1",
+        "href": "https://127.0.0.1/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "0X7F000001",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-4",
+      "url": "https://0x7f.1",
+      "whatwg": {
+        "anchorHref": "https://127.0.0.1/",
+        "host": "127.0.0.1",
+        "href": "https://127.0.0.1/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "0x7f.1",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-5",
+      "url": "http://0177.0.0.1",
+      "whatwg": {
+        "anchorHref": "http://127.0.0.1/",
+        "host": "127.0.0.1",
+        "href": "http://127.0.0.1/",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "0177.0.0.1",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-6",
+      "url": "http://127.000.0.1",
+      "whatwg": {
+        "anchorHref": "http://127.0.0.1/",
+        "host": "127.0.0.1",
+        "href": "http://127.0.0.1/",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "127.000.0.1",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-7",
+      "url": "http://001.2.3.4",
+      "whatwg": {
+        "anchorHref": "http://1.2.3.4/",
+        "host": "1.2.3.4",
+        "href": "http://1.2.3.4/",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "001.2.3.4",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-8",
+      "url": "http://1.2.3.004",
+      "whatwg": {
+        "anchorHref": "http://1.2.3.4/",
+        "host": "1.2.3.4",
+        "href": "http://1.2.3.4/",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "1.2.3.004",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-9",
+      "url": "http://127.1",
+      "whatwg": {
+        "anchorHref": "http://127.0.0.1/",
+        "host": "127.0.0.1",
+        "href": "http://127.0.0.1/",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "127.1",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-10",
+      "url": "http://127.0.1",
+      "whatwg": {
+        "anchorHref": "http://127.0.0.1/",
+        "host": "127.0.0.1",
+        "href": "http://127.0.0.1/",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "127.0.1",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-11",
+      "url": "http://2130706433",
+      "whatwg": {
+        "anchorHref": "http://127.0.0.1/",
+        "host": "127.0.0.1",
+        "href": "http://127.0.0.1/",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "2130706433",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-12",
+      "url": "http://4294967295",
+      "whatwg": {
+        "anchorHref": "http://255.255.255.255/",
+        "host": "255.255.255.255",
+        "href": "http://255.255.255.255/",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "4294967295",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-13",
+      "url": "http://4294967296",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "4294967296",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-14",
+      "url": "http://0",
+      "whatwg": {
+        "anchorHref": "http://0.0.0.0/",
+        "host": "0.0.0.0",
+        "href": "http://0.0.0.0/",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "0",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-15",
+      "url": "http://127.0.0.1.",
+      "whatwg": {
+        "anchorHref": "http://127.0.0.1/",
+        "host": "127.0.0.1",
+        "href": "http://127.0.0.1/",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "127.0.0.1.",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-16",
+      "url": "http://0x7f000001.",
+      "whatwg": {
+        "anchorHref": "http://127.0.0.1/",
+        "host": "127.0.0.1",
+        "href": "http://127.0.0.1/",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "0x7f000001.",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-17",
+      "url": "http://127.0.0.1..",
+      "whatwg": {
+        "anchorHref": "http://127.0.0.1../",
+        "host": "127.0.0.1..",
+        "href": "http://127.0.0.1../",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "127.0.0.1..",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-18",
+      "url": "http://256.0.0.1",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "256.0.0.1",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-19",
+      "url": "http://1.2.3.256",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "1.2.3.256",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-20",
+      "url": "https://example.123",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example.123",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-21",
+      "url": "https://a.42",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "a.42",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-22",
+      "url": "https://example.09",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example.09",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-23",
+      "url": "https://example.0x",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example.0x",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-24",
+      "url": "https://example.0xF",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example.0xF",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-25",
+      "url": "https://example.0X0",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example.0X0",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-26",
+      "url": "http://0x7f.0x0.0x0.0x1",
+      "whatwg": {
+        "anchorHref": "http://127.0.0.1/",
+        "host": "127.0.0.1",
+        "href": "http://127.0.0.1/",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "0x7f.0x0.0x0.0x1",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "numeric",
+      "id": "invalid-numeric-27",
+      "url": "http://1.2.0x3",
+      "whatwg": {
+        "anchorHref": "http://1.2.0.3/",
+        "host": "1.2.0.3",
+        "href": "http://1.2.0.3/",
+        "port": "",
+        "protocol": "http:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "1.2.0x3",
+        "uri_port": 80
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-1",
+      "url": "https://%65xample.test",
+      "whatwg": {
+        "anchorHref": "https://example.test/",
+        "host": "example.test",
+        "href": "https://example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "%65xample.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-2",
+      "url": "https://example%2etest",
+      "whatwg": {
+        "anchorHref": "https://example.test/",
+        "host": "example.test",
+        "href": "https://example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example%2etest",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-3",
+      "url": "https://127%2e0%2e0%2e1",
+      "whatwg": {
+        "anchorHref": "https://127.0.0.1/",
+        "host": "127.0.0.1",
+        "href": "https://127.0.0.1/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "127%2e0%2e0%2e1",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-4",
+      "url": "https://user:pass@example.test",
+      "whatwg": {
+        "anchorHref": "https://user:pass@example.test/",
+        "host": "example.test",
+        "href": "https://user:pass@example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-5",
+      "url": "https://@example.test",
+      "whatwg": {
+        "anchorHref": "https://example.test/",
+        "host": "example.test",
+        "href": "https://example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-6",
+      "url": "https://user@example.test",
+      "whatwg": {
+        "anchorHref": "https://user@example.test/",
+        "host": "example.test",
+        "href": "https://user@example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-7",
+      "url": "https://user%40example.test",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "user%40example.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-8",
+      "url": "https://example.test%00.evil.test",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example.test%00.evil.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-9",
+      "url": "https://%5B::1%5D",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-10",
+      "url": "https://example.test:",
+      "whatwg": {
+        "anchorHref": "https://example.test/",
+        "host": "example.test",
+        "href": "https://example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-11",
+      "url": "https://example.test:0",
+      "whatwg": {
+        "anchorHref": "https://example.test:0/",
+        "host": "example.test",
+        "href": "https://example.test:0/",
+        "port": "0",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example.test",
+        "uri_port": 0
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-12",
+      "url": "https://example.test:65536",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example.test",
+        "uri_port": 65536
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-13",
+      "url": "https://example.test:999999999999",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example.test",
+        "uri_port": 999999999999
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-14",
+      "url": "https://example.test:-1",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-15",
+      "url": "https://example.test:+80",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-16",
+      "url": "https://example.test:8a",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "authority",
+      "id": "invalid-authority-17",
+      "url": "https://example.test:80:90",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "dns",
+      "id": "invalid-dns-1",
+      "url": "https://",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "dns",
+      "id": "invalid-dns-2",
+      "url": "https://.",
+      "whatwg": {
+        "anchorHref": "https://./",
+        "host": ".",
+        "href": "https://./",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": ".",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "dns",
+      "id": "invalid-dns-3",
+      "url": "https://.example.test",
+      "whatwg": {
+        "anchorHref": "https://.example.test/",
+        "host": ".example.test",
+        "href": "https://.example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": ".example.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "dns",
+      "id": "invalid-dns-4",
+      "url": "https://example..test",
+      "whatwg": {
+        "anchorHref": "https://example..test/",
+        "host": "example..test",
+        "href": "https://example..test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example..test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "dns",
+      "id": "invalid-dns-5",
+      "url": "https://bad_host.test",
+      "whatwg": {
+        "anchorHref": "https://bad_host.test/",
+        "host": "bad_host.test",
+        "href": "https://bad_host.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "bad_host.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "dns",
+      "id": "invalid-dns-6",
+      "url": "https://-bad.test",
+      "whatwg": {
+        "anchorHref": "https://-bad.test/",
+        "host": "-bad.test",
+        "href": "https://-bad.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "-bad.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "dns",
+      "id": "invalid-dns-7",
+      "url": "https://bad-.test",
+      "whatwg": {
+        "anchorHref": "https://bad-.test/",
+        "host": "bad-.test",
+        "href": "https://bad-.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "bad-.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "dns",
+      "id": "invalid-dns-8",
+      "url": "https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test",
+      "whatwg": {
+        "anchorHref": "https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test/",
+        "host": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test",
+        "href": "https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "dns",
+      "id": "invalid-dns-9",
+      "url": "https://xn--.test",
+      "whatwg": {
+        "anchorHref": "https://xn--.test/",
+        "host": "xn--.test",
+        "href": "https://xn--.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "xn--.test",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "dns",
+      "id": "invalid-dns-10",
+      "url": "https://exämple.test",
+      "whatwg": {
+        "anchorHref": "https://xn--exmple-cua.test/",
+        "host": "xn--exmple-cua.test",
+        "href": "https://xn--exmple-cua.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "dns",
+      "id": "invalid-dns-11",
+      "url": "https://example。test",
+      "whatwg": {
+        "anchorHref": "https://example.test/",
+        "host": "example.test",
+        "href": "https://example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "ipv6",
+      "id": "invalid-ipv6-1",
+      "url": "https://[::zzz]",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "ipv6",
+      "id": "invalid-ipv6-2",
+      "url": "https://[::1]x",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "ipv6",
+      "id": "invalid-ipv6-3",
+      "url": "https://[::1]:",
+      "whatwg": {
+        "anchorHref": "https://[::1]/",
+        "host": "[::1]",
+        "href": "https://[::1]/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "::1",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "ipv6",
+      "id": "invalid-ipv6-4",
+      "url": "https://[fe80::1%25eth0]",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "ipv6",
+      "id": "invalid-ipv6-5",
+      "url": "https://[::ffff:127.000.0.1]",
+      "whatwg": {
+        "anchorHref": "https://[::ffff:7f00:1]/",
+        "host": "[::ffff:7f00:1]",
+        "href": "https://[::ffff:7f00:1]/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "ipv6",
+      "id": "invalid-ipv6-6",
+      "url": "https://[127.0.0.1]",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "ipv6",
+      "id": "invalid-ipv6-7",
+      "url": "https://::1",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "ipv6",
+      "id": "invalid-ipv6-8",
+      "url": "https://[2001:db8::1",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "scheme",
+      "id": "invalid-scheme-1",
+      "url": "javascript:alert(1)",
+      "whatwg": {
+        "anchorHref": "javascript:alert(1)",
+        "host": "",
+        "href": "javascript:alert(1)",
+        "port": "",
+        "protocol": "javascript:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "scheme",
+      "id": "invalid-scheme-2",
+      "url": "data:text/html,<script>x</script>",
+      "whatwg": {
+        "anchorHref": "data:text/html,<script>x</script>",
+        "host": "",
+        "href": "data:text/html,<script>x</script>",
+        "port": "",
+        "protocol": "data:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "scheme",
+      "id": "invalid-scheme-3",
+      "url": "file:///tmp/synthetic",
+      "whatwg": {
+        "anchorHref": "file:///tmp/synthetic",
+        "host": "",
+        "href": "file:///tmp/synthetic",
+        "port": "",
+        "protocol": "file:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "",
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "scheme",
+      "id": "invalid-scheme-4",
+      "url": "ftp://example.test",
+      "whatwg": {
+        "anchorHref": "ftp://example.test/",
+        "host": "example.test",
+        "href": "ftp://example.test/",
+        "port": "",
+        "protocol": "ftp:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example.test",
+        "uri_port": 21
+      }
+    },
+    {
+      "accepted": false,
+      "group": "scheme",
+      "id": "invalid-scheme-5",
+      "url": "/relative",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "scheme",
+      "id": "invalid-scheme-6",
+      "url": "//example.test",
+      "whatwg": null,
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "example.test",
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "scheme",
+      "id": "invalid-scheme-7",
+      "url": "https:example.test",
+      "whatwg": {
+        "anchorHref": "https://example.test/",
+        "host": "example.test",
+        "href": "https://example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "scheme",
+      "id": "invalid-scheme-8",
+      "url": "https:///example.test",
+      "whatwg": {
+        "anchorHref": "https://example.test/",
+        "host": "example.test",
+        "href": "https://example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": "",
+        "uri_port": 443
+      }
+    },
+    {
+      "accepted": false,
+      "group": "characters",
+      "id": "invalid-characters-1",
+      "url": "https://example.test/a\\b",
+      "whatwg": {
+        "anchorHref": "https://example.test/a/b",
+        "host": "example.test",
+        "href": "https://example.test/a/b",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "characters",
+      "id": "invalid-characters-2",
+      "url": "https://example.test\\@other.test",
+      "whatwg": {
+        "anchorHref": "https://example.test/@other.test",
+        "host": "example.test",
+        "href": "https://example.test/@other.test",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "characters",
+      "id": "invalid-characters-3",
+      "url": "https://example.test/%zz",
+      "whatwg": {
+        "anchorHref": "https://example.test/%zz",
+        "host": "example.test",
+        "href": "https://example.test/%zz",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "characters",
+      "id": "invalid-characters-4",
+      "url": "https://example.test/%",
+      "whatwg": {
+        "anchorHref": "https://example.test/%",
+        "host": "example.test",
+        "href": "https://example.test/%",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "characters",
+      "id": "invalid-characters-5",
+      "url": "https://example.test/a b",
+      "whatwg": {
+        "anchorHref": "https://example.test/a%20b",
+        "host": "example.test",
+        "href": "https://example.test/a%20b",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "characters",
+      "id": "invalid-characters-6",
+      "url": "https://example.test/<script>",
+      "whatwg": {
+        "anchorHref": "https://example.test/%3Cscript%3E",
+        "host": "example.test",
+        "href": "https://example.test/%3Cscript%3E",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "characters",
+      "id": "invalid-characters-7",
+      "url": "https://example.test/\n",
+      "whatwg": {
+        "anchorHref": "https://example.test/",
+        "host": "example.test",
+        "href": "https://example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "characters",
+      "id": "invalid-characters-8",
+      "url": "https://example.test/\r",
+      "whatwg": {
+        "anchorHref": "https://example.test/",
+        "host": "example.test",
+        "href": "https://example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "characters",
+      "id": "invalid-characters-9",
+      "url": "https://example.test/\t",
+      "whatwg": {
+        "anchorHref": "https://example.test/",
+        "host": "example.test",
+        "href": "https://example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "characters",
+      "id": "invalid-characters-10",
+      "url": "https://example.test/\u0000",
+      "whatwg": {
+        "anchorHref": "https://example.test/",
+        "host": "example.test",
+        "href": "https://example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "characters",
+      "id": "invalid-characters-11",
+      "url": "https://example.test/",
+      "whatwg": {
+        "anchorHref": "https://example.test/%7F",
+        "host": "example.test",
+        "href": "https://example.test/%7F",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "surrounding_space",
+      "id": "invalid-surrounding_space-1",
+      "url": " https://example.test",
+      "whatwg": {
+        "anchorHref": "https://example.test/",
+        "host": "example.test",
+        "href": "https://example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    },
+    {
+      "accepted": false,
+      "group": "surrounding_space",
+      "id": "invalid-surrounding_space-2",
+      "url": "https://example.test ",
+      "whatwg": {
+        "anchorHref": "https://example.test/",
+        "host": "example.test",
+        "href": "https://example.test/",
+        "port": "",
+        "protocol": "https:"
+      },
+      "ruby": {
+        "accepted": false,
+        "returned": null,
+        "uri_host": null,
+        "uri_port": null
+      }
+    }
+  ]
+}

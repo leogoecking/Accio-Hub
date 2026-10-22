@@ -1,4 +1,5 @@
 require "test_helper"
+require_relative "../support/relational_helpers"
 
 class ProjectReferencesTest < ActionDispatch::IntegrationTest
   setup do
@@ -201,5 +202,82 @@ class ProjectReferencesTest < ActionDispatch::IntegrationTest
     assert_equal 1, ProjectReference.count
   ensure
     ActionController::Base.allow_forgery_protection = previous
+  end
+
+  test "hardening rejects ambiguous URLs in create and edit without touching project activity" do
+    ref = create_reference
+    state = ref.attributes; parent = @project.reload.attributes
+    rows = JSON.parse(File.read(Rails.root.join("test/fixtures/files/reference_urls.json")))
+    rows.select { |row| !row.fetch("accepted") && %w[numeric authority ipv6].include?(row.fetch("group")) }.each do |row|
+      post project_references_path(@project), params: { intent: @commands.issue(context: @project.uid), reference: @fields.merge(url: row.fetch("url")) }, as: :json, headers: local_headers
+      assert_response :unprocessable_entity, row.fetch("id")
+      patch project_reference_path(@project, ref), params: { version: 0, reference: { url: row.fetch("url") } }, as: :json, headers: local_headers
+      assert_response :unprocessable_entity, row.fetch("id")
+      assert_equal 1, ProjectReference.count
+      assert_equal state, ref.reload.attributes
+      assert_equal parent, @project.reload.attributes
+    end
+  end
+
+  test "valid matrix URLs round trip without normalization through HTTP and ERB" do
+    rows = JSON.parse(File.read(Rails.root.join("test/fixtures/files/reference_urls.json")))
+    rows.select { |row| row.fetch("accepted") }.each do |row|
+      url = row.fetch("url")
+      intent = @commands.issue(context: @project.uid)
+      post project_references_path(@project), params: { intent: intent, reference: @fields.merge(url: url) }, as: :json, headers: local_headers
+      assert_response :success, row.fetch("id")
+      ref = @project.project_references.order(:id).last
+      assert_equal url, ref.url
+      uid = ref.uid; before = ref.attributes; parent = @project.reload.attributes
+      post project_references_path(@project), params: { intent: intent, reference: @fields.merge(url: url) }, as: :json, headers: local_headers
+      assert_response :success
+      assert_equal before, ref.reload.attributes
+      assert_equal parent, @project.reload.attributes
+      patch project_reference_path(@project, ref), params: { version: 0, reference: { title: "Editada " + row.fetch("id"), url: url } }, as: :json, headers: local_headers
+      assert_response :success
+      assert_equal url, ref.reload.url
+      assert_equal uid, ref.uid
+      get project_path(@project, tab: "references"), headers: local_headers
+      assert_select ".space-reference a[target=_blank][rel='noopener noreferrer']" do |links|
+        assert links.any? { |link| link["href"] == url }, row.fetch("id")
+      end
+    end
+  end
+
+  test "legacy incompatible URL remains escaped readable archived and explicitly repairable" do
+    intent = @commands.issue(context: @project.uid)
+    ref = @commands.create(intent, @fields, context: @project.uid)
+    unsafe = "https://0x7f000001/<img src=x onerror=alert(1)>"
+    ref.update_columns(url: unsafe)
+    before = ref.reload.attributes; parent = @project.reload.attributes
+    2.times do
+      get project_path(@project, tab: "references"), headers: local_headers
+      assert_response :success
+      assert_select ".space-reference a[target=_blank], .space-reference img, .space-reference script", count: 0
+      assert_select "[data-reference-url-incompatible]", text: unsafe
+      assert_includes response.body, "&lt;img"
+      assert_equal before, ref.reload.attributes
+      assert_equal parent, @project.reload.attributes
+    end
+    get edit_project_reference_path(@project, ref), headers: local_headers.merge("Turbo-Frame" => "reference-modal")
+    assert_select "input#reference-url[value=?]", unsafe
+    # Equivalent replay of an already-created legacy record does not rewrite it.
+    post project_references_path(@project), params: { intent: intent, reference: @fields.merge(url: unsafe) }, as: :json, headers: local_headers
+    assert_response :success
+    assert_equal before, ref.reload.attributes
+    assert_equal parent, @project.reload.attributes
+    @project.archive!
+    get project_path(@project, tab: "references"), headers: local_headers
+    assert_select "[data-reference-url-incompatible]", text: unsafe
+    assert_select "[data-reference-opener], .space-reference a[target=_blank]", count: 0
+    assert_equal before, ref.reload.attributes
+    @project.restore!
+    patch project_reference_path(@project, ref), params: { version: 0, reference: { url: "https://127.0.0.1/explicit-repair" } }, as: :json, headers: local_headers
+    assert_response :success
+    assert_equal before.fetch("uid"), ref.reload.uid
+    assert_equal "https://127.0.0.1/explicit-repair", ref.url
+    get project_path(@project, tab: "references"), headers: local_headers
+    assert_select "[data-reference-url-incompatible]", count: 0
+    assert_select ".space-reference a[target=_blank][rel='noopener noreferrer']", count: 1
   end
 end

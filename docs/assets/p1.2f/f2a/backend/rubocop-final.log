@@ -1,0 +1,19 @@
+Inspecting 104 files
+.......................................................................................F................
+
+Offenses:
+
+test/integration/project_references_test.rb:4:1: F: Lint/Syntax: expected an end to close the class statement
+(Using Ruby 3.3 parser; configure using TargetRubyVersion parameter, under AllCops)
+class ProjectReferencesTest < ActionDispatch::IntegrationTest
+^^^^^
+test/integration/project_references_test.rb:247:94: F: Lint/Syntax: expected a block beginning with do to end with end
+(Using Ruby 3.3 parser; configure using TargetRubyVersion parameter, under AllCops)
+  test "legacy incompatible URL remains escaped readable archived and explicitly repairable" do
+                                                                                             ^^
+test/integration/project_references_test.rb:282:9: F: Lint/Syntax: unexpected end-of-input, assuming it is closing the parent top level context
+(Using Ruby 3.3 parser; configure using TargetRubyVersion parameter, under AllCops)
+  endend ...
+
+
+104 files inspected, 3 offenses detected

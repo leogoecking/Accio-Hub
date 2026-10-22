@@ -1,0 +1,16 @@
+Run options: --name test_validation_never_resolves_names_opens_sockets_or_sends_HTTP --seed 2586
+
+# Running:
+
+F
+
+Failure:
+SafeReferenceUrlTest#test_validation_never_resolves_names_opens_sockets_or_sends_HTTP [test/services/safe_reference_url_test.rb:24]:
+URL validation attempted network access
+
+bin/rails test test/services/safe_reference_url_test.rb:23
+
+
+
+Finished in 0.004157s, 240.5624 runs/s, 240.5624 assertions/s.
+1 runs, 1 assertions, 1 failures, 0 errors, 0 skips

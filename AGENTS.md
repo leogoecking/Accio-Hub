@@ -67,7 +67,7 @@ preparando o futuro Vault Markdown. Evitar refatorações grandes sem necessidad
 - PWA
 
 P0.4 homologada, P1.0 arquitetural aprovada e P1.1 encerrada e homologada.
-P1.2A/P1.2B/P1.2C aprovadas tecnicamente; planejamento P1.2D aprovado; D1 aprovada tecnicamente com ressalvas e registrada; D2/D3 aprovadas; E1/E2/E3 aprovadas, E3 registrada em35a6671. Plano P1.2F aprovado com ajustes; F1b aprovada com ressalvas e registrada em 7ebfaeb. Exclusivamente F1c autorizada, sem commit da implementação. F2/F3/F4/F5/P1.3 não autorizadas.
+P1.2A/P1.2B/P1.2C aprovadas tecnicamente; planejamento P1.2D aprovado; D1 aprovada tecnicamente com ressalvas e registrada; D2/D3 aprovadas; E1/E2/E3 aprovadas, E3 registrada em35a6671. Plano P1.2F aprovado com ajustes; F1b aprovada com ressalvas e registrada em 7ebfaeb. F1c aprovada com ressalvas e registrada em b262ce6. Exclusivamente F2a autorizada, sem commit da implementação. F2b/F3/F4/F5/P1.3 não autorizadas.
 A aprovação visual da P0.3 não autoriza iniciar Rails na P0.4.
 
 ## Arquitetura
@@ -211,3 +211,13 @@ F1b encerrada em `7ebfaebe16027b9338ed63bf89d11d570779a7f8`, após parecer indep
 ### Encerramento F1c e autorização exclusiva F2a — 2026-10-22
 
 F1c aprovada pela auditoria independente em docs/P1.2F1C_AUDIT.md: **APROVADO COM RESSALVAS, SEM BLOQUEADORES**. Encerramento autorizado após hashes de nove fontes/QA coincidentes e nova verificação sintética Rails 127/1.728, JS 41, processos, 25 gatilhos e segurança. Preservar ressalvas de CAS/autoria, contraste e Firefox complementar. Exclusivamente F2a autorizada: hardening local de SafeReferenceUrl, contratos D3 e apresentação segura de legados, sem DNS/HTTP para destinos. Não alterar modelos/schema/migrações/gatilhos. Implementação F2a sem commit para revisão/auditoria; F2b/F3/F4/F5, tag/push/merge, dados pessoais e serviços Ubuntu não autorizados.
+
+
+### F2a entregue para revisão e auditoria independente — 2026-10-22
+
+F1c encerrada em `b262ce6813d78a21d9454bb25e4e8a30b6f09ab8`, após parecer independente APROVADO COM RESSALVAS, SEM BLOQUEADORES. Exclusivamente F2a implementada **sem commit**: SafeReferenceUrl rejeita endereços numéricos ambíguos e autoridade incompatível; preserva DNS legítimo, IPv4 canônico, IPv6, portas e string original. Legado incompatível continua consultável como texto escapado, sem href, com correção explícita. Sem DNS/HTTP para destinos ou normalização automática. [Verificação F2a](docs/P1.2F2A_VERIFICATION.md): Rails 133/2.555, matriz Ruby/Chromium 114 URLs, browser 43, JS foco 41; 25 gatilhos, 36 índices e FKs preservados. Modelos/schema/migrações, E1/F1b/F1c/C, CSS e protótipo intactos. Contraste inconclusivo e Firefox complementar não executado mantidos. Aguardar revisão/auditoria; F2b/F3/F4/F5, tag/push/merge/importação/descarte pessoal não autorizados.
+
+
+### Encerramento F2a e autorização exclusiva F2b — 2026-10-22
+
+F2a aprovada pelo Antigravity: APROVADO COM RESSALVAS, SEM BLOQUEADORES. Sete hashes da entrega conferidos; esclarecimento documental de IPv4 na verificação F2a sem alterar o relatório independente original. Gate sintético Rails 133/2.555, JS41, processos/contenção/rollback e ferramentas aprovado. Exclusivamente investigação transversal F2b autorizada, sem correções automáticas, aplicação/modelos/schema/migrações/gatilhos novos. Novos testes/docs/evidências F2b sem commit. Preservar ressalvas, sem F3/F4/F5, dados pessoais, tag/push/merge ou serviços Ubuntu.

@@ -1,0 +1,10 @@
+{
+  "objects_identical_including_sql": true,
+  "triggers_identical": 25,
+  "indexes_identical": 36,
+  "foreign_key_definitions_identical": true,
+  "foreign_key_violations": [],
+  "integrity": "ok",
+  "focus_sessions": 0,
+  "focus_commands": 0
+}

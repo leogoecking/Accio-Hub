@@ -1,0 +1,20 @@
+[
+  {
+    "path": "docs/assets/p1.2d3/rails-tests.log",
+    "archived": "docs/assets/p1.2f/f2a/audit-reruns/p1.2d3/rails-tests.log",
+    "rerun_sha256": "14acc76563b4dfa65c5963bcb208b563c6477b6b517733cae479fc4fa7eeabd3",
+    "tracked_original": true
+  },
+  {
+    "path": "docs/assets/p1.2d3/reference-process-results.json",
+    "archived": "docs/assets/p1.2f/f2a/audit-reruns/p1.2d3/reference-process-results.json",
+    "rerun_sha256": "89861d767afd4b332d550518998a6f1b316437e7822335618edd514707f7ccf1",
+    "tracked_original": true
+  },
+  {
+    "path": "docs/assets/p1.2d3/browser-failure-1792672904000.png",
+    "archived": "docs/assets/p1.2f/f2a/audit-reruns/p1.2d3/browser-failure-1792672904000.png",
+    "rerun_sha256": "6df2e11dee65101cd593b703b7cb2e4c442bf6f94234af0630d06d637be076a5",
+    "tracked_original": false
+  }
+]

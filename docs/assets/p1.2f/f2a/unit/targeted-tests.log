@@ -1,0 +1,46 @@
+Run options: --seed 12693
+
+# Running:
+
+.......E
+
+Error:
+ProjectReferencesTest#test_missing_malformed_and_outside-context_reference_IDs_return_404_and_remain_scoped:
+NameError: undefined local variable or method `second_synthetic_user' for an instance of ProjectReferencesTest
+    test/integration/project_references_test.rb:158:in `block in <class:ProjectReferencesTest>'
+
+bin/rails test test/integration/project_references_test.rb:144
+
+.....E
+
+Error:
+SafeReferenceUrlTest#test_validation_never_resolves_names_opens_sockets_or_sends_HTTP:
+NoMethodError: undefined method `match?' for nil
+    app/services/safe_reference_url.rb:20:in `call'
+    test/services/safe_reference_url_test.rb:30:in `block (7 levels) in <class:SafeReferenceUrlTest>'
+    test/services/safe_reference_url_test.rb:30:in `each'
+    test/services/safe_reference_url_test.rb:30:in `block (6 levels) in <class:SafeReferenceUrlTest>'
+    test/services/safe_reference_url_test.rb:29:in `block (5 levels) in <class:SafeReferenceUrlTest>'
+    test/services/safe_reference_url_test.rb:28:in `block (4 levels) in <class:SafeReferenceUrlTest>'
+    test/services/safe_reference_url_test.rb:27:in `block (3 levels) in <class:SafeReferenceUrlTest>'
+    test/services/safe_reference_url_test.rb:26:in `block (2 levels) in <class:SafeReferenceUrlTest>'
+    test/services/safe_reference_url_test.rb:25:in `block in <class:SafeReferenceUrlTest>'
+
+bin/rails test test/services/safe_reference_url_test.rb:23
+
+E
+
+Error:
+SafeReferenceUrlTest#test_explicit_local_URL_matrix_preserves_originals_and_rejects_incompatible_forms:
+NoMethodError: undefined method `match?' for nil
+    app/services/safe_reference_url.rb:20:in `call'
+    test/services/safe_reference_url_test.rb:14:in `block (2 levels) in <class:SafeReferenceUrlTest>'
+    test/services/safe_reference_url_test.rb:9:in `each'
+    test/services/safe_reference_url_test.rb:9:in `block in <class:SafeReferenceUrlTest>'
+
+bin/rails test test/services/safe_reference_url_test.rb:8
+
+
+
+Finished in 3.505730s, 4.2787 runs/s, 274.9784 assertions/s.
+15 runs, 964 assertions, 0 failures, 3 errors, 0 skips

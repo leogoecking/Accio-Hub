@@ -1,0 +1,367 @@
+{
+  "audits": 40,
+  "with_confirmed_violations": 0,
+  "with_incomplete": 40,
+  "results": [
+    {
+      "file": "d3-browser/axe-dashboard-dark-1440.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-dashboard-dark-1920.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-dashboard-dark-320.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-dashboard-dark-390.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-dashboard-dark-768.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-dashboard-light-1440.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-dashboard-light-1920.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-dashboard-light-320.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-dashboard-light-390.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-dashboard-light-768.json",
+      "counts": {
+        "inapplicable": 50,
+        "incomplete": 1,
+        "passes": 39,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-form-dark-1440.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-form-dark-1920.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-form-dark-320.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-form-dark-390.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-form-dark-768.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-form-light-1440.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-form-light-1920.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-form-light-320.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-form-light-390.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-form-light-768.json",
+      "counts": {
+        "inapplicable": 64,
+        "incomplete": 1,
+        "passes": 24,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-overview-dark-1440.json",
+      "counts": {
+        "inapplicable": 47,
+        "incomplete": 1,
+        "passes": 42,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-overview-dark-1920.json",
+      "counts": {
+        "inapplicable": 47,
+        "incomplete": 1,
+        "passes": 42,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-overview-dark-320.json",
+      "counts": {
+        "inapplicable": 46,
+        "incomplete": 1,
+        "passes": 43,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-overview-dark-390.json",
+      "counts": {
+        "inapplicable": 46,
+        "incomplete": 1,
+        "passes": 43,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-overview-dark-768.json",
+      "counts": {
+        "inapplicable": 46,
+        "incomplete": 1,
+        "passes": 43,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-overview-light-1440.json",
+      "counts": {
+        "inapplicable": 47,
+        "incomplete": 1,
+        "passes": 42,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-overview-light-1920.json",
+      "counts": {
+        "inapplicable": 47,
+        "incomplete": 1,
+        "passes": 42,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-overview-light-320.json",
+      "counts": {
+        "inapplicable": 46,
+        "incomplete": 1,
+        "passes": 43,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-overview-light-390.json",
+      "counts": {
+        "inapplicable": 46,
+        "incomplete": 1,
+        "passes": 43,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-overview-light-768.json",
+      "counts": {
+        "inapplicable": 46,
+        "incomplete": 1,
+        "passes": 43,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-references-dark-1440.json",
+      "counts": {
+        "inapplicable": 52,
+        "incomplete": 1,
+        "passes": 37,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-references-dark-1920.json",
+      "counts": {
+        "inapplicable": 52,
+        "incomplete": 1,
+        "passes": 37,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-references-dark-320.json",
+      "counts": {
+        "inapplicable": 51,
+        "incomplete": 1,
+        "passes": 38,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-references-dark-390.json",
+      "counts": {
+        "inapplicable": 51,
+        "incomplete": 1,
+        "passes": 38,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-references-dark-768.json",
+      "counts": {
+        "inapplicable": 52,
+        "incomplete": 1,
+        "passes": 37,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-references-light-1440.json",
+      "counts": {
+        "inapplicable": 52,
+        "incomplete": 1,
+        "passes": 37,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-references-light-1920.json",
+      "counts": {
+        "inapplicable": 52,
+        "incomplete": 1,
+        "passes": 37,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-references-light-320.json",
+      "counts": {
+        "inapplicable": 51,
+        "incomplete": 1,
+        "passes": 38,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-references-light-390.json",
+      "counts": {
+        "inapplicable": 51,
+        "incomplete": 1,
+        "passes": 38,
+        "violations": 0
+      }
+    },
+    {
+      "file": "d3-browser/axe-references-light-768.json",
+      "counts": {
+        "inapplicable": 52,
+        "incomplete": 1,
+        "passes": 37,
+        "violations": 0
+      }
+    }
+  ]
+}

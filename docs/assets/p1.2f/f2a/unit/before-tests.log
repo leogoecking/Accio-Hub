@@ -1,0 +1,27 @@
+Run options: --seed 52312
+
+# Running:
+
+F
+
+Failure:
+SafeReferenceUrlTest#test_validation_never_resolves_names_opens_sockets_or_sends_HTTP [test/services/safe_reference_url_test.rb:30]:
+invalid-numeric-1.
+Expected: false
+  Actual: true
+
+bin/rails test test/services/safe_reference_url_test.rb:23
+
+F
+
+Failure:
+SafeReferenceUrlTest#test_explicit_local_URL_matrix_preserves_originals_and_rejects_incompatible_forms [test/services/safe_reference_url_test.rb:14]:
+invalid-numeric-1.
+Expected "https://0x7f.0.0.1" to be nil.
+
+bin/rails test test/services/safe_reference_url_test.rb:8
+
+.
+
+Finished in 0.007345s, 408.4583 runs/s, 9394.5409 assertions/s.
+3 runs, 69 assertions, 2 failures, 0 errors, 0 skips
