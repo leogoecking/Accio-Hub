@@ -2,6 +2,7 @@ import { Controller } from '@hotwired/stimulus'
 import { sharedFocus, focusRequest, encodeUid } from 'controllers/focus_client'
 import { paintFocus, primaryAction, visualTime } from 'controllers/focus_presenter'
 import { FocusRecovery } from 'controllers/focus_recovery'
+import { FocusPreset } from 'controllers/focus_preset'
 
 export default class extends Controller {
   static values = { user: String, catalog: Object }
@@ -10,6 +11,7 @@ export default class extends Controller {
   connect() {
     this.client = sharedFocus(this.userValue)
     this.recoveryFlow = this.client.recoveryFlow ||= new FocusRecovery(this.client)
+    this.presetFlow = this.client.presetFlow ||= new FocusPreset(this.client)
     this.client.confirmed = false
     this.unsubscribe = this.client.subscribe(() => this.paint())
     this.visible = () => {
@@ -47,6 +49,12 @@ export default class extends Controller {
   reconnect() { this.client.read() }
   async retry(event) {
     const envelope = this.client.pending
+    if (this.presetFlow.owns(envelope)) {
+      const trigger = event?.currentTarget
+      if (await this.presetFlow.retry()) this.advancePreference(envelope.preferenceBefore)
+      this.restoreRecoveryFocus(trigger)
+      return
+    }
     if (this.recoveryFlow.owns(envelope)) {
       const trigger = event?.currentTarget
       await this.recoveryFlow.retry()
@@ -57,9 +65,12 @@ export default class extends Controller {
   }
   dismiss() { if (!this.client.pending) { this.client.message = ''; this.paint() } }
   advancePreference(previous) {
+    if (!this.element.isConnected) return
     const appearance = window.Stimulus.getControllerForElementAndIdentifier(this.element.closest('[data-controller~=studio]'), 'studio')
+    if (!appearance) return
     const current = this.client.snapshot?.preference_version
-    if (Number.isInteger(previous) && current === previous + 1 && appearance.version === previous && !appearance.pending && !appearance.failed) appearance.version = current
+    if (Number.isInteger(previous) && this.client.confirmed && current === previous + 1 && appearance.version === previous &&
+        !appearance.pending && !appearance.failed && JSON.stringify(appearance.preferences) === JSON.stringify(appearance.confirmed)) appearance.version = current
   }
   sessionContext() {
     const session = this.client.snapshot?.session, context = {}
@@ -77,7 +88,7 @@ export default class extends Controller {
     const task = this.catalogValue.tasks.find(t => t.uid === session.task_uid)
     return [task?.name || (session.task_uid ? 'Tarefa vinculada' : ''), project?.name || (session.project_uid ? 'Projeto vinculado' : '')].filter(Boolean).join(' · ') || 'Foco global · sem tarefa'
   }
-  get blocked() { return this.preparing || this.recoveryFlow.busy || this.client.pending || this.client.sending || !this.client.confirmed || !Number.isInteger(this.client.snapshot?.preference_version) }
+  get blocked() { return this.preparing || this.recoveryFlow.busy || this.presetFlow.busy || this.client.pending || this.client.sending || !this.client.confirmed || !Number.isInteger(this.client.snapshot?.preference_version) }
   async create(context) {
     if (this.blocked) return
     if (this.client.snapshot?.session) { this.existing(); return }
@@ -142,9 +153,8 @@ export default class extends Controller {
     const snapshot = this.client.snapshot, duration = (snapshot.session?.duration_seconds || snapshot.preset_seconds) === 1500 ? 2700 : 1500
     if (snapshot.session?.status === 'ready') { this.openReset(duration, true, event.currentTarget); return }
     if (snapshot.session) { this.client.message = 'Encerre ou cancele a sessão antes de mudar o preset. A duração em andamento foi preservada.'; this.paint(); return }
-    this.openDialog(`Usar ${duration / 60} minutos?`, 'Este preset será usado nos próximos inícios. A aparência e os demais ajustes serão preservados.', () => this.client.execute({
-      url: '/focus/preset', method: 'PATCH', preferenceBefore: snapshot.preference_version, body: { duration_seconds: duration, version: snapshot.preference_version }, success: 'Preset salvo. Outras preferências foram preservadas.'
-    }).then(accepted => { if (accepted) this.advancePreference(snapshot.preference_version) }), event.currentTarget)
+    this.openDialog(`Usar ${duration / 60} minutos?`, 'Este preset será usado nos próximos inícios. A aparência e os demais ajustes serão preservados.', () => this.presetFlow.save(duration, snapshot.preference_version)
+      .then(accepted => { if (accepted) this.advancePreference(snapshot.preference_version) }), event.currentTarget)
   }
   existing() {
     this.client.message = 'Já existe um Pomodoro global. Abra Foco para conferir, pausar ou cancelar; o contexto atual foi preservado.'

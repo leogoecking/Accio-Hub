@@ -1,0 +1,9 @@
+PASS Integrated authentication preset 25 global start and checkpoint
+PASS Integrated Turbo reload personalization and second-tab concurrency
+PASS Background equivalent 20 minutes preserves checkpoint and requires no automatic completion
+PASS Integrated explicit completion preserves one terminal history and preferences
+PASS Committed preset with lost response and unavailable GET retries exact CAS payload then reconciles 409
+PASS Keeping checkpoint after 20-minute gap discards unconfirmed interval explicitly
+PASS Task completed during focus blocks resume without changing historical links
+PASS Final synthetic SQLite integrity and read-only history inspection
+{"passed":8}

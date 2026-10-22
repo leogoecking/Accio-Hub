@@ -1,0 +1,7 @@
+{
+  "case": "Lost PATCH response after commit; GET confirms 45 minutes",
+  "current_preset": 2700,
+  "message": "Resposta perdida após commit sintético",
+  "pending": true,
+  "explicit_value_and_unproven_authorship_feedback": false
+}

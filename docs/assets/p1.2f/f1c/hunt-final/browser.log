@@ -1,0 +1,4 @@
+PASS Incompatible HTTP 200 acknowledgement and matching GET never prove authorship
+PASS Appearance edit after uncertain preset keeps draft and requires explicit C conflict resolution
+PASS Turbo navigation during pending PATCH uses shared coordinator without stale controller errors or duplicate write
+{"passed":3,"classification":"Expected behavior in explored cases"}

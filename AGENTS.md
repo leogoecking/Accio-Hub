@@ -67,7 +67,7 @@ preparando o futuro Vault Markdown. Evitar refatorações grandes sem necessidad
 - PWA
 
 P0.4 homologada, P1.0 arquitetural aprovada e P1.1 encerrada e homologada.
-P1.2A/P1.2B/P1.2C aprovadas tecnicamente; planejamento P1.2D aprovado; D1 aprovada tecnicamente com ressalvas e registrada; D2/D3 aprovadas; E1/E2/E3 aprovadas, E3 registrada em35a6671. Plano P1.2F aprovado com ajustes; exclusivamente F1b, alternativa B, autorizada, sem commit da implementação. F1c/F2/F3/F4/F5/P1.3 não autorizadas.
+P1.2A/P1.2B/P1.2C aprovadas tecnicamente; planejamento P1.2D aprovado; D1 aprovada tecnicamente com ressalvas e registrada; D2/D3 aprovadas; E1/E2/E3 aprovadas, E3 registrada em35a6671. Plano P1.2F aprovado com ajustes; F1b aprovada com ressalvas e registrada em 7ebfaeb. Exclusivamente F1c autorizada, sem commit da implementação. F2/F3/F4/F5/P1.3 não autorizadas.
 A aprovação visual da P0.3 não autoriza iniciar Rails na P0.4.
 
 ## Arquitetura
@@ -201,3 +201,13 @@ Plano aprovado registrado no commit exclusivamente documental `30c69750ccb1a9f88
 ### Encerramento F1b e autorização F1c
 
 F1b aprovada após auditoria independente em docs/P1.2F1B_AUDIT.md: **APROVADO COM RESSALVAS, SEM BLOQUEADORES**. Encerramento autorizado após revisão e reexecução sintética de Rails 127/1.728, JS 26, processos, 25 gatilhos e segurança; preservadas duas transações, contraste inconclusivo e Firefox complementar. Reexecuções da auditoria arquivadas separadamente, sem substituir evidências históricas. Exclusivamente F1c autorizada: feedback/reconciliação do PATCH preset, preservando CAS do agregado C, sem novos recibos/tabelas/endpoints ou alteração E1. Implementação F1c sem commit para revisão/auditoria. F2/F3/F4/F5 não autorizadas; sem tag/push/merge/dados pessoais.
+
+
+### F1c entregue para revisão e auditoria independente
+
+F1b encerrada em `7ebfaebe16027b9338ed63bf89d11d570779a7f8`, após parecer independente APROVADO COM RESSALVAS, SEM BLOQUEADORES. Exclusivamente F1c implementada **sem commit**: PATCH preset conserva CAS C; diferencia sucesso HTTP, operação incerta, 409 e valor atual igual/diferente sem atribuir autoria; GET indisponível conserva envelope para gesto explícito. Sem novos recibos/tabelas/endpoints ou mudança E1. Versão/rascunho de aparência protegidos. Corrigidos acesso a controlador desconectado após Turbo e foco perdido após retry reconciliado. [Verificação F1c](docs/P1.2F1C_VERIFICATION.md): Rails 127/1.728, JS 41, navegador 94; 25 gatilhos, backend, CSS, protótipo e focus_recovery.js intactos. Contraste inconclusivo e Firefox complementar não executado preservados. Aguardar revisão/auditoria; F2/F3/F4/F5 não autorizadas; sem tag/push/merge/importação/descarte pessoal.
+
+
+### Encerramento F1c e autorização exclusiva F2a — 2026-10-22
+
+F1c aprovada pela auditoria independente em docs/P1.2F1C_AUDIT.md: **APROVADO COM RESSALVAS, SEM BLOQUEADORES**. Encerramento autorizado após hashes de nove fontes/QA coincidentes e nova verificação sintética Rails 127/1.728, JS 41, processos, 25 gatilhos e segurança. Preservar ressalvas de CAS/autoria, contraste e Firefox complementar. Exclusivamente F2a autorizada: hardening local de SafeReferenceUrl, contratos D3 e apresentação segura de legados, sem DNS/HTTP para destinos. Não alterar modelos/schema/migrações/gatilhos. Implementação F2a sem commit para revisão/auditoria; F2b/F3/F4/F5, tag/push/merge, dados pessoais e serviços Ubuntu não autorizados.

@@ -1,0 +1,150 @@
+[
+  {
+    "name": "Read-only navigation and reload never create or start a session",
+    "result": "PASS"
+  },
+  {
+    "name": "Preset dialog initial focus Tab Shift+Tab Escape and return focus",
+    "result": "PASS"
+  },
+  {
+    "name": "Preset 45 and 25 persist without overwriting appearance",
+    "result": "PASS"
+  },
+  {
+    "name": "Start pause resume with confirmed checkpoint and immutable start timestamp",
+    "result": "PASS"
+  },
+  {
+    "name": "Theme and accent during active focus preserve UID duration and state",
+    "result": "PASS"
+  },
+  {
+    "name": "Active preset changes are refused visibly without modifying duration",
+    "result": "PASS"
+  },
+  {
+    "name": "Dashboard Focus and project show same global session without context reassignment",
+    "result": "PASS"
+  },
+  {
+    "name": "Explicit reset preserves history creates new ready UID and does not start automatically",
+    "result": "PASS"
+  },
+  {
+    "name": "Ready preset replacement is explicit and atomic",
+    "result": "PASS"
+  },
+  {
+    "name": "Lost HTTP response retains envelope and replay reconciles current state",
+    "result": "PASS"
+  },
+  {
+    "name": "Long interruption preserves checkpoint and pending recovery across reload",
+    "result": "PASS"
+  },
+  {
+    "name": "Accept server estimate and continue; old recovery ID cannot apply twice",
+    "result": "PASS"
+  },
+  {
+    "name": "Invalid server clock estimate is not offered; keeping checkpoint preserves time",
+    "result": "PASS"
+  },
+  {
+    "name": "Nominal expiry never completes automatically; explicit reconcile and confirmation",
+    "result": "PASS"
+  },
+  {
+    "name": "Expiry with browser observation gap requires recovery before completion",
+    "result": "PASS"
+  },
+  {
+    "name": "Contextual task Unicode UID starts once; task controls still work",
+    "result": "PASS"
+  },
+  {
+    "name": "Personal task and project-only context remain global across navigation",
+    "result": "PASS"
+  },
+  {
+    "name": "Completed task cannot start focus; reopening restores action",
+    "result": "PASS"
+  },
+  {
+    "name": "Two tabs reconcile and stale commands cannot duplicate or silently toggle history",
+    "result": "PASS"
+  },
+  {
+    "name": "Concurrent preference changes cause 409 without appearance overwrite",
+    "result": "PASS"
+  },
+  {
+    "name": "Archived project blocks start and resume but permits pause and cancellation",
+    "result": "PASS"
+  },
+  {
+    "name": "Polling and ticks do not write sessions commands or versions",
+    "result": "PASS"
+  },
+  {
+    "name": "Rapid Turbo navigation keeps one controller and no clock writes",
+    "result": "PASS"
+  },
+  {
+    "name": "Network loss visibly unconfirmed and reconnect reads current state",
+    "result": "PASS"
+  },
+  {
+    "name": "Repeated Turbo lifecycle and hidden-page polling have no duplicate timers or listeners",
+    "result": "PASS"
+  },
+  {
+    "name": "Two confirmation dialogs converge without duplicate completed history",
+    "result": "PASS"
+  },
+  {
+    "name": "Completed focus does not complete its task and moved tasks preserve historical project",
+    "result": "PASS"
+  },
+  {
+    "name": "Visual dark 320px Dashboard Focus Project and dialog",
+    "result": "PASS"
+  },
+  {
+    "name": "Visual dark 390px Dashboard Focus Project and dialog",
+    "result": "PASS"
+  },
+  {
+    "name": "Visual dark 768px Dashboard Focus Project and dialog",
+    "result": "PASS"
+  },
+  {
+    "name": "Visual dark 1440px Dashboard Focus Project and dialog",
+    "result": "PASS"
+  },
+  {
+    "name": "Visual dark 1920px Dashboard Focus Project and dialog",
+    "result": "PASS"
+  },
+  {
+    "name": "Visual light 320px Dashboard Focus Project and dialog",
+    "result": "PASS"
+  },
+  {
+    "name": "Visual light 390px Dashboard Focus Project and dialog",
+    "result": "PASS"
+  },
+  {
+    "name": "Visual light 768px Dashboard Focus Project and dialog",
+    "result": "PASS"
+  },
+  {
+    "name": "Visual light 1440px Dashboard Focus Project and dialog",
+    "result": "PASS"
+  },
+  {
+    "name": "Visual light 1920px Dashboard Focus Project and dialog",
+    "result": "PASS"
+  }
+]

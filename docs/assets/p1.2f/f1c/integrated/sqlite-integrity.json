@@ -1,0 +1,10 @@
+{
+  "integrity": "ok",
+  "foreign_keys": [],
+  "triggers": 25,
+  "occupants": 0,
+  "history": {
+    "cancelled": 35,
+    "completed": 5
+  }
+}

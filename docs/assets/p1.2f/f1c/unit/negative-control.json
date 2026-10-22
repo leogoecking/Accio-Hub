@@ -1,0 +1,7 @@
+{
+  "mutation": "Disable own PATCH success response validation in private copy",
+  "expected": "Regression must fail for incompatible success acknowledgement",
+  "exit_code": 1,
+  "detected": true,
+  "application_source_modified": false
+}

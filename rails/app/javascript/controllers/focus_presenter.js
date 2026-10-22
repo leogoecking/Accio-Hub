@@ -37,7 +37,7 @@ export function paintFocus(controller) {
   controller.element.style.setProperty('--focus-action-ink', actionInk(getComputedStyle(document.documentElement).getPropertyValue('--accent').trim()))
   const { duration, remaining } = visualTime(client)
   const primary = primaryAction(client, remaining)
-  const busy = !!(client.sending || client.pending || controller.recoveryFlow?.busy || controller.preparing || !client.confirmed || !Number.isInteger(snapshot?.preference_version))
+  const busy = !!(client.sending || client.pending || controller.recoveryFlow?.busy || controller.presetFlow?.busy || controller.preparing || !client.confirmed || !Number.isInteger(snapshot?.preference_version))
   controller.surfaceTargets.forEach(surface => {
     surface.querySelector('[data-focus-clock]').textContent = snapshot ? formatTime(Math.ceil(remaining)) : '--:--'
     surface.querySelector('[data-focus-dial]').style.setProperty('--p', `${100 * (1 - remaining / duration)}%`)

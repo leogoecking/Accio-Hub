@@ -35,7 +35,7 @@ export class FocusClient {
       this.notify()
     }
   }
-  async execute(envelope, validateResponse) {
+  async execute(envelope, validateResponse, retainOnFailure) {
     if (this.sending || (this.pending && envelope !== this.pending)) return
     this.pending = envelope
     this.sending = true
@@ -53,7 +53,7 @@ export class FocusClient {
       if (data.current) this.apply(data.current, this.sequence) // Never render the historical receipt.
     } catch (error) {
       // Unknown responses and 503 retain the exact serialized intent for retry.
-      if (error.status && error.status < 500 && error.status !== 401) this.pending = null
+      if (!retainOnFailure?.(error) && error.status && error.status < 500 && error.status !== 401) this.pending = null
       this.message = error.message
     } finally {
       this.sending = false

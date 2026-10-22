@@ -109,7 +109,7 @@ continuam no backlog, sem autorização implícita.
 | Etapa | Entrega | Estado |
 |---|---|---|
 | P1.1 — Fundação Rails | Autenticação local e recuperação de senha por CLI, shell ERB/Turbo, temas, fundos, fontes, Dock, widgets e Music demonstrativo; personalização fundamental | Encerrada e homologada; tag anotada `p1.1-approved` |
-| P1.2 — SQLite | Modelos transacionais de projetos, tarefas, referências, preferências e foco global | A/B/C/D aprovadas e registradas; E1 em `0c74250`; E2 aprovada com ressalvas em `a0ab717`; E3 aprovada com ressalvas, encerramento autorizado; somente planejamento F autorizado |
+| P1.2 — SQLite | Modelos transacionais de projetos, tarefas, referências, preferências e foco global | A/B/C/D aprovadas e registradas; E1 em `0c74250`; E2 aprovada com ressalvas em `a0ab717`; E3 em `35a6671`; F1b aprovada com ressalvas em `7ebfaeb`; exclusivamente F1c entregue sem commit para revisão |
 | P1.3 — Vault Markdown | Arquivos reais, índice reconstruível, escrita segura, conflitos e recuperação | Não iniciada; exige autorização |
 | P1.4 — Migração | Exportação/importação versionada, simulação, relatório e recuperação | Não iniciada; exige autorização |
 | P1.5 — Verificação final | Equivalência, segurança, visual e restauração | Não iniciada; exige autorização |
@@ -481,3 +481,8 @@ E3 registrada em35a6671. Plano F aprovado com ajustes, exclusivamente F1b altern
 ### F1b — entregue para revisão e auditoria independente
 
 Plano aprovado em `30c69750ccb1a9f884b53cc3f7d0bd17ad97fa22`. Alternativa B implementada **sem commit**, com recuperação parcial em duas ações humanas e confirmação da própria resolução antes da retomada. [Verificação F1b](P1.2F1B_VERIFICATION.md): 127 testes Rails/1.728 asserções, 26 cenários JS, 77 cenários de navegador; 25 gatilhos idênticos. Sem alteração do backend, persistência, limites temporais ou identidade visual. Duas transações e recuperação explícita de falhas preservadas; Firefox não executado e contraste inconclusivo. Aguardar revisão/auditoria. F1c/F2/F3/F4/F5 continuam não autorizadas; não encerra a P1.2 nem inicia a P1.3.
+
+
+### F1c — entregue para revisão e auditoria independente
+
+F1b aprovada com ressalvas pelo Antigravity e encerrada em `7ebfaebe16027b9338ed63bf89d11d570779a7f8`. Exclusivamente F1c implementada **sem commit**: feedback/reconciliação do PATCH preset, sem nova camada de idempotência e sem alteração do motor ou CAS C. Valor confirmado não implica autoria; envelope preservado quando GET falha; nenhuma reaplicação automática com versão alheia. [Relatório](P1.2F1C_VERIFICATION.md): 127 testes Rails/1.728 asserções, 41 cenários JS e 94 de navegador aprovados; 25 gatilhos preservados. Corrigidos dois defeitos locais de Turbo/foco, sem redesenho. Contraste inconclusivo e Firefox não executado. Aguardar revisão/auditoria; F2/F3/F4/F5, P1.3, descarte real de snapshots, tag, push e merge permanecem não autorizados.
