@@ -248,3 +248,17 @@ Todas exigem RAILS_ENV=test, ACCIO_DATABASE_PATH e ACCIO_SYNTHETIC_FIXTURE expl�
 QA: `ACCIO_QA_EVIDENCE=<diretório novo> bundle exec ruby script/sqlite-backups-check.rb` gera dados fictícios próprios, testa WAL/concorrência, restaura e reinicia HTTP em loopback. Não recebe banco pessoal e não publica pacotes/chaves/dumps nas evidências.
 
 Para o HTTP da cópia sintética preparada, utilizar `bundle exec ruby script/restored-synthetic-server.rb`, com fixture/banco do destino, ACCIO_SQLITE_RESTORE_DIRECTORY, PORT e PIDFILE explícitos (arquivo .pid novo dentro do destino). O launcher verifica RESTORED.json e usa runtime-secret novo do destino, privado e fora do pacote; não reutilizar segredo da origem. Chave nova protege contra cookies antigos inclusive em colisão futura de IDs. Senha/digest do usuário preservados; formulários/intenções antigos devem ser reabertos. A tarefa restore não inicia HTTP. Detalhes/limites em [P1.2F3B_VERIFICATION.md](../docs/P1.2F3B_VERIFICATION.md).
+
+## P1.2F3c — sessões expiradas, somente administração sintética
+
+Somente RAILS_ENV=test, ACCIO_DATABASE_PATH existente e ACCIO_SYNTHETIC_FIXTURE privados e explícitos, conforme F3a. Nunca executar sobre banco pessoal. Sem endpoint, agendamento ou criação de banco default.
+
+- `bin/rails admin:sessions:inventory`: leitura somente, contagens e corte UTC; sem cookies/IDs/dados pessoais.
+- `bin/rails admin:sessions:cleanup`: **dry-run por padrão**.
+- `ACCIO_SESSION_CLEANUP_CONFIRM=DELETE_EXPIRED_AUTH_SESSIONS bin/rails admin:sessions:cleanup`: limpeza confirmada. Não exportar a confirmação permanentemente no shell.
+
+Expiração usa expires_at <= cutoff fixo por execução, conforme AuthSession. Datas incompatíveis são preservadas e contadas. Execução refaz seleção; não promete contagem do inventário anterior. Remove somente expiradas do administrador em uma transação, preservando senha, sessões ativas e demais dados. Contenção é recuperável; retentativa sempre explícita. Não muda cookies/validade/política de autenticação.
+
+QA: `ACCIO_QA_EVIDENCE=<diretório novo> bundle exec ruby script/auth-sessions-check.rb` cria banco/perfil sintético próprios e testa CLI/processos/rollback/autenticação e backup após limpeza. Não recebe banco pessoal. Detalhes em [P1.2F3C_VERIFICATION.md](../docs/P1.2F3C_VERIFICATION.md).
+
+Restore F3b continua sintético, dependente de fixture/banco de origem preexistentes; F3c não é recuperação operacional nem substitui a revogação integral das sessões copiadas antes do HTTP da F3b.

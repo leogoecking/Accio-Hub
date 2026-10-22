@@ -1,0 +1,21 @@
+Run options: --seed 10170
+
+# Running:
+
+.......F
+
+Failure:
+SyntheticAuthSessionCleanupTest#test_source_symlink_and_unreadable_fixture_are_refused_without_opening_another_database [test/services/synthetic_auth_session_cleanup_test.rb:238]:
+--- expected
++++ actual
+@@ -1 +1 @@
+-0
++#<SQLite3::Database:0xXXXXXX @progress_handler=nil, @collations={}, @functions=[], @results_as_hash=nil, @readonly=true, @default_transaction_mode=:deferred>
+
+
+bin/rails test test/services/synthetic_auth_session_cleanup_test.rb:227
+
+........
+
+Finished in 13.096633s, 1.2217 runs/s, 7.9410 assertions/s.
+16 runs, 104 assertions, 1 failures, 0 errors, 0 skips
