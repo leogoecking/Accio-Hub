@@ -220,3 +220,17 @@ O setup imprime um diretório privado novo e grava `tmp/p12d2-workspace`. Inicie
 Criação/edição em `/projects/:project_uid/references`, com IDs públicos codificados e projeto fixado pela rota autenticada. Tipos Link (URL obrigatória) e Material (URL opcional), sem upload/exclusão. Somente HTTP/HTTPS, host válido e sem credenciais; endereços incompatíveis existentes são exibidos com link desativado. Política local de parsing, sem downloads/preview/DNS. Índices/modelos/gatilhos B intactos.
 
 QA: `bundle exec ruby script/references-check.rb` cria um banco novo sintético temporário, exercita a suíte e processos concorrentes. `ruby script/references-browser-setup.rb` prepara bancos novos privados; somente esses caminhos podem alimentar QA de navegador em loopback 3126. Roteiros `references-browser-check.mjs`, `references-browser-additional-check.mjs`, `references-browser-restart-check.mjs` e `references-browser-state-check.rb` registram evidências em `docs/assets/p1.2d3/`. Não utilizar banco pessoal. Relatório: `docs/P1.2D3_VERIFICATION.md`. D3 aprovada após auditoria independente, conforme confirmação do usuário; encerramento em commit autorizado. Implementação E/F não iniciada.
+
+## P1.2F3a — snapshots legados, somente ensaios sintéticos
+
+Inventário/exportação/verificação são tarefas administrativas locais, sem endpoint HTTP ou descarte. Não executar sobre dados pessoais. Não alteram o bootstrap C, cookies ou preferências operacionais.
+
+- `bin/rails legacy_snapshots:inventory`: metadados redigidos, sem raw/value.
+- `bin/rails legacy_snapshots:export`: exige ACCIO_SNAPSHOT_DESTINATION, não sobrescreve.
+- `bin/rails legacy_snapshots:verify`: exige ACCIO_SNAPSHOT_ARCHIVE, reabre e confere hashes.
+
+Todas exigem RAILS_ENV=test, ACCIO_DATABASE_PATH explícito e ACCIO_SYNTHETIC_FIXTURE. Banco chamado synthetic.sqlite3, existente, no mesmo diretório privado da declaração JSON `{"format":"accio-f3a-synthetic","version":1,"database":"synthetic.sqlite3"}`. Arquivos privados do usuário, sem links; diretório fora do checkout. A declaração identifica o ensaio administrativamente, não transforma dados pessoais em sintéticos. Destino JSON em diretório privado existente, arquivo novo. Não fornece recuperação operacional.
+
+A partir de rails/, `ACCIO_QA_EVIDENCE=<diretório novo de evidências> bundle exec ruby script/legacy-snapshots-check.rb` cria fixtures sintéticas privadas e demonstra exportação/reabertura/recuperação em perfil novo, incluindo concorrência real. Não recebe banco pessoal. Arquivos privados temporários do ensaio não são evidências versionáveis.
+
+Formato 1 preserva bytes originais em Base64 e metadados/CAS observados; Base64 não é criptografia e SHA256 não autentica a origem. No Ubuntu, publicação usa arquivo0600/diretório0700 e hard link atômico sem sobrescrita. Windows/ACLs e outros filesystems exigem validação própria. SIGKILL pode deixar temporário privado não concluído; nenhum job limpa arquivos/snapshots. Detalhes e limites em [P1.2F3A_VERIFICATION.md](../docs/P1.2F3A_VERIFICATION.md).

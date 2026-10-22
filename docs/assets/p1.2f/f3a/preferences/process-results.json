@@ -1,0 +1,42 @@
+{
+  "rails_suite": "165 runs, 3196 assertions, 0 failures, 0 errors, 0 skips",
+  "bootstrap": [
+    {
+      "worker": "0",
+      "result": "conflict_rejected"
+    },
+    {
+      "worker": "1",
+      "result": "committed"
+    }
+  ],
+  "update": [
+    {
+      "worker": "0",
+      "result": "conflict_rejected"
+    },
+    {
+      "worker": "1",
+      "result": "committed"
+    }
+  ],
+  "snapshot": {
+    "aggregate_version": 1,
+    "preference_count": 1,
+    "dock_count": 8,
+    "widget_count": 7,
+    "triggers": 25,
+    "foreign_keys_intact": true,
+    "demo_tables_empty": true
+  },
+  "reopen": {
+    "reopened_aggregate_identical": true
+  },
+  "contention": {
+    "sqlite_writer_contention_http": 503,
+    "local_edit_retry_supported": true
+  },
+  "post_contention": {
+    "reopened_aggregate_identical": true
+  }
+}

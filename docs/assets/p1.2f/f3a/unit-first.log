@@ -1,0 +1,51 @@
+/home/goecking/Projects/Accio-HUB/rails/app/services/legacy_snapshot_archive.rb:163: warning: detected duplicate key "raw" in JSON object. This will raise an error in json 3.0 unless enabled via `allow_duplicate_key: true` at line 1 column 1
+Run options: --seed 55991
+
+# Running:
+
+F
+
+Failure:
+LegacySnapshotArchiveTest#test_malformed_duplicated_and_non_UTF8_JSON_are_blocked_without_losing_source [test/services/legacy_snapshot_archive_test.rb:116]:
+Expected [] to not be empty.
+
+bin/rails test test/services/legacy_snapshot_archive_test.rb:111
+
+....DEPRECATED: Use assert_nil if expecting nil. This will fail in Minitest 6.
+....E
+
+Error:
+LegacySnapshotArchiveTest#test_read_only_SQLite_capture_cannot_execute_DML_and_does_not_include_unrelated_credentials:
+NoMethodError: undefined method `stub' for class SQLite3::Database
+    test/services/legacy_snapshot_archive_test.rb:201:in `block in <class:LegacySnapshotArchiveTest>'
+
+bin/rails test test/services/legacy_snapshot_archive_test.rb:197
+
+E
+
+Error:
+LegacySnapshotArchiveTest#test_interrupted_write_is_never_published_and_temporary_is_removed:
+NoMethodError: undefined method `stub' for class File
+    test/services/legacy_snapshot_archive_test.rb:159:in `block in <class:LegacySnapshotArchiveTest>'
+
+bin/rails test test/services/legacy_snapshot_archive_test.rb:157
+
+.F
+
+Failure:
+LegacySnapshotArchiveTest#test_root_and_unknown_fields_preserve_literal_JSON_bytes_and_declared_origin_privately [test/services/legacy_snapshot_archive_test.rb:43]:
+--- expected
++++ actual
+@@ -1 +1,3 @@
+-"{\n  \"source\": \"private source\",\n  \"raw\": \"synthetic opaque cookie\",\n  \"digest\": \"8fa1b72ff02f693b738a4efc286e1aa0167dad078617d6fd0edd9cb89647d3c3\",\n  \"valid\": true,\n  \"value\": {\n    \"theme\": \"dark\",\n    \"wallpaper\": \"northern\",\n    \"accent\": \"#b1f07d\",\n    \"music\": true,\n    \"musicExpanded\": false,\n    \"dockOrder\": [\n      \"tasks\",\n      \"calendar\",\n      \"focus\",\n      \"knowledge\",\n      \"projects\",\n      \"feed\",\n      \"backup\",\n      \"email\"\n    ],\n    \"dockHidden\": [],\n    \"widgets\": [\n      {\n        \"id\": \"tasks\",\n        \"span\": 5,\n        \"visible\": true\n      },\n      {\n        \"id\": \"focus\",\n        \"span\": 3,\n        \"visible\": true\n      },\n      {\n        \"id\": \"calendar\",\n        \"span\": 4,\n        \"visible\": true\n      },\n      {\n        \"id\": \"feed\",\n        \"span\": 5,\n        \"visible\": true\n      },\n      {\n        \"id\": \"notes\",\n        \"span\": 4,\n        \"visible\": true\n      },\n      {\n        \"id\": \"backup\",\n        \"span\": 3,\n        \"visible\": true\n      },\n      {\n        \"id\": \"projects\",\n        \"span\": 12,\n        \"visible\": true\n      }\n    ]\n  },\n  \"extra\": {\n    \"future\": [\n      1,\n      null,\n      false,\n      \"ação\\nlinha\"\n    ]\n  }\n}"
++# encoding: ASCII-8BIT
++#    valid: true
++"{\n  \"source\": \"private source\",\n  \"raw\": \"synthetic opaque cookie\",\n  \"digest\": \"8fa1b72ff02f693b738a4efc286e1aa0167dad078617d6fd0edd9cb89647d3c3\",\n  \"valid\": true,\n  \"value\": {\n    \"theme\": \"dark\",\n    \"wallpaper\": \"northern\",\n    \"accent\": \"#b1f07d\",\n    \"music\": true,\n    \"musicExpanded\": false,\n    \"dockOrder\": [\n      \"tasks\",\n      \"calendar\",\n      \"focus\",\n      \"knowledge\",\n      \"projects\",\n      \"feed\",\n      \"backup\",\n      \"email\"\n    ],\n    \"dockHidden\": [],\n    \"widgets\": [\n      {\n        \"id\": \"tasks\",\n        \"span\": 5,\n        \"visible\": true\n      },\n      {\n        \"id\": \"focus\",\n        \"span\": 3,\n        \"visible\": true\n      },\n      {\n        \"id\": \"calendar\",\n        \"span\": 4,\n        \"visible\": true\n      },\n      {\n        \"id\": \"feed\",\n        \"span\": 5,\n        \"visible\": true\n      },\n      {\n        \"id\": \"notes\",\n        \"span\": 4,\n        \"visible\": true\n      },\n      {\n        \"id\": \"backup\",\n        \"span\": 3,\n        \"visible\": true\n      },\n      {\n        \"id\": \"projects\",\n        \"span\": 12,\n        \"visible\": true\n      }\n    ]\n  },\n  \"extra\": {\n    \"future\": [\n      1,\n      null,\n      false,\n      \"a\xC3\xA7\xC3\xA3o\\nlinha\"\n    ]\n  }\n}"
+
+
+bin/rails test test/services/legacy_snapshot_archive_test.rb:64
+
+.
+
+Finished in 0.064187s, 218.1140 runs/s, 1573.5367 assertions/s.
+14 runs, 101 assertions, 2 failures, 2 errors, 0 skips
