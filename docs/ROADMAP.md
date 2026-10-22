@@ -473,3 +473,7 @@ E2 aprovada com ressalvas pelo Antigravity, sem bloqueadores confirmados, e ence
 ### Encerramento E3 e autorização de planejamento F — 2026-10-21
 
 Usuário aprovou E3 com ressalvas, sem bloqueadores funcionais/de integridade documentados, e autorizou seu commit e exclusivamente planejamento F1–F5. Não há autorização de correções F. Preservar recuperação/PATCH de preset como ressalvas, contraste inconclusivo e pendências operacionais. Firefox complementar, não bloqueante para a F, sem declarar teste inexistente. Encerramento final P1.2 exige evidências e auditoria independente; P1.3, importação pessoal, tags, push, merge e distribuição dependem de autorização própria.
+
+### Plano F aprovado com ajustes — F1b autorizada
+
+E3 registrada em35a6671. Plano F aprovado com ajustes, exclusivamente F1b alternativa B autorizada: duas ações humanas com resolve/resume existentes; limitação de duas transações aceita. C/D e F1c/F2/F3/F4/F5 não autorizados. Sem descarte real de legacy_cookie_backup ou aprovação definitiva de30dias; Firefox complementar; backup/restauração apenas sintéticos até autorização específica. Plano em commit documental próprio; implementação F1b sem commit para revisão/auditoria independente. Sem push, merge, tag ou avanço à P1.3.

@@ -67,7 +67,7 @@ preparando o futuro Vault Markdown. Evitar refatorações grandes sem necessidad
 - PWA
 
 P0.4 homologada, P1.0 arquitetural aprovada e P1.1 encerrada e homologada.
-P1.2A/P1.2B/P1.2C aprovadas tecnicamente; planejamento P1.2D aprovado; D1 aprovada tecnicamente com ressalvas e registrada; D2/D3 aprovadas; planejamento P1.2E aprovado com ajustes; motor E1 aprovado e registrado; E2 aprovada com ressalvas em a0ab717; E3 aprovada com ressalvas e encerramento em commit autorizado. Exclusivamente planejamento P1.2F autorizado; implementação F/P1.3 não autorizada.
+P1.2A/P1.2B/P1.2C aprovadas tecnicamente; planejamento P1.2D aprovado; D1 aprovada tecnicamente com ressalvas e registrada; D2/D3 aprovadas; E1/E2/E3 aprovadas, E3 registrada em35a6671. Plano P1.2F aprovado com ajustes; exclusivamente F1b, alternativa B, autorizada, sem commit da implementação. F1c/F2/F3/F4/F5/P1.3 não autorizadas.
 A aprovação visual da P0.3 não autoriza iniciar Rails na P0.4.
 
 ## Arquitetura
@@ -188,3 +188,7 @@ E2 encerrada em `a0ab717f9497d6e3bf5209f7a26b16a8c2091053`; diretriz de portabil
 ### Encerramento E3 e planejamento F — 2026-10-21
 
 E3 revisada e APROVADA COM RESSALVAS, conforme parecer informado pelo usuário; sem bloqueadores funcionais ou de integridade nos cenários documentados. Commit de encerramento autorizado, preservando testes e evidências. Exclusivamente planejamento F1–F5 autorizado, sem alterar aplicação/modelos/schema/gatilhos, limites15/60/5 ou contratos E1; documento F sem commit para revisão. Firefox passa a ser complementar e não bloqueante para a F, mantendo resultado histórico não testado. Auditoria independente continua obrigatória antes do encerramento final da P1.2. Sem implementação F/P1.3, dados pessoais, descarte de cookies/backups, tag, push, merge ou distribuição.
+
+### Plano F aprovado com ajustes — autorização F1b
+
+E3 encerrada em `35a66711b57e5afe2c11fc2ca5bd9716128d9383`. [Plano F](docs/P1.2F_PLAN.md) aprovado com ajustes: exclusivamente F1b alternativa B autorizada, resolve/resume separados e idempotentes, duas transações aceitas, confirmação da própria resolução e versão fixa antes de retomar. C/D e F1c/F2/F3/F4/F5 não autorizados. Descarte real de legacy_cookie_backup proibido; prazo30dias ainda não aprovado. Firefox complementar; backups/restauração somente sintéticos até autorização específica, sem iniciar F3. Registrar plano em commit documental; implementação F1b sem commit para revisão/auditoria. Sem alterações de backend E1/modelos/schema/gatilhos/limites15/60/5, push, merge, tag ou dados pessoais.
