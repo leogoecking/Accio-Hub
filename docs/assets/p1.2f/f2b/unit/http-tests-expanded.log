@@ -1,0 +1,32 @@
+Run options: --seed 25748
+
+# Running:
+
+.E
+
+Error:
+TransversalSecurityTest#test_malformed_structured_payloads_receive_defined_failures_without_internal_error_leakage:
+NoMethodError: undefined method `valid_encoding?' for an instance of ActionController::Parameters
+    app/services/project_commands.rb:15:in `create'
+    app/controllers/projects_controller.rb:49:in `create'
+    lib/loopback_only.rb:11:in `call'
+    test/integration/transversal_security_test.rb:254:in `public_send'
+    test/integration/transversal_security_test.rb:254:in `block (2 levels) in <class:TransversalSecurityTest>'
+    test/integration/transversal_security_test.rb:253:in `each'
+    test/integration/transversal_security_test.rb:253:in `block in <class:TransversalSecurityTest>'
+
+bin/rails test test/integration/transversal_security_test.rb:243
+
+.....F
+
+Failure:
+TransversalSecurityTest#test_unauthenticated_JSON_requests_with_a_real_CSRF_session_are_unauthorized [test/integration/transversal_security_test.rb:205]:
+Expected: 401
+  Actual: 404
+
+bin/rails test test/integration/transversal_security_test.rb:192
+
+...
+
+Finished in 4.939718s, 2.2268 runs/s, 64.9835 assertions/s.
+11 runs, 321 assertions, 1 failures, 1 errors, 0 skips

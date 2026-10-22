@@ -1,0 +1,49 @@
+{
+  "database": "isolated temporary synthetic SQLite (removed)",
+  "results": [
+    {
+      "scenario": "short password",
+      "result": "PASS"
+    },
+    {
+      "scenario": "blank password",
+      "result": "PASS"
+    },
+    {
+      "scenario": "whitespace password",
+      "result": "PASS"
+    },
+    {
+      "scenario": "different confirmation",
+      "result": "PASS"
+    },
+    {
+      "scenario": "bcrypt byte limit",
+      "result": "PASS"
+    },
+    {
+      "scenario": "interrupted input",
+      "result": "PASS"
+    },
+    {
+      "scenario": "end of input",
+      "result": "PASS"
+    },
+    {
+      "scenario": "non-interactive input rejected",
+      "result": "PASS"
+    },
+    {
+      "scenario": "valid 12-character password and session revocation",
+      "result": "PASS"
+    },
+    {
+      "scenario": "missing administrator rejected before prompting",
+      "result": "PASS"
+    },
+    {
+      "scenario": "no password echo, process argument/environment or Rails log exposure",
+      "result": "PASS"
+    }
+  ]
+}

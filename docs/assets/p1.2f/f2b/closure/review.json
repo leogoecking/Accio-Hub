@@ -1,0 +1,8 @@
+{
+  "audited_source_hashes_match": 8,
+  "rails": "148 tests, 3050 assertions, zero failures/errors/skips",
+  "private_files_by_name": [],
+  "secret_markers": [],
+  "models_schema_migrations_unchanged": true,
+  "original_audit_sha256": "7b83f2f898e3eb583bc93d19e42b148326581296e21bfa1d39854fc40b6d6ce4"
+}

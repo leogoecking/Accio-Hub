@@ -1,0 +1,208 @@
+{
+  "audits": 40,
+  "confirmed_violations": 0,
+  "audits_with_incomplete": 40,
+  "contrast_not_approved": true,
+  "results": [
+    {
+      "file": "browser/d3/axe-dashboard-light-320.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-references-light-768.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-overview-dark-1440.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-form-light-1920.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-dashboard-dark-1440.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-dashboard-dark-390.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-dashboard-dark-320.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-references-light-1440.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-dashboard-dark-1920.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-overview-light-1920.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-dashboard-light-1440.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-references-light-320.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-dashboard-light-390.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-form-light-320.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-form-light-390.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-form-light-768.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-references-dark-1440.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-dashboard-dark-768.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-references-dark-1920.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-references-light-390.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-references-dark-390.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-references-light-1920.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-overview-light-390.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-overview-dark-768.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-dashboard-light-768.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-overview-dark-320.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-form-light-1440.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-dashboard-light-1920.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-overview-light-320.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-overview-dark-390.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-overview-light-1440.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-references-dark-320.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-form-dark-1440.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-overview-light-768.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-references-dark-768.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-form-dark-320.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-overview-dark-1920.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-form-dark-768.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-form-dark-1920.json",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "file": "browser/d3/axe-form-dark-390.json",
+      "violations": 0,
+      "incomplete": 1
+    }
+  ]
+}

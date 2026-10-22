@@ -1,0 +1,9 @@
+PASS Unauthenticated protected navigation redirects without private shell
+PASS Contextual task dialog opens by keyboard with focus trap Escape and return
+PASS CSRF enabled in browser rejects missing and wrong tokens without writes
+PASS Valid CSRF reaches strict envelope validation and presets remain CAS guarded
+PASS Legacy HTML remains escaped without executable links and GET preserves original data
+PASS Legitimate URL creates and edits reference; unsafe URL is rejected with draft preserved
+PASS Malformed project intention reproduces HTTP 500 without database mutation
+PASS Browser resources stay local; URL validation never navigates targets
+PASS Logout revokes browser session and protected state refuses subsequent access

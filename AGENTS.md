@@ -221,3 +221,17 @@ F1c encerrada em `b262ce6813d78a21d9454bb25e4e8a30b6f09ab8`, após parecer indep
 ### Encerramento F2a e autorização exclusiva F2b — 2026-10-22
 
 F2a aprovada pelo Antigravity: APROVADO COM RESSALVAS, SEM BLOQUEADORES. Sete hashes da entrega conferidos; esclarecimento documental de IPv4 na verificação F2a sem alterar o relatório independente original. Gate sintético Rails 133/2.555, JS41, processos/contenção/rollback e ferramentas aprovado. Exclusivamente investigação transversal F2b autorizada, sem correções automáticas, aplicação/modelos/schema/migrações/gatilhos novos. Novos testes/docs/evidências F2b sem commit. Preservar ressalvas, sem F3/F4/F5, dados pessoais, tag/push/merge ou serviços Ubuntu.
+
+
+### F2b — investigação transversal para revisão — 2026-10-22
+
+F2a encerrada em `07bb2cff06169224a1e07b584e6ececc5f88b357`, após aprovação independente com ressalvas e esclarecimento documental de compatibilidade IPv4, sem editar auditoria original. F2b somente QA/documentação, **sem commit**: Rails final146/2.940, com um erro de reprodução confirmado F2B-01 (intenção de projeto como objeto gera500); não corrigido por falta de autorização específica. SQL em migrações/schema load:25 gatilhos/36 índices idênticos e FKs equivalentes;21 testes/243 asserções em cada banco;24 disputas multiprocesso e5 contenções reais503; JS41; browser F1b14, F1c18 e transversal9 (um é reprodução de defeito). Roteiro legado D3 interrompido em duas tentativas, cobertura inconclusiva F2B-COV-01, sem mascarar como aprovação. [Relatório F2b](docs/P1.2F2B_VERIFICATION.md). Aplicação/modelos/schema/migrações/gatilhos/protótipo intactos. Aguardar revisão/auditoria e autorização de correções; sem F3/F4/F5, descarte/importação pessoal, tag/push/merge ou serviços Ubuntu.
+
+
+### Correções direcionadas F2b para revisão — 2026-10-22
+
+Autorizadas exclusivamente F2B-01 e recuperação de cobertura F2B-COV-01. ProjectCommands agora recusa tipos não String pela rejeição InvalidIntent existente (422), sem alterar assinatura/CSRF/transações. Clique contextual D3 corrigido somente no roteiro: remoção da rolagem redundante antes do clique nativo, após trilha comprovar ponteiro fora do link. Aplicação visual intacta;33/33 D3,7 F2a e9 transversais aprovados; Rails148/3.050, JS41,25 gatilhos/36 índices preservados. [Relatório de correções](docs/P1.2F2B_CORRECTIONS_VERIFICATION.md). Relatórios/evidências anteriores preservados; F2b inteira **sem commit e sem staging**. Aguardar revisão/auditoria; sem F3/F4/F5, tag/push/merge ou dados pessoais.
+
+### Encerramento F2b e autorização exclusiva F3a — 2026-10-22
+
+F2b aprovada pelo Antigravity como **APROVADO COM RESSALVAS, SEM BLOQUEADORES** em docs/P1.2F2B_AUDIT.md. Oito fontes auditadas idênticas; gate Rails148/3.050, JS41 e ferramentas revalidado, preservando reproduções anteriores e cobertura D3. Encerramento específico autorizado. Exclusivamente F3a: inventário/exportação privada/verificação e round-trip de legacy_cookie_backup, somente sintético com banco explícito, sem descarte/TTL ou alteração do bootstrap/modelos/schema/gatilhos. Implementação F3a sem commit e sem staging para auditoria. F3b/F3c/F4/F5/P1.3, dados pessoais, tag/push/merge e backups/serviços Ubuntu não autorizados. Ressalvas anteriores preservadas.

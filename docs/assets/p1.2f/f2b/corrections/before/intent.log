@@ -1,0 +1,20 @@
+Run options: -n /object_project/ --seed 54670
+
+# Running:
+
+E
+
+Error:
+TransversalSecurityTest#test_object_project_intention_should_be_rejected_as_invalid_input:
+NoMethodError: undefined method `valid_encoding?' for an instance of ActionController::Parameters
+    app/services/project_commands.rb:15:in `create'
+    app/controllers/projects_controller.rb:49:in `create'
+    lib/loopback_only.rb:11:in `call'
+    test/integration/transversal_security_test.rb:263:in `block in <class:TransversalSecurityTest>'
+
+bin/rails test test/integration/transversal_security_test.rb:261
+
+
+
+Finished in 0.307648s, 3.2505 runs/s, 19.5028 assertions/s.
+1 runs, 6 assertions, 0 failures, 1 errors, 0 skips

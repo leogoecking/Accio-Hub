@@ -12,7 +12,7 @@ class ProjectCommands
   end
 
   def create(intent, attributes)
-    claim = verifier.verified(intent, purpose: "project-create")
+    claim = verifier.verified(intent, purpose: "project-create") if intent.is_a?(String)
     unless claim.is_a?(Hash) && claim["user_id"] == @user.id && claim["operation"] == "project.create" && claim["uid"].present?
       raise InvalidIntent, "Intenção inválida. Abra um novo formulário; seus campos foram mantidos."
     end

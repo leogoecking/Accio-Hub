@@ -1,0 +1,847 @@
+[
+  {
+    "name": "before",
+    "state": {
+      "dialog": false,
+      "hit": "A",
+      "rect": {
+        "height": 16,
+        "width": 454,
+        "x": 146,
+        "y": 583.078125
+      },
+      "rects": [
+        {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        }
+      ],
+      "scroll": 0
+    },
+    "events": []
+  },
+  {
+    "name": "selector-click",
+    "state": {
+      "dialog": false,
+      "hit": "A",
+      "rect": {
+        "height": 16,
+        "width": 454,
+        "x": 146,
+        "y": 583.078125
+      },
+      "rects": [
+        {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        }
+      ],
+      "scroll": 0
+    },
+    "events": [
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "pointerdown",
+        "url": "",
+        "x": 373,
+        "y": 591.078125
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "mousedown",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "mouseup",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "click",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "TURBO-FRAME",
+        "text": "",
+        "trusted": false,
+        "type": "turbo:before-fetch-request",
+        "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new"
+      }
+    ]
+  },
+  {
+    "name": "selector-open",
+    "state": {
+      "dialog": true,
+      "hit": "DIALOG",
+      "rect": {
+        "height": 16,
+        "width": 454,
+        "x": 146,
+        "y": 583.078125
+      },
+      "rects": [
+        {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        }
+      ],
+      "scroll": 0
+    },
+    "events": [
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "pointerdown",
+        "url": "",
+        "x": 373,
+        "y": 591.078125
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "mousedown",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "mouseup",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "click",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "TURBO-FRAME",
+        "text": "",
+        "trusted": false,
+        "type": "turbo:before-fetch-request",
+        "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new"
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 582.3617553710938
+        },
+        "status": 200,
+        "target": "TURBO-FRAME",
+        "text": "",
+        "trusted": false,
+        "type": "turbo:before-fetch-response",
+        "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new"
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 582.1272583007812
+        },
+        "target": "TURBO-FRAME",
+        "text": "Nova tarefa\n    Título\n    PrioridadeNormal\nAlta\n    Projeto: Projeto referência",
+        "trusted": false,
+        "type": "turbo:frame-load",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "name": "physical-pointer-open",
+    "state": {
+      "dialog": true,
+      "hit": "DIALOG",
+      "rect": {
+        "height": 16,
+        "width": 454,
+        "x": 146,
+        "y": 582.5015869140625
+      },
+      "rects": [
+        {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 582.5015869140625
+        }
+      ],
+      "scroll": 0
+    },
+    "events": [
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "pointerdown",
+        "url": "",
+        "x": 373,
+        "y": 591.078125
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "mousedown",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "mouseup",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "click",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "TURBO-FRAME",
+        "text": "",
+        "trusted": false,
+        "type": "turbo:before-fetch-request",
+        "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new"
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 582.3617553710938
+        },
+        "status": 200,
+        "target": "TURBO-FRAME",
+        "text": "",
+        "trusted": false,
+        "type": "turbo:before-fetch-response",
+        "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new"
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 582.1272583007812
+        },
+        "target": "TURBO-FRAME",
+        "text": "Nova tarefa\n    Título\n    PrioridadeNormal\nAlta\n    Projeto: Projeto referência",
+        "trusted": false,
+        "type": "turbo:frame-load",
+        "url": ""
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "pointerdown",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "mousedown",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "mouseup",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "click",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "TURBO-FRAME",
+        "text": "",
+        "trusted": false,
+        "type": "turbo:before-fetch-request",
+        "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new"
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 582.3622436523438
+        },
+        "status": 200,
+        "target": "TURBO-FRAME",
+        "text": "",
+        "trusted": false,
+        "type": "turbo:before-fetch-response",
+        "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new"
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 582.2578735351562
+        },
+        "target": "TURBO-FRAME",
+        "text": "Nova tarefa\n    Título\n    PrioridadeNormal\nAlta\n    Projeto: Projeto referência",
+        "trusted": false,
+        "type": "turbo:frame-load",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "name": "keyboard-open",
+    "state": {
+      "dialog": true,
+      "hit": "DIALOG",
+      "rect": {
+        "height": 16,
+        "width": 454,
+        "x": 146,
+        "y": 581.571533203125
+      },
+      "rects": [
+        {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 581.571533203125
+        }
+      ],
+      "scroll": 0
+    },
+    "events": [
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "pointerdown",
+        "url": "",
+        "x": 373,
+        "y": 591.078125
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "mousedown",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "mouseup",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "click",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "TURBO-FRAME",
+        "text": "",
+        "trusted": false,
+        "type": "turbo:before-fetch-request",
+        "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new"
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 582.3617553710938
+        },
+        "status": 200,
+        "target": "TURBO-FRAME",
+        "text": "",
+        "trusted": false,
+        "type": "turbo:before-fetch-response",
+        "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new"
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 582.1272583007812
+        },
+        "target": "TURBO-FRAME",
+        "text": "Nova tarefa\n    Título\n    PrioridadeNormal\nAlta\n    Projeto: Projeto referência",
+        "trusted": false,
+        "type": "turbo:frame-load",
+        "url": ""
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "pointerdown",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "mousedown",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "mouseup",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "click",
+        "url": "",
+        "x": 373,
+        "y": 591
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "TURBO-FRAME",
+        "text": "",
+        "trusted": false,
+        "type": "turbo:before-fetch-request",
+        "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new"
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 582.3622436523438
+        },
+        "status": 200,
+        "target": "TURBO-FRAME",
+        "text": "",
+        "trusted": false,
+        "type": "turbo:before-fetch-response",
+        "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new"
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 582.2578735351562
+        },
+        "target": "TURBO-FRAME",
+        "text": "Nova tarefa\n    Título\n    PrioridadeNormal\nAlta\n    Projeto: Projeto referência",
+        "trusted": false,
+        "type": "turbo:frame-load",
+        "url": ""
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "click",
+        "url": "",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 583.078125
+        },
+        "target": "TURBO-FRAME",
+        "text": "",
+        "trusted": false,
+        "type": "turbo:before-fetch-request",
+        "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new"
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 454,
+          "x": 146,
+          "y": 582.36279296875
+        },
+        "status": 200,
+        "target": "TURBO-FRAME",
+        "text": "",
+        "trusted": false,
+        "type": "turbo:before-fetch-response",
+        "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new"
+      }
+    ]
+  }
+]

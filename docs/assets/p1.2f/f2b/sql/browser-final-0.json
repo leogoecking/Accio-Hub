@@ -1,0 +1,10 @@
+{
+  "integrity": "ok",
+  "fk": [],
+  "triggers": 25,
+  "indexes": 36,
+  "occupants": 0,
+  "foreign_keys": 1,
+  "journal_mode": "wal",
+  "synchronous": 2
+}

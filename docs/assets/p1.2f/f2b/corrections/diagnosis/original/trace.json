@@ -1,0 +1,1282 @@
+{
+  "errors": [],
+  "events": [
+    {
+      "at": 389.40000000596046,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:load",
+      "url": "http://127.0.0.1:3126/session/new"
+    },
+    {
+      "at": 581.6000000089407,
+      "prevented": false,
+      "target": "INPUT",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": ""
+    },
+    {
+      "at": 581.7000000029802,
+      "prevented": false,
+      "target": "INPUT",
+      "trusted": true,
+      "type": "mousedown",
+      "url": ""
+    },
+    {
+      "at": 583.7000000029802,
+      "prevented": false,
+      "target": "INPUT",
+      "trusted": true,
+      "type": "mouseup",
+      "url": ""
+    },
+    {
+      "at": 583.9000000059605,
+      "prevented": false,
+      "target": "INPUT",
+      "trusted": true,
+      "type": "click",
+      "url": ""
+    },
+    {
+      "at": 588.6000000089407,
+      "prevented": false,
+      "target": "FORM",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/session"
+    },
+    {
+      "at": 1309.800000011921,
+      "prevented": false,
+      "status": 200,
+      "target": "FORM",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/"
+    },
+    {
+      "at": 1311.1000000089407,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-visit",
+      "url": "http://127.0.0.1:3126/"
+    },
+    {
+      "at": 1410.6000000089407,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:load",
+      "url": "http://127.0.0.1:3126/"
+    },
+    {
+      "anchor": "",
+      "at": 1526.6000000089407,
+      "href": "/apps/calendar",
+      "prevented": false,
+      "target": "A",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/apps/calendar"
+    },
+    {
+      "anchor": "",
+      "at": 1562.4000000059605,
+      "href": "/apps/calendar",
+      "prevented": false,
+      "status": 200,
+      "target": "A",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/apps/calendar"
+    },
+    {
+      "anchor": "",
+      "at": 1750.7000000029802,
+      "href": "/projects",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 1750.800000011921,
+      "href": "/projects",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "mousedown",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 1752,
+      "href": "/projects",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "mouseup",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 1752,
+      "href": "/projects",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "click",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 1753.6000000089407,
+      "href": "/projects",
+      "prevented": false,
+      "target": "A",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 1753.9000000059605,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-visit",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 1754.4000000059605,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 1805.70000000298,
+      "prevented": false,
+      "status": 200,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 1878,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:load",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "anchor": "",
+      "at": 2362.300000011921,
+      "href": "/projects",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 2362.300000011921,
+      "href": "/projects",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "mousedown",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 2363.1000000089407,
+      "href": "/projects",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "mouseup",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 2363.1000000089407,
+      "href": "/projects",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "click",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 2363.6000000089407,
+      "href": "/projects",
+      "prevented": false,
+      "target": "A",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 2363.6000000089407,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-visit",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 2363.800000011921,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 2392.20000000298,
+      "prevented": false,
+      "status": 200,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 2402.800000011921,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:load",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "anchor": "project-new",
+      "at": 2654.6000000089407,
+      "href": "/projects/new",
+      "prevented": false,
+      "target": "project-new",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": ""
+    },
+    {
+      "anchor": "project-new",
+      "at": 2654.6000000089407,
+      "href": "/projects/new",
+      "prevented": false,
+      "target": "project-new",
+      "trusted": true,
+      "type": "mousedown",
+      "url": ""
+    },
+    {
+      "anchor": "project-new",
+      "at": 2656.9000000059605,
+      "href": "/projects/new",
+      "prevented": false,
+      "target": "project-new",
+      "trusted": true,
+      "type": "mouseup",
+      "url": ""
+    },
+    {
+      "anchor": "project-new",
+      "at": 2656.9000000059605,
+      "href": "/projects/new",
+      "prevented": false,
+      "target": "project-new",
+      "trusted": true,
+      "type": "click",
+      "url": ""
+    },
+    {
+      "anchor": "project-new",
+      "at": 2657.800000011921,
+      "href": "/projects/new",
+      "prevented": false,
+      "target": "project-new",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/projects/new"
+    },
+    {
+      "at": 2658.300000011921,
+      "prevented": false,
+      "target": "project-modal",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/projects/new"
+    },
+    {
+      "at": 2682.300000011921,
+      "prevented": false,
+      "status": 200,
+      "target": "project-modal",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/projects/new"
+    },
+    {
+      "at": 2735.800000011921,
+      "prevented": false,
+      "status": 200,
+      "target": "project-modal",
+      "trusted": false,
+      "type": "turbo:frame-render",
+      "url": "http://127.0.0.1:3126/projects/new"
+    },
+    {
+      "at": 2735.9000000059605,
+      "prevented": false,
+      "target": "project-modal",
+      "trusted": false,
+      "type": "turbo:frame-load",
+      "url": ""
+    },
+    {
+      "at": 2944.1000000089407,
+      "prevented": false,
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": ""
+    },
+    {
+      "at": 2944.1000000089407,
+      "prevented": false,
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "mousedown",
+      "url": ""
+    },
+    {
+      "at": 2946.5,
+      "prevented": false,
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "mouseup",
+      "url": ""
+    },
+    {
+      "at": 2946.6000000089407,
+      "prevented": false,
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "click",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 3316,
+      "href": "/projects",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 3316.1000000089407,
+      "href": "/projects",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "mousedown",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 3317,
+      "href": "/projects",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "mouseup",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 3317,
+      "href": "/projects",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "click",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 3317.5,
+      "href": "/projects",
+      "prevented": false,
+      "target": "A",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 3317.5,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-visit",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 3317.70000000298,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 3344.800000011921,
+      "prevented": false,
+      "status": 200,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 3367,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:load",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "anchor": "project-new",
+      "at": 3588.800000011921,
+      "href": "/projects/new",
+      "prevented": false,
+      "target": "project-new",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": ""
+    },
+    {
+      "anchor": "project-new",
+      "at": 3588.9000000059605,
+      "href": "/projects/new",
+      "prevented": false,
+      "target": "project-new",
+      "trusted": true,
+      "type": "mousedown",
+      "url": ""
+    },
+    {
+      "anchor": "project-new",
+      "at": 3590.1000000089407,
+      "href": "/projects/new",
+      "prevented": false,
+      "target": "project-new",
+      "trusted": true,
+      "type": "mouseup",
+      "url": ""
+    },
+    {
+      "anchor": "project-new",
+      "at": 3590.20000000298,
+      "href": "/projects/new",
+      "prevented": false,
+      "target": "project-new",
+      "trusted": true,
+      "type": "click",
+      "url": ""
+    },
+    {
+      "anchor": "project-new",
+      "at": 3591,
+      "href": "/projects/new",
+      "prevented": false,
+      "target": "project-new",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/projects/new"
+    },
+    {
+      "at": 3591,
+      "prevented": false,
+      "target": "project-modal",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/projects/new"
+    },
+    {
+      "at": 3609.300000011921,
+      "prevented": false,
+      "status": 200,
+      "target": "project-modal",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/projects/new"
+    },
+    {
+      "at": 3733.300000011921,
+      "prevented": false,
+      "status": 200,
+      "target": "project-modal",
+      "trusted": false,
+      "type": "turbo:frame-render",
+      "url": "http://127.0.0.1:3126/projects/new"
+    },
+    {
+      "at": 3733.300000011921,
+      "prevented": false,
+      "target": "project-modal",
+      "trusted": false,
+      "type": "turbo:frame-load",
+      "url": ""
+    },
+    {
+      "at": 3874.1000000089407,
+      "prevented": false,
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": ""
+    },
+    {
+      "at": 3874.1000000089407,
+      "prevented": false,
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "mousedown",
+      "url": ""
+    },
+    {
+      "at": 3875.900000005961,
+      "prevented": false,
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "mouseup",
+      "url": ""
+    },
+    {
+      "at": 3876,
+      "prevented": false,
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "click",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 4279.300000011921,
+      "href": "/tasks",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 4279.300000011921,
+      "href": "/tasks",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "mousedown",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 4280.20000000298,
+      "href": "/tasks",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "mouseup",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 4280.20000000298,
+      "href": "/tasks",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "click",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 4280.70000000298,
+      "href": "/tasks",
+      "prevented": false,
+      "target": "A",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/tasks"
+    },
+    {
+      "at": 4280.70000000298,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-visit",
+      "url": "http://127.0.0.1:3126/tasks"
+    },
+    {
+      "at": 4281,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/tasks"
+    },
+    {
+      "at": 4307.800000011921,
+      "prevented": false,
+      "status": 200,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/tasks"
+    },
+    {
+      "at": 4331,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:load",
+      "url": "http://127.0.0.1:3126/tasks"
+    },
+    {
+      "anchor": "task-new",
+      "at": 4538.9000000059605,
+      "href": "/tasks/new",
+      "prevented": false,
+      "target": "task-new",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": ""
+    },
+    {
+      "anchor": "task-new",
+      "at": 4539,
+      "href": "/tasks/new",
+      "prevented": false,
+      "target": "task-new",
+      "trusted": true,
+      "type": "mousedown",
+      "url": ""
+    },
+    {
+      "anchor": "task-new",
+      "at": 4539.70000000298,
+      "href": "/tasks/new",
+      "prevented": false,
+      "target": "task-new",
+      "trusted": true,
+      "type": "mouseup",
+      "url": ""
+    },
+    {
+      "anchor": "task-new",
+      "at": 4539.800000011921,
+      "href": "/tasks/new",
+      "prevented": false,
+      "target": "task-new",
+      "trusted": true,
+      "type": "click",
+      "url": ""
+    },
+    {
+      "anchor": "task-new",
+      "at": 4540.5,
+      "href": "/tasks/new",
+      "prevented": false,
+      "target": "task-new",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/tasks/new"
+    },
+    {
+      "at": 4540.600000008941,
+      "prevented": false,
+      "target": "task-modal",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/tasks/new"
+    },
+    {
+      "at": 4569.70000000298,
+      "prevented": false,
+      "status": 200,
+      "target": "task-modal",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/tasks/new"
+    },
+    {
+      "at": 4763.5,
+      "prevented": false,
+      "status": 200,
+      "target": "task-modal",
+      "trusted": false,
+      "type": "turbo:frame-render",
+      "url": "http://127.0.0.1:3126/tasks/new"
+    },
+    {
+      "at": 4763.600000008941,
+      "prevented": false,
+      "target": "task-modal",
+      "trusted": false,
+      "type": "turbo:frame-load",
+      "url": ""
+    },
+    {
+      "at": 4844.70000000298,
+      "prevented": false,
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": ""
+    },
+    {
+      "at": 4844.70000000298,
+      "prevented": false,
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "mousedown",
+      "url": ""
+    },
+    {
+      "at": 4846.70000000298,
+      "prevented": false,
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "mouseup",
+      "url": ""
+    },
+    {
+      "at": 4846.70000000298,
+      "prevented": false,
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "click",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 5212.20000000298,
+      "href": "/projects",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 5212.20000000298,
+      "href": "/projects",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "mousedown",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 5213,
+      "href": "/projects",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "mouseup",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 5213.100000008941,
+      "href": "/projects",
+      "prevented": false,
+      "target": "svg",
+      "trusted": true,
+      "type": "click",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 5213.600000008941,
+      "href": "/projects",
+      "prevented": false,
+      "target": "A",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 5213.70000000298,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-visit",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 5213.9000000059605,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 5241.70000000298,
+      "prevented": false,
+      "status": 200,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 5284.300000011921,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:load",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "anchor": "",
+      "at": 5493.70000000298,
+      "href": "/projects/u-NDI5MTRmNDAtODkwZS00YTA5LTgxZmEtY2YwNGFkMGVjMTJj",
+      "prevented": false,
+      "target": "A",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 5493.70000000298,
+      "href": "/projects/u-NDI5MTRmNDAtODkwZS00YTA5LTgxZmEtY2YwNGFkMGVjMTJj",
+      "prevented": false,
+      "target": "A",
+      "trusted": true,
+      "type": "mousedown",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 5494.5,
+      "href": "/projects/u-NDI5MTRmNDAtODkwZS00YTA5LTgxZmEtY2YwNGFkMGVjMTJj",
+      "prevented": false,
+      "target": "A",
+      "trusted": true,
+      "type": "mouseup",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 5494.5,
+      "href": "/projects/u-NDI5MTRmNDAtODkwZS00YTA5LTgxZmEtY2YwNGFkMGVjMTJj",
+      "prevented": false,
+      "target": "A",
+      "trusted": true,
+      "type": "click",
+      "url": ""
+    },
+    {
+      "anchor": "",
+      "at": 5495,
+      "href": "/projects/u-NDI5MTRmNDAtODkwZS00YTA5LTgxZmEtY2YwNGFkMGVjMTJj",
+      "prevented": false,
+      "target": "A",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/projects/u-NDI5MTRmNDAtODkwZS00YTA5LTgxZmEtY2YwNGFkMGVjMTJj"
+    },
+    {
+      "at": 5495,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-visit",
+      "url": "http://127.0.0.1:3126/projects/u-NDI5MTRmNDAtODkwZS00YTA5LTgxZmEtY2YwNGFkMGVjMTJj"
+    },
+    {
+      "at": 5495.100000008941,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/projects/u-NDI5MTRmNDAtODkwZS00YTA5LTgxZmEtY2YwNGFkMGVjMTJj"
+    },
+    {
+      "at": 5531.300000011921,
+      "prevented": false,
+      "status": 200,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/projects/u-NDI5MTRmNDAtODkwZS00YTA5LTgxZmEtY2YwNGFkMGVjMTJj"
+    },
+    {
+      "at": 5563.5,
+      "prevented": false,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:load",
+      "url": "http://127.0.0.1:3126/projects/u-NDI5MTRmNDAtODkwZS00YTA5LTgxZmEtY2YwNGFkMGVjMTJj"
+    },
+    {
+      "at": 5797.9000000059605,
+      "prevented": false,
+      "target": "DIV",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": ""
+    },
+    {
+      "at": 5797.9000000059605,
+      "prevented": false,
+      "target": "DIV",
+      "trusted": true,
+      "type": "mousedown",
+      "url": ""
+    },
+    {
+      "at": 5799.4000000059605,
+      "prevented": false,
+      "target": "DIV",
+      "trusted": true,
+      "type": "mouseup",
+      "url": ""
+    },
+    {
+      "at": 5799.4000000059605,
+      "prevented": false,
+      "target": "DIV",
+      "trusted": true,
+      "type": "click",
+      "url": ""
+    }
+  ],
+  "resources": [
+    {
+      "name": "http://127.0.0.1:3126/assets/fonts-ee58b1e6.css",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/studio-a13f5654.css",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/foundation-7e4c5a55.css",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/application-b04af299.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/turbo.min-9fd88cd5.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/stimulus.min-4b1e420e.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/focus_client-b3d0adfb.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/focus_controller-a5beda08.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/focus_presenter-c6df1b3f.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/focus_preset-53e1d4a9.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/focus_recovery-9fdaee90.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/project_command_controller-7ae00cce.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/project_form_controller-865ee3ed.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/project_library_controller-35614553.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/project_modal_controller-16e75a07.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/project_tabs_controller-0efd12d3.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/project_ui-5a382433.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/reference_form_controller-c0052d6a.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/reference_modal_controller-8ab88231.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/studio_controller-a98ada62.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/task_command_controller-bda07879.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/task_form_controller-4b65f203.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/task_modal_controller-055c794c.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/task_search_controller-86ac6be6.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/task_ui-6ee0495a.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-b0ae3e89a7d3-e61ddb36.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-df54dbfafba6-cc912ac2.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-b79a2ea7a38f-6abe779a.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-3e756954468f-83543eaf.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-2a8e7f713ee7-e810d4d0.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/favicon.ico",
+      "status": 404
+    },
+    {
+      "name": "http://127.0.0.1:3126/session",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/appearance/bootstrap",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-ec926d5065ea-6314b4bf.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-44ce4a84f20d-beeade6b.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-3386a05f6ece-d7dadb40.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-6c0346b8d297-702df1df.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-3e699ead1876-ae3c5b54.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/focus/state",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/fonts-ee58b1e6.css",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/studio-a13f5654.css",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/foundation-7e4c5a55.css",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/focus/state",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/focus/state",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects/new",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/focus/state",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects/new",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/tasks",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/focus/state",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/tasks/new",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/tasks",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/tasks",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/focus/state",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects/u-NDI5MTRmNDAtODkwZS00YTA5LTgxZmEtY2YwNGFkMGVjMTJj",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/focus/state",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/focus/state",
+      "status": 200
+    }
+  ],
+  "state": {
+    "anchor": {
+      "connected": true,
+      "frame": "task-modal",
+      "href": "/projects/u-NDI5MTRmNDAtODkwZS00YTA5LTgxZmEtY2YwNGFkMGVjMTJj/tasks/new",
+      "id": "task-new-context",
+      "rect": {
+        "height": 16,
+        "width": 454,
+        "x": 146,
+        "y": 548.078125
+      },
+      "text": " Adicionar tarefa"
+    },
+    "busy": false,
+    "dialogs": [
+      {
+        "id": "customize",
+        "open": false,
+        "task": false
+      },
+      {
+        "id": "search",
+        "open": false,
+        "task": false
+      },
+      {
+        "id": "demo",
+        "open": false,
+        "task": false
+      },
+      {
+        "id": "",
+        "open": false,
+        "task": false
+      }
+    ],
+    "focus": "main-content",
+    "frame": {
+      "busy": false,
+      "complete": false,
+      "src": null
+    },
+    "path": "/projects/u-NDI5MTRmNDAtODkwZS00YTA5LTgxZmEtY2YwNGFkMGVjMTJj",
+    "preview": false,
+    "ready": "true"
+  }
+}

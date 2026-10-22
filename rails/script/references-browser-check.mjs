@@ -24,6 +24,9 @@ const saved=()=>b('wait','--fn',"document.querySelector('[data-save-status]').hi
 const screenshot=name=>b('screenshot',resolve(evidence,`${name}.png`));
 function scenario(name,check){if(scenarioIndex++<resume)return;check();assert.deepEqual(evaluate('window.__qaErrors || []'),[]);results.push({name,result:'PASS'});writeFileSync(resolve(output,'results.json'),JSON.stringify(results,null,2));writeFileSync(resolve(workspace,'browser-progress.json'),JSON.stringify({project,other,link,material,contextual,personal}));console.log(`PASS ${name}`);}
 const click=selector=>{
+ // Do not start a second smooth scroll before the contextual link's native click.
+ // The CLI already scrolls when needed; a cached point can miss this short link.
+ if(selector==='#task-new-context'){b('snapshot','-i');b('click',selector);return;}
  b('snapshot','-i');b('scrollintoview',selector);
  evaluate('window.__qaStablePoint=null;true');
  b('wait','--fn',`(()=>{const el=document.querySelector(${JSON.stringify(selector)});if(!el)return false;const r=el.getBoundingClientRect(),key=[r.left,r.top,r.width,r.height].join('|'),old=window.__qaStablePoint;window.__qaStablePoint=key;return old===key && el.contains(document.elementFromPoint(r.left+r.width/2,r.top+r.height/2))})()`);

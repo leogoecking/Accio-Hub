@@ -1,0 +1,64 @@
+{
+  "branch": "p1-persistence",
+  "head": "07bb2cff06169224a1e07b584e6ececc5f88b357",
+  "F2b_committed": false,
+  "index_empty": true,
+  "previous_evidence_files_identical": 192,
+  "only_production_change": "rails/app/services/project_commands.rb: String guard",
+  "protected_paths_unchanged": [
+    "rails/app/models",
+    "rails/db",
+    "rails/config",
+    "rails/lib",
+    "rails/app/controllers",
+    "rails/app/views",
+    "rails/app/assets",
+    "rails/app/javascript",
+    "prototype",
+    "rails/app/services/focus_commands.rb",
+    "rails/app/services/focus_time.rb",
+    "rails/app/services/appearance_preferences.rb",
+    "rails/app/services/reference_commands.rb"
+  ],
+  "D3_assertions_before": 55,
+  "D3_assertions_after": 55,
+  "D3_cases_passed": 33,
+  "F2a_browser_cases_passed": 7,
+  "transversal_browser_cases_passed": 9,
+  "rails": {
+    "tests": 148,
+    "assertions": 3050,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0
+  },
+  "http_transversal": {
+    "tests": 14,
+    "assertions": 460
+  },
+  "js_cases_passed": 41,
+  "javascript_syntax_files": 74,
+  "sql": {
+    "triggers": 25,
+    "indexes": 36,
+    "tests_per_preparation": 21,
+    "assertions_per_preparation": 243
+  },
+  "diff_check": "PASS",
+  "sensitive_hits": [],
+  "new_whitespace_hits": [],
+  "report_links_checked": true,
+  "qa_server_stopped": true,
+  "source_sha256": {
+    "rails/app/services/project_commands.rb": "6db9cd6b5289f8e3e92011cc48514be5ad02f4e8b77da498663d3738906097ca",
+    "rails/script/references-browser-check.mjs": "500eb30e9260cdeeb679b468d703e066c6167680a112db63e1e5f80c3d7b1182",
+    "rails/test/integration/transversal_security_test.rb": "5cbc0cf8adcc0355c5290b399dd8d852120e7a296ab1e7a68a96cb7de7a46882",
+    "rails/script/transversal-browser-check.mjs": "6380a1cabbfc223d9d5488cff04cd61084870a3a8e79e94acdd8fad25c095009",
+    "rails/script/reference-context-compare.mjs": "02ba0a119c77e84c6ae0456788be811c79e5642dc13bf4aecc7a12e1872a0426",
+    "rails/script/reference-context-diagnose.mjs": "0fd7d7c946d0bd9a5c4975d55883a29c55b0e481c59e569bf884d39adb3114e8",
+    "rails/script/transversal-sql-check.rb": "4d5d52cb63a552fefdca25a9f435b88c6f7e97bcf8833ba39c9cfe8f7c768df8",
+    "rails/test/models/transversal_identity_test.rb": "4a745874a74a8e9bfbb0292e33bd5f7a97a9b035fb66e7ba0f58b52836490578"
+  },
+  "tag_push_merge": false,
+  "future_F3_F4_F5_started": false
+}

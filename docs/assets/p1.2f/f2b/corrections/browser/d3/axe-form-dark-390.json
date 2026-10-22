@@ -1,0 +1,117 @@
+{
+  "axeVersion": "4.12.1",
+  "counts": {
+    "inapplicable": 64,
+    "incomplete": 1,
+    "passes": 24,
+    "violations": 0
+  },
+  "incomplete": [
+    {
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axeAPI",
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodeCount": 13,
+      "nodes": [
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<h2 id=\"reference-dialog-title\">Nova referência</h2>",
+          "target": [
+            "#reference-dialog-title"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<label for=\"reference-title\">Título<input id=\"reference-title\" required=\"required\" maxlength=\"120\" autocomplete=\"off\" autofocus=\"autofocus\" size=\"120\" type=\"text\" name=\"reference[title]\"></label>",
+          "target": [
+            "label[for=\"reference-title\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<input id=\"reference-title\" required=\"required\" maxlength=\"120\" autocomplete=\"off\" autofocus=\"autofocus\" size=\"120\" type=\"text\" name=\"reference[title]\">",
+          "target": [
+            "#reference-title"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<label for=\"reference-kind\">Tipo<select id=\"reference-kind\" name=\"reference[kind]\"><option selected=\"selected\" value=\"link\">Link</option>\n<option value=\"material\">Material</option></select></label>",
+          "target": [
+            "label[for=\"reference-kind\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<select id=\"reference-kind\" name=\"reference[kind]\"><option selected=\"selected\" value=\"link\">Link</option>\n<option value=\"material\">Material</option></select>",
+          "target": [
+            "#reference-kind"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<label for=\"reference-url\">URL <span class=\"project-optional\">obrigatória para links</span><input value=\"\" id=\"reference-url\" placeholder=\"https://\" required=\"\" type=\"url\" name=\"reference[url]\"></label>",
+          "target": [
+            "label[for=\"reference-url\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<span class=\"project-optional\">obrigatória para links</span>",
+          "target": [
+            ".project-optional"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<input value=\"\" id=\"reference-url\" placeholder=\"https://\" required=\"\" type=\"url\" name=\"reference[url]\">",
+          "target": [
+            "#reference-url"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<label for=\"reference-description\">Descrição do material ou link<textarea id=\"reference-description\" maxlength=\"2000\" rows=\"3\" name=\"reference[description]\"></textarea></label>",
+          "target": [
+            "label[for=\"reference-description\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<textarea id=\"reference-description\" maxlength=\"2000\" rows=\"3\" name=\"reference[description]\"></textarea>",
+          "target": [
+            "#reference-description"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ]
+    }
+  ],
+  "lifecycle": {
+    "effectiveLaunch": {
+      "browserLaunched": true,
+      "engine": "chrome",
+      "launchHash": 831408166877967500
+    },
+    "launched": false,
+    "relaunchedBrowser": false,
+    "restartedBackground": false,
+    "restoreStatus": "not_configured",
+    "reused": true,
+    "saveStatus": "not_attempted"
+  },
+  "url": "http://127.0.0.1:3126/projects/u-NWY1MjFlZmUtMTBlZS00ZjJkLTlkNjgtYzVmNTY5NThmYzRi?tab=references",
+  "violations": []
+}

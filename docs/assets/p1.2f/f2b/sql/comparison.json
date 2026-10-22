@@ -1,0 +1,8 @@
+{
+  "exact_objects_sql_and_semantic_fk_and_pragmas_match": true,
+  "fk_internal_id_order_differs": true,
+  "triggers": 25,
+  "indexes": 36,
+  "independent_migrations_and_schema_load": true,
+  "integrity": "ok"
+}

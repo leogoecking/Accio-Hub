@@ -1,0 +1,32 @@
+{
+  "human_actions": [
+    "Conferir intervalo",
+    "Aceitar estimativa e continuar"
+  ],
+  "count": 2,
+  "checkpoint": 30,
+  "server_candidate": 1230,
+  "remaining": 270,
+  "same_uid": true,
+  "completed_automatically": false,
+  "commands": [
+    {
+      "command_id": "809e7829-cd85-46f2-a720-809a25386858",
+      "kind": "pause",
+      "parameters": {
+        "action": "resolve",
+        "decision": "accept_estimate",
+        "recovery_id": 10
+      },
+      "version": 4
+    },
+    {
+      "command_id": "f551c03c-71fa-4e12-bc18-8b3b6dafb043",
+      "kind": "start",
+      "parameters": {
+        "action": "resume"
+      },
+      "version": 5
+    }
+  ]
+}

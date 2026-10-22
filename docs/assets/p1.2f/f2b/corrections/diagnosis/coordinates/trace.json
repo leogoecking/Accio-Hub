@@ -1,0 +1,5224 @@
+{
+  "errors": [],
+  "events": [
+    {
+      "at": 293.79999999701977,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [],
+        "focus": "email_address",
+        "frame": null,
+        "path": "/session/new",
+        "preview": false
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:load",
+      "url": "http://127.0.0.1:3126/session/new"
+    },
+    {
+      "at": 462.70000000298023,
+      "classes": "button",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [],
+        "focus": "email_address",
+        "frame": null,
+        "path": "/session/new",
+        "preview": false
+      },
+      "target": "INPUT",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": "",
+      "x": 640,
+      "y": 414
+    },
+    {
+      "at": 462.70000000298023,
+      "classes": "button",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [],
+        "focus": "email_address",
+        "frame": null,
+        "path": "/session/new",
+        "preview": false
+      },
+      "target": "INPUT",
+      "trusted": true,
+      "type": "mousedown",
+      "url": "",
+      "x": 640,
+      "y": 414
+    },
+    {
+      "at": 464.1000000089407,
+      "classes": "button",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [],
+        "focus": "",
+        "frame": null,
+        "path": "/session/new",
+        "preview": false
+      },
+      "target": "INPUT",
+      "trusted": true,
+      "type": "mouseup",
+      "url": "",
+      "x": 640,
+      "y": 414
+    },
+    {
+      "at": 464.1000000089407,
+      "classes": "button",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [],
+        "focus": "",
+        "frame": null,
+        "path": "/session/new",
+        "preview": false
+      },
+      "target": "INPUT",
+      "trusted": true,
+      "type": "click",
+      "url": "",
+      "x": 640,
+      "y": 414
+    },
+    {
+      "at": 469.79999999701977,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [],
+        "focus": "",
+        "frame": null,
+        "path": "/session/new",
+        "preview": false
+      },
+      "target": "FORM",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/session"
+    },
+    {
+      "at": 1185.2000000029802,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [],
+        "focus": "",
+        "frame": null,
+        "path": "/session/new",
+        "preview": false
+      },
+      "status": 200,
+      "target": "FORM",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/"
+    },
+    {
+      "at": 1186.7000000029802,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [],
+        "focus": "",
+        "frame": null,
+        "path": "/session/new",
+        "preview": false
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-visit",
+      "url": "http://127.0.0.1:3126/"
+    },
+    {
+      "at": 1305.1000000089407,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:load",
+      "url": "http://127.0.0.1:3126/"
+    },
+    {
+      "anchor": "",
+      "at": 1426.1000000089407,
+      "classes": "dock-tile",
+      "href": "/apps/calendar",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "A",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/apps/calendar"
+    },
+    {
+      "anchor": "",
+      "at": 1450.4000000059605,
+      "classes": "dock-tile",
+      "href": "/apps/calendar",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/",
+        "preview": false,
+        "ready": "true"
+      },
+      "status": 200,
+      "target": "A",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/apps/calendar"
+    },
+    {
+      "anchor": "",
+      "at": 1743.7999999970198,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": "",
+      "x": 37.5,
+      "y": 338.5
+    },
+    {
+      "anchor": "",
+      "at": 1744.7000000029802,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "mousedown",
+      "url": "",
+      "x": 37,
+      "y": 338
+    },
+    {
+      "anchor": "",
+      "at": 1746.1000000089407,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "mouseup",
+      "url": "",
+      "x": 37,
+      "y": 338
+    },
+    {
+      "anchor": "",
+      "at": 1746.2000000029802,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "click",
+      "url": "",
+      "x": 37,
+      "y": 338
+    },
+    {
+      "anchor": "",
+      "at": 1747.7999999970198,
+      "classes": "rail-icon ",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "A",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 1748,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-visit",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 1748.4000000059605,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 1796.5,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": true,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/",
+        "preview": false,
+        "ready": "true"
+      },
+      "status": 200,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 1864.79999999702,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:load",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "anchor": "",
+      "at": 2343.79999999702,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": "",
+      "x": 37.5,
+      "y": 337.5
+    },
+    {
+      "anchor": "",
+      "at": 2343.79999999702,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "mousedown",
+      "url": "",
+      "x": 37,
+      "y": 337
+    },
+    {
+      "anchor": "",
+      "at": 2344.6000000089407,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "mouseup",
+      "url": "",
+      "x": 37,
+      "y": 337
+    },
+    {
+      "anchor": "",
+      "at": 2344.79999999702,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "click",
+      "url": "",
+      "x": 37,
+      "y": 337
+    },
+    {
+      "anchor": "",
+      "at": 2345.1000000089407,
+      "classes": "rail-icon active",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "A",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 2345.20000000298,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-visit",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 2345.5,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 2373.4000000059605,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": true,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "status": 200,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 2386,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:load",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "anchor": "project-new",
+      "at": 2611.70000000298,
+      "classes": "button",
+      "href": "/projects/new",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "project-new",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": "",
+      "x": 1347.8984375,
+      "y": 232.6875
+    },
+    {
+      "anchor": "project-new",
+      "at": 2611.79999999702,
+      "classes": "button",
+      "href": "/projects/new",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "project-new",
+      "trusted": true,
+      "type": "mousedown",
+      "url": "",
+      "x": 1347,
+      "y": 232
+    },
+    {
+      "anchor": "project-new",
+      "at": 2613.1000000089407,
+      "classes": "button",
+      "href": "/projects/new",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "project-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "project-new",
+      "trusted": true,
+      "type": "mouseup",
+      "url": "",
+      "x": 1347,
+      "y": 232
+    },
+    {
+      "anchor": "project-new",
+      "at": 2613.20000000298,
+      "classes": "button",
+      "href": "/projects/new",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "project-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "project-new",
+      "trusted": true,
+      "type": "click",
+      "url": "",
+      "x": 1347,
+      "y": 232
+    },
+    {
+      "anchor": "project-new",
+      "at": 2614.1000000089407,
+      "classes": "button",
+      "href": "/projects/new",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "project-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "project-new",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/projects/new"
+    },
+    {
+      "at": 2614.70000000298,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "project-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "project-modal",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/projects/new"
+    },
+    {
+      "at": 2636.1000000089407,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "project-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "status": 200,
+      "target": "project-modal",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/projects/new"
+    },
+    {
+      "at": 2682.20000000298,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": false
+          }
+        ],
+        "focus": "project-name",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "status": 200,
+      "target": "project-modal",
+      "trusted": false,
+      "type": "turbo:frame-render",
+      "url": "http://127.0.0.1:3126/projects/new"
+    },
+    {
+      "at": 2682.20000000298,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": false
+          }
+        ],
+        "focus": "project-name",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "project-modal",
+      "trusted": false,
+      "type": "turbo:frame-load",
+      "url": ""
+    },
+    {
+      "at": 2889.5,
+      "classes": "button",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": false
+          }
+        ],
+        "focus": "project-name",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": "",
+      "x": 850,
+      "y": 775.75
+    },
+    {
+      "at": 2889.70000000298,
+      "classes": "button",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": false
+          }
+        ],
+        "focus": "project-name",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "mousedown",
+      "url": "",
+      "x": 850,
+      "y": 775
+    },
+    {
+      "at": 2891.4000000059605,
+      "classes": "button",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "mouseup",
+      "url": "",
+      "x": 850,
+      "y": 775
+    },
+    {
+      "at": 2891.6000000089407,
+      "classes": "button",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "click",
+      "url": "",
+      "x": 850,
+      "y": 775
+    },
+    {
+      "anchor": "",
+      "at": 3258.9000000059605,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "project-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": "",
+      "x": 37.5,
+      "y": 338.5
+    },
+    {
+      "anchor": "",
+      "at": 3259,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "project-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "mousedown",
+      "url": "",
+      "x": 37,
+      "y": 338
+    },
+    {
+      "anchor": "",
+      "at": 3259.9000000059605,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "mouseup",
+      "url": "",
+      "x": 37,
+      "y": 338
+    },
+    {
+      "anchor": "",
+      "at": 3260.1000000089407,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "click",
+      "url": "",
+      "x": 37,
+      "y": 338
+    },
+    {
+      "anchor": "",
+      "at": 3260.6000000089407,
+      "classes": "rail-icon active",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "A",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 3260.70000000298,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-visit",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 3261,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 3284.79999999702,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": true,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "status": 200,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 3307.5,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:load",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "anchor": "project-new",
+      "at": 3543.1000000089407,
+      "classes": "button",
+      "href": "/projects/new",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "project-new",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": "",
+      "x": 1347.8984375,
+      "y": 232.6875
+    },
+    {
+      "anchor": "project-new",
+      "at": 3543.1000000089407,
+      "classes": "button",
+      "href": "/projects/new",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "project-new",
+      "trusted": true,
+      "type": "mousedown",
+      "url": "",
+      "x": 1347,
+      "y": 232
+    },
+    {
+      "anchor": "project-new",
+      "at": 3544.4000000059605,
+      "classes": "button",
+      "href": "/projects/new",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "project-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "project-new",
+      "trusted": true,
+      "type": "mouseup",
+      "url": "",
+      "x": 1347,
+      "y": 232
+    },
+    {
+      "anchor": "project-new",
+      "at": 3544.4000000059605,
+      "classes": "button",
+      "href": "/projects/new",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "project-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "project-new",
+      "trusted": true,
+      "type": "click",
+      "url": "",
+      "x": 1347,
+      "y": 232
+    },
+    {
+      "anchor": "project-new",
+      "at": 3545,
+      "classes": "button",
+      "href": "/projects/new",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "project-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "project-new",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/projects/new"
+    },
+    {
+      "at": 3545.1000000089407,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "project-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "project-modal",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/projects/new"
+    },
+    {
+      "at": 3564.6000000089407,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "project-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "status": 200,
+      "target": "project-modal",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/projects/new"
+    },
+    {
+      "at": 3619.400000005961,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": false
+          }
+        ],
+        "focus": "project-name",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "status": 200,
+      "target": "project-modal",
+      "trusted": false,
+      "type": "turbo:frame-render",
+      "url": "http://127.0.0.1:3126/projects/new"
+    },
+    {
+      "at": 3619.6000000089407,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": false
+          }
+        ],
+        "focus": "project-name",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "project-modal",
+      "trusted": false,
+      "type": "turbo:frame-load",
+      "url": ""
+    },
+    {
+      "at": 3901.900000005961,
+      "classes": "button",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": false
+          }
+        ],
+        "focus": "project-name",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": "",
+      "x": 850,
+      "y": 775.75
+    },
+    {
+      "at": 3902,
+      "classes": "button",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": false
+          }
+        ],
+        "focus": "project-name",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "mousedown",
+      "url": "",
+      "x": 850,
+      "y": 775
+    },
+    {
+      "at": 3903.6000000089407,
+      "classes": "button",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "mouseup",
+      "url": "",
+      "x": 850,
+      "y": 775
+    },
+    {
+      "at": 3903.79999999702,
+      "classes": "button",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "click",
+      "url": "",
+      "x": 850,
+      "y": 775
+    },
+    {
+      "anchor": "",
+      "at": 4282.100000008941,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/tasks",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "project-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": "",
+      "x": 37.5,
+      "y": 176.5
+    },
+    {
+      "anchor": "",
+      "at": 4282.100000008941,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/tasks",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "project-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "mousedown",
+      "url": "",
+      "x": 37,
+      "y": 176
+    },
+    {
+      "anchor": "",
+      "at": 4283.20000000298,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/tasks",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "mouseup",
+      "url": "",
+      "x": 37,
+      "y": 176
+    },
+    {
+      "anchor": "",
+      "at": 4283.29999999702,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/tasks",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "click",
+      "url": "",
+      "x": 37,
+      "y": 176
+    },
+    {
+      "anchor": "",
+      "at": 4283.79999999702,
+      "classes": "rail-icon ",
+      "href": "/tasks",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "A",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/tasks"
+    },
+    {
+      "at": 4283.9000000059605,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-visit",
+      "url": "http://127.0.0.1:3126/tasks"
+    },
+    {
+      "at": 4284.100000008941,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/tasks"
+    },
+    {
+      "at": 4308,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": true,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "status": 200,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/tasks"
+    },
+    {
+      "at": 4330.100000008941,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "tasks-title",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:load",
+      "url": "http://127.0.0.1:3126/tasks"
+    },
+    {
+      "anchor": "task-new",
+      "at": 4556.79999999702,
+      "classes": "add-row",
+      "href": "/tasks/new",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "tasks-title",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "task-new",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": "",
+      "x": 758,
+      "y": 467.78125
+    },
+    {
+      "anchor": "task-new",
+      "at": 4556.79999999702,
+      "classes": "add-row",
+      "href": "/tasks/new",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "tasks-title",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "task-new",
+      "trusted": true,
+      "type": "mousedown",
+      "url": "",
+      "x": 758,
+      "y": 467
+    },
+    {
+      "anchor": "task-new",
+      "at": 4558.20000000298,
+      "classes": "add-row",
+      "href": "/tasks/new",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "task-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "task-new",
+      "trusted": true,
+      "type": "mouseup",
+      "url": "",
+      "x": 758,
+      "y": 467
+    },
+    {
+      "anchor": "task-new",
+      "at": 4558.29999999702,
+      "classes": "add-row",
+      "href": "/tasks/new",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "task-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "task-new",
+      "trusted": true,
+      "type": "click",
+      "url": "",
+      "x": 758,
+      "y": 467
+    },
+    {
+      "anchor": "task-new",
+      "at": 4559,
+      "classes": "add-row",
+      "href": "/tasks/new",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "task-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "task-new",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/tasks/new"
+    },
+    {
+      "at": 4559.100000008941,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "task-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": "http://127.0.0.1:3126/tasks/new"
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "task-modal",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/tasks/new"
+    },
+    {
+      "at": 4587.79999999702,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "task-new",
+        "frame": {
+          "busy": true,
+          "complete": false,
+          "src": "http://127.0.0.1:3126/tasks/new"
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "status": 200,
+      "target": "task-modal",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/tasks/new"
+    },
+    {
+      "at": 4793.29999999702,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": true
+          }
+        ],
+        "focus": "task-title",
+        "frame": {
+          "busy": false,
+          "complete": true,
+          "src": "http://127.0.0.1:3126/tasks/new"
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "status": 200,
+      "target": "task-modal",
+      "trusted": false,
+      "type": "turbo:frame-render",
+      "url": "http://127.0.0.1:3126/tasks/new"
+    },
+    {
+      "at": 4793.4000000059605,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": true
+          }
+        ],
+        "focus": "task-title",
+        "frame": {
+          "busy": false,
+          "complete": true,
+          "src": "http://127.0.0.1:3126/tasks/new"
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "task-modal",
+      "trusted": false,
+      "type": "turbo:frame-load",
+      "url": ""
+    },
+    {
+      "at": 4879.70000000298,
+      "classes": "button",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": true
+          }
+        ],
+        "focus": "task-title",
+        "frame": {
+          "busy": false,
+          "complete": true,
+          "src": "http://127.0.0.1:3126/tasks/new"
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": "",
+      "x": 827.5,
+      "y": 665.015625
+    },
+    {
+      "at": 4879.79999999702,
+      "classes": "button",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": true
+          }
+        ],
+        "focus": "task-title",
+        "frame": {
+          "busy": false,
+          "complete": true,
+          "src": "http://127.0.0.1:3126/tasks/new"
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "mousedown",
+      "url": "",
+      "x": 827,
+      "y": 665
+    },
+    {
+      "at": 4881.5,
+      "classes": "button",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": true
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": true,
+          "src": "http://127.0.0.1:3126/tasks/new"
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "mouseup",
+      "url": "",
+      "x": 827,
+      "y": 665
+    },
+    {
+      "at": 4881.600000008941,
+      "classes": "button",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": true,
+            "task": true
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": true,
+          "src": "http://127.0.0.1:3126/tasks/new"
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "BUTTON",
+      "trusted": true,
+      "type": "click",
+      "url": "",
+      "x": 827,
+      "y": 665
+    },
+    {
+      "anchor": "",
+      "at": 5255.9000000059605,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "task-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": "",
+      "x": 37.5,
+      "y": 338.5
+    },
+    {
+      "anchor": "",
+      "at": 5256.100000008941,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "task-new",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "mousedown",
+      "url": "",
+      "x": 37,
+      "y": 338
+    },
+    {
+      "anchor": "",
+      "at": 5257.29999999702,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "mouseup",
+      "url": "",
+      "x": 37,
+      "y": 338
+    },
+    {
+      "anchor": "",
+      "at": 5257.4000000059605,
+      "classes": "[object SVGAnimatedString]",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "svg",
+      "trusted": true,
+      "type": "click",
+      "url": "",
+      "x": 37,
+      "y": 338
+    },
+    {
+      "anchor": "",
+      "at": 5257.79999999702,
+      "classes": "rail-icon ",
+      "href": "/projects",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "A",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 5257.9000000059605,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-visit",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 5258.20000000298,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 5289,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": true,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/tasks",
+        "preview": false,
+        "ready": "true"
+      },
+      "status": 200,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "at": 5330.79999999702,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:load",
+      "url": "http://127.0.0.1:3126/projects"
+    },
+    {
+      "anchor": "",
+      "at": 5534,
+      "classes": "project-space-link",
+      "href": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "A",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": "",
+      "x": 1088.75,
+      "y": 559.8828125
+    },
+    {
+      "anchor": "",
+      "at": 5534.100000008941,
+      "classes": "project-space-link",
+      "href": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "A",
+      "trusted": true,
+      "type": "mousedown",
+      "url": "",
+      "x": 1088,
+      "y": 559
+    },
+    {
+      "anchor": "",
+      "at": 5535,
+      "classes": "project-space-link",
+      "href": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "A",
+      "trusted": true,
+      "type": "mouseup",
+      "url": "",
+      "x": 1088,
+      "y": 559
+    },
+    {
+      "anchor": "",
+      "at": 5535.100000008941,
+      "classes": "project-space-link",
+      "href": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "A",
+      "trusted": true,
+      "type": "click",
+      "url": "",
+      "x": 1088,
+      "y": 559
+    },
+    {
+      "anchor": "",
+      "at": 5535.600000008941,
+      "classes": "project-space-link",
+      "href": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "A",
+      "trusted": false,
+      "type": "turbo:click",
+      "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0"
+    },
+    {
+      "at": 5535.600000008941,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-visit",
+      "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0"
+    },
+    {
+      "at": 5535.79999999702,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-request",
+      "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0"
+    },
+    {
+      "at": 5567.600000008941,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": null,
+        "busy": true,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects",
+        "preview": false,
+        "ready": "true"
+      },
+      "status": 200,
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:before-fetch-response",
+      "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0"
+    },
+    {
+      "at": 5598.29999999702,
+      "classes": "",
+      "prevented": false,
+      "state": {
+        "anchor": {
+          "connected": true,
+          "frame": "task-modal",
+          "href": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new",
+          "id": "task-new-context",
+          "rect": {
+            "height": 16,
+            "width": 454,
+            "x": 146,
+            "y": 583.078125
+          },
+          "text": " Adicionar tarefa"
+        },
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "space-title",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "HTML",
+      "trusted": false,
+      "type": "turbo:load",
+      "url": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0"
+    },
+    {
+      "at": 5815.4000000059605,
+      "classes": "space-panel-content",
+      "prevented": false,
+      "state": {
+        "anchor": {
+          "connected": true,
+          "frame": "task-modal",
+          "href": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new",
+          "id": "task-new-context",
+          "rect": {
+            "height": 16,
+            "width": 454,
+            "x": 146,
+            "y": 554.078125
+          },
+          "text": " Adicionar tarefa"
+        },
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "space-title",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "DIV",
+      "trusted": true,
+      "type": "pointerdown",
+      "url": "",
+      "x": 373,
+      "y": 591.078125
+    },
+    {
+      "at": 5815.600000008941,
+      "classes": "space-panel-content",
+      "prevented": false,
+      "state": {
+        "anchor": {
+          "connected": true,
+          "frame": "task-modal",
+          "href": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new",
+          "id": "task-new-context",
+          "rect": {
+            "height": 16,
+            "width": 454,
+            "x": 146,
+            "y": 554.078125
+          },
+          "text": " Adicionar tarefa"
+        },
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "space-title",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "DIV",
+      "trusted": true,
+      "type": "mousedown",
+      "url": "",
+      "x": 373,
+      "y": 591
+    },
+    {
+      "at": 5817.9000000059605,
+      "classes": "space-panel-content",
+      "prevented": false,
+      "state": {
+        "anchor": {
+          "connected": true,
+          "frame": "task-modal",
+          "href": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new",
+          "id": "task-new-context",
+          "rect": {
+            "height": 16,
+            "width": 454,
+            "x": 146,
+            "y": 554.078125
+          },
+          "text": " Adicionar tarefa"
+        },
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "main-content",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "DIV",
+      "trusted": true,
+      "type": "mouseup",
+      "url": "",
+      "x": 373,
+      "y": 591
+    },
+    {
+      "at": 5818,
+      "classes": "space-panel-content",
+      "prevented": false,
+      "state": {
+        "anchor": {
+          "connected": true,
+          "frame": "task-modal",
+          "href": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new",
+          "id": "task-new-context",
+          "rect": {
+            "height": 16,
+            "width": 454,
+            "x": 146,
+            "y": 554.078125
+          },
+          "text": " Adicionar tarefa"
+        },
+        "busy": false,
+        "dialogs": [
+          {
+            "id": "customize",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "search",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "demo",
+            "open": false,
+            "task": false
+          },
+          {
+            "id": "",
+            "open": false,
+            "task": false
+          }
+        ],
+        "focus": "main-content",
+        "frame": {
+          "busy": false,
+          "complete": false,
+          "src": null
+        },
+        "path": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0",
+        "preview": false,
+        "ready": "true"
+      },
+      "target": "DIV",
+      "trusted": true,
+      "type": "click",
+      "url": "",
+      "x": 373,
+      "y": 591
+    }
+  ],
+  "resources": [
+    {
+      "name": "http://127.0.0.1:3126/assets/fonts-ee58b1e6.css",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/studio-a13f5654.css",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/foundation-7e4c5a55.css",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/application-b04af299.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/turbo.min-9fd88cd5.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/stimulus.min-4b1e420e.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/focus_client-b3d0adfb.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/focus_controller-a5beda08.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/focus_presenter-c6df1b3f.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/focus_preset-53e1d4a9.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/focus_recovery-9fdaee90.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/project_command_controller-7ae00cce.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/project_form_controller-865ee3ed.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/project_modal_controller-16e75a07.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/project_library_controller-35614553.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/project_tabs_controller-0efd12d3.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/project_ui-5a382433.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/reference_form_controller-c0052d6a.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/reference_modal_controller-8ab88231.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/studio_controller-a98ada62.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/task_command_controller-bda07879.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/task_form_controller-4b65f203.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/task_modal_controller-055c794c.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/task_search_controller-86ac6be6.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/controllers/task_ui-6ee0495a.js",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-b0ae3e89a7d3-e61ddb36.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-df54dbfafba6-cc912ac2.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-3e756954468f-83543eaf.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-b79a2ea7a38f-6abe779a.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-2a8e7f713ee7-e810d4d0.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/favicon.ico",
+      "status": 404
+    },
+    {
+      "name": "http://127.0.0.1:3126/session",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/appearance/bootstrap",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-ec926d5065ea-6314b4bf.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-44ce4a84f20d-beeade6b.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-6c0346b8d297-702df1df.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-3386a05f6ece-d7dadb40.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/accio-3e699ead1876-ae3c5b54.ttf",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/focus/state",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/fonts-ee58b1e6.css",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/studio-a13f5654.css",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/assets/foundation-7e4c5a55.css",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/focus/state",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/focus/state",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects/new",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/focus/state",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects/new",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/tasks",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/focus/state",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/tasks/new",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/tasks",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/tasks",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/focus/state",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/focus/state",
+      "status": 200
+    },
+    {
+      "name": "http://127.0.0.1:3126/focus/state",
+      "status": 200
+    }
+  ],
+  "state": {
+    "anchor": {
+      "connected": true,
+      "frame": "task-modal",
+      "href": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0/tasks/new",
+      "id": "task-new-context",
+      "rect": {
+        "height": 16,
+        "width": 454,
+        "x": 146,
+        "y": 548.078125
+      },
+      "text": " Adicionar tarefa"
+    },
+    "busy": false,
+    "dialogs": [
+      {
+        "id": "customize",
+        "open": false,
+        "task": false
+      },
+      {
+        "id": "search",
+        "open": false,
+        "task": false
+      },
+      {
+        "id": "demo",
+        "open": false,
+        "task": false
+      },
+      {
+        "id": "",
+        "open": false,
+        "task": false
+      }
+    ],
+    "focus": "main-content",
+    "frame": {
+      "busy": false,
+      "complete": false,
+      "src": null
+    },
+    "path": "/projects/u-YWIyMTgwYzEtMDA1My00M2UwLWI0ZjgtYmIzZGI4NTkzNmM0",
+    "preview": false,
+    "ready": "true"
+  }
+}

@@ -1,0 +1,31 @@
+Run options: --seed 54989
+
+# Running:
+
+.....E
+
+Error:
+TransversalSecurityTest#test_object_project_intention_should_be_rejected_as_invalid_input:
+NoMethodError: undefined method `valid_encoding?' for an instance of ActionController::Parameters
+    app/services/project_commands.rb:15:in `create'
+    app/controllers/projects_controller.rb:49:in `create'
+    lib/loopback_only.rb:11:in `call'
+    test/integration/transversal_security_test.rb:263:in `block in <class:TransversalSecurityTest>'
+
+bin/rails test test/integration/transversal_security_test.rb:261
+
+...F
+
+Failure:
+TransversalSecurityTest#test_malformed_structured_payloads_receive_defined_failures_without_internal_error_leakage [test/integration/transversal_security_test.rb:254]:
+Expected response to be a <422: Unprocessable Content>, but was a <200: OK>
+Response body: {"message":"Alterações salvas.","project":{"name":"Synthetic private project","description":"","icon":"grid","color":null,"status":"active","favorite":false,"lock_version":0,"path":"/projects/u-NDIvw6E_JSPpobnnm64","display_color":"#8befcc"}}.
+Expected: 422
+  Actual: 200
+
+bin/rails test test/integration/transversal_security_test.rb:243
+
+..
+
+Finished in 4.859274s, 2.4695 runs/s, 68.1172 assertions/s.
+12 runs, 331 assertions, 1 failures, 1 errors, 0 skips

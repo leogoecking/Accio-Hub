@@ -1,0 +1,18 @@
+Run options: -n /unauthenticated/ --seed 21375
+
+# Running:
+
+F
+
+Failure:
+TransversalSecurityTest#test_unauthenticated_JSON_requests_with_a_real_CSRF_session_are_unauthorized [test/integration/transversal_security_test.rb:205]:
+post /projects/u-NDIvw6E_JSPpobnnm64/references.
+Expected: 401
+  Actual: 404
+
+bin/rails test test/integration/transversal_security_test.rb:192
+
+
+
+Finished in 0.388704s, 2.5726 runs/s, 56.5983 assertions/s.
+1 runs, 22 assertions, 1 failures, 0 errors, 0 skips

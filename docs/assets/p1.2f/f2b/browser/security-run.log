@@ -1,0 +1,10 @@
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+true !== false
+
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/transversal-browser-check.mjs:22:156
+    at check (file:///home/goecking/Projects/Accio-HUB/rails/script/transversal-browser-check.mjs:18:25)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/transversal-browser-check.mjs:22:2
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)

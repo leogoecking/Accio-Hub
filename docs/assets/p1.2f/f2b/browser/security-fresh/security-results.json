@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Unauthenticated protected navigation redirects without private shell",
+    "result": "PASS"
+  },
+  {
+    "name": "Contextual task dialog opens by keyboard with focus trap Escape and return",
+    "result": "PASS"
+  },
+  {
+    "name": "CSRF enabled in browser rejects missing and wrong tokens without writes",
+    "result": "PASS"
+  },
+  {
+    "name": "Valid CSRF reaches strict envelope validation and presets remain CAS guarded",
+    "result": "PASS"
+  },
+  {
+    "name": "Legacy HTML remains escaped without executable links and GET preserves original data",
+    "result": "PASS"
+  },
+  {
+    "name": "Legitimate URL creates and edits reference; unsafe URL is rejected with draft preserved",
+    "result": "PASS"
+  },
+  {
+    "name": "Malformed project intention reproduces HTTP 500 without database mutation",
+    "result": "PASS"
+  },
+  {
+    "name": "Browser resources stay local; URL validation never navigates targets",
+    "result": "PASS"
+  },
+  {
+    "name": "Logout revokes browser session and protected state refuses subsequent access",
+    "result": "PASS"
+  }
+]

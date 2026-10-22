@@ -1,0 +1,11 @@
+Error: Command failed: agent-browser --session accio-correction-coordinates --json wait [data-task-dialog][open]
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:942:11)
+    at execFileSync (node:child_process:978:15)
+    at b (file:///home/goecking/Projects/Accio-HUB/rails/tmp/p12d3-browser-20261022-1144605-dve34q/context-probe.mjs:20:44)
+    at createTask (file:///home/goecking/Projects/Accio-HUB/rails/tmp/p12d3-browser-20261022-1144605-dve34q/context-probe.mjs:45:89)
+    at file:///home/goecking/Projects/Accio-HUB/rails/tmp/p12d3-browser-20261022-1144605-dve34q/context-probe.mjs:51:333
+    at scenario (file:///home/goecking/Projects/Accio-HUB/rails/tmp/p12d3-browser-20261022-1144605-dve34q/context-probe.mjs:26:64)
+    at file:///home/goecking/Projects/Accio-HUB/rails/tmp/p12d3-browser-20261022-1144605-dve34q/context-probe.mjs:50:2
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)

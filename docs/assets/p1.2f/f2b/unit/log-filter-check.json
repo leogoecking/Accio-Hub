@@ -1,0 +1,31 @@
+{
+  "synthetic_passwords_scanned": 2,
+  "logs": [
+    {
+      "file": "server.log",
+      "password_found": false
+    },
+    {
+      "file": "development.log",
+      "password_found": false
+    },
+    {
+      "file": "test.log",
+      "password_found": false
+    },
+    {
+      "file": "f2b-server.log",
+      "password_found": false
+    },
+    {
+      "file": "development.log",
+      "password_found": false
+    },
+    {
+      "file": "test.log",
+      "password_found": false
+    }
+  ],
+  "plaintext_password_found": false,
+  "scope": "Only generated synthetic credentials and relevant Rails/QA logs; not a global secret detector."
+}

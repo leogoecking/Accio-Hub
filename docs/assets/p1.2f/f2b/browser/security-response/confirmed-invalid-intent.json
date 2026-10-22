@@ -1,0 +1,18 @@
+{
+  "http": 500,
+  "input": {
+    "intent": {
+      "forged": true
+    },
+    "project": {
+      "name": "Never saved"
+    }
+  },
+  "projectRowsUnchanged": true,
+  "responseBodyNotArchived": true,
+  "responseKeys": [],
+  "contentType": "text/html; charset=UTF-8",
+  "internalErrorDetails": true,
+  "jsonTracePresent": false,
+  "exceptionType": null
+}

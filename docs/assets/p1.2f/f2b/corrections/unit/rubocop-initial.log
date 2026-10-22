@@ -1,0 +1,8 @@
+Inspecting 107 files
+...........................................................................................C...............
+
+Offenses:
+
+test/integration/transversal_security_test.rb:302:1: C: [Correctable] Layout/EmptyLinesAroundClassBody: Extra empty line detected at class body end.
+
+107 files inspected, 1 offense detected, 1 offense autocorrectable

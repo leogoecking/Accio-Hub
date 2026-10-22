@@ -1,0 +1,10 @@
+Error: Command failed: agent-browser --session accio-context-compare --json mouse move 339.6640625 346.078125
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:942:11)
+    at execFileSync (node:child_process:978:15)
+    at b (file:///home/goecking/Projects/Accio-HUB/rails/script/reference-context-compare.mjs:12:39)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/reference-context-compare.mjs:22:25
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)

@@ -1,0 +1,135 @@
+[
+  {
+    "name": "before",
+    "state": {
+      "dialog": false,
+      "rect": {
+        "height": 16,
+        "width": 387.328125,
+        "x": 146,
+        "y": 583.078125
+      },
+      "rects": [
+        {
+          "height": 16,
+          "width": 387.328125,
+          "x": 146,
+          "y": 583.078125
+        }
+      ],
+      "scroll": 0
+    },
+    "events": []
+  },
+  {
+    "name": "selector-click",
+    "state": {
+      "dialog": false,
+      "hit": "A",
+      "rect": {
+        "height": 16,
+        "width": 387.328125,
+        "x": 146,
+        "y": 338.078125
+      },
+      "rects": [
+        {
+          "height": 16,
+          "width": 387.328125,
+          "x": 146,
+          "y": 338.078125
+        }
+      ],
+      "scroll": 245
+    },
+    "events": [
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 387.328125,
+          "x": 146,
+          "y": 338.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "pointerdown",
+        "url": "",
+        "x": 339.6640625,
+        "y": 346.078125
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 387.328125,
+          "x": 146,
+          "y": 338.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "mousedown",
+        "url": "",
+        "x": 339,
+        "y": 346
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 387.328125,
+          "x": 146,
+          "y": 338.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "mouseup",
+        "url": "",
+        "x": 339,
+        "y": 346
+      },
+      {
+        "anchor": "task-new-context",
+        "classes": "add-row",
+        "id": "task-new-context",
+        "rect": {
+          "height": 16,
+          "width": 387.328125,
+          "x": 146,
+          "y": 338.078125
+        },
+        "target": "A",
+        "text": "Adicionar tarefa",
+        "trusted": true,
+        "type": "click",
+        "url": "",
+        "x": 339,
+        "y": 346
+      },
+      {
+        "classes": "",
+        "id": "task-modal",
+        "rect": {
+          "height": 16,
+          "width": 387.328125,
+          "x": 146,
+          "y": 338.078125
+        },
+        "target": "TURBO-FRAME",
+        "text": "",
+        "trusted": false,
+        "type": "turbo:before-fetch-request",
+        "url": "http://127.0.0.1:3126/projects/u-NDI5MTRmNDAtODkwZS00YTA5LTgxZmEtY2YwNGFkMGVjMTJj/tasks/new"
+      }
+    ]
+  }
+]
