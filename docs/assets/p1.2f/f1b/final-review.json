@@ -1,0 +1,39 @@
+{
+  "branch": "p1-persistence",
+  "head": "30c69750ccb1a9f884b53cc3f7d0bd17ad97fa22",
+  "documentary_commit_only": [
+    "AGENTS.md",
+    "docs/P1.2F_PLAN.md",
+    "docs/ROADMAP.md"
+  ],
+  "working_tree": "F1b implementation, QA, documentation and new evidence only; intentionally uncommitted",
+  "index_empty": true,
+  "diff_check": "PASS",
+  "new_text_whitespace": "PASS",
+  "versionable_files_reviewed": 188,
+  "sensitive_filenames_or_sqlite_files": [],
+  "private_key_or_token_patterns": [],
+  "secret_scan_limit": "Targeted file/content checks and source review; not a universal secret detector. Synthetic identifiers are intentional.",
+  "protected_paths_unchanged": [
+    "rails/app/models",
+    "rails/db",
+    "prototype",
+    "rails/app/controllers",
+    "rails/app/services",
+    "rails/config",
+    "rails/app/javascript/controllers/studio_controller.js",
+    "rails/app/assets/stylesheets",
+    "rails/Gemfile",
+    "rails/Gemfile.lock"
+  ],
+  "synthetic_final_integrity": "ok",
+  "synthetic_final_foreign_key_violations": [],
+  "synthetic_final_triggers": 25,
+  "synthetic_occupants_at_most_one": true,
+  "js_syntax_files": 65,
+  "report_relative_links_checked": 45,
+  "qa_listener_stopped": true,
+  "qa_profile_closed": true,
+  "no_tag_push_merge": true,
+  "implementation_committed": false
+}

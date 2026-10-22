@@ -477,3 +477,7 @@ Usuário aprovou E3 com ressalvas, sem bloqueadores funcionais/de integridade do
 ### Plano F aprovado com ajustes — F1b autorizada
 
 E3 registrada em35a6671. Plano F aprovado com ajustes, exclusivamente F1b alternativa B autorizada: duas ações humanas com resolve/resume existentes; limitação de duas transações aceita. C/D e F1c/F2/F3/F4/F5 não autorizados. Sem descarte real de legacy_cookie_backup ou aprovação definitiva de30dias; Firefox complementar; backup/restauração apenas sintéticos até autorização específica. Plano em commit documental próprio; implementação F1b sem commit para revisão/auditoria independente. Sem push, merge, tag ou avanço à P1.3.
+
+### F1b — entregue para revisão e auditoria independente
+
+Plano aprovado em `30c69750ccb1a9f884b53cc3f7d0bd17ad97fa22`. Alternativa B implementada **sem commit**, com recuperação parcial em duas ações humanas e confirmação da própria resolução antes da retomada. [Verificação F1b](P1.2F1B_VERIFICATION.md): 127 testes Rails/1.728 asserções, 26 cenários JS, 77 cenários de navegador; 25 gatilhos idênticos. Sem alteração do backend, persistência, limites temporais ou identidade visual. Duas transações e recuperação explícita de falhas preservadas; Firefox não executado e contraste inconclusivo. Aguardar revisão/auditoria. F1c/F2/F3/F4/F5 continuam não autorizadas; não encerra a P1.2 nem inicia a P1.3.

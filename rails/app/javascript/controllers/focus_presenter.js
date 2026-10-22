@@ -37,7 +37,7 @@ export function paintFocus(controller) {
   controller.element.style.setProperty('--focus-action-ink', actionInk(getComputedStyle(document.documentElement).getPropertyValue('--accent').trim()))
   const { duration, remaining } = visualTime(client)
   const primary = primaryAction(client, remaining)
-  const busy = !!(client.sending || client.pending || controller.preparing || !client.confirmed || !Number.isInteger(snapshot?.preference_version))
+  const busy = !!(client.sending || client.pending || controller.recoveryFlow?.busy || controller.preparing || !client.confirmed || !Number.isInteger(snapshot?.preference_version))
   controller.surfaceTargets.forEach(surface => {
     surface.querySelector('[data-focus-clock]').textContent = snapshot ? formatTime(Math.ceil(remaining)) : '--:--'
     surface.querySelector('[data-focus-dial]').style.setProperty('--p', `${100 * (1 - remaining / duration)}%`)
@@ -67,9 +67,10 @@ export function paintFocus(controller) {
     surface.querySelector('[data-focus-recovery]').hidden = !snapshot?.recovery
     if (snapshot?.recovery) {
       const recovery = snapshot.recovery
-      surface.querySelector('[data-focus-checkpoint]').textContent = `Checkpoint confirmado: ${formatTime(recovery.checkpoint_seconds)}.`
-      surface.querySelector('[data-focus-estimate]').textContent = recovery.candidate_seconds == null ? 'Não há estimativa válida para este intervalo.' : `Estimativa do servidor: ${formatTime(recovery.candidate_seconds)}.`
+      surface.querySelector('[data-focus-checkpoint]').textContent = `Tempo confirmado: ${formatTime(recovery.checkpoint_seconds)}.`
+      surface.querySelector('[data-focus-estimate]').textContent = recovery.candidate_seconds == null ? 'Não há estimativa válida para este intervalo.' : `Estimativa disponível do servidor: ${formatTime(recovery.candidate_seconds)}.`
       surface.querySelectorAll('[data-focus-resolve]').forEach(el => {
+        if (el.dataset.focusResolve === 'accept_estimate') el.textContent = recovery.candidate_seconds === session.duration_seconds ? 'Aceitar estimativa e revisar conclusão' : 'Aceitar estimativa e continuar'
         el.disabled = busy || (el.dataset.focusResolve === 'accept_estimate' && recovery.candidate_seconds == null)
       })
     }

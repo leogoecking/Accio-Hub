@@ -192,3 +192,12 @@ E3 revisada e APROVADA COM RESSALVAS, conforme parecer informado pelo usuário; 
 ### Plano F aprovado com ajustes — autorização F1b
 
 E3 encerrada em `35a66711b57e5afe2c11fc2ca5bd9716128d9383`. [Plano F](docs/P1.2F_PLAN.md) aprovado com ajustes: exclusivamente F1b alternativa B autorizada, resolve/resume separados e idempotentes, duas transações aceitas, confirmação da própria resolução e versão fixa antes de retomar. C/D e F1c/F2/F3/F4/F5 não autorizados. Descarte real de legacy_cookie_backup proibido; prazo30dias ainda não aprovado. Firefox complementar; backups/restauração somente sintéticos até autorização específica, sem iniciar F3. Registrar plano em commit documental; implementação F1b sem commit para revisão/auditoria. Sem alterações de backend E1/modelos/schema/gatilhos/limites15/60/5, push, merge, tag ou dados pessoais.
+
+### F1b entregue para revisão — 2026-10-21
+
+Plano aprovado registrado no commit exclusivamente documental `30c69750ccb1a9f884b53cc3f7d0bd17ad97fa22`. Exclusivamente F1b alternativa B implementada, **sem commit**: conferir intervalo e aceitar estimativa/continuar em duas ações humanas. Coordenador de interface exige recibo próprio de resolve antes de resume, com envelopes/versões fixos e retentativas explícitas; duas transações, sem continuação após reload. Candidato integral exige revisão explícita da conclusão. Backend E1, modelos, schema, migrações, 25 gatilhos, CSS e protótipo intactos. [Relatório F1b](docs/P1.2F1B_VERIFICATION.md): 127 testes Rails/1.728 asserções, 26 cenários JS e 77 cenários de navegador aprovados em dados sintéticos. Contraste inconclusivo e Firefox não executado permanecem separados de aprovação. Aguardar revisão/auditoria independente; F1c/F2/F3/F4/F5, descarte real de snapshots, push, tag, merge e dados pessoais não autorizados.
+
+
+### Encerramento F1b e autorização F1c
+
+F1b aprovada após auditoria independente em docs/P1.2F1B_AUDIT.md: **APROVADO COM RESSALVAS, SEM BLOQUEADORES**. Encerramento autorizado após revisão e reexecução sintética de Rails 127/1.728, JS 26, processos, 25 gatilhos e segurança; preservadas duas transações, contraste inconclusivo e Firefox complementar. Reexecuções da auditoria arquivadas separadamente, sem substituir evidências históricas. Exclusivamente F1c autorizada: feedback/reconciliação do PATCH preset, preservando CAS do agregado C, sem novos recibos/tabelas/endpoints ou alteração E1. Implementação F1c sem commit para revisão/auditoria. F2/F3/F4/F5 não autorizadas; sem tag/push/merge/dados pessoais.

@@ -1,0 +1,13 @@
+{
+  "rails/app/javascript/controllers/focus_client.js": "3547656e8a8bde65462285641295482f9ca46115c9fa10ff77a60f85b0012c21",
+  "rails/app/javascript/controllers/focus_controller.js": "5a036b29f8fefa47946900c39d7e65c847bb407ecfe5114190da75f5d629fd91",
+  "rails/app/javascript/controllers/focus_presenter.js": "1235880dfee8ebb3faef0fbd5157f5e61f2479e6dc7708ca9a18c09ab64911c9",
+  "rails/app/javascript/controllers/focus_recovery.js": "28a60b54cf47e91b5487a6b88aa014db931264c3eaea1191f0e8b547cd3275e9",
+  "rails/app/views/studio/widgets/_focus.html.erb": "1946e1c5e41b52c0b025da3516940b9a9ef036f3136dfbfc50c2a38812e10562",
+  "rails/script/focus-browser-check.mjs": "6d76ecbc52930414588beed1470b303a94a79a59fc89cbb1120a13c86c9c1b25",
+  "rails/script/focus-integrated-check.mjs": "2666564387fc3f831967b99327649db0c419ed150668008acd164f3e66dc2e2e",
+  "rails/script/focus-recovery-browser-check.mjs": "1ddd6ea9d92d66498fe03f7ece8152f4310a4935202bfb9b9d41e10c1d2eb84f",
+  "rails/script/focus-recovery-check.mjs": "0701e8602c423927ee9f801d23b06a2e913df03810013f95dbb266485ba1985f",
+  "rails/script/focus-recovery-hunt.mjs": "8707de50b604f044216d3f7c477bfba7c252a74d4ea36f91a97303fdd29be4d5",
+  "rails/script/focus-recovery-restart.mjs": "70d494e756c8a03785ce1ee3347b97b01548470e6760d2f9246ef2233a687f2e"
+}

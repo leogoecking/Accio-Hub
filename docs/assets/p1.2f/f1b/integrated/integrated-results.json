@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Integrated authentication preset 25 global start and checkpoint",
+    "result": "PASS"
+  },
+  {
+    "name": "Integrated Turbo reload personalization and second-tab concurrency",
+    "result": "PASS"
+  },
+  {
+    "name": "Background equivalent 20 minutes preserves checkpoint and requires no automatic completion",
+    "result": "PASS"
+  },
+  {
+    "name": "Integrated explicit completion preserves one terminal history and preferences",
+    "result": "PASS"
+  },
+  {
+    "name": "Committed preset with lost response retries exact CAS payload and reconciles 409",
+    "result": "PASS"
+  },
+  {
+    "name": "Keeping checkpoint after 20-minute gap discards unconfirmed interval explicitly",
+    "result": "PASS"
+  },
+  {
+    "name": "Task completed during focus blocks resume without changing historical links",
+    "result": "PASS"
+  },
+  {
+    "name": "Final synthetic SQLite integrity and read-only history inspection",
+    "result": "PASS"
+  }
+]

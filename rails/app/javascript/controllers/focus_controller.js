@@ -1,6 +1,7 @@
 import { Controller } from '@hotwired/stimulus'
 import { sharedFocus, focusRequest, encodeUid } from 'controllers/focus_client'
 import { paintFocus, primaryAction, visualTime } from 'controllers/focus_presenter'
+import { FocusRecovery } from 'controllers/focus_recovery'
 
 export default class extends Controller {
   static values = { user: String, catalog: Object }
@@ -8,6 +9,7 @@ export default class extends Controller {
 
   connect() {
     this.client = sharedFocus(this.userValue)
+    this.recoveryFlow = this.client.recoveryFlow ||= new FocusRecovery(this.client)
     this.client.confirmed = false
     this.unsubscribe = this.client.subscribe(() => this.paint())
     this.visible = () => {
@@ -43,8 +45,14 @@ export default class extends Controller {
   surfaceTargetConnected() { if (this.client) this.paint() }
   paint() { if (this.element.isConnected) paintFocus(this) }
   reconnect() { this.client.read() }
-  async retry() {
+  async retry(event) {
     const envelope = this.client.pending
+    if (this.recoveryFlow.owns(envelope)) {
+      const trigger = event?.currentTarget
+      await this.recoveryFlow.retry()
+      this.restoreRecoveryFocus(trigger)
+      return
+    }
     if (envelope && await this.client.execute(envelope)) this.advancePreference(envelope.preferenceBefore)
   }
   dismiss() { if (!this.client.pending) { this.client.message = ''; this.paint() } }
@@ -69,7 +77,7 @@ export default class extends Controller {
     const task = this.catalogValue.tasks.find(t => t.uid === session.task_uid)
     return [task?.name || (session.task_uid ? 'Tarefa vinculada' : ''), project?.name || (session.project_uid ? 'Projeto vinculado' : '')].filter(Boolean).join(' · ') || 'Foco global · sem tarefa'
   }
-  get blocked() { return this.preparing || this.client.pending || this.client.sending || !this.client.confirmed || !Number.isInteger(this.client.snapshot?.preference_version) }
+  get blocked() { return this.preparing || this.recoveryFlow.busy || this.client.pending || this.client.sending || !this.client.confirmed || !Number.isInteger(this.client.snapshot?.preference_version) }
   async create(context) {
     if (this.blocked) return
     if (this.client.snapshot?.session) { this.existing(); return }
@@ -97,10 +105,20 @@ export default class extends Controller {
       command_id: crypto.randomUUID(), version: session.version, kind, parameters: { action, ...parameters }
     }, success: action === 'confirm' ? 'Sessão concluída. Sua tarefa não foi alterada.' : 'Ação confirmada.' }).then(accepted => { if (accepted) this.advancePreference(parameters.preference_version) })
   }
-  resolve(event) {
+  async resolve(event) {
     if (this.blocked) return
     const recovery = this.client.snapshot?.recovery
-    if (recovery) this.command('resolve', { recovery_id: recovery.receipt_id, decision: event.currentTarget.dataset.focusResolve })
+    const trigger = event.currentTarget
+    if (trigger.dataset.focusResolve === 'accept_estimate') await this.recoveryFlow.accept()
+    else if (recovery) await this.command('resolve', { recovery_id: recovery.receipt_id, decision: trigger.dataset.focusResolve })
+    this.restoreRecoveryFocus(trigger)
+  }
+  restoreRecoveryFocus(trigger) {
+    const active = document.activeElement
+    if (!trigger || !this.element.isConnected || this.element.querySelector('dialog[open]') ||
+        (active !== document.body && active !== trigger)) return
+    const target = this.client.pending ? this.retryTarget : this.element.querySelector('[data-focus-primary]:not(:disabled)')
+    if (target?.getClientRects().length) target.focus({ preventScroll: true })
   }
   reset(event) {
     if (this.blocked || !this.client.snapshot?.session) return

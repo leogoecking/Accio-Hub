@@ -20,7 +20,7 @@ function ev(code) { const result = JSON.parse(execFileSync('agent-browser', ['--
 const focus = `window.Stimulus.getControllerForElementAndIdentifier(document.querySelector('[data-controller=focus]'),'focus')`
 const snapshot = () => ev(`${focus}.client.snapshot`)
 const wait = code => b('wait', '--fn', code)
-const settled = () => wait(`${focus}?.client.confirmed && !${focus}.client.sending && !${focus}.preparing && !${focus}.dialogPending`)
+const settled = () => wait(`${focus}?.client.confirmed && !${focus}.client.sending && !${focus}.preparing && !${focus}.dialogPending && !${focus}.recoveryFlow.busy`)
 const state = status => { settled(); wait(`${focus}.client.snapshot.session?.status===${JSON.stringify(status)}`) }
 const screen = name => b('screenshot', resolve(evidence, `${name}.png`))
 const click = selector => {
@@ -82,11 +82,11 @@ try {
   assert.equal(returned.session.uid,s.uid);assert.equal(returned.session.elapsed_seconds,30);assert.equal(returned.timing.nominal_seconds,1230);assert.equal(returned.timing.continuity,'unknown');assert.equal(returned.timing.estimate_valid,true);assert.deepEqual(counts(),before)
   screen('background-step-2-return');click('[data-focus-primary]');state('paused');assert.equal(snapshot().recovery.checkpoint_seconds,30);assert.equal(snapshot().recovery.candidate_seconds,1230)
   const receipt=snapshot().recovery.receipt_id;screen('background-step-3-recovery');writeFileSync(resolve(evidence,'axe-recovery.json'),JSON.stringify(b('a11y','--json'),null,2)+'\n');b('reload');settled();assert.equal(snapshot().recovery.receipt_id,receipt)
-  assert.match(ev('document.querySelector("[data-focus-recovery]").textContent'),/Checkpoint confirmado: 00:30.*Estimativa do servidor: 20:30/s)
-  click('[data-focus-resolve=accept_estimate]');state('paused');assert.equal(snapshot().session.elapsed_seconds,1230);assert.equal(snapshot().recovery,null);screen('background-step-4-accepted')
-  click('[data-focus-primary]');state('running');assert.equal(snapshot().session.uid,s.uid);assert.equal(counts().completed,before.completed);assert.equal(counts().occupants,1);screen('background-step-5-resumed');b('record','stop')
+  assert.match(ev('document.querySelector("[data-focus-recovery]").textContent'),/Tempo confirmado: 00:30.*Estimativa disponível do servidor: 20:30/s)
+  click('[data-focus-resolve=accept_estimate]');state('running');assert.equal(snapshot().session.elapsed_seconds,1230);assert.equal(snapshot().recovery,null);screen('background-step-4-accepted')
+  assert.equal(snapshot().session.status,'running');assert.equal(snapshot().session.uid,s.uid);assert.equal(counts().completed,before.completed);assert.equal(counts().occupants,1);screen('background-step-5-resumed');b('record','stop')
   b('tab','close',other);b('tab',first)
-  writeFileSync(resolve(evidence,'background-usability.json'),JSON.stringify({synthetic_hidden_seconds:1200,checkpoint_seconds:30,server_candidate_seconds:1230,remaining_after_accept_seconds:270,automatic_completion:false,occupants:1,decision_actions_after_return:['Conferir intervalo','Aceitar estimativa','Retomar Pomodoro'],action_count:3,reload_added_only_for_recovery_verification:true,real_os_suspension_or_other_application_tested:false,thresholds_unchanged:[15,60,5]},null,2)+'\n')
+  writeFileSync(resolve(evidence,'background-usability.json'),JSON.stringify({synthetic_hidden_seconds:1200,checkpoint_seconds:30,server_candidate_seconds:1230,remaining_after_accept_seconds:270,automatic_completion:false,occupants:1,decision_actions_after_return:['Conferir intervalo','Aceitar estimativa e continuar'],action_count:2,reload_added_only_for_recovery_verification:true,real_os_suspension_or_other_application_tested:false,thresholds_unchanged:[15,60,5]},null,2)+'\n')
  })
  scenario('Integrated explicit completion preserves one terminal history and preferences',()=>{
   for(const seconds of [60,60,60,60,30])advance(seconds)

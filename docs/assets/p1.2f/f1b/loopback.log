@@ -1,0 +1,2 @@
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess
+LISTEN 0      1024       127.0.0.1:3127      0.0.0.0:*    users:(("ruby",pid=453813,fd=6))

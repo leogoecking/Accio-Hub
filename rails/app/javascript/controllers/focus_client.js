@@ -35,7 +35,7 @@ export class FocusClient {
       this.notify()
     }
   }
-  async execute(envelope) {
+  async execute(envelope, validateResponse) {
     if (this.sending || (this.pending && envelope !== this.pending)) return
     this.pending = envelope
     this.sending = true
@@ -46,6 +46,7 @@ export class FocusClient {
     let accepted = false
     try {
       const data = await this.transport(envelope.url, envelope.body, envelope.method || 'POST')
+      validateResponse?.(data) // A recovery chain needs its own receipt, not a similar GET.
       accepted = true
       this.pending = null
       this.message = envelope.success || 'Ação confirmada.'
