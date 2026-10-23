@@ -1,0 +1,8 @@
+{
+  "get_read_only": true,
+  "restart_read_only": true,
+  "new_secret_isolated": true,
+  "source_unchanged": true,
+  "checkpoint_seconds": 20,
+  "no_auto_completion": true
+}

@@ -1,0 +1,14 @@
+{
+  "triggers": 25,
+  "indexes": 36,
+  "integrity": "ok",
+  "fk": [],
+  "foreign_keys": 1,
+  "wal": "wal",
+  "synchronous": 2,
+  "focus_sessions": 0,
+  "focus_commands": 0,
+  "rails": "8.1.3.1",
+  "ruby": "3.3.6",
+  "sqlite": "3.53.2"
+}

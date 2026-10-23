@@ -1,0 +1,18 @@
+{
+  "D3": {
+    "passed": 33,
+    "file": "d3-browser/d3-browser-results.json"
+  },
+  "D3_adversarial": {
+    "passed": 3,
+    "file": "d3-additional/bug-hunt-results.json"
+  },
+  "F2a": {
+    "passed": 7,
+    "file": "browser/url-browser-results.json"
+  },
+  "ui_total": 43,
+  "parser_urls": 114,
+  "parser_accepted": 30,
+  "parser_rejected": 84
+}

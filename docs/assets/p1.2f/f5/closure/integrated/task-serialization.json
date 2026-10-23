@@ -1,0 +1,6 @@
+{
+  "held_real_http_response": true,
+  "disabled_during_pending": true,
+  "second_space_dispatched_no_second_change": true,
+  "reason": "Checked changes synchronously; DOM refresh and network acknowledgement finish later. Wait for enabled confirmed control before reopening."
+}

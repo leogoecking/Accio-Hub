@@ -1,0 +1,1868 @@
+{
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 1440
+  },
+  "theme": "light",
+  "wallpaper": "ocean",
+  "accent": "#b1f07d",
+  "measurements": [
+    {
+      "kind": "text",
+      "selector": "html > body > div.shell > aside.rail > a.brand-glyph",
+      "text": "a",
+      "required": 3,
+      "rgba": [
+        19,
+        37,
+        25,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 8.825,
+      "samples": 136,
+      "background_at_worst": [
+        161,
+        205,
+        122
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.shell > aside.rail > div.rail-bottom:nth-of-type(2) > form.button_to > button.rail-avatar",
+      "text": "A",
+      "required": 4.5,
+      "rgba": [
+        10,
+        14,
+        20,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.197,
+      "samples": 61,
+      "background_at_worst": [
+        114,
+        130,
+        189
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.focus-shell > div.workspace:nth-of-type(1) > header.headbar > div.head-left:nth-of-type(1) > span.wordmark:nth-of-type(1)",
+      "text": "accio",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.653,
+      "samples": 298,
+      "background_at_worst": [
+        245,
+        248,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.workspace:nth-of-type(1) > header.headbar > div.head-left:nth-of-type(1) > span.wordmark:nth-of-type(1) > span",
+      "text": "hub",
+      "required": 4.5,
+      "rgba": [
+        177,
+        240,
+        125,
+        255
+      ],
+      "status": "fail",
+      "minimum": 1.258,
+      "samples": 188,
+      "background_at_worst": [
+        245,
+        248,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.focus-shell > div.workspace:nth-of-type(1) > header.headbar > div.head-left:nth-of-type(1) > span.head-path:nth-of-type(2)",
+      "text": "Projetos",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.618,
+      "samples": 248,
+      "background_at_worst": [
+        245,
+        248,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.workspace:nth-of-type(1) > header.headbar > div.head-right:nth-of-type(2) > button.command-button:nth-of-type(1) > span",
+      "text": "Buscar no seu espaço",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.583,
+      "samples": 496,
+      "background_at_worst": [
+        245,
+        247,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.workspace:nth-of-type(1) > header.headbar > div.head-right:nth-of-type(2) > button.command-button:nth-of-type(1) > kbd",
+      "text": "⌘ K",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.588,
+      "samples": 61,
+      "background_at_worst": [
+        246,
+        247,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.focus-shell > div.workspace:nth-of-type(1) > header.headbar > div.head-right:nth-of-type(2) > span.mini-time:nth-of-type(3)",
+      "text": "21:24",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.526,
+      "samples": 176,
+      "background_at_worst": [
+        244,
+        247,
+        247
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.workspace:nth-of-type(1) > section.music-zone > div.music-main:nth-of-type(1) > div.music-caption:nth-of-type(1) > strong",
+      "text": "Accio Music",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.653,
+      "samples": 331,
+      "background_at_worst": [
+        245,
+        248,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.workspace:nth-of-type(1) > section.music-zone > div.music-main:nth-of-type(1) > div.music-caption:nth-of-type(1) > small",
+      "text": "Escolha seu ambiente sonoro",
+      "required": 4.5,
+      "rgba": [
+        89,
+        106,
+        124,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.206,
+      "samples": 512,
+      "background_at_worst": [
+        245,
+        248,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > div.music-caption:nth-of-type(1) > small > span",
+      "text": "· player demonstrativo",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.618,
+      "samples": 385,
+      "background_at_worst": [
+        245,
+        248,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone > div.music-main:nth-of-type(1) > span.track-label:nth-of-type(3)",
+      "text": "SEM ÁUDIO NESTA PRÉVIA",
+      "required": 4.5,
+      "rgba": [
+        89,
+        106,
+        124,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.161,
+      "samples": 489,
+      "background_at_worst": [
+        244,
+        247,
+        247
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-surface > div.inner-page.project-library > div.project-library-heading:nth-of-type(1) > div > div.eyebrow",
+      "text": "ACCIO HUB / SEUS ESPAÇOS",
+      "required": 4.5,
+      "rgba": [
+        61,
+        87,
+        72,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 7.034,
+      "samples": 924,
+      "background_at_worst": [
+        239,
+        242,
+        244
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-surface > div.inner-page.project-library > div.project-library-heading:nth-of-type(1) > div > h1",
+      "text": "Projetos",
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 13.917,
+      "samples": 2240,
+      "background_at_worst": [
+        239,
+        242,
+        244
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-page.project-library > div.project-library-heading:nth-of-type(1) > div > h1 > span.title-stop",
+      "text": ".",
+      "required": 3,
+      "rgba": [
+        177,
+        240,
+        125,
+        255
+      ],
+      "status": "fail",
+      "minimum": 1.195,
+      "samples": 55,
+      "background_at_worst": [
+        239,
+        242,
+        244
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-surface > div.inner-page.project-library > div.project-library-heading:nth-of-type(1) > div > p",
+      "text": "Uma coleção do que você quer construir.",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.336,
+      "samples": 1515,
+      "background_at_worst": [
+        239,
+        242,
+        244
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-new",
+      "text": "Novo projeto",
+      "required": 4.5,
+      "rgba": [
+        16,
+        32,
+        28,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.55,
+      "samples": 456,
+      "background_at_worst": [
+        177,
+        240,
+        125
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-surface > div.inner-page.project-library > div.project-toolbar:nth-of-type(2) > label.project-order",
+      "text": "Ordenar",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.251,
+      "samples": 249,
+      "background_at_worst": [
+        238,
+        240,
+        242
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-filter-all",
+      "text": "Todos",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.598,
+      "samples": 183,
+      "background_at_worst": [
+        222,
+        232,
+        240
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-filter-active",
+      "text": "Ativos",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.336,
+      "samples": 203,
+      "background_at_worst": [
+        239,
+        242,
+        244
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-filter-paused",
+      "text": "Pausados",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.336,
+      "samples": 299,
+      "background_at_worst": [
+        239,
+        242,
+        244
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-filter-archived",
+      "text": "Arquivados",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.336,
+      "samples": 364,
+      "background_at_worst": [
+        239,
+        242,
+        244
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-favorites",
+      "text": "Favoritos",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.298,
+      "samples": 285,
+      "background_at_worst": [
+        239,
+        241,
+        243
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-results-label:nth-of-type(1) > span:nth-of-type(1)",
+      "text": "3 de 3 projetos",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.241,
+      "samples": 439,
+      "background_at_worst": [
+        237,
+        240,
+        242
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-results-label:nth-of-type(1) > span.project-local-label:nth-of-type(2)",
+      "text": "SQLITE / SUA CONTA",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.204,
+      "samples": 490,
+      "background_at_worst": [
+        237,
+        239,
+        241
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card:nth-of-type(1) > div.project-card-top:nth-of-type(1) > span.project-status.status-active:nth-of-type(2)",
+      "text": "Ativo",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.65,
+      "samples": 119,
+      "background_at_worst": [
+        244,
+        249,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card:nth-of-type(1) > h2 > a.project-space-link",
+      "text": "Outro projeto QA",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.609,
+      "samples": 1551,
+      "background_at_worst": [
+        243,
+        248,
+        249
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card:nth-of-type(1) > p.project-description",
+      "text": "Um espaço pronto para suas próximas ideias.",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.591,
+      "samples": 1374,
+      "background_at_worst": [
+        242,
+        248,
+        249
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.project-library-grid:nth-of-type(2) > article.project-card:nth-of-type(1) > div.project-relations:nth-of-type(2) > span:nth-of-type(1) > strong",
+      "text": "0",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.956,
+      "samples": 48,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card:nth-of-type(1) > div.project-relations:nth-of-type(2) > span:nth-of-type(1)",
+      "text": "tarefas abertas",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.674,
+      "samples": 432,
+      "background_at_worst": [
+        246,
+        249,
+        251
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card:nth-of-type(1) > div.project-relations:nth-of-type(2) > span:nth-of-type(2)",
+      "text": "Conhecimento · P1.3",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.636,
+      "samples": 521,
+      "background_at_worst": [
+        243,
+        249,
+        249
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card:nth-of-type(1) > div.project-card-bottom:nth-of-type(3) > span.project-activity",
+      "text": "Sem atividade registrada",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.734,
+      "samples": 585,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-edit-u-ZDM3NjI4NmMtNDhkYy00ZmQ5LTg3MmMtN2JhNzc0Yzk5Yjgz",
+      "text": "Editar",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.734,
+      "samples": 183,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-status-u-ZDM3NjI4NmMtNDhkYy00ZmQ5LTg3MmMtN2JhNzc0Yzk5Yjgz",
+      "text": "Pausar",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.734,
+      "samples": 188,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-archive-u-ZDM3NjI4NmMtNDhkYy00ZmQ5LTg3MmMtN2JhNzc0Yzk5Yjgz",
+      "text": "Arquivar",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.734,
+      "samples": 246,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card.is-archived:nth-of-type(2) > div.project-card-top:nth-of-type(1) > span.project-status.status-archived:nth-of-type(2)",
+      "text": "Arquivado",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.636,
+      "samples": 239,
+      "background_at_worst": [
+        243,
+        249,
+        249
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card.is-archived:nth-of-type(2) > h2 > a.project-space-link",
+      "text": "Projeto arquivado QA",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.582,
+      "samples": 1992,
+      "background_at_worst": [
+        242,
+        248,
+        249
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card.is-archived:nth-of-type(2) > p.project-description",
+      "text": "Um espaço pronto para suas próximas ideias.",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.591,
+      "samples": 1374,
+      "background_at_worst": [
+        242,
+        248,
+        249
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.project-library-grid:nth-of-type(2) > article.project-card.is-archived:nth-of-type(2) > div.project-relations:nth-of-type(2) > span:nth-of-type(1) > strong",
+      "text": "1",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.956,
+      "samples": 18,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card.is-archived:nth-of-type(2) > div.project-relations:nth-of-type(2) > span:nth-of-type(1)",
+      "text": "tarefa aberta",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.674,
+      "samples": 373,
+      "background_at_worst": [
+        246,
+        249,
+        251
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card.is-archived:nth-of-type(2) > div.project-relations:nth-of-type(2) > span:nth-of-type(2)",
+      "text": "Conhecimento · P1.3",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.636,
+      "samples": 532,
+      "background_at_worst": [
+        243,
+        249,
+        249
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card.is-archived:nth-of-type(2) > div.project-card-bottom:nth-of-type(3) > span.project-activity",
+      "text": "Atualizado em 22/10/2026",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.698,
+      "samples": 647,
+      "background_at_worst": [
+        248,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-restore-u-ZjQtYXJjaGl2ZWQ",
+      "text": "Restaurar",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.734,
+      "samples": 289,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card:nth-of-type(3) > div.project-card-top:nth-of-type(1) > span.project-status.status-active:nth-of-type(2)",
+      "text": "Ativo",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.65,
+      "samples": 119,
+      "background_at_worst": [
+        244,
+        249,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card:nth-of-type(3) > h2 > a.project-space-link",
+      "text": "Projeto foco QA",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.609,
+      "samples": 1446,
+      "background_at_worst": [
+        243,
+        248,
+        249
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card:nth-of-type(3) > p.project-description",
+      "text": "Um espaço pronto para suas próximas ideias.",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.591,
+      "samples": 1374,
+      "background_at_worst": [
+        242,
+        248,
+        249
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.project-library-grid:nth-of-type(2) > article.project-card:nth-of-type(3) > div.project-relations:nth-of-type(2) > span:nth-of-type(1) > strong",
+      "text": "1",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.956,
+      "samples": 18,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card:nth-of-type(3) > div.project-relations:nth-of-type(2) > span:nth-of-type(1)",
+      "text": "tarefa aberta",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.674,
+      "samples": 373,
+      "background_at_worst": [
+        246,
+        249,
+        251
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card:nth-of-type(3) > div.project-relations:nth-of-type(2) > span:nth-of-type(2)",
+      "text": "Conhecimento · P1.3",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.636,
+      "samples": 532,
+      "background_at_worst": [
+        243,
+        249,
+        249
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-results > div.project-library-grid:nth-of-type(2) > article.project-card:nth-of-type(3) > div.project-card-bottom:nth-of-type(3) > span.project-activity",
+      "text": "Sem atividade registrada",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.698,
+      "samples": 585,
+      "background_at_worst": [
+        248,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-edit-u-NDIvw6E_JSPpobnnm64",
+      "text": "Editar",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.734,
+      "samples": 183,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-status-u-NDIvw6E_JSPpobnnm64",
+      "text": "Pausar",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.734,
+      "samples": 188,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-archive-u-NDIvw6E_JSPpobnnm64",
+      "text": "Arquivar",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.734,
+      "samples": 246,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "placeholder",
+      "selector": "#project-search",
+      "text": "Buscar por nome ou descrição",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.734,
+      "samples": 1150,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "value",
+      "selector": "#project-order",
+      "text": "Por nome",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.681,
+      "samples": 268,
+      "background_at_worst": [
+        245,
+        248,
+        251
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#project-search",
+      "text": "Pesquisar projetos",
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#project-order",
+      "text": "Ordenar Por nome\nAtividade recente",
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(1) > svg > path:nth-of-type(1)",
+      "text": "Início",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.535,
+      "samples": 105,
+      "background_at_worst": [
+        243,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(1) > svg > path:nth-of-type(2)",
+      "text": "Início",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.535,
+      "samples": 17,
+      "background_at_worst": [
+        243,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(2) > svg > rect",
+      "text": "Tarefas",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.535,
+      "samples": 111,
+      "background_at_worst": [
+        243,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(2) > svg > path",
+      "text": "Tarefas",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.535,
+      "samples": 14,
+      "background_at_worst": [
+        243,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(3) > svg > rect",
+      "text": "Agenda",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.535,
+      "samples": 95,
+      "background_at_worst": [
+        243,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(3) > svg > path",
+      "text": "Agenda",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.535,
+      "samples": 48,
+      "background_at_worst": [
+        243,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(4) > svg > circle:nth-of-type(1)",
+      "text": "Foco",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 158,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(4) > svg > circle:nth-of-type(2)",
+      "text": "Foco",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 31,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(4) > svg > circle:nth-of-type(3)",
+      "text": "Foco",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.535,
+      "samples": 1,
+      "background_at_worst": [
+        243,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon.active:nth-of-type(5) > svg > rect:nth-of-type(1)",
+      "text": "Projetos",
+      "required": 3,
+      "rgba": [
+        61,
+        87,
+        72,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 7.059,
+      "samples": 16,
+      "background_at_worst": [
+        235,
+        244,
+        241
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon.active:nth-of-type(5) > svg > rect:nth-of-type(2)",
+      "text": "Projetos",
+      "required": 3,
+      "rgba": [
+        61,
+        87,
+        72,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 7.059,
+      "samples": 16,
+      "background_at_worst": [
+        235,
+        244,
+        241
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon.active:nth-of-type(5) > svg > rect:nth-of-type(3)",
+      "text": "Projetos",
+      "required": 3,
+      "rgba": [
+        61,
+        87,
+        72,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 7.059,
+      "samples": 16,
+      "background_at_worst": [
+        235,
+        244,
+        241
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon.active:nth-of-type(5) > svg > rect:nth-of-type(4)",
+      "text": "Projetos",
+      "required": 3,
+      "rgba": [
+        61,
+        87,
+        72,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 7.059,
+      "samples": 16,
+      "background_at_worst": [
+        235,
+        244,
+        241
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(6) > svg > path:nth-of-type(1)",
+      "text": "Conhecimento",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 97,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(7) > svg > path",
+      "text": "AccioFeed",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 73,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(7) > svg > circle",
+      "text": "AccioFeed",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 1,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(8) > svg > path:nth-of-type(1)",
+      "text": "Backups",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 86,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(8) > svg > path:nth-of-type(2)",
+      "text": "Backups",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 16,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(9) > svg > rect",
+      "text": "E-mails",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 85,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(9) > svg > path",
+      "text": "E-mails",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 32,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > div.rail-bottom:nth-of-type(2) > a.rail-icon > svg > circle",
+      "text": "Configurações",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 21,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > div.rail-bottom:nth-of-type(2) > a.rail-icon > svg > path",
+      "text": "Configurações",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 104,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.head-icon:nth-of-type(2) > svg > path",
+      "text": "Captura rápida demonstrativa",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.569,
+      "samples": 44,
+      "background_at_worst": [
+        244,
+        247,
+        247
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.head-icon:nth-of-type(3) > svg > path",
+      "text": "Personalizar seu espaço",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.569,
+      "samples": 38,
+      "background_at_worst": [
+        244,
+        247,
+        247
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.head-icon:nth-of-type(3) > svg > circle:nth-of-type(1)",
+      "text": "Personalizar seu espaço",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.569,
+      "samples": 6,
+      "background_at_worst": [
+        244,
+        247,
+        247
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.head-icon:nth-of-type(3) > svg > circle:nth-of-type(2)",
+      "text": "Personalizar seu espaço",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.569,
+      "samples": 6,
+      "background_at_worst": [
+        244,
+        247,
+        247
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > button.music-button:nth-of-type(1) > svg > path",
+      "text": "Reprodução demonstrativa",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.583,
+      "samples": 26,
+      "background_at_worst": [
+        245,
+        247,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > button.music-button:nth-of-type(2) > svg > path",
+      "text": "Expandir player",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.583,
+      "samples": 28,
+      "background_at_worst": [
+        245,
+        247,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > button.music-button:nth-of-type(2) > svg > circle:nth-of-type(1)",
+      "text": "Expandir player",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.583,
+      "samples": 4,
+      "background_at_worst": [
+        245,
+        247,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > button.music-button:nth-of-type(2) > svg > circle:nth-of-type(2)",
+      "text": "Expandir player",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.583,
+      "samples": 4,
+      "background_at_worst": [
+        245,
+        247,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "#project-favorite-u-ZDM3NjI4NmMtNDhkYy00ZmQ5LTg3MmMtN2JhNzc0Yzk5Yjgz > svg > path",
+      "text": "Favoritar Outro projeto QA",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.53,
+      "samples": 91,
+      "background_at_worst": [
+        237,
+        248,
+        246
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "#project-favorite-u-NDIvw6E_JSPpobnnm64 > svg > path",
+      "text": "Favoritar Projeto foco QA",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.53,
+      "samples": 91,
+      "background_at_worst": [
+        237,
+        248,
+        246
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    }
+  ]
+}

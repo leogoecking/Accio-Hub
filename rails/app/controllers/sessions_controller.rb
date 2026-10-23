@@ -20,6 +20,13 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    stored = AppearancePreferences.new(Current.user).read
+    if stored
+      cookies.encrypted[:accio_presentation] = {
+        value: stored[:appearance].slice("theme", "wallpaper", "accent"), expires: 1.year.from_now,
+        httponly: true, same_site: :strict, secure: request.ssl?
+      }
+    end
     end_session
     redirect_to new_session_path, status: :see_other
   end
@@ -27,6 +34,6 @@ class SessionsController < ApplicationController
   private
 
   def load_appearance
-    @appearance = Studio.appearance(cookies.encrypted[:accio_appearance])
+    @appearance = Studio.appearance(cookies.encrypted[:accio_presentation] || cookies.encrypted[:accio_appearance])
   end
 end

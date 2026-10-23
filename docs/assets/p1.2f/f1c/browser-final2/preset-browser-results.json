@@ -1,0 +1,70 @@
+[
+  {
+    "name": "A: Normal PATCH acknowledges preset 45 and leaves focus history and appearance unchanged",
+    "result": "PASS"
+  },
+  {
+    "name": "B/E: Lost response before write confirms current 25 and requires a new explicit choice",
+    "result": "PASS"
+  },
+  {
+    "name": "B/D: Lost response after commit confirms current 45 without asserting original authorship",
+    "result": "PASS"
+  },
+  {
+    "name": "C/F: Lost committed response and unavailable GET preserve envelope; explicit retry gets 409",
+    "result": "PASS"
+  },
+  {
+    "name": "F: Read reconnect alone reconciles pending request with no automatic PATCH retry",
+    "result": "PASS"
+  },
+  {
+    "name": "Uncertain 503 preserves stable PATCH and offline read until explicit retry",
+    "result": "PASS"
+  },
+  {
+    "name": "Uncertain timeout preserves stable PATCH and offline read until explicit retry",
+    "result": "PASS"
+  },
+  {
+    "name": "Two tabs requesting same preset: first stale PATCH receives 409 and cannot claim authorship",
+    "result": "PASS"
+  },
+  {
+    "name": "G: Preset conflict preserves concurrent theme change in aggregate C",
+    "result": "PASS"
+  },
+  {
+    "name": "G: Preset conflict preserves concurrent wallpaper change in aggregate C",
+    "result": "PASS"
+  },
+  {
+    "name": "G: Preset conflict preserves concurrent dock change in aggregate C",
+    "result": "PASS"
+  },
+  {
+    "name": "G: Preset conflict preserves concurrent widgets change in aggregate C",
+    "result": "PASS"
+  },
+  {
+    "name": "G: Preset conflict preserves concurrent filters change in aggregate C",
+    "result": "PASS"
+  },
+  {
+    "name": "Pending local appearance draft and its version survive acknowledged preset change",
+    "result": "PASS"
+  },
+  {
+    "name": "Turbo reconnect keeps envelope but reads reconcile it without another PATCH",
+    "result": "PASS"
+  },
+  {
+    "name": "Reload with lost response reads confirmed value and never retries the old PATCH",
+    "result": "PASS"
+  },
+  {
+    "name": "Running and paused duration survive preset clicks and theme changes; ready reset stays explicit",
+    "result": "PASS"
+  }
+]

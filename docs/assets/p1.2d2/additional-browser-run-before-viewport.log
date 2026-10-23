@@ -1,0 +1,31 @@
+PASS Conclusão obsoleta mostra versão remota e reaplica estado desejado
+PASS Rascunho impede navegação Turbo e CtrlK não rouba foco do formulário
+PASS Clique de ponteiro no checkbox conclui a mesma tarefa
+node:internal/errors:985
+  const err = new Error(message);
+              ^
+
+Error: Command failed: agent-browser --session accio-d2-extra-3626097 --json wait --fn (()=>{const el=document.querySelector("#project-restore-u-YTAzNTMxYjQtMjk1YS00NGQ2LWE0ZTUtYjliN2Y4M2Y4NzE5");if(!el)return false;const r=el.getBoundingClientRect(),k=[r.left,r.top,r.width,r.height].join('|'),old=window.__qaStable;window.__qaStable=k;return old===k && el.contains(document.elementFromPoint(r.left+r.width/2,r.top+r.height/2))})()
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:942:11)
+    at execFileSync (node:child_process:978:15)
+    at b (file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-additional-check.mjs:4:39)
+    at click (file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-additional-check.mjs:9:2)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-additional-check.mjs:29:741
+    at scenario (file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-additional-check.mjs:12:45)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-additional-check.mjs:28:2
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25) {
+  status: 1,
+  signal: null,
+  output: [
+    null,
+    '{"success":false,"data":null,"error":"Wait timed out after 25000ms"}\n',
+    ''
+  ],
+  pid: 3626681,
+  stdout: '{"success":false,"data":null,"error":"Wait timed out after 25000ms"}\n',
+  stderr: ''
+}
+
+Node.js v24.19.0

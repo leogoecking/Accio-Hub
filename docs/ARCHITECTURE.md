@@ -1,9 +1,13 @@
 # Accio Hub — Arquitetura (ARCHITECTURE)
 
-> **Versão:** 0.3 (protótipo atual e arquitetura definitiva planejada)<br>
-> **Data-base:** 2026-10-11<br>
-> **Estado:** P0.4 homologada; P1.0 aprovada; P1.1 encerrada e homologada; P1.2 não iniciada<br>
+> **Versão:** 0.4 (estado técnico P1.2 e arquitetura definitiva planejada)<br>
+> **Data-base:** 2026-10-23<br>
+> **Estado:** P0.4/P1.1 homologadas; P1.2 concluída tecnicamente no escopo sintético (A aprovado, B aprovado com ressalvas, C não autorizado). P1.3 não iniciada.<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ROADMAP.md](ROADMAP.md)
+
+## Situação consolidada — 2026-10-23
+
+[Encerramento técnico P1.2](P1.2_FINAL_CLOSURE.md) formalizado pelo commit desta entrega após gates e auditoria final independente. Rails/Hotwire/SQLite, preferências definitivas, projetos/tarefas/referências e foco global preservam seus contratos. F5 altera somente a whitelist literal do contrato de backup para quatro schemas homologados; não altera modelos, motor, migrações, gatilhos ou interface. Ferramentas administrativas continuam exclusivamente sintéticas. Restauração operacional sem origem e custódia de backups/chaves permanecem pendentes: não há liberação para dados pessoais importantes. As seções seguintes documentam a evolução histórica e os desenhos futuros; P1.3 não iniciada.
 
 ## Fundação homologada — P1.1
 
@@ -15,7 +19,7 @@ A fundação está em `rails/`: Rails 8.1.3.1, Ruby 3.3.6, SQLite, ERB,
 Turbo Drive, Stimulus, Importmap e Propshaft. O CSS homologado é preservado;
 Tailwind e Solid Queue não são adicionados nesta etapa. Fontes são locais.
 
-Somente `User` e `AuthSession` persistem no SQLite. A conta única é criada
+Na entrega P1.1, somente `User` e `AuthSession` persistiam no SQLite. A conta única é criada
 localmente, sem cadastro público; segredo e bancos são ignorados pelo Git.
 O launcher/Puma usam loopback, com middleware que também rejeita pares remotos.
 `bin/rails admin:reset` permite recuperação local interativa, sem endpoint HTTP,
@@ -28,6 +32,76 @@ O protótipo em `prototype/` permanece intacto. Interfaces e comportamentos de
 produto ainda não transportados são explicitamente demonstrativos. Estrutura,
 execução e limites em [../rails/README.md](../rails/README.md); evidências em
 [P1.1_FOUNDATION_VERIFICATION.md](P1.1_FOUNDATION_VERIFICATION.md).
+
+## Fundação relacional — P1.2B homologada
+
+O [planejamento aprovado P1.2A](P1.2A_SQLITE_PLAN.md) detalha os contratos.
+O backend agora possui `Project`, `Task`, `ProjectReference`, `UserPreference`,
+`DockShortcut`, `WidgetPlacement`, `FocusSession` e `FocusCommand`.
+UIDs opacos são preservados; FKs compostas incluem proprietário, versões protegem
+edições e índices parciais limitam o foco global e os contextos dos widgets.
+Gatilhos SQL protegem identidades, arquivamento e recibos imutáveis.
+`schema.rb` conserva esses gatilhos para reconstrução equivalente dos bancos.
+
+WAL/FULL são configurados somente nas conexões da aplicação, verificados em
+bancos temporários. Não há migração pessoal nem novas tabelas de notas.
+Na entrega B, controllers, formulários, cookies e temporizador continuavam com
+o comportamento P1.1. B foi aprovada após auditoria independente, registrada no
+commit `ddf6715`. O temporizador funcional continua reservado à P1.2E.
+Evidências e limites em [P1.2B_VERIFICATION.md](P1.2B_VERIFICATION.md).
+
+## Preferências operacionais — P1.2C aprovada tecnicamente
+
+`AppearancePreferences` administra um agregado de preferência, Dock e widgets
+home, com transação SQLite e versão única em `UserPreference`. Mantém o DTO do
+Stimulus. Leituras usam snapshots frescos; o bootstrap materializa a transação
+antes de verificar ausência do singleton, evitando competição entre processos.
+
+O POST autenticado/CSRF valida o cookie P1.1 e conserva cópia/digest. Só retira o
+cookie após confirmação pós-commit. Banco inicializado prevalece; cookies distintos
+ou inválidos exigem revisão explícita, com exportação e recuperação. PATCH exige
+versão do agregado; conflito mantém edição local e oferece reaplicação por campo.
+Contenção retorna 503 recuperável. Não há sincronização em tempo real.
+
+Tema/fundo/destaque confirmados derivam um cookie mínimo para login. Esse cache
+não é fonte operacional nem candidato de importação. Sem mudança de schema,
+CRUD de produto, foco funcional ou Vault. Relatório em
+[P1.2C_VERIFICATION.md](P1.2C_VERIFICATION.md).
+
+Auditoria independente aprovada, conforme confirmação do usuário. Permanecem
+pendentes Firefox manual da C, contraste inconclusivo e política de retenção/descarte
+dos snapshots legados, preferencialmente na P1.2F. Planejamento D aprovado; D1 registrada em af5e24b; D2 aprovada e registrada em cf95461; D3 aprovada e encerramento em commit autorizado. Implementação E/F depende de autorização.
+
+## Biblioteca e espaço de projetos — P1.2D1 aprovada com ressalvas
+
+`ProjectsController` usa exclusivamente associações de `Current.user`. `ProjectCommands`
+materializa transações antes de ler versões/UIDs e executar comandos; conserva os
+modelos, o schema e os 25 gatilhos SQL. A intenção de criação assinada vincula usuário,
+operação e UID. Repetições equivalentes confirmam o registro existente sem regravar;
+conteúdo divergente retorna 409. UIDs em rotas usam a codificação reversível existente.
+
+`ProjectLibrary` consulta os mesmos projetos utilizados pelo dashboard e atualiza
+somente os três filtros de `UserPreference`, com a versão do agregado da C. A resposta
+inclui aparência confirmada; o navegador só a incorpora quando não há edição de
+aparência pendente. Conflitos preservam escolhas locais e exigem reaplicação explícita.
+
+Partials reaproveitam classes/tokens da P0.4. Turbo Drive navega entre projetos/abas;
+Frame delimita o formulário/avisos, inclusive links obsoletos e acessos diretos; Streams atualizam a região de projetos. Stimulus separa
+formulário, comandos, filtros, abertura e teclado das abas. Tarefas/referências são
+consulta somente leitura; Conhecimento indica P1.3 e foco permanece demonstrativo.
+Evidências e limites: [P1.2D1_VERIFICATION.md](P1.2D1_VERIFICATION.md).
+
+## Tarefas persistentes — P1.2D2 aprovada
+
+`TasksController` usa associações autenticadas globais/contextuais. `TaskCommands` materializa transações antes de consultar versões, valida projetos de origem/destino e atualiza tarefa/atividade dos projetos conjuntamente. `lock_version` e os 25 gatilhos existentes continuam intactos. Tokens assinados vinculam usuário, operação, UID e contexto de criação; retentativas equivalentes não regravam atividade ou timestamps. Concluir/reabrir recebe estado desejado; `completed_at` é controlado no servidor.
+
+ERB reutiliza linhas/formulários entre dashboard, lista global e espaços, sem cópias dos registros. Turbo atualiza regiões de dados sem substituir o agregado de aparência. Controllers Stimulus pequenos reutilizam o ciclo acessível de diálogo da D1, tratam conflitos/rascunhos e consultam tarefas reais na busca global. Referências permanecem somente leitura; foco demonstrativo e Conhecimento P1.3. Nenhum modelo, schema, migração, gatilho, armazenamento pessoal ou dependência foi alterado. Relatório: [P1.2D2_VERIFICATION.md](P1.2D2_VERIFICATION.md).
+
+## Referências persistentes — P1.2D3 aprovada tecnicamente
+
+`ProjectReferencesController` consulta o projeto do administrador pela rota e suas referências. `ReferenceCommands` materializa a transação antes de validar arquivamento/versões e grava referência/atividade do projeto juntas. Intenções assinadas incluem usuário, operação, UID e projeto; retentativas equivalentes não regravam registros. URLs são verificadas pelo modelo existente e pela política compartilhada `SafeReferenceUrl`, sem DNS ou acesso remoto. A apresentação recusa links incompatíveis e escapa textos. Não há uploads ou exclusões.
+
+Dois controllers Stimulus especializados reutilizam o ciclo dos diálogos D1, com foco, teclado, retentativas, conflitos e campos mantidos. Conteúdo da região do projeto é atualizado por Turbo Streams, preservando a raiz de aparência. SQLite, schema e 25 gatilhos permanecem intactos. Conhecimento aguarda P1.3 e foco funcional P1.2E. Evidências em [P1.2D3_VERIFICATION.md](P1.2D3_VERIFICATION.md).
 
 ## 0. Arquitetura atual do protótipo e limites da P0.4
 
@@ -520,3 +594,53 @@ Adapters separados, OAuth quando aplicável, menor escopo possível, tokens crip
 6. **Telemetria do backup**: desenho de JSON escrito pelos scripts sem afetar confiabilidade dos timers já validados.
 
 **Critério de arquitetura pronta para codificação:** esses spikes produzem evidências, decisões de implementação e testes, não só preferência por tecnologia.
+
+
+## Planejamento do foco global — P1.2E aprovado com ajustes
+
+D3 encerrada em `0e5323c5b823e2d2d531ad8c41c35a05a7ab2045`. O [plano E](P1.2E_PLAN.md) mapeia a implementação e os contratos B: uma sessão ocupante por usuário, quatro tipos de recibo imutável, contexto histórico e seis estados. Propõe cálculo por timestamps/checkpoints, tick somente visual e conclusão explícita; interrupção parcial incerta usa paused, pois awaiting_confirmation exige a duração integral. Não altera os modelos/schema/gatilhos nem inicia implementação E/F.
+
+Em 2026-10-17, o usuário aprovou o plano E com ajustes e autorizou exclusivamente E1: motor, comandos, tempo e recuperação. Sem tickets de observação ou heartbeats persistentes. Recuperação parcial usa paused e recibos imutáveis localizados por ID/versão. Modelos/schema/25 gatilhos preservados; interface E2 e verificação E3 não iniciadas. Implementação E1 permanece sem commit até revisão.
+
+
+## Motor de foco — P1.2E1 em revisão
+
+FocusCommands implementa os seis estados com os quatro kinds B e transação materializada; FocusTime separa projeção nominal, checkpoint e continuidade desconhecida com fonte de tempo injetável. Snapshot GET não grava dados. Recuperação parcial é paused com recibo imutável de maior ID e versão correspondente; resolução versionada gera novo recibo, preservando o anterior. Reset terminaliza a tentativa antiga e cria ready com outro UID na mesma transação. JSON retorna resultado histórico separado do estado corrente. Preset respeita a versão raiz C.
+
+Sem tickets de observação, heartbeats persistentes, dependências ou mudança de modelo/schema/gatilhos. Observações voláteis são sinais conservadores, sem garantia universal de continuidade. Endpoints autenticados/CSRF estão disponíveis como contrato de backend; views, CSS e Stimulus permanecem demonstrativos. Relatório [P1.2E1_VERIFICATION.md](P1.2E1_VERIFICATION.md). Exclusivamente E1 entregue para revisão; E2/E3/F não iniciadas.
+
+
+### Encerramento E1 e autorização E2 — 2026-10-21
+
+E1 aprovada após auditoria independente do Antigravity, sem bloqueadores identificados; relatório existente em docs/P1.2E1_AUDIT.md. Encerramento em commit autorizado após nova verificação de 127 testes/1.714 asserções, processos, 25 gatilhos e segurança. Exclusivamente a interface compartilhada E2 está autorizada e deverá permanecer sem commit para revisão. E3/F, tag, push e merge não autorizados. Limitações anteriores preservadas.
+
+
+## Interface compartilhada do foco — P1.2E2 para revisão (2026-10-21)
+
+E1 homologada pelo Antigravity, conforme relatório existente e aprovação do usuário; commit `0c742503fa7c1df59523b4cdabf047b5e80c19c5`. E2 utiliza seus cinco endpoints sem alterações no motor ou contratos SQL. Um controller Stimulus de foco por shell apresenta todas as superfícies. Módulo de transporte conserva apenas snapshots e envelopes pendentes em memória por administrador; não utiliza armazenamento do navegador. SQLite continua autoritativo. Sequências de requisição e versões descartam leituras atrasadas; resultado histórico de replay nunca é usado como relógio corrente.
+
+Timestamps/checkpoints e decisões permanecem no servidor. `performance.now()` serve apenas à interpolação visual; leituras visíveis a cada 15s, sem escrita por tick. Navegação/reconexão retomam consultas, nunca criam sessão. Recuperação e conclusão exigem decisões explícitas. Presets 25/45 usam a versão do agregado C, preservando aparência e filtros; o DTO C não foi ampliado. Hints de nomes/contexto são obtidos de associações autenticadas e revalidados no E1 para cada intenção.
+
+Partials e CSS homologado preservados, com adaptações localizadas em foundation.css e controller dedicado, sem ampliar studio_controller.js. Evidências e limites: [P1.2E2_VERIFICATION.md](P1.2E2_VERIFICATION.md). E2 sem commit para revisão; E3/F não autorizadas.
+
+## Encerramento E2 e verificação integrada E3 — 2026-10-21
+
+Situação atual: E2 aprovada pelo Antigravity com ressalvas e sem bloqueadores confirmados, registrada em `a0ab717`. A diretriz de portabilidade foi registrada somente no AGENTS, em commit separado `d2dc047`: local-first/Linux prioritário, instalações futuras independentes, sem implementação desktop. E3 autorizada e executada sem alteração funcional ou de contratos E1/B: [relatório](P1.2E3_VERIFICATION.md). Um único foco, GET somente leitura, recibos e versões preservados; 25 gatilhos idênticos, 93 cenários de navegador aprovados. Recuperação após20min sintéticos exige três ações para aceitar/retomar, ressalva de uso cotidiano mantida para revisão sem mudar15/60/5. Firefox/contraste e pendências anteriores não encerrados. QA/documentação E3 sem commit; F/P1.3 não iniciadas.
+
+## Recuperação temporal F1b — alternativa B para revisão
+
+Plano F aprovado com ajustes, registrado em `30c6975`; E3 encerrada em `35a6671`. F1b acrescenta somente coordenação de interface aos comandos E1 existentes: resolve da estimativa do servidor, seguido de resume com versão previamente fixada. O recibo compatível da própria resolução é obrigatório; uma leitura atual pode vetar a continuação, nunca provar sua autoria ou fornecer outra versão. Cada etapa tem command_id/payload próprios e imutáveis. Timeout/resposta perdida conserva o envelope para retentativa explícita; reload descarta a continuação volátil. Não há nova ação backend ou persistência no navegador.
+
+São duas transações: resolução aceita permanece salva mesmo se retomada falhar. Candidato integral encaminha à revisão da conclusão, sem resume/complete automático. Modelos/schema/migrações/25 gatilhos, limites experimentais 15/60/5 e fontes de verdade E1/C preservados. Entrega F1b sem commit, aguardando revisão/auditoria: [verificação](P1.2F1B_VERIFICATION.md). F1c/F2/F3/F4/F5 não iniciadas; portabilidade local-first e instalações independentes permanecem requisitos, sem empacotamento.
+
+
+## Feedback e reconciliação de preset — F1c para revisão
+
+F1b aprovada com ressalvas e encerrada em `7ebfaeb`. F1c mantém PATCH versionado do agregado C e GET somente leitura. Coordenador específico de interface, compartilhado durante Turbo, valida confirmação HTTP e reconcilia resposta incerta/409 com o valor atual autenticado. Valor coincidente não comprova autoria. Nenhum PATCH automático, recibo novo, endpoint ou persistência do temporizador no browser. Envelopes incertos permanecem em memória quando GET falha; reload os descarta e somente consulta o estado atual.
+
+Versões remotas não são incorporadas ao editor de aparência durante reconciliação incerta; confirmação própria só avança versão quando não há rascunho, erro ou gravação pendente e o incremento é exatamente o esperado. Callback de controlador desconectado não toca no editor. C conserva conflito/reaplicação explícita. Modelos, motor E1, schema, migrações, 25 gatilhos, CSS e protótipo permanecem intactos. [Verificação F1c](P1.2F1C_VERIFICATION.md); implementação sem commit para revisão/auditoria. F2/F3/F4/F5 não iniciadas.
+
+
+## URLs de referências — F2a para revisão
+
+F1c encerrada em `b262ce6`. Exclusivamente F2a evolui SafeReferenceUrl, compartilhado por ReferenceCommands e ProjectsHelper: autoridade HTTP(S) estrita, IPv6 por IPAddr e rótulo final numérico WHATWG exigindo IPv4 decimal canônico completo. DNS legítimo com números intermediários continua permitido. Parsers locais, sem resolução/fetch; retorno preserva string original. Legados incompatíveis não são migrados/removidos e aparecem como texto ERB escapado sem href; correção permanece explícita no editor D3. Modelos/SQL e regras transacionais D3 intactos; sem segundo validador ou dependência nova. [Verificação F2a](P1.2F2A_VERIFICATION.md), implementação sem commit para revisão/auditoria. F2b/F3/F4/F5 não iniciadas.

@@ -1,0 +1,104 @@
+PASS Biblioteca apresenta registros reais sem fixtures da P0.4
+PASS Formulário: foco inicial, Tab/Shift Tab, Escape, X e cancelar
+PASS Criação com resposta perdida confirma retentativa sem duplicação
+PASS Pesquisa insensível a acentos, estados vazios e ordenação
+PASS Edição preserva UID, campos e apresenta conflitos entre abas
+PASS Favoritos, pausa, arquivamento somente leitura e restauração
+PASS Filtros versus aparência em abas distintas não sobrescrevem configurações
+UI Ir para o conteúdo
+a
+A
+acciohub
+Projetos
+Buscar no seu espaço
+⌘ K
+16:25
+Accio Music
+Escolha seu ambiente sonoro · player demonstrativo
+SEM ÁUDIO NESTA PRÉVIA
+← Biblioteca de Projetos
+SEU ESPAÇO DE TRABALHO
+Projeto Navegador QA local.
+
+Café, organização e testes sintéticos
+
+Ativo
+Visão Geral
+Tarefas
+Conhecimento
+Referências
+
+Tarefas pendentes
+
+Consulta somente leitura. Edição prevista para a P1.2D2.
+
+Nenhuma tarefa registrada.
+
+Foco
+SESSÃO DE FOCO
+25:00
+Estude no seu ritmo
+↻
+25m
+Informações do projeto
+
+Café, organização e testes sintéticos
+
+Status
+Ativo
+Tarefas pendentes
+0
+Referências
+0
+Editar projeto
+Conhecimento
+
+A integração das notas com o Vault Markdown acontecerá na P1.3. Nenhuma nota foi importada.
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ [
++   'AbortError: signal is aborted without reason\n' +
++     '    at z.cancel (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:5:8786)\n' +
++     '    at #V (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:19:50100)\n' +
++     '    at #D (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:19:47079)\n' +
++     '    at t.delegateConstructor.sourceURLChanged (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:19:46665)\n' +
++     '    at t.attributeChangedCallback (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:5:503)\n' +
++     '    at set src (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:5:629)\n' +
++     '    at http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:19:50306\n' +
++     '    at #G (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:19:53393)\n' +
++     '    at #$ (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:19:50292)\n' +
++     '    at t.delegateConstructor.linkClickIntercepted (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:19:47764)'
++ ]
+- []
+
+    at scenario (file:///home/goecking/Projects/Accio-HUB/rails/script/projects-browser-check.mjs:23:46)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/projects-browser-check.mjs:79:2
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: [
+    'AbortError: signal is aborted without reason\n' +
+      '    at z.cancel (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:5:8786)\n' +
+      '    at #V (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:19:50100)\n' +
+      '    at #D (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:19:47079)\n' +
+      '    at t.delegateConstructor.sourceURLChanged (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:19:46665)\n' +
+      '    at t.attributeChangedCallback (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:5:503)\n' +
+      '    at set src (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:5:629)\n' +
+      '    at http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:19:50306\n' +
+      '    at #G (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:19:53393)\n' +
+      '    at #$ (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:19:50292)\n' +
+      '    at t.delegateConstructor.linkClickIntercepted (http://127.0.0.1:3124/assets/turbo.min-9fd88cd5.js:19:47764)'
+  ],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

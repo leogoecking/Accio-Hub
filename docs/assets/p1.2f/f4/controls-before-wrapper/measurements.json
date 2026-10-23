@@ -1,0 +1,562 @@
+[
+  {
+    "capture": "dark-320-settings",
+    "kind": "boundary",
+    "selector": "#page-theme",
+    "color": [
+      197,
+      222,
+      247,
+      31
+    ],
+    "minimum": 1.37,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "dark-320-settings",
+    "kind": "focus",
+    "selector": "#page-theme",
+    "color": [
+      177,
+      240,
+      125,
+      255
+    ],
+    "minimum": 13.398,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-320-library",
+    "kind": "boundary",
+    "selector": "#project-search",
+    "color": [
+      197,
+      222,
+      247,
+      31
+    ],
+    "minimum": 1.322,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "dark-320-library",
+    "kind": "boundary",
+    "selector": "#project-order",
+    "color": [
+      197,
+      222,
+      247,
+      31
+    ],
+    "minimum": 1.345,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "dark-320-library",
+    "kind": "focus",
+    "selector": "#project-search",
+    "color": [
+      177,
+      240,
+      125,
+      255
+    ],
+    "minimum": 13.243,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-320-form",
+    "kind": "boundary",
+    "selector": "#project-name",
+    "color": [
+      197,
+      222,
+      247,
+      31
+    ],
+    "minimum": 1.338,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "dark-320-form",
+    "kind": "boundary",
+    "selector": "#project-description",
+    "color": [
+      197,
+      222,
+      247,
+      31
+    ],
+    "minimum": 1.338,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "dark-320-form",
+    "kind": "boundary",
+    "selector": "#project-icon",
+    "color": [
+      197,
+      222,
+      247,
+      31
+    ],
+    "minimum": 1.338,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "dark-320-form",
+    "kind": "boundary",
+    "selector": "#project-color-hex",
+    "color": [
+      197,
+      222,
+      247,
+      31
+    ],
+    "minimum": 1.338,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "dark-320-form",
+    "kind": "focus",
+    "selector": "#project-name",
+    "color": [
+      177,
+      240,
+      125,
+      255
+    ],
+    "minimum": 14.394,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-1440-settings",
+    "kind": "boundary",
+    "selector": "#page-theme",
+    "color": [
+      197,
+      222,
+      247,
+      31
+    ],
+    "minimum": 1.37,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "dark-1440-settings",
+    "kind": "focus",
+    "selector": "#page-theme",
+    "color": [
+      177,
+      240,
+      125,
+      255
+    ],
+    "minimum": 13.398,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-1440-library",
+    "kind": "boundary",
+    "selector": "#project-search",
+    "color": [
+      197,
+      222,
+      247,
+      31
+    ],
+    "minimum": 1.301,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "dark-1440-library",
+    "kind": "boundary",
+    "selector": "#project-order",
+    "color": [
+      197,
+      222,
+      247,
+      31
+    ],
+    "minimum": 1.345,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "dark-1440-library",
+    "kind": "focus",
+    "selector": "#project-search",
+    "color": [
+      177,
+      240,
+      125,
+      255
+    ],
+    "minimum": 12.91,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-1440-form",
+    "kind": "boundary",
+    "selector": "#project-name",
+    "color": [
+      197,
+      222,
+      247,
+      31
+    ],
+    "minimum": 1.338,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "dark-1440-form",
+    "kind": "boundary",
+    "selector": "#project-description",
+    "color": [
+      197,
+      222,
+      247,
+      31
+    ],
+    "minimum": 1.338,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "dark-1440-form",
+    "kind": "boundary",
+    "selector": "#project-icon",
+    "color": [
+      197,
+      222,
+      247,
+      31
+    ],
+    "minimum": 1.338,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "dark-1440-form",
+    "kind": "boundary",
+    "selector": "#project-color-hex",
+    "color": [
+      197,
+      222,
+      247,
+      31
+    ],
+    "minimum": 1.338,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "dark-1440-form",
+    "kind": "focus",
+    "selector": "#project-name",
+    "color": [
+      177,
+      240,
+      125,
+      255
+    ],
+    "minimum": 14.394,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-320-settings",
+    "kind": "boundary",
+    "selector": "#page-theme",
+    "color": [
+      36,
+      59,
+      89,
+      43
+    ],
+    "minimum": 1.334,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-320-settings",
+    "kind": "focus",
+    "selector": "#page-theme",
+    "color": [
+      177,
+      240,
+      125,
+      255
+    ],
+    "minimum": 1.284,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-320-library",
+    "kind": "boundary",
+    "selector": "#project-search",
+    "color": [
+      36,
+      59,
+      89,
+      43
+    ],
+    "minimum": 1.246,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-320-library",
+    "kind": "boundary",
+    "selector": "#project-order",
+    "color": [
+      36,
+      59,
+      89,
+      43
+    ],
+    "minimum": 1.267,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-320-library",
+    "kind": "focus",
+    "selector": "#project-search",
+    "color": [
+      177,
+      240,
+      125,
+      255
+    ],
+    "minimum": 1.187,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-320-form",
+    "kind": "boundary",
+    "selector": "#project-name",
+    "color": [
+      181,
+      197,
+      210,
+      255
+    ],
+    "minimum": 1.536,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-320-form",
+    "kind": "boundary",
+    "selector": "#project-description",
+    "color": [
+      36,
+      59,
+      89,
+      43
+    ],
+    "minimum": 1.346,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-320-form",
+    "kind": "boundary",
+    "selector": "#project-icon",
+    "color": [
+      181,
+      197,
+      210,
+      255
+    ],
+    "minimum": 1.536,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-320-form",
+    "kind": "boundary",
+    "selector": "#project-color-hex",
+    "color": [
+      181,
+      197,
+      210,
+      255
+    ],
+    "minimum": 1.536,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-320-form",
+    "kind": "focus",
+    "selector": "#project-name",
+    "color": [
+      177,
+      240,
+      125,
+      255
+    ],
+    "minimum": 1.272,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-1440-settings",
+    "kind": "boundary",
+    "selector": "#page-theme",
+    "color": [
+      36,
+      59,
+      89,
+      43
+    ],
+    "minimum": 1.334,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-1440-settings",
+    "kind": "focus",
+    "selector": "#page-theme",
+    "color": [
+      177,
+      240,
+      125,
+      255
+    ],
+    "minimum": 1.284,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-1440-library",
+    "kind": "boundary",
+    "selector": "#project-search",
+    "color": [
+      36,
+      59,
+      89,
+      43
+    ],
+    "minimum": 1.243,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-1440-library",
+    "kind": "boundary",
+    "selector": "#project-order",
+    "color": [
+      36,
+      59,
+      89,
+      43
+    ],
+    "minimum": 1.267,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-1440-library",
+    "kind": "focus",
+    "selector": "#project-search",
+    "color": [
+      177,
+      240,
+      125,
+      255
+    ],
+    "minimum": 1.184,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-1440-form",
+    "kind": "boundary",
+    "selector": "#project-name",
+    "color": [
+      181,
+      197,
+      210,
+      255
+    ],
+    "minimum": 1.536,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-1440-form",
+    "kind": "boundary",
+    "selector": "#project-description",
+    "color": [
+      36,
+      59,
+      89,
+      43
+    ],
+    "minimum": 1.346,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-1440-form",
+    "kind": "boundary",
+    "selector": "#project-icon",
+    "color": [
+      181,
+      197,
+      210,
+      255
+    ],
+    "minimum": 1.536,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-1440-form",
+    "kind": "boundary",
+    "selector": "#project-color-hex",
+    "color": [
+      181,
+      197,
+      210,
+      255
+    ],
+    "minimum": 1.536,
+    "required": 3,
+    "status": "fail"
+  },
+  {
+    "capture": "light-1440-form",
+    "kind": "focus",
+    "selector": "#project-name",
+    "color": [
+      177,
+      240,
+      125,
+      255
+    ],
+    "minimum": 1.272,
+    "required": 3,
+    "status": "fail"
+  }
+]

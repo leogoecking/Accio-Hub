@@ -1,0 +1,65 @@
+{
+  "passed": 15,
+  "results": [
+    {
+      "name": "A: Normal HTTP success confirms requested preset and changes only its field",
+      "result": "PASS"
+    },
+    {
+      "name": "B/E: Lost response before write reconciles different value without automatic reapply",
+      "result": "PASS"
+    },
+    {
+      "name": "B/D: Lost response after commit confirms equal current value without claiming authorship",
+      "result": "PASS"
+    },
+    {
+      "name": "C/F: Unavailable GET preserves original envelope; explicit retry gets 409 then confirms equal value",
+      "result": "PASS"
+    },
+    {
+      "name": "409 plus failed reconciliation retains exact obsolete version until a read succeeds",
+      "result": "PASS"
+    },
+    {
+      "name": "G: Other tab saves same requested value; 409 cannot prove original authorship",
+      "result": "PASS"
+    },
+    {
+      "name": "G: Concurrent theme Dock widgets or filters are never resent by preset reconciliation",
+      "result": "PASS"
+    },
+    {
+      "name": "Timeout and 503 preserve envelope while GET fails; no automatic retry on reads",
+      "result": "PASS"
+    },
+    {
+      "name": "HTTP success followed by failed GET distinguishes saved acknowledgement from unavailable current state",
+      "result": "PASS"
+    },
+    {
+      "name": "Success then concurrent change reports both acknowledged request and different current preset",
+      "result": "PASS"
+    },
+    {
+      "name": "Only 25 and 45 presets are sent; occupied sessions remain unchanged and reject PATCH",
+      "result": "PASS"
+    },
+    {
+      "name": "Reload loses pending envelope and GET does not create or retry PATCH",
+      "result": "PASS"
+    },
+    {
+      "name": "Identical shared coordinator serializes duplicate activations and explicit retry",
+      "result": "PASS"
+    },
+    {
+      "name": "Incompatible HTTP success cannot masquerade as acknowledged write",
+      "result": "PASS"
+    },
+    {
+      "name": "Preset acknowledgement never updates detached missing pending or dirty appearance editors",
+      "result": "PASS"
+    }
+  ]
+}

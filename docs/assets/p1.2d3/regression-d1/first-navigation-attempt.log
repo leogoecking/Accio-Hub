@@ -1,0 +1,80 @@
+PASS Biblioteca apresenta registros reais sem fixtures da P0.4
+PASS Formulário: foco inicial, Tab/Shift Tab, Escape, X e cancelar
+PASS Criação com resposta perdida confirma retentativa sem duplicação
+PASS Pesquisa insensível a acentos, estados vazios e ordenação
+UI Ir para o conteúdo
+a
+A
+acciohub
+Projetos
+Buscar no seu espaço
+⌘ K
+00:23
+Accio Music
+Escolha seu ambiente sonoro · player demonstrativo
+SEM ÁUDIO NESTA PRÉVIA
+← Biblioteca de Projetos
+SEU ESPAÇO DE TRABALHO
+Projeto Navegador QA.
+
+Café, organização e testes sintéticos
+
+Ativo
+Visão Geral
+Tarefas
+Conhecimento
+Referências
+
+Tarefas pendentes
+
+Nenhuma tarefa nesta lista. Seu próximo passo começa aqui.
+
+Adicionar tarefa
+Foco
+SESSÃO DE FOCO
+25:00
+Estude no seu ritmo
+↻
+25m
+Informações do projeto
+
+Café, organização e testes sintéticos
+
+Status
+Ativo
+Tarefas pendentes
+0
+Referências
+0
+Editar projeto
+Conhecimento
+
+A integração das notas com o Vault Markdown acontecerá na P1.3. Nenhuma nota foi importada.
+node:internal/errors:985
+  const err = new Error(message);
+              ^
+
+Error: Command failed: agent-browser --session accio-p12d-264964 --json wait [data-project-dialog][open]
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:942:11)
+    at execFileSync (node:child_process:978:15)
+    at b (file:///home/goecking/Projects/Accio-HUB/rails/script/projects-browser-check.mjs:17:44)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/projects-browser-check.mjs:67:135
+    at scenario (file:///home/goecking/Projects/Accio-HUB/rails/script/projects-browser-check.mjs:23:31)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/projects-browser-check.mjs:64:2
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26 {
+  status: 1,
+  signal: null,
+  output: [
+    null,
+    '{"success":false,"data":null,"error":"Wait timed out after 25000ms"}\n',
+    ''
+  ],
+  pid: 266672,
+  stdout: '{"success":false,"data":null,"error":"Wait timed out after 25000ms"}\n',
+  stderr: ''
+}
+
+Node.js v24.19.0

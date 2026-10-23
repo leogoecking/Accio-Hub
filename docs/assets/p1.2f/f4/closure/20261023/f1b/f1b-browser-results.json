@@ -1,0 +1,58 @@
+[
+  {
+    "name": "20-minute absence recovers in two human actions with explicit accepted time and confirmed resume",
+    "result": "PASS"
+  },
+  {
+    "name": "Reload while pending recovery does not accept or resume until one explicit action",
+    "result": "PASS"
+  },
+  {
+    "name": "Integral estimate goes only to awaiting confirmation; invalid estimate cannot be accepted",
+    "result": "PASS"
+  },
+  {
+    "name": "Lost resolve response cannot infer acknowledgement from similar GET; explicit replay resumes once",
+    "result": "PASS"
+  },
+  {
+    "name": "503 after resolve preserves paused accepted checkpoint and exact resume retry",
+    "result": "PASS"
+  },
+  {
+    "name": "Actual 15-second transport timeout after resolve preserves accepted time and retries resume only",
+    "result": "PASS"
+  },
+  {
+    "name": "Lost resume response acknowledges by replay without duplicating receipt or issuing resolve again",
+    "result": "PASS"
+  },
+  {
+    "name": "Second tab changes session after resolve: first tab stops rather than borrowing its version",
+    "result": "PASS"
+  },
+  {
+    "name": "Archived project between transactions accepts checkpoint but backend rejects resume",
+    "result": "PASS"
+  },
+  {
+    "name": "Completed task between transactions remains completed and prevents resume",
+    "result": "PASS"
+  },
+  {
+    "name": "Moving task to editable project preserves historical focus context and allows validated resume",
+    "result": "PASS"
+  },
+  {
+    "name": "Reload between accepted resolve and unsent resume discards continuation without automatic retry",
+    "result": "PASS"
+  },
+  {
+    "name": "Recovery layout keyboard and accessibility dark at five widths",
+    "result": "PASS"
+  },
+  {
+    "name": "Recovery layout keyboard and accessibility light at five widths",
+    "result": "PASS"
+  }
+]

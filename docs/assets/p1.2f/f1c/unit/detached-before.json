@@ -1,0 +1,5 @@
+{
+  "case": "Acknowledgement after old Stimulus controller disconnected",
+  "no_stale_controller_exception": false,
+  "observed_null_version_exception": true
+}

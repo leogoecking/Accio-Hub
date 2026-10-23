@@ -1,0 +1,118 @@
+[
+  {
+    "name": "Biblioteca apresenta registros reais sem fixtures da P0.4",
+    "result": "PASS"
+  },
+  {
+    "name": "Formulário: foco inicial, Tab/Shift Tab, Escape, X e cancelar",
+    "result": "PASS"
+  },
+  {
+    "name": "Criação com resposta perdida confirma retentativa sem duplicação",
+    "result": "PASS"
+  },
+  {
+    "name": "Pesquisa insensível a acentos, estados vazios e ordenação",
+    "result": "PASS"
+  },
+  {
+    "name": "Edição preserva UID, campos e apresenta conflitos entre abas",
+    "result": "PASS"
+  },
+  {
+    "name": "Favoritos, pausa, arquivamento somente leitura e restauração",
+    "result": "PASS"
+  },
+  {
+    "name": "Filtros versus aparência em abas distintas não sobrescrevem configurações",
+    "result": "PASS"
+  },
+  {
+    "name": "Espaço real: abas por teclado e escopo de tarefas referências Vault e foco",
+    "result": "PASS"
+  },
+  {
+    "name": "Navegação Turbo, dashboard e recarga usam o mesmo projeto",
+    "result": "PASS"
+  },
+  {
+    "name": "Biblioteca dark 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Espaço dark 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Biblioteca dark 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Espaço dark 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Biblioteca dark 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Espaço dark 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Biblioteca dark 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Espaço dark 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Biblioteca dark 1920px",
+    "result": "PASS"
+  },
+  {
+    "name": "Espaço dark 1920px",
+    "result": "PASS"
+  },
+  {
+    "name": "Biblioteca light 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Espaço light 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Biblioteca light 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Espaço light 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Biblioteca light 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Espaço light 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Biblioteca light 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Espaço light 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Biblioteca light 1920px",
+    "result": "PASS"
+  },
+  {
+    "name": "Espaço light 1920px",
+    "result": "PASS"
+  }
+]

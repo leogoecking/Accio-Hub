@@ -1,0 +1,117 @@
+{
+  "axeVersion": "4.12.1",
+  "counts": {
+    "inapplicable": 50,
+    "incomplete": 1,
+    "passes": 39,
+    "violations": 0
+  },
+  "incomplete": [
+    {
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axeAPI",
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodeCount": 42,
+      "nodes": [
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<a class=\"brand-glyph\" aria-label=\"Accio Hub — Início\" href=\"/\">a<span class=\"brand-dot\"></span></a>",
+          "target": [
+            ".brand-glyph"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<button class=\"rail-avatar\" title=\"Sair da conta local\" aria-label=\"Sair da conta local\" type=\"submit\">A</button>",
+          "target": [
+            ".rail-avatar"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<a class=\"mobile-brand\" aria-label=\"Accio Hub — Início\" href=\"/\">accio</a>",
+          "target": [
+            ".mobile-brand"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<strong>Accio Music</strong>",
+          "target": [
+            ".music-caption > strong"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<small>Escolha seu ambiente sonoro <span>· player demonstrativo</span></small>",
+          "target": [
+            ".music-caption > small"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<h2>Seu som. Seu ritmo.</h2>",
+          "target": [
+            ".music-expanded > div > h2"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<p>Web rádios, favoritos e integração com Pomodoro estão planejados. Nenhum áudio é reproduzido na P1.1.</p>",
+          "target": [
+            ".music-expanded > div > p"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<button class=\"button tertiary\" data-music-expand=\"\" aria-expanded=\"true\">Recolher</button>",
+          "target": [
+            ".tertiary.button[data-music-expand=\"\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<div class=\"eyebrow\"><span class=\"tiny-light\"></span> BOARD 01 <span class=\"eyebrow-sep\">/</span> INÍCIO</div>",
+          "target": [
+            ".board-titleline > div:nth-child(1) > .eyebrow"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<h1 tabindex=\"-1\">Seu espaço<span class=\"title-stop\">.</span></h1>",
+          "target": [
+            "h1"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ]
+    }
+  ],
+  "lifecycle": {
+    "effectiveLaunch": {
+      "browserLaunched": true,
+      "engine": "chrome",
+      "launchHash": 16228916338243422000
+    },
+    "launched": false,
+    "relaunchedBrowser": false,
+    "restartedBackground": false,
+    "restoreStatus": "not_configured",
+    "reused": true,
+    "saveStatus": "not_attempted"
+  },
+  "url": "http://127.0.0.1:3130/",
+  "violations": []
+}

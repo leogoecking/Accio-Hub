@@ -1,0 +1,288 @@
+{
+  "seed": {
+    "seeded": true,
+    "candidates": 4
+  },
+  "empty_seed": {
+    "empty_profile": true
+  },
+  "inventory": {
+    "preference_present": true,
+    "cas_version": 3,
+    "snapshot_present": true,
+    "snapshot_count": 4,
+    "additional_count": 3,
+    "candidates": [
+      {
+        "location": "root",
+        "type": "candidate",
+        "raw_present": true,
+        "raw_string": true,
+        "value_present": true,
+        "declared_valid": true,
+        "source": "p1.1-cookie",
+        "source_present": true,
+        "digest_status": "match",
+        "unknown_fields": 1
+      },
+      {
+        "location": "retained-0",
+        "type": "candidate",
+        "raw_present": true,
+        "raw_string": true,
+        "value_present": true,
+        "declared_valid": false,
+        "source": "p1.1-cookie",
+        "source_present": true,
+        "digest_status": "match",
+        "unknown_fields": 0,
+        "map_key_matches_digest": true
+      },
+      {
+        "location": "retained-1",
+        "type": "candidate",
+        "raw_present": true,
+        "raw_string": true,
+        "value_present": true,
+        "declared_valid": true,
+        "source": "p1.1-cookie",
+        "source_present": true,
+        "digest_status": "match",
+        "unknown_fields": 0,
+        "map_key_matches_digest": true
+      },
+      {
+        "location": "retained-2",
+        "type": "candidate",
+        "raw_present": true,
+        "raw_string": false,
+        "value_present": false,
+        "declared_valid": null,
+        "source": "unknown",
+        "source_present": false,
+        "digest_status": "unverifiable",
+        "unknown_fields": 1,
+        "map_key_matches_digest": false
+      }
+    ],
+    "unknown_root_fields": 1,
+    "blockers": [],
+    "warnings": [
+      "unknown_fields_preserved",
+      "candidate_requires_review"
+    ],
+    "candidate_dates": "unknown; imported_at is initial import, updated_at is not candidate age"
+  },
+  "export": {
+    "verified": true,
+    "format_version": 1,
+    "inventory": {
+      "preference_present": true,
+      "cas_version": 3,
+      "snapshot_present": true,
+      "snapshot_count": 4,
+      "additional_count": 3,
+      "candidates": [
+        {
+          "location": "root",
+          "type": "candidate",
+          "raw_present": true,
+          "raw_string": true,
+          "value_present": true,
+          "declared_valid": true,
+          "source": "p1.1-cookie",
+          "source_present": true,
+          "digest_status": "match",
+          "unknown_fields": 1
+        },
+        {
+          "location": "retained-0",
+          "type": "candidate",
+          "raw_present": true,
+          "raw_string": true,
+          "value_present": true,
+          "declared_valid": false,
+          "source": "p1.1-cookie",
+          "source_present": true,
+          "digest_status": "match",
+          "unknown_fields": 0,
+          "map_key_matches_digest": true
+        },
+        {
+          "location": "retained-1",
+          "type": "candidate",
+          "raw_present": true,
+          "raw_string": true,
+          "value_present": true,
+          "declared_valid": true,
+          "source": "p1.1-cookie",
+          "source_present": true,
+          "digest_status": "match",
+          "unknown_fields": 0,
+          "map_key_matches_digest": true
+        },
+        {
+          "location": "retained-2",
+          "type": "candidate",
+          "raw_present": true,
+          "raw_string": false,
+          "value_present": false,
+          "declared_valid": null,
+          "source": "unknown",
+          "source_present": false,
+          "digest_status": "unverifiable",
+          "unknown_fields": 1,
+          "map_key_matches_digest": false
+        }
+      ],
+      "unknown_root_fields": 1,
+      "blockers": [],
+      "warnings": [
+        "unknown_fields_preserved",
+        "candidate_requires_review"
+      ],
+      "candidate_dates": "unknown; imported_at is initial import, updated_at is not candidate age"
+    }
+  },
+  "reopen": {
+    "verified": true,
+    "format_version": 1,
+    "inventory": {
+      "preference_present": true,
+      "cas_version": 3,
+      "snapshot_present": true,
+      "snapshot_count": 4,
+      "additional_count": 3,
+      "candidates": [
+        {
+          "location": "root",
+          "type": "candidate",
+          "raw_present": true,
+          "raw_string": true,
+          "value_present": true,
+          "declared_valid": true,
+          "source": "p1.1-cookie",
+          "source_present": true,
+          "digest_status": "match",
+          "unknown_fields": 1
+        },
+        {
+          "location": "retained-0",
+          "type": "candidate",
+          "raw_present": true,
+          "raw_string": true,
+          "value_present": true,
+          "declared_valid": false,
+          "source": "p1.1-cookie",
+          "source_present": true,
+          "digest_status": "match",
+          "unknown_fields": 0,
+          "map_key_matches_digest": true
+        },
+        {
+          "location": "retained-1",
+          "type": "candidate",
+          "raw_present": true,
+          "raw_string": true,
+          "value_present": true,
+          "declared_valid": true,
+          "source": "p1.1-cookie",
+          "source_present": true,
+          "digest_status": "match",
+          "unknown_fields": 0,
+          "map_key_matches_digest": true
+        },
+        {
+          "location": "retained-2",
+          "type": "candidate",
+          "raw_present": true,
+          "raw_string": false,
+          "value_present": false,
+          "declared_valid": null,
+          "source": "unknown",
+          "source_present": false,
+          "digest_status": "unverifiable",
+          "unknown_fields": 1,
+          "map_key_matches_digest": false
+        }
+      ],
+      "unknown_root_fields": 1,
+      "blockers": [],
+      "warnings": [
+        "unknown_fields_preserved",
+        "candidate_requires_review"
+      ],
+      "candidate_dates": "unknown; imported_at is initial import, updated_at is not candidate age"
+    }
+  },
+  "unchanged": {
+    "entire_aggregate_identical": true
+  },
+  "recovery": {
+    "empty_profile_recovered": true,
+    "selected_value_revalidated": true,
+    "all_candidates_and_unknown_fields_preserved": true,
+    "invalid_candidates_opaque_only": true
+  },
+  "recovery_existing_refused": true,
+  "recovery_reopen": {
+    "recovered_profile_unchanged": true
+  },
+  "concurrency": [
+    {
+      "operation": "theme",
+      "before_version": 3,
+      "captured_version": 3,
+      "after_version": 4,
+      "coherent_point_in_time": true
+    },
+    {
+      "operation": "preset",
+      "before_version": 4,
+      "captured_version": 4,
+      "after_version": 5,
+      "coherent_point_in_time": true
+    },
+    {
+      "operation": "bootstrap",
+      "before_version": 5,
+      "captured_version": 5,
+      "after_version": 6,
+      "coherent_point_in_time": true
+    },
+    {
+      "operation": "bootstrap_empty",
+      "before_version": null,
+      "captured_version": null,
+      "after_version": 0,
+      "coherent_point_in_time": true
+    }
+  ],
+  "integrity": {
+    "capture_sha256": "f0b0f48edd1733f64b4335310900c676b681f6a7365e32b550b8f813605f2dc8",
+    "version": 6,
+    "triggers": 25,
+    "indexes": 36,
+    "objects_sha256": "0daaa6833d2b601b18f97cfc8fe6bde79ec42a44c2adbd73ceb8c6be7a9f2663",
+    "integrity": "ok",
+    "foreign_keys": true,
+    "wal_full": true
+  },
+  "target_integrity": {
+    "capture_sha256": "623b6cbab8675202a449a8b58b8c464ad6a3230e2e92895afcc8db1b50e77f60",
+    "version": 1,
+    "triggers": 25,
+    "indexes": 36,
+    "objects_sha256": "0daaa6833d2b601b18f97cfc8fe6bde79ec42a44c2adbd73ceb8c6be7a9f2663",
+    "integrity": "ok",
+    "foreign_keys": true,
+    "wal_full": true
+  },
+  "unsafe_environment_refused_before_database_open": true,
+  "private_files": {
+    "directory_mode": "700",
+    "archive_mode": "600"
+  },
+  "exports_in_versionable_evidence": false,
+  "source_sqlite_not_restored_or_replaced": true
+}

@@ -1,0 +1,12 @@
+Error: Command failed: bin/rails sqlite_backups:create
+Operação recusada ou não confirmada. Não sirva um destino incompleto; confira fixture e arquivos privados.
+
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:942:11)
+    at execFileSync (node:child_process:978:15)
+    at run (file:///home/goecking/Projects/Accio-HUB/rails/script/final-persistence-check.mjs:16:30)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/final-persistence-check.mjs:67:113
+    at check (file:///home/goecking/Projects/Accio-HUB/rails/script/final-persistence-check.mjs:35:25)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/final-persistence-check.mjs:67:2
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)

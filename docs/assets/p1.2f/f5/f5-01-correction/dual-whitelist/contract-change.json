@@ -1,0 +1,10 @@
+{
+  "before_sha256": "31fcfafc5fd0deaedeef454a4380c9365882a9bdedd186c2fa657b291df3f367",
+  "after_sha256": "cce26197bfa3afec45eaf90d978fc1a358d85dc520c73361f895bfdce43b9dd3",
+  "old_fields_and_order_preserved": true,
+  "only_two_entries_appended": [
+    "edc335eb6c71b2062b5a65c4563fcbe0fe341deaa5ca55ac7383f8dd92ec5751",
+    "b42e0bb59d064152d690856959275801ae4f1e034e291765d56bbc1874986470"
+  ],
+  "preconditions_verified": true
+}

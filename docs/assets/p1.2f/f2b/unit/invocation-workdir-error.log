@@ -1,0 +1,19 @@
+bin/rails aborted!
+No Rakefile found (looking for: rakefile, Rakefile, rakefile.rb, Rakefile.rb)
+/home/goecking/Projects/Accio-HUB/rails/vendor/bundle/ruby/3.3.0/gems/railties-8.1.3.1/lib/rails/commands/rake/rake_command.rb:43:in `block in with_rake'
+/home/goecking/Projects/Accio-HUB/rails/vendor/bundle/ruby/3.3.0/gems/railties-8.1.3.1/lib/rails/commands/rake/rake_command.rb:41:in `with_rake'
+/home/goecking/Projects/Accio-HUB/rails/vendor/bundle/ruby/3.3.0/gems/railties-8.1.3.1/lib/rails/commands/rake/rake_command.rb:20:in `perform'
+/home/goecking/Projects/Accio-HUB/rails/vendor/bundle/ruby/3.3.0/gems/railties-8.1.3.1/lib/rails/commands/test/test_command.rb:73:in `run_prepare_task'
+/home/goecking/Projects/Accio-HUB/rails/vendor/bundle/ruby/3.3.0/gems/railties-8.1.3.1/lib/rails/commands/test/test_command.rb:32:in `perform'
+/home/goecking/Projects/Accio-HUB/rails/vendor/bundle/ruby/3.3.0/gems/thor-1.5.0/lib/thor/command.rb:28:in `run'
+/home/goecking/Projects/Accio-HUB/rails/vendor/bundle/ruby/3.3.0/gems/thor-1.5.0/lib/thor/invocation.rb:127:in `invoke_command'
+/home/goecking/Projects/Accio-HUB/rails/vendor/bundle/ruby/3.3.0/gems/railties-8.1.3.1/lib/rails/command/base.rb:176:in `invoke_command'
+/home/goecking/Projects/Accio-HUB/rails/vendor/bundle/ruby/3.3.0/gems/thor-1.5.0/lib/thor.rb:538:in `dispatch'
+/home/goecking/Projects/Accio-HUB/rails/vendor/bundle/ruby/3.3.0/gems/railties-8.1.3.1/lib/rails/command/base.rb:71:in `perform'
+/home/goecking/Projects/Accio-HUB/rails/vendor/bundle/ruby/3.3.0/gems/railties-8.1.3.1/lib/rails/command.rb:65:in `block in invoke'
+/home/goecking/Projects/Accio-HUB/rails/vendor/bundle/ruby/3.3.0/gems/railties-8.1.3.1/lib/rails/command.rb:143:in `with_argv'
+/home/goecking/Projects/Accio-HUB/rails/vendor/bundle/ruby/3.3.0/gems/railties-8.1.3.1/lib/rails/command.rb:63:in `invoke'
+/home/goecking/Projects/Accio-HUB/rails/vendor/bundle/ruby/3.3.0/gems/railties-8.1.3.1/lib/rails/commands.rb:18:in `<main>'
+/home/goecking/Projects/Accio-HUB/rails/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.26.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:33:in `require'
+rails/bin/rails:14:in `<main>'
+(See full trace by running task with --trace)

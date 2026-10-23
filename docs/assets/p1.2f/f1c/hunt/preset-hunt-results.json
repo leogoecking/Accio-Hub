@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Incompatible HTTP 200 acknowledgement and matching GET never prove authorship",
+    "result": "PASS"
+  },
+  {
+    "name": "Appearance edit after uncertain preset keeps draft and requires explicit C conflict resolution",
+    "result": "PASS"
+  },
+  {
+    "name": "Turbo navigation during pending PATCH uses shared coordinator without stale controller errors or duplicate write",
+    "result": "PASS"
+  }
+]

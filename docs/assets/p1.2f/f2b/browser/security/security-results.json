@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Unauthenticated protected navigation redirects without private shell",
+    "result": "PASS"
+  },
+  {
+    "name": "Contextual task dialog opens by keyboard with focus trap Escape and return",
+    "result": "PASS"
+  },
+  {
+    "name": "CSRF enabled in browser rejects missing and wrong tokens without writes",
+    "result": "PASS"
+  }
+]

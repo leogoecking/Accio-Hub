@@ -1,0 +1,27 @@
+{
+  "dedicated": {
+    "passed": 18,
+    "file": "final-browser/preset-browser-results.json"
+  },
+  "bug_hunt": {
+    "passed": 3,
+    "file": "hunt-final/preset-hunt-results.json"
+  },
+  "f1b": {
+    "passed": 14,
+    "file": "regression-f1b-final/f1b-browser-results.json"
+  },
+  "e2_main": {
+    "passed": 37,
+    "file": "regression-e2/browser-results.json"
+  },
+  "additional": {
+    "passed": 14,
+    "file": "regression-e2/browser-extra-results.json"
+  },
+  "integrated": {
+    "passed": 8,
+    "file": "integrated/integrated-results.json"
+  },
+  "unique_total": 94
+}

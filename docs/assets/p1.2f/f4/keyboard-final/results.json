@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Skip link and logical keyboard entry",
+    "status": "PASS"
+  },
+  {
+    "name": "project dialog Enter initial focus Tab ShiftTab Escape return",
+    "status": "PASS"
+  },
+  {
+    "name": "project dialog cancel and close by keyboard",
+    "status": "PASS"
+  },
+  {
+    "name": "task dialog Enter initial focus Tab ShiftTab Escape return",
+    "status": "PASS"
+  },
+  {
+    "name": "task dialog cancel and close by keyboard",
+    "status": "PASS"
+  },
+  {
+    "name": "reference dialog Enter initial focus Tab ShiftTab Escape return",
+    "status": "PASS"
+  },
+  {
+    "name": "reference dialog cancel and close by keyboard",
+    "status": "PASS"
+  },
+  {
+    "name": "Drawer keyboard containment and return",
+    "status": "PASS"
+  },
+  {
+    "name": "Search shortcut focus results Enter Turbo and empty status",
+    "status": "PASS"
+  },
+  {
+    "name": "Project tabs arrows Home End preserve focus after Turbo",
+    "status": "PASS"
+  },
+  {
+    "name": "Pomodoro preset dialog trap Escape focus and no clock live region",
+    "status": "PASS"
+  },
+  {
+    "name": "All interactive controls named and selected states present",
+    "status": "PASS"
+  },
+  {
+    "name": "Validation error preserved and exposed as alert",
+    "status": "PASS"
+  },
+  {
+    "name": "project delayed error does not steal a newly moved focus",
+    "status": "PASS"
+  },
+  {
+    "name": "task delayed error does not steal a newly moved focus",
+    "status": "PASS"
+  },
+  {
+    "name": "reference delayed error does not steal a newly moved focus",
+    "status": "PASS"
+  }
+]

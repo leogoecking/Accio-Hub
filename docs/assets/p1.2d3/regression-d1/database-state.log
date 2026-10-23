@@ -1,0 +1,15 @@
+{
+  "projects": 5,
+  "unique_confirmed_creation": true,
+  "legacy_identity_dates_tint_and_null_color_preserved": true,
+  "children": {
+    "tasks": 1,
+    "references": 2,
+    "project_widgets": 1,
+    "focus": 1
+  },
+  "children_versions_and_dates_unchanged": true,
+  "focus_interface_has_no_persistence_effects": true,
+  "foreign_keys_intact": true,
+  "sql_triggers": 25
+}

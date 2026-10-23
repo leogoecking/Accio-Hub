@@ -1,0 +1,475 @@
+{
+  "accent": "#b1f07d",
+  "active": "reference-title",
+  "fontsLoaded": "loaded",
+  "geometry": [
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 1000,
+        "width": 76,
+        "x": 0,
+        "y": 0
+      },
+      "selector": "html > body > div.shell > aside.rail"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 67,
+        "width": 1364,
+        "x": 76,
+        "y": 0
+      },
+      "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > header.headbar"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 49,
+        "width": 1364,
+        "x": 76,
+        "y": 67
+      },
+      "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone"
+    }
+  ],
+  "modal": null,
+  "nodes": [
+    {
+      "disabled": false,
+      "font": 19,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 25,
+          "width": 132.5,
+          "x": 466,
+          "y": 252.96875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#reference-dialog-title",
+      "text": "Nova referência",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 31.703125,
+          "x": 466,
+          "y": 296.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#reference-form > label:nth-of-type(1)",
+      "text": "Título",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 24.5625,
+          "x": 466,
+          "y": 377.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#reference-form > label:nth-of-type(2)",
+      "text": "Tipo",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 24.40625,
+          "x": 466,
+          "y": 460.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#reference-form > label:nth-of-type(3)",
+      "text": "URL",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 112.375,
+          "x": 490.40625,
+          "y": 460.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "#reference-form > label:nth-of-type(3) > span.project-optional",
+      "text": "obrigatória para links",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 162.453125,
+          "x": 466,
+          "y": 541.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#reference-form > label:nth-of-type(4)",
+      "text": "Descrição do material ou link",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 500.6875,
+          "x": 466,
+          "y": 676.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#reference-form-hint",
+      "text": "Salva no SQLite neste projeto. Materiais podem ser descritos sem URL; nenhum arquivo será anexado.",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 51.890625,
+          "x": 564.046875,
+          "y": 717.515625
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#reference-form > div.project-form-actions:nth-of-type(3) > button.button.tertiary:nth-of-type(1)",
+      "text": "Cancelar",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 99.1875,
+          "x": 812.40625,
+          "y": 717.515625
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        16,
+        32,
+        28,
+        255
+      ],
+      "selector": "#reference-form > div.project-form-actions:nth-of-type(3) > button.button:nth-of-type(2)",
+      "text": "Salvar referência",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "font": 12,
+      "kind": "value",
+      "opacity": 1,
+      "placeholderOpacity": 1,
+      "rects": [
+        {
+          "height": 36,
+          "width": 500,
+          "x": 470,
+          "y": 404.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#reference-kind",
+      "text": "Link",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "font": 12,
+      "kind": "placeholder",
+      "opacity": 1,
+      "placeholderOpacity": 1,
+      "rects": [
+        {
+          "height": 34,
+          "width": 500,
+          "x": 470,
+          "y": 487.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "#reference-url",
+      "text": "https://",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#reference-title",
+      "disabled": false,
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 42,
+          "width": 508,
+          "x": 466,
+          "y": 319.46875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        140,
+        151,
+        167,
+        248
+      ],
+      "selector": "#reference-title",
+      "text": "Título",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#reference-kind",
+      "disabled": false,
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 44,
+          "width": 508,
+          "x": 466,
+          "y": 400.46875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        140,
+        151,
+        167,
+        248
+      ],
+      "selector": "#reference-kind",
+      "text": "TipoLink\nMaterial",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#reference-url",
+      "disabled": false,
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 42,
+          "width": 508,
+          "x": 466,
+          "y": 483.46875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        140,
+        151,
+        167,
+        248
+      ],
+      "selector": "#reference-url",
+      "text": "URL obrigatória para links",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#reference-description",
+      "disabled": false,
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 80,
+          "width": 508,
+          "x": 466,
+          "y": 564.46875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        140,
+        151,
+        167,
+        248
+      ],
+      "selector": "#reference-description",
+      "text": "Descrição do material ou link",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 11.66668701171875,
+          "width": 11.6666259765625,
+          "x": 951.1666870117188,
+          "y": 259.6354064941406
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#reference-form > div.block-top:nth-of-type(1) > button.mini-control > svg > path",
+      "text": "Fechar formulário de referência",
+      "unknown": []
+    },
+    {
+      "kind": "focus",
+      "offset": 3,
+      "opacity": 1,
+      "outline": "solid",
+      "rects": [
+        {
+          "height": 42,
+          "width": 508,
+          "x": 466,
+          "y": 319.46875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#reference-title",
+      "unknown": [],
+      "width": 2
+    }
+  ],
+  "overflow": false,
+  "theme": "dark",
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 1440
+  },
+  "wallpaper": "northern"
+}

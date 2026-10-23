@@ -1,0 +1,112 @@
+Inspecting 4 files
+..CC
+
+Offenses:
+
+script/legacy-snapshots-check.rb:114:3: C: [Corrected] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  [env,destination_env].each do |selected|
+  ^
+script/legacy-snapshots-check.rb:114:7: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+  [env,destination_env].each do |selected|
+      ^
+script/legacy-snapshots-check.rb:115:14: C: [Corrected] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+    run.call(["bin/rails","db:schema:load"], selected)
+             ^
+script/legacy-snapshots-check.rb:115:26: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+    run.call(["bin/rails","db:schema:load"], selected)
+                         ^
+script/legacy-snapshots-check.rb:118:60: C: [Corrected] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  call = ->(mode, selected = env, changes = {}) { run.call(["bin/rails","runner",runner], selected, changes.merge("F3A_MODE" => mode)) }
+                                                           ^
+script/legacy-snapshots-check.rb:118:72: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+  call = ->(mode, selected = env, changes = {}) { run.call(["bin/rails","runner",runner], selected, changes.merge("F3A_MODE" => mode)) }
+                                                                       ^
+script/legacy-snapshots-check.rb:118:81: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+  call = ->(mode, selected = env, changes = {}) { run.call(["bin/rails","runner",runner], selected, changes.merge("F3A_MODE" => mode)) }
+                                                                                ^
+script/legacy-snapshots-check.rb:121:33: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+  export_path = File.join(source,"archive.json")
+                                ^
+script/legacy-snapshots-check.rb:122:45: C: [Corrected] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  results[:inventory] = JSON.parse(run.call(["bin/rails","legacy_snapshots:inventory"]))
+                                            ^
+script/legacy-snapshots-check.rb:122:57: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+  results[:inventory] = JSON.parse(run.call(["bin/rails","legacy_snapshots:inventory"]))
+                                                        ^
+script/legacy-snapshots-check.rb:123:42: C: [Corrected] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  results[:export] = JSON.parse(run.call(["bin/rails","legacy_snapshots:export"], env, "ACCIO_SNAPSHOT_DESTINATION" => export_path))
+                                         ^
+script/legacy-snapshots-check.rb:123:54: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+  results[:export] = JSON.parse(run.call(["bin/rails","legacy_snapshots:export"], env, "ACCIO_SNAPSHOT_DESTINATION" => export_path))
+                                                     ^
+script/legacy-snapshots-check.rb:124:42: C: [Corrected] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  results[:reopen] = JSON.parse(run.call(["bin/rails","legacy_snapshots:verify"], env, "ACCIO_SNAPSHOT_ARCHIVE" => export_path))
+                                         ^
+script/legacy-snapshots-check.rb:124:54: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+  results[:reopen] = JSON.parse(run.call(["bin/rails","legacy_snapshots:verify"], env, "ACCIO_SNAPSHOT_ARCHIVE" => export_path))
+                                                     ^
+script/legacy-snapshots-check.rb:136:5: C: [Corrected] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+    ["writer-ready","writer-release"].each { |name| File.unlink(File.join(workspace,name)) if File.exist?(File.join(workspace,name)) }
+    ^
+script/legacy-snapshots-check.rb:136:20: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+    ["writer-ready","writer-release"].each { |name| File.unlink(File.join(workspace,name)) if File.exist?(File.join(workspace,name)) }
+                   ^
+script/legacy-snapshots-check.rb:136:84: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+    ["writer-ready","writer-release"].each { |name| File.unlink(File.join(workspace,name)) if File.exist?(File.join(workspace,name)) }
+                                                                                   ^
+script/legacy-snapshots-check.rb:136:126: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+    ["writer-ready","writer-release"].each { |name| File.unlink(File.join(workspace,name)) if File.exist?(File.join(workspace,name)) }
+                                                                                                                             ^
+script/legacy-snapshots-check.rb:142:79: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+        Timeout.timeout(30) { sleep 0.01 until File.exist?(File.join(workspace,"writer-ready")) }
+                                                                              ^
+script/legacy-snapshots-check.rb:143:32: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+        path = File.join(source,"concurrent-#{operation}.json")
+                               ^
+script/legacy-snapshots-check.rb:144:18: C: [Corrected] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+        run.call(["bin/rails","legacy_snapshots:export"], env, "ACCIO_SNAPSHOT_DESTINATION" => path)
+                 ^
+script/legacy-snapshots-check.rb:144:30: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+        run.call(["bin/rails","legacy_snapshots:export"], env, "ACCIO_SNAPSHOT_DESTINATION" => path)
+                             ^
+script/legacy-snapshots-check.rb:146:41: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+        inspection = File.join(workspace,"inspect.rb")
+                                        ^
+script/legacy-snapshots-check.rb:147:66: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+        File.write(inspection, 'require_relative '+File.join(root,"app/services/legacy_snapshot_archive").inspect+"\n"+ 'a=LegacySnapshotArchive.new(fixture:ENV.fetch("ACCIO_SYNTHETIC_FIXTURE"),database:ENV.fetch("ACCIO_DATABASE_PATH"),environment:"test",checkout:'+File.dirname(root).inspect+');c=a.verify(ENV.fetch("ARCHIVE"));puts JSON.generate({capture_sha256:Digest::SHA256.hexdigest(JSON.generate(c.fetch("capture"))),version:c.dig("capture","record","lock_version")})', perm: 0o600)
+                                                                 ^
+script/legacy-snapshots-check.rb:148:38: C: [Corrected] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+        reader = JSON.parse(run.call(["bundle","exec","ruby",inspection],env,"ARCHIVE" => path))
+                                     ^
+script/legacy-snapshots-check.rb:148:47: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+        reader = JSON.parse(run.call(["bundle","exec","ruby",inspection],env,"ARCHIVE" => path))
+                                              ^
+script/legacy-snapshots-check.rb:148:54: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+        reader = JSON.parse(run.call(["bundle","exec","ruby",inspection],env,"ARCHIVE" => path))
+                                                     ^
+script/legacy-snapshots-check.rb:148:61: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+        reader = JSON.parse(run.call(["bundle","exec","ruby",inspection],env,"ARCHIVE" => path))
+                                                            ^
+script/legacy-snapshots-check.rb:148:73: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+        reader = JSON.parse(run.call(["bundle","exec","ruby",inspection],env,"ARCHIVE" => path))
+                                                                        ^
+script/legacy-snapshots-check.rb:148:77: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+        reader = JSON.parse(run.call(["bundle","exec","ruby",inspection],env,"ARCHIVE" => path))
+                                                                            ^
+script/legacy-snapshots-check.rb:151:39: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+        File.write(File.join(workspace,"writer-release"), "release", perm: 0o600)
+                                      ^
+script/legacy-snapshots-check.rb:163:66: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+  results[:target_integrity] = JSON.parse(call.call("fingerprint",destination_env))
+                                                                 ^
+script/legacy-snapshots-check.rb:165:97: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+  bad_env = env.merge("RAILS_ENV" => "development", "ACCIO_DATABASE_PATH" => File.join(workspace,"must-not-be-created.sqlite3"))
+                                                                                                ^
+script/legacy-snapshots-check.rb:173:32: C: [Corrected] Layout/SpaceAfterComma: Space missing after comma.
+  File.write(File.join(evidence,"round-trip-and-concurrency.json"), JSON.pretty_generate(results)+"\n")
+                               ^
+test/services/legacy_snapshot_archive_test.rb:195:26: C: [Corrected] Style/StringLiterals: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+    File.write(@fixture, '{}')
+                         ^^^^
+
+4 files inspected, 35 offenses detected, 35 offenses corrected

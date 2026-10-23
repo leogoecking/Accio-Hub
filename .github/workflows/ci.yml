@@ -1,0 +1,106 @@
+name: CI
+
+"on":
+  push:
+    branches: [main, p1-persistence]
+  pull_request:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Rails, SQLite and JavaScript
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    defaults:
+      run:
+        shell: bash
+        working-directory: rails
+    env:
+      RAILS_ENV: test
+      BUNDLE_FROZEN: "true"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+
+      - name: Ruby and locked gems
+        uses: ruby/setup-ruby@26e5b7d197ebf60545ee9667bcbace0be11ccaec # v1
+        with:
+          ruby-version: "3.3.6"
+          working-directory: rails
+          bundler: Gemfile.lock
+          bundler-cache: true
+
+      - name: Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
+        with:
+          node-version: "24"
+          package-manager-cache: false
+
+      - name: Prepare private synthetic environment
+        run: |
+          umask 077
+          ci_root="$(mktemp -d "${RUNNER_TEMP}/accio-ci.XXXXXX")"
+          mkdir -m 700 "$ci_root/tmp" "$ci_root/evidence"
+          mkdir -p tmp
+          synthetic_secret="$(ruby -rsecurerandom -e 'print SecureRandom.hex(64)')"
+          echo "::add-mask::$synthetic_secret"
+          {
+            echo "ACCIO_DATABASE_PATH=$ci_root/test.sqlite3"
+            echo "ACCIO_QA_EVIDENCE=$ci_root/evidence"
+            echo "TMPDIR=$ci_root/tmp"
+            echo "SECRET_KEY_BASE=$synthetic_secret"
+          } >> "$GITHUB_ENV"
+
+      - name: Verify toolchain
+        run: |
+          ruby -e 'abort "Unexpected Ruby version" unless RUBY_VERSION == "3.3.6" && File.read(".ruby-version").strip.delete_prefix("ruby-") == RUBY_VERSION'
+          node -e 'if (process.versions.node.split(".")[0] !== "24") process.exit(1)'
+          bundle exec ruby -rsqlite3 -e 'puts "sqlite3 gem #{SQLite3::VERSION}; SQLite #{SQLite3::SQLITE_VERSION}"'
+
+      - name: Prepare isolated test database
+        run: |
+          umask 077
+          bin/rails db:schema:load
+          test -f "$ACCIO_DATABASE_PATH"
+          chmod 600 "$ACCIO_DATABASE_PATH"
+
+      - name: Rails tests
+        run: |
+          # Permission tests must be able to create intentionally public fixtures.
+          # Their mkdtemp parents and the main database directory stay private.
+          umask 022
+          bin/rails test
+
+      - name: SQLite integrity and migration equivalence
+        run: |
+          umask 022
+          bundle exec ruby script/transversal-sql-check.rb
+
+      - name: RuboCop
+        run: bin/rubocop
+
+      - name: Brakeman
+        run: bin/brakeman --no-pager --exit-on-warn --exit-on-error
+
+      - name: Zeitwerk
+        run: bin/rails zeitwerk:check
+
+      - name: Pomodoro JavaScript tests
+        run: |
+          node script/focus-client-check.mjs
+          node script/focus-recovery-check.mjs
+          node script/focus-preset-check.mjs
+
+      - name: P0.4 prototype tests
+        run: node --test ../prototype/tests/*.test.mjs

@@ -1,0 +1,482 @@
+[
+  {
+    "file": "axe-form-dark-1440.json",
+    "counts": {
+      "inapplicable": 63,
+      "incomplete": 1,
+      "passes": 25,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 15
+      }
+    ]
+  },
+  {
+    "file": "axe-form-dark-1920.json",
+    "counts": {
+      "inapplicable": 63,
+      "incomplete": 1,
+      "passes": 25,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 15
+      }
+    ]
+  },
+  {
+    "file": "axe-form-dark-320.json",
+    "counts": {
+      "inapplicable": 63,
+      "incomplete": 1,
+      "passes": 25,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 15
+      }
+    ]
+  },
+  {
+    "file": "axe-form-dark-390.json",
+    "counts": {
+      "inapplicable": 63,
+      "incomplete": 1,
+      "passes": 25,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 15
+      }
+    ]
+  },
+  {
+    "file": "axe-form-dark-768.json",
+    "counts": {
+      "inapplicable": 63,
+      "incomplete": 1,
+      "passes": 25,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 15
+      }
+    ]
+  },
+  {
+    "file": "axe-form-light-1440.json",
+    "counts": {
+      "inapplicable": 63,
+      "incomplete": 1,
+      "passes": 25,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 15
+      }
+    ]
+  },
+  {
+    "file": "axe-form-light-1920.json",
+    "counts": {
+      "inapplicable": 63,
+      "incomplete": 1,
+      "passes": 25,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 15
+      }
+    ]
+  },
+  {
+    "file": "axe-form-light-320.json",
+    "counts": {
+      "inapplicable": 63,
+      "incomplete": 1,
+      "passes": 25,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 15
+      }
+    ]
+  },
+  {
+    "file": "axe-form-light-390.json",
+    "counts": {
+      "inapplicable": 63,
+      "incomplete": 1,
+      "passes": 25,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 15
+      }
+    ]
+  },
+  {
+    "file": "axe-form-light-768.json",
+    "counts": {
+      "inapplicable": 63,
+      "incomplete": 1,
+      "passes": 25,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 15
+      }
+    ]
+  },
+  {
+    "file": "axe-library-dark-1440.json",
+    "counts": {
+      "inapplicable": 49,
+      "incomplete": 1,
+      "passes": 40,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 36
+      }
+    ]
+  },
+  {
+    "file": "axe-library-dark-1920.json",
+    "counts": {
+      "inapplicable": 49,
+      "incomplete": 1,
+      "passes": 40,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 36
+      }
+    ]
+  },
+  {
+    "file": "axe-library-dark-320.json",
+    "counts": {
+      "inapplicable": 48,
+      "incomplete": 1,
+      "passes": 41,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 27
+      }
+    ]
+  },
+  {
+    "file": "axe-library-dark-390.json",
+    "counts": {
+      "inapplicable": 49,
+      "incomplete": 1,
+      "passes": 40,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 28
+      }
+    ]
+  },
+  {
+    "file": "axe-library-dark-768.json",
+    "counts": {
+      "inapplicable": 49,
+      "incomplete": 1,
+      "passes": 40,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 29
+      }
+    ]
+  },
+  {
+    "file": "axe-library-light-1440.json",
+    "counts": {
+      "inapplicable": 49,
+      "incomplete": 1,
+      "passes": 40,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 36
+      }
+    ]
+  },
+  {
+    "file": "axe-library-light-1920.json",
+    "counts": {
+      "inapplicable": 49,
+      "incomplete": 1,
+      "passes": 40,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 36
+      }
+    ]
+  },
+  {
+    "file": "axe-library-light-320.json",
+    "counts": {
+      "inapplicable": 48,
+      "incomplete": 1,
+      "passes": 41,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 27
+      }
+    ]
+  },
+  {
+    "file": "axe-library-light-390.json",
+    "counts": {
+      "inapplicable": 49,
+      "incomplete": 1,
+      "passes": 40,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 28
+      }
+    ]
+  },
+  {
+    "file": "axe-library-light-768.json",
+    "counts": {
+      "inapplicable": 49,
+      "incomplete": 1,
+      "passes": 40,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 29
+      }
+    ]
+  },
+  {
+    "file": "axe-space-dark-1440.json",
+    "counts": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 41
+      }
+    ]
+  },
+  {
+    "file": "axe-space-dark-1920.json",
+    "counts": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 41
+      }
+    ]
+  },
+  {
+    "file": "axe-space-dark-320.json",
+    "counts": {
+      "inapplicable": 49,
+      "incomplete": 1,
+      "passes": 40,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 19
+      }
+    ]
+  },
+  {
+    "file": "axe-space-dark-390.json",
+    "counts": {
+      "inapplicable": 49,
+      "incomplete": 1,
+      "passes": 40,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 20
+      }
+    ]
+  },
+  {
+    "file": "axe-space-dark-768.json",
+    "counts": {
+      "inapplicable": 49,
+      "incomplete": 1,
+      "passes": 40,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 23
+      }
+    ]
+  },
+  {
+    "file": "axe-space-light-1440.json",
+    "counts": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 41
+      }
+    ]
+  },
+  {
+    "file": "axe-space-light-1920.json",
+    "counts": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 41
+      }
+    ]
+  },
+  {
+    "file": "axe-space-light-320.json",
+    "counts": {
+      "inapplicable": 49,
+      "incomplete": 1,
+      "passes": 40,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 19
+      }
+    ]
+  },
+  {
+    "file": "axe-space-light-390.json",
+    "counts": {
+      "inapplicable": 49,
+      "incomplete": 1,
+      "passes": 40,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 20
+      }
+    ]
+  },
+  {
+    "file": "axe-space-light-768.json",
+    "counts": {
+      "inapplicable": 49,
+      "incomplete": 1,
+      "passes": 40,
+      "violations": 0
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodeCount": 23
+      }
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "axeVersion": "4.12.1",
+  "counts": {
+    "inapplicable": 69,
+    "incomplete": 1,
+    "passes": 19,
+    "violations": 0
+  },
+  "incomplete": [
+    {
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axeAPI",
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodeCount": 5,
+      "nodes": [
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<div class=\"eyebrow\">POMODORO GLOBAL</div>",
+          "target": [
+            ".project-form-head > div > .eyebrow"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<h2 id=\"focus-dialog-title\" data-focus-target=\"dialogTitle\">Usar 45 minutos?</h2>",
+          "target": [
+            "#focus-dialog-title"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<p id=\"focus-dialog-description\" data-focus-target=\"dialogDescription\">Este preset será usado nos próximos inícios. A aparência e os demais ajustes serão preservados.</p>",
+          "target": [
+            "#focus-dialog-description"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<button type=\"button\" class=\"button tertiary\" data-action=\"focus#closeDialog\" autofocus=\"\">Voltar</button>",
+          "target": [
+            "button[autofocus=\"\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<button type=\"button\" class=\"button primary\" data-focus-target=\"dialogConfirm\" data-action=\"focus#confirmDialog\">Confirmar</button>",
+          "target": [
+            ".primary"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ]
+    }
+  ],
+  "lifecycle": {
+    "effectiveLaunch": {
+      "browserLaunched": true,
+      "engine": "chrome",
+      "launchHash": 16228916338243422000
+    },
+    "launched": false,
+    "relaunchedBrowser": false,
+    "restartedBackground": false,
+    "restoreStatus": "not_configured",
+    "reused": true,
+    "saveStatus": "not_attempted"
+  },
+  "url": "http://127.0.0.1:3127/apps/focus",
+  "violations": []
+}

@@ -1,0 +1,12 @@
+{
+  "mode": "capture",
+  "task_count": 2,
+  "project_count": 2,
+  "uid_links_intact": true,
+  "other_modules_empty": true,
+  "triggers": 25,
+  "foreign_keys_intact": true,
+  "wal": "wal",
+  "synchronous": 2,
+  "database_digest": "5a101547a51750eff60a79f13fa16f4e04c3518768c98adc78e43aacfa678888"
+}

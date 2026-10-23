@@ -1,0 +1,8 @@
+{
+  "audits": 111,
+  "confirmedViolations": {},
+  "inconclusive": {
+    "color-contrast": 111
+  },
+  "contrastApproved": false
+}

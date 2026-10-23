@@ -1,0 +1,5 @@
+<%= form_with url: command_project_path(project), method: :patch, data: {controller: "project-command", action: "submit->project-command#submit"}, class: "project-command" do %>
+  <%= hidden_field_tag :version, project.lock_version %><%= hidden_field_tag :operation, operation %><% values.each do |key, value| %><%= hidden_field_tag key, value %><% end %>
+  <button type="submit" class="<%= operation == 'favorite' ? "project-favorite #{'is-favorite' if project.favorite}" : 'project-control' %>" id="project-<%= operation %>-<%= project.to_param %>" aria-label="<%= label %>" <%= "aria-pressed=#{project.favorite}" if operation == 'favorite' %>><% icon = {"favorite" => "star", "archive" => "archive", "restore" => "restore", "status" => (project.status == "active" ? "pause" : "play")}.fetch(operation) %><%= studio_icon(icon, operation == "favorite" ? 19 : 15) %><%= label unless operation == "favorite" %></button>
+  <span class="project-form-error" role="status" data-project-notice></span><button type="button" class="button tertiary" hidden data-project-reapply data-action="project-command#reapply">Conferir versão atual e reaplicar</button>
+<% end %>

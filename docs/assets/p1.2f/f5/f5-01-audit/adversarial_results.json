@@ -1,0 +1,79 @@
+[
+  {
+    "scenario": "1. Tampered CHECK constraint on dock_shortcuts",
+    "strategy_a_rejected": true,
+    "strategy_b_rejected": true,
+    "current_tool_rejected": true,
+    "actual_backup_error": "Schema incompatível com esta versão da aplicação"
+  },
+  {
+    "scenario": "2. Tampered Foreign Key (focus_commands points to dummy)",
+    "strategy_a_rejected": true,
+    "strategy_b_rejected": true,
+    "current_tool_rejected": true,
+    "actual_backup_error": "Schema incompatível com esta versão da aplicação"
+  },
+  {
+    "scenario": "3. Tampered Index (change indexed column)",
+    "strategy_a_rejected": true,
+    "strategy_b_rejected": true,
+    "current_tool_rejected": true,
+    "actual_backup_error": "Schema incompatível com esta versão da aplicação"
+  },
+  {
+    "scenario": "4. Tampered Partial Index (remove WHERE clause)",
+    "strategy_a_rejected": true,
+    "strategy_b_rejected": true,
+    "current_tool_rejected": true,
+    "actual_backup_error": "Schema incompatível com esta versão da aplicação"
+  },
+  {
+    "scenario": "5. Tampered Trigger (modify trigger action/message)",
+    "strategy_a_rejected": true,
+    "strategy_b_rejected": true,
+    "current_tool_rejected": true,
+    "actual_backup_error": "Schema incompatível com esta versão da aplicação"
+  },
+  {
+    "scenario": "6. Tampered Column Type (change INTEGER to TEXT)",
+    "strategy_a_rejected": true,
+    "strategy_b_rejected": true,
+    "current_tool_rejected": true,
+    "actual_backup_error": "Schema incompatível com esta versão da aplicação"
+  },
+  {
+    "scenario": "7. Tampered Table Name (ALTER TABLE projects RENAME TO hacked_projects)",
+    "strategy_a_rejected": true,
+    "strategy_b_rejected": true,
+    "current_tool_rejected": true,
+    "actual_backup_error": "Schema incompatível com esta versão da aplicação"
+  },
+  {
+    "scenario": "8. Malicious Arbitrary SQL Comment in Index DDL",
+    "strategy_a_rejected": true,
+    "strategy_b_rejected": true,
+    "current_tool_rejected": true,
+    "actual_backup_error": "Schema incompatível com esta versão da aplicação"
+  },
+  {
+    "scenario": "9. Deceptive Tag (different application name: AccioMalicious)",
+    "strategy_a_rejected": true,
+    "strategy_b_rejected": true,
+    "current_tool_rejected": true,
+    "actual_backup_error": "Schema incompatível com esta versão da aplicação"
+  },
+  {
+    "scenario": "10. Injected Tag inside middle of query rather than suffix",
+    "strategy_a_rejected": true,
+    "strategy_b_rejected": true,
+    "current_tool_rejected": true,
+    "actual_backup_error": "Schema incompatível com esta versão da aplicação"
+  },
+  {
+    "scenario": "11. Altered schema_migrations row (delete a migration)",
+    "strategy_a_rejected": true,
+    "strategy_b_rejected": true,
+    "current_tool_rejected": true,
+    "actual_backup_error": "Schema incompatível com esta versão da aplicação"
+  }
+]

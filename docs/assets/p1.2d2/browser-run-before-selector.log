@@ -1,0 +1,20 @@
+PASS Dashboard e lista vazios sem tarefas fictícias
+PASS Diálogo inicial teclado Tab ShiftTab Escape X cancelar e foco
+PASS Criação pessoal com resposta perdida retenta sem duplicar
+PASS Projetos D1 criados e tarefa contextual vinculada pela rota
+PASS Mesmo UID na lista global no espaço e widget com contadores reais
+PASS Conclusão no dashboard e reabertura global atualizam estado e contagens
+PASS Editar título prioridade e mover entre projetos no editor global
+PASS Editor contextual preserva vínculo e nova tarefa não duplica listas
+Error: Command failed: agent-browser --session accio-p12d2-3606903 --json wait --fn (()=>{const el=document.querySelector("[data-task-reapply]");if(!el)return false;const r=el.getBoundingClientRect(),key=[r.left,r.top,r.width,r.height].join('|'),old=window.__qaStablePoint;window.__qaStablePoint=key;return old===key && el.contains(document.elementFromPoint(r.left+r.width/2,r.top+r.height/2))})()
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:942:11)
+    at execFileSync (node:child_process:978:15)
+    at b (file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-check.mjs:17:44)
+    at click (file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-check.mjs:27:2)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-check.mjs:73:546
+    at scenario (file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-check.mjs:23:31)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-check.mjs:72:2
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+{"lifecycle":{"effectiveLaunch":{"browserLaunched":true,"engine":"chrome","launchHash":3336315147935987700},"launched":false,"relaunchedBrowser":false,"restartedBackground":false,"restoreStatus":"not_configured","reused":true,"saveStatus":"not_attempted"},"origin":"http://127.0.0.1:3125/tasks","refs":{"e810":{"name":"Editar tarefa","role":"heading"},"e811":{"name":"Fechar formulário de tarefa","role":"button"},"e812":{"name":"Cancelar","role":"button"},"e813":{"name":"Salvar tarefa","role":"button"},"e814":{"name":"Título","role":"textbox"},"e815":{"name":"Prioridade","role":"combobox"},"e816":{"name":"Projeto","role":"combobox"},"e817":{"name":"Normal","role":"option"},"e818":{"name":"Alta","role":"option"},"e819":{"name":"Pessoal","role":"option"},"e820":{"name":"Destino tarefas QA","role":"option"},"e821":{"name":"Origem tarefas QA","role":"option"},"e822":{"name":"Reaplicar minha edição","role":"button"},"e823":{"name":"Carregar versão atual","role":"button"}},"removedRefs":[],"snapshot":"- heading \"Editar tarefa\" [level=2, ref=e810]\n- button \"Fechar formulário de tarefa\" [ref=e811]\n- textbox \"Título\" [required, ref=e814]: Edição local conservada QA\n- combobox \"Prioridade\" [expanded=false, ref=e815]: Alta\n  - option \"Normal\" [ref=e817]\n  - option \"Alta\" [selected, ref=e818]\n- combobox \"Projeto\" [expanded=false, ref=e816]: Pessoal\n  - option \"Pessoal\" [selected, ref=e819]\n  - option \"Destino tarefas QA\" [ref=e820]\n  - option \"Origem tarefas QA\" [ref=e821]\n- button \"Reaplicar minha edição\" [ref=e822]\n- button \"Carregar versão atual\" [ref=e823]\n- button \"Cancelar\" [ref=e812]\n- button \"Salvar tarefa\" [ref=e813]"}

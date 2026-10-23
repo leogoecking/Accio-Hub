@@ -1,0 +1,61 @@
+{
+  "rows": [
+    {
+      "name": "clean-current",
+      "color": "rgb(23, 36, 54)",
+      "overflow": "visible",
+      "rect": {
+        "height": 53.390625,
+        "width": 303.328125,
+        "x": 105,
+        "y": 235.046875
+      },
+      "text": "Seu espaço.",
+      "textWidth": 263.4375,
+      "theme": "light"
+    },
+    {
+      "name": "original-css",
+      "color": "rgb(23, 36, 54)",
+      "overflow": "visible",
+      "rect": {
+        "height": 53.390625,
+        "width": 303.328125,
+        "x": 105,
+        "y": 235.046875
+      },
+      "text": "Seu espaço.",
+      "textWidth": 263.4375,
+      "theme": "light"
+    },
+    {
+      "name": "restored-current",
+      "color": "rgb(23, 36, 54)",
+      "overflow": "visible",
+      "rect": {
+        "height": 53.390625,
+        "width": 303.328125,
+        "x": 105,
+        "y": 235.046875
+      },
+      "text": "Seu espaço.",
+      "textWidth": 263.4375,
+      "theme": "light"
+    },
+    {
+      "name": "after-reload",
+      "color": "rgb(23, 36, 54)",
+      "overflow": "visible",
+      "rect": {
+        "height": 53.390625,
+        "width": 303.328125,
+        "x": 105,
+        "y": 235.046875
+      },
+      "text": "Seu espaço.",
+      "textWidth": 263.4375,
+      "theme": "light"
+    }
+  ],
+  "conclusion": "DOM text and containment pass; original partial raster retained as inconclusive capture, no product defect inferred"
+}

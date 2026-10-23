@@ -1,0 +1,86 @@
+{
+  "source_summary_sha256": "a8140bc3bc040b413a0caf33e2ba68a24cd73b4354be15be852a3f9ae38c2c08",
+  "audit_sha256": "bdbf833751993c7cd253ae6e8d22dff1ae95586ac29fd3364b91ff40bf63254e",
+  "rows": [
+    {
+      "matrix": "after-reviewed",
+      "states": 160,
+      "fail": 67,
+      "logo": 20,
+      "punctuation": 45,
+      "footer": 2,
+      "within_matrix_duplicate_keys": 0,
+      "each_failure_matches_raw_measurement": true,
+      "contrast_statuses": {
+        "measured_pass": 7687,
+        "not_applicable": 98,
+        "manual_review": 486,
+        "inconclusive": 250,
+        "fail": 67
+      }
+    },
+    {
+      "matrix": "palette-reviewed",
+      "states": 112,
+      "fail": 68,
+      "logo": 28,
+      "punctuation": 40,
+      "footer": 0,
+      "within_matrix_duplicate_keys": 0,
+      "each_failure_matches_raw_measurement": true,
+      "contrast_statuses": {
+        "measured_pass": 8192,
+        "not_applicable": 140,
+        "manual_review": 84,
+        "fail": 68,
+        "inconclusive": 56
+      }
+    },
+    {
+      "matrix": "additional",
+      "states": 31,
+      "fail": 19,
+      "logo": 3,
+      "punctuation": 16,
+      "footer": 0,
+      "within_matrix_duplicate_keys": 0,
+      "each_failure_matches_raw_measurement": true,
+      "contrast_statuses": {
+        "measured_pass": 787,
+        "fail": 19,
+        "manual_review": 80,
+        "inconclusive": 8
+      }
+    },
+    {
+      "matrix": "errors",
+      "states": 12,
+      "fail": 0,
+      "logo": 0,
+      "punctuation": 0,
+      "footer": 0,
+      "within_matrix_duplicate_keys": 0,
+      "each_failure_matches_raw_measurement": true,
+      "contrast_statuses": {
+        "measured_pass": 164,
+        "manual_review": 56
+      }
+    },
+    {
+      "matrix": "hover",
+      "states": 20,
+      "fail": 13,
+      "logo": 5,
+      "punctuation": 8,
+      "footer": 0,
+      "within_matrix_duplicate_keys": 0,
+      "each_failure_matches_raw_measurement": true,
+      "contrast_statuses": {
+        "measured_pass": 1747,
+        "fail": 13,
+        "inconclusive": 10
+      }
+    }
+  ],
+  "explanation": "154 uses first three matrices (303 states); 167 includes hover (335 states, errors adds zero). 56/109/2 are all five matrices, 51/101/2 are first three. No records mutated. Occurrences count measurements per rendered state, not unique logical elements."
+}

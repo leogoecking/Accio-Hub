@@ -1,0 +1,344 @@
+{
+  "accent": "#000000",
+  "active": "email_address",
+  "fontsLoaded": "loaded",
+  "geometry": [],
+  "modal": null,
+  "nodes": [
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 175.203125,
+          "x": 54,
+          "y": 295.90625
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "html > body > main.shell.login-shell > section.dialog.login-card > div.eyebrow",
+      "text": "ACCIO HUB / ACESSO LOCAL",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 35,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 44,
+          "width": 169.828125,
+          "x": 54,
+          "y": 324.90625
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#login-title",
+      "text": "Seu espaço",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 35,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 44,
+          "width": 7.984375,
+          "x": 223.828125,
+          "y": 324.90625
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "selector": "#login-title > span.title-stop",
+      "text": ".",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 209.203125,
+          "x": 54,
+          "y": 385.90625
+        },
+        {
+          "height": 14,
+          "width": 63.484375,
+          "x": 54,
+          "y": 402.953125
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "html > body > main.shell.login-shell > section.dialog.login-card > p.muted:nth-of-type(1)",
+      "text": "Entre com a conta de administrador deste computador.",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 36.9375,
+          "x": 54,
+          "y": 433
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "body > main.shell.login-shell > section.dialog.login-card > form > label:nth-of-type(1)",
+      "text": "E-mail",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 34.828125,
+          "x": 54,
+          "y": 514
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "body > main.shell.login-shell > section.dialog.login-card > form > label:nth-of-type(2)",
+      "text": "Senha",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 190.078125,
+          "x": 54,
+          "y": 660
+        },
+        {
+          "height": 14,
+          "width": 96.875,
+          "x": 54,
+          "y": 677.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "html > body > main.shell.login-shell > section.dialog.login-card > p.setting-note:nth-of-type(2)",
+      "text": "P1.1 · Fundação Rails. Acesso restrito ao administrador local.",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "value",
+      "opacity": 1,
+      "placeholderOpacity": 1,
+      "rects": [
+        {
+          "height": 28,
+          "width": 204,
+          "x": 58,
+          "y": 607
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "selector": "body > main.shell.login-shell > section.dialog.login-card > form > input.button:nth-of-type(4)",
+      "text": "Entrar",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#email_address",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 44,
+          "width": 212,
+          "x": 54,
+          "y": 456
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        140,
+        151,
+        167,
+        248
+      ],
+      "selector": "#email_address",
+      "text": "E-mail",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#password",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 44,
+          "width": 212,
+          "x": 54,
+          "y": 537
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        140,
+        151,
+        167,
+        248
+      ],
+      "selector": "#password",
+      "text": "Senha",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "body > main.shell.login-shell > section.dialog.login-card > form > input.button:nth-of-type(4)",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 36,
+          "width": 212,
+          "x": 54,
+          "y": 603
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        66,
+        81,
+        103,
+        255
+      ],
+      "selector": "body > main.shell.login-shell > section.dialog.login-card > form > input.button:nth-of-type(4)",
+      "text": null,
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "focus",
+      "offset": 3,
+      "opacity": 1,
+      "outline": "solid",
+      "rects": [
+        {
+          "height": 44,
+          "width": 212,
+          "x": 54,
+          "y": 456
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#email_address",
+      "unknown": [],
+      "width": 2
+    }
+  ],
+  "overflow": false,
+  "theme": "dark",
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 320
+  },
+  "wallpaper": "ember"
+}

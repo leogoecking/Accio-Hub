@@ -1,0 +1,58 @@
+{
+  "branch": "p1-persistence",
+  "F2b_commit": "dcef7015b5171068283ef82ada96e6c0252c4146",
+  "F3a_committed": false,
+  "index_empty": true,
+  "production_existing_files_changed": [],
+  "new_runtime_files": [
+    "rails/app/services/legacy_snapshot_archive.rb",
+    "rails/lib/tasks/legacy_snapshots.rake"
+  ],
+  "protected_models_schema_migrations_triggers_frontend_bootstrap_identical": true,
+  "rails": {
+    "tests": 167,
+    "assertions": 3208,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0
+  },
+  "F3a_subset": {
+    "tests": 19,
+    "assertions": 158
+  },
+  "real_concurrent_writers": 4,
+  "js_cases": 41,
+  "javascript_syntax": {
+    "files_checked": 64,
+    "all_passed": true
+  },
+  "sqlite": {
+    "triggers": 25,
+    "indexes": 36,
+    "integrity": "ok",
+    "foreign_key_check": [],
+    "independent_migrations_schema_match": true
+  },
+  "no_exports_or_databases_in_versionable_evidence": true,
+  "sensitive_markers": [],
+  "new_files": 45,
+  "source_sha256": {
+    "rails/app/services/legacy_snapshot_archive.rb": "443dbb7bdf77427eda8214f6fecd5aa89fe9e3038731f8c667f3aa3d6ac4a973",
+    "rails/lib/tasks/legacy_snapshots.rake": "d340d1c30ce5dac54b00b6f93aa3b67c5c2804231e31b18ffe4732f6dbaa671d",
+    "rails/script/legacy-snapshots-check.rb": "be2c73104033e10110d8f3055f8d3173f494a0f92df23acbe83cf996893eb413",
+    "rails/test/services/legacy_snapshot_archive_test.rb": "c6235c5f229cea00a7d3ce25879becc6c9e509de36b476d576205d2c27ab1c74",
+    "rails/README.md": "79c540cf0ad5ce291fb1c6c9d6a7d1250342b5ba23486d28e749d660c3a8a15e",
+    "AGENTS.md": "6e0eb5b6d21fdcb6c06af9fc3fe42266fd25b514fb9dca602afb57428f8081d8",
+    "docs/P1.2F3A_VERIFICATION.md": "50cd4557aa6a5c120a79bcf9442774bd0b85872d07cf3d09ebb27487edc20ecd"
+  },
+  "tag_push_merge": false,
+  "F3b_F3c_F4_F5_P1_3_started": false,
+  "limitations": [
+    "synthetic only",
+    "hashes not authentication",
+    "POSIX publication tested only on this Ubuntu filesystem",
+    "SIGKILL can leave private orphan temporary",
+    "no whole SQLite restore",
+    "Firefox and contrast historical caveats preserved"
+  ]
+}

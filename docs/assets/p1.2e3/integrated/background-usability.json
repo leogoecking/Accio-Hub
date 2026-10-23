@@ -1,0 +1,21 @@
+{
+  "synthetic_hidden_seconds": 1200,
+  "checkpoint_seconds": 30,
+  "server_candidate_seconds": 1230,
+  "remaining_after_accept_seconds": 270,
+  "automatic_completion": false,
+  "occupants": 1,
+  "decision_actions_after_return": [
+    "Conferir intervalo",
+    "Aceitar estimativa",
+    "Retomar Pomodoro"
+  ],
+  "action_count": 3,
+  "reload_added_only_for_recovery_verification": true,
+  "real_os_suspension_or_other_application_tested": false,
+  "thresholds_unchanged": [
+    15,
+    60,
+    5
+  ]
+}

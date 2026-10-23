@@ -1,0 +1,5 @@
+script/sqlite-backups-check.rb:138:in `block (2 levels) in <main>': Restored page failed (RuntimeError)
+	from script/sqlite-backups-check.rb:138:in `each'
+	from script/sqlite-backups-check.rb:138:in `block in <main>'
+	from /home/goecking/.local/share/mise/installs/ruby/3.3.6/lib/ruby/3.3.0/tmpdir.rb:99:in `mktmpdir'
+	from script/sqlite-backups-check.rb:19:in `<main>'

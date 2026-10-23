@@ -1,8 +1,11 @@
-# Accio Hub — P1.1: Fundação Rails
+# Accio Hub — Fundação Rails e relacional SQLite
 
 Fundação encerrada e homologada em 2026-10-11, tag anotada `p1.1-approved`.
 Auditoria independente aprovada, recuperação local de senha verificada e
-validação manual no Firefox confirmada pelo usuário. P1.2 não iniciada.
+validação manual no Firefox confirmada pelo usuário.
+P1.2A/B/C aprovadas tecnicamente; B registrada em `ddf6715`, C em `a7f11ab`. Planejamento D aprovado em `7313e6e`;
+exclusivamente D1 autorizada, implementada e em revisão sem commit. Firefox C, contraste e retenção dos snapshots
+legados (preferencialmente P1.2F) permanecem pendentes.
 Referência completa: P0.4 homologada; identidade Dock + Widgets: `0018bb4`.
 
 ## Ambiente e instalação local
@@ -65,15 +68,28 @@ aplicativos/atalhos, temas, quatro fundos, destaque, ordem/visibilidade/tamanho
 predefinido dos widgets, Dock, painel de Personalizar e Configurações, Music
 visual global expansível e opcional. Arraste tem controles equivalentes por teclado.
 
-Preferências ficam em cookie criptografado HttpOnly/SameSite Strict deste navegador.
-Elas não são modelo de produto e não leem o localStorage da P0.4. O navegador
-mantém alterações pendentes em memória diante de falha e oferece retentativa;
-recarregar com falha pendente perde somente essas preferências ainda não salvas.
+Preferências autenticadas são persistidas em SQLite por um agregado versionado.
+A primeira inicialização usa POST autenticado/CSRF; migra cookie P1.1 válido e
+preserva cópia/digest. Cookie diferente do banco ou inválido exige revisão explícita;
+nenhum default sobrescreve registros existentes. O cookie do login guarda somente
+tema/fundo/destaque confirmados e nunca é importado. Nenhum localStorage P0.4 é lido.
 
-Projetos, tarefas, notas, calendário, foco, Feed, backups e e-mails são fixtures
-sintéticas identificadas, de leitura. Controles de criação/foco/captura explicam
+Conflitos preservam edição local e oferecem reaplicação por campo ou descarte
+explícito. Contenção e falhas oferecem retentativa. Alterações pendentes ficam na
+memória da aba, com aviso antes de sair; fechar/recarregar forçadamente pode perdê-las.
+
+A Biblioteca, os espaços e o widget de Projetos consultam registros reais do SQLite.
+Projetos podem ser criados, editados, favoritados, ativados/pausados e arquivados/restaurados.
+Arquivados são somente leitura; nenhum projeto é excluído fisicamente. Os filtros
+compartilham a versão do agregado de aparência. Tarefas/referências vinculadas são
+apenas consulta; Conhecimento indica a futura integração P1.3. Os módulos globais de
+tarefas, notas, calendário, foco, Feed, backups e e-mails continuam demonstrativos. Controles de criação/foco/captura explicam
 a demonstração. Não há timer funcional, áudio, Vault, APIs ou migração pessoal.
-Somente `users` e `auth_sessions` são tabelas funcionais. Não iniciar P1.2.
+Na P1.2B foram acrescentadas oito tabelas de domínio, ainda sem conexão com essas
+telas de produto. Na C, apenas as preferências foram conectadas ao SQLite. Na D1, projetos foram conectados com tokens assinados de intenção e versões de registro. O contrato e a verificação estão em
+[P1.2A](../docs/P1.2A_SQLITE_PLAN.md) e [P1.2B](../docs/P1.2B_VERIFICATION.md) e [P1.2C](../docs/P1.2C_VERIFICATION.md) e [P1.2D1](../docs/P1.2D1_VERIFICATION.md).
+Não executar `db:prepare` em instalação existente/pessoal para esta revisão;
+as verificações desta entrega usam somente bancos temporários sintéticos.
 
 ## Estrutura
 
@@ -92,6 +108,20 @@ Ele lê apenas defaults do código, nunca armazenamento do navegador.
 
 ## Verificação
 
+Para verificar a P1.2C e a regressão da P1.2B com bancos privados temporários:
+
+```sh
+bundle exec ruby script/preferences-check.rb
+```
+
+O script cria os bancos em `tmp/` e verifica a suíte Rails, inicialização/edição
+concorrentes, reabertura, os 25 gatilhos e contenção real com HTTP 503.
+Não aceita caminho de banco pessoal e grava evidências sintéticas em
+`../docs/assets/p1.2c/`. O script B permanece como histórico; não sobrescrever suas
+evidências homologadas durante a revisão C. Para outros comandos que
+acessam banco, utilizar `RAILS_ENV=test` e `ACCIO_DATABASE_PATH` apontando para
+banco sintético isolado. Os comandos da fundação abaixo continuam disponíveis:
+
 ```sh
 bin/rails test
 bin/rails zeitwerk:check
@@ -109,3 +139,126 @@ Esse script utiliza uma sessão própria, exige credenciais sintéticas em arqui
 ignorado e não deve receber uma origem/profile de dados pessoais.
 
 Histórico, evidências, matriz visual e pendências no relatório de verificação.
+
+### Navegador isolado — P1.2C
+
+Com agent-browser disponível, executar de `rails/`:
+
+```sh
+bundle exec ruby script/preferences-browser-setup.rb
+```
+
+Esse comando cria dois bancos novos e credenciais sintéticas privadas em `tmp/`.
+Iniciar cada servidor em um terminal separado, usando o diretório indicado:
+
+```sh
+P12C_DIR="$(cat tmp/p12c-workspace)"
+RAILS_ENV=development ACCIO_DATABASE_PATH="$P12C_DIR/synthetic.sqlite3" bin/rails server -p 3122 --pid "$P12C_DIR/server.pid"
+```
+
+```sh
+P12C_DIR="$(cat tmp/p12c-workspace)"
+RAILS_ENV=development ACCIO_DATABASE_PATH="$P12C_DIR/empty.sqlite3" bin/rails server -p 3123 --pid "$P12C_DIR/empty-server.pid"
+```
+
+Em outro terminal, a partir da raiz do repositório:
+
+```sh
+node rails/script/preferences-browser-check.mjs
+node rails/script/preferences-browser-recovery-check.mjs
+node rails/script/preferences-browser-restart-check.mjs capture
+```
+
+Após `capture`, interromper somente o servidor sintético 3122 e reiniciá-lo com
+o mesmo comando, banco e diretório. Então executar:
+
+```sh
+node rails/script/preferences-browser-restart-check.mjs verify
+```
+
+Não repetir o setup entre captura e conferência. Os scripts usam sessões próprias,
+recebem a senha por stdin e salvam capturas/resultados sem credenciais em
+`docs/assets/p1.2c/`. O cenário de cookie inválido exige que `empty.sqlite3` ainda
+não tenha preferências; uma repetição completa requer novo setup e novos servidores.
+Encerrar os dois servidores ao terminar. Firefox não foi exercitado por esses scripts.
+
+## Verificação isolada da D1
+
+Em `rails/`, `ruby script/projects-check.rb` cria e remove um banco temporário,
+executa toda a suíte e verifica duas requisições concorrentes, contenção HTTP e
+reabertura. Não aponta para o banco de desenvolvimento padrão.
+
+`ruby script/projects-browser-setup.rb` prepara somente NOVOS bancos privados em
+`rails/tmp/p12d-browser-*` e guarda credenciais sintéticas em arquivo 0600 ignorado.
+`tmp/p12d-workspace` identifica o diretório dessa execução. Para os scripts de navegador,
+iniciar Rails em loopback/3124 usando `ACCIO_DATABASE_PATH` desse diretório, executar
+`node script/projects-browser-check.mjs`, preparar vínculos exclusivamente sintéticos
+com `ACCIO_QA_WORKSPACE` e `bin/rails runner script/projects-browser-seed.rb`, e executar
+`node script/projects-browser-additional-check.mjs`. A comparação adicional usa um
+servidor estático local/3112 para `prototype/`, sem modificar seu conteúdo.
+
+As credenciais são lidas por stdin para preencher o navegador; não copiá-las para
+argumentos, documentação ou Git. Nunca usar esses scripts sobre uma instalação pessoal.
+A entrega e seus limites estão em `docs/P1.2D1_VERIFICATION.md` na raiz do repositório.
+
+## P1.2D2 — tarefas persistentes em revisão
+
+D1 foi encerrada tecnicamente em `af5e24bab30d90bbb89c19b9798b69b20d1d9185`, com ressalvas mantidas. D2 utiliza o modelo Task existente, sem alterações no schema/gatilhos: `/tasks`, formulários globais/contextuais, prioridade, conclusão/reabertura, mudança de projeto pelo editor global e widgets/contadores compartilhados. Referências, foco e Vault seguem nas etapas próprias.
+
+Verificação exclusivamente sintética:
+
+```bash
+cd rails
+ruby script/tasks-check.rb
+ruby script/tasks-browser-setup.rb
+```
+
+O setup imprime um diretório privado novo e grava `tmp/p12d2-workspace`. Inicie Rails com `ACCIO_DATABASE_PATH` apontando para `synthetic.sqlite3` desse diretório, `-b 127.0.0.1 -p 3125` e PID/log dentro dele; nunca use banco pessoal. `node script/tasks-browser-check.mjs` usa agent-browser em sessão própria. Roteiros adicionais, conferência do banco e reinício estão documentados em [P1.2D2_VERIFICATION.md](../docs/P1.2D2_VERIFICATION.md). Credenciais aleatórias ficam somente no diretório privado ignorado. D2 permanece sem commit até revisão.
+
+### Referências do projeto — P1.2D3
+
+Criação/edição em `/projects/:project_uid/references`, com IDs públicos codificados e projeto fixado pela rota autenticada. Tipos Link (URL obrigatória) e Material (URL opcional), sem upload/exclusão. Somente HTTP/HTTPS, host válido e sem credenciais; endereços incompatíveis existentes são exibidos com link desativado. Política local de parsing, sem downloads/preview/DNS. Índices/modelos/gatilhos B intactos.
+
+QA: `bundle exec ruby script/references-check.rb` cria um banco novo sintético temporário, exercita a suíte e processos concorrentes. `ruby script/references-browser-setup.rb` prepara bancos novos privados; somente esses caminhos podem alimentar QA de navegador em loopback 3126. Roteiros `references-browser-check.mjs`, `references-browser-additional-check.mjs`, `references-browser-restart-check.mjs` e `references-browser-state-check.rb` registram evidências em `docs/assets/p1.2d3/`. Não utilizar banco pessoal. Relatório: `docs/P1.2D3_VERIFICATION.md`. D3 aprovada após auditoria independente, conforme confirmação do usuário; encerramento em commit autorizado. Implementação E/F não iniciada.
+
+## P1.2F3a — snapshots legados, somente ensaios sintéticos
+
+Inventário/exportação/verificação são tarefas administrativas locais, sem endpoint HTTP ou descarte. Não executar sobre dados pessoais. Não alteram o bootstrap C, cookies ou preferências operacionais.
+
+- `bin/rails legacy_snapshots:inventory`: metadados redigidos, sem raw/value.
+- `bin/rails legacy_snapshots:export`: exige ACCIO_SNAPSHOT_DESTINATION, não sobrescreve.
+- `bin/rails legacy_snapshots:verify`: exige ACCIO_SNAPSHOT_ARCHIVE, reabre e confere hashes.
+
+Todas exigem RAILS_ENV=test, ACCIO_DATABASE_PATH explícito e ACCIO_SYNTHETIC_FIXTURE. Banco chamado synthetic.sqlite3, existente, no mesmo diretório privado da declaração JSON `{"format":"accio-f3a-synthetic","version":1,"database":"synthetic.sqlite3"}`. Arquivos privados do usuário, sem links; diretório fora do checkout. A declaração identifica o ensaio administrativamente, não transforma dados pessoais em sintéticos. Destino JSON em diretório privado existente, arquivo novo. Não fornece recuperação operacional.
+
+A partir de rails/, `ACCIO_QA_EVIDENCE=<diretório novo de evidências> bundle exec ruby script/legacy-snapshots-check.rb` cria fixtures sintéticas privadas e demonstra exportação/reabertura/recuperação em perfil novo, incluindo concorrência real. Não recebe banco pessoal. Arquivos privados temporários do ensaio não são evidências versionáveis.
+
+Formato 1 preserva bytes originais em Base64 e metadados/CAS observados; Base64 não é criptografia e SHA256 não autentica a origem. No Ubuntu, publicação usa arquivo0600/diretório0700 e hard link atômico sem sobrescrita. Windows/ACLs e outros filesystems exigem validação própria. SIGKILL pode deixar temporário privado não concluído; nenhum job limpa arquivos/snapshots. Detalhes e limites em [P1.2F3A_VERIFICATION.md](../docs/P1.2F3A_VERIFICATION.md).
+
+## P1.2F3b — backup SQLite completo e restore somente sintético
+
+Não executar sobre banco pessoal. Sem agendamento, integração com backups Ubuntu, expurgo ou manutenção da origem. Online Backup API com snapshot fixado em WAL; pacote TAR privado com SQLite offline e manifesto. Nenhum secret Rails é copiado. O pacote contém dados sensíveis do banco e não é criptografado.
+
+- `bin/rails sqlite_backups:create`: ACCIO_SQLITE_BACKUP aponta para arquivo .tar novo.
+- `bin/rails sqlite_backups:verify`: reabre/confere o pacote privado.
+- `bin/rails sqlite_backups:restore`: exige ACCIO_SQLITE_RESTORE_DIRECTORY novo; verifica fidelidade e revoga AuthSessions somente no destino antes de publicar prontidão.
+
+Todas exigem RAILS_ENV=test, ACCIO_DATABASE_PATH e ACCIO_SYNTHETIC_FIXTURE explícitos, conforme a guarda F3a; origem existente e diretórios/arquivos privados fora do checkout. Destinos existentes não são sobrescritos. Arquivo incompleto ou publicação com erro não é sucesso; SIGKILL pode deixar staging privado órfão, sem limpeza automática. Windows e outros filesystems ainda exigem validação.
+
+QA: `ACCIO_QA_EVIDENCE=<diretório novo> bundle exec ruby script/sqlite-backups-check.rb` gera dados fictícios próprios, testa WAL/concorrência, restaura e reinicia HTTP em loopback. Não recebe banco pessoal e não publica pacotes/chaves/dumps nas evidências.
+
+Para o HTTP da cópia sintética preparada, utilizar `bundle exec ruby script/restored-synthetic-server.rb`, com fixture/banco do destino, ACCIO_SQLITE_RESTORE_DIRECTORY, PORT e PIDFILE explícitos (arquivo .pid novo dentro do destino). O launcher verifica RESTORED.json e usa runtime-secret novo do destino, privado e fora do pacote; não reutilizar segredo da origem. Chave nova protege contra cookies antigos inclusive em colisão futura de IDs. Senha/digest do usuário preservados; formulários/intenções antigos devem ser reabertos. A tarefa restore não inicia HTTP. Detalhes/limites em [P1.2F3B_VERIFICATION.md](../docs/P1.2F3B_VERIFICATION.md).
+
+## P1.2F3c — sessões expiradas, somente administração sintética
+
+Somente RAILS_ENV=test, ACCIO_DATABASE_PATH existente e ACCIO_SYNTHETIC_FIXTURE privados e explícitos, conforme F3a. Nunca executar sobre banco pessoal. Sem endpoint, agendamento ou criação de banco default.
+
+- `bin/rails admin:sessions:inventory`: leitura somente, contagens e corte UTC; sem cookies/IDs/dados pessoais.
+- `bin/rails admin:sessions:cleanup`: **dry-run por padrão**.
+- `ACCIO_SESSION_CLEANUP_CONFIRM=DELETE_EXPIRED_AUTH_SESSIONS bin/rails admin:sessions:cleanup`: limpeza confirmada. Não exportar a confirmação permanentemente no shell.
+
+Expiração usa expires_at <= cutoff fixo por execução, conforme AuthSession. Datas incompatíveis são preservadas e contadas. Execução refaz seleção; não promete contagem do inventário anterior. Remove somente expiradas do administrador em uma transação, preservando senha, sessões ativas e demais dados. Contenção é recuperável; retentativa sempre explícita. Não muda cookies/validade/política de autenticação.
+
+QA: `ACCIO_QA_EVIDENCE=<diretório novo> bundle exec ruby script/auth-sessions-check.rb` cria banco/perfil sintético próprios e testa CLI/processos/rollback/autenticação e backup após limpeza. Não recebe banco pessoal. Detalhes em [P1.2F3C_VERIFICATION.md](../docs/P1.2F3C_VERIFICATION.md).
+
+Restore F3b continua sintético, dependente de fixture/banco de origem preexistentes; F3c não é recuperação operacional nem substitui a revogação integral das sessões copiadas antes do HTTP da F3b.

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "controlled-dark-320-dashboard",
+    "geometryIdentical": true,
+    "wallpaper": "ember",
+    "method": "HEAD foundation CSS temporarily applied in synthetic DOM; all other markup/assets/data identical"
+  },
+  {
+    "id": "controlled-dark-320-focus",
+    "geometryIdentical": true,
+    "wallpaper": "ember",
+    "method": "HEAD foundation CSS temporarily applied in synthetic DOM; all other markup/assets/data identical"
+  },
+  {
+    "id": "controlled-dark-1440-dashboard",
+    "geometryIdentical": true,
+    "wallpaper": "ember",
+    "method": "HEAD foundation CSS temporarily applied in synthetic DOM; all other markup/assets/data identical"
+  },
+  {
+    "id": "controlled-dark-1440-focus",
+    "geometryIdentical": true,
+    "wallpaper": "ember",
+    "method": "HEAD foundation CSS temporarily applied in synthetic DOM; all other markup/assets/data identical"
+  },
+  {
+    "id": "controlled-light-320-dashboard",
+    "geometryIdentical": true,
+    "wallpaper": "ember",
+    "method": "HEAD foundation CSS temporarily applied in synthetic DOM; all other markup/assets/data identical"
+  },
+  {
+    "id": "controlled-light-320-focus",
+    "geometryIdentical": true,
+    "wallpaper": "ember",
+    "method": "HEAD foundation CSS temporarily applied in synthetic DOM; all other markup/assets/data identical"
+  },
+  {
+    "id": "controlled-light-1440-dashboard",
+    "geometryIdentical": true,
+    "wallpaper": "ember",
+    "method": "HEAD foundation CSS temporarily applied in synthetic DOM; all other markup/assets/data identical"
+  },
+  {
+    "id": "controlled-light-1440-focus",
+    "geometryIdentical": true,
+    "wallpaper": "ember",
+    "method": "HEAD foundation CSS temporarily applied in synthetic DOM; all other markup/assets/data identical"
+  }
+]

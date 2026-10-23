@@ -1,0 +1,90 @@
+{
+  "name": "dark-1440-library",
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 1440
+  },
+  "theme": "dark",
+  "controls": [
+    {
+      "border": 1,
+      "boundarySource": "#project-surface > div.inner-page.project-library > div.project-toolbar:nth-of-type(2) > form.project-search",
+      "disabled": false,
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 48,
+          "width": 1090.46875,
+          "x": 105,
+          "y": 350.734375
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        197,
+        222,
+        247,
+        31
+      ],
+      "selector": "#project-search",
+      "text": "Pesquisar projetos",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#project-order",
+      "disabled": false,
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 46,
+          "width": 145,
+          "x": 1266,
+          "y": 351.734375
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        197,
+        222,
+        247,
+        31
+      ],
+      "selector": "#project-order",
+      "text": "Ordenar Por nome\nAtividade recente",
+      "unknown": []
+    }
+  ],
+  "focus": [
+    {
+      "kind": "focus",
+      "offset": 3,
+      "opacity": 1,
+      "outline": "solid",
+      "rects": [
+        {
+          "height": 46,
+          "width": 1030.46875,
+          "x": 149,
+          "y": 351.734375
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        177,
+        240,
+        125,
+        255
+      ],
+      "selector": "#project-search",
+      "unknown": [],
+      "width": 2
+    }
+  ]
+}

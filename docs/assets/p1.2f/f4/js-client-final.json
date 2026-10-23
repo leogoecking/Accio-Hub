@@ -1,0 +1,49 @@
+{
+  "passed": 11,
+  "results": [
+    {
+      "name": "Delayed GET cannot replace newer snapshot",
+      "result": "PASS"
+    },
+    {
+      "name": "Lower version of same UID cannot regress even on a later response",
+      "result": "PASS"
+    },
+    {
+      "name": "Lost response retains identical command ID payload URL and method; replay uses current",
+      "result": "PASS"
+    },
+    {
+      "name": "Command invalidates outstanding read; same client serializes writes",
+      "result": "PASS"
+    },
+    {
+      "name": "Definitive rejection releases intent; 401 and 503 preserve the identical retry",
+      "result": "PASS"
+    },
+    {
+      "name": "Unicode and legacy route UIDs preserve UTF8 without changing stored ID",
+      "result": "PASS"
+    },
+    {
+      "name": "Successful reconnection clears a read failure without dropping a pending command",
+      "result": "PASS"
+    },
+    {
+      "name": "Subscriptions disconnect without duplicate notifications",
+      "result": "PASS"
+    },
+    {
+      "name": "Accent contrast preserves default ink and adapts purple and middle gray",
+      "result": "PASS"
+    },
+    {
+      "name": "Monotonic interpolation is visual only and stops at zero or unconfirmed/hidden state",
+      "result": "PASS"
+    },
+    {
+      "name": "Authenticated transport has CSRF no-store timeout cleanup and retains error status",
+      "result": "PASS"
+    }
+  ]
+}

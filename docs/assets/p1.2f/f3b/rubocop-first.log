@@ -1,0 +1,925 @@
+Inspecting 118 files
+..........................................C............................................CC.........................C...
+
+Offenses:
+
+app/services/synthetic_sqlite_backup.rb:157:86: C: [Correctable] Layout/SpaceInsideBlockBraces: Space missing inside empty braces.
+    File.open(path, File::WRONLY | File::CREAT | File::EXCL | File::NOFOLLOW, 0o600) {}
+                                                                                     ^^
+script/sqlite-backups-check.rb:20:34: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  directory = File.join(workspace,"source")
+                                 ^
+script/sqlite-backups-check.rb:21:22: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  Dir.mkdir(directory,0o700)
+                     ^
+script/sqlite-backups-check.rb:22:33: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  database = File.join(directory,"synthetic.sqlite3")
+                                ^
+script/sqlite-backups-check.rb:23:32: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  fixture = File.join(directory,"fixture.json")
+                               ^
+script/sqlite-backups-check.rb:24:21: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  File.write(fixture,JSON.generate({format:"accio-f3a-synthetic",version:1,database:"synthetic.sqlite3"}),perm:0o600)
+                    ^
+script/sqlite-backups-check.rb:24:36: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside { missing.
+  File.write(fixture,JSON.generate({format:"accio-f3a-synthetic",version:1,database:"synthetic.sqlite3"}),perm:0o600)
+                                   ^
+script/sqlite-backups-check.rb:24:43: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  File.write(fixture,JSON.generate({format:"accio-f3a-synthetic",version:1,database:"synthetic.sqlite3"}),perm:0o600)
+                                          ^
+script/sqlite-backups-check.rb:24:65: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  File.write(fixture,JSON.generate({format:"accio-f3a-synthetic",version:1,database:"synthetic.sqlite3"}),perm:0o600)
+                                                                ^
+script/sqlite-backups-check.rb:24:73: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  File.write(fixture,JSON.generate({format:"accio-f3a-synthetic",version:1,database:"synthetic.sqlite3"}),perm:0o600)
+                                                                        ^
+script/sqlite-backups-check.rb:24:75: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  File.write(fixture,JSON.generate({format:"accio-f3a-synthetic",version:1,database:"synthetic.sqlite3"}),perm:0o600)
+                                                                          ^
+script/sqlite-backups-check.rb:24:84: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  File.write(fixture,JSON.generate({format:"accio-f3a-synthetic",version:1,database:"synthetic.sqlite3"}),perm:0o600)
+                                                                                   ^
+script/sqlite-backups-check.rb:24:104: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside } missing.
+  File.write(fixture,JSON.generate({format:"accio-f3a-synthetic",version:1,database:"synthetic.sqlite3"}),perm:0o600)
+                                                                                                       ^
+script/sqlite-backups-check.rb:24:106: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  File.write(fixture,JSON.generate({format:"accio-f3a-synthetic",version:1,database:"synthetic.sqlite3"}),perm:0o600)
+                                                                                                         ^
+script/sqlite-backups-check.rb:24:111: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  File.write(fixture,JSON.generate({format:"accio-f3a-synthetic",version:1,database:"synthetic.sqlite3"}),perm:0o600)
+                                                                                                              ^
+script/sqlite-backups-check.rb:25:9: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside { missing.
+  env = {"RAILS_ENV"=>"test","ACCIO_DATABASE_PATH"=>database,"ACCIO_SYNTHETIC_FIXTURE"=>fixture,"F3B_WORKSPACE"=>workspace,"SECRET_KEY_BASE"=>SecureRandom.hex(64),"SECRET_KEY_BASE_DUMMY"=>nil}
+        ^
+script/sqlite-backups-check.rb:25:29: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  env = {"RAILS_ENV"=>"test","ACCIO_DATABASE_PATH"=>database,"ACCIO_SYNTHETIC_FIXTURE"=>fixture,"F3B_WORKSPACE"=>workspace,"SECRET_KEY_BASE"=>SecureRandom.hex(64),"SECRET_KEY_BASE_DUMMY"=>nil}
+                            ^
+script/sqlite-backups-check.rb:25:61: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  env = {"RAILS_ENV"=>"test","ACCIO_DATABASE_PATH"=>database,"ACCIO_SYNTHETIC_FIXTURE"=>fixture,"F3B_WORKSPACE"=>workspace,"SECRET_KEY_BASE"=>SecureRandom.hex(64),"SECRET_KEY_BASE_DUMMY"=>nil}
+                                                            ^
+script/sqlite-backups-check.rb:25:96: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  env = {"RAILS_ENV"=>"test","ACCIO_DATABASE_PATH"=>database,"ACCIO_SYNTHETIC_FIXTURE"=>fixture,"F3B_WORKSPACE"=>workspace,"SECRET_KEY_BASE"=>SecureRandom.hex(64),"SECRET_KEY_BASE_DUMMY"=>nil}
+                                                                                               ^
+script/sqlite-backups-check.rb:25:123: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  env = {"RAILS_ENV"=>"test","ACCIO_DATABASE_PATH"=>database,"ACCIO_SYNTHETIC_FIXTURE"=>fixture,"F3B_WORKSPACE"=>workspace,"SECRET_KEY_BASE"=>SecureRandom.hex(64),"SECRET_KEY_BASE_DUMMY"=>nil}
+                                                                                                                          ^
+script/sqlite-backups-check.rb:25:163: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  env = {"RAILS_ENV"=>"test","ACCIO_DATABASE_PATH"=>database,"ACCIO_SYNTHETIC_FIXTURE"=>fixture,"F3B_WORKSPACE"=>workspace,"SECRET_KEY_BASE"=>SecureRandom.hex(64),"SECRET_KEY_BASE_DUMMY"=>nil}
+                                                                                                                                                                  ^
+script/sqlite-backups-check.rb:25:192: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside } missing.
+  env = {"RAILS_ENV"=>"test","ACCIO_DATABASE_PATH"=>database,"ACCIO_SYNTHETIC_FIXTURE"=>fixture,"F3B_WORKSPACE"=>workspace,"SECRET_KEY_BASE"=>SecureRandom.hex(64),"SECRET_KEY_BASE_DUMMY"=>nil}
+                                                                                                                                                                                               ^
+script/sqlite-backups-check.rb:26:26: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  worker = File.join(root,"script/sqlite-backups-worker.rb")
+                         ^
+script/sqlite-backups-check.rb:27:39: C: [Correctable] Layout/SpaceAroundEqualsInParameterDefault: Surrounding space missing in default value assignment.
+  run = lambda do |arguments, selected=env, changes={}|
+                                      ^
+script/sqlite-backups-check.rb:27:52: C: [Correctable] Layout/SpaceAroundEqualsInParameterDefault: Surrounding space missing in default value assignment.
+  run = lambda do |arguments, selected=env, changes={}|
+                                                   ^
+script/sqlite-backups-check.rb:28:11: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    output,error,status = Open3.capture3(selected.merge(changes),*arguments,chdir:root)
+          ^
+script/sqlite-backups-check.rb:28:17: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    output,error,status = Open3.capture3(selected.merge(changes),*arguments,chdir:root)
+                ^
+script/sqlite-backups-check.rb:28:65: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    output,error,status = Open3.capture3(selected.merge(changes),*arguments,chdir:root)
+                                                                ^
+script/sqlite-backups-check.rb:28:76: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    output,error,status = Open3.capture3(selected.merge(changes),*arguments,chdir:root)
+                                                                           ^
+script/sqlite-backups-check.rb:28:82: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    output,error,status = Open3.capture3(selected.merge(changes),*arguments,chdir:root)
+                                                                                 ^
+script/sqlite-backups-check.rb:32:17: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  call = ->(mode,selected=env,changes={}){JSON.parse(run.call(["bin/rails","runner",worker],selected,changes.merge("F3B_MODE"=>mode)))}
+                ^
+script/sqlite-backups-check.rb:32:26: C: [Correctable] Layout/SpaceAroundEqualsInParameterDefault: Surrounding space missing in default value assignment.
+  call = ->(mode,selected=env,changes={}){JSON.parse(run.call(["bin/rails","runner",worker],selected,changes.merge("F3B_MODE"=>mode)))}
+                         ^
+script/sqlite-backups-check.rb:32:30: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  call = ->(mode,selected=env,changes={}){JSON.parse(run.call(["bin/rails","runner",worker],selected,changes.merge("F3B_MODE"=>mode)))}
+                             ^
+script/sqlite-backups-check.rb:32:38: C: [Correctable] Layout/SpaceAroundEqualsInParameterDefault: Surrounding space missing in default value assignment.
+  call = ->(mode,selected=env,changes={}){JSON.parse(run.call(["bin/rails","runner",worker],selected,changes.merge("F3B_MODE"=>mode)))}
+                                     ^
+script/sqlite-backups-check.rb:32:42: C: [Correctable] Layout/SpaceBeforeBlockBraces: Space missing to the left of {.
+  call = ->(mode,selected=env,changes={}){JSON.parse(run.call(["bin/rails","runner",worker],selected,changes.merge("F3B_MODE"=>mode)))}
+                                         ^
+script/sqlite-backups-check.rb:32:43: C: [Correctable] Layout/SpaceInsideBlockBraces: Space missing inside {.
+  call = ->(mode,selected=env,changes={}){JSON.parse(run.call(["bin/rails","runner",worker],selected,changes.merge("F3B_MODE"=>mode)))}
+                                          ^
+script/sqlite-backups-check.rb:32:63: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  call = ->(mode,selected=env,changes={}){JSON.parse(run.call(["bin/rails","runner",worker],selected,changes.merge("F3B_MODE"=>mode)))}
+                                                              ^
+script/sqlite-backups-check.rb:32:75: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  call = ->(mode,selected=env,changes={}){JSON.parse(run.call(["bin/rails","runner",worker],selected,changes.merge("F3B_MODE"=>mode)))}
+                                                                          ^
+script/sqlite-backups-check.rb:32:84: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  call = ->(mode,selected=env,changes={}){JSON.parse(run.call(["bin/rails","runner",worker],selected,changes.merge("F3B_MODE"=>mode)))}
+                                                                                   ^
+script/sqlite-backups-check.rb:32:91: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  call = ->(mode,selected=env,changes={}){JSON.parse(run.call(["bin/rails","runner",worker],selected,changes.merge("F3B_MODE"=>mode)))}
+                                                                                          ^
+script/sqlite-backups-check.rb:32:92: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  call = ->(mode,selected=env,changes={}){JSON.parse(run.call(["bin/rails","runner",worker],selected,changes.merge("F3B_MODE"=>mode)))}
+                                                                                           ^
+script/sqlite-backups-check.rb:32:101: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  call = ->(mode,selected=env,changes={}){JSON.parse(run.call(["bin/rails","runner",worker],selected,changes.merge("F3B_MODE"=>mode)))}
+                                                                                                    ^
+script/sqlite-backups-check.rb:32:135: C: [Correctable] Layout/SpaceInsideBlockBraces: Space missing inside }.
+  call = ->(mode,selected=env,changes={}){JSON.parse(run.call(["bin/rails","runner",worker],selected,changes.merge("F3B_MODE"=>mode)))}
+                                                                                                                                      ^
+script/sqlite-backups-check.rb:33:12: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  run.call(["bin/rails","db:schema:load"])
+           ^
+script/sqlite-backups-check.rb:33:24: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  run.call(["bin/rails","db:schema:load"])
+                       ^
+script/sqlite-backups-check.rb:33:41: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  run.call(["bin/rails","db:schema:load"])
+                                        ^
+script/sqlite-backups-check.rb:34:19: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  File.chmod(0o600,database)
+                  ^
+script/sqlite-backups-check.rb:35:42: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  keeper = SQLite3::Database.new(database,readonly:true)
+                                         ^
+script/sqlite-backups-check.rb:35:51: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  keeper = SQLite3::Database.new(database,readonly:true)
+                                                  ^
+script/sqlite-backups-check.rb:37:43: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  tool = SyntheticSqliteBackup.new(fixture:fixture,database:database,environment:"test",checkout:File.dirname(root))
+                                          ^
+script/sqlite-backups-check.rb:37:51: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  tool = SyntheticSqliteBackup.new(fixture:fixture,database:database,environment:"test",checkout:File.dirname(root))
+                                                  ^
+script/sqlite-backups-check.rb:37:60: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  tool = SyntheticSqliteBackup.new(fixture:fixture,database:database,environment:"test",checkout:File.dirname(root))
+                                                           ^
+script/sqlite-backups-check.rb:37:69: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  tool = SyntheticSqliteBackup.new(fixture:fixture,database:database,environment:"test",checkout:File.dirname(root))
+                                                                    ^
+script/sqlite-backups-check.rb:37:81: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  tool = SyntheticSqliteBackup.new(fixture:fixture,database:database,environment:"test",checkout:File.dirname(root))
+                                                                                ^
+script/sqlite-backups-check.rb:37:88: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  tool = SyntheticSqliteBackup.new(fixture:fixture,database:database,environment:"test",checkout:File.dirname(root))
+                                                                                       ^
+script/sqlite-backups-check.rb:37:97: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  tool = SyntheticSqliteBackup.new(fixture:fixture,database:database,environment:"test",checkout:File.dirname(root))
+                                                                                                ^
+script/sqlite-backups-check.rb:41:32: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  archive = File.join(directory,"complete.tar")
+                               ^
+script/sqlite-backups-check.rb:43:46: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  results[:backup_cli] = JSON.parse(run.call(["bin/rails","sqlite_backups:create"],env,"ACCIO_SQLITE_BACKUP"=>archive))
+                                             ^
+script/sqlite-backups-check.rb:43:58: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:backup_cli] = JSON.parse(run.call(["bin/rails","sqlite_backups:create"],env,"ACCIO_SQLITE_BACKUP"=>archive))
+                                                         ^
+script/sqlite-backups-check.rb:43:82: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  results[:backup_cli] = JSON.parse(run.call(["bin/rails","sqlite_backups:create"],env,"ACCIO_SQLITE_BACKUP"=>archive))
+                                                                                 ^
+script/sqlite-backups-check.rb:43:83: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:backup_cli] = JSON.parse(run.call(["bin/rails","sqlite_backups:create"],env,"ACCIO_SQLITE_BACKUP"=>archive))
+                                                                                  ^
+script/sqlite-backups-check.rb:43:87: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:backup_cli] = JSON.parse(run.call(["bin/rails","sqlite_backups:create"],env,"ACCIO_SQLITE_BACKUP"=>archive))
+                                                                                      ^
+script/sqlite-backups-check.rb:45:53: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  results[:backup_verify_cli] = JSON.parse(run.call(["bin/rails","sqlite_backups:verify"],env,"ACCIO_SQLITE_BACKUP"=>archive))
+                                                    ^
+script/sqlite-backups-check.rb:45:65: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:backup_verify_cli] = JSON.parse(run.call(["bin/rails","sqlite_backups:verify"],env,"ACCIO_SQLITE_BACKUP"=>archive))
+                                                                ^
+script/sqlite-backups-check.rb:45:89: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  results[:backup_verify_cli] = JSON.parse(run.call(["bin/rails","sqlite_backups:verify"],env,"ACCIO_SQLITE_BACKUP"=>archive))
+                                                                                        ^
+script/sqlite-backups-check.rb:45:90: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:backup_verify_cli] = JSON.parse(run.call(["bin/rails","sqlite_backups:verify"],env,"ACCIO_SQLITE_BACKUP"=>archive))
+                                                                                         ^
+script/sqlite-backups-check.rb:45:94: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:backup_verify_cli] = JSON.parse(run.call(["bin/rails","sqlite_backups:verify"],env,"ACCIO_SQLITE_BACKUP"=>archive))
+                                                                                             ^
+script/sqlite-backups-check.rb:49:51: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  state = JSON.parse(File.read(File.join(workspace,"state.json")))
+                                                  ^
+script/sqlite-backups-check.rb:51:33: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  restored = File.join(workspace,"restored")
+                                ^
+script/sqlite-backups-check.rb:52:67: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  target_env = env.merge("ACCIO_DATABASE_PATH"=>File.join(restored,"synthetic.sqlite3"),"ACCIO_SYNTHETIC_FIXTURE"=>File.join(restored,"fixture.json"),"ACCIO_SQLITE_RESTORE_DIRECTORY"=>restored)
+                                                                  ^
+script/sqlite-backups-check.rb:52:88: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  target_env = env.merge("ACCIO_DATABASE_PATH"=>File.join(restored,"synthetic.sqlite3"),"ACCIO_SYNTHETIC_FIXTURE"=>File.join(restored,"fixture.json"),"ACCIO_SQLITE_RESTORE_DIRECTORY"=>restored)
+                                                                                       ^
+script/sqlite-backups-check.rb:52:134: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  target_env = env.merge("ACCIO_DATABASE_PATH"=>File.join(restored,"synthetic.sqlite3"),"ACCIO_SYNTHETIC_FIXTURE"=>File.join(restored,"fixture.json"),"ACCIO_SQLITE_RESTORE_DIRECTORY"=>restored)
+                                                                                                                                     ^
+script/sqlite-backups-check.rb:52:150: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  target_env = env.merge("ACCIO_DATABASE_PATH"=>File.join(restored,"synthetic.sqlite3"),"ACCIO_SYNTHETIC_FIXTURE"=>File.join(restored,"fixture.json"),"ACCIO_SQLITE_RESTORE_DIRECTORY"=>restored)
+                                                                                                                                                     ^
+script/sqlite-backups-check.rb:53:37: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  socket = TCPServer.new("127.0.0.1",0)
+                                    ^
+script/sqlite-backups-check.rb:56:38: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  target_env.merge!("PORT"=>port.to_s,"PIDFILE"=>File.join(workspace,"restored.pid"))
+                                     ^
+script/sqlite-backups-check.rb:56:69: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  target_env.merge!("PORT"=>port.to_s,"PIDFILE"=>File.join(workspace,"restored.pid"))
+                                                                    ^
+script/sqlite-backups-check.rb:57:11: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  guard = ["bundle","exec","ruby",File.join(root,"script/restored-synthetic-server.rb")]
+          ^
+script/sqlite-backups-check.rb:57:20: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  guard = ["bundle","exec","ruby",File.join(root,"script/restored-synthetic-server.rb")]
+                   ^
+script/sqlite-backups-check.rb:57:27: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  guard = ["bundle","exec","ruby",File.join(root,"script/restored-synthetic-server.rb")]
+                          ^
+script/sqlite-backups-check.rb:57:34: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  guard = ["bundle","exec","ruby",File.join(root,"script/restored-synthetic-server.rb")]
+                                 ^
+script/sqlite-backups-check.rb:57:49: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  guard = ["bundle","exec","ruby",File.join(root,"script/restored-synthetic-server.rb")]
+                                                ^
+script/sqlite-backups-check.rb:57:88: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  guard = ["bundle","exec","ruby",File.join(root,"script/restored-synthetic-server.rb")]
+                                                                                       ^
+script/sqlite-backups-check.rb:59:8: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    out,err,status = Open3.capture3(target_env,*guard,chdir:root)
+       ^
+script/sqlite-backups-check.rb:59:12: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    out,err,status = Open3.capture3(target_env,*guard,chdir:root)
+           ^
+script/sqlite-backups-check.rb:59:47: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    out,err,status = Open3.capture3(target_env,*guard,chdir:root)
+                                              ^
+script/sqlite-backups-check.rb:59:54: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    out,err,status = Open3.capture3(target_env,*guard,chdir:root)
+                                                     ^
+script/sqlite-backups-check.rb:59:60: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    out,err,status = Open3.capture3(target_env,*guard,chdir:root)
+                                                           ^
+script/sqlite-backups-check.rb:63:32: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+      TCPSocket.new("127.0.0.1",port).close
+                               ^
+script/sqlite-backups-check.rb:70:23: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  tool.restore(archive:archive,directory:restored) do |stage|
+                      ^
+script/sqlite-backups-check.rb:70:31: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  tool.restore(archive:archive,directory:restored) do |stage|
+                              ^
+script/sqlite-backups-check.rb:70:41: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  tool.restore(archive:archive,directory:restored) do |stage|
+                                        ^
+script/sqlite-backups-check.rb:78:41: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  target_snapshot = call.call("snapshot",target_env)
+                                        ^
+script/sqlite-backups-check.rb:80:40: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside { missing.
+  results[:restore_logical_fidelity] = {all_tables_columns_versions_uids_dates_preserved:true,only_auth_sessions_removed:true,source_unchanged:true,old_sessions_in_backup:before["tables"]["auth_sessions"]["rows"],revoked_at_target:before["tables"]["auth_sessions"]["rows"]}
+                                       ^
+script/sqlite-backups-check.rb:80:89: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  results[:restore_logical_fidelity] = {all_tables_columns_versions_uids_dates_preserved:true,only_auth_sessions_removed:true,source_unchanged:true,old_sessions_in_backup:before["tables"]["auth_sessions"]["rows"],revoked_at_target:before["tables"]["auth_sessions"]["rows"]}
+                                                                                        ^
+script/sqlite-backups-check.rb:80:94: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:restore_logical_fidelity] = {all_tables_columns_versions_uids_dates_preserved:true,only_auth_sessions_removed:true,source_unchanged:true,old_sessions_in_backup:before["tables"]["auth_sessions"]["rows"],revoked_at_target:before["tables"]["auth_sessions"]["rows"]}
+                                                                                             ^
+script/sqlite-backups-check.rb:80:121: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  results[:restore_logical_fidelity] = {all_tables_columns_versions_uids_dates_preserved:true,only_auth_sessions_removed:true,source_unchanged:true,old_sessions_in_backup:before["tables"]["auth_sessions"]["rows"],revoked_at_target:before["tables"]["auth_sessions"]["rows"]}
+                                                                                                                        ^
+script/sqlite-backups-check.rb:80:126: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:restore_logical_fidelity] = {all_tables_columns_versions_uids_dates_preserved:true,only_auth_sessions_removed:true,source_unchanged:true,old_sessions_in_backup:before["tables"]["auth_sessions"]["rows"],revoked_at_target:before["tables"]["auth_sessions"]["rows"]}
+                                                                                                                             ^
+script/sqlite-backups-check.rb:80:143: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  results[:restore_logical_fidelity] = {all_tables_columns_versions_uids_dates_preserved:true,only_auth_sessions_removed:true,source_unchanged:true,old_sessions_in_backup:before["tables"]["auth_sessions"]["rows"],revoked_at_target:before["tables"]["auth_sessions"]["rows"]}
+                                                                                                                                              ^
+script/sqlite-backups-check.rb:80:148: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:restore_logical_fidelity] = {all_tables_columns_versions_uids_dates_preserved:true,only_auth_sessions_removed:true,source_unchanged:true,old_sessions_in_backup:before["tables"]["auth_sessions"]["rows"],revoked_at_target:before["tables"]["auth_sessions"]["rows"]}
+                                                                                                                                                   ^
+script/sqlite-backups-check.rb:80:171: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  results[:restore_logical_fidelity] = {all_tables_columns_versions_uids_dates_preserved:true,only_auth_sessions_removed:true,source_unchanged:true,old_sessions_in_backup:before["tables"]["auth_sessions"]["rows"],revoked_at_target:before["tables"]["auth_sessions"]["rows"]}
+                                                                                                                                                                          ^
+script/sqlite-backups-check.rb:80:213: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:restore_logical_fidelity] = {all_tables_columns_versions_uids_dates_preserved:true,only_auth_sessions_removed:true,source_unchanged:true,old_sessions_in_backup:before["tables"]["auth_sessions"]["rows"],revoked_at_target:before["tables"]["auth_sessions"]["rows"]}
+                                                                                                                                                                                                                    ^
+script/sqlite-backups-check.rb:80:231: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  results[:restore_logical_fidelity] = {all_tables_columns_versions_uids_dates_preserved:true,only_auth_sessions_removed:true,source_unchanged:true,old_sessions_in_backup:before["tables"]["auth_sessions"]["rows"],revoked_at_target:before["tables"]["auth_sessions"]["rows"]}
+                                                                                                                                                                                                                                      ^
+script/sqlite-backups-check.rb:80:273: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside } missing.
+  results[:restore_logical_fidelity] = {all_tables_columns_versions_uids_dates_preserved:true,only_auth_sessions_removed:true,source_unchanged:true,old_sessions_in_backup:before["tables"]["auth_sessions"]["rows"],revoked_at_target:before["tables"]["auth_sessions"]["rows"]}
+                                                                                                                                                                                                                                                                                ^
+script/sqlite-backups-check.rb:82:43: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  fresh_key = File.read(File.join(restored,"runtime-secret"))
+                                          ^
+script/sqlite-backups-check.rb:85:58: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:new_process_running_probe] = call.call("probe",target_env)
+                                                         ^
+script/sqlite-backups-check.rb:86:56: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:history_replay] = call.call("history_replay",target_env)
+                                                       ^
+script/sqlite-backups-check.rb:87:27: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  http = lambda do |method,path,cookie=nil,form=nil|
+                          ^
+script/sqlite-backups-check.rb:87:32: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  http = lambda do |method,path,cookie=nil,form=nil|
+                               ^
+script/sqlite-backups-check.rb:87:39: C: [Correctable] Layout/SpaceAroundEqualsInParameterDefault: Surrounding space missing in default value assignment.
+  http = lambda do |method,path,cookie=nil,form=nil|
+                                      ^
+script/sqlite-backups-check.rb:87:43: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  http = lambda do |method,path,cookie=nil,form=nil|
+                                          ^
+script/sqlite-backups-check.rb:87:48: C: [Correctable] Layout/SpaceAroundEqualsInParameterDefault: Surrounding space missing in default value assignment.
+  http = lambda do |method,path,cookie=nil,form=nil|
+                                               ^
+script/sqlite-backups-check.rb:93:32: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    Net::HTTP.start("127.0.0.1",port,nil,open_timeout:2,read_timeout:5){|client|client.request(request)}
+                               ^
+script/sqlite-backups-check.rb:93:37: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    Net::HTTP.start("127.0.0.1",port,nil,open_timeout:2,read_timeout:5){|client|client.request(request)}
+                                    ^
+script/sqlite-backups-check.rb:93:41: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    Net::HTTP.start("127.0.0.1",port,nil,open_timeout:2,read_timeout:5){|client|client.request(request)}
+                                        ^
+script/sqlite-backups-check.rb:93:54: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    Net::HTTP.start("127.0.0.1",port,nil,open_timeout:2,read_timeout:5){|client|client.request(request)}
+                                                     ^
+script/sqlite-backups-check.rb:93:56: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    Net::HTTP.start("127.0.0.1",port,nil,open_timeout:2,read_timeout:5){|client|client.request(request)}
+                                                       ^
+script/sqlite-backups-check.rb:93:69: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    Net::HTTP.start("127.0.0.1",port,nil,open_timeout:2,read_timeout:5){|client|client.request(request)}
+                                                                    ^
+script/sqlite-backups-check.rb:93:72: C: [Correctable] Layout/SpaceBeforeBlockBraces: Space missing to the left of {.
+    Net::HTTP.start("127.0.0.1",port,nil,open_timeout:2,read_timeout:5){|client|client.request(request)}
+                                                                       ^
+script/sqlite-backups-check.rb:93:72: C: [Correctable] Layout/SpaceInsideBlockBraces: Space between { and | missing.
+    Net::HTTP.start("127.0.0.1",port,nil,open_timeout:2,read_timeout:5){|client|client.request(request)}
+                                                                       ^^
+script/sqlite-backups-check.rb:93:104: C: [Correctable] Layout/SpaceInsideBlockBraces: Space missing inside }.
+    Net::HTTP.start("127.0.0.1",port,nil,open_timeout:2,read_timeout:5){|client|client.request(request)}
+                                                                                                       ^
+script/sqlite-backups-check.rb:96:40: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    log = File.open(File.join(workspace,"http-private.log"),File::WRONLY|File::CREAT|File::APPEND,0o600)
+                                       ^
+script/sqlite-backups-check.rb:96:60: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    log = File.open(File.join(workspace,"http-private.log"),File::WRONLY|File::CREAT|File::APPEND,0o600)
+                                                           ^
+script/sqlite-backups-check.rb:96:98: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    log = File.open(File.join(workspace,"http-private.log"),File::WRONLY|File::CREAT|File::APPEND,0o600)
+                                                                                                 ^
+script/sqlite-backups-check.rb:97:35: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    pid = Process.spawn(target_env,*guard,chdir:root,out:log,err:log)
+                                  ^
+script/sqlite-backups-check.rb:97:42: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    pid = Process.spawn(target_env,*guard,chdir:root,out:log,err:log)
+                                         ^
+script/sqlite-backups-check.rb:97:48: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    pid = Process.spawn(target_env,*guard,chdir:root,out:log,err:log)
+                                               ^
+script/sqlite-backups-check.rb:97:53: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    pid = Process.spawn(target_env,*guard,chdir:root,out:log,err:log)
+                                                    ^
+script/sqlite-backups-check.rb:97:57: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    pid = Process.spawn(target_env,*guard,chdir:root,out:log,err:log)
+                                                        ^
+script/sqlite-backups-check.rb:97:61: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    pid = Process.spawn(target_env,*guard,chdir:root,out:log,err:log)
+                                                            ^
+script/sqlite-backups-check.rb:97:65: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    pid = Process.spawn(target_env,*guard,chdir:root,out:log,err:log)
+                                                                ^
+script/sqlite-backups-check.rb:102:34: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+          response=http.call(:get,"/session/new")
+                                 ^
+script/sqlite-backups-check.rb:104:35: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        rescue Errno::ECONNREFUSED,EOFError
+                                  ^
+script/sqlite-backups-check.rb:106:56: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        raise "QA server exited" if Process.waitpid(pid,Process::WNOHANG)
+                                                       ^
+script/sqlite-backups-check.rb:113:24: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    Process.kill("TERM",pid)
+                       ^
+script/sqlite-backups-check.rb:114:24: C: [Correctable] Layout/SpaceBeforeBlockBraces: Space missing to the left of {.
+    Timeout.timeout(10){Process.wait(pid)}
+                       ^
+script/sqlite-backups-check.rb:114:25: C: [Correctable] Layout/SpaceInsideBlockBraces: Space missing inside {.
+    Timeout.timeout(10){Process.wait(pid)}
+                        ^
+script/sqlite-backups-check.rb:114:42: C: [Correctable] Layout/SpaceInsideBlockBraces: Space missing inside }.
+    Timeout.timeout(10){Process.wait(pid)}
+                                         ^
+script/sqlite-backups-check.rb:119:5: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+    [state["old_cookie"],state["late_cookie"]].each do |cookie|
+    ^
+script/sqlite-backups-check.rb:119:25: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    [state["old_cookie"],state["late_cookie"]].each do |cookie|
+                        ^
+script/sqlite-backups-check.rb:119:46: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+    [state["old_cookie"],state["late_cookie"]].each do |cookie|
+                                             ^
+script/sqlite-backups-check.rb:120:56: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+      raise "Old cookie accepted" unless http.call(:get,"/focus/state",cookie).code=="401"
+                                                       ^
+script/sqlite-backups-check.rb:120:71: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+      raise "Old cookie accepted" unless http.call(:get,"/focus/state",cookie).code=="401"
+                                                                      ^
+script/sqlite-backups-check.rb:122:24: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    page=http.call(:get,"/session/new")
+                       ^
+script/sqlite-backups-check.rb:123:60: C: [Correctable] Layout/SpaceBeforeBlockBraces: Space missing to the left of {.
+    initial_cookie=Array(page.get_fields("set-cookie")).map{|value|value.split(";",2).first}.join("; ")
+                                                           ^
+script/sqlite-backups-check.rb:123:60: C: [Correctable] Layout/SpaceInsideBlockBraces: Space between { and | missing.
+    initial_cookie=Array(page.get_fields("set-cookie")).map{|value|value.split(";",2).first}.join("; ")
+                                                           ^^
+script/sqlite-backups-check.rb:123:83: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    initial_cookie=Array(page.get_fields("set-cookie")).map{|value|value.split(";",2).first}.join("; ")
+                                                                                  ^
+script/sqlite-backups-check.rb:123:92: C: [Correctable] Layout/SpaceInsideBlockBraces: Space missing inside }.
+    initial_cookie=Array(page.get_fields("set-cookie")).map{|value|value.split(";",2).first}.join("; ")
+                                                                                           ^
+script/sqlite-backups-check.rb:124:81: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    token=CGI.unescapeHTML(page.body[/name="authenticity_token" value="([^"]+)"/,1].to_s)
+                                                                                ^
+script/sqlite-backups-check.rb:125:26: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    login=http.call(:post,"/session",initial_cookie,{"email_address"=>"backup@example.test","password"=>state.fetch("password"),"authenticity_token"=>token})
+                         ^
+script/sqlite-backups-check.rb:125:37: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    login=http.call(:post,"/session",initial_cookie,{"email_address"=>"backup@example.test","password"=>state.fetch("password"),"authenticity_token"=>token})
+                                    ^
+script/sqlite-backups-check.rb:125:52: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    login=http.call(:post,"/session",initial_cookie,{"email_address"=>"backup@example.test","password"=>state.fetch("password"),"authenticity_token"=>token})
+                                                   ^
+script/sqlite-backups-check.rb:125:53: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside { missing.
+    login=http.call(:post,"/session",initial_cookie,{"email_address"=>"backup@example.test","password"=>state.fetch("password"),"authenticity_token"=>token})
+                                                    ^
+script/sqlite-backups-check.rb:125:92: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    login=http.call(:post,"/session",initial_cookie,{"email_address"=>"backup@example.test","password"=>state.fetch("password"),"authenticity_token"=>token})
+                                                                                           ^
+script/sqlite-backups-check.rb:125:128: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    login=http.call(:post,"/session",initial_cookie,{"email_address"=>"backup@example.test","password"=>state.fetch("password"),"authenticity_token"=>token})
+                                                                                                                               ^
+script/sqlite-backups-check.rb:125:156: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside } missing.
+    login=http.call(:post,"/session",initial_cookie,{"email_address"=>"backup@example.test","password"=>state.fetch("password"),"authenticity_token"=>token})
+                                                                                                                                                           ^
+script/sqlite-backups-check.rb:127:54: C: [Correctable] Layout/SpaceBeforeBlockBraces: Space missing to the left of {.
+    cookie=Array(login.get_fields("set-cookie")).find{|value|value.start_with?("auth_session_id=")}.split(";",2).first
+                                                     ^
+script/sqlite-backups-check.rb:127:54: C: [Correctable] Layout/SpaceInsideBlockBraces: Space between { and | missing.
+    cookie=Array(login.get_fields("set-cookie")).find{|value|value.start_with?("auth_session_id=")}.split(";",2).first
+                                                     ^^
+script/sqlite-backups-check.rb:127:99: C: [Correctable] Layout/SpaceInsideBlockBraces: Space missing inside }.
+    cookie=Array(login.get_fields("set-cookie")).find{|value|value.start_with?("auth_session_id=")}.split(";",2).first
+                                                                                                  ^
+script/sqlite-backups-check.rb:127:110: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    cookie=Array(login.get_fields("set-cookie")).find{|value|value.start_with?("auth_session_id=")}.split(";",2).first
+                                                                                                             ^
+script/sqlite-backups-check.rb:128:28: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    response=http.call(:get,"/focus/state",cookie)
+                           ^
+script/sqlite-backups-check.rb:128:43: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    response=http.call(:get,"/focus/state",cookie)
+                                          ^
+script/sqlite-backups-check.rb:129:113: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    raise "New login cannot access focus" unless response.code=="200" && JSON.parse(response.body).dig("session","status")=="running"
+                                                                                                                ^
+script/sqlite-backups-check.rb:130:72: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    check=SQLite3::Database.new(target_env.fetch("ACCIO_DATABASE_PATH"),readonly:true)
+                                                                       ^
+script/sqlite-backups-check.rb:130:81: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    check=SQLite3::Database.new(target_env.fetch("ACCIO_DATABASE_PATH"),readonly:true)
+                                                                                ^
+script/sqlite-backups-check.rb:134:69: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    raise "Post-backup old cookie resurrected" unless http.call(:get,"/focus/state",state["late_cookie"]).code=="401"
+                                                                    ^
+script/sqlite-backups-check.rb:134:84: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    raise "Post-backup old cookie resurrected" unless http.call(:get,"/focus/state",state["late_cookie"]).code=="401"
+                                                                                   ^
+script/sqlite-backups-check.rb:135:37: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    before_gets=call.call("snapshot",target_env)
+                                    ^
+script/sqlite-backups-check.rb:136:69: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    3.times { raise "Authenticated GET failed" unless http.call(:get,"/focus/state",cookie).code=="200" }
+                                                                    ^
+script/sqlite-backups-check.rb:136:84: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    3.times { raise "Authenticated GET failed" unless http.call(:get,"/focus/state",cookie).code=="200" }
+                                                                                   ^
+script/sqlite-backups-check.rb:137:53: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    raise "GET wrote DB" unless call.call("snapshot",target_env)==before_gets
+                                                    ^
+script/sqlite-backups-check.rb:138:108: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    %w[/ /projects /apps/tasks /apps/focus].each { |path|raise "Restored page failed" unless http.call(:get,path,cookie).code=="200" }
+                                                                                                           ^
+script/sqlite-backups-check.rb:138:113: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    %w[/ /projects /apps/tasks /apps/focus].each { |path|raise "Restored page failed" unless http.call(:get,path,cookie).code=="200" }
+                                                                                                                ^
+script/sqlite-backups-check.rb:139:55: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    raise "Project space failed" unless http.call(:get,"/projects/#{state.fetch('project_route')}",cookie).code=="200"
+                                                      ^
+script/sqlite-backups-check.rb:139:99: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    raise "Project space failed" unless http.call(:get,"/projects/#{state.fetch('project_route')}",cookie).code=="200"
+                                                                                                  ^
+script/sqlite-backups-check.rb:140:32: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside { missing.
+    results[:authentication] = {old_cookie_rejected:true,post_capture_old_cookie_rejected_even_after_numeric_id_reuse:true,fresh_external_key:true,original_password_works:true,private_pages_reopened:true,repeated_get_no_writes:true}
+                               ^
+script/sqlite-backups-check.rb:140:52: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    results[:authentication] = {old_cookie_rejected:true,post_capture_old_cookie_rejected_even_after_numeric_id_reuse:true,fresh_external_key:true,original_password_works:true,private_pages_reopened:true,repeated_get_no_writes:true}
+                                                   ^
+script/sqlite-backups-check.rb:140:57: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    results[:authentication] = {old_cookie_rejected:true,post_capture_old_cookie_rejected_even_after_numeric_id_reuse:true,fresh_external_key:true,original_password_works:true,private_pages_reopened:true,repeated_get_no_writes:true}
+                                                        ^
+script/sqlite-backups-check.rb:140:118: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    results[:authentication] = {old_cookie_rejected:true,post_capture_old_cookie_rejected_even_after_numeric_id_reuse:true,fresh_external_key:true,original_password_works:true,private_pages_reopened:true,repeated_get_no_writes:true}
+                                                                                                                     ^
+script/sqlite-backups-check.rb:140:123: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    results[:authentication] = {old_cookie_rejected:true,post_capture_old_cookie_rejected_even_after_numeric_id_reuse:true,fresh_external_key:true,original_password_works:true,private_pages_reopened:true,repeated_get_no_writes:true}
+                                                                                                                          ^
+script/sqlite-backups-check.rb:140:142: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    results[:authentication] = {old_cookie_rejected:true,post_capture_old_cookie_rejected_even_after_numeric_id_reuse:true,fresh_external_key:true,original_password_works:true,private_pages_reopened:true,repeated_get_no_writes:true}
+                                                                                                                                             ^
+script/sqlite-backups-check.rb:140:147: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    results[:authentication] = {old_cookie_rejected:true,post_capture_old_cookie_rejected_even_after_numeric_id_reuse:true,fresh_external_key:true,original_password_works:true,private_pages_reopened:true,repeated_get_no_writes:true}
+                                                                                                                                                  ^
+script/sqlite-backups-check.rb:140:171: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    results[:authentication] = {old_cookie_rejected:true,post_capture_old_cookie_rejected_even_after_numeric_id_reuse:true,fresh_external_key:true,original_password_works:true,private_pages_reopened:true,repeated_get_no_writes:true}
+                                                                                                                                                                          ^
+script/sqlite-backups-check.rb:140:176: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    results[:authentication] = {old_cookie_rejected:true,post_capture_old_cookie_rejected_even_after_numeric_id_reuse:true,fresh_external_key:true,original_password_works:true,private_pages_reopened:true,repeated_get_no_writes:true}
+                                                                                                                                                                               ^
+script/sqlite-backups-check.rb:140:199: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    results[:authentication] = {old_cookie_rejected:true,post_capture_old_cookie_rejected_even_after_numeric_id_reuse:true,fresh_external_key:true,original_password_works:true,private_pages_reopened:true,repeated_get_no_writes:true}
+                                                                                                                                                                                                      ^
+script/sqlite-backups-check.rb:140:204: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    results[:authentication] = {old_cookie_rejected:true,post_capture_old_cookie_rejected_even_after_numeric_id_reuse:true,fresh_external_key:true,original_password_works:true,private_pages_reopened:true,repeated_get_no_writes:true}
+                                                                                                                                                                                                           ^
+script/sqlite-backups-check.rb:140:227: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    results[:authentication] = {old_cookie_rejected:true,post_capture_old_cookie_rejected_even_after_numeric_id_reuse:true,fresh_external_key:true,original_password_works:true,private_pages_reopened:true,repeated_get_no_writes:true}
+                                                                                                                                                                                                                                  ^
+script/sqlite-backups-check.rb:140:232: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside } missing.
+    results[:authentication] = {old_cookie_rejected:true,post_capture_old_cookie_rejected_even_after_numeric_id_reuse:true,fresh_external_key:true,original_password_works:true,private_pages_reopened:true,repeated_get_no_writes:true}
+                                                                                                                                                                                                                                       ^
+script/sqlite-backups-check.rb:144:64: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    raise "Login lost on process restart" unless http.call(:get,"/focus/state",cookie).code=="200"
+                                                               ^
+script/sqlite-backups-check.rb:144:79: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    raise "Login lost on process restart" unless http.call(:get,"/focus/state",cookie).code=="200"
+                                                                              ^
+script/sqlite-backups-check.rb:145:68: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    raise "Old cookie accepted after restart" unless http.call(:get,"/focus/state",state["late_cookie"]).code=="401"
+                                                                   ^
+script/sqlite-backups-check.rb:145:83: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    raise "Old cookie accepted after restart" unless http.call(:get,"/focus/state",state["late_cookie"]).code=="401"
+                                                                                  ^
+script/sqlite-backups-check.rb:146:30: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside { missing.
+    results[:http_restart] = {new_session_still_valid:true,old_sessions_still_rejected:true}
+                             ^
+script/sqlite-backups-check.rb:146:54: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    results[:http_restart] = {new_session_still_valid:true,old_sessions_still_rejected:true}
+                                                     ^
+script/sqlite-backups-check.rb:146:59: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    results[:http_restart] = {new_session_still_valid:true,old_sessions_still_rejected:true}
+                                                          ^
+script/sqlite-backups-check.rb:146:87: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    results[:http_restart] = {new_session_still_valid:true,old_sessions_still_rejected:true}
+                                                                                      ^
+script/sqlite-backups-check.rb:146:92: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside } missing.
+    results[:http_restart] = {new_session_still_valid:true,old_sessions_still_rejected:true}
+                                                                                           ^
+script/sqlite-backups-check.rb:153:69: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  %w[preferences project task receipt].each_with_index do |operation,index|
+                                                                    ^
+script/sqlite-backups-check.rb:154:5: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+    ["writer-ready","writer-release"].each{|name|path=File.join(workspace,name);File.unlink(path) if File.exist?(path)}
+    ^
+script/sqlite-backups-check.rb:154:20: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    ["writer-ready","writer-release"].each{|name|path=File.join(workspace,name);File.unlink(path) if File.exist?(path)}
+                   ^
+script/sqlite-backups-check.rb:154:37: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+    ["writer-ready","writer-release"].each{|name|path=File.join(workspace,name);File.unlink(path) if File.exist?(path)}
+                                    ^
+script/sqlite-backups-check.rb:154:43: C: [Correctable] Layout/SpaceBeforeBlockBraces: Space missing to the left of {.
+    ["writer-ready","writer-release"].each{|name|path=File.join(workspace,name);File.unlink(path) if File.exist?(path)}
+                                          ^
+script/sqlite-backups-check.rb:154:43: C: [Correctable] Layout/SpaceInsideBlockBraces: Space between { and | missing.
+    ["writer-ready","writer-release"].each{|name|path=File.join(workspace,name);File.unlink(path) if File.exist?(path)}
+                                          ^^
+script/sqlite-backups-check.rb:154:74: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    ["writer-ready","writer-release"].each{|name|path=File.join(workspace,name);File.unlink(path) if File.exist?(path)}
+                                                                         ^
+script/sqlite-backups-check.rb:154:119: C: [Correctable] Layout/SpaceInsideBlockBraces: Space missing inside }.
+    ["writer-ready","writer-release"].each{|name|path=File.join(workspace,name);File.unlink(path) if File.exist?(path)}
+                                                                                                                      ^
+script/sqlite-backups-check.rb:156:48: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    Open3.popen3(env.merge("F3B_MODE"=>"writer","F3B_OPERATION"=>operation),"bin/rails","runner",worker,chdir:root) do |stdin,stdout,stderr,process|
+                                               ^
+script/sqlite-backups-check.rb:156:76: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    Open3.popen3(env.merge("F3B_MODE"=>"writer","F3B_OPERATION"=>operation),"bin/rails","runner",worker,chdir:root) do |stdin,stdout,stderr,process|
+                                                                           ^
+script/sqlite-backups-check.rb:156:88: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    Open3.popen3(env.merge("F3B_MODE"=>"writer","F3B_OPERATION"=>operation),"bin/rails","runner",worker,chdir:root) do |stdin,stdout,stderr,process|
+                                                                                       ^
+script/sqlite-backups-check.rb:156:97: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    Open3.popen3(env.merge("F3B_MODE"=>"writer","F3B_OPERATION"=>operation),"bin/rails","runner",worker,chdir:root) do |stdin,stdout,stderr,process|
+                                                                                                ^
+script/sqlite-backups-check.rb:156:104: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    Open3.popen3(env.merge("F3B_MODE"=>"writer","F3B_OPERATION"=>operation),"bin/rails","runner",worker,chdir:root) do |stdin,stdout,stderr,process|
+                                                                                                       ^
+script/sqlite-backups-check.rb:156:110: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    Open3.popen3(env.merge("F3B_MODE"=>"writer","F3B_OPERATION"=>operation),"bin/rails","runner",worker,chdir:root) do |stdin,stdout,stderr,process|
+                                                                                                             ^
+script/sqlite-backups-check.rb:156:126: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    Open3.popen3(env.merge("F3B_MODE"=>"writer","F3B_OPERATION"=>operation),"bin/rails","runner",worker,chdir:root) do |stdin,stdout,stderr,process|
+                                                                                                                             ^
+script/sqlite-backups-check.rb:156:133: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    Open3.popen3(env.merge("F3B_MODE"=>"writer","F3B_OPERATION"=>operation),"bin/rails","runner",worker,chdir:root) do |stdin,stdout,stderr,process|
+                                                                                                                                    ^
+script/sqlite-backups-check.rb:156:140: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    Open3.popen3(env.merge("F3B_MODE"=>"writer","F3B_OPERATION"=>operation),"bin/rails","runner",worker,chdir:root) do |stdin,stdout,stderr,process|
+                                                                                                                                           ^
+script/sqlite-backups-check.rb:159:28: C: [Correctable] Layout/SpaceBeforeBlockBraces: Space missing to the left of {.
+        Timeout.timeout(30){sleep 0.01 until File.exist?(File.join(workspace,"writer-ready"))}
+                           ^
+script/sqlite-backups-check.rb:159:29: C: [Correctable] Layout/SpaceInsideBlockBraces: Space missing inside {.
+        Timeout.timeout(30){sleep 0.01 until File.exist?(File.join(workspace,"writer-ready"))}
+                            ^
+script/sqlite-backups-check.rb:159:77: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        Timeout.timeout(30){sleep 0.01 until File.exist?(File.join(workspace,"writer-ready"))}
+                                                                            ^
+script/sqlite-backups-check.rb:159:94: C: [Correctable] Layout/SpaceInsideBlockBraces: Space missing inside }.
+        Timeout.timeout(30){sleep 0.01 until File.exist?(File.join(workspace,"writer-ready"))}
+                                                                                             ^
+script/sqlite-backups-check.rb:160:33: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        path=File.join(directory,"concurrent-#{operation}.tar")
+                                ^
+script/sqlite-backups-check.rb:163:32: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+        tool.backup(destination:path) do |stage|
+                               ^
+script/sqlite-backups-check.rb:165:43: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+            File.write(File.join(workspace,"writer-release"),"release",perm:0o600)
+                                          ^
+script/sqlite-backups-check.rb:165:61: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+            File.write(File.join(workspace,"writer-release"),"release",perm:0o600)
+                                                            ^
+script/sqlite-backups-check.rb:165:71: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+            File.write(File.join(workspace,"writer-release"),"release",perm:0o600)
+                                                                      ^
+script/sqlite-backups-check.rb:165:76: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+            File.write(File.join(workspace,"writer-release"),"release",perm:0o600)
+                                                                           ^
+script/sqlite-backups-check.rb:170:35: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        target=File.join(workspace,"concurrent-restore-#{operation}")
+                                  ^
+script/sqlite-backups-check.rb:171:29: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+        tool.restore(archive:path,directory:target)
+                            ^
+script/sqlite-backups-check.rb:171:34: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        tool.restore(archive:path,directory:target)
+                                 ^
+script/sqlite-backups-check.rb:171:44: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+        tool.restore(archive:path,directory:target)
+                                           ^
+script/sqlite-backups-check.rb:172:67: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        selected=env.merge("ACCIO_DATABASE_PATH"=>File.join(target,"synthetic.sqlite3"),"ACCIO_SYNTHETIC_FIXTURE"=>File.join(target,"fixture.json"),"SECRET_KEY_BASE"=>File.read(File.join(target,"runtime-secret")))
+                                                                  ^
+script/sqlite-backups-check.rb:172:88: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        selected=env.merge("ACCIO_DATABASE_PATH"=>File.join(target,"synthetic.sqlite3"),"ACCIO_SYNTHETIC_FIXTURE"=>File.join(target,"fixture.json"),"SECRET_KEY_BASE"=>File.read(File.join(target,"runtime-secret")))
+                                                                                       ^
+script/sqlite-backups-check.rb:172:132: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        selected=env.merge("ACCIO_DATABASE_PATH"=>File.join(target,"synthetic.sqlite3"),"ACCIO_SYNTHETIC_FIXTURE"=>File.join(target,"fixture.json"),"SECRET_KEY_BASE"=>File.read(File.join(target,"runtime-secret")))
+                                                                                                                                   ^
+script/sqlite-backups-check.rb:172:148: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        selected=env.merge("ACCIO_DATABASE_PATH"=>File.join(target,"synthetic.sqlite3"),"ACCIO_SYNTHETIC_FIXTURE"=>File.join(target,"fixture.json"),"SECRET_KEY_BASE"=>File.read(File.join(target,"runtime-secret")))
+                                                                                                                                                   ^
+script/sqlite-backups-check.rb:172:194: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        selected=env.merge("ACCIO_DATABASE_PATH"=>File.join(target,"synthetic.sqlite3"),"ACCIO_SYNTHETIC_FIXTURE"=>File.join(target,"fixture.json"),"SECRET_KEY_BASE"=>File.read(File.join(target,"runtime-secret")))
+                                                                                                                                                                                                 ^
+script/sqlite-backups-check.rb:173:38: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        captured=call.call("snapshot",selected)
+                                     ^
+script/sqlite-backups-check.rb:178:34: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside { missing.
+        results[:concurrency] << {operation:operation,committed_at:release_at,uncommitted_excluded:true,pinned_data_exact:true,writer_commit_preserved:true,wal_active:true}
+                                 ^
+script/sqlite-backups-check.rb:178:44: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+        results[:concurrency] << {operation:operation,committed_at:release_at,uncommitted_excluded:true,pinned_data_exact:true,writer_commit_preserved:true,wal_active:true}
+                                           ^
+script/sqlite-backups-check.rb:178:54: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        results[:concurrency] << {operation:operation,committed_at:release_at,uncommitted_excluded:true,pinned_data_exact:true,writer_commit_preserved:true,wal_active:true}
+                                                     ^
+script/sqlite-backups-check.rb:178:67: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+        results[:concurrency] << {operation:operation,committed_at:release_at,uncommitted_excluded:true,pinned_data_exact:true,writer_commit_preserved:true,wal_active:true}
+                                                                  ^
+script/sqlite-backups-check.rb:178:78: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        results[:concurrency] << {operation:operation,committed_at:release_at,uncommitted_excluded:true,pinned_data_exact:true,writer_commit_preserved:true,wal_active:true}
+                                                                             ^
+script/sqlite-backups-check.rb:178:99: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+        results[:concurrency] << {operation:operation,committed_at:release_at,uncommitted_excluded:true,pinned_data_exact:true,writer_commit_preserved:true,wal_active:true}
+                                                                                                  ^
+script/sqlite-backups-check.rb:178:104: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        results[:concurrency] << {operation:operation,committed_at:release_at,uncommitted_excluded:true,pinned_data_exact:true,writer_commit_preserved:true,wal_active:true}
+                                                                                                       ^
+script/sqlite-backups-check.rb:178:122: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+        results[:concurrency] << {operation:operation,committed_at:release_at,uncommitted_excluded:true,pinned_data_exact:true,writer_commit_preserved:true,wal_active:true}
+                                                                                                                         ^
+script/sqlite-backups-check.rb:178:127: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        results[:concurrency] << {operation:operation,committed_at:release_at,uncommitted_excluded:true,pinned_data_exact:true,writer_commit_preserved:true,wal_active:true}
+                                                                                                                              ^
+script/sqlite-backups-check.rb:178:151: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+        results[:concurrency] << {operation:operation,committed_at:release_at,uncommitted_excluded:true,pinned_data_exact:true,writer_commit_preserved:true,wal_active:true}
+                                                                                                                                                      ^
+script/sqlite-backups-check.rb:178:156: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        results[:concurrency] << {operation:operation,committed_at:release_at,uncommitted_excluded:true,pinned_data_exact:true,writer_commit_preserved:true,wal_active:true}
+                                                                                                                                                           ^
+script/sqlite-backups-check.rb:178:167: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+        results[:concurrency] << {operation:operation,committed_at:release_at,uncommitted_excluded:true,pinned_data_exact:true,writer_commit_preserved:true,wal_active:true}
+                                                                                                                                                                      ^
+script/sqlite-backups-check.rb:178:172: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside } missing.
+        results[:concurrency] << {operation:operation,committed_at:release_at,uncommitted_excluded:true,pinned_data_exact:true,writer_commit_preserved:true,wal_active:true}
+                                                                                                                                                                           ^
+script/sqlite-backups-check.rb:180:39: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        File.write(File.join(workspace,"writer-release"),"release",perm:0o600) unless File.exist?(File.join(workspace,"writer-release"))
+                                      ^
+script/sqlite-backups-check.rb:180:57: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        File.write(File.join(workspace,"writer-release"),"release",perm:0o600) unless File.exist?(File.join(workspace,"writer-release"))
+                                                        ^
+script/sqlite-backups-check.rb:180:67: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        File.write(File.join(workspace,"writer-release"),"release",perm:0o600) unless File.exist?(File.join(workspace,"writer-release"))
+                                                                  ^
+script/sqlite-backups-check.rb:180:72: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+        File.write(File.join(workspace,"writer-release"),"release",perm:0o600) unless File.exist?(File.join(workspace,"writer-release"))
+                                                                       ^
+script/sqlite-backups-check.rb:180:118: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+        File.write(File.join(workspace,"writer-release"),"release",perm:0o600) unless File.exist?(File.join(workspace,"writer-release"))
+                                                                                                                     ^
+script/sqlite-backups-check.rb:188:31: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    backup=File.join(directory,"#{kind}.tar")
+                              ^
+script/sqlite-backups-check.rb:189:28: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    tool.backup(destination:backup)
+                           ^
+script/sqlite-backups-check.rb:190:31: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    target=File.join(workspace,"restored-#{kind}")
+                              ^
+script/sqlite-backups-check.rb:191:25: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    tool.restore(archive:backup,directory:target)
+                        ^
+script/sqlite-backups-check.rb:191:32: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    tool.restore(archive:backup,directory:target)
+                               ^
+script/sqlite-backups-check.rb:191:42: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    tool.restore(archive:backup,directory:target)
+                                         ^
+script/sqlite-backups-check.rb:192:63: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    selected=env.merge("ACCIO_DATABASE_PATH"=>File.join(target,"synthetic.sqlite3"),"ACCIO_SYNTHETIC_FIXTURE"=>File.join(target,"fixture.json"),"SECRET_KEY_BASE"=>File.read(File.join(target,"runtime-secret")))
+                                                              ^
+script/sqlite-backups-check.rb:192:84: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    selected=env.merge("ACCIO_DATABASE_PATH"=>File.join(target,"synthetic.sqlite3"),"ACCIO_SYNTHETIC_FIXTURE"=>File.join(target,"fixture.json"),"SECRET_KEY_BASE"=>File.read(File.join(target,"runtime-secret")))
+                                                                                   ^
+script/sqlite-backups-check.rb:192:128: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    selected=env.merge("ACCIO_DATABASE_PATH"=>File.join(target,"synthetic.sqlite3"),"ACCIO_SYNTHETIC_FIXTURE"=>File.join(target,"fixture.json"),"SECRET_KEY_BASE"=>File.read(File.join(target,"runtime-secret")))
+                                                                                                                               ^
+script/sqlite-backups-check.rb:192:144: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    selected=env.merge("ACCIO_DATABASE_PATH"=>File.join(target,"synthetic.sqlite3"),"ACCIO_SYNTHETIC_FIXTURE"=>File.join(target,"fixture.json"),"SECRET_KEY_BASE"=>File.read(File.join(target,"runtime-secret")))
+                                                                                                                                               ^
+script/sqlite-backups-check.rb:192:190: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    selected=env.merge("ACCIO_DATABASE_PATH"=>File.join(target,"synthetic.sqlite3"),"ACCIO_SYNTHETIC_FIXTURE"=>File.join(target,"fixture.json"),"SECRET_KEY_BASE"=>File.read(File.join(target,"runtime-secret")))
+                                                                                                                                                                                             ^
+script/sqlite-backups-check.rb:193:28: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    probe=call.call("probe",selected)
+                           ^
+script/sqlite-backups-check.rb:196:58: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+    results[:additional_focus_states] << probe.merge(case:kind)
+                                                         ^
+script/sqlite-backups-check.rb:198:22: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside { missing.
+  results[:sqlite] = {triggers:25,indexes:36,logical_schema_exact:true,integrity:"ok",foreign_key_check:[],application_wal_full:true}
+                     ^
+script/sqlite-backups-check.rb:198:31: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  results[:sqlite] = {triggers:25,indexes:36,logical_schema_exact:true,integrity:"ok",foreign_key_check:[],application_wal_full:true}
+                              ^
+script/sqlite-backups-check.rb:198:34: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:sqlite] = {triggers:25,indexes:36,logical_schema_exact:true,integrity:"ok",foreign_key_check:[],application_wal_full:true}
+                                 ^
+script/sqlite-backups-check.rb:198:42: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  results[:sqlite] = {triggers:25,indexes:36,logical_schema_exact:true,integrity:"ok",foreign_key_check:[],application_wal_full:true}
+                                         ^
+script/sqlite-backups-check.rb:198:45: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:sqlite] = {triggers:25,indexes:36,logical_schema_exact:true,integrity:"ok",foreign_key_check:[],application_wal_full:true}
+                                            ^
+script/sqlite-backups-check.rb:198:66: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  results[:sqlite] = {triggers:25,indexes:36,logical_schema_exact:true,integrity:"ok",foreign_key_check:[],application_wal_full:true}
+                                                                 ^
+script/sqlite-backups-check.rb:198:71: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:sqlite] = {triggers:25,indexes:36,logical_schema_exact:true,integrity:"ok",foreign_key_check:[],application_wal_full:true}
+                                                                      ^
+script/sqlite-backups-check.rb:198:81: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  results[:sqlite] = {triggers:25,indexes:36,logical_schema_exact:true,integrity:"ok",foreign_key_check:[],application_wal_full:true}
+                                                                                ^
+script/sqlite-backups-check.rb:198:86: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:sqlite] = {triggers:25,indexes:36,logical_schema_exact:true,integrity:"ok",foreign_key_check:[],application_wal_full:true}
+                                                                                     ^
+script/sqlite-backups-check.rb:198:104: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  results[:sqlite] = {triggers:25,indexes:36,logical_schema_exact:true,integrity:"ok",foreign_key_check:[],application_wal_full:true}
+                                                                                                       ^
+script/sqlite-backups-check.rb:198:107: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:sqlite] = {triggers:25,indexes:36,logical_schema_exact:true,integrity:"ok",foreign_key_check:[],application_wal_full:true}
+                                                                                                          ^
+script/sqlite-backups-check.rb:198:128: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  results[:sqlite] = {triggers:25,indexes:36,logical_schema_exact:true,integrity:"ok",foreign_key_check:[],application_wal_full:true}
+                                                                                                                               ^
+script/sqlite-backups-check.rb:198:133: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside } missing.
+  results[:sqlite] = {triggers:25,indexes:36,logical_schema_exact:true,integrity:"ok",foreign_key_check:[],application_wal_full:true}
+                                                                                                                                    ^
+script/sqlite-backups-check.rb:199:35: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside { missing.
+  results[:private_publication] = {archive_mode:(File.stat(archive).mode&0o777).to_s(8),directory_mode:(File.stat(restored).mode&0o777).to_s(8),backups_or_secrets_in_evidence:false}
+                                  ^
+script/sqlite-backups-check.rb:199:48: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  results[:private_publication] = {archive_mode:(File.stat(archive).mode&0o777).to_s(8),directory_mode:(File.stat(restored).mode&0o777).to_s(8),backups_or_secrets_in_evidence:false}
+                                               ^
+script/sqlite-backups-check.rb:199:88: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:private_publication] = {archive_mode:(File.stat(archive).mode&0o777).to_s(8),directory_mode:(File.stat(restored).mode&0o777).to_s(8),backups_or_secrets_in_evidence:false}
+                                                                                       ^
+script/sqlite-backups-check.rb:199:103: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  results[:private_publication] = {archive_mode:(File.stat(archive).mode&0o777).to_s(8),directory_mode:(File.stat(restored).mode&0o777).to_s(8),backups_or_secrets_in_evidence:false}
+                                                                                                      ^
+script/sqlite-backups-check.rb:199:144: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  results[:private_publication] = {archive_mode:(File.stat(archive).mode&0o777).to_s(8),directory_mode:(File.stat(restored).mode&0o777).to_s(8),backups_or_secrets_in_evidence:false}
+                                                                                                                                               ^
+script/sqlite-backups-check.rb:199:175: C: [Correctable] Layout/SpaceAfterColon: Space missing after colon.
+  results[:private_publication] = {archive_mode:(File.stat(archive).mode&0o777).to_s(8),directory_mode:(File.stat(restored).mode&0o777).to_s(8),backups_or_secrets_in_evidence:false}
+                                                                                                                                                                              ^
+script/sqlite-backups-check.rb:199:181: C: [Correctable] Layout/SpaceInsideHashLiteralBraces: Space inside } missing.
+  results[:private_publication] = {archive_mode:(File.stat(archive).mode&0o777).to_s(8),directory_mode:(File.stat(restored).mode&0o777).to_s(8),backups_or_secrets_in_evidence:false}
+                                                                                                                                                                                    ^
+script/sqlite-backups-check.rb:201:32: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  File.write(File.join(evidence,"integration.json"),JSON.pretty_generate(results)+"\n")
+                               ^
+script/sqlite-backups-check.rb:201:52: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  File.write(File.join(evidence,"integration.json"),JSON.pretty_generate(results)+"\n")
+                                                   ^
+script/sqlite-backups-worker.rb:29:19: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  header.split(";",2).first
+                  ^
+script/sqlite-backups-worker.rb:37:30: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  appearance["dockHidden"] = [appearance["dockOrder"].first]
+                             ^
+script/sqlite-backups-worker.rb:37:60: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  appearance["dockHidden"] = [appearance["dockOrder"].first]
+                                                           ^
+script/sqlite-backups-worker.rb:45:42: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  backup["future-field"] = { "custom" => [1,nil,"á"] }
+                                         ^
+script/sqlite-backups-worker.rb:45:44: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  backup["future-field"] = { "custom" => [1,nil,"á"] }
+                                           ^
+script/sqlite-backups-worker.rb:45:48: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  backup["future-field"] = { "custom" => [1,nil,"á"] }
+                                               ^
+script/sqlite-backups-worker.rb:45:52: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  backup["future-field"] = { "custom" => [1,nil,"á"] }
+                                                   ^
+script/sqlite-backups-worker.rb:109:35: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    File.write(File.join(workspace,"writer-ready"), "ready", perm: 0o600)
+                                  ^
+script/sqlite-backups-worker.rb:110:75: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+    Timeout.timeout(30) { sleep 0.01 until File.exist?(File.join(workspace,"writer-release")) }
+                                                                          ^
+script/sqlite-backups-worker.rb:122:33: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  raise "Unsafe pragmas" unless [c.select_value("PRAGMA foreign_keys"),c.select_value("PRAGMA journal_mode"),c.select_value("PRAGMA synchronous")] == [1,"wal",2]
+                                ^
+script/sqlite-backups-worker.rb:122:71: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  raise "Unsafe pragmas" unless [c.select_value("PRAGMA foreign_keys"),c.select_value("PRAGMA journal_mode"),c.select_value("PRAGMA synchronous")] == [1,"wal",2]
+                                                                      ^
+script/sqlite-backups-worker.rb:122:109: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  raise "Unsafe pragmas" unless [c.select_value("PRAGMA foreign_keys"),c.select_value("PRAGMA journal_mode"),c.select_value("PRAGMA synchronous")] == [1,"wal",2]
+                                                                                                            ^
+script/sqlite-backups-worker.rb:122:146: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  raise "Unsafe pragmas" unless [c.select_value("PRAGMA foreign_keys"),c.select_value("PRAGMA journal_mode"),c.select_value("PRAGMA synchronous")] == [1,"wal",2]
+                                                                                                                                                 ^
+script/sqlite-backups-worker.rb:122:151: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  raise "Unsafe pragmas" unless [c.select_value("PRAGMA foreign_keys"),c.select_value("PRAGMA journal_mode"),c.select_value("PRAGMA synchronous")] == [1,"wal",2]
+                                                                                                                                                      ^
+script/sqlite-backups-worker.rb:122:153: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  raise "Unsafe pragmas" unless [c.select_value("PRAGMA foreign_keys"),c.select_value("PRAGMA journal_mode"),c.select_value("PRAGMA synchronous")] == [1,"wal",2]
+                                                                                                                                                        ^
+script/sqlite-backups-worker.rb:122:159: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  raise "Unsafe pragmas" unless [c.select_value("PRAGMA foreign_keys"),c.select_value("PRAGMA journal_mode"),c.select_value("PRAGMA synchronous")] == [1,"wal",2]
+                                                                                                                                                              ^
+script/sqlite-backups-worker.rb:122:161: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  raise "Unsafe pragmas" unless [c.select_value("PRAGMA foreign_keys"),c.select_value("PRAGMA journal_mode"),c.select_value("PRAGMA synchronous")] == [1,"wal",2]
+                                                                                                                                                                ^
+script/sqlite-backups-worker.rb:124:50: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  puts JSON.generate({ state: state.dig("session","status"), checkpoint: state.dig("session","elapsed_seconds"), recovery_pending: !state["recovery"].nil?, focus_read_did_not_write: true, completed_history: 1, global_occupants: 1, wal_full_foreign_keys: true })
+                                                 ^
+script/sqlite-backups-worker.rb:124:93: C: [Correctable] Layout/SpaceAfterComma: Space missing after comma.
+  puts JSON.generate({ state: state.dig("session","status"), checkpoint: state.dig("session","elapsed_seconds"), recovery_pending: !state["recovery"].nil?, focus_read_did_not_write: true, completed_history: 1, global_occupants: 1, wal_full_foreign_keys: true })
+                                                                                            ^
+test/services/synthetic_sqlite_backup_test.rb:279:55: C: [Correctable] Style/StringLiterals: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+    File.write(File.join(@restored, "RESTORED.json"), '{}')
+                                                      ^^^^
+
+118 files inspected, 306 offenses detected, 295 offenses autocorrectable

@@ -1,0 +1,44 @@
+{
+  "branch": "p1-persistence",
+  "head": "07bb2cff06169224a1e07b584e6ececc5f88b357",
+  "F2b_committed": false,
+  "index_empty": true,
+  "diff_check": "PASS",
+  "new_text_trailing_whitespace": [],
+  "sensitive_filename_or_key_hits": [],
+  "scan_scope": "Directed versionable filenames/content, known generated passwords, protected-source diff; not a universal detector.",
+  "production_paths_unchanged": [
+    "rails/app",
+    "rails/config",
+    "rails/lib",
+    "rails/db",
+    "rails/Gemfile",
+    "rails/Gemfile.lock",
+    "prototype"
+  ],
+  "original_audit_sha256": "eafe8d537fad4c377cf9aa95fa5eb0d4a8630c2bda11a5ca5fb17494b02120cb",
+  "javascript_syntax_files": 72,
+  "qa_servers_stopped": true,
+  "report_links_exist": true,
+  "rails_final": {
+    "runs": 146,
+    "assertions": 2940,
+    "failures": 0,
+    "errors": 1,
+    "skips": 0,
+    "error": "F2B-01 reproduced; production not fixed"
+  },
+  "browser_unique_completed": 41,
+  "browser_guarantees_passed": 40,
+  "browser_confirmed_defect_reproductions": 1,
+  "D3_browser_reexecution": "INCONCLUSIVE: stopped before first scenario completed twice",
+  "source_sha256": {
+    "rails/script/transversal-browser-check.mjs": "7493c37840c17b3520f1779f6d3c2ae266f2c16cb09b8d251e1d29fd18ab3f25",
+    "rails/script/transversal-sql-check.rb": "4d5d52cb63a552fefdca25a9f435b88c6f7e97bcf8833ba39c9cfe8f7c768df8",
+    "rails/test/integration/transversal_security_test.rb": "d8618b2f12138c92089e6b7b79ac86d1e840c2ef8af418c53eaf304c9d2922d9",
+    "rails/test/models/transversal_identity_test.rb": "4a745874a74a8e9bfbb0292e33bd5f7a97a9b035fb66e7ba0f58b52836490578"
+  },
+  "working_tree": "QA/docs/evidence F2b uncommitted; no functional change",
+  "tag_push_merge": false,
+  "javascript_syntax_scope": "All tracked/unignored JS/MJS under prototype, rails/app/javascript and rails/script"
+}

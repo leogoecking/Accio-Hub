@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-22",
+  "platform": "Ubuntu Linux x86_64",
+  "ruby": "3.3.6",
+  "rails": "8.1.3.1",
+  "sqlite3_gem": "2.9.6",
+  "sqlite": "3.53.2",
+  "node": "24.19.0",
+  "python": "3.14.4",
+  "pillow": "12.1.1 (preexisting)",
+  "agent_browser": "0.38.2",
+  "axe_core": "4.12.1",
+  "browser": {
+    "dpr": 1,
+    "scale": 1,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"
+  },
+  "firefox_tested": false
+}

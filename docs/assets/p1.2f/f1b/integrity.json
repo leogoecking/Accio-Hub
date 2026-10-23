@@ -1,0 +1,20 @@
+{
+  "branch": "p1-persistence",
+  "head": "30c69750ccb1a9f884b53cc3f7d0bd17ad97fa22",
+  "unchanged_paths": [
+    "rails/app/models",
+    "rails/db",
+    "prototype",
+    "rails/app/controllers",
+    "rails/app/services",
+    "rails/config",
+    "rails/app/javascript/controllers/studio_controller.js",
+    "rails/app/assets/stylesheets",
+    "rails/Gemfile",
+    "rails/Gemfile.lock"
+  ],
+  "triggers_identical_to_schema": 25,
+  "foreign_keys": [],
+  "integrity": "ok",
+  "css_sha256": "a4180ac8e476ed2b90ff08a30011156a672408d23945d6741700914081cb41b0"
+}

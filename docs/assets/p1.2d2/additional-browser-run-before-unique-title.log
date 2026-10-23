@@ -1,0 +1,28 @@
+node:internal/errors:985
+  const err = new Error(message);
+              ^
+
+Error: Command failed: agent-browser --session accio-d2-extra-3623619 --json wait [data-task-uid='u-MGIzMWFlZjUtZjg3OS00MGU5LTk0ZWEtMmM2ZjEzZWYzMjg5'] [data-task-reapply]:not([hidden])
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:942:11)
+    at execFileSync (node:child_process:978:15)
+    at b (file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-additional-check.mjs:4:39)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-additional-check.mjs:18:296
+    at scenario (file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-additional-check.mjs:12:45)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/tasks-browser-additional-check.mjs:16:2
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26 {
+  status: 1,
+  signal: null,
+  output: [
+    null,
+    '{"success":false,"data":null,"error":"Wait timed out after 25000ms"}\n',
+    ''
+  ],
+  pid: 3624024,
+  stdout: '{"success":false,"data":null,"error":"Wait timed out after 25000ms"}\n',
+  stderr: ''
+}
+
+Node.js v24.19.0

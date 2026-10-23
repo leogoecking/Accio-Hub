@@ -1,0 +1,6 @@
+AssertionError [ERR_ASSERTION]: {"errors":[{"column":102,"line":67,"text":"TypeError: Cannot read properties of null (reading 'version')\n    at t.advancePreference (http://127.0.0.1:3127/assets/controllers/focus_controller-4433bde1.js:68:103)\n    at http://127.0.0.1:3127/assets/controllers/focus_controller-4433bde1.js:153:46\n    at async t.confirmDialog (http://127.0.0.1:3127/assets/controllers/focus_controller-4433bde1.js:175:11)","url":null}],"lifecycle":{"effectiveLaunch":{"browserLaunched":true,"engine":"chrome","launchHash":16228916338243422000},"launched":false,"relaunchedBrowser":false,"restartedBackground":false,"restoreStatus":"not_configured","reused":true,"saveStatus":"not_attempted"}}
+    at scenario (file:///home/goecking/Projects/Accio-HUB/rails/script/focus-preset-hunt.mjs:38:106)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/focus-preset-hunt.mjs:66:2
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)

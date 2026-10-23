@@ -1,0 +1,195 @@
+{
+  "suite": "127 runs, 1728 assertions, 0 failures, 0 errors, 0 skips",
+  "start": {
+    "responses": [
+      {
+        "worker": "0",
+        "http": 200,
+        "replayed": false
+      },
+      {
+        "worker": "1",
+        "http": 409,
+        "replayed": null
+      }
+    ],
+    "state": {
+      "occupying": 1,
+      "receipts_added": 1,
+      "sessions_added": 1,
+      "completed": 0,
+      "archived": false
+    }
+  },
+  "same_intent": {
+    "responses": [
+      {
+        "worker": "0",
+        "http": 200,
+        "replayed": true
+      },
+      {
+        "worker": "1",
+        "http": 200,
+        "replayed": false
+      }
+    ],
+    "state": {
+      "occupying": 1,
+      "receipts_added": 1,
+      "sessions_added": 1,
+      "completed": 0,
+      "archived": false
+    }
+  },
+  "confirm": {
+    "responses": [
+      {
+        "worker": "0",
+        "http": 409,
+        "replayed": null
+      },
+      {
+        "worker": "1",
+        "http": 200,
+        "replayed": false
+      }
+    ],
+    "state": {
+      "occupying": 0,
+      "receipts_added": 1,
+      "sessions_added": 0,
+      "completed": 1,
+      "archived": false
+    }
+  },
+  "pause_resume": {
+    "responses": [
+      {
+        "worker": "0",
+        "http": 409,
+        "replayed": null
+      },
+      {
+        "worker": "1",
+        "http": 200,
+        "replayed": false
+      }
+    ],
+    "state": {
+      "occupying": 1,
+      "receipts_added": 1,
+      "sessions_added": 0,
+      "completed": 1,
+      "archived": false
+    }
+  },
+  "reset_complete": {
+    "responses": [
+      {
+        "worker": "0",
+        "http": 200,
+        "replayed": false
+      },
+      {
+        "worker": "1",
+        "http": 409,
+        "replayed": null
+      }
+    ],
+    "state": {
+      "occupying": 1,
+      "receipts_added": 1,
+      "sessions_added": 1,
+      "completed": 1,
+      "archived": false
+    }
+  },
+  "recovery_restart": {
+    "identical": true,
+    "recovery_preserved": true
+  },
+  "resolve": {
+    "responses": [
+      {
+        "worker": "0",
+        "http": 409,
+        "replayed": null
+      },
+      {
+        "worker": "1",
+        "http": 200,
+        "replayed": false
+      }
+    ],
+    "state": {
+      "occupying": 1,
+      "receipts_added": 1,
+      "sessions_added": 0,
+      "completed": 1,
+      "archived": false
+    }
+  },
+  "archive_start": {
+    "responses": [
+      {
+        "worker": "0",
+        "http": 200,
+        "replayed": null
+      },
+      {
+        "worker": "1",
+        "http": 409,
+        "replayed": null
+      }
+    ],
+    "state": {
+      "occupying": 1,
+      "receipts_added": 0,
+      "sessions_added": 0,
+      "completed": 1,
+      "archived": true
+    }
+  },
+  "archive_resume": {
+    "responses": [
+      {
+        "worker": "0",
+        "http": 200,
+        "replayed": null
+      },
+      {
+        "worker": "1",
+        "http": 409,
+        "replayed": null
+      }
+    ],
+    "state": {
+      "occupying": 1,
+      "receipts_added": 0,
+      "sessions_added": 0,
+      "completed": 1,
+      "archived": true
+    }
+  },
+  "replay_restart": {
+    "replay_after_restart": true,
+    "historical_running": true,
+    "current_paused": true,
+    "no_writes": true
+  },
+  "contention": {
+    "http": 503,
+    "recoverable": true
+  },
+  "contention_rollback": {
+    "identical": true,
+    "recovery_preserved": false
+  },
+  "integrity": {
+    "triggers_identical": 25,
+    "foreign_keys": true,
+    "wal": "wal",
+    "synchronous": 2
+  }
+}

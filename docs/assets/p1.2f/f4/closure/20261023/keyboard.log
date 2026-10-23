@@ -1,0 +1,16 @@
+PASS Skip link and logical keyboard entry
+PASS project dialog Enter initial focus Tab ShiftTab Escape return
+PASS project dialog cancel and close by keyboard
+PASS task dialog Enter initial focus Tab ShiftTab Escape return
+PASS task dialog cancel and close by keyboard
+PASS reference dialog Enter initial focus Tab ShiftTab Escape return
+PASS reference dialog cancel and close by keyboard
+PASS Drawer keyboard containment and return
+PASS Search shortcut focus results Enter Turbo and empty status
+PASS Project tabs arrows Home End preserve focus after Turbo
+PASS Pomodoro preset dialog trap Escape focus and no clock live region
+PASS All interactive controls named and selected states present
+PASS Validation error preserved and exposed as alert
+PASS project delayed error does not steal a newly moved focus
+PASS task delayed error does not steal a newly moved focus
+PASS reference delayed error does not steal a newly moved focus

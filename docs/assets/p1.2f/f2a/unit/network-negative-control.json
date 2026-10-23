@@ -1,0 +1,7 @@
+{
+  "mutation": "Private wrapper attempts Resolv.getaddress inside the test guard",
+  "expected": "Test fails before calling the actual resolver",
+  "detected": true,
+  "real_resolution_executed": false,
+  "production_source_modified": false
+}

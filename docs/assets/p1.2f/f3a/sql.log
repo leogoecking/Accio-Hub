@@ -1,0 +1,1 @@
+Two new synthetic databases: migrations/schema identical; 25 triggers, 36 indexes, FKs, WAL/FULL and SQL tests approved.

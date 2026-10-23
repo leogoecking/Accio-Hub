@@ -1,0 +1,9 @@
+{
+  "browser_schema_matches_minimal_development_schema": true,
+  "schema_hash_accepted": false,
+  "migrations_hash_matches": true,
+  "trigger_count": 25,
+  "index_count": 36,
+  "full_browser_dataset_unchanged_after_refusal": true,
+  "files_or_data_modified_to_bypass_validation": false
+}

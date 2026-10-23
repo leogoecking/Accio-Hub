@@ -1,0 +1,42 @@
+ M AGENTS.md
+ M docs/ARCHITECTURE.md
+ M docs/P1.2D_PLAN.md
+ M docs/ROADMAP.md
+ M rails/README.md
+ M rails/app/assets/stylesheets/foundation.css
+ M rails/app/controllers/projects_controller.rb
+ M rails/app/controllers/studio_controller.rb
+ M rails/app/helpers/studio_helper.rb
+ M rails/app/javascript/application.js
+ M rails/app/javascript/controllers/project_ui.js
+ M rails/app/views/projects/_tasks.html.erb
+ M rails/app/views/studio/_board.html.erb
+ M rails/app/views/studio/_dialogs.html.erb
+ M rails/app/views/studio/_shell.html.erb
+ M rails/app/views/studio/_widget.html.erb
+ M rails/app/views/studio/widgets/_projects.html.erb
+ M rails/app/views/studio/widgets/_tasks.html.erb
+ M rails/config/routes.rb
+ M rails/script/preferences-browser-check.mjs
+ M rails/script/projects-browser-additional-check.mjs
+ M rails/script/projects-browser-check.mjs
+ M rails/test/integration/foundation_test.rb
+?? docs/P1.2D2_VERIFICATION.md
+?? docs/assets/p1.2d2/
+?? rails/app/controllers/tasks_controller.rb
+?? rails/app/helpers/tasks_helper.rb
+?? rails/app/javascript/controllers/task_command_controller.js
+?? rails/app/javascript/controllers/task_form_controller.js
+?? rails/app/javascript/controllers/task_modal_controller.js
+?? rails/app/javascript/controllers/task_search_controller.js
+?? rails/app/javascript/controllers/task_ui.js
+?? rails/app/services/task_commands.rb
+?? rails/app/views/tasks/
+?? rails/script/tasks-browser-additional-check.mjs
+?? rails/script/tasks-browser-check.mjs
+?? rails/script/tasks-browser-restart-check.mjs
+?? rails/script/tasks-browser-setup.rb
+?? rails/script/tasks-browser-state-check.rb
+?? rails/script/tasks-check.rb
+?? rails/script/tasks-visual-baseline.mjs
+?? rails/test/integration/tasks_test.rb

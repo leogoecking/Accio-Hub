@@ -1,0 +1,862 @@
+[
+  {
+    "theme": "dark",
+    "width": 320,
+    "wallpaper": "northern",
+    "prototype": [
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "selector": ".rail",
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "selector": ".headbar",
+        "width": 271,
+        "x": 49,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "selector": ".music-zone",
+        "width": 271,
+        "x": 49,
+        "y": 57
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 231,
+        "selector": ".app-dock",
+        "width": 211,
+        "x": 79,
+        "y": 403
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 2147.6875,
+        "selector": ".widget-grid",
+        "width": 241,
+        "x": 64,
+        "y": 768
+      },
+      {
+        "background": "conic-gradient(rgb(195, 179, 255) 0%, rgba(179, 164, 238, 0.17) 0%)",
+        "borderRadius": "50%",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "selector": ".dial",
+        "width": 170,
+        "x": 99.5,
+        "y": 1164.953125
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(36, 36, 64), rgb(22, 30, 50))",
+        "borderRadius": "50%",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "selector": ".dial-inner",
+        "width": 152,
+        "x": 108.5,
+        "y": 1173.953125
+      }
+    ],
+    "source": "p0.4-approved",
+    "fontDeliveryOnly": "remote font links replaced by identical locally available families in private temporary copy"
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "wallpaper": "northern",
+    "prototype": [
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "selector": ".rail",
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "selector": ".headbar",
+        "width": 341,
+        "x": 49,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "selector": ".music-zone",
+        "width": 341,
+        "x": 49,
+        "y": 57
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 231,
+        "selector": ".app-dock",
+        "width": 281,
+        "x": 79,
+        "y": 370.046875
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 2066.625,
+        "selector": ".widget-grid",
+        "width": 311,
+        "x": 64,
+        "y": 721.046875
+      },
+      {
+        "background": "conic-gradient(rgb(195, 179, 255) 0%, rgba(179, 164, 238, 0.17) 0%)",
+        "borderRadius": "50%",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "selector": ".dial",
+        "width": 170,
+        "x": 134.5,
+        "y": 1114.03125
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(36, 36, 64), rgb(22, 30, 50))",
+        "borderRadius": "50%",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "selector": ".dial-inner",
+        "width": 152,
+        "x": 143.5,
+        "y": 1123.03125
+      }
+    ],
+    "source": "p0.4-approved",
+    "fontDeliveryOnly": "remote font links replaced by identical locally available families in private temporary copy"
+  },
+  {
+    "theme": "dark",
+    "width": 768,
+    "wallpaper": "northern",
+    "prototype": [
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "selector": ".rail",
+        "width": 61,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "selector": ".headbar",
+        "width": 707,
+        "x": 61,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "selector": ".music-zone",
+        "width": 707,
+        "x": 61,
+        "y": 57
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 267,
+        "selector": ".app-dock",
+        "width": 647,
+        "x": 91,
+        "y": 345.296875
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1899,
+        "selector": ".widget-grid",
+        "width": 677,
+        "x": 76,
+        "y": 736.296875
+      },
+      {
+        "background": "conic-gradient(rgb(195, 179, 255) 0%, rgba(179, 164, 238, 0.17) 0%)",
+        "borderRadius": "50%",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "selector": ".dial",
+        "width": 170,
+        "x": 329.5,
+        "y": 1127.296875
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(36, 36, 64), rgb(22, 30, 50))",
+        "borderRadius": "50%",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "selector": ".dial-inner",
+        "width": 152,
+        "x": 338.5,
+        "y": 1136.296875
+      }
+    ],
+    "source": "p0.4-approved",
+    "fontDeliveryOnly": "remote font links replaced by identical locally available families in private temporary copy"
+  },
+  {
+    "theme": "dark",
+    "width": 1440,
+    "wallpaper": "northern",
+    "prototype": [
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "selector": ".rail",
+        "width": 76,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "selector": ".headbar",
+        "width": 1364,
+        "x": 76,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "selector": ".music-zone",
+        "width": 1364,
+        "x": 76,
+        "y": 67
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 129,
+        "selector": ".app-dock",
+        "width": 1266,
+        "x": 125,
+        "y": 378.53125
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 739,
+        "selector": ".widget-grid",
+        "width": 1306,
+        "x": 105,
+        "y": 619.53125
+      },
+      {
+        "background": "conic-gradient(rgb(195, 179, 255) 0%, rgba(179, 164, 238, 0.17) 0%)",
+        "borderRadius": "50%",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "selector": ".dial",
+        "width": 170,
+        "x": 728,
+        "y": 685.53125
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(36, 36, 64), rgb(22, 30, 50))",
+        "borderRadius": "50%",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "selector": ".dial-inner",
+        "width": 152,
+        "x": 737,
+        "y": 694.53125
+      }
+    ],
+    "source": "p0.4-approved",
+    "fontDeliveryOnly": "remote font links replaced by identical locally available families in private temporary copy"
+  },
+  {
+    "theme": "dark",
+    "width": 1920,
+    "wallpaper": "northern",
+    "prototype": [
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "selector": ".rail",
+        "width": 76,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "selector": ".headbar",
+        "width": 1844,
+        "x": 76,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "selector": ".music-zone",
+        "width": 1844,
+        "x": 76,
+        "y": 67
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 60,
+        "selector": ".app-dock",
+        "width": 1438,
+        "x": 279,
+        "y": 381.78125
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 739,
+        "selector": ".widget-grid",
+        "width": 1478,
+        "x": 259,
+        "y": 553.78125
+      },
+      {
+        "background": "conic-gradient(rgb(195, 179, 255) 0%, rgba(179, 164, 238, 0.17) 0%)",
+        "borderRadius": "50%",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "selector": ".dial",
+        "width": 170,
+        "x": 975.15625,
+        "y": 619.78125
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(36, 36, 64), rgb(22, 30, 50))",
+        "borderRadius": "50%",
+        "color": "rgb(243, 245, 250)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "selector": ".dial-inner",
+        "width": 152,
+        "x": 984.15625,
+        "y": 628.78125
+      }
+    ],
+    "source": "p0.4-approved",
+    "fontDeliveryOnly": "remote font links replaced by identical locally available families in private temporary copy"
+  },
+  {
+    "theme": "light",
+    "width": 320,
+    "wallpaper": "ocean",
+    "prototype": [
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "selector": ".rail",
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "selector": ".headbar",
+        "width": 271,
+        "x": 49,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "selector": ".music-zone",
+        "width": 271,
+        "x": 49,
+        "y": 57
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 231,
+        "selector": ".app-dock",
+        "width": 211,
+        "x": 79,
+        "y": 403
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 2147.6875,
+        "selector": ".widget-grid",
+        "width": 241,
+        "x": 64,
+        "y": 768
+      },
+      {
+        "background": "conic-gradient(color(srgb 0.301569 0.421176 0.309216) 0%, rgb(221, 213, 237) 0%)",
+        "borderRadius": "50%",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "selector": ".dial",
+        "width": 170,
+        "x": 99.5,
+        "y": 1164.953125
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(252, 250, 255), rgb(238, 232, 251))",
+        "borderRadius": "50%",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "selector": ".dial-inner",
+        "width": 152,
+        "x": 108.5,
+        "y": 1173.953125
+      }
+    ],
+    "source": "p0.4-approved",
+    "fontDeliveryOnly": "remote font links replaced by identical locally available families in private temporary copy"
+  },
+  {
+    "theme": "light",
+    "width": 390,
+    "wallpaper": "ocean",
+    "prototype": [
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "selector": ".rail",
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "selector": ".headbar",
+        "width": 341,
+        "x": 49,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "selector": ".music-zone",
+        "width": 341,
+        "x": 49,
+        "y": 57
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 231,
+        "selector": ".app-dock",
+        "width": 281,
+        "x": 79,
+        "y": 370.046875
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 2066.625,
+        "selector": ".widget-grid",
+        "width": 311,
+        "x": 64,
+        "y": 721.046875
+      },
+      {
+        "background": "conic-gradient(color(srgb 0.301569 0.421176 0.309216) 0%, rgb(221, 213, 237) 0%)",
+        "borderRadius": "50%",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "selector": ".dial",
+        "width": 170,
+        "x": 134.5,
+        "y": 1114.03125
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(252, 250, 255), rgb(238, 232, 251))",
+        "borderRadius": "50%",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "selector": ".dial-inner",
+        "width": 152,
+        "x": 143.5,
+        "y": 1123.03125
+      }
+    ],
+    "source": "p0.4-approved",
+    "fontDeliveryOnly": "remote font links replaced by identical locally available families in private temporary copy"
+  },
+  {
+    "theme": "light",
+    "width": 768,
+    "wallpaper": "ocean",
+    "prototype": [
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "selector": ".rail",
+        "width": 61,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "selector": ".headbar",
+        "width": 707,
+        "x": 61,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "selector": ".music-zone",
+        "width": 707,
+        "x": 61,
+        "y": 57
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 267,
+        "selector": ".app-dock",
+        "width": 647,
+        "x": 91,
+        "y": 345.296875
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1899,
+        "selector": ".widget-grid",
+        "width": 677,
+        "x": 76,
+        "y": 736.296875
+      },
+      {
+        "background": "conic-gradient(color(srgb 0.301569 0.421176 0.309216) 0%, rgb(221, 213, 237) 0%)",
+        "borderRadius": "50%",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "selector": ".dial",
+        "width": 170,
+        "x": 329.5,
+        "y": 1127.296875
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(252, 250, 255), rgb(238, 232, 251))",
+        "borderRadius": "50%",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "selector": ".dial-inner",
+        "width": 152,
+        "x": 338.5,
+        "y": 1136.296875
+      }
+    ],
+    "source": "p0.4-approved",
+    "fontDeliveryOnly": "remote font links replaced by identical locally available families in private temporary copy"
+  },
+  {
+    "theme": "light",
+    "width": 1440,
+    "wallpaper": "ocean",
+    "prototype": [
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "selector": ".rail",
+        "width": 76,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "selector": ".headbar",
+        "width": 1364,
+        "x": 76,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "selector": ".music-zone",
+        "width": 1364,
+        "x": 76,
+        "y": 67
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 129,
+        "selector": ".app-dock",
+        "width": 1266,
+        "x": 125,
+        "y": 378.53125
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 739,
+        "selector": ".widget-grid",
+        "width": 1306,
+        "x": 105,
+        "y": 619.53125
+      },
+      {
+        "background": "conic-gradient(color(srgb 0.301569 0.421176 0.309216) 0%, rgb(221, 213, 237) 0%)",
+        "borderRadius": "50%",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "selector": ".dial",
+        "width": 170,
+        "x": 728,
+        "y": 685.53125
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(252, 250, 255), rgb(238, 232, 251))",
+        "borderRadius": "50%",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "selector": ".dial-inner",
+        "width": 152,
+        "x": 737,
+        "y": 694.53125
+      }
+    ],
+    "source": "p0.4-approved",
+    "fontDeliveryOnly": "remote font links replaced by identical locally available families in private temporary copy"
+  },
+  {
+    "theme": "light",
+    "width": 1920,
+    "wallpaper": "ocean",
+    "prototype": [
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "selector": ".rail",
+        "width": 76,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "selector": ".headbar",
+        "width": 1844,
+        "x": 76,
+        "y": 0
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "selector": ".music-zone",
+        "width": 1844,
+        "x": 76,
+        "y": 67
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 60,
+        "selector": ".app-dock",
+        "width": 1438,
+        "x": 279,
+        "y": 381.78125
+      },
+      {
+        "background": "none",
+        "borderRadius": "0px",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 739,
+        "selector": ".widget-grid",
+        "width": 1478,
+        "x": 259,
+        "y": 553.78125
+      },
+      {
+        "background": "conic-gradient(color(srgb 0.301569 0.421176 0.309216) 0%, rgb(221, 213, 237) 0%)",
+        "borderRadius": "50%",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 170,
+        "selector": ".dial",
+        "width": 170,
+        "x": 975.15625,
+        "y": 619.78125
+      },
+      {
+        "background": "linear-gradient(145deg, rgb(252, 250, 255), rgb(238, 232, 251))",
+        "borderRadius": "50%",
+        "color": "rgb(23, 36, 54)",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 152,
+        "selector": ".dial-inner",
+        "width": 152,
+        "x": 984.15625,
+        "y": 628.78125
+      }
+    ],
+    "source": "p0.4-approved",
+    "fontDeliveryOnly": "remote font links replaced by identical locally available families in private temporary copy"
+  }
+]

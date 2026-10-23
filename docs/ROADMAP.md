@@ -1,8 +1,8 @@
 # Accio Hub — Roadmap de implementação (ROADMAP)
 
-> **Versão:** 0.4 (encerramento da P0.4 e backlog futuro)<br>
-> **Data-base:** 2026-10-11<br>
-> **Estado:** P0.3 aprovada visualmente; P0.4 homologada, Etapas 1–6 concluídas; P1.0 aprovada e P1.1 homologada; demais etapas não iniciadas<br>
+> **Versão:** 0.5 (encerramento técnico sintético da P1.2)<br>
+> **Data-base:** 2026-10-23<br>
+> **Estado:** P0.4/P1.1 homologadas; P1.2 encerrada tecnicamente no commit desta entrega: A aprovado, B aprovado com ressalvas, C não autorizado. P1.3/P1.4 não iniciadas; v0.1 não liberada.<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ARCHITECTURE.md](ARCHITECTURE.md)
 
 ## 1. Objetivo do roadmap
@@ -109,8 +109,8 @@ continuam no backlog, sem autorização implícita.
 | Etapa | Entrega | Estado |
 |---|---|---|
 | P1.1 — Fundação Rails | Autenticação local e recuperação de senha por CLI, shell ERB/Turbo, temas, fundos, fontes, Dock, widgets e Music demonstrativo; personalização fundamental | Encerrada e homologada; tag anotada `p1.1-approved` |
-| P1.2 — SQLite | Modelos transacionais de projetos, tarefas, referências, preferências e foco global | Não iniciada; exige autorização |
-| P1.3 — Vault Markdown | Arquivos reais, índice reconstruível, escrita segura, conflitos e recuperação | Não iniciada; exige autorização |
+| P1.2 — SQLite | Modelos transacionais, preferências, projetos, tarefas, referências, foco global e hardening | Encerramento técnico sintético formalizado pelo commit que contém [P1.2_FINAL_CLOSURE.md](P1.2_FINAL_CLOSURE.md); F5-01 resolvido; A aprovado, B aprovado com ressalvas, C não autorizado |
+| P1.3 — Vault Markdown | Arquivos reais, índice reconstruível, escrita segura, conflitos e recuperação | Não iniciada — planejamento depende de autorização específica |
 | P1.4 — Migração | Exportação/importação versionada, simulação, relatório e recuperação | Não iniciada; exige autorização |
 | P1.5 — Verificação final | Equivalência, segurança, visual e restauração | Não iniciada; exige autorização |
 
@@ -128,7 +128,14 @@ nos cinco tamanhos aprovados. Comparação com P0.4 e limites registrados em
 Auditoria independente do Antigravity aprovada e validação manual no Firefox
 confirmada pelo usuário no encerramento. Limpeza de sessões expiradas fica para
 P1.2; suporte IPv4-mapped IPv6 será avaliado quando houver necessidade de dual-stack.
-Essas melhorias não foram implementadas e P1.2 depende de nova autorização.
+Essas melhorias não foram implementadas. Limpeza fica na P1.2F.
+
+Divisão aprovada em [P1.2A_SQLITE_PLAN.md](P1.2A_SQLITE_PLAN.md): A planejamento;
+B modelos/migrações/integridade; C preferências; D projetos/tarefas/referências;
+E foco global; F integração e verificação. A entrega B preserva o fluxo funcional
+de cookies e todas as telas demonstrativas da P1.1. Revisão em
+[P1.2B_VERIFICATION.md](P1.2B_VERIFICATION.md). Nenhuma etapa seguinte é autorizada
+por esse registro.
 
 ### P2 — Projetos, Entrada e Tarefas
 
@@ -424,7 +431,83 @@ manual no Firefox informada pelo usuário. O relatório
 evidências, limites e pendências futuras. O commit final é identificado pela
 tag anotada `p0.4-approved`.
 
-Revisar a entrega da P1.1; não iniciar P1.2 nem criar commit sem aprovação.
+**P1.2: encerramento técnico e sintético aprovado com ressalvas**, após auditoria final independente do Antigravity de 23/10/2026 e aceite expresso do usuário. O registro torna-se efetivo no commit que contém [P1.2_FINAL_CLOSURE.md](P1.2_FINAL_CLOSURE.md), após os gates de encerramento. F5-01 resolvido, G1–G10 atendidos no escopo sintético; nenhum bloqueador técnico remanescente para B.
+
+**P1.3 — Não iniciada — planejamento depende de autorização específica.** P1.4 não iniciada. Não há autorização implícita de Vault, migração pessoal, release v0.1, tag, push ou merge. Antes de liberar dados pessoais importantes (C), são necessárias garantias operacionais adicionais: restauração sem origem, custódia/redundância de backups e chaves, procedimento por operador e validação humana complementar. Retenção definitiva dos snapshots continua pendente. As atualizações datadas abaixo preservam os estados históricos e não representam o estágio atual.
 A personalização avançada do Pomodoro permanece no backlog futuro de P10.
 
-As próximas entregas serão comparadas com a P0.3 no monitor de 27” e em tela móvel. Banco de dados, Vault real e integrações seguem nas fases definitivas, após autorização. O bootstrap de recuperação do Ubuntu foi **explicitamente adiado** e não faz parte do roadmap do Accio Hub.
+As próximas entregas continuarão comparadas com a baseline P0.3 e a P0.4 homologada. A persistência SQLite foi concluída tecnicamente na P1.2; Vault real, migração pessoal e integrações futuras dependem de autorização própria. O bootstrap de recuperação do Ubuntu foi **explicitamente adiado** e não faz parte do roadmap do Accio Hub.
+
+### Situação D3 — 2026-10-13
+
+P1.2D2 aprovada tecnicamente após auditoria independente e registrada em `cf95461`. P1.2D3 implementa referências persistentes e verifica a integração Projetos → Tarefas → Referências → Dashboard; entrega aprovada pelo Antigravity, conforme confirmação do usuário, sem bloqueadores confirmados; encerramento em commit autorizado. Implementação P1.2E/F não autorizada. Mantidas pendências de Firefox manual C/D, contraste inconclusivo, retenção/descarte legacy_cookie_backup (preferencialmente F) e rascunhos em memória.
+
+
+### Planejamento E — 2026-10-13
+
+D3 encerrada em `0e5323c5b823e2d2d531ad8c41c35a05a7ab2045`. [P1.2E_PLAN.md](P1.2E_PLAN.md) propõe Pomodoro global sobre FocusSession/FocusCommand existentes, checkpoints e recuperação conservadora, preservando presets 25/45 e identidade P0.4. Somente planejamento autorizado; nenhum modelo, migração, gatilho ou temporizador funcional alterado. Permanecem abertas validação Firefox C/D1/D2/D3, contraste, retenção de legacy_cookie_backup, hardening de hosts numéricos em SafeReferenceUrl e verificação operacional de backup/restauração.
+
+
+### Autorização E1 — 2026-10-17
+
+[Plano E](P1.2E_PLAN.md) aprovado com ajustes de contrato. Exclusivamente E1 autorizada: máquina de estados, persistência, comandos e recuperação de tempo; implementação sem commit até revisão. E2 (interface), E3 e F dependem de autorização própria. Sem novos modelos/migrações/gatilhos ou alterações no Ubuntu.
+
+
+### Entrega E1 para revisão — 2026-10-17
+
+Plano aprovado com ajustes registrado em `573e739`. Motor global, comandos e recuperação E1 implementados e verificados, sem commit: [relatório](P1.2E1_VERIFICATION.md). Suíte Rails: 127 testes/1.714 asserções; corridas entre processos, rollback, contenção 503 e reabertura. Os 25 gatilhos e os módulos C/D permanecem preservados. A interface continua demonstrativa; E2/E3/F aguardam autorização. Pendências anteriores não foram encerradas por testes de backend.
+
+
+### Encerramento E1 e autorização E2 — 2026-10-21
+
+E1 aprovada após auditoria independente do Antigravity, sem bloqueadores identificados; relatório existente em docs/P1.2E1_AUDIT.md. Encerramento em commit autorizado após nova verificação de 127 testes/1.714 asserções, processos, 25 gatilhos e segurança. Exclusivamente a interface compartilhada E2 está autorizada e deverá permanecer sem commit para revisão. E3/F, tag, push e merge não autorizados. Limitações anteriores preservadas.
+
+
+### Entrega E2 para revisão — 2026-10-21
+
+E1 encerrada em `0c742503fa7c1df59523b4cdabf047b5e80c19c5`, com auditoria independente aprovada. Exclusivamente E2 autorizada e implementada: Pomodoro compartilhado no Dashboard, Foco e projetos, ações de tarefas, presets, recuperação e concorrência pela API E1. Relatório [P1.2E2_VERIFICATION.md](P1.2E2_VERIFICATION.md), evidências em assets/p1.2e2/. Implementação **sem commit**, aguardando revisão. Nenhuma alteração de modelo/schema/gatilho, protótipo, Vault, backup ou serviço real. Não iniciar E3/F. Pendências anteriores, inclusive Firefox C/D/E2 e contraste inconclusivo, preservadas.
+
+### Encerramento E2 e entrega E3 para revisão — 2026-10-21
+
+E2 aprovada com ressalvas pelo Antigravity, sem bloqueadores confirmados, e encerrada em `a0ab717f9497d6e3bf5209f7a26b16a8c2091053`; diretriz de portabilidade em `d2dc047`, sem empacotamento. Verificação E3 exclusivamente investigativa/integrada concluída nos cenários executados: [relatório](P1.2E3_VERIFICATION.md), 93 cenários de navegador, 25 gatilhos idênticos, suíte completa127/1.728 no gate desta sessão e E1 específico24/689. Recuperação após20min mensurou três ações para aceitar/retomar; limiares intactos. Sem nova funcionalidade. Firefox, contraste, retenção de cookies, SafeReferenceUrl, rascunhos e backup/restauração operacional mantidos. E3 sem commit para revisão. Recomendada revisão para eventual autorização de F; F/P1.3 não iniciadas.
+
+### Encerramento E3 e autorização de planejamento F — 2026-10-21
+
+Usuário aprovou E3 com ressalvas, sem bloqueadores funcionais/de integridade documentados, e autorizou seu commit e exclusivamente planejamento F1–F5. Não há autorização de correções F. Preservar recuperação/PATCH de preset como ressalvas, contraste inconclusivo e pendências operacionais. Firefox complementar, não bloqueante para a F, sem declarar teste inexistente. Encerramento final P1.2 exige evidências e auditoria independente; P1.3, importação pessoal, tags, push, merge e distribuição dependem de autorização própria.
+
+### Plano F aprovado com ajustes — F1b autorizada
+
+E3 registrada em35a6671. Plano F aprovado com ajustes, exclusivamente F1b alternativa B autorizada: duas ações humanas com resolve/resume existentes; limitação de duas transações aceita. C/D e F1c/F2/F3/F4/F5 não autorizados. Sem descarte real de legacy_cookie_backup ou aprovação definitiva de30dias; Firefox complementar; backup/restauração apenas sintéticos até autorização específica. Plano em commit documental próprio; implementação F1b sem commit para revisão/auditoria independente. Sem push, merge, tag ou avanço à P1.3.
+
+### F1b — entregue para revisão e auditoria independente
+
+Plano aprovado em `30c69750ccb1a9f884b53cc3f7d0bd17ad97fa22`. Alternativa B implementada **sem commit**, com recuperação parcial em duas ações humanas e confirmação da própria resolução antes da retomada. [Verificação F1b](P1.2F1B_VERIFICATION.md): 127 testes Rails/1.728 asserções, 26 cenários JS, 77 cenários de navegador; 25 gatilhos idênticos. Sem alteração do backend, persistência, limites temporais ou identidade visual. Duas transações e recuperação explícita de falhas preservadas; Firefox não executado e contraste inconclusivo. Aguardar revisão/auditoria. F1c/F2/F3/F4/F5 continuam não autorizadas; não encerra a P1.2 nem inicia a P1.3.
+
+
+### F1c — entregue para revisão e auditoria independente
+
+F1b aprovada com ressalvas pelo Antigravity e encerrada em `7ebfaebe16027b9338ed63bf89d11d570779a7f8`. Exclusivamente F1c implementada **sem commit**: feedback/reconciliação do PATCH preset, sem nova camada de idempotência e sem alteração do motor ou CAS C. Valor confirmado não implica autoria; envelope preservado quando GET falha; nenhuma reaplicação automática com versão alheia. [Relatório](P1.2F1C_VERIFICATION.md): 127 testes Rails/1.728 asserções, 41 cenários JS e 94 de navegador aprovados; 25 gatilhos preservados. Corrigidos dois defeitos locais de Turbo/foco, sem redesenho. Contraste inconclusivo e Firefox não executado. Aguardar revisão/auditoria; F2/F3/F4/F5, P1.3, descarte real de snapshots, tag, push e merge permanecem não autorizados.
+
+
+### F2a — entregue para revisão e auditoria independente
+
+F1c aprovada com ressalvas e encerrada em `b262ce6813d78a21d9454bb25e4e8a30b6f09ab8`. Exclusivamente F2a implementada **sem commit**: URLs numéricas ambíguas rejeitadas, DNS legítimo preservado, legados consultáveis sem href e sem normalização automática. [Verificação](P1.2F2A_VERIFICATION.md): Rails 133/2.555, matriz local Ruby/Chromium 114 URLs, 43 cenários UI, 41 JS de foco; 25 gatilhos, 36 índices e FKs preservados. Sem modelos/schema novos, redesign, DNS/HTTP para destinos ou alteração do Pomodoro/C. Aguardar revisão/auditoria; F2b/F3/F4/F5/P1.3 não autorizadas. Firefox complementar e contraste inconclusivo mantidos; sem tag/push/merge/importação/descarte real.
+
+### Atualização de acompanhamento — P1.2F4, 2026-10-22
+
+F3c encerrada em `11d15fc` após auditoria independente aprovada com ressalvas. F4 implementa exclusivamente correções dirigidas de contraste, foco e feedback acessível; entrega sem commit/staging em [P1.2F4_VERIFICATION.md](P1.2F4_VERIFICATION.md), aguardando revisão e auditoria independente. Resultados inconclusivos, Firefox complementar, revisão humana e limitações da recuperação sintética permanecem explícitos. Nenhuma autorização de F5/P1.3, importação pessoal, distribuição, tag ou merge.
+
+### P1.2F5 — investigação em curso, 2026-10-23
+
+F4 encerrada em `7c1cea4`, evidências brutas preservadas integralmente fora do Git e seleção rastreável versionada. [Verificação F5](P1.2F5_VERIFICATION.md): fluxo integrado sintético interrompido no backup por F5-01 (schema development com tags de logging fora dos hashes aceitos). Sem correção funcional autorizada/aplicada. Homologação sintética e liberação pessoal não concluídas; solicitar corte corretivo específico antes de reexecutar o restante. Auditoria final/humana e garantias operacionais permanecem necessárias, sem avanço P1.3.
+
+### Retomada P1.2F5 após correção F5-01
+
+Após autorização específica, a whitelist recebeu somente os dois fingerprints development reproduzidos. Quatro variantes restauradas e17 checkpoints do fluxo integral aprovados, com220 testes Rails/3.595 asserções e negativos restritivos. [Relatório da correção](P1.2F5_01_CORRECTION_VERIFICATION.md). F5-01 tecnicamente resolvido; aguardam auditoria independente e revisão humana, sem encerramento P1.2 ou liberação de dados pessoais. Pendências operacionais/Firefox/acessibilidade/retenção mantidas. Tudo sem commit/staging; sem avanço P1.3 ou tag/push/merge.
+
+
+### Encerramento técnico sintético P1.2 — 2026-10-23
+
+Auditoria final [P1.2F5_AUDIT.md](P1.2F5_AUDIT.md): **APROVADO COM RESSALVAS, SEM BLOQUEADORES PARA O ENCERRAMENTO TÉCNICO SINTÉTICO**; usuário autorizou expressamente o encerramento. Gate final repetido no código auditado: Rails220/3.595, F5-01: 17/143, quatro backups/restores, fluxo integrado17/17, SQL25 gatilhos/36 índices, F3b/F3c, JS41 e ferramentas aprovados. Apenas dois hashes foram acrescentados ao contrato de produção; relatórios originais e errata preservados. O commit desta entrega formaliza F5/P1.2 após esses gates.
+
+**A: APROVADO. B: APROVADO COM RESSALVAS. C: NÃO AUTORIZADO.** Limitações e referências em [P1.2_FINAL_CLOSURE.md](P1.2_FINAL_CLOSURE.md). Este marco não equivale à liberação operacional do aplicativo e não antecipa v0.1. P1.3/P1.4 não iniciadas; nenhum trabalho posterior iniciado.

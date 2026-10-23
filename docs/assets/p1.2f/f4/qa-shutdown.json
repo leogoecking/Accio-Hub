@@ -1,0 +1,23 @@
+{
+  "sessions_closed": [
+    "accio-f4-e2",
+    "accio-f4-f1c",
+    "accio-f4-f1b",
+    "accio-f4-investigation"
+  ],
+  "own_servers_stopped": [
+    {
+      "pid": 1541657,
+      "port": 3127,
+      "signal": "TERM",
+      "synthetic_owner_verified": true
+    },
+    {
+      "pid": 1586284,
+      "port": 3126,
+      "signal": "TERM",
+      "synthetic_owner_verified": true
+    }
+  ],
+  "system_services_changed": false
+}

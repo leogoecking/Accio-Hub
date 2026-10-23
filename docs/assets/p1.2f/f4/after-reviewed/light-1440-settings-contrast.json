@@ -1,0 +1,1735 @@
+{
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 1440
+  },
+  "theme": "light",
+  "wallpaper": "ocean",
+  "accent": "#b1f07d",
+  "measurements": [
+    {
+      "kind": "text",
+      "selector": "html > body > div.shell > aside.rail > a.brand-glyph",
+      "text": "a",
+      "required": 3,
+      "rgba": [
+        19,
+        37,
+        25,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 8.825,
+      "samples": 136,
+      "background_at_worst": [
+        161,
+        205,
+        122
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.shell > aside.rail > div.rail-bottom:nth-of-type(2) > form.button_to > button.rail-avatar",
+      "text": "A",
+      "required": 4.5,
+      "rgba": [
+        10,
+        14,
+        20,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.197,
+      "samples": 61,
+      "background_at_worst": [
+        114,
+        130,
+        189
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.focus-shell > div.workspace:nth-of-type(1) > header.headbar > div.head-left:nth-of-type(1) > span.wordmark:nth-of-type(1)",
+      "text": "accio",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.653,
+      "samples": 298,
+      "background_at_worst": [
+        245,
+        248,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.workspace:nth-of-type(1) > header.headbar > div.head-left:nth-of-type(1) > span.wordmark:nth-of-type(1) > span",
+      "text": "hub",
+      "required": 4.5,
+      "rgba": [
+        177,
+        240,
+        125,
+        255
+      ],
+      "status": "fail",
+      "minimum": 1.258,
+      "samples": 188,
+      "background_at_worst": [
+        245,
+        248,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.focus-shell > div.workspace:nth-of-type(1) > header.headbar > div.head-left:nth-of-type(1) > span.head-path:nth-of-type(2)",
+      "text": "Configurações",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.618,
+      "samples": 441,
+      "background_at_worst": [
+        245,
+        248,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.workspace:nth-of-type(1) > header.headbar > div.head-right:nth-of-type(2) > button.command-button:nth-of-type(1) > span",
+      "text": "Buscar no seu espaço",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.583,
+      "samples": 496,
+      "background_at_worst": [
+        245,
+        247,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.workspace:nth-of-type(1) > header.headbar > div.head-right:nth-of-type(2) > button.command-button:nth-of-type(1) > kbd",
+      "text": "⌘ K",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.588,
+      "samples": 61,
+      "background_at_worst": [
+        246,
+        247,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.focus-shell > div.workspace:nth-of-type(1) > header.headbar > div.head-right:nth-of-type(2) > span.mini-time:nth-of-type(3)",
+      "text": "21:24",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.526,
+      "samples": 176,
+      "background_at_worst": [
+        244,
+        247,
+        247
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.workspace:nth-of-type(1) > section.music-zone > div.music-main:nth-of-type(1) > div.music-caption:nth-of-type(1) > strong",
+      "text": "Accio Music",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.653,
+      "samples": 331,
+      "background_at_worst": [
+        245,
+        248,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.workspace:nth-of-type(1) > section.music-zone > div.music-main:nth-of-type(1) > div.music-caption:nth-of-type(1) > small",
+      "text": "Escolha seu ambiente sonoro",
+      "required": 4.5,
+      "rgba": [
+        89,
+        106,
+        124,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.206,
+      "samples": 512,
+      "background_at_worst": [
+        245,
+        248,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > div.music-caption:nth-of-type(1) > small > span",
+      "text": "· player demonstrativo",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.618,
+      "samples": 385,
+      "background_at_worst": [
+        245,
+        248,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone > div.music-main:nth-of-type(1) > span.track-label:nth-of-type(3)",
+      "text": "SEM ÁUDIO NESTA PRÉVIA",
+      "required": 4.5,
+      "rgba": [
+        89,
+        106,
+        124,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.161,
+      "samples": 489,
+      "background_at_worst": [
+        244,
+        247,
+        247
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#main-content > div.inner-page.settings-page > div.subhead:nth-of-type(1) > div.eyebrow",
+      "text": "ACCIO HUB / SEU ESPAÇO",
+      "required": 4.5,
+      "rgba": [
+        61,
+        87,
+        72,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 7.034,
+      "samples": 829,
+      "background_at_worst": [
+        239,
+        242,
+        244
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#main-content > div.inner-page.settings-page > div.subhead:nth-of-type(1) > h1",
+      "text": "Personalização",
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 13.662,
+      "samples": 5787,
+      "background_at_worst": [
+        237,
+        240,
+        241
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#main-content > div.inner-page.settings-page > div.subhead:nth-of-type(1) > h1 > span.title-stop",
+      "text": ".",
+      "required": 3,
+      "rgba": [
+        177,
+        240,
+        125,
+        255
+      ],
+      "status": "fail",
+      "minimum": 1.176,
+      "samples": 96,
+      "background_at_worst": [
+        238,
+        240,
+        242
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#main-content > div.inner-page.settings-page > div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(1) > h2",
+      "text": "Plano de fundo",
+      "required": 4.5,
+      "rgba": [
+        36,
+        54,
+        72,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 11.833,
+      "samples": 516,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(1) > div.wallpaper-options > button.wallpaper-swatch.wall-northern:nth-of-type(1) > span",
+      "text": "Aurora",
+      "required": 4.5,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 17.191,
+      "samples": 168,
+      "background_at_worst": [
+        16,
+        28,
+        42
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(1) > div.wallpaper-options > button.wallpaper-swatch.wall-ember:nth-of-type(2) > span",
+      "text": "Pôr do sol",
+      "required": 4.5,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 15.934,
+      "samples": 240,
+      "background_at_worst": [
+        43,
+        29,
+        46
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(1) > div.wallpaper-options > button.wallpaper-swatch.wall-ocean:nth-of-type(3) > span",
+      "text": "Azul profundo",
+      "required": 4.5,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.898,
+      "samples": 350,
+      "background_at_worst": [
+        20,
+        40,
+        65
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(1) > div.wallpaper-options > button.wallpaper-swatch.wall-graphite:nth-of-type(4) > span",
+      "text": "Grafite",
+      "required": 4.5,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 16.59,
+      "samples": 200,
+      "background_at_worst": [
+        23,
+        31,
+        42
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#main-content > div.inner-page.settings-page > div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(2) > h2",
+      "text": "Preferências",
+      "required": 4.5,
+      "rgba": [
+        36,
+        54,
+        72,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 11.833,
+      "samples": 460,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-page.settings-page > div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(2) > div.setting-row:nth-of-type(1) > label",
+      "text": "Cor de destaque",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.956,
+      "samples": 382,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(2) > div.setting-row:nth-of-type(1) > label > small",
+      "text": "Botões e seleções",
+      "required": 4.5,
+      "rgba": [
+        89,
+        106,
+        124,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.313,
+      "samples": 406,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-page.settings-page > div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(2) > div.setting-row:nth-of-type(2) > label",
+      "text": "Tema",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.956,
+      "samples": 120,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(2) > div.setting-row:nth-of-type(2) > label > small",
+      "text": "Claro e escuro",
+      "required": 4.5,
+      "rgba": [
+        89,
+        106,
+        124,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.313,
+      "samples": 286,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-page.settings-page > div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(2) > div.setting-row:nth-of-type(3) > label",
+      "text": "Accio Music",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.956,
+      "samples": 270,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(2) > div.setting-row:nth-of-type(3) > label > small",
+      "text": "Barra global demonstrativa",
+      "required": 4.5,
+      "rgba": [
+        89,
+        106,
+        124,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.313,
+      "samples": 607,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#main-content > div.inner-page.settings-page > div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > h2",
+      "text": "Dock de aplicativos",
+      "required": 4.5,
+      "rgba": [
+        36,
+        54,
+        72,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 11.833,
+      "samples": 672,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(1) > label.show-label",
+      "text": "Tarefas",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.956,
+      "samples": 176,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(1) > button.mini-control:nth-of-type(1)",
+      "text": "↑",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "not_applicable",
+      "reason": "inactive control exception"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(1) > button.mini-control:nth-of-type(2)",
+      "text": "↓",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.705,
+      "samples": 38,
+      "background_at_worst": [
+        223,
+        233,
+        240
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(2) > label.show-label",
+      "text": "Calendário",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.956,
+      "samples": 274,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(2) > button.mini-control:nth-of-type(1)",
+      "text": "↑",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.705,
+      "samples": 38,
+      "background_at_worst": [
+        223,
+        233,
+        240
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(2) > button.mini-control:nth-of-type(2)",
+      "text": "↓",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.705,
+      "samples": 38,
+      "background_at_worst": [
+        223,
+        233,
+        240
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(3) > label.show-label",
+      "text": "Foco",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.956,
+      "samples": 107,
+      "background_at_worst": [
+        248,
+        250,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(3) > button.mini-control:nth-of-type(1)",
+      "text": "↑",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.705,
+      "samples": 38,
+      "background_at_worst": [
+        223,
+        233,
+        240
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(3) > button.mini-control:nth-of-type(2)",
+      "text": "↓",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.705,
+      "samples": 38,
+      "background_at_worst": [
+        223,
+        233,
+        240
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(4) > label.show-label",
+      "text": "Vault",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.863,
+      "samples": 127,
+      "background_at_worst": [
+        248,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(4) > button.mini-control:nth-of-type(1)",
+      "text": "↑",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.705,
+      "samples": 38,
+      "background_at_worst": [
+        223,
+        233,
+        240
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(4) > button.mini-control:nth-of-type(2)",
+      "text": "↓",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.705,
+      "samples": 38,
+      "background_at_worst": [
+        223,
+        233,
+        240
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(5) > label.show-label",
+      "text": "Projetos",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.863,
+      "samples": 201,
+      "background_at_worst": [
+        248,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(5) > button.mini-control:nth-of-type(1)",
+      "text": "↑",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.705,
+      "samples": 38,
+      "background_at_worst": [
+        223,
+        233,
+        240
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(5) > button.mini-control:nth-of-type(2)",
+      "text": "↓",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.705,
+      "samples": 38,
+      "background_at_worst": [
+        223,
+        233,
+        240
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(6) > label.show-label",
+      "text": "AccioFeed",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.863,
+      "samples": 22,
+      "background_at_worst": [
+        248,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(6) > button.mini-control:nth-of-type(1)",
+      "text": "↑",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.705,
+      "samples": 10,
+      "background_at_worst": [
+        223,
+        233,
+        240
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(6) > button.mini-control:nth-of-type(2)",
+      "text": "↓",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.705,
+      "samples": 4,
+      "background_at_worst": [
+        223,
+        233,
+        240
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "value",
+      "selector": "#page-theme",
+      "text": "Claro",
+      "required": 4.5,
+      "rgba": [
+        28,
+        48,
+        64,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 11.274,
+      "samples": 131,
+      "background_at_worst": [
+        227,
+        235,
+        242
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#page-theme",
+      "text": "Tema Claro e escuro",
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#page-music",
+      "text": "Accio Music Barra global demonstrativa",
+      "required": 3,
+      "rgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(1) > label.show-label > input",
+      "text": "Tarefas",
+      "required": 3,
+      "rgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(2) > label.show-label > input",
+      "text": "Calendário",
+      "required": 3,
+      "rgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(3) > label.show-label > input",
+      "text": "Foco",
+      "required": 3,
+      "rgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(4) > label.show-label > input",
+      "text": "Vault",
+      "required": 3,
+      "rgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(5) > label.show-label > input",
+      "text": "Projetos",
+      "required": 3,
+      "rgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(6) > label.show-label > input",
+      "text": "AccioFeed",
+      "required": 3,
+      "rgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(1) > svg > path:nth-of-type(1)",
+      "text": "Início",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.535,
+      "samples": 105,
+      "background_at_worst": [
+        243,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(1) > svg > path:nth-of-type(2)",
+      "text": "Início",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.535,
+      "samples": 17,
+      "background_at_worst": [
+        243,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(2) > svg > rect",
+      "text": "Tarefas",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.535,
+      "samples": 111,
+      "background_at_worst": [
+        243,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(2) > svg > path",
+      "text": "Tarefas",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.535,
+      "samples": 14,
+      "background_at_worst": [
+        243,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(3) > svg > rect",
+      "text": "Agenda",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.535,
+      "samples": 95,
+      "background_at_worst": [
+        243,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(3) > svg > path",
+      "text": "Agenda",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.535,
+      "samples": 48,
+      "background_at_worst": [
+        243,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(4) > svg > circle:nth-of-type(1)",
+      "text": "Foco",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 158,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(4) > svg > circle:nth-of-type(2)",
+      "text": "Foco",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 31,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(4) > svg > circle:nth-of-type(3)",
+      "text": "Foco",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.535,
+      "samples": 1,
+      "background_at_worst": [
+        243,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(5) > svg > rect:nth-of-type(1)",
+      "text": "Projetos",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 16,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(5) > svg > rect:nth-of-type(2)",
+      "text": "Projetos",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 16,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(5) > svg > rect:nth-of-type(3)",
+      "text": "Projetos",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 16,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(5) > svg > rect:nth-of-type(4)",
+      "text": "Projetos",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 16,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(6) > svg > path:nth-of-type(1)",
+      "text": "Conhecimento",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 97,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(7) > svg > path",
+      "text": "AccioFeed",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 73,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(7) > svg > circle",
+      "text": "AccioFeed",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 1,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(8) > svg > path:nth-of-type(1)",
+      "text": "Backups",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 86,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(8) > svg > path:nth-of-type(2)",
+      "text": "Backups",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 16,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(9) > svg > rect",
+      "text": "E-mails",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 85,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(9) > svg > path",
+      "text": "E-mails",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.524,
+      "samples": 32,
+      "background_at_worst": [
+        242,
+        246,
+        250
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > div.rail-bottom:nth-of-type(2) > a.rail-icon.active > svg > circle",
+      "text": "Configurações",
+      "required": 3,
+      "rgba": [
+        61,
+        87,
+        72,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 7.046,
+      "samples": 21,
+      "background_at_worst": [
+        234,
+        244,
+        241
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "aside.rail > div.rail-bottom:nth-of-type(2) > a.rail-icon.active > svg > path",
+      "text": "Configurações",
+      "required": 3,
+      "rgba": [
+        61,
+        87,
+        72,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 7.046,
+      "samples": 106,
+      "background_at_worst": [
+        234,
+        244,
+        241
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.head-icon:nth-of-type(2) > svg > path",
+      "text": "Captura rápida demonstrativa",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.569,
+      "samples": 44,
+      "background_at_worst": [
+        244,
+        247,
+        247
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.head-icon:nth-of-type(3) > svg > path",
+      "text": "Personalizar seu espaço",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.569,
+      "samples": 38,
+      "background_at_worst": [
+        244,
+        247,
+        247
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.head-icon:nth-of-type(3) > svg > circle:nth-of-type(1)",
+      "text": "Personalizar seu espaço",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.569,
+      "samples": 6,
+      "background_at_worst": [
+        244,
+        247,
+        247
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.head-icon:nth-of-type(3) > svg > circle:nth-of-type(2)",
+      "text": "Personalizar seu espaço",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.569,
+      "samples": 6,
+      "background_at_worst": [
+        244,
+        247,
+        247
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > button.music-button:nth-of-type(1) > svg > path",
+      "text": "Reprodução demonstrativa",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.583,
+      "samples": 26,
+      "background_at_worst": [
+        245,
+        247,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > button.music-button:nth-of-type(2) > svg > path",
+      "text": "Expandir player",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.583,
+      "samples": 28,
+      "background_at_worst": [
+        245,
+        247,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > button.music-button:nth-of-type(2) > svg > circle:nth-of-type(1)",
+      "text": "Expandir player",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.583,
+      "samples": 4,
+      "background_at_worst": [
+        245,
+        247,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "icon",
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > button.music-button:nth-of-type(2) > svg > circle:nth-of-type(2)",
+      "text": "Expandir player",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.583,
+      "samples": 4,
+      "background_at_worst": [
+        245,
+        247,
+        248
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "cli_dry_runs_read_only": true,
+  "unsafe_cli_and_confirmation_refused": true,
+  "full_domain_preserved": {
+    "tables": 13,
+    "only_expired_deleted": true,
+    "active_rows_byte_equal": true,
+    "repeat_after_new_process": true
+  },
+  "process_races": [
+    {
+      "operation": "logout",
+      "preserved": true
+    },
+    {
+      "operation": "extend",
+      "preserved": true
+    },
+    {
+      "operation": "create",
+      "preserved": true
+    },
+    {
+      "operation": "two_cleaners",
+      "deleted_once": true
+    }
+  ],
+  "late_failure_full_rollback": true,
+  "real_sqlite_busy_rollback": true,
+  "sigkill_rollback": true,
+  "sqlite": {
+    "triggers": 25,
+    "indexes": 36,
+    "same_sql": true,
+    "foreign_keys": 1,
+    "integrity": "ok",
+    "foreign_key_violations": [],
+    "journal_mode": "wal",
+    "synchronous": 2
+  },
+  "backup_after_ordinary_cleanup_verified_source_unchanged": true,
+  "authentication": {
+    "active_signed_cookie_preserved": true,
+    "password_login": true,
+    "logout_revocation": true,
+    "password_digest_preserved": true
+  },
+  "scope": {
+    "synthetic_only": true,
+    "private_artifacts_in_evidence": false,
+    "operational_recovery_tested": false
+  }
+}

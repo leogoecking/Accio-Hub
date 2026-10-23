@@ -1,0 +1,10 @@
+[
+  {
+    "name": "20-minute absence recovers in two human actions with explicit accepted time and confirmed resume",
+    "result": "PASS"
+  },
+  {
+    "name": "Reload while pending recovery does not accept or resume until one explicit action",
+    "result": "PASS"
+  }
+]

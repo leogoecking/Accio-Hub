@@ -1,0 +1,65 @@
+{
+  "branch": "p1-persistence",
+  "F3b_commit": "4cb6fc5f39abe79914bfc6843ca2219fe4978eb9",
+  "F3c_committed": false,
+  "index_empty": true,
+  "rails": {
+    "tests": 203,
+    "assertions": 3452,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0
+  },
+  "F3c_specific": {
+    "tests": 16,
+    "assertions": 104
+  },
+  "js_cases": 41,
+  "js_syntax_files": 74,
+  "rubocop_files": 123,
+  "rubocop_offenses": 0,
+  "brakeman_warnings": 0,
+  "zeitwerk": "PASS",
+  "sqlite": {
+    "triggers": 25,
+    "indexes": 36,
+    "integrity": "ok",
+    "foreign_key_check": [],
+    "same_sql": true
+  },
+  "private_artifact_filename_scan": "PASS",
+  "untracked_diff_check": "PASS",
+  "protected_tracked_paths_unchanged": [
+    "rails/app/models",
+    "rails/db",
+    "prototype",
+    "rails/app/javascript",
+    "rails/app/views",
+    "rails/app/controllers",
+    "rails/config/sqlite_backup_contract.json",
+    "rails/app/services/appearance_preferences.rb",
+    "rails/app/services/focus_commands.rb",
+    "rails/app/services/focus_time.rb",
+    "rails/app/services/legacy_snapshot_archive.rb",
+    "rails/app/services/synthetic_sqlite_backup.rb",
+    "rails/app/services/sqlite_backup_snapshot.rb",
+    "rails/lib/tasks/sqlite_backups.rake",
+    "rails/script/restored-synthetic-server.rb",
+    "rails/script/sqlite-backups-worker.rb",
+    "rails/script/sqlite-backups-check.rb",
+    "rails/test/services/synthetic_sqlite_backup_test.rb"
+  ],
+  "new_source_sha256": {
+    "rails/app/services/synthetic_auth_session_cleanup.rb": "467e4dffed9c6f4005ecaf3c877e8a27dda5f077d7cc8c67856ebec2c7affa1e",
+    "rails/lib/tasks/auth_session_cleanup.rake": "d97e2ba736534661888f37228e7775accdc3a41eeeae8fa2bf309580db4e85b4",
+    "rails/script/auth-sessions-check.rb": "9bf18dad9abac2c6f4b0213ba323a9b9ca519fbe31b7e5505d05d5da9638cce1",
+    "rails/script/auth-sessions-worker.rb": "2bfe7b73f055555f84ebcb69b0d81537e63a8f5cbfca454e8a8f4a4a642c8c45",
+    "rails/test/services/synthetic_auth_session_cleanup_test.rb": "71910bfda927cc5b8ca40bbfa1351c8c1ce9425b21c7f94a3d7677ae3b2e3c56",
+    "docs/P1.2F3C_VERIFICATION.md": "bb1a30f9acfea3bcc9bb830ab7da016a4143ef6f5375e16772e0c1a6f85f3597",
+    "AGENTS.md": "adf94b0dcbe7fe76db9657c6ed92ea7d2b4a038459ed2a68999386486794484e",
+    "rails/README.md": "76c412e0cfef7888e5b96187ce39e5e64e6c35c07a7ec715e2b4f70f17684d35"
+  },
+  "personal_data_accessed": false,
+  "tag_push_merge": false,
+  "F4_F5_P1_3_started": false
+}

@@ -1,0 +1,11 @@
+Error: Command failed: agent-browser --session accio-f5-integrated --json wait --fn !document.querySelector('#task-check-u-MDMwYTQwNWEtMjU5Yy00ZTlmLWFlNzMtNzE0MDVjZDI2NTU0').checked
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:942:11)
+    at execFileSync (node:child_process:978:15)
+    at b (file:///home/goecking/Projects/Accio-HUB/rails/script/final-persistence-check.mjs:25:39)
+    at wait (file:///home/goecking/Projects/Accio-HUB/rails/script/final-persistence-check.mjs:27:18)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/final-persistence-check.mjs:60:342
+    at check (file:///home/goecking/Projects/Accio-HUB/rails/script/final-persistence-check.mjs:35:25)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/final-persistence-check.mjs:60:2
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)

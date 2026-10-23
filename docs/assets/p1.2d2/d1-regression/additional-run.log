@@ -1,0 +1,20 @@
+PASS Nome equivalente é rejeitado com todos os campos preservados
+PASS UID legado especial navega por URL e tarefas reais aparecem editáveis e referências somente para consulta
+PASS Arquivamento e restauração preservam tarefas e referências visíveis
+PASS 503 mantém edição e retentativa conserva cor herdada de projeto legado
+PASS Filtro confirmado preservado quando aparência obsoleta é reaplicada
+PASS Link de edição obsoleto após arquivamento abre aviso acessível com Escape e retorno
+PASS Foco de fallback fica visível quando um comando remove o card da seleção
+PASS Comparação visual P0.4 dark 320px
+PASS Comparação visual P0.4 dark 390px
+PASS Comparação visual P0.4 dark 768px
+PASS Comparação visual P0.4 dark 1440px
+PASS Comparação visual P0.4 dark 1920px
+PASS Comparação visual P0.4 light 320px
+PASS Comparação visual P0.4 light 390px
+PASS Comparação visual P0.4 light 768px
+PASS Comparação visual P0.4 light 1440px
+PASS Comparação visual P0.4 light 1920px
+PASS Endereços diretos de formulários mantêm shell, cancelamento e URL da biblioteca
+PASS Estado inexistente apresenta retorno acessível para a biblioteca
+19 cenários adicionais PASS

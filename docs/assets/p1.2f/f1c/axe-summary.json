@@ -1,0 +1,286 @@
+{
+  "audits": 31,
+  "with_violations": 0,
+  "with_incomplete": 31,
+  "results": [
+    {
+      "file": "final-browser/axe-feedback-dark-320.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "final-browser/axe-feedback-dark-390.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "final-browser/axe-feedback-light-320.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "final-browser/axe-feedback-light-390.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-f1b-final/axe-recovery-dark-1440.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-f1b-final/axe-recovery-dark-1920.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-f1b-final/axe-recovery-dark-320.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-f1b-final/axe-recovery-dark-390.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-f1b-final/axe-recovery-dark-768.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-f1b-final/axe-recovery-light-1440.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-f1b-final/axe-recovery-light-1920.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-f1b-final/axe-recovery-light-320.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-f1b-final/axe-recovery-light-390.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-f1b-final/axe-recovery-light-768.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-dialog-dark-777777.json",
+      "counts": {
+        "inapplicable": 69,
+        "incomplete": 1,
+        "passes": 19,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-dialog-dark-8050b0.json",
+      "counts": {
+        "inapplicable": 69,
+        "incomplete": 1,
+        "passes": 19,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-dialog-dark-b1f07d.json",
+      "counts": {
+        "inapplicable": 69,
+        "incomplete": 1,
+        "passes": 19,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-dialog-light-777777.json",
+      "counts": {
+        "inapplicable": 69,
+        "incomplete": 1,
+        "passes": 19,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-dialog-light-8050b0.json",
+      "counts": {
+        "inapplicable": 69,
+        "incomplete": 1,
+        "passes": 19,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-dialog-light-b1f07d.json",
+      "counts": {
+        "inapplicable": 69,
+        "incomplete": 1,
+        "passes": 19,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-dark-1440.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-dark-1920.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-dark-320.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-dark-390.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-dark-768.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-light-1440.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-light-1920.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-light-320.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-light-390.json",
+      "counts": {
+        "inapplicable": 53,
+        "incomplete": 1,
+        "passes": 36,
+        "violations": 0
+      }
+    },
+    {
+      "file": "regression-e2/axe-focus-light-768.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    },
+    {
+      "file": "integrated/axe-recovery.json",
+      "counts": {
+        "inapplicable": 54,
+        "incomplete": 1,
+        "passes": 35,
+        "violations": 0
+      }
+    }
+  ]
+}

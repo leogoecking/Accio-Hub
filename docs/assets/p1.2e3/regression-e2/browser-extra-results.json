@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Dock Widgets Music and hiding the focus widget preserve the global running session",
+    "result": "PASS"
+  },
+  {
+    "name": "Logout and login preserve appearance preferences and same global focus UID",
+    "result": "PASS"
+  },
+  {
+    "name": "Existing focus rejects another task context without changing history or UID",
+    "result": "PASS"
+  },
+  {
+    "name": "503 retains exact command envelope and safe retry pauses once",
+    "result": "PASS"
+  },
+  {
+    "name": "Request deadline exposes uncertainty then retries the identical command",
+    "result": "PASS"
+  },
+  {
+    "name": "Timer does not announce each second and reduced motion disables focus transitions",
+    "result": "PASS"
+  },
+  {
+    "name": "Close X and Back preserve preset and return focus to the triggering control",
+    "result": "PASS"
+  },
+  {
+    "name": "Polling preserves keyboard focus on an active control",
+    "result": "PASS"
+  },
+  {
+    "name": "Contrast and dialog accessibility dark #b1f07d",
+    "result": "PASS"
+  },
+  {
+    "name": "Contrast and dialog accessibility dark #8050b0",
+    "result": "PASS"
+  },
+  {
+    "name": "Contrast and dialog accessibility dark #777777",
+    "result": "PASS"
+  },
+  {
+    "name": "Contrast and dialog accessibility light #b1f07d",
+    "result": "PASS"
+  },
+  {
+    "name": "Contrast and dialog accessibility light #8050b0",
+    "result": "PASS"
+  },
+  {
+    "name": "Contrast and dialog accessibility light #777777",
+    "result": "PASS"
+  }
+]

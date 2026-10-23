@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Turbo navigation while resolve response is held preserves exactly one owned continuation",
+    "result": "PASS"
+  },
+  {
+    "name": "Incompatible HTTP 200 receipt cannot be mistaken for success despite a matching GET",
+    "result": "PASS"
+  },
+  {
+    "name": "Escape during recovery does not cancel the timer or trigger an extra command",
+    "result": "PASS"
+  }
+]

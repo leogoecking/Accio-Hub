@@ -1,0 +1,97 @@
+{
+  "changed": [
+    {
+      "url": "https://0x7f.0.0.1",
+      "before": true,
+      "after": false
+    },
+    {
+      "url": "https://0x7f000001",
+      "before": true,
+      "after": false
+    },
+    {
+      "url": "https://0X7F000001",
+      "before": true,
+      "after": false
+    },
+    {
+      "url": "https://0x7f.1",
+      "before": true,
+      "after": false
+    },
+    {
+      "url": "http://0x7f000001.",
+      "before": true,
+      "after": false
+    },
+    {
+      "url": "https://example.123",
+      "before": true,
+      "after": false
+    },
+    {
+      "url": "https://a.42",
+      "before": true,
+      "after": false
+    },
+    {
+      "url": "https://example.09",
+      "before": true,
+      "after": false
+    },
+    {
+      "url": "https://example.0x",
+      "before": true,
+      "after": false
+    },
+    {
+      "url": "https://example.0xF",
+      "before": true,
+      "after": false
+    },
+    {
+      "url": "https://example.0X0",
+      "before": true,
+      "after": false
+    },
+    {
+      "url": "http://0x7f.0x0.0x0.0x1",
+      "before": true,
+      "after": false
+    },
+    {
+      "url": "http://1.2.0x3",
+      "before": true,
+      "after": false
+    },
+    {
+      "url": "https://example.test:",
+      "before": true,
+      "after": false
+    },
+    {
+      "url": "https://[::1]:",
+      "before": true,
+      "after": false
+    }
+  ],
+  "already_rejected": [
+    {
+      "url": "http://0177.0.0.1",
+      "before": false,
+      "after": false
+    },
+    {
+      "url": "http://127.1",
+      "before": false,
+      "after": false
+    },
+    {
+      "url": "http://2130706433",
+      "before": false,
+      "after": false
+    }
+  ],
+  "functional_divergence": false
+}

@@ -1,0 +1,71 @@
+{
+  "rails_suite": "93 runs, 795 assertions, 0 failures, 0 errors, 0 skips",
+  "create": [
+    {
+      "worker": "0",
+      "result": "committed",
+      "http": 200
+    },
+    {
+      "worker": "1",
+      "result": "committed",
+      "http": 200
+    }
+  ],
+  "incompatible": [
+    {
+      "worker": "0",
+      "result": "conflict_rejected",
+      "http": 409
+    },
+    {
+      "worker": "1",
+      "result": "committed",
+      "http": 200
+    }
+  ],
+  "name": [
+    {
+      "worker": "0",
+      "result": "committed",
+      "http": 200
+    },
+    {
+      "worker": "1",
+      "result": "validation_rejected",
+      "http": 422
+    }
+  ],
+  "edit": [
+    {
+      "worker": "0",
+      "result": "committed",
+      "http": 200
+    },
+    {
+      "worker": "1",
+      "result": "conflict_rejected",
+      "http": 409
+    }
+  ],
+  "snapshot": {
+    "aggregate_version": 0,
+    "preference_count": 1,
+    "dock_count": 8,
+    "widget_count": 7,
+    "triggers": 25,
+    "foreign_keys_intact": true,
+    "project_count": 3,
+    "other_modules_empty": true
+  },
+  "reopen": {
+    "reopened_aggregate_identical": true
+  },
+  "contention": {
+    "sqlite_writer_contention_http": 503,
+    "local_edit_retry_supported": true
+  },
+  "post_contention": {
+    "reopened_aggregate_identical": true
+  }
+}

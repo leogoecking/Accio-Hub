@@ -1,0 +1,302 @@
+[
+  {
+    "theme": "dark",
+    "width": 320,
+    "elements": [
+      {
+        "class": "rail",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 49
+      },
+      {
+        "class": "headbar",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "width": 271
+      },
+      {
+        "class": "music-zone",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 271
+      },
+      {
+        "class": "",
+        "font": "\"Space Grotesk\", Inter, system-ui, sans-serif",
+        "height": 36.046875,
+        "width": 114.453125
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "elements": [
+      {
+        "class": "rail",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 49
+      },
+      {
+        "class": "headbar",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "width": 341
+      },
+      {
+        "class": "music-zone",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 341
+      },
+      {
+        "class": "",
+        "font": "\"Space Grotesk\", Inter, system-ui, sans-serif",
+        "height": 36.046875,
+        "width": 114.453125
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 768,
+    "elements": [
+      {
+        "class": "rail",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 61
+      },
+      {
+        "class": "headbar",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "width": 707
+      },
+      {
+        "class": "music-zone",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 707
+      },
+      {
+        "class": "",
+        "font": "\"Space Grotesk\", Inter, system-ui, sans-serif",
+        "height": 36.046875,
+        "width": 114.453125
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 1440,
+    "elements": [
+      {
+        "class": "rail",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 76
+      },
+      {
+        "class": "headbar",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "width": 1364
+      },
+      {
+        "class": "music-zone",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 1364
+      },
+      {
+        "class": "",
+        "font": "\"Space Grotesk\", Inter, system-ui, sans-serif",
+        "height": 53.390625,
+        "width": 169.453125
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 1920,
+    "elements": [
+      {
+        "class": "rail",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 76
+      },
+      {
+        "class": "headbar",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "width": 1844
+      },
+      {
+        "class": "music-zone",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 1844
+      },
+      {
+        "class": "",
+        "font": "\"Space Grotesk\", Inter, system-ui, sans-serif",
+        "height": 56.640625,
+        "width": 179.828125
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 320,
+    "elements": [
+      {
+        "class": "rail",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 49
+      },
+      {
+        "class": "headbar",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "width": 271
+      },
+      {
+        "class": "music-zone",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 271
+      },
+      {
+        "class": "",
+        "font": "\"Space Grotesk\", Inter, system-ui, sans-serif",
+        "height": 36.046875,
+        "width": 114.453125
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 390,
+    "elements": [
+      {
+        "class": "rail",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 49
+      },
+      {
+        "class": "headbar",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "width": 341
+      },
+      {
+        "class": "music-zone",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 341
+      },
+      {
+        "class": "",
+        "font": "\"Space Grotesk\", Inter, system-ui, sans-serif",
+        "height": 36.046875,
+        "width": 114.453125
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 768,
+    "elements": [
+      {
+        "class": "rail",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 61
+      },
+      {
+        "class": "headbar",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 57,
+        "width": 707
+      },
+      {
+        "class": "music-zone",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 707
+      },
+      {
+        "class": "",
+        "font": "\"Space Grotesk\", Inter, system-ui, sans-serif",
+        "height": 36.046875,
+        "width": 114.453125
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 1440,
+    "elements": [
+      {
+        "class": "rail",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 76
+      },
+      {
+        "class": "headbar",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "width": 1364
+      },
+      {
+        "class": "music-zone",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 1364
+      },
+      {
+        "class": "",
+        "font": "\"Space Grotesk\", Inter, system-ui, sans-serif",
+        "height": 53.390625,
+        "width": 169.453125
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 1920,
+    "elements": [
+      {
+        "class": "rail",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 1000,
+        "width": 76
+      },
+      {
+        "class": "headbar",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 67,
+        "width": 1844
+      },
+      {
+        "class": "music-zone",
+        "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+        "height": 49,
+        "width": 1844
+      },
+      {
+        "class": "",
+        "font": "\"Space Grotesk\", Inter, system-ui, sans-serif",
+        "height": 56.640625,
+        "width": 179.828125
+      }
+    ]
+  }
+]

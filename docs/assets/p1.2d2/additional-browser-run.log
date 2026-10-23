@@ -1,0 +1,4 @@
+PASS Conclusão obsoleta mostra versão remota e reaplica estado desejado
+PASS Rascunho impede navegação Turbo e CtrlK não rouba foco do formulário
+PASS Clique de ponteiro no checkbox conclui a mesma tarefa
+PASS Projeto arquivado no destino rejeita rascunho em vez de movê-lo para Pessoal

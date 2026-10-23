@@ -1,0 +1,179 @@
+{
+  "passed": 11,
+  "results": [
+    {
+      "name": "Delayed GET cannot replace newer snapshot",
+      "result": "PASS"
+    },
+    {
+      "name": "Lower version of same UID cannot regress even on a later response",
+      "result": "PASS"
+    },
+    {
+      "name": "Lost response retains identical command ID payload URL and method; replay uses current",
+      "result": "PASS"
+    },
+    {
+      "name": "Command invalidates outstanding read; same client serializes writes",
+      "result": "PASS"
+    },
+    {
+      "name": "Definitive rejection releases intent; 401 and 503 preserve the identical retry",
+      "result": "PASS"
+    },
+    {
+      "name": "Unicode and legacy route UIDs preserve UTF8 without changing stored ID",
+      "result": "PASS"
+    },
+    {
+      "name": "Successful reconnection clears a read failure without dropping a pending command",
+      "result": "PASS"
+    },
+    {
+      "name": "Subscriptions disconnect without duplicate notifications",
+      "result": "PASS"
+    },
+    {
+      "name": "Accent contrast preserves default ink and adapts purple and middle gray",
+      "result": "PASS"
+    },
+    {
+      "name": "Monotonic interpolation is visual only and stops at zero or unconfirmed/hidden state",
+      "result": "PASS"
+    },
+    {
+      "name": "Authenticated transport has CSRF no-store timeout cleanup and retains error status",
+      "result": "PASS"
+    }
+  ]
+}
+{
+  "passed": 15,
+  "results": [
+    {
+      "name": "Partial candidate accepts then resumes with two owned receipts and fixed versions",
+      "result": "PASS"
+    },
+    {
+      "name": "Integral candidate awaits explicit completion without resume or complete",
+      "result": "PASS"
+    },
+    {
+      "name": "Invalid or stale candidate cannot be accepted",
+      "result": "PASS"
+    },
+    {
+      "name": "Lost resolve response and similar GET do not authorize resume; explicit replay does",
+      "result": "PASS"
+    },
+    {
+      "name": "Lost resume response replays only that same resume and never repeats resolve",
+      "result": "PASS"
+    },
+    {
+      "name": "503 or timeout before resume retains accepted checkpoint and identical envelope",
+      "result": "PASS"
+    },
+    {
+      "name": "Archived project or completed task rejects resume but keeps accepted time",
+      "result": "PASS"
+    },
+    {
+      "name": "Another tab changes version after own resolve: never borrow its version to resume",
+      "result": "PASS"
+    },
+    {
+      "name": "Another tab cancels or replaces session after own resolve: no continuation",
+      "result": "PASS"
+    },
+    {
+      "name": "GET failure after own resolve does not start work on an unconfirmed snapshot",
+      "result": "PASS"
+    },
+    {
+      "name": "A rejected resolve cannot be inferred from matching state from another operation",
+      "result": "PASS"
+    },
+    {
+      "name": "Wrong receipt ID command ID version decision or result rejects acknowledgement and preserves retry",
+      "result": "PASS"
+    },
+    {
+      "name": "Repeated activation while busy creates only one resolution and one resume",
+      "result": "PASS"
+    },
+    {
+      "name": "Reload loses continuation and GET never automatically retries or resumes",
+      "result": "PASS"
+    },
+    {
+      "name": "Historical resume replay cannot regress current state or send another command",
+      "result": "PASS"
+    }
+  ]
+}
+{
+  "passed": 15,
+  "results": [
+    {
+      "name": "A: Normal HTTP success confirms requested preset and changes only its field",
+      "result": "PASS"
+    },
+    {
+      "name": "B/E: Lost response before write reconciles different value without automatic reapply",
+      "result": "PASS"
+    },
+    {
+      "name": "B/D: Lost response after commit confirms equal current value without claiming authorship",
+      "result": "PASS"
+    },
+    {
+      "name": "C/F: Unavailable GET preserves original envelope; explicit retry gets 409 then confirms equal value",
+      "result": "PASS"
+    },
+    {
+      "name": "409 plus failed reconciliation retains exact obsolete version until a read succeeds",
+      "result": "PASS"
+    },
+    {
+      "name": "G: Other tab saves same requested value; 409 cannot prove original authorship",
+      "result": "PASS"
+    },
+    {
+      "name": "G: Concurrent theme Dock widgets or filters are never resent by preset reconciliation",
+      "result": "PASS"
+    },
+    {
+      "name": "Timeout and 503 preserve envelope while GET fails; no automatic retry on reads",
+      "result": "PASS"
+    },
+    {
+      "name": "HTTP success followed by failed GET distinguishes saved acknowledgement from unavailable current state",
+      "result": "PASS"
+    },
+    {
+      "name": "Success then concurrent change reports both acknowledged request and different current preset",
+      "result": "PASS"
+    },
+    {
+      "name": "Only 25 and 45 presets are sent; occupied sessions remain unchanged and reject PATCH",
+      "result": "PASS"
+    },
+    {
+      "name": "Reload loses pending envelope and GET does not create or retry PATCH",
+      "result": "PASS"
+    },
+    {
+      "name": "Identical shared coordinator serializes duplicate activations and explicit retry",
+      "result": "PASS"
+    },
+    {
+      "name": "Incompatible HTTP success cannot masquerade as acknowledged write",
+      "result": "PASS"
+    },
+    {
+      "name": "Preset acknowledgement never updates detached missing pending or dirty appearance editors",
+      "result": "PASS"
+    }
+  ]
+}

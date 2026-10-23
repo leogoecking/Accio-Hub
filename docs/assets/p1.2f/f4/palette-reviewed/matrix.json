@@ -1,0 +1,2242 @@
+[
+  {
+    "name": "dark-320-northern-b1f07d-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-northern-b1f07d-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-northern-d498e7-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-northern-d498e7-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-northern-888888-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-northern-888888-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-northern-000000-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#000000",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-northern-000000-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#000000",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-northern-ffffff-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#ffffff",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-northern-ffffff-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#ffffff",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-ember-b1f07d-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "ember",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-ember-b1f07d-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "ember",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-ember-d498e7-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "ember",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-ember-d498e7-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "ember",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-ember-888888-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "ember",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-ember-888888-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "ember",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-ocean-b1f07d-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-ocean-b1f07d-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-ocean-d498e7-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "ocean",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-ocean-d498e7-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "ocean",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-ocean-888888-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "ocean",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-ocean-888888-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "ocean",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-graphite-b1f07d-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "graphite",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-graphite-b1f07d-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "graphite",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-graphite-d498e7-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "graphite",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-graphite-d498e7-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "graphite",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-graphite-888888-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "graphite",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-320-graphite-888888-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "dark",
+    "wallpaper": "graphite",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-northern-b1f07d-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-northern-b1f07d-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-northern-d498e7-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-northern-d498e7-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-northern-888888-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-northern-888888-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-northern-000000-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#000000",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-northern-000000-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#000000",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-northern-ffffff-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#ffffff",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-northern-ffffff-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#ffffff",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-ember-b1f07d-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "ember",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-ember-b1f07d-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "ember",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-ember-d498e7-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "ember",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-ember-d498e7-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "ember",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-ember-888888-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "ember",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-ember-888888-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "ember",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-ocean-b1f07d-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-ocean-b1f07d-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-ocean-d498e7-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "ocean",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-ocean-d498e7-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "ocean",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-ocean-888888-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "ocean",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-ocean-888888-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "ocean",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-graphite-b1f07d-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "graphite",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-graphite-b1f07d-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "graphite",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-graphite-d498e7-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "graphite",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-graphite-d498e7-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "graphite",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-graphite-888888-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "graphite",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-graphite-888888-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "graphite",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-northern-b1f07d-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-northern-b1f07d-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-northern-d498e7-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-northern-d498e7-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-northern-888888-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-northern-888888-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-northern-000000-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#000000",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-northern-000000-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#000000",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-northern-ffffff-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#ffffff",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-northern-ffffff-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#ffffff",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-ember-b1f07d-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "ember",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-ember-b1f07d-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "ember",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-ember-d498e7-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "ember",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-ember-d498e7-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "ember",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-ember-888888-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "ember",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-ember-888888-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "ember",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-ocean-b1f07d-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-ocean-b1f07d-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-ocean-d498e7-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-ocean-d498e7-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-ocean-888888-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-ocean-888888-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-graphite-b1f07d-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "graphite",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-graphite-b1f07d-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "graphite",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-graphite-d498e7-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "graphite",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-graphite-d498e7-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "graphite",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-graphite-888888-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "graphite",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-320-graphite-888888-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 320
+    },
+    "theme": "light",
+    "wallpaper": "graphite",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 56,
+      "incomplete": 1,
+      "passes": 33,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-northern-b1f07d-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-northern-b1f07d-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-northern-d498e7-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-northern-d498e7-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-northern-888888-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-northern-888888-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-northern-000000-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#000000",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-northern-000000-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#000000",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-northern-ffffff-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#ffffff",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-northern-ffffff-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "northern",
+    "accent": "#ffffff",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-ember-b1f07d-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ember",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-ember-b1f07d-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ember",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-ember-d498e7-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ember",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-ember-d498e7-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ember",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-ember-888888-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ember",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-ember-888888-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ember",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-ocean-b1f07d-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-ocean-b1f07d-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-ocean-d498e7-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-ocean-d498e7-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-ocean-888888-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-ocean-888888-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-graphite-b1f07d-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "graphite",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-graphite-b1f07d-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "graphite",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-graphite-d498e7-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "graphite",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-graphite-d498e7-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "graphite",
+    "accent": "#d498e7",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-graphite-888888-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "graphite",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-graphite-888888-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "graphite",
+    "accent": "#888888",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  }
+]

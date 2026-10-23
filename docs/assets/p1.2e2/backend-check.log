@@ -1,0 +1,24 @@
+script/focus-check.rb:168:in `block (2 levels) in <main>': Synthetic check failed: bin/rails test (RuntimeError)
+Run options: --seed 7923
+
+# Running:
+
+................F
+
+Failure:
+FoundationTest#test_all_supported_pages_render_with_isolated_demo_data [test/integration/foundation_test.rb:50]:
+Expected exactly 3 elements matching "dialog", found 4.
+Expected: 3
+  Actual: 4
+
+bin/rails test test/integration/foundation_test.rb:42
+
+..............................................................................................................
+
+Finished in 9.113609s, 13.9352 runs/s, 181.2674 assertions/s.
+127 runs, 1652 assertions, 1 failures, 0 errors, 0 skips
+
+
+	from script/focus-check.rb:173:in `block in <main>'
+	from /home/goecking/.local/share/mise/installs/ruby/3.3.6/lib/ruby/3.3.0/tmpdir.rb:99:in `mktmpdir'
+	from script/focus-check.rb:13:in `<main>'

@@ -1,0 +1,279 @@
+{
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 1440
+  },
+  "theme": "light",
+  "wallpaper": "ocean",
+  "accent": "#b1f07d",
+  "measurements": [
+    {
+      "kind": "text",
+      "selector": "#task-dialog-title",
+      "text": "Nova tarefa",
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 780,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#task-form > label:nth-of-type(1)",
+      "text": "Título",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 162,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#task-form > label:nth-of-type(2)",
+      "text": "Prioridade",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 314,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#task-form > label:nth-of-type(3)",
+      "text": "Projeto",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 223,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#task-form-hint",
+      "text": "Salva no SQLite. O ID e a data de conclusão serão preservados ao editar.",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 1502,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#task-form > div.project-form-actions:nth-of-type(3) > button.button.tertiary:nth-of-type(1)",
+      "text": "Cancelar",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 232,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#task-form > div.project-form-actions:nth-of-type(3) > button.button:nth-of-type(2)",
+      "text": "Salvar tarefa",
+      "required": 4.5,
+      "rgba": [
+        16,
+        32,
+        28,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.55,
+      "samples": 371,
+      "background_at_worst": [
+        177,
+        240,
+        125
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "placeholder",
+      "selector": "#task-title",
+      "text": "O que precisa fazer?",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.213,
+      "samples": 567,
+      "background_at_worst": [
+        233,
+        240,
+        245
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "value",
+      "selector": "#task-priority",
+      "text": "Normal",
+      "required": 4.5,
+      "rgba": [
+        22,
+        42,
+        60,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.755,
+      "samples": 210,
+      "background_at_worst": [
+        233,
+        240,
+        245
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#task-title",
+      "text": "Título",
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#task-priority",
+      "text": "PrioridadeNormal\nAlta",
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#task-project",
+      "text": "ProjetoPessoal\nOutro projeto QA\nProjeto foco QA",
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "icon",
+      "selector": "#task-form > div.block-top:nth-of-type(1) > button.mini-control > svg > path",
+      "text": "Fechar formulário de tarefa",
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.714,
+      "samples": 52,
+      "background_at_worst": [
+        223,
+        233,
+        241
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "focus",
+      "selector": "#task-title",
+      "text": null,
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    }
+  ]
+}

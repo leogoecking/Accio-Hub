@@ -1,0 +1,4 @@
+script/auth-sessions-check.rb:25:in `block (2 levels) in <main>': Synthetic command failed: bin/rails runner /home/goecking/Projects/Accio-HUB/rails/vendor/bundle/ruby/3.3.0/gems/activesupport-8.1.3.1/lib/active_support/error_reporter.rb:245:in `report': undefined method `merge' for nil (NoMethodError) (RuntimeError)
+	from script/auth-sessions-check.rb:167:in `block in <main>'
+	from /home/goecking/.local/share/mise/installs/ruby/3.3.6/lib/ruby/3.3.0/tmpdir.rb:99:in `mktmpdir'
+	from script/auth-sessions-check.rb:15:in `<main>'

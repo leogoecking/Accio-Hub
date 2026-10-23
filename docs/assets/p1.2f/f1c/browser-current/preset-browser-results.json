@@ -1,0 +1,14 @@
+[
+  {
+    "name": "A: Normal PATCH acknowledges preset 45 and leaves focus history and appearance unchanged",
+    "result": "PASS"
+  },
+  {
+    "name": "B/E: Lost response before write confirms current 25 and requires a new explicit choice",
+    "result": "PASS"
+  },
+  {
+    "name": "B/D: Lost response after commit confirms current 45 without asserting original authorship",
+    "result": "PASS"
+  }
+]

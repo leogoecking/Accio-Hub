@@ -1,0 +1,19 @@
+PASS A: Normal PATCH acknowledges preset 45 and leaves focus history and appearance unchanged
+PASS B/E: Lost response before write confirms current 25 and requires a new explicit choice
+PASS B/D: Lost response after commit confirms current 45 without asserting original authorship
+PASS C/F: Lost committed response and unavailable GET preserve envelope; explicit retry gets 409
+PASS F: Read reconnect alone reconciles pending request with no automatic PATCH retry
+PASS Uncertain 503 preserves stable PATCH and offline read until explicit retry
+PASS Uncertain timeout preserves stable PATCH and offline read until explicit retry
+PASS Two tabs requesting same preset: first stale PATCH receives 409 and cannot claim authorship
+PASS G: Preset conflict preserves concurrent theme change in aggregate C
+PASS G: Preset conflict preserves concurrent wallpaper change in aggregate C
+PASS G: Preset conflict preserves concurrent dock change in aggregate C
+PASS G: Preset conflict preserves concurrent widgets change in aggregate C
+PASS G: Preset conflict preserves concurrent filters change in aggregate C
+PASS Pending local appearance draft and its version survive acknowledged preset change
+PASS Turbo reconnect keeps envelope but reads reconcile it without another PATCH
+PASS Reload with lost response reads confirmed value and never retries the old PATCH
+PASS Running and paused duration survive preset clicks and theme changes; ready reset stays explicit
+PASS Feedback wraps at 320 and 390 in both themes with accessible status and keyboard focus
+{"passed":18}

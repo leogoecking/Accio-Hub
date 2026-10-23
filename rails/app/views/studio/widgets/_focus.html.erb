@@ -1,2 +1,17 @@
-<%# Approved P0.4 fragment, synthetic read-only fixture. %>
-<div class="focus-body"><div class="dial" style="--p:0%"><div class="dial-inner"><small>SESSÃO DE FOCO</small><strong data-timer>25:00</strong><span>Estude no seu ritmo</span></div></div><div class="focus-actions"><button class="round-btn primary-action" data-demo="focus" title="Iniciar"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 5 11 7-11 7V5Z"/></svg></button><button class="round-btn" data-demo="focus" title="Reiniciar">↻</button><button class="round-btn" data-demo="focus" title="Alternar 25/45 minutos">25m</button></div></div>
+<% context = local_assigns.fetch(:context, {}); archived = local_assigns.fetch(:archived, false) %>
+<div class="focus-body" data-focus-target="surface" data-focus-context="<%= context.to_json %>" data-focus-archived="<%= archived %>">
+  <div class="dial" style="--p:0%" data-focus-dial><div class="dial-inner"><small>SESSÃO DE FOCO</small><strong data-timer data-focus-clock>--:--</strong><span data-focus-state>Consultando servidor</span></div></div>
+  <p class="focus-context" data-focus-context-label>Um único Pomodoro em todas as telas.</p>
+  <div class="focus-actions">
+    <button type="button" class="round-btn primary-action" data-focus-primary data-action="focus#primary" aria-label="Iniciar Pomodoro" disabled><span data-focus-icon><%= studio_icon("play", 20) %></span></button>
+    <button type="button" class="round-btn" data-focus-reset data-action="focus#reset" aria-label="Reiniciar Pomodoro" title="Reiniciar" disabled>↻</button>
+    <button type="button" class="round-btn" data-focus-preset data-action="focus#preset" aria-label="Selecionar preset de 25 ou 45 minutos" title="Selecionar 25/45 minutos" disabled>25m</button>
+  </div>
+  <div class="focus-secondary"><button type="button" class="quiet-link" data-focus-cancel data-action="focus#cancel" hidden>Cancelar sessão</button><button type="button" class="quiet-link" data-action="focus#reconnect">Atualizar estado</button></div>
+  <p class="focus-feedback" data-focus-feedback role="status" aria-live="polite"></p>
+  <div class="focus-recovery" data-focus-recovery hidden>
+    <p>Parte do intervalo não pôde ser confirmada automaticamente.</p><p data-focus-checkpoint></p><p data-focus-estimate></p>
+    <button type="button" class="button tertiary" data-focus-resolve="keep_checkpoint" data-action="focus#resolve">Manter checkpoint</button>
+    <button type="button" class="button tertiary" data-focus-resolve="accept_estimate" data-action="focus#resolve">Aceitar estimativa e continuar</button>
+  </div>
+</div>

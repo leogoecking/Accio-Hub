@@ -1,0 +1,117 @@
+{
+  "axeVersion": "4.12.1",
+  "counts": {
+    "inapplicable": 67,
+    "incomplete": 1,
+    "passes": 22,
+    "violations": 0
+  },
+  "incomplete": [
+    {
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axeAPI",
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodeCount": 38,
+      "nodes": [
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<div class=\"eyebrow\">ACCIO STUDIO</div>",
+          "target": [
+            ".drawer-head > .eyebrow"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<h2 id=\"customize-title\">Deixe com a sua cara.</h2>",
+          "target": [
+            "#customize-title"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<h3>Plano de fundo</h3>",
+          "target": [
+            ".setting-group:nth-child(2) > h3"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<span>Aurora</span>",
+          "target": [
+            ".setting-group:nth-child(2) > .wallpaper-options > .wall-northern.wallpaper-swatch[data-wallpaper=\"northern\"] > span"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<span>Pôr do sol</span>",
+          "target": [
+            ".setting-group:nth-child(2) > .wallpaper-options > .wall-ember.wallpaper-swatch[data-wallpaper=\"ember\"] > span"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<span>Azul profundo</span>",
+          "target": [
+            ".setting-group:nth-child(2) > .wallpaper-options > .wall-ocean.active[data-wallpaper=\"ocean\"] > span"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<span>Grafite</span>",
+          "target": [
+            ".setting-group:nth-child(2) > .wallpaper-options > .wall-graphite.wallpaper-swatch[data-wallpaper=\"graphite\"] > span"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<h3>Preferências</h3>",
+          "target": [
+            ".setting-group:nth-child(3) > h3"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<label for=\"drawer-accent\">Cor de destaque <small>Botões e seleções</small></label>",
+          "target": [
+            "label[for=\"drawer-accent\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<small>Botões e seleções</small>",
+          "target": [
+            "label[for=\"drawer-accent\"] > small"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ]
+    }
+  ],
+  "lifecycle": {
+    "effectiveLaunch": {
+      "browserLaunched": true,
+      "engine": "chrome",
+      "launchHash": 16228916338243422000
+    },
+    "launched": false,
+    "relaunchedBrowser": false,
+    "restartedBackground": false,
+    "restoreStatus": "not_configured",
+    "reused": true,
+    "saveStatus": "not_attempted"
+  },
+  "url": "http://127.0.0.1:3127/apps/settings",
+  "violations": []
+}

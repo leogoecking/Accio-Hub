@@ -1,0 +1,686 @@
+[
+  {
+    "id": "valid-dns-1",
+    "group": "dns",
+    "accepted": true,
+    "url": "http://example.test"
+  },
+  {
+    "id": "valid-dns-2",
+    "group": "dns",
+    "accepted": true,
+    "url": "https://example.test/"
+  },
+  {
+    "id": "valid-dns-3",
+    "group": "dns",
+    "accepted": true,
+    "url": "HTTPS://EXAMPLE.TEST/Path?q=1#frag"
+  },
+  {
+    "id": "valid-dns-4",
+    "group": "dns",
+    "accepted": true,
+    "url": "https://sub.example.test/a?email=qa@example.test#tag@1"
+  },
+  {
+    "id": "valid-dns-5",
+    "group": "dns",
+    "accepted": true,
+    "url": "https://my-site.example.test"
+  },
+  {
+    "id": "valid-dns-6",
+    "group": "dns",
+    "accepted": true,
+    "url": "https://3com.example.test"
+  },
+  {
+    "id": "valid-dns-7",
+    "group": "dns",
+    "accepted": true,
+    "url": "https://a.42.example"
+  },
+  {
+    "id": "valid-dns-8",
+    "group": "dns",
+    "accepted": true,
+    "url": "https://42.example.test"
+  },
+  {
+    "id": "valid-dns-9",
+    "group": "dns",
+    "accepted": true,
+    "url": "https://a42.example"
+  },
+  {
+    "id": "valid-dns-10",
+    "group": "dns",
+    "accepted": true,
+    "url": "https://node.0xg"
+  },
+  {
+    "id": "valid-dns-11",
+    "group": "dns",
+    "accepted": true,
+    "url": "https://example.test."
+  },
+  {
+    "id": "valid-dns-12",
+    "group": "dns",
+    "accepted": true,
+    "url": "http://localhost:3000"
+  },
+  {
+    "id": "valid-dns-13",
+    "group": "dns",
+    "accepted": true,
+    "url": "https://xn--caf-dma.test"
+  },
+  {
+    "id": "valid-dns-14",
+    "group": "dns",
+    "accepted": true,
+    "url": "https://xn--bcher-kva.example"
+  },
+  {
+    "id": "valid-ipv4-1",
+    "group": "ipv4",
+    "accepted": true,
+    "url": "http://127.0.0.1"
+  },
+  {
+    "id": "valid-ipv4-2",
+    "group": "ipv4",
+    "accepted": true,
+    "url": "https://0.0.0.0:1/a"
+  },
+  {
+    "id": "valid-ipv4-3",
+    "group": "ipv4",
+    "accepted": true,
+    "url": "https://255.255.255.255:65535/a"
+  },
+  {
+    "id": "valid-ipv4-4",
+    "group": "ipv4",
+    "accepted": true,
+    "url": "https://192.168.1.2:8080"
+  },
+  {
+    "id": "valid-ipv6-1",
+    "group": "ipv6",
+    "accepted": true,
+    "url": "http://[::1]:3000"
+  },
+  {
+    "id": "valid-ipv6-2",
+    "group": "ipv6",
+    "accepted": true,
+    "url": "https://[2001:db8::1]/a"
+  },
+  {
+    "id": "valid-ipv6-3",
+    "group": "ipv6",
+    "accepted": true,
+    "url": "https://[2001:DB8:0:0:0:0:0:1]:443"
+  },
+  {
+    "id": "valid-ipv6-4",
+    "group": "ipv6",
+    "accepted": true,
+    "url": "https://[::ffff:127.0.0.1]/"
+  },
+  {
+    "id": "valid-port-1",
+    "group": "port",
+    "accepted": true,
+    "url": "https://example.test:1"
+  },
+  {
+    "id": "valid-port-2",
+    "group": "port",
+    "accepted": true,
+    "url": "https://example.test:65535"
+  },
+  {
+    "id": "valid-port-3",
+    "group": "port",
+    "accepted": true,
+    "url": "http://example.test:080"
+  },
+  {
+    "id": "valid-port-4",
+    "group": "port",
+    "accepted": true,
+    "url": "https://example.test:00001"
+  },
+  {
+    "id": "valid-path-1",
+    "group": "path",
+    "accepted": true,
+    "url": "https://example.test/a%20b?q=%40#%23"
+  },
+  {
+    "id": "valid-path-2",
+    "group": "path",
+    "accepted": true,
+    "url": "https://example.test/?a=1&b=2#ref"
+  },
+  {
+    "id": "valid-path-3",
+    "group": "path",
+    "accepted": true,
+    "url": "https://example.test/%E2%9C%93"
+  },
+  {
+    "id": "valid-path-4",
+    "group": "path",
+    "accepted": true,
+    "url": "https://example.test/path?q=%3Cscript%3E"
+  },
+  {
+    "id": "invalid-numeric-1",
+    "group": "numeric",
+    "accepted": false,
+    "url": "https://0x7f.0.0.1"
+  },
+  {
+    "id": "invalid-numeric-2",
+    "group": "numeric",
+    "accepted": false,
+    "url": "https://0x7f000001"
+  },
+  {
+    "id": "invalid-numeric-3",
+    "group": "numeric",
+    "accepted": false,
+    "url": "https://0X7F000001"
+  },
+  {
+    "id": "invalid-numeric-4",
+    "group": "numeric",
+    "accepted": false,
+    "url": "https://0x7f.1"
+  },
+  {
+    "id": "invalid-numeric-5",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://0177.0.0.1"
+  },
+  {
+    "id": "invalid-numeric-6",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://127.000.0.1"
+  },
+  {
+    "id": "invalid-numeric-7",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://001.2.3.4"
+  },
+  {
+    "id": "invalid-numeric-8",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://1.2.3.004"
+  },
+  {
+    "id": "invalid-numeric-9",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://127.1"
+  },
+  {
+    "id": "invalid-numeric-10",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://127.0.1"
+  },
+  {
+    "id": "invalid-numeric-11",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://2130706433"
+  },
+  {
+    "id": "invalid-numeric-12",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://4294967295"
+  },
+  {
+    "id": "invalid-numeric-13",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://4294967296"
+  },
+  {
+    "id": "invalid-numeric-14",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://0"
+  },
+  {
+    "id": "invalid-numeric-15",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://127.0.0.1."
+  },
+  {
+    "id": "invalid-numeric-16",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://0x7f000001."
+  },
+  {
+    "id": "invalid-numeric-17",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://127.0.0.1.."
+  },
+  {
+    "id": "invalid-numeric-18",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://256.0.0.1"
+  },
+  {
+    "id": "invalid-numeric-19",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://1.2.3.256"
+  },
+  {
+    "id": "invalid-numeric-20",
+    "group": "numeric",
+    "accepted": false,
+    "url": "https://example.123"
+  },
+  {
+    "id": "invalid-numeric-21",
+    "group": "numeric",
+    "accepted": false,
+    "url": "https://a.42"
+  },
+  {
+    "id": "invalid-numeric-22",
+    "group": "numeric",
+    "accepted": false,
+    "url": "https://example.09"
+  },
+  {
+    "id": "invalid-numeric-23",
+    "group": "numeric",
+    "accepted": false,
+    "url": "https://example.0x"
+  },
+  {
+    "id": "invalid-numeric-24",
+    "group": "numeric",
+    "accepted": false,
+    "url": "https://example.0xF"
+  },
+  {
+    "id": "invalid-numeric-25",
+    "group": "numeric",
+    "accepted": false,
+    "url": "https://example.0X0"
+  },
+  {
+    "id": "invalid-numeric-26",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://0x7f.0x0.0x0.0x1"
+  },
+  {
+    "id": "invalid-numeric-27",
+    "group": "numeric",
+    "accepted": false,
+    "url": "http://1.2.0x3"
+  },
+  {
+    "id": "invalid-authority-1",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://%65xample.test"
+  },
+  {
+    "id": "invalid-authority-2",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://example%2etest"
+  },
+  {
+    "id": "invalid-authority-3",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://127%2e0%2e0%2e1"
+  },
+  {
+    "id": "invalid-authority-4",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://user:pass@example.test"
+  },
+  {
+    "id": "invalid-authority-5",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://@example.test"
+  },
+  {
+    "id": "invalid-authority-6",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://user@example.test"
+  },
+  {
+    "id": "invalid-authority-7",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://user%40example.test"
+  },
+  {
+    "id": "invalid-authority-8",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://example.test%00.evil.test"
+  },
+  {
+    "id": "invalid-authority-9",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://%5B::1%5D"
+  },
+  {
+    "id": "invalid-authority-10",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://example.test:"
+  },
+  {
+    "id": "invalid-authority-11",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://example.test:0"
+  },
+  {
+    "id": "invalid-authority-12",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://example.test:65536"
+  },
+  {
+    "id": "invalid-authority-13",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://example.test:999999999999"
+  },
+  {
+    "id": "invalid-authority-14",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://example.test:-1"
+  },
+  {
+    "id": "invalid-authority-15",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://example.test:+80"
+  },
+  {
+    "id": "invalid-authority-16",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://example.test:8a"
+  },
+  {
+    "id": "invalid-authority-17",
+    "group": "authority",
+    "accepted": false,
+    "url": "https://example.test:80:90"
+  },
+  {
+    "id": "invalid-dns-1",
+    "group": "dns",
+    "accepted": false,
+    "url": "https://"
+  },
+  {
+    "id": "invalid-dns-2",
+    "group": "dns",
+    "accepted": false,
+    "url": "https://."
+  },
+  {
+    "id": "invalid-dns-3",
+    "group": "dns",
+    "accepted": false,
+    "url": "https://.example.test"
+  },
+  {
+    "id": "invalid-dns-4",
+    "group": "dns",
+    "accepted": false,
+    "url": "https://example..test"
+  },
+  {
+    "id": "invalid-dns-5",
+    "group": "dns",
+    "accepted": false,
+    "url": "https://bad_host.test"
+  },
+  {
+    "id": "invalid-dns-6",
+    "group": "dns",
+    "accepted": false,
+    "url": "https://-bad.test"
+  },
+  {
+    "id": "invalid-dns-7",
+    "group": "dns",
+    "accepted": false,
+    "url": "https://bad-.test"
+  },
+  {
+    "id": "invalid-dns-8",
+    "group": "dns",
+    "accepted": false,
+    "url": "https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test"
+  },
+  {
+    "id": "invalid-dns-9",
+    "group": "dns",
+    "accepted": false,
+    "url": "https://xn--.test"
+  },
+  {
+    "id": "invalid-dns-10",
+    "group": "dns",
+    "accepted": false,
+    "url": "https://exämple.test"
+  },
+  {
+    "id": "invalid-dns-11",
+    "group": "dns",
+    "accepted": false,
+    "url": "https://example。test"
+  },
+  {
+    "id": "invalid-ipv6-1",
+    "group": "ipv6",
+    "accepted": false,
+    "url": "https://[::zzz]"
+  },
+  {
+    "id": "invalid-ipv6-2",
+    "group": "ipv6",
+    "accepted": false,
+    "url": "https://[::1]x"
+  },
+  {
+    "id": "invalid-ipv6-3",
+    "group": "ipv6",
+    "accepted": false,
+    "url": "https://[::1]:"
+  },
+  {
+    "id": "invalid-ipv6-4",
+    "group": "ipv6",
+    "accepted": false,
+    "url": "https://[fe80::1%25eth0]"
+  },
+  {
+    "id": "invalid-ipv6-5",
+    "group": "ipv6",
+    "accepted": false,
+    "url": "https://[::ffff:127.000.0.1]"
+  },
+  {
+    "id": "invalid-ipv6-6",
+    "group": "ipv6",
+    "accepted": false,
+    "url": "https://[127.0.0.1]"
+  },
+  {
+    "id": "invalid-ipv6-7",
+    "group": "ipv6",
+    "accepted": false,
+    "url": "https://::1"
+  },
+  {
+    "id": "invalid-ipv6-8",
+    "group": "ipv6",
+    "accepted": false,
+    "url": "https://[2001:db8::1"
+  },
+  {
+    "id": "invalid-scheme-1",
+    "group": "scheme",
+    "accepted": false,
+    "url": "javascript:alert(1)"
+  },
+  {
+    "id": "invalid-scheme-2",
+    "group": "scheme",
+    "accepted": false,
+    "url": "data:text/html,<script>x</script>"
+  },
+  {
+    "id": "invalid-scheme-3",
+    "group": "scheme",
+    "accepted": false,
+    "url": "file:///tmp/synthetic"
+  },
+  {
+    "id": "invalid-scheme-4",
+    "group": "scheme",
+    "accepted": false,
+    "url": "ftp://example.test"
+  },
+  {
+    "id": "invalid-scheme-5",
+    "group": "scheme",
+    "accepted": false,
+    "url": "/relative"
+  },
+  {
+    "id": "invalid-scheme-6",
+    "group": "scheme",
+    "accepted": false,
+    "url": "//example.test"
+  },
+  {
+    "id": "invalid-scheme-7",
+    "group": "scheme",
+    "accepted": false,
+    "url": "https:example.test"
+  },
+  {
+    "id": "invalid-scheme-8",
+    "group": "scheme",
+    "accepted": false,
+    "url": "https:///example.test"
+  },
+  {
+    "id": "invalid-characters-1",
+    "group": "characters",
+    "accepted": false,
+    "url": "https://example.test/a\\b"
+  },
+  {
+    "id": "invalid-characters-2",
+    "group": "characters",
+    "accepted": false,
+    "url": "https://example.test\\@other.test"
+  },
+  {
+    "id": "invalid-characters-3",
+    "group": "characters",
+    "accepted": false,
+    "url": "https://example.test/%zz"
+  },
+  {
+    "id": "invalid-characters-4",
+    "group": "characters",
+    "accepted": false,
+    "url": "https://example.test/%"
+  },
+  {
+    "id": "invalid-characters-5",
+    "group": "characters",
+    "accepted": false,
+    "url": "https://example.test/a b"
+  },
+  {
+    "id": "invalid-characters-6",
+    "group": "characters",
+    "accepted": false,
+    "url": "https://example.test/<script>"
+  },
+  {
+    "id": "invalid-characters-7",
+    "group": "characters",
+    "accepted": false,
+    "url": "https://example.test/\n"
+  },
+  {
+    "id": "invalid-characters-8",
+    "group": "characters",
+    "accepted": false,
+    "url": "https://example.test/\r"
+  },
+  {
+    "id": "invalid-characters-9",
+    "group": "characters",
+    "accepted": false,
+    "url": "https://example.test/\t"
+  },
+  {
+    "id": "invalid-characters-10",
+    "group": "characters",
+    "accepted": false,
+    "url": "https://example.test/\u0000"
+  },
+  {
+    "id": "invalid-characters-11",
+    "group": "characters",
+    "accepted": false,
+    "url": "https://example.test/"
+  },
+  {
+    "id": "invalid-surrounding_space-1",
+    "group": "surrounding_space",
+    "accepted": false,
+    "url": " https://example.test"
+  },
+  {
+    "id": "invalid-surrounding_space-2",
+    "group": "surrounding_space",
+    "accepted": false,
+    "url": "https://example.test "
+  }
+]

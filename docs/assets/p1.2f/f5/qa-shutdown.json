@@ -1,0 +1,22 @@
+{
+  "sessions_closed": [
+    "accio-f4close-contrast",
+    "accio-f4close-f1c",
+    "accio-f4close-f1b",
+    "accio-f4close-e2",
+    "accio-f4close-triage"
+  ],
+  "servers": [
+    {
+      "pid": 2046953,
+      "port": 3127,
+      "stopped_own_synthetic_server": true
+    },
+    {
+      "pid": 2046954,
+      "port": 3126,
+      "stopped_own_synthetic_server": true
+    }
+  ],
+  "system_services_modified": false
+}

@@ -1,0 +1,35 @@
+PASS Start pause resume with confirmed checkpoint and immutable start timestamp
+PASS Theme and accent during active focus preserve UID duration and state
+PASS Active preset changes are refused visibly without modifying duration
+PASS Dashboard Focus and project show same global session without context reassignment
+PASS Explicit reset preserves history creates new ready UID and does not start automatically
+PASS Ready preset replacement is explicit and atomic
+PASS Lost HTTP response retains envelope and replay reconciles current state
+PASS Long interruption preserves checkpoint and pending recovery across reload
+PASS Accept only server estimate then resume; old recovery ID cannot apply twice
+PASS Invalid server clock estimate is not offered; keeping checkpoint preserves time
+PASS Nominal expiry never completes automatically; explicit reconcile and confirmation
+PASS Expiry with browser observation gap requires recovery before completion
+PASS Contextual task Unicode UID starts once; task controls still work
+PASS Personal task and project-only context remain global across navigation
+PASS Completed task cannot start focus; reopening restores action
+PASS Two tabs reconcile and stale commands cannot duplicate or silently toggle history
+PASS Concurrent preference changes cause 409 without appearance overwrite
+PASS Archived project blocks start and resume but permits pause and cancellation
+PASS Polling and ticks do not write sessions commands or versions
+PASS Rapid Turbo navigation keeps one controller and no clock writes
+PASS Network loss visibly unconfirmed and reconnect reads current state
+PASS Repeated Turbo lifecycle and hidden-page polling have no duplicate timers or listeners
+PASS Two confirmation dialogs converge without duplicate completed history
+PASS Completed focus does not complete its task and moved tasks preserve historical project
+PASS Visual dark 320px Dashboard Focus Project and dialog
+PASS Visual dark 390px Dashboard Focus Project and dialog
+PASS Visual dark 768px Dashboard Focus Project and dialog
+PASS Visual dark 1440px Dashboard Focus Project and dialog
+PASS Visual dark 1920px Dashboard Focus Project and dialog
+PASS Visual light 320px Dashboard Focus Project and dialog
+PASS Visual light 390px Dashboard Focus Project and dialog
+PASS Visual light 768px Dashboard Focus Project and dialog
+PASS Visual light 1440px Dashboard Focus Project and dialog
+PASS Visual light 1920px Dashboard Focus Project and dialog
+{"passed":37}

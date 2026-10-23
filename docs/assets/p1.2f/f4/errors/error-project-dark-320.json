@@ -1,0 +1,602 @@
+{
+  "accent": "#b1f07d",
+  "active": null,
+  "fontsLoaded": "loaded",
+  "geometry": [
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 1000,
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      "selector": "html > body > div.shell > aside.rail"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 57,
+        "width": 271,
+        "x": 49,
+        "y": 0
+      },
+      "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > header.headbar"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 49,
+        "width": 271,
+        "x": 49,
+        "y": 57
+      },
+      "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone"
+    }
+  ],
+  "modal": null,
+  "nodes": [
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 153.3125,
+          "x": 38,
+          "y": 179.96875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "#project-form > div.block-top:nth-of-type(1) > div > div.eyebrow",
+      "text": "SEU ESPAÇO, SEU JEITO",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 20,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 26,
+          "width": 113.90625,
+          "x": 38,
+          "y": 192.96875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#project-dialog-title",
+      "text": "Novo projeto",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 19,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 25,
+          "width": 140.21875,
+          "x": 116,
+          "y": 266.96875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#project-preview > strong",
+      "text": "Projeto foco QA",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 33.421875,
+          "x": 38,
+          "y": 341.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#project-form > label:nth-of-type(1)",
+      "text": "Nome",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 59.4375,
+          "x": 38,
+          "y": 422.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#project-form > label:nth-of-type(2)",
+      "text": "Descrição",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 46.25,
+          "x": 97.4375,
+          "y": 422.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "#project-form > label:nth-of-type(2) > span.project-optional",
+      "text": "opcional",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 31.0625,
+          "x": 38,
+          "y": 545.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#project-form > div.project-form-properties:nth-of-type(3) > label:nth-of-type(1)",
+      "text": "Ícone",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 20.3125,
+          "x": 187,
+          "y": 545.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#project-form > div.project-form-properties:nth-of-type(3) > label:nth-of-type(2)",
+      "text": "Cor",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 165.4375,
+          "x": 52,
+          "y": 678.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#project-form > p.project-form-error:nth-of-type(1)",
+      "text": "Name key has already been taken",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 227,
+          "x": 38,
+          "y": 724.515625
+        },
+        {
+          "height": 14,
+          "width": 74.9375,
+          "x": 38,
+          "y": 741.015625
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "#project-form-hint",
+      "text": "Você poderá pausar, favoritar ou arquivar este espaço depois.",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 51.890625,
+          "x": 64.75,
+          "y": 792.515625
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#project-form > div.project-form-actions:nth-of-type(7) > button.button.tertiary:nth-of-type(1)",
+      "text": "Cancelar",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 74.59375,
+          "x": 193.40625,
+          "y": 792.515625
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        16,
+        32,
+        28,
+        255
+      ],
+      "selector": "#project-form > div.project-form-actions:nth-of-type(7) > button.button:nth-of-type(2)",
+      "text": "Criar projeto",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "value",
+      "opacity": 1,
+      "placeholderOpacity": 1,
+      "rects": [
+        {
+          "height": 34,
+          "width": 236,
+          "x": 42,
+          "y": 368.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#project-name",
+      "text": "Projeto foco QA",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "value",
+      "opacity": 1,
+      "placeholderOpacity": 1,
+      "rects": [
+        {
+          "height": 36,
+          "width": 123,
+          "x": 42,
+          "y": 572.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#project-icon",
+      "text": "Blocos",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "value",
+      "opacity": 1,
+      "placeholderOpacity": 1,
+      "rects": [
+        {
+          "height": 26,
+          "width": 87,
+          "x": 191,
+          "y": 623.46875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#project-color-hex",
+      "text": "#8befcc",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#project-name",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 42,
+          "width": 244,
+          "x": 38,
+          "y": 364.46875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        140,
+        151,
+        167,
+        248
+      ],
+      "selector": "#project-name",
+      "text": "Nome",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#project-description",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 80,
+          "width": 244,
+          "x": 38,
+          "y": 445.46875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        140,
+        151,
+        167,
+        248
+      ],
+      "selector": "#project-description",
+      "text": "Descrição opcional",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#project-icon",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 44,
+          "width": 131,
+          "x": 38,
+          "y": 568.46875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        140,
+        151,
+        167,
+        248
+      ],
+      "selector": "#project-icon",
+      "text": "ÍconeBlocos\nCódigo\nLivro\nFoco\nFeed\nCalendário\nNuvem\nMúsica\nTarefas\nCarta",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#project-color-hex",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 34,
+          "width": 95,
+          "x": 187,
+          "y": 619.46875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        140,
+        151,
+        167,
+        248
+      ],
+      "selector": "#project-color-hex",
+      "text": "Cor hexadecimal",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 11.083343505859377,
+          "width": 11.083328247070312,
+          "x": 254.4583282470703,
+          "y": 193.9270782470703
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "#project-form > div.block-top:nth-of-type(1) > button.project-close > svg > path",
+      "text": "Fechar formulário de projeto",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "focus",
+      "offset": 3,
+      "opacity": 1,
+      "outline": "solid",
+      "rects": [
+        {
+          "height": 44,
+          "width": 126.59375,
+          "x": 155.40625,
+          "y": 778.515625
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#project-form > div.project-form-actions:nth-of-type(7) > button.button:nth-of-type(2)",
+      "unknown": [],
+      "width": 2
+    }
+  ],
+  "overflow": false,
+  "theme": "dark",
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 320
+  },
+  "wallpaper": "ember"
+}

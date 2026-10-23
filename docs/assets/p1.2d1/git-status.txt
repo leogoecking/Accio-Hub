@@ -1,0 +1,42 @@
+ M AGENTS.md
+ M docs/ARCHITECTURE.md
+ M docs/P1.2D_PLAN.md
+ M docs/ROADMAP.md
+ M rails/README.md
+ M rails/app/assets/stylesheets/foundation.css
+ M rails/app/controllers/studio_controller.rb
+ M rails/app/helpers/studio_helper.rb
+ M rails/app/javascript/application.js
+ M rails/app/javascript/controllers/studio_controller.js
+ M rails/app/views/studio/_board.html.erb
+ M rails/app/views/studio/_widget.html.erb
+ M rails/app/views/studio/show.html.erb
+ M rails/app/views/studio/widgets/_projects.html.erb
+ M rails/config/importmap.rb
+ M rails/config/routes.rb
+ M rails/script/preferences-browser-check.mjs
+ M rails/script/preferences-browser-recovery-check.mjs
+ M rails/script/preferences-browser-restart-check.mjs
+ M rails/script/preferences-check.rb
+ M rails/test/integration/foundation_test.rb
+?? docs/P1.2D1_VERIFICATION.md
+?? docs/assets/p1.2d1/
+?? rails/app/controllers/projects_controller.rb
+?? rails/app/helpers/projects_helper.rb
+?? rails/app/javascript/controllers/project_command_controller.js
+?? rails/app/javascript/controllers/project_form_controller.js
+?? rails/app/javascript/controllers/project_library_controller.js
+?? rails/app/javascript/controllers/project_modal_controller.js
+?? rails/app/javascript/controllers/project_tabs_controller.js
+?? rails/app/javascript/controllers/project_ui.js
+?? rails/app/services/project_commands.rb
+?? rails/app/services/project_library.rb
+?? rails/app/views/projects/
+?? rails/app/views/studio/_shell.html.erb
+?? rails/script/projects-browser-additional-check.mjs
+?? rails/script/projects-browser-check.mjs
+?? rails/script/projects-browser-seed.rb
+?? rails/script/projects-browser-setup.rb
+?? rails/script/projects-browser-state-check.rb
+?? rails/script/projects-check.rb
+?? rails/test/integration/projects_test.rb

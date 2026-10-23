@@ -1,0 +1,338 @@
+[
+  {
+    "file": "prototype/knowledge-view.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/knowledge.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/state.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/app.js",
+    "pass": true
+  },
+  {
+    "file": "prototype/markdown.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/projects.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/project-library.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/project-space-view.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/project-space.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/tests/knowledge.test.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/tests/search-browser-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/tests/projects.test.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/tests/knowledge-browser-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/tests/projects-browser-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/tests/browser-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/tests/project-space.test.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/tests/final-fixes-browser-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/tests/state.test.mjs",
+    "pass": true
+  },
+  {
+    "file": "prototype/tests/project-space-browser-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/application.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/login_contrast_controller.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/focus_controller.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/project_form_controller.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/focus_presenter.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/focus_preset.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/task_command_controller.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/reference_modal_controller.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/project_command_controller.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/focus_recovery.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/task_form_controller.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/project_library_controller.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/focus_client.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/task_ui.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/reference_form_controller.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/studio_controller.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/project_modal_controller.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/task_search_controller.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/project_tabs_controller.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/project_ui.js",
+    "pass": true
+  },
+  {
+    "file": "rails/app/javascript/controllers/task_modal_controller.js",
+    "pass": true
+  },
+  {
+    "file": "rails/script/focus-browser-restart.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/reference-url-matrix.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/preferences-browser-recovery-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/preferences-browser-restart-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/preferences-browser-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/accessibility-keyboard-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/references-browser-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/accessibility-additional.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/references-browser-restart-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/accessibility-paint-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/focus-preset-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/reuse_prototype.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/focus-recovery-restart.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/projects-browser-additional-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/focus-client-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/focus-recovery-browser-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/accessibility-browser-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/references-visual-baseline.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/compare-prototype.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/focus-browser-additional.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/foundation-additional-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/projects-browser-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/focus-integrated-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/tasks-visual-baseline.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/tasks-browser-additional-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/focus-visual-baseline.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/tasks-browser-restart-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/references-browser-additional-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/focus-preset-browser-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/accessibility-diagnose.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/focus-recovery-hunt.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/accessibility-sample.js",
+    "pass": true
+  },
+  {
+    "file": "rails/script/focus-recovery-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/accessibility-controls.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/tasks-browser-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/transversal-browser-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/focus-browser-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/foundation-browser-check.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/accessibility-errors.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/accessibility-baseline.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/reference-context-compare.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/reference-context-diagnose.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/focus-preset-hunt.mjs",
+    "pass": true
+  },
+  {
+    "file": "rails/script/reference-url-browser-check.mjs",
+    "pass": true
+  }
+]

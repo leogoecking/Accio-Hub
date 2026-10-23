@@ -1,0 +1,77 @@
+{
+  "base_head": "7c1cea40cc180a3c03f5521d83219690294cdb1b",
+  "branch": "p1-persistence",
+  "audited_files": [
+    {
+      "file": "rails/config/sqlite_backup_contract.json",
+      "audited_sha256": "cce26197bfa3afec45eaf90d978fc1a358d85dc520c73361f895bfdce43b9dd3",
+      "actual_sha256": "cce26197bfa3afec45eaf90d978fc1a358d85dc520c73361f895bfdce43b9dd3",
+      "match": true
+    },
+    {
+      "file": "rails/test/services/sqlite_backup_contract_test.rb",
+      "audited_sha256": "c39da8a9496b23156d3df11a8caee926305115c2523b74a0e4308c85794c30a9",
+      "actual_sha256": "c39da8a9496b23156d3df11a8caee926305115c2523b74a0e4308c85794c30a9",
+      "match": true
+    },
+    {
+      "file": "rails/script/backup-schema-contract-check.rb",
+      "audited_sha256": "5e099e7c03b26cfbbeee8d0151f83bbb2298f85122573496a5c1c7f900b13cfa",
+      "actual_sha256": "5e099e7c03b26cfbbeee8d0151f83bbb2298f85122573496a5c1c7f900b13cfa",
+      "match": true
+    },
+    {
+      "file": "rails/script/final-backup-schema-probe.rb",
+      "audited_sha256": "d30cad3670ffa6f03622c62c8e62915514f36fd04799ec7afea5db56318ae1d7",
+      "actual_sha256": "d30cad3670ffa6f03622c62c8e62915514f36fd04799ec7afea5db56318ae1d7",
+      "match": true
+    },
+    {
+      "file": "rails/script/final-persistence-check.mjs",
+      "audited_sha256": "dad5db0f2d4166e123bf12890397006d3aec72145f167ca27d36bc257db87545",
+      "actual_sha256": "dad5db0f2d4166e123bf12890397006d3aec72145f167ca27d36bc257db87545",
+      "match": true
+    },
+    {
+      "file": "docs/P1.2F5_01_AUDIT.md",
+      "audited_sha256": "68349ae6a99d4e86b597aaa7a75a91c820c9c2190d3712dcdc0ab9c4c02ac38a",
+      "actual_sha256": "68349ae6a99d4e86b597aaa7a75a91c820c9c2190d3712dcdc0ab9c4c02ac38a",
+      "match": true
+    }
+  ],
+  "final_audit_sha256": "96e50a473b84a395438a6446b900209616ad7cf7f7cb9288228b10af82eb4b47",
+  "production_change_only": "rails/config/sqlite_backup_contract.json",
+  "all_other_contract_bytes_preserved": true,
+  "no_model_schema_migration_domain_or_frontend_change": true,
+  "private_qa_metadata": {
+    "own_workspace_mode": "0700",
+    "files_inspected_by_metadata_only": 16,
+    "database_files": 2,
+    "archives": 1,
+    "workspace_outside_checkout": true
+  },
+  "no_personal_data": true,
+  "release_levels": {
+    "A": "APROVADO",
+    "B": "APROVADO COM RESSALVAS",
+    "C": "NÃO AUTORIZADO"
+  },
+  "human_approval": "Pedido de encerramento técnico P1.2/F5 de 23/10/2026; ressalvas aceitas; commit autorizado, sem push/merge/tag/P1.3.",
+  "staging_review": {
+    "files_expected": 254,
+    "evidence_bytes_approximate": 13981458,
+    "only_authorized_paths": true,
+    "all_index_blobs_match_working_files": true,
+    "no_deletions": true,
+    "strict_whitespace_pass_except_preserved_raw_paths": true,
+    "preserved_raw_whitespace_paths": [
+      "docs/P1.2F5_01_AUDIT.md",
+      "docs/P1.2F5_AUDIT.md",
+      "docs/assets/p1.2f/f5/brakeman.log",
+      "docs/assets/p1.2f/f5/closure/brakeman/run.log",
+      "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/brakeman-final.log",
+      "docs/assets/p1.2f/f5/integrated.log"
+    ],
+    "temporary_config_only_no_git_config_change": true
+  }
+}

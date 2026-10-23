@@ -1,0 +1,62 @@
+{
+  "branch": "p1-persistence",
+  "F3a_commit": "c3c96d15279ce262fec868609e55d133fb58bd33",
+  "F3b_committed": false,
+  "index_empty": true,
+  "existing_runtime_files_changed": [],
+  "source_sha256": {
+    "rails/app/services/sqlite_backup_snapshot.rb": "b45c89fddfbe4734607d28f6fed5552e00f7cfb265913efd0088752aa63a8bbb",
+    "rails/app/services/synthetic_sqlite_backup.rb": "87a23cdb3d04628595e89938e99c30999366999e0d13d81ad40eadc3eb0f839b",
+    "rails/config/sqlite_backup_contract.json": "31fcfafc5fd0deaedeef454a4380c9365882a9bdedd186c2fa657b291df3f367",
+    "rails/lib/tasks/sqlite_backups.rake": "27cd8f714c0cd8c2d3ba7a01a00b74b68cd14ae7cc23fc3cd9e36012bdd05e8c",
+    "rails/script/restored-synthetic-server.rb": "f415832df9d5396ec8274b5f457a172d0ec5ea095752dd3b5d41bed9c20aa719",
+    "rails/script/sqlite-backups-check.rb": "be02013e9a570ebbc2bfa0ed3e7e2315bcf6d84868216d59c0851c20b3950fa3",
+    "rails/script/sqlite-backups-worker.rb": "b3fc04928af60db863fee4259b0d958c4393bd1cbac57daf0e404a2ab824c7d0",
+    "rails/test/services/synthetic_sqlite_backup_test.rb": "20102fe0ef651d665fea5863b8b41e2098bdff5a99ea420605e168ac6381dc94",
+    "AGENTS.md": "c1c36c53c3091db0d9b88487cb4a276fa90be0c3326d84272e5c56f6aa5fc018",
+    "rails/README.md": "0143a10bb7c073a55b3450856db665a534f3e2b44e68e36c58c91ce4d8755fc7",
+    "docs/P1.2F3B_VERIFICATION.md": "e5da64d0404d390e5f783f0cb7f2897ba6fa4b11bd07186be7440ed2969de765"
+  },
+  "rails": {
+    "tests": 187,
+    "assertions": 3348,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0
+  },
+  "F3b_subset": {
+    "tests": 20,
+    "assertions": 140
+  },
+  "js_cases": 41,
+  "js_syntax_files": 74,
+  "rubocop_files": 118,
+  "rubocop_offenses": 0,
+  "brakeman_warnings": 0,
+  "zeitwerk": "PASS",
+  "sqlite": {
+    "triggers": 25,
+    "indexes": 36,
+    "integrity": "ok",
+    "foreign_key_check": [],
+    "migrations_schema_load_equivalent": true
+  },
+  "independent_AR_models_compared": 10,
+  "concurrent_domain_writers": 4,
+  "auth_only_destination_rows_deleted": true,
+  "fresh_destination_key_not_in_backup": true,
+  "late_source_cookie_collision_rejected": true,
+  "source_personal_data_accessed": false,
+  "exports_databases_cookies_credentials_in_versionable_evidence": false,
+  "tag_push_merge": false,
+  "F3c_F4_F5_P1_3_started": false,
+  "limitations": [
+    "synthetic only",
+    "private TAR not encrypted",
+    "hashes not authenticated provenance",
+    "Linux filesystem only",
+    "hardware power-loss not tested",
+    "no operational recovery without source fixture",
+    "historical contrast and Firefox caveats preserved"
+  ]
+}

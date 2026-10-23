@@ -1,0 +1,419 @@
+{
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 320
+  },
+  "theme": "light",
+  "wallpaper": "ember",
+  "accent": "#b1f07d",
+  "measurements": [
+    {
+      "kind": "text",
+      "selector": "#project-form > div.block-top:nth-of-type(1) > div > div.eyebrow",
+      "text": "SEU ESPAÇO, SEU JEITO",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.678,
+      "samples": 567,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-dialog-title",
+      "text": "Novo projeto",
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 931,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-preview > strong",
+      "text": "Projeto foco QA",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.526,
+      "samples": 980,
+      "background_at_worst": [
+        237,
+        249,
+        247
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-form > label:nth-of-type(1)",
+      "text": "Nome",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 158,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-form > label:nth-of-type(2)",
+      "text": "Descrição",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 299,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-form > label:nth-of-type(2) > span.project-optional",
+      "text": "opcional",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.678,
+      "samples": 196,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-form > div.project-form-properties:nth-of-type(3) > label:nth-of-type(1)",
+      "text": "Ícone",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 163,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-form > div.project-form-properties:nth-of-type(3) > label:nth-of-type(2)",
+      "text": "Cor",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 94,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-form > p.project-form-error:nth-of-type(1)",
+      "text": "Name key has already been taken",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 690,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-form-hint",
+      "text": "Você poderá pausar, favoritar ou arquivar este espaço depois.",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.678,
+      "samples": 1312,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-form > div.project-form-actions:nth-of-type(7) > button.button.tertiary:nth-of-type(1)",
+      "text": "Cancelar",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 248,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#project-form > div.project-form-actions:nth-of-type(7) > button.button:nth-of-type(2)",
+      "text": "Criar projeto",
+      "required": 4.5,
+      "rgba": [
+        16,
+        32,
+        28,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.55,
+      "samples": 355,
+      "background_at_worst": [
+        177,
+        240,
+        125
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "value",
+      "selector": "#project-name",
+      "text": "Projeto foco QA",
+      "required": 4.5,
+      "rgba": [
+        22,
+        42,
+        60,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.755,
+      "samples": 440,
+      "background_at_worst": [
+        233,
+        240,
+        245
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "value",
+      "selector": "#project-icon",
+      "text": "Blocos",
+      "required": 4.5,
+      "rgba": [
+        22,
+        42,
+        60,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.755,
+      "samples": 195,
+      "background_at_worst": [
+        233,
+        240,
+        245
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "value",
+      "selector": "#project-color-hex",
+      "text": "#8befcc",
+      "required": 4.5,
+      "rgba": [
+        22,
+        42,
+        60,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.755,
+      "samples": 200,
+      "background_at_worst": [
+        233,
+        240,
+        245
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#project-name",
+      "text": "Nome",
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#project-description",
+      "text": "Descrição opcional",
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#project-icon",
+      "text": "ÍconeBlocos\nCódigo\nLivro\nFoco\nFeed\nCalendário\nNuvem\nMúsica\nTarefas\nCarta",
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#project-color-hex",
+      "text": "Cor hexadecimal",
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "icon",
+      "selector": "#project-form > div.block-top:nth-of-type(1) > button.project-close > svg > path",
+      "text": "Fechar formulário de projeto",
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.678,
+      "samples": 53,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "focus",
+      "selector": "#project-form > div.project-form-actions:nth-of-type(7) > button.button:nth-of-type(2)",
+      "text": null,
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    }
+  ]
+}

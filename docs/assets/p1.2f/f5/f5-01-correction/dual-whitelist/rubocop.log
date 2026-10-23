@@ -1,0 +1,25 @@
+Inspecting 126 files
+............................................................................C.................................................
+
+Offenses:
+
+script/backup-schema-contract-check.rb:41:16: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+    structures[[creation, preparation]] = before.fetch("schema")
+               ^
+script/backup-schema-contract-check.rb:41:38: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+    structures[[creation, preparation]] = before.fetch("schema")
+                                     ^
+script/backup-schema-contract-check.rb:93:31: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  baseline = structures.fetch(["test", preparation])
+                              ^
+script/backup-schema-contract-check.rb:93:51: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  baseline = structures.fetch(["test", preparation])
+                                                  ^
+script/backup-schema-contract-check.rb:94:34: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  development = structures.fetch(["development", preparation])
+                                 ^
+script/backup-schema-contract-check.rb:94:61: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+  development = structures.fetch(["development", preparation])
+                                                            ^
+
+126 files inspected, 6 offenses detected, 3 offenses autocorrectable

@@ -1,0 +1,642 @@
+[
+  {
+    "name": "dark-1440-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-widgets",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-focus-dialog",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 69,
+      "incomplete": 1,
+      "passes": 19,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-library",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 49,
+      "incomplete": 1,
+      "passes": 40,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-project-form",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 63,
+      "incomplete": 1,
+      "passes": 25,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-tasks",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 51,
+      "incomplete": 1,
+      "passes": 38,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-task-form",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 64,
+      "incomplete": 1,
+      "passes": 24,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-project",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 47,
+      "incomplete": 1,
+      "passes": 42,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-references",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 52,
+      "incomplete": 1,
+      "passes": 37,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-reference-form",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 64,
+      "incomplete": 1,
+      "passes": 24,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-empty",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 52,
+      "incomplete": 1,
+      "passes": 37,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-settings",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 52,
+      "incomplete": 1,
+      "passes": 37,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-customize",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 67,
+      "incomplete": 1,
+      "passes": 22,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-search",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 67,
+      "incomplete": 1,
+      "passes": 21,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "dark-1440-music",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "dark",
+    "wallpaper": "northern",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 52,
+      "incomplete": 1,
+      "passes": 37,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-dashboard",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-widgets",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 50,
+      "incomplete": 1,
+      "passes": 39,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-focus",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 57,
+      "incomplete": 1,
+      "passes": 32,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-focus-dialog",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 69,
+      "incomplete": 1,
+      "passes": 19,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-library",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 49,
+      "incomplete": 1,
+      "passes": 40,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-project-form",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 63,
+      "incomplete": 1,
+      "passes": 25,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-tasks",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 51,
+      "incomplete": 1,
+      "passes": 38,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-task-form",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 64,
+      "incomplete": 1,
+      "passes": 24,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-project",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 47,
+      "incomplete": 1,
+      "passes": 42,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-references",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 52,
+      "incomplete": 1,
+      "passes": 37,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-reference-form",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 64,
+      "incomplete": 1,
+      "passes": 24,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-empty",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 52,
+      "incomplete": 1,
+      "passes": 37,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-settings",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 52,
+      "incomplete": 1,
+      "passes": 37,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-customize",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 67,
+      "incomplete": 1,
+      "passes": 22,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-search",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 67,
+      "incomplete": 1,
+      "passes": 21,
+      "violations": 0
+    },
+    "violations": []
+  },
+  {
+    "name": "light-1440-music",
+    "viewport": {
+      "dpr": 1,
+      "height": 1000,
+      "scale": 1,
+      "width": 1440
+    },
+    "theme": "light",
+    "wallpaper": "ocean",
+    "accent": "#b1f07d",
+    "overflow": false,
+    "axe": {
+      "inapplicable": 52,
+      "incomplete": 1,
+      "passes": 37,
+      "violations": 0
+    },
+    "violations": []
+  }
+]

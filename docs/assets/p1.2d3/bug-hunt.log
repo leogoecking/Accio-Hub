@@ -1,0 +1,4 @@
+PASS Trocar Link para Material não contorna protocolos perigosos e não grava conteúdo
+PASS Mesmo UID sob outro projeto retorna aviso 404 sem abrir editor
+PASS Material sem URL depois de conversão abre edição fiel e preserva UID
+PASS 3 hipóteses adicionais

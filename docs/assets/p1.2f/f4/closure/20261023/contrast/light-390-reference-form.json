@@ -1,0 +1,498 @@
+{
+  "accent": "#b1f07d",
+  "active": "reference-title",
+  "fontsLoaded": "loaded",
+  "geometry": [
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 1000,
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      "selector": "html > body > div.shell > aside.rail"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 57,
+        "width": 341,
+        "x": 49,
+        "y": 0
+      },
+      "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > header.headbar"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 49,
+        "width": 341,
+        "x": 49,
+        "y": 57
+      },
+      "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone"
+    }
+  ],
+  "modal": null,
+  "nodes": [
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 20,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 26,
+          "width": 139.46875,
+          "x": 38,
+          "y": 243.953125
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#reference-dialog-title",
+      "text": "Nova referência",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 31.703125,
+          "x": 38,
+          "y": 287.953125
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#reference-form > label:nth-of-type(1)",
+      "text": "Título",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 24.5625,
+          "x": 38,
+          "y": 368.953125
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#reference-form > label:nth-of-type(2)",
+      "text": "Tipo",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 24.40625,
+          "x": 38,
+          "y": 451.953125
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#reference-form > label:nth-of-type(3)",
+      "text": "URL",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 112.375,
+          "x": 62.40625,
+          "y": 451.953125
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "#reference-form > label:nth-of-type(3) > span.project-optional",
+      "text": "obrigatória para links",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 162.453125,
+          "x": 38,
+          "y": 532.953125
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#reference-form > label:nth-of-type(4)",
+      "text": "Descrição do material ou link",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 299.75,
+          "x": 38,
+          "y": 667.953125
+        },
+        {
+          "height": 14,
+          "width": 198.1875,
+          "x": 38,
+          "y": 685
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#reference-form-hint",
+      "text": "Salva no SQLite neste projeto. Materiais podem ser descritos sem URL; nenhum arquivo será anexado.",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 51.890625,
+          "x": 87.453125,
+          "y": 726.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#reference-form > div.project-form-actions:nth-of-type(3) > button.button.tertiary:nth-of-type(1)",
+      "text": "Cancelar",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 99.1875,
+          "x": 238.8125,
+          "y": 726.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        16,
+        32,
+        28,
+        255
+      ],
+      "selector": "#reference-form > div.project-form-actions:nth-of-type(3) > button.button:nth-of-type(2)",
+      "text": "Salvar referência",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "value",
+      "opacity": 1,
+      "placeholderOpacity": 1,
+      "rects": [
+        {
+          "height": 36,
+          "width": 306,
+          "x": 42,
+          "y": 395.953125
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        22,
+        42,
+        60,
+        255
+      ],
+      "selector": "#reference-kind",
+      "text": "Link",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "placeholder",
+      "opacity": 1,
+      "placeholderOpacity": 1,
+      "rects": [
+        {
+          "height": 34,
+          "width": 306,
+          "x": 42,
+          "y": 478.953125
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "#reference-url",
+      "text": "https://",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#reference-title",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 42,
+          "width": 314,
+          "x": 38,
+          "y": 310.953125
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "selector": "#reference-title",
+      "text": "Título",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#reference-kind",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 44,
+          "width": 314,
+          "x": 38,
+          "y": 391.953125
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "selector": "#reference-kind",
+      "text": "TipoLink\nMaterial",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#reference-url",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 42,
+          "width": 314,
+          "x": 38,
+          "y": 474.953125
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "selector": "#reference-url",
+      "text": "URL obrigatória para links",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#reference-description",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 80,
+          "width": 314,
+          "x": 38,
+          "y": 555.953125
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "selector": "#reference-description",
+      "text": "Descrição do material ou link",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 11.666671752929688,
+          "width": 11.66668701171875,
+          "x": 329.1666564941406,
+          "y": 251.1197967529297
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#reference-form > div.block-top:nth-of-type(1) > button.mini-control > svg > path",
+      "text": "Fechar formulário de referência",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "focus",
+      "offset": 3,
+      "opacity": 1,
+      "outline": "solid",
+      "rects": [
+        {
+          "height": 42,
+          "width": 314,
+          "x": 38,
+          "y": 310.953125
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#reference-title",
+      "unknown": [],
+      "width": 2
+    }
+  ],
+  "overflow": false,
+  "theme": "light",
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 390
+  },
+  "wallpaper": "ocean"
+}

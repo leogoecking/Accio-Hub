@@ -2,7 +2,7 @@
 
 > **Versão:** 0.3 (alinhamento documental da P0.4; alvo funcional v0.1)<br>
 > **Data-base:** 2026-10-11<br>
-> **Estado:** P0.4 homologada; P1.0 arquitetural aprovada; P1.1 encerrada e homologada; P1.2 não iniciada<br>
+> **Estado:** P0.4 homologada; P1.0 arquitetural aprovada; P1.1 encerrada e homologada; P1.2B homologada; P1.2C aprovada tecnicamente; P1.2D somente em planejamento<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [ARCHITECTURE.md](ARCHITECTURE.md) · [ROADMAP.md](ROADMAP.md)
 
 A P1.1 reproduz o shell aprovado em Rails com autenticação local e

@@ -1,0 +1,18 @@
+{
+  "base_commit": "7ebfaebe16027b9338ed63bf89d11d570779a7f8",
+  "unchanged_paths": [
+    "rails/app/models",
+    "rails/db",
+    "rails/app/controllers",
+    "rails/app/services",
+    "rails/config",
+    "rails/app/assets/stylesheets",
+    "prototype",
+    "rails/app/javascript/controllers/focus_recovery.js",
+    "rails/app/javascript/controllers/studio_controller.js",
+    "rails/Gemfile",
+    "rails/Gemfile.lock"
+  ],
+  "studio_css_sha256": "a4180ac8e476ed2b90ff08a30011156a672408d23945d6741700914081cb41b0",
+  "prototype_css_same": true
+}

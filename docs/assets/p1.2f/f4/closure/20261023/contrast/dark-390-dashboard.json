@@ -1,0 +1,1979 @@
+{
+  "accent": "#b1f07d",
+  "active": null,
+  "fontsLoaded": "loaded",
+  "geometry": [
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 1000,
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      "selector": "html > body > div.shell > aside.rail"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 57,
+        "width": 341,
+        "x": 49,
+        "y": 0
+      },
+      "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > header.headbar"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 49,
+        "width": 341,
+        "x": 49,
+        "y": 57
+      },
+      "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 222,
+        "width": 311,
+        "x": 64,
+        "y": 721.046875
+      },
+      "selector": "#widget-grid > section.panel.panel-projects:nth-of-type(1)"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 248,
+        "width": 311,
+        "x": 64,
+        "y": 954.046875
+      },
+      "selector": "#widget-grid > section.panel.panel-backup:nth-of-type(2)"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 248,
+        "width": 311,
+        "x": 64,
+        "y": 1213.046875
+      },
+      "selector": "#widget-grid > section.panel.panel-notes:nth-of-type(3)"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 267.640625,
+        "width": 311,
+        "x": 64,
+        "y": 1472.046875
+      },
+      "selector": "#widget-grid > section.panel.panel-feed:nth-of-type(4)"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 248,
+        "width": 311,
+        "x": 64,
+        "y": 1750.6875
+      },
+      "selector": "#widget-grid > section.panel.panel-calendar:nth-of-type(5)"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 393,
+        "width": 311,
+        "x": 64,
+        "y": 2009.6875
+      },
+      "selector": "#widget-grid > section.panel.panel-focus:nth-of-type(6)"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 170,
+        "width": 170,
+        "x": 134.5,
+        "y": 2075.6875
+      },
+      "selector": "#widget-grid > section.panel.panel-focus:nth-of-type(6) > div.focus-body:nth-of-type(2) > div.dial:nth-of-type(1)"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 299,
+        "width": 311,
+        "x": 64,
+        "y": 2413.6875
+      },
+      "selector": "#widget-grid > section.panel.panel-tasks:nth-of-type(7)"
+    }
+  ],
+  "modal": null,
+  "nodes": [
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 23,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 30,
+          "width": 10.546875,
+          "x": 16.21875,
+          "y": 18
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        19,
+        37,
+        25,
+        255
+      ],
+      "selector": "html > body > div.shell > aside.rail > a.brand-glyph",
+      "text": "a",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 14,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 18,
+          "width": 9.9375,
+          "x": 19.03125,
+          "y": 960
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        10,
+        14,
+        20,
+        255
+      ],
+      "selector": "div.shell > aside.rail > div.rail-bottom:nth-of-type(2) > form.button_to > button.rail-avatar",
+      "text": "A",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 20,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 26,
+          "width": 51.53125,
+          "x": 131.734375,
+          "y": 15
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "div.shell > div.focus-shell > div.workspace:nth-of-type(1) > header.headbar > a.mobile-brand",
+      "text": "accio",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 63.4375,
+          "x": 106,
+          "y": 66.5
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "div.workspace:nth-of-type(1) > section.music-zone > div.music-main:nth-of-type(1) > div.music-caption:nth-of-type(1) > strong",
+      "text": "Accio Music",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 131.578125,
+          "x": 106,
+          "y": 82.5
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        137,
+        153,
+        173,
+        255
+      ],
+      "selector": "div.workspace:nth-of-type(1) > section.music-zone > div.music-main:nth-of-type(1) > div.music-caption:nth-of-type(1) > small",
+      "text": "Escolha seu ambiente sonoro",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 58.40625,
+          "x": 80,
+          "y": 128
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        217,
+        243,
+        200,
+        255
+      ],
+      "selector": "#main-content > div.board > div.board-titleline:nth-of-type(1) > div:nth-of-type(1) > div.eyebrow",
+      "text": "BOARD 01",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 7.3125,
+          "x": 148.40625,
+          "y": 128
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        137,
+        153,
+        173,
+        255
+      ],
+      "selector": "div.board > div.board-titleline:nth-of-type(1) > div:nth-of-type(1) > div.eyebrow > span.eyebrow-sep:nth-of-type(2)",
+      "text": "/",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 43.8125,
+          "x": 165.71875,
+          "y": 128
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        217,
+        243,
+        200,
+        255
+      ],
+      "selector": "#main-content > div.board > div.board-titleline:nth-of-type(1) > div:nth-of-type(1) > div.eyebrow",
+      "text": "INÍCIO",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 32,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 40,
+          "width": 155.71875,
+          "x": 64,
+          "y": 147
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#main-content > div.board > div.board-titleline:nth-of-type(1) > div:nth-of-type(1) > h1",
+      "text": "Seu espaço",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 32,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 40,
+          "width": 6.953125,
+          "x": 219.71875,
+          "y": 147
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        177,
+        240,
+        125,
+        255
+      ],
+      "selector": "div.board > div.board-titleline:nth-of-type(1) > div:nth-of-type(1) > h1 > span.title-stop",
+      "text": ".",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 199.453125,
+          "x": 64,
+          "y": 192.953125
+        },
+        {
+          "height": 14,
+          "width": 53.1875,
+          "x": 64,
+          "y": 210
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "#main-content > div.board > div.board-titleline:nth-of-type(1) > div:nth-of-type(1) > p",
+      "text": "Organização, informação e um pouco de inspiração.",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 22,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 28,
+          "width": 46.453125,
+          "x": 328.546875,
+          "y": 170.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#main-content > div.board > div.board-titleline:nth-of-type(1) > div.board-clock:nth-of-type(2) > span",
+      "text": "07:31",
+      "unknown": [],
+      "weight": "500"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 9,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 12,
+          "width": 73.21875,
+          "x": 288.4375,
+          "y": 199.046875
+        },
+        {
+          "height": 12,
+          "width": 33.765625,
+          "x": 288.4375,
+          "y": 211.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "#main-content > div.board > div.board-titleline:nth-of-type(1) > div.board-clock:nth-of-type(2) > small",
+      "text": "sexta-feira, 23 de outubro",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 5.609375,
+          "x": 64,
+          "y": 243.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#dashboard-counts > b:nth-of-type(1)",
+      "text": "2",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 93.359375,
+          "x": 69.609375,
+          "y": 243.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "#dashboard-counts",
+      "text": "pendentes no radar",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 3.765625,
+          "x": 172.96875,
+          "y": 243.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        137,
+        153,
+        173,
+        255
+      ],
+      "selector": "#dashboard-counts > span.separator",
+      "text": "/",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 5.609375,
+          "x": 189.234375,
+          "y": 243.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#dashboard-counts > b:nth-of-type(2)",
+      "text": "2",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 39.53125,
+          "x": 194.84375,
+          "y": 243.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "#dashboard-counts",
+      "text": "projetos",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 49.328125,
+          "x": 127.078125,
+          "y": 279.546875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#main-content > div.board > div.board-toolbar:nth-of-type(2) > div.toolbar-actions > button.button.tertiary:nth-of-type(1)",
+      "text": "Aparência",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 78.8125,
+          "x": 272.84375,
+          "y": 279.546875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        16,
+        32,
+        28,
+        255
+      ],
+      "selector": "div.board > div.board-toolbar:nth-of-type(2) > div.toolbar-actions > button.button:nth-of-type(2) > span",
+      "text": "Organizar board",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 81.40625,
+          "x": 79,
+          "y": 341.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        205,
+        216,
+        228,
+        255
+      ],
+      "selector": "#main-content > div.board > nav.dock-box > div.section-label:nth-of-type(1) > span:nth-of-type(1)",
+      "text": "APLICATIVOS",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 88.8125,
+          "x": 271.1875,
+          "y": 341.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        137,
+        153,
+        173,
+        255
+      ],
+      "selector": "#main-content > div.board > nav.dock-box > div.section-label:nth-of-type(1) > span:nth-of-type(2)",
+      "text": "SEUS ATALHOS",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 35.671875,
+          "x": 132,
+          "y": 389.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "div.board > nav.dock-box > div.app-dock:nth-of-type(2) > a.dock-tile:nth-of-type(1) > span:nth-of-type(2)",
+      "text": "E-mails",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 40.109375,
+          "x": 277,
+          "y": 389.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "div.board > nav.dock-box > div.app-dock:nth-of-type(2) > a.dock-tile:nth-of-type(2) > span:nth-of-type(2)",
+      "text": "Backups",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 49.375,
+          "x": 132,
+          "y": 449.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "div.board > nav.dock-box > div.app-dock:nth-of-type(2) > a.dock-tile:nth-of-type(3) > span:nth-of-type(2)",
+      "text": "AccioFeed",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 38.4375,
+          "x": 277,
+          "y": 449.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "div.board > nav.dock-box > div.app-dock:nth-of-type(2) > a.dock-tile:nth-of-type(4) > span:nth-of-type(2)",
+      "text": "Projetos",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 24.03125,
+          "x": 132,
+          "y": 509.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "div.board > nav.dock-box > div.app-dock:nth-of-type(2) > a.dock-tile:nth-of-type(5) > span:nth-of-type(2)",
+      "text": "Vault",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 22.640625,
+          "x": 277,
+          "y": 509.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "div.board > nav.dock-box > div.app-dock:nth-of-type(2) > a.dock-tile:nth-of-type(6) > span:nth-of-type(2)",
+      "text": "Foco",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 50.75,
+          "x": 132,
+          "y": 569.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "div.board > nav.dock-box > div.app-dock:nth-of-type(2) > a.dock-tile:nth-of-type(7) > span:nth-of-type(2)",
+      "text": "Calendário",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 33.78125,
+          "x": 277,
+          "y": 569.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "div.board > nav.dock-box > div.app-dock:nth-of-type(2) > a.dock-tile:nth-of-type(8) > span:nth-of-type(2)",
+      "text": "Tarefas",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 52.5,
+          "x": 64,
+          "y": 644.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        217,
+        243,
+        200,
+        255
+      ],
+      "selector": "#main-content > div.board > div.widgets-title:nth-of-type(3) > div > div.section-label-alone",
+      "text": "WIDGETS",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 20,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 26,
+          "width": 89.875,
+          "x": 64,
+          "y": 662.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#main-content > div.board > div.widgets-title:nth-of-type(3) > div > h2",
+      "text": "Seu painel",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 176.078125,
+          "x": 64,
+          "y": 692.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        137,
+        153,
+        173,
+        255
+      ],
+      "selector": "div.board > div.widgets-title:nth-of-type(3) > div > h2 > span",
+      "text": "em tempo real, quando conectado",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 81.484375,
+          "x": 293.515625,
+          "y": 648.546875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "#main-content > div.board > div.widgets-title:nth-of-type(3) > button.secondary-link",
+      "text": "Adicionar widget",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 14,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 18,
+          "width": 96.265625,
+          "x": 124,
+          "y": 745.546875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#widget-projects-title",
+      "text": "Projetos ativos",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 42.65625,
+          "x": 293.34375,
+          "y": 747.546875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "section.panel.panel-projects:nth-of-type(1) > div.panel-top:nth-of-type(1) > div.panel-controls:nth-of-type(2) > span:nth-of-type(1) > a.quiet-link",
+      "text": "Explorar",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 81.796875,
+          "x": 141,
+          "y": 807.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#dashboard-projects > a.mini-project:nth-of-type(1) > span:nth-of-type(2) > strong",
+      "text": "Projeto foco QA",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 63.5625,
+          "x": 141,
+          "y": 824.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        137,
+        153,
+        173,
+        255
+      ],
+      "selector": "#dashboard-projects > a.mini-project:nth-of-type(1) > span:nth-of-type(2) > small",
+      "text": "1 tarefa aberta",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 89.40625,
+          "x": 141,
+          "y": 880.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#dashboard-projects > a.mini-project:nth-of-type(2) > span:nth-of-type(2) > strong",
+      "text": "Outro projeto QA",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 76.984375,
+          "x": 141,
+          "y": 897.046875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        137,
+        153,
+        173,
+        255
+      ],
+      "selector": "#dashboard-projects > a.mini-project:nth-of-type(2) > span:nth-of-type(2) > small",
+      "text": "0 tarefas abertas",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 14,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 18,
+          "width": 56.21875,
+          "x": 124,
+          "y": 978.546875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "selector": "#widget-backup-title",
+      "text": "Backups",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 9,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 12,
+          "width": 75.46875,
+          "x": 272.53125,
+          "y": 983.546875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        246,
+        188,
+        129,
+        255
+      ],
+      "selector": "section.panel.panel-backup:nth-of-type(2) > div.panel-top:nth-of-type(1) > div.panel-controls:nth-of-type(2) > span:nth-of-type(1) > span.badge.warn",
+      "text": "NÃO CONECTADO",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14.166664123535156,
+          "width": 15,
+          "x": 16.5,
+          "y": 98.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        217,
+        243,
+        200,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon.active:nth-of-type(1) > svg > path:nth-of-type(1)",
+      "text": "Início",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5.8333282470703125,
+          "width": 5,
+          "x": 21.5,
+          "y": 106.83333587646484
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        217,
+        243,
+        200,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon.active:nth-of-type(1) > svg > path:nth-of-type(2)",
+      "text": "Início",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 15,
+          "width": 15,
+          "x": 16.5,
+          "y": 147.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(2) > svg > rect",
+      "text": "Tarefas",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5,
+          "width": 6.666666030883789,
+          "x": 20.66666603088379,
+          "y": 152.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(2) > svg > path",
+      "text": "Tarefas",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13.333328247070312,
+          "width": 15,
+          "x": 16.5,
+          "y": 198.1666717529297
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(3) > svg > rect",
+      "text": "Agenda",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5.8333282470703125,
+          "width": 15,
+          "x": 16.5,
+          "y": 196.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(3) > svg > path",
+      "text": "Agenda",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 15,
+          "width": 15,
+          "x": 16.5,
+          "y": 245.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(4) > svg > circle:nth-of-type(1)",
+      "text": "Foco",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 8.333328247070312,
+          "width": 8.333333969116211,
+          "x": 19.83333396911621,
+          "y": 248.8333282470703
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(4) > svg > circle:nth-of-type(2)",
+      "text": "Foco",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 1.666656494140625,
+          "width": 1.6666641235351562,
+          "x": 23.166667938232425,
+          "y": 252.1666717529297
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(4) > svg > circle:nth-of-type(3)",
+      "text": "Foco",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5.833343505859375,
+          "width": 5.833332061767578,
+          "x": 16.5,
+          "y": 294.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(5) > svg > rect:nth-of-type(1)",
+      "text": "Projetos",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5.833343505859375,
+          "width": 5.833332061767578,
+          "x": 25.666667938232425,
+          "y": 294.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(5) > svg > rect:nth-of-type(2)",
+      "text": "Projetos",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5.833343505859375,
+          "width": 5.833332061767578,
+          "x": 16.5,
+          "y": 303.6666564941406
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(5) > svg > rect:nth-of-type(3)",
+      "text": "Projetos",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5.833343505859375,
+          "width": 5.833332061767578,
+          "x": 25.666667938232425,
+          "y": 303.6666564941406
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(5) > svg > rect:nth-of-type(4)",
+      "text": "Projetos",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13.880706787109377,
+          "width": 15,
+          "x": 16.5,
+          "y": 344.6192932128906
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(6) > svg > path:nth-of-type(1)",
+      "text": "Conhecimento",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 12.5,
+          "width": 12.499998092651367,
+          "x": 17.33333396911621,
+          "y": 394.1666564941406
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(7) > svg > path",
+      "text": "AccioFeed",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 1.666656494140625,
+          "width": 1.666666030883789,
+          "x": 17.33333396911621,
+          "y": 405
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(7) > svg > circle",
+      "text": "AccioFeed",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 10.534759521484377,
+          "width": 16.120285034179688,
+          "x": 15.567516326904297,
+          "y": 443.4667053222656
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(8) > svg > path:nth-of-type(1)",
+      "text": "Backups",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5.83331298828125,
+          "width": 5,
+          "x": 21.5,
+          "y": 447.3333435058594
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(8) > svg > path:nth-of-type(2)",
+      "text": "Backups",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 11.66668701171875,
+          "width": 15,
+          "x": 16.5,
+          "y": 492.1666564941406
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(9) > svg > rect",
+      "text": "E-mails",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5,
+          "width": 13.333332061767578,
+          "x": 17.33333396911621,
+          "y": 493.8333435058594
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(9) > svg > path",
+      "text": "E-mails",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5,
+          "width": 5,
+          "x": 21.5,
+          "y": 913.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > div.rail-bottom:nth-of-type(2) > a.rail-icon > svg > circle",
+      "text": "Configurações",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16.6666259765625,
+          "width": 16.666667938232422,
+          "x": 15.666666984558104,
+          "y": 907.6666870117188
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "aside.rail > div.rail-bottom:nth-of-type(2) > a.rail-icon > svg > path",
+      "text": "Configurações",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 9.333332061767578,
+          "width": 9.333343505859377,
+          "x": 264.5333251953125,
+          "y": 22.53333282470703
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.command-button:nth-of-type(1) > svg > circle",
+      "text": "Buscar aplicativos",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 3.333332061767578,
+          "width": 3.333343505859375,
+          "x": 272.6666564941406,
+          "y": 30.666667938232425
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.command-button:nth-of-type(1) > svg > path",
+      "text": "Buscar aplicativos",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13.333330154418944,
+          "width": 13.33331298828125,
+          "x": 318.3333435058594,
+          "y": 21.33333396911621
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.head-icon:nth-of-type(2) > svg > path",
+      "text": "Captura rápida demonstrativa",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 8.333333969116211,
+          "width": 13.33331298828125,
+          "x": 356.3333435058594,
+          "y": 23.83333396911621
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.head-icon:nth-of-type(3) > svg > path",
+      "text": "Personalizar seu espaço",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 3.333333969116211,
+          "width": 3.33331298828125,
+          "x": 358.8333435058594,
+          "y": 22.16666603088379
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.head-icon:nth-of-type(3) > svg > circle:nth-of-type(1)",
+      "text": "Personalizar seu espaço",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 3.333332061767578,
+          "width": 3.33331298828125,
+          "x": 363.8333435058594,
+          "y": 30.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.head-icon:nth-of-type(3) > svg > circle:nth-of-type(2)",
+      "text": "Personalizar seu espaço",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 9.333328247070312,
+          "width": 7.33331298828125,
+          "x": 316.3333435058594,
+          "y": 76.33333587646484
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > button.music-button:nth-of-type(1) > svg > path",
+      "text": "Reprodução demonstrativa",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 6.6666717529296875,
+          "width": 10.66668701171875,
+          "x": 355.6666564941406,
+          "y": 77.66666412353516
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > button.music-button:nth-of-type(2) > svg > path",
+      "text": "Expandir player",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 2.666664123535156,
+          "width": 2.66668701171875,
+          "x": 357.6666564941406,
+          "y": 76.33333587646484
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > button.music-button:nth-of-type(2) > svg > circle:nth-of-type(1)",
+      "text": "Expandir player",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 2.666664123535156,
+          "width": 2.66668701171875,
+          "x": 361.6666564941406,
+          "y": 83
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > button.music-button:nth-of-type(2) > svg > circle:nth-of-type(2)",
+      "text": "Expandir player",
+      "unknown": []
+    }
+  ],
+  "overflow": false,
+  "theme": "dark",
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 390
+  },
+  "wallpaper": "northern"
+}

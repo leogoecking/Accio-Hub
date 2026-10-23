@@ -1,0 +1,127 @@
+# P1.2F5 — Investigação e homologação final da persistência
+
+Data: 2026-10-23. Branch `p1-persistence`. **Homologação integrada bloqueada por F5-01; não há liberação para dados pessoais.** Este relatório, novos testes e evidências permanecem sem commit e sem staging. Nenhuma correção funcional/P1.3 implementada; sem push, merge ou tag.
+
+## 1. Base Git e encerramento F4
+
+F4 encerrada em **`7c1cea40cc180a3c03f5521d83219690294cdb1b`**, mensagem `feat: melhorias de acessibilidade e preservacao visual P1.2F4`. Foram688 arquivos, aproximadamente29,93MiB de blobs no staging, incluindo aproximadamente29,6MiB de evidências/manifestos. Checkout limpo confirmado imediatamente após o commit, antes de iniciar F5.
+
+Os22 hashes do Antigravity coincidiram; código funcional e relatório original preservados. Reconciliação:154 ocorrências abaixo do limiar nas três primeiras matrizes;167 incluindo hover, com56 logotipos/109 pontos/2 separadores. Não há duplicação dentro das matrizes nem informação essencial classificada como exceção. Detalhes em [P1.2F4_CLOSURE.md](P1.2F4_CLOSURE.md).
+
+Acervo integral: conjunto `p12f4-20261023-b94d9cd9`, arquivo `accio-hub-p12f4-20261023-b94d9cd9-complete.tar.gz`, SHA-256 **`d77cc239d1cb32df76aecc4aff79a3b24653ccb540439d7824bd69680507ee0a`**. Local lógico `$XDG_DATA_HOME/accio-hub-evidence/p12f4-20261023-b94d9cd9/` (padrão `~/.local/share/accio-hub-evidence/`).5.725 arquivos de origem,537.385.170 bytes; pacote467.770.348 bytes. Diretório0700/pacote0600, gzip íntegro e cada membro reaberto/conferido por hash. Brutos também mantidos em `raw/f4/` privado. Nenhuma evidência descartada; seleção654 arquivos originais rastreada por [manifesto](assets/p1.2f/f4/archive-manifest.json).
+
+## 2. Escopo e critérios de aceite
+
+Após o commit F4, foi consultado o plano9.1–9.3 da P1.2F. A F5 é verificação: não autoriza modificar aplicação, modelos, schema, gatilhos, contratos de backup ou políticas operacionais. Foram mantidos os critérios G1–G10 e a auditoria independente como condição de encerramento.
+
+| Gate | Evidência e estágio alcançado |
+|---|---|
+| G1 — Projetos/tarefas/referências | Fluxo novo cria/renomeia/favorita/filtra, cria tarefa pessoal/contextual, edita prioridade/move vínculo, cria/edita link/material, conclui/reabre e arquiva/restaura, sem exclusão; regressões D3 e Rails |
+| G2 — Preferências | Tema/fundo/destaque/Music modificados e recarregados no fluxo novo; Dock/widgets presentes no agregado. Bootstrap/CAS/conflitos e personalização completa cobertos pelo gate C/D3 reexecutado. O novo fluxo não reordena Dock/widgets |
+| G3 — Pomodoro | Presets25/45; contexto estável em três módulos; duas abas; checkpoint20s, ausência20min, recuperação em duas ações; estimativa integral exige confirmação explícita; completed não conclui tarefa |
+| G4 — Concorrência/falhas |409 real entre abas no fluxo novo; processos/C/SQL e E2/F1b/F1c reexecutados preservam idempotência, perda de respostas, contenção503 e rollback |
+| **G5 — Recuperação** | **Bloqueado por F5-01** ao fazer backup do mesmo banco usado pela interface. F3b isolada em test passou, mas não substitui essa integração. Restore desse banco não foi executado |
+| G6 — Retenção/administração | F3a/F3c reexecutadas: inventário/exportação/round-trip, confirmação, corte consistente/concorrência/rollback e preservação de ativas/domínio. Retenção conservadora mantida; descarte/TTL não autorizados |
+| G7 — Segurança | Rails completo/F2b e testes administrativos; escopo autenticado/CSRF no servidor development; links seguros e rel; todos os ambientes sintéticos e loopback. Não houve bypass ou perda de dados confirmados |
+| G8 — UI/acessibilidade | Matriz F5 de dois temas ×cinco larguras em Dashboard/Foco/projeto, disco170px e sem overflow horizontal;12 auditorias axe sem violações, incomplete preservado. Ressalvas F4/humanas continuam |
+| G9 — Ferramentas/evidências | Gates F4 reexecutados imediatamente antes do commit; novas verificações administrativas, diagnóstico e ferramentas F5. A ausência de falhas na suíte existente não torna o novo fluxo de backup aprovado |
+| **G10 — Homologação** | **Pendente**: corrigir/verificar F5-01 após autorização, reexecutar trecho integrado interrompido e submeter F5 à auditoria independente/revisão humana |
+
+## 3. Ambiente e isolamento
+
+Ruby3.3.6/Rails8.1.3.1, sqlite3 gem2.9.6/SQLite3.53.2, Node24.19.0, Chromium154/agent-browser0.38.2/axe4.12.1. Mesmas ferramentas da F4; nenhuma dependência instalada.
+
+Gate F4 utilizou bancos/perfis novos nas portas3126/3127. F5 criou outro banco inicialmente vazio em diretório privado sintético fora do checkout (`accio-f5-*`), com fixture explícita, conta/senha aleatórias privadas e `ACCIO_DATABASE_PATH` explícito. Servidor da interface somente127.0.0.1:3130, development com CSRF habilitado. Relógio injetado exclusivamente no launcher QA privado; nenhum horário do Ubuntu alterado.
+
+Backup do fluxo usou a fixture do **mesmo banco** com `RAILS_ENV=test`, conforme as guardas F3b; não houve relaxamento para aceitar origem development. O destino restaurado3131 foi planejado pelo roteiro, mas **não iniciado**, pois a captura foi recusada antes. Nenhum banco/credencial/pacote/snapshot privado foi incluído nas evidências públicas.
+
+## 4. Testes executados
+
+### Gate de encerramento F4, no mesmo código funcional
+
+| Verificação | Resultado |
+|---|---|
+| Rails completo |203 testes /3.452 asserções,0 falhas/erros/skips |
+| C/processos |Bootstrap/CAS/rollback/retentativa, contenção real503 e novo processo aprovados |
+| D3 / E2 / F1b / F1c navegador |33 /37 /14 /18 cenários aprovados |
+| Teclado |16 cenários aprovados, inclusive resposta tardia sem roubar foco |
+| Contraste |40 bordas/focos aprovados;32 estados atuais em390px, axe sem violações e incomplete preservado |
+| JS de foco / P0.4 |41 cenários /66 testes aprovados |
+| SQL |Migrações/schema load,25 gatilhos/36 índices/FKs equivalentes; integrity_check ok, foreign_key_check vazio; WAL/FULL |
+| RuboCop/Brakeman/Zeitwerk |123 arquivos sem infrações /0 avisos /aprovado |
+
+Resultados completos vinculados ao commit F4 em `assets/p1.2f/f4/closure/20261023/`. Não houve alteração funcional após esse gate. Não foi repetida indiscriminadamente a matriz bruta de milhares de imagens.
+
+### F5 adicional
+
+- `final-persistence-check.mjs`: **13 checkpoints integrados aprovados**, até restart e recuperação pendente; interrupção no checkpoint de backup. Não são15/15 e não constituem aprovação do roteiro completo.
+- `legacy-snapshots-check.rb`: CLI/round-trip/concorrência aprovados — [legacy](assets/p1.2f/f5/legacy/round-trip-and-concurrency.json).
+- `sqlite-backups-check.rb`: backup/restauração em fixtures test isoladas, concorrência/falhas/segurança/HTTP/reinício aprovados — [backups](assets/p1.2f/f5/backups/integration.json).
+- `auth-sessions-check.rb`: inventário/limpeza confirmada, corrida entre processos, cutoff, rollback/SIGKILL e domínio preservado — [cleanup](assets/p1.2f/f5/cleanup/integration.json).
+- `final-backup-schema-probe.rb`: **reprodução confirmada do defeito**, não aprovação do comportamento: test aceito/development recusado, origem intacta.
+- RuboCop após os novos testes:124 arquivos,0 infrações. Brakeman:0 avisos. Sintaxe Node/Ruby aprovada; verificação dirigida de teardown QA aprovada. Zeitwerk/SQL/domínio não mudaram após seus gates.
+
+## 5. Fluxo integrado observado
+
+Novo perfil autentica em banco sem projetos/tarefas/referências; personaliza tema/fundo/destaque/Music e recarrega. Cria dois projetos, renomeia um mantendo UID, favorita e alterna filtro. Cria tarefa pessoal e contextual; move a pessoal para outro projeto pelo editor global, altera prioridade da contextual. Cria link e material, edita o link preservando UID e confere `noopener noreferrer`. Dashboard consulta os mesmos dois projetos/duas tarefas. Conhecimento permanece explicitamente P1.3.
+
+Foco25/45 é selecionado explicitamente. Início por tarefa mantém a mesma sessão/projeto em Dashboard/Foco/outro projeto; existe um ocupante. Segunda aba envia versão obsoleta e recebe409, sem alternância cega. Tempo confirmado20s; ausência sintética de1200s; conferir intervalo e aceitar/continuar salva1220s e retoma, sem completed. Nova estimativa integral leva apenas a awaiting_confirmation; uma confirmação explícita registra completed uma vez. A tarefa continua pendente até comando próprio, sendo concluída e reaberta separadamente.
+
+Arquivamento mantém as duas referências visíveis e tarefa somente leitura; restauração conserva os registros. Matriz responsiva percorre320/390/768/1440/1920 nos dois temas. Outra sessão running recebe checkpoint20s; restart/GET conserva fingerprints do banco sem escrita/conclusão automática. Conferência explícita cria recuperação paused pendente com recibo. Esse foi o estado entregue ao backup que falhou.
+
+Evidências: [resultados](assets/p1.2f/f5/integrated/results.json), `partial-recovery.png`, `focus-*-*.png` e [fingerprints sem valores de registros](assets/p1.2f/f5/integrated/source-fingerprints.json).
+
+## 6. F5-01 — Backup recusa schema válido criado em development
+
+**Classificação:** defeito funcional confirmado de compatibilidade do backup; severidade **alta**, bloqueador de G5 e da homologação sintética integrada B. Não há corrupção/perda de dados demonstrada. A recusa é segura, mas impede completar o fluxo prometido.
+
+**Reprodução mínima:** preparar dois diretórios/bancos privados sintéticos, cada um com fixture F3a válida e caminho explícito. Executar `db:schema:load` em test e development, sem edição manual de SQL. Invocar a mesma ferramenta F3b em `RAILS_ENV=test`, com cada banco como origem e destino novo. Test é aceito; development retorna `Schema incompatível com esta versão da aplicação`. Em ambos: integridade ok, FK check vazio,25 gatilhos e36 índices, nenhuma alteração na origem.
+
+**Causa confirmada:** `config/environments/development.rb:41` habilita query log tags. O Rails acrescenta `/*application='AccioHub'*/` a DDL armazenado em `sqlite_master`. `SqliteBackupSnapshot.schema` preserva SQL literal; `SyntheticSqliteBackup#compatible!` exige um dos dois SHA de `config/sqlite_backup_contract.json`. O schema development tem hash `b42e0bb59d064152d690856959275801ae4f1e034e291765d56bbc1874986470`, não autorizado. Retirando exclusivamente esses comentários de uma **cópia em memória**, o hash é `c8752c5aabda1b9064750d8982648e89eaacfb4d68d117f36c3ad1e77ca542f7`, já previsto no contrato. Nenhum banco, validador ou contrato foi normalizado/modificado.
+
+O schema do banco do navegador coincide com essa reprodução mínima. Hash de migrations, contagens de objetos e todos os fingerprints de dados do banco original após a recusa foram conferidos. Apenas a condição de schema literal falha. Evidências: [schema-probe.json](assets/p1.2f/f5/diagnosis/schema-probe.json) e [contract-conditions.json](assets/p1.2f/f5/diagnosis/contract-conditions.json).
+
+**Proposta de corte separado, requer autorização:** compatibilidade de snapshots com schemas produzidos pelo Rails nos ambientes homologados. Avaliar whitelist explícita de fingerprints legítimos versus normalização estritamente delimitada das tags de logging. Não remover comentários SQL indiscriminadamente nem ignorar diferenças de CHECK/FK/índices/gatilhos. Testar matriz test/development ×migrações/schema load, alteração maliciosa de schema rejeitada e backup/restore do mesmo dataset da interface, incluindo sessões e recibos. Preservar recusas, restrição sintética e preparo seguro de autenticação. Não é implementação de recuperação operacional sem origem.
+
+## 7. Ocorrências nos novos roteiros
+
+Primeira tentativa interrompida ao reabrir tarefa: o roteiro esperava apenas `checked=true`, alterado nativamente antes de a resposta/transação e refresh terminarem. A segunda tecla chegou com controle disabled. Experimento controlado reteve uma resposta HTTP real já recebida, comprovou disabled e apenas um evento change ao pressionar Espaço novamente. Após liberar e aguardar o controle confirmado/habilitado, concluir/reabrir passa. A correção foi somente na sincronização do **novo QA F5**, sem produto/asserção removida. [task-serialization.json](assets/p1.2f/f5/integrated/task-serialization.json); falha original/log/screenshot mantidos em `integrated-attempt-01/`.
+
+Também foi corrigido apenas o teardown do novo QA: processo terminado por sinal tem signalCode preenchido/exitCode null; a espera repetida aguardava evento já ocorrido. Teste dirigido cobre término normal, sinal, filho ativo e repetição — [teardown-check.json](assets/p1.2f/f5/teardown-check.json). O roteiro integrado não foi apresentado como concluído após esse ajuste: continua bloqueado pelo defeito reproduzido independentemente. Um lançamento inicial do probe fora da pasta Rails falhou por contexto Bundler; execução final ocorreu em rails/. Não é defeito da aplicação.
+
+## 8. Segurança, integridade e acessibilidade
+
+O banco usado pela interface não sofreu alteração na tentativa recusada de backup. Recibos e IDs não foram reprocessados, e não houve restauração que reativasse sessões. A prova independente F3b em test confirmou revogação no destino e preservação da origem, mas não substitui a restauração do banco development interrompida.
+
+A suíte reexecutada mantém autenticação, CSRF efetivamente habilitado, owner-scope, assinaturas, whitelists, versões, idempotência, SQL e URLs seguras. O diagnóstico somente leu schema/hash; não houve DNS, fetch de referências ou download remoto. Nenhuma configuração de sistema alterada.
+
+As12 auditorias axe do fluxo F5 não apontaram violações; contraste continua incomplete. São verificações automatizadas Chromium, não conformidade WCAG AA global. Persistem revisão auditiva com leitor de tela e validação humana de navegador/acessibilidade; Firefox complementar não executado. A anomalia de desenho parcial da F4 e as limitações de transparência continuam preservadas no arquivo completo e nas amostras versionadas.
+
+## 9. Gates A/B/C e pendências operacionais
+
+| Nível | Conclusão |
+|---|---|
+| **A — Implementação tecnicamente verificada** | **Parcialmente confirmado no conjunto completo.** Módulos/contratos cobertos passaram, mas o novo teste revela F5-01 no contrato de backup. A suíte verde não comprova equivalência entre ambientes |
+| **B — Homologação sintética P1.2** | **Não concluída/bloqueada.**13 checkpoints completos e regressões independentes aprovados; backup e restore encadeados ao mesmo banco da interface interrompidos por F5-01; G10 pendente |
+| **C — Uso pessoal com dados importantes** | **Não liberado.** Não decorre de A/B. Exige correção do bloqueio e garantias operacionais adicionais autorizadas/verificadas |
+
+Pendências de liberação C, sem implementação nesta sessão:
+
+1. Recuperar de backup com o banco original indisponível; restore F3b atual depende de origem/fixture preexistentes.
+2. Política de guarda/proteção/redundância/retenção dos backups e ensaio por operador; permissões0700/0600 não substituem essa política.
+3. Dependências de chaves, versão/configuração Rails, runtime e credenciais fora do repositório. O pacote de dados não contém master.key/secrets e não equivale a uma instalação recuperável completa.
+4. Cobertura consistente de arquivos externos, principalmente o futuro Vault; não há autorização de P1.3 nesta F5.
+5. Procedimento reproduzível de recuperação por operador, sem origem e sem acesso HTTP antes do preparo de segurança.
+6. Validação humana complementar de acessibilidade/navegador e aceite explícito das ressalvas. Sem compatibilidade universal declarada.
+
+Descarte de legacy_cookie_backup/TTL30dias, serviços/timers, backups Ubuntu, dados pessoais e distribuição continuam fora do escopo. Retenção conservadora não impede investigar F5, mas não resolve a política operacional definitiva.
+
+## 10. Recomendação e estado final
+
+Submeter esta investigação à revisão/auditoria independente, com **F5-01 aberto e bloqueante**, antes de autorizar um corte corretivo. Não encerrar/homologar P1.2 nem iniciar P1.3. Nenhuma correção do mecanismo de backup foi aplicada para obter resultado positivo.
+
+HEAD continua `7c1cea40cc180a3c03f5521d83219690294cdb1b`. F4 commitada e acervo íntegro; alterações posteriores limitadas a QA/documentação/evidências F5, sem staging/commit. Aplicação, serviços, configurações, modelos, migrações/schema e gatilhos idênticos ao commit F4. Relatório final consolidado da P1.2 depende da conclusão dos gates e aprovação humana; este relatório é deliberadamente uma verificação em curso com bloqueio explícito.
+
+## Continuidade condicionada F5-01 — 2026-10-23
+
+Após confirmação do contrato do HEAD como fonte de verdade, o usuário exigiu nova matriz anterior à edição. A [verificação da correção](P1.2F5_01_CORRECTION_VERIFICATION.md) registra test/migrate=`621ee16d…`, test/schema load=`c8752c5a…`, development/migrate=`edc335eb…` e development/schema load=`b42e0bb5…`. Cada par development/test correspondente difere somente nas34 anotações de índice; origens, integridade, FKs, gatilhos e migrações preservados. Como development/migrate produziu um hash adicional não autorizado, foi acionada a condição explícita de parada. Contrato inalterado, correção não aplicada, pós-testes e fluxo integrado não retomados. A paridade entre os métodos transcrita no relatório independente não foi reproduzida; relatório original preservado. F5 continua bloqueada e sem commit/staging, aguardando revisão/autorização.

@@ -1,0 +1,11 @@
+{
+  "statuses": [
+    200,
+    409
+  ],
+  "same_payload": true,
+  "preset_seconds": 2700,
+  "root_version_increment": 1,
+  "appearance_preserved": true,
+  "session_created": false
+}

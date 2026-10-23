@@ -1,0 +1,422 @@
+[
+  {
+    "theme": "dark",
+    "width": 320,
+    "name": "dashboard",
+    "background": "linear-gradient(145deg, rgba(44, 38, 70, 0.85), rgba(19, 27, 41, 0.87))",
+    "body": 320,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 271,
+    "main": 271,
+    "viewport": 320
+  },
+  {
+    "theme": "dark",
+    "width": 320,
+    "name": "focus",
+    "background": "linear-gradient(145deg, rgba(44, 38, 70, 0.85), rgba(19, 27, 41, 0.87))",
+    "body": 320,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 271,
+    "main": 271,
+    "viewport": 320
+  },
+  {
+    "theme": "dark",
+    "width": 320,
+    "name": "project",
+    "background": "linear-gradient(145deg, rgba(44, 38, 70, 0.85), rgba(19, 27, 41, 0.87))",
+    "body": 320,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 271,
+    "main": 271,
+    "viewport": 320
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "name": "dashboard",
+    "background": "linear-gradient(145deg, rgba(44, 38, 70, 0.85), rgba(19, 27, 41, 0.87))",
+    "body": 390,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 341,
+    "main": 341,
+    "viewport": 390
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "name": "focus",
+    "background": "linear-gradient(145deg, rgba(44, 38, 70, 0.85), rgba(19, 27, 41, 0.87))",
+    "body": 390,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 341,
+    "main": 341,
+    "viewport": 390
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "name": "project",
+    "background": "linear-gradient(145deg, rgba(44, 38, 70, 0.85), rgba(19, 27, 41, 0.87))",
+    "body": 390,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 341,
+    "main": 341,
+    "viewport": 390
+  },
+  {
+    "theme": "dark",
+    "width": 768,
+    "name": "dashboard",
+    "background": "linear-gradient(145deg, rgba(44, 38, 70, 0.85), rgba(19, 27, 41, 0.87))",
+    "body": 768,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 707,
+    "main": 707,
+    "viewport": 768
+  },
+  {
+    "theme": "dark",
+    "width": 768,
+    "name": "focus",
+    "background": "linear-gradient(145deg, rgba(44, 38, 70, 0.85), rgba(19, 27, 41, 0.87))",
+    "body": 768,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 707,
+    "main": 707,
+    "viewport": 768
+  },
+  {
+    "theme": "dark",
+    "width": 768,
+    "name": "project",
+    "background": "linear-gradient(145deg, rgba(44, 38, 70, 0.85), rgba(19, 27, 41, 0.87))",
+    "body": 768,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 707,
+    "main": 707,
+    "viewport": 768
+  },
+  {
+    "theme": "dark",
+    "width": 1440,
+    "name": "dashboard",
+    "background": "linear-gradient(145deg, rgba(44, 38, 70, 0.85), rgba(19, 27, 41, 0.87))",
+    "body": 1440,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 1364,
+    "main": 1364,
+    "viewport": 1440
+  },
+  {
+    "theme": "dark",
+    "width": 1440,
+    "name": "focus",
+    "background": "linear-gradient(145deg, rgba(44, 38, 70, 0.85), rgba(19, 27, 41, 0.87))",
+    "body": 1440,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 1364,
+    "main": 1364,
+    "viewport": 1440
+  },
+  {
+    "theme": "dark",
+    "width": 1440,
+    "name": "project",
+    "background": "linear-gradient(145deg, rgba(44, 38, 70, 0.85), rgba(19, 27, 41, 0.87))",
+    "body": 1440,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 1364,
+    "main": 1364,
+    "viewport": 1440
+  },
+  {
+    "theme": "dark",
+    "width": 1920,
+    "name": "dashboard",
+    "background": "linear-gradient(145deg, rgba(44, 38, 70, 0.85), rgba(19, 27, 41, 0.87))",
+    "body": 1920,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 1844,
+    "main": 1844,
+    "viewport": 1920
+  },
+  {
+    "theme": "dark",
+    "width": 1920,
+    "name": "focus",
+    "background": "linear-gradient(145deg, rgba(44, 38, 70, 0.85), rgba(19, 27, 41, 0.87))",
+    "body": 1920,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 1844,
+    "main": 1844,
+    "viewport": 1920
+  },
+  {
+    "theme": "dark",
+    "width": 1920,
+    "name": "project",
+    "background": "linear-gradient(145deg, rgba(44, 38, 70, 0.85), rgba(19, 27, 41, 0.87))",
+    "body": 1920,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 1844,
+    "main": 1844,
+    "viewport": 1920
+  },
+  {
+    "theme": "light",
+    "width": 320,
+    "name": "dashboard",
+    "background": "linear-gradient(145deg, rgb(238, 232, 251), rgba(245, 249, 252, 0.92))",
+    "body": 320,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 271,
+    "main": 271,
+    "viewport": 320
+  },
+  {
+    "theme": "light",
+    "width": 320,
+    "name": "focus",
+    "background": "linear-gradient(145deg, rgb(238, 232, 251), rgba(245, 249, 252, 0.92))",
+    "body": 320,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 271,
+    "main": 271,
+    "viewport": 320
+  },
+  {
+    "theme": "light",
+    "width": 320,
+    "name": "project",
+    "background": "linear-gradient(145deg, rgb(238, 232, 251), rgba(245, 249, 252, 0.92))",
+    "body": 320,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 271,
+    "main": 271,
+    "viewport": 320
+  },
+  {
+    "theme": "light",
+    "width": 390,
+    "name": "dashboard",
+    "background": "linear-gradient(145deg, rgb(238, 232, 251), rgba(245, 249, 252, 0.92))",
+    "body": 390,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 341,
+    "main": 341,
+    "viewport": 390
+  },
+  {
+    "theme": "light",
+    "width": 390,
+    "name": "focus",
+    "background": "linear-gradient(145deg, rgb(238, 232, 251), rgba(245, 249, 252, 0.92))",
+    "body": 390,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 341,
+    "main": 341,
+    "viewport": 390
+  },
+  {
+    "theme": "light",
+    "width": 390,
+    "name": "project",
+    "background": "linear-gradient(145deg, rgb(238, 232, 251), rgba(245, 249, 252, 0.92))",
+    "body": 390,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 341,
+    "main": 341,
+    "viewport": 390
+  },
+  {
+    "theme": "light",
+    "width": 768,
+    "name": "dashboard",
+    "background": "linear-gradient(145deg, rgb(238, 232, 251), rgba(245, 249, 252, 0.92))",
+    "body": 768,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 707,
+    "main": 707,
+    "viewport": 768
+  },
+  {
+    "theme": "light",
+    "width": 768,
+    "name": "focus",
+    "background": "linear-gradient(145deg, rgb(238, 232, 251), rgba(245, 249, 252, 0.92))",
+    "body": 768,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 707,
+    "main": 707,
+    "viewport": 768
+  },
+  {
+    "theme": "light",
+    "width": 768,
+    "name": "project",
+    "background": "linear-gradient(145deg, rgb(238, 232, 251), rgba(245, 249, 252, 0.92))",
+    "body": 768,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 707,
+    "main": 707,
+    "viewport": 768
+  },
+  {
+    "theme": "light",
+    "width": 1440,
+    "name": "dashboard",
+    "background": "linear-gradient(145deg, rgb(238, 232, 251), rgba(245, 249, 252, 0.92))",
+    "body": 1440,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 1364,
+    "main": 1364,
+    "viewport": 1440
+  },
+  {
+    "theme": "light",
+    "width": 1440,
+    "name": "focus",
+    "background": "linear-gradient(145deg, rgb(238, 232, 251), rgba(245, 249, 252, 0.92))",
+    "body": 1440,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 1364,
+    "main": 1364,
+    "viewport": 1440
+  },
+  {
+    "theme": "light",
+    "width": 1440,
+    "name": "project",
+    "background": "linear-gradient(145deg, rgb(238, 232, 251), rgba(245, 249, 252, 0.92))",
+    "body": 1440,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 1364,
+    "main": 1364,
+    "viewport": 1440
+  },
+  {
+    "theme": "light",
+    "width": 1920,
+    "name": "dashboard",
+    "background": "linear-gradient(145deg, rgb(238, 232, 251), rgba(245, 249, 252, 0.92))",
+    "body": 1920,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 1844,
+    "main": 1844,
+    "viewport": 1920
+  },
+  {
+    "theme": "light",
+    "width": 1920,
+    "name": "focus",
+    "background": "linear-gradient(145deg, rgb(238, 232, 251), rgba(245, 249, 252, 0.92))",
+    "body": 1920,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 1844,
+    "main": 1844,
+    "viewport": 1920
+  },
+  {
+    "theme": "light",
+    "width": 1920,
+    "name": "project",
+    "background": "linear-gradient(145deg, rgb(238, 232, 251), rgba(245, 249, 252, 0.92))",
+    "body": 1920,
+    "circle": [
+      170,
+      170
+    ],
+    "client": 1844,
+    "main": 1844,
+    "viewport": 1920
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Vazios reais e criação Projeto → Tarefas → Referências",
+    "result": "PASS"
+  },
+  {
+    "name": "Diálogo inicial Tab Shift Tab Escape cancelamento e X retornam foco",
+    "result": "PASS"
+  },
+  {
+    "name": "Criação link com resposta perdida retentativa sem duplicação e foco",
+    "result": "PASS"
+  },
+  {
+    "name": "Material sem URL e HTML como texto sem execução",
+    "result": "PASS"
+  },
+  {
+    "name": "Editar título tipo URL descrição mantém UID e ordenação",
+    "result": "PASS"
+  },
+  {
+    "name": "URL insegura 422 preserva campos e falha 503 permite retentativa",
+    "result": "PASS"
+  },
+  {
+    "name": "Duas abas conflito 409 preserva edição e reaplicação explícita",
+    "result": "PASS"
+  },
+  {
+    "name": "Conflito permite carregar versão confirmada com todos os campos",
+    "result": "PASS"
+  },
+  {
+    "name": "Arquivar após abrir formulário bloqueia escrita e restauração preserva filhos",
+    "result": "PASS"
+  },
+  {
+    "name": "Navegação suja bloqueada e atalhos não sobrepõem diálogos",
+    "result": "PASS"
+  },
+  {
+    "name": "Projetos Tarefas Referências Dashboard usam contagens e registros iguais",
+    "result": "PASS"
+  },
+  {
+    "name": "URLs diretas novo editar e inexistente preservam histórico e foco",
+    "result": "PASS"
+  },
+  {
+    "name": "Tema destaque Music e persistência após recarga",
+    "result": "PASS"
+  },
+  {
+    "name": "Referências e formulário dark 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Integração visual Dashboard e projeto dark 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Referências e formulário dark 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Integração visual Dashboard e projeto dark 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Referências e formulário dark 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Integração visual Dashboard e projeto dark 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Referências e formulário dark 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Integração visual Dashboard e projeto dark 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Referências e formulário dark 1920px",
+    "result": "PASS"
+  },
+  {
+    "name": "Integração visual Dashboard e projeto dark 1920px",
+    "result": "PASS"
+  },
+  {
+    "name": "Referências e formulário light 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Integração visual Dashboard e projeto light 320px",
+    "result": "PASS"
+  },
+  {
+    "name": "Referências e formulário light 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Integração visual Dashboard e projeto light 390px",
+    "result": "PASS"
+  },
+  {
+    "name": "Referências e formulário light 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Integração visual Dashboard e projeto light 768px",
+    "result": "PASS"
+  },
+  {
+    "name": "Referências e formulário light 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Integração visual Dashboard e projeto light 1440px",
+    "result": "PASS"
+  },
+  {
+    "name": "Referências e formulário light 1920px",
+    "result": "PASS"
+  },
+  {
+    "name": "Integração visual Dashboard e projeto light 1920px",
+    "result": "PASS"
+  }
+]

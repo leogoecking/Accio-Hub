@@ -1,0 +1,3926 @@
+[
+  {
+    "path": "docs/assets/p1.2f/f4/INVENTORY_BEFORE.md",
+    "sha256": "19d528707a3d6ae3ea244550a1b73604d47d2e50fbe1bfff8a79c300a64148bd",
+    "size": 6167,
+    "archive_member": "docs/assets/p1.2f/f4/INVENTORY_BEFORE.md"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/axe-login-dark-000000-320.json",
+    "sha256": "7873ed4faa3f81fe88d5615d0cbfae88ca5d4e059062a328ebb884d9cf152891",
+    "size": 4010,
+    "archive_member": "docs/assets/p1.2f/f4/additional/axe-login-dark-000000-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/axe-login-light-000000-320.json",
+    "sha256": "7873ed4faa3f81fe88d5615d0cbfae88ca5d4e059062a328ebb884d9cf152891",
+    "size": 4010,
+    "archive_member": "docs/assets/p1.2f/f4/additional/axe-login-light-000000-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/axe-recovery-dark-320.json",
+    "sha256": "27475ba9e64086bf13558d3cc242c4a1f6f262976a7c46e31420d9ef6039c09b",
+    "size": 4108,
+    "archive_member": "docs/assets/p1.2f/f4/additional/axe-recovery-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/axe-recovery-light-320.json",
+    "sha256": "27475ba9e64086bf13558d3cc242c4a1f6f262976a7c46e31420d9ef6039c09b",
+    "size": 4108,
+    "archive_member": "docs/assets/p1.2f/f4/additional/axe-recovery-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/browser-errors.json",
+    "sha256": "dad83578b68754c3d78e9e72e466105eb06fe6b57fec8b5252fabc96aa8bf048",
+    "size": 353,
+    "archive_member": "docs/assets/p1.2f/f4/additional/browser-errors.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/login-dark-000000-320-background.png",
+    "sha256": "674028e5a7641896610737c9af42c933a794ae3b7bc817d6d151988acd59c44a",
+    "size": 106330,
+    "archive_member": "docs/assets/p1.2f/f4/additional/login-dark-000000-320-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/login-dark-000000-320-contrast.json",
+    "sha256": "c4e803d27965deea79cdf6d2d3cb73b17a82cb3a3a57a0f15ae2e395bd0af9ee",
+    "size": 5513,
+    "archive_member": "docs/assets/p1.2f/f4/additional/login-dark-000000-320-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/login-dark-000000-320.json",
+    "sha256": "9874f09e85bbc041334623410587f27e7a58cad05059976a44dce914bdd6b3dc",
+    "size": 6863,
+    "archive_member": "docs/assets/p1.2f/f4/additional/login-dark-000000-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/login-dark-000000-320.png",
+    "sha256": "28e792b398a2a717459f0fb77b221f830cf124f7a91fd5e6a8c99842ed2a4ac3",
+    "size": 123007,
+    "archive_member": "docs/assets/p1.2f/f4/additional/login-dark-000000-320.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/login-light-000000-320-background.png",
+    "sha256": "0801f25c61df7013de00e1741243fbb2945bd8843d607b7efe9be0b1505f3e20",
+    "size": 32154,
+    "archive_member": "docs/assets/p1.2f/f4/additional/login-light-000000-320-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/login-light-000000-320-contrast.json",
+    "sha256": "3f4613312f745c064520e3e1b401f58398e968e3db3f5cb3fd0ed8f46482b3cd",
+    "size": 5530,
+    "archive_member": "docs/assets/p1.2f/f4/additional/login-light-000000-320-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/login-light-000000-320.json",
+    "sha256": "107ed2d3681ff2803a93895efb68dd543e6d57b1ce60dea7e5b6ea798c9e449d",
+    "size": 6849,
+    "archive_member": "docs/assets/p1.2f/f4/additional/login-light-000000-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/login-light-000000-320.png",
+    "sha256": "051e64c4446e9613884ef8777c75def591c92586b20eeb2fe37f5bc0c9c04673",
+    "size": 48463,
+    "archive_member": "docs/assets/p1.2f/f4/additional/login-light-000000-320.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/matrix.json",
+    "sha256": "02f63cb767b34512e2730eeeac3d88c0a4cd7a1228a8a4d26a913213780750d7",
+    "size": 11578,
+    "archive_member": "docs/assets/p1.2f/f4/additional/matrix.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/recovery-dark-320-background.png",
+    "sha256": "8c5ce64c03dece248b81c0b893fffb0c9f59f7c5990330249ee9a9a75999cb6e",
+    "size": 129998,
+    "archive_member": "docs/assets/p1.2f/f4/additional/recovery-dark-320-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/recovery-dark-320-contrast.json",
+    "sha256": "73d3e5fdbcd97c7c3d0d8dba7d37cc85e4e5fcc06810056819b8c1ebcdd94a64",
+    "size": 30197,
+    "archive_member": "docs/assets/p1.2f/f4/additional/recovery-dark-320-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/recovery-dark-320.json",
+    "sha256": "40a0048c9a2ff9ca298fefbe14da47be7126f6eff932604493e988e162579a3d",
+    "size": 34448,
+    "archive_member": "docs/assets/p1.2f/f4/additional/recovery-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/recovery-dark-320.png",
+    "sha256": "7f474a7dd1a7c6db5821d3c4eea22ca11bec2bfaa4891996596abdc72ba79be0",
+    "size": 180667,
+    "archive_member": "docs/assets/p1.2f/f4/additional/recovery-dark-320.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/recovery-light-320-background.png",
+    "sha256": "a15b9c9694bbfd5efedce4344bfcd9e09c7d5590cf5d91c5750bd63ec3a3f588",
+    "size": 100862,
+    "archive_member": "docs/assets/p1.2f/f4/additional/recovery-light-320-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/recovery-light-320-contrast.json",
+    "sha256": "42f9972606e7bb009fd8cbc813c2081ecfbb2d4d92383d97a01619f9a17ede08",
+    "size": 30261,
+    "archive_member": "docs/assets/p1.2f/f4/additional/recovery-light-320-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/recovery-light-320.json",
+    "sha256": "15631de0108567ea1e02f4208b66d485f9e8ba00159c8a37affedbbb0c72bc5a",
+    "size": 34356,
+    "archive_member": "docs/assets/p1.2f/f4/additional/recovery-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/recovery-light-320.png",
+    "sha256": "2d1550d8dc32ed1a1a1c041aab6523d4f6ea45ab5afb72cc23ad668f64a42aa4",
+    "size": 149790,
+    "archive_member": "docs/assets/p1.2f/f4/additional/recovery-light-320.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/additional/reduced-motion.json",
+    "sha256": "914a8c13d56eef908c6345c26210622a1aa089e4fd48e5bd625745adbb68d46d",
+    "size": 88,
+    "archive_member": "docs/assets/p1.2f/f4/additional/reduced-motion.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-customize.json",
+    "sha256": "618a0d1e9090ad2ad4f7bcfc7de77e437960af835db85ffa1447c2207787b5a2",
+    "size": 4299,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-customize.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-dashboard.json",
+    "sha256": "bc8c2ba8a51cd2022281f530d88bb2a1912b56f348365045b6e6c6d9a339a83d",
+    "size": 4239,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-focus.json",
+    "sha256": "28dff8afff48bc470766fe90e71798d2a5c3344dca0ca17eda55ec315789d2e1",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-focus.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-library.json",
+    "sha256": "dc4c1b6fc272e83713c8505198cafb979e1cc892c99d13b540bb1db119a3ee72",
+    "size": 4244,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-project-form.json",
+    "sha256": "c41149f13ccb47cc1302062bc3bee7ed75bf46a7ce8d6db8528bf55296b8daad",
+    "size": 4519,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-project-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-reference-form.json",
+    "sha256": "9ce1a427444789d2a5fe6ac5489edabf2fcfe0b14c9b470035dca13f54dc32f3",
+    "size": 5105,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-reference-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-search.json",
+    "sha256": "b18fc486754e1173bfb1a04ea40e7876cd67e8410bf9e979a95610f0244cfb22",
+    "size": 4397,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-search.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-settings.json",
+    "sha256": "ab6d77fc035b8ce34de2c2d6dbea86cf7711a15045a94cc1744745275e9f09ad",
+    "size": 4239,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-task-form.json",
+    "sha256": "3d0377c95be3a183a410cdf61882ad69da53844c3ab083bee275d06cc2145dbb",
+    "size": 5218,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-1440-task-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-320-focus.json",
+    "sha256": "d97e69375619b54ef9d4eabd944b8a128c4953243766e127069e0d2e4ad6e0a6",
+    "size": 4108,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-320-focus.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-390-dashboard.json",
+    "sha256": "625b56d7d8924ccd9d44d070c8f14340adfa4e50e226772f24d0e5dfc7d9c00d",
+    "size": 4305,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-390-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-390-focus.json",
+    "sha256": "21b8929aa5da4a7d3bfc389ad27eb4362c07d1d915f8513c8cc66f95386bef9b",
+    "size": 4108,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-390-focus.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-390-library.json",
+    "sha256": "b4d2a124e139981649829f0b66db031268d84bb94b88d29c1651743dff5a2994",
+    "size": 4339,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-dark-390-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-customize.json",
+    "sha256": "30197d813d411e8ea63b1af4ae0e8602e9a14f937a157601e82215273bb612ff",
+    "size": 4299,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-customize.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-dashboard.json",
+    "sha256": "c422539307cc4619eea24d8eac7b92c22f9a740a660e669d809021bcf8d48278",
+    "size": 4239,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-focus.json",
+    "sha256": "3f4d4be5ac2e3c633f462acad58e706567887f04ab137339fe5bef739bd50ed9",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-focus.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-library.json",
+    "sha256": "a2b2211d75664f716539df753def1cf6e74f535c5703aeee2b3f23b959fc11cc",
+    "size": 4244,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-project-form.json",
+    "sha256": "c41149f13ccb47cc1302062bc3bee7ed75bf46a7ce8d6db8528bf55296b8daad",
+    "size": 4519,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-project-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-reference-form.json",
+    "sha256": "9ce1a427444789d2a5fe6ac5489edabf2fcfe0b14c9b470035dca13f54dc32f3",
+    "size": 5105,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-reference-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-search.json",
+    "sha256": "b18fc486754e1173bfb1a04ea40e7876cd67e8410bf9e979a95610f0244cfb22",
+    "size": 4397,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-search.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-settings.json",
+    "sha256": "88a56cc6f068adbb20a3b5c056f70ed3af9da7eb8fb46f2a4c90fb4c31f704f2",
+    "size": 4239,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-task-form.json",
+    "sha256": "3d0377c95be3a183a410cdf61882ad69da53844c3ab083bee275d06cc2145dbb",
+    "size": 5218,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-light-1440-task-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-light-320-focus.json",
+    "sha256": "d97e69375619b54ef9d4eabd944b8a128c4953243766e127069e0d2e4ad6e0a6",
+    "size": 4108,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-light-320-focus.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-light-390-dashboard.json",
+    "sha256": "c2caa724f042f82ee9c70f474c39f60b853a95dcb8fe904c681d58641d9211c1",
+    "size": 4305,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-light-390-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-light-390-focus.json",
+    "sha256": "21b8929aa5da4a7d3bfc389ad27eb4362c07d1d915f8513c8cc66f95386bef9b",
+    "size": 4108,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-light-390-focus.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/axe-light-390-library.json",
+    "sha256": "b4d2a124e139981649829f0b66db031268d84bb94b88d29c1651743dff5a2994",
+    "size": 4339,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/axe-light-390-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/browser-errors.json",
+    "sha256": "dad83578b68754c3d78e9e72e466105eb06fe6b57fec8b5252fabc96aa8bf048",
+    "size": 353,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/browser-errors.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-customize-background.png",
+    "sha256": "486f6f154244964ba392562f70cf5f6a6c811b558ab974cfcb045cf016c58d64",
+    "size": 127760,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-customize-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-customize-contrast.json",
+    "sha256": "b231847c41030f42d15f12b37e146e8d6e2a9ff7bd3181c8b783dd6bb6bf594c",
+    "size": 25837,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-customize-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-customize.json",
+    "sha256": "e6301bfda7f8a17c4cbe8c561b5266c78efb88e72470729f81d39bef87d75067",
+    "size": 30000,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-customize.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-customize.png",
+    "sha256": "9f2a9809ac1075608d889f6fd606d96c6c55310d333a6da8c59db7f312cf0d10",
+    "size": 205524,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-customize.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-dashboard-background.png",
+    "sha256": "61793d7810d71f1819c90198c0433388b92f57dfa9b02e6087bbc03666afd160",
+    "size": 377784,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-dashboard-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-dashboard-contrast.json",
+    "sha256": "6ba375750cc8d6ae305c0851a036dc15490a55dbe3085d8dee2c029c9d6cdf0c",
+    "size": 58785,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-dashboard-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-dashboard.json",
+    "sha256": "e059ca180101dbe8968a2d97dc89d09996d16fd33a2ec97745c3f1fefbd4e313",
+    "size": 62474,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-dashboard.png",
+    "sha256": "10f0790544b6a679b6553fd2c778c44cf02a684fe41d20fd1ea7bcde6548f450",
+    "size": 507281,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-dashboard.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-focus-background.png",
+    "sha256": "eb4bca83e660250793d3d387972eecbad8dda7c7cf74eb7504d4edb28cc24f9b",
+    "size": 446043,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-focus-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-focus-contrast.json",
+    "sha256": "8e5aeafeb3a15cc8c8de18c9bc5f3827c1eb4bc571a871d1ec6ee8cbdccd3641",
+    "size": 30785,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-focus-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-focus.json",
+    "sha256": "85881cec3901f6b703466f408f6ab7783f081ab7b114177ebe9253b713b96135",
+    "size": 33159,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-focus.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-focus.png",
+    "sha256": "75ecb09d2ac270bbde295e7f78fecfc5244bacfc90913231ead5df311b78ad57",
+    "size": 518952,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-focus.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-library-background.png",
+    "sha256": "db696f32769365b29050159cd394a816c307ca8abcae0b63f0913ba498e53caf",
+    "size": 525663,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-library-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-library-contrast.json",
+    "sha256": "7b596aabe01a2992ee34cbfc0157dc1fd87bcec29837b877e8c846b6bb5ccd40",
+    "size": 47099,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-library-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-library.json",
+    "sha256": "c5b2bf962c97e9dd4d5d4ce1c1983db7f0ea9c0bb159b7787a40ac1c8180109f",
+    "size": 47688,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-library.png",
+    "sha256": "a81e698eaaa8e0d58858a44f5eb16d78d89bfd9d7ba7b21b018d52dc1c44b940",
+    "size": 622937,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-library.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-project-form-background.png",
+    "sha256": "04c9f8011ea86ac0053c28444237a69f89e20653291bf36800da58e9e171553d",
+    "size": 103724,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-project-form-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-project-form-contrast.json",
+    "sha256": "bfc748a2ddacebff5cfd1616bb29656b500b0fc217718fb8b42136cc9aa26b8d",
+    "size": 8587,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-project-form-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-project-form.json",
+    "sha256": "e78df217ddaa2f9c24233bbaa5a54daf34bf50a8540e002216a15d6ee0dce09b",
+    "size": 10370,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-project-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-project-form.png",
+    "sha256": "b3c8ef5e5ba374926ce29b931a2bc7923e57b3b54b1edad44485f4419619321d",
+    "size": 185315,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-project-form.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-reference-form-background.png",
+    "sha256": "8b42071df585df851fc37ff961b92f19012562976126d5e630e5a81a37a32aed",
+    "size": 63924,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-reference-form-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-reference-form-contrast.json",
+    "sha256": "9013cf26a318b494a374e1711b058db1f657a31b99e33fe209f0479d3367e4f1",
+    "size": 7594,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-reference-form-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-reference-form.json",
+    "sha256": "711e81524679943a1f6482b335573ee1cb6d81c8bf8274c2679b48d22e8c364b",
+    "size": 9433,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-reference-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-reference-form.png",
+    "sha256": "924db87e258bd6b894122ce1cab8db1fd5f3fccc222c78f7a10c648ab881986a",
+    "size": 144209,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-reference-form.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-search-background.png",
+    "sha256": "2a88f788c5331f829389c4c1538d7c54cdc18d56e2b7093eede132472e227595",
+    "size": 84378,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-search-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-search-contrast.json",
+    "sha256": "bf592d7384f41b00bee00dcabf6e19255625b5bf35e776ddf35e3c2bf5450512",
+    "size": 11667,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-search-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-search.json",
+    "sha256": "30b72e4975525de2fb2c036d2a44a0c7bba1c62c2ddb3bcb44f415fd15c67629",
+    "size": 13457,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-search.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-search.png",
+    "sha256": "89177cff829f940dfffed90002ac9979c84117863489c7161e43d33246545a02",
+    "size": 171722,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-search.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-settings-background.png",
+    "sha256": "fce28c6d2b8528c87fb091366a9a463bcf7c31bdd3bfd3d1d53ff6b31bfa7a9c",
+    "size": 264167,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-settings-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-settings-contrast.json",
+    "sha256": "0c61fdef0d826a04d16e34dd976bd472889150dd312401c82fd27418ddd3eb2a",
+    "size": 44747,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-settings-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-settings.json",
+    "sha256": "3d59a55de356ddb66b1b0b89f8f182a27057244c26acafe4cb00ff936c792c2c",
+    "size": 47266,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-settings.png",
+    "sha256": "4d622506d0198fd957c3db18a8e3443ae2099759d451073e7a6a3c59d3272544",
+    "size": 322564,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-settings.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-task-form-background.png",
+    "sha256": "411ec3ca8f2154e11db5411f9c08d6e715122e8c2ffc736e5a701d766d46f5cd",
+    "size": 68335,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-task-form-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-task-form-contrast.json",
+    "sha256": "3cf2c3ec16dd037561244d741d879028c30cbb0f2709f932d0c125339a6225f3",
+    "size": 6223,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-task-form-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-task-form.json",
+    "sha256": "7016c5ad4097b9d45a6214798049c20205210e6dabc84641288c49e09c58e178",
+    "size": 7849,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-task-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-task-form.png",
+    "sha256": "98b969977f3167e78c91b75e3b8e64d614e62723abfa4854ed24e6d270c0bf1f",
+    "size": 125050,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-1440-task-form.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-320-focus-background.png",
+    "sha256": "06f2d99740bb0f3bbe52d8e5ed79150b9ed6a495f8491712f9bae6674524f56c",
+    "size": 111931,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-320-focus-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-320-focus-contrast.json",
+    "sha256": "5e7fbb7f2e8133488bb57a4c9befdb25ca1a19cfd9945c0bb263982ea1664c0d",
+    "size": 27775,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-320-focus-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-320-focus.json",
+    "sha256": "4bbfe778c040593c18cc4e26fc2c1d3f4234bedf19826d2603e20a74fea270bb",
+    "size": 31582,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-320-focus.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-320-focus.png",
+    "sha256": "b203aaa48644452ebd91eaea95f2f09dd9526ccd48e6c335ed84dbbac947869f",
+    "size": 169059,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-320-focus.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-390-dashboard-background.png",
+    "sha256": "93440725f9e804d5af127688f1beaf7523511d03fe0c1bc728084fceebdf8d5f",
+    "size": 133863,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-390-dashboard-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-390-dashboard-contrast.json",
+    "sha256": "bde91bd62c45c8d5f8e7fd735e9f5b0a1562fcd9f8492dd0e509b1f072d6c52a",
+    "size": 43409,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-390-dashboard-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-390-dashboard.json",
+    "sha256": "61345e00769c829c469d2bbea0cafda2879fc26253e50abe548966b28cfe9503",
+    "size": 47016,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-390-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-390-dashboard.png",
+    "sha256": "e392063e454bbac79b1160450ecf3d8ed16105c2e2e733dec25f7181f74d81b3",
+    "size": 202701,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-390-dashboard.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-390-focus-background.png",
+    "sha256": "a79ecf26fef02182630ae47a45b379c4bf2fb7457402cd497743d1e0ac218d6c",
+    "size": 130811,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-390-focus-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-390-focus-contrast.json",
+    "sha256": "1efcc3487f4698114511e24ddd67b78a8ae2271ab8ce2df6c2ab3073cf71b36e",
+    "size": 27772,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-390-focus-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-390-focus.json",
+    "sha256": "1d7ae20e7aa35291b9d269297641d2d709bdf41410ef8fabc642f2a5dd156fc7",
+    "size": 31212,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-390-focus.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-390-focus.png",
+    "sha256": "6ded02033b48878031b79c7bc61ee218417ffb6953627566e5a63b3b0dc930ae",
+    "size": 189916,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-390-focus.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-390-library-background.png",
+    "sha256": "363f9b07d45f6949f3f33ef395988dee571f4adc20fc2015e612dffa3261ab80",
+    "size": 160761,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-390-library-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-390-library-contrast.json",
+    "sha256": "4507b912888cc76e9808311d5d4be1f48f352221f04f744dc0f9840f7c4c36bd",
+    "size": 33464,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-390-library-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-390-library.json",
+    "sha256": "a00a060ca00908d4121ddc89413f4dda3cfa0f29d57bfafd01cc5e4a2fef0193",
+    "size": 34236,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-390-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/dark-390-library.png",
+    "sha256": "380a823ca5e12777034956d917b0867c7bddd8e2844436f9321c665a04ae34b1",
+    "size": 213701,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/dark-390-library.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-customize-background.png",
+    "sha256": "02136500146498538e1e8c42f5a3478ff79c9768d4b55aa9bd7b240130aa3d67",
+    "size": 118694,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-customize-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-customize-contrast.json",
+    "sha256": "022281a388561b54e18af95c51b3096e5b8d60c532d0ea268ce1c483df35f8cc",
+    "size": 25833,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-customize-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-customize.json",
+    "sha256": "00e499a91f50191caf45f0bce66003775da9753e7bd329f660e8fe0a6d5e5f82",
+    "size": 29894,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-customize.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-customize.png",
+    "sha256": "9e0db6a24b5fe61252147d0631739e8c595ae4ecc632d44790d7a7acfc8f2b74",
+    "size": 195737,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-customize.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-dashboard-background.png",
+    "sha256": "ff7695800e8da422bda574199c4e2d7ba8586c362c738964792a8a2b0b9acbed",
+    "size": 231998,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-dashboard-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-dashboard-contrast.json",
+    "sha256": "bdc6b0a6cb3708d2e3e68ddb65c6984f1ca77c35d14b5f39035f9a63b98f76a8",
+    "size": 58893,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-dashboard-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-dashboard.json",
+    "sha256": "b0e83e5634566162fc04047a9b6e4d783d92309ca26fefabf6beb8334934aa0e",
+    "size": 62272,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-dashboard.png",
+    "sha256": "2dba4d3dd39a39f7b6c2cf76db9baf4aa5083498a15657059d05f45167ae7c7c",
+    "size": 342129,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-dashboard.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-focus-background.png",
+    "sha256": "52d84afd9c9dd042da33685cb284f2b96fc9dea42f2eb4dbd0002653074aa2e1",
+    "size": 160519,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-focus-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-focus-contrast.json",
+    "sha256": "571d02a82603ca12fa074e7bef3860aed13cbb720a320bd795ac434d4467d54c",
+    "size": 30854,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-focus-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-focus.json",
+    "sha256": "2e87666fcc709386f15d364c89605d7e500bc664461fd90fc024d81ad3daa70b",
+    "size": 33068,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-focus.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-focus.png",
+    "sha256": "8da85333980f4fc375b3bf3d914276cd51ae31d8dbd05a1b7ef515eaef3f35c3",
+    "size": 219633,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-focus.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-library-background.png",
+    "sha256": "73832680b2dd27b71efe9ddac8af973e6decf8b3a52541f47e547c47db80b416",
+    "size": 143472,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-library-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-library-contrast.json",
+    "sha256": "0457593a764e338d86a2b8f0f8d59dc82166c65bbe7178dafb76561aa172a3be",
+    "size": 47236,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-library-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-library.json",
+    "sha256": "b2a89d74cf098f98336a1072160ab1e91c730faa51169ccee1a1eaae8f0c7945",
+    "size": 47568,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-library.png",
+    "sha256": "faf2c0f75ee2ba4644d1a179759e0acdeb70dab7e1ed98fea12df7d88d49ff2c",
+    "size": 217677,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-library.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-project-form-background.png",
+    "sha256": "31a839a1b82e243056ae709ea266511ef793e04642ed1f409cadf2c9c4784522",
+    "size": 77735,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-project-form-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-project-form-contrast.json",
+    "sha256": "f4f4f6937a565c827765c395b9548e60b1a0c14957a2ce2effd0e680cc0015a7",
+    "size": 8589,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-project-form-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-project-form.json",
+    "sha256": "05be35fc523bef6aa797417565123020f9b9c6efd3228334938340d4e428caca",
+    "size": 10334,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-project-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-project-form.png",
+    "sha256": "46e66b4e617218517da3748b8370aa65ee4cc463e364d4f77033005fe626586a",
+    "size": 159889,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-project-form.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-reference-form-background.png",
+    "sha256": "7003d7d34cf39c19b11831c894cb2e7870887e59c187d2a2c743edb7fa81afcd",
+    "size": 38680,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-reference-form-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-reference-form-contrast.json",
+    "sha256": "3ef378f29fb488a7a18e167b7e4635d1dbb41fe8add339a3f26a280752a72762",
+    "size": 7593,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-reference-form-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-reference-form.json",
+    "sha256": "9a3f32dd1376f005d10ba864d43e6865a1055b6d23117a6b7da49d76c54da57c",
+    "size": 9399,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-reference-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-reference-form.png",
+    "sha256": "c1ecbf82fe09944f79784fda8e940608f13a0ef8de7a1902b1ad0c5361752c67",
+    "size": 122827,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-reference-form.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-search-background.png",
+    "sha256": "bc2f97d00ef510c47ff3465be563ceda4a9762ff4f10623ef56f1833156b1129",
+    "size": 72271,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-search-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-search-contrast.json",
+    "sha256": "275a5ea025b3171fdae12adf24e10d0d283c7491090e75392aa13759e5b283ed",
+    "size": 11668,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-search-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-search.json",
+    "sha256": "d1c43abc1f948bada4badcb3ffc93ff72284a6918a0ef1d0de6ccea601960f63",
+    "size": 13401,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-search.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-search.png",
+    "sha256": "bc731bd54b4ab362509008784c9d738fc20d69c1a383aff53151ea2f11d1d6b9",
+    "size": 160407,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-search.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-settings-background.png",
+    "sha256": "50859860274b5df4317a67f3b477cf9c764c1a7fe2a14ca886b1b858c4dc112a",
+    "size": 156411,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-settings-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-settings-contrast.json",
+    "sha256": "fe1bcd21b5eeb0351d2f1e0ee387990f3d9d1989e96963513a3f97237305efcc",
+    "size": 44829,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-settings-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-settings.json",
+    "sha256": "d0aefe8cf86ba424d27fe31e8cbb1d54a1bc363dc97fdda4d7264454dc2a5bee",
+    "size": 47128,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-settings.png",
+    "sha256": "7220cff8359d5126755454a0797bbf6aaeee09f9d2e198f11952d83bca2126ae",
+    "size": 207885,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-settings.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-task-form-background.png",
+    "sha256": "c8d48b102f4856b2370130ed8408781d57a3928919790d42b07c4855e5447228",
+    "size": 39230,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-task-form-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-task-form-contrast.json",
+    "sha256": "af271eca2ef37cb19cc865bd8ee235f9812fa9735ae60f6268ea23bf1035c88f",
+    "size": 6220,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-task-form-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-task-form.json",
+    "sha256": "1cd4b9ccc6fa0074c23775480992224f6e76b331a01bdfd4b3eb994361a42606",
+    "size": 7819,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-task-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-1440-task-form.png",
+    "sha256": "58850c62d90a98cf66fe559e55a2504a4bacadcb442c3863686008a477dab91a",
+    "size": 98979,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-1440-task-form.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-320-focus-background.png",
+    "sha256": "5d19e9bc6863fbcd04822d394815b382b56d4d4724e5be5f4e67c0ced13d2453",
+    "size": 82142,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-320-focus-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-320-focus-contrast.json",
+    "sha256": "5f346d183a296f59a5e50723a93479966773f29ca509842f8f952e28bf2164c9",
+    "size": 27833,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-320-focus-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-320-focus.json",
+    "sha256": "3865af3fa4fcf9e8bcd6097a7c43050267e6f7eb7a4b5acf1afc870c3badd2a3",
+    "size": 31499,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-320-focus.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-320-focus.png",
+    "sha256": "d186afaab2dc75d8d0cbbed82d01fab918fe01f44353448895c2a921d3d7dac9",
+    "size": 132764,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-320-focus.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-390-dashboard-background.png",
+    "sha256": "6b755ddb4006e05e0eeb2f5b2b2b5a879289e46e6938a88ae685664a1f88f1d2",
+    "size": 80807,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-390-dashboard-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-390-dashboard-contrast.json",
+    "sha256": "0068eab5dd80b15aa47bc5376c2684ac49ad5bfcd012a14c4912d13c576b39a4",
+    "size": 43495,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-390-dashboard-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-390-dashboard.json",
+    "sha256": "51be85e0b8409021c9b65b884c3254d629a291f2fe828800665ee3a0b870678d",
+    "size": 46871,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-390-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-390-dashboard.png",
+    "sha256": "197adb718627cbf489dcc9fb3301b2e7cdf21650c8a3800276ba9e728059bfec",
+    "size": 141245,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-390-dashboard.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-390-focus-background.png",
+    "sha256": "28b62f429f2481603b0900cd56080e0f08a9eff4f2ad5e233b138e5a0f47e267",
+    "size": 95534,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-390-focus-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-390-focus-contrast.json",
+    "sha256": "d8bdaaa93849e4b0f8a81ded38aba8ad83cb250f5bf6f68c8f0d70d3d24c3e92",
+    "size": 27833,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-390-focus-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-390-focus.json",
+    "sha256": "1ff2170f6e7b1aa23378e2765cb4c95efd9fda27b5108ecf38901ff92608a0a9",
+    "size": 31129,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-390-focus.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-390-focus.png",
+    "sha256": "14d4c8ad52362705cc1095a685780451b91d6872e7fe16b2774a1015e3d126fc",
+    "size": 149260,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-390-focus.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-390-library-background.png",
+    "sha256": "b561d8208249ed406527de2184df47418b933993d32c952467509a53edeeb9fe",
+    "size": 89502,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-390-library-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-390-library-contrast.json",
+    "sha256": "120485a4b34e04a305dd8f2f8b36e7e5297cdd525de9a63670d7a8af2ce01dc1",
+    "size": 33559,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-390-library-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-390-library.json",
+    "sha256": "36726abae896c1a5d5678c6586bbca081d6f415727cccde94e607a5c279c63df",
+    "size": 34151,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-390-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/light-390-library.png",
+    "sha256": "ea903294986760011b4851f3fa14e3261ff0608a5b4116619321558d84a4df06",
+    "size": 136884,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/light-390-library.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/after-reviewed/matrix.json",
+    "sha256": "e29c599d2a9ffb4994765f6b624910015d13ee7353c0506601120cc6d057c318",
+    "size": 59591,
+    "archive_member": "docs/assets/p1.2f/f4/after-reviewed/matrix.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/baseline-p04/dark-1440.png",
+    "sha256": "a00befbb679a6f810c4c3f38b04ac6d6d88e519ea46fe60f4845a164a1242575",
+    "size": 514994,
+    "archive_member": "docs/assets/p1.2f/f4/baseline-p04/dark-1440.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/baseline-p04/dark-390.png",
+    "sha256": "a7d594101eadd16c918c59432ef2c1fd10388cafb936dfe6d46addbd6138cd50",
+    "size": 204818,
+    "archive_member": "docs/assets/p1.2f/f4/baseline-p04/dark-390.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/baseline-p04/geometry.json",
+    "sha256": "ef4a4bf56019ae8d51fefbc1142be2d9eb50b14c82628d095884e27c257ef830",
+    "size": 24223,
+    "archive_member": "docs/assets/p1.2f/f4/baseline-p04/geometry.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/baseline-p04/light-1440.png",
+    "sha256": "6e39d98a16cccce3dabdf7abddf1f895411880e35108d36552f123244c157cca",
+    "size": 342762,
+    "archive_member": "docs/assets/p1.2f/f4/baseline-p04/light-1440.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/baseline-p04/light-390.png",
+    "sha256": "a2a8cc8bbbe8694147987bf5a4f9559566ce88482dcb59a5f044dd82cc46c7c4",
+    "size": 142260,
+    "archive_member": "docs/assets/p1.2f/f4/baseline-p04/light-390.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/axe-dark-1440-library.json",
+    "sha256": "a6e5f506beedc53b1383b76e538235ccaa0097935933d13c947c698f8699e92d",
+    "size": 4244,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/axe-dark-1440-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/axe-dark-1440-reference-form.json",
+    "sha256": "9ce1a427444789d2a5fe6ac5489edabf2fcfe0b14c9b470035dca13f54dc32f3",
+    "size": 5105,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/axe-dark-1440-reference-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/axe-dark-1440-search.json",
+    "sha256": "b18fc486754e1173bfb1a04ea40e7876cd67e8410bf9e979a95610f0244cfb22",
+    "size": 4397,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/axe-dark-1440-search.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/axe-dark-1440-widgets.json",
+    "sha256": "fd19b6e29576dacfe57619af6a4474af1482e73b4d5edb8cb1452fffcd0d5a4e",
+    "size": 4239,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/axe-dark-1440-widgets.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/axe-light-1440-library.json",
+    "sha256": "2d10ff5ebaf16332455c33843bbebf535816b9d53fda9bfbb01bb06f92cddf76",
+    "size": 4244,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/axe-light-1440-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/axe-light-1440-reference-form.json",
+    "sha256": "9ce1a427444789d2a5fe6ac5489edabf2fcfe0b14c9b470035dca13f54dc32f3",
+    "size": 5105,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/axe-light-1440-reference-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/axe-light-1440-search.json",
+    "sha256": "b18fc486754e1173bfb1a04ea40e7876cd67e8410bf9e979a95610f0244cfb22",
+    "size": 4397,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/axe-light-1440-search.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/axe-light-1440-widgets.json",
+    "sha256": "95979918a1241f93bb9e062d82d2ee957a7ce2a026aecfdcb7a2ff7161462da8",
+    "size": 4239,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/axe-light-1440-widgets.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/browser-errors.json",
+    "sha256": "dad83578b68754c3d78e9e72e466105eb06fe6b57fec8b5252fabc96aa8bf048",
+    "size": 353,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/browser-errors.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/dark-1440-library-background.png",
+    "sha256": "b41d0d1793fe98e8865b31cc3f0a89e159620ee2ed67bf3bdf8fc39ce1ea1920",
+    "size": 525351,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/dark-1440-library-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/dark-1440-library-contrast.json",
+    "sha256": "310c4312aee78a63d358731541699711652e784c5f87b5e8518f4f08c3c8bea2",
+    "size": 47072,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/dark-1440-library-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/dark-1440-library.json",
+    "sha256": "3e9368ee9be7694b23f07b4b5d1ec828d2a22a2686ad5925b7d7be21015794e1",
+    "size": 47512,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/dark-1440-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/dark-1440-library.png",
+    "sha256": "c4a804a1d31c7167cd6f3913aea1cf119ed80c5a315de48b63676e51bb2d5911",
+    "size": 622208,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/dark-1440-library.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/dark-1440-reference-form-background.png",
+    "sha256": "f6b007df742dd30afbe0fb8e4c242712b6c17604e287d2a4dce5594a3da8f8dc",
+    "size": 62861,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/dark-1440-reference-form-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/dark-1440-reference-form-contrast.json",
+    "sha256": "3c925295554dc8e2ee77ff0b2e29edb642d01265feb81d3123c03b5aae640b0e",
+    "size": 7582,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/dark-1440-reference-form-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/dark-1440-reference-form.json",
+    "sha256": "4d0bf756a69d2b02b66a6c6b0e253814fe0ca39eeed2444d5cd756cadb29b5c7",
+    "size": 9250,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/dark-1440-reference-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/dark-1440-reference-form.png",
+    "sha256": "2328f788d79eebcd938d8f4c3e35d753d4c6f83f8cee60e00840b3a5674f1e98",
+    "size": 143526,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/dark-1440-reference-form.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/dark-1440-search-background.png",
+    "sha256": "53364918c5a67e09b8ab2cfefed43336e846d470e199033ba671a5bd1852f2b1",
+    "size": 84229,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/dark-1440-search-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/dark-1440-search-contrast.json",
+    "sha256": "adafbcf1056e44b5fab8ccf6e30076f904bab684faf461f2905976f878d1b16f",
+    "size": 11659,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/dark-1440-search-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/dark-1440-search.json",
+    "sha256": "207aa52fa60ef45d6254d08942435510f8a03e040953c6771231be1ee6853a8a",
+    "size": 13414,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/dark-1440-search.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/dark-1440-search.png",
+    "sha256": "9d5ed0f97c6849894e3a7cea61558b63da6aa62aa17c673a07e772938c2170c5",
+    "size": 170638,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/dark-1440-search.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/dark-1440-widgets-background.png",
+    "sha256": "31330b0b8a3a8b8ef3f0f18ebca3a3284fcb2811dbe52f1f9351f7275368c793",
+    "size": 315434,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/dark-1440-widgets-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/dark-1440-widgets-contrast.json",
+    "sha256": "6dca1b568005868492e49fb4e3992980be5cfd84f36e1173097114d7ff9a1193",
+    "size": 63476,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/dark-1440-widgets-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/dark-1440-widgets.json",
+    "sha256": "38c6b1c3643db8d7d15ed1d8ec87a53558691d5e377429c52dad65b711699e6b",
+    "size": 67510,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/dark-1440-widgets.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/dark-1440-widgets.png",
+    "sha256": "8bd21878fa4a53328e454f5e6683db5c1b921ba9a6d17aa9a2443dddc79a5045",
+    "size": 437181,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/dark-1440-widgets.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/light-1440-library-background.png",
+    "sha256": "a174ffe0e1d3f8175a023b04d76ee3f28af027f554cd8260a3f4484b5918a030",
+    "size": 173012,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/light-1440-library-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/light-1440-library-contrast.json",
+    "sha256": "ffdb04959b0235d84ee843db1ae60a9818a4bd8bb26c874a5f2412d76180c853",
+    "size": 47181,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/light-1440-library-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/light-1440-library.json",
+    "sha256": "536943622f4e3b9e54ce311b0ac3766e6a76e840fda70cb1229fa9410394e24a",
+    "size": 47408,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/light-1440-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/light-1440-library.png",
+    "sha256": "c6707f998cb37572b32567f44a3d68e0fa38923e16a13e16537e01bd8690dc1f",
+    "size": 246454,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/light-1440-library.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/light-1440-reference-form-background.png",
+    "sha256": "a649138b3d75fe95769e1831dbb25cba290e391e735d230f6718956c84cbb823",
+    "size": 38849,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/light-1440-reference-form-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/light-1440-reference-form-contrast.json",
+    "sha256": "b78f76abbc95ff6b6759fd2e1fabd7087ec4a1d3c008fcbf3e8a82e0159a0a8e",
+    "size": 7585,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/light-1440-reference-form-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/light-1440-reference-form.json",
+    "sha256": "a67dc36ad270bee5df3a906fc68ad11ec350fe9bd21a7b2b97c7bb421f0a825a",
+    "size": 9220,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/light-1440-reference-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/light-1440-reference-form.png",
+    "sha256": "061fbc4a870495a02606c66a51af2241a2964229d5a8e937c542a9f51fdcf46b",
+    "size": 122066,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/light-1440-reference-form.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/light-1440-search-background.png",
+    "sha256": "4ace62ee0b9eda3fbd8bcbc3662cac334c0615b55e667962471f6ef8c7bfd782",
+    "size": 72539,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/light-1440-search-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/light-1440-search-contrast.json",
+    "sha256": "e674f60b7732e7cceee60a66650ed4b4551152488adc5183be23a37625baf73a",
+    "size": 11663,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/light-1440-search-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/light-1440-search.json",
+    "sha256": "c9f27a7b7566f187681932c45ffcc013baafd3511d62c75cc3cbf876e260ec8b",
+    "size": 13362,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/light-1440-search.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/light-1440-search.png",
+    "sha256": "6a35a9f16cfb093bbe58e925b1576698ad311ace38e87f0a064e4eaebc6b6fbc",
+    "size": 158796,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/light-1440-search.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/light-1440-widgets-background.png",
+    "sha256": "c6962f5c0ed589baec0c8ff37dcf0fa60ede11539272e68d7805829c82b52be3",
+    "size": 179669,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/light-1440-widgets-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/light-1440-widgets-contrast.json",
+    "sha256": "08fbf2e1c265a59c859a30a08f56a83c3958f14c84f7d4a0f44ddd81fbbb1c3c",
+    "size": 63641,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/light-1440-widgets-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/light-1440-widgets.json",
+    "sha256": "3019def0ceeeca9c71ba76a9516b19a06ab0c87385fa2b2ffdc1df2974928c84",
+    "size": 67449,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/light-1440-widgets.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/light-1440-widgets.png",
+    "sha256": "17a8f486eadb52fa1a187c1dbc2b6c59a0553edbfe318ee2cbbb2ea3765e0610",
+    "size": 295475,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/light-1440-widgets.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/before-measured/matrix.json",
+    "sha256": "98fd5b02a81d13b751264f6ea949ce25c6b1111732f3161d5ec01c232ff86aef",
+    "size": 23947,
+    "archive_member": "docs/assets/p1.2f/f4/before-measured/matrix.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/brakeman-final.log",
+    "sha256": "cacd4905191616de36863c1b07c0ce4cbb9673f0eca3e5e3b62c12bbb1768c13",
+    "size": 1941,
+    "archive_member": "docs/assets/p1.2f/f4/brakeman-final.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/brakeman.log",
+    "sha256": "49517b5d31af8e170e0b2b92d255c3c41d8784bf8f94c939cf64f7b9ac3997e8",
+    "size": 1941,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/brakeman.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast-reconciliation.json",
+    "sha256": "6236105a461413bcee8c178170dd0f6d50da5b9304f886a991f6796c06cbb7ce",
+    "size": 2353,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast-reconciliation.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast.log",
+    "sha256": "d55a6607acde017114b0b0010b78c8893641cee4fcff64c46b9e920eb5f21e40",
+    "size": 1089,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-customize.json",
+    "sha256": "618a0d1e9090ad2ad4f7bcfc7de77e437960af835db85ffa1447c2207787b5a2",
+    "size": 4299,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-customize.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-dashboard.json",
+    "sha256": "6350b3da01309845c649c8c84573794d57ee9e1dfb0cccd816c314657b919298",
+    "size": 4304,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-empty.json",
+    "sha256": "ec54a68c65af92c13bd245e7979885f2ae81be030e55a35f54d71b18031b7fc2",
+    "size": 4362,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-empty.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-focus-dialog.json",
+    "sha256": "4baa5dd1c80741baeecf059865490880daf2992a53e013d247eccc2141f1941a",
+    "size": 2862,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-focus-dialog.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-focus.json",
+    "sha256": "21b8929aa5da4a7d3bfc389ad27eb4362c07d1d915f8513c8cc66f95386bef9b",
+    "size": 4108,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-focus.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-library.json",
+    "sha256": "bf914b2731e51728634dc11526758e41765ce46ff14c81841040447b18f0129f",
+    "size": 4322,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-music.json",
+    "sha256": "d07a6ffd1fe7ebcddb594861ccdb40342522fc56c90da237a400e34c705c4ce7",
+    "size": 4281,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-music.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-project-form.json",
+    "sha256": "c41149f13ccb47cc1302062bc3bee7ed75bf46a7ce8d6db8528bf55296b8daad",
+    "size": 4519,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-project-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-project.json",
+    "sha256": "5fda7b17877e8cb017fac605f62481039e7f48a276f56983a7cd34cdff412f03",
+    "size": 4334,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-project.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-reference-form.json",
+    "sha256": "9ce1a427444789d2a5fe6ac5489edabf2fcfe0b14c9b470035dca13f54dc32f3",
+    "size": 5105,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-reference-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-references.json",
+    "sha256": "752bb0cdddc381b8420baca63eaffa89c8c8f89d032d71b25a5d4fb49ca12f5d",
+    "size": 4332,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-references.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-search.json",
+    "sha256": "b18fc486754e1173bfb1a04ea40e7876cd67e8410bf9e979a95610f0244cfb22",
+    "size": 4397,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-search.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-settings.json",
+    "sha256": "2311198bc95693223f5c2d02eaf301e04b33571f5c672bf6132e59b1fd5537c7",
+    "size": 4269,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-task-form.json",
+    "sha256": "9a92d92f534946697e0e1a101e2c890264ec3b57818d0ddf5e829d774e1ad772",
+    "size": 5218,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-task-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-tasks.json",
+    "sha256": "b6657462220d5fc13f17872d2bed3dcc645e8b307e1b0fd65ff0f714762a67dd",
+    "size": 4210,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-tasks.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-widgets.json",
+    "sha256": "1eb58172c3ec6456d7ddf38a396b5e5a994122b31e99142c6a616e86a2d89531",
+    "size": 4478,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-dark-390-widgets.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-customize.json",
+    "sha256": "30197d813d411e8ea63b1af4ae0e8602e9a14f937a157601e82215273bb612ff",
+    "size": 4299,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-customize.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-dashboard.json",
+    "sha256": "6350b3da01309845c649c8c84573794d57ee9e1dfb0cccd816c314657b919298",
+    "size": 4304,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-empty.json",
+    "sha256": "ec54a68c65af92c13bd245e7979885f2ae81be030e55a35f54d71b18031b7fc2",
+    "size": 4362,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-empty.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-focus-dialog.json",
+    "sha256": "4baa5dd1c80741baeecf059865490880daf2992a53e013d247eccc2141f1941a",
+    "size": 2862,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-focus-dialog.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-focus.json",
+    "sha256": "21b8929aa5da4a7d3bfc389ad27eb4362c07d1d915f8513c8cc66f95386bef9b",
+    "size": 4108,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-focus.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-library.json",
+    "sha256": "bf914b2731e51728634dc11526758e41765ce46ff14c81841040447b18f0129f",
+    "size": 4322,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-music.json",
+    "sha256": "d07a6ffd1fe7ebcddb594861ccdb40342522fc56c90da237a400e34c705c4ce7",
+    "size": 4281,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-music.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-project-form.json",
+    "sha256": "c41149f13ccb47cc1302062bc3bee7ed75bf46a7ce8d6db8528bf55296b8daad",
+    "size": 4519,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-project-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-project.json",
+    "sha256": "5fda7b17877e8cb017fac605f62481039e7f48a276f56983a7cd34cdff412f03",
+    "size": 4334,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-project.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-reference-form.json",
+    "sha256": "9ce1a427444789d2a5fe6ac5489edabf2fcfe0b14c9b470035dca13f54dc32f3",
+    "size": 5105,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-reference-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-references.json",
+    "sha256": "752bb0cdddc381b8420baca63eaffa89c8c8f89d032d71b25a5d4fb49ca12f5d",
+    "size": 4332,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-references.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-search.json",
+    "sha256": "b18fc486754e1173bfb1a04ea40e7876cd67e8410bf9e979a95610f0244cfb22",
+    "size": 4397,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-search.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-settings.json",
+    "sha256": "fb86584580e5f3bd9f33c86baf2a9732131ce901a040e86574822b520336131c",
+    "size": 4279,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-task-form.json",
+    "sha256": "9a92d92f534946697e0e1a101e2c890264ec3b57818d0ddf5e829d774e1ad772",
+    "size": 5218,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-task-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-tasks.json",
+    "sha256": "b6657462220d5fc13f17872d2bed3dcc645e8b307e1b0fd65ff0f714762a67dd",
+    "size": 4210,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-tasks.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-widgets.json",
+    "sha256": "1eb58172c3ec6456d7ddf38a396b5e5a994122b31e99142c6a616e86a2d89531",
+    "size": 4478,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/axe-light-390-widgets.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/browser-errors.json",
+    "sha256": "dad83578b68754c3d78e9e72e466105eb06fe6b57fec8b5252fabc96aa8bf048",
+    "size": 353,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/browser-errors.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-customize-contrast.json",
+    "sha256": "b9ed2aed69a42f452a91f75de1bafaf521d2efb40e6ab8c810ca0d5b41ba3a4e",
+    "size": 25983,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-customize-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-customize.json",
+    "sha256": "8737d0105bd1e3af43168e6de77038fd59980d4959101b3a10cb86b4229fa321",
+    "size": 30867,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-customize.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-dashboard-contrast.json",
+    "sha256": "96777e40efb6bf62fcae63a0529736b9206b7b34fff37ede227a7db525d1ed87",
+    "size": 38378,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-dashboard-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-dashboard.json",
+    "sha256": "6eb942b178da18abd0d74b8d59eb0e1724c636eb2be59fb0662c082c743067e8",
+    "size": 42693,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-empty-contrast.json",
+    "sha256": "d6b9cfe38fd3ad751378f979ccb1c72bcc9f015cca99ec20a5034d8c10302037",
+    "size": 26118,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-empty-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-empty.json",
+    "sha256": "f7784e06bbb50e69745af7a30bb2fe2cb76b9f86f2dc550ab1e65359ff7e89e5",
+    "size": 27692,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-empty.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-focus-contrast.json",
+    "sha256": "3466b7c42dcb89edb3c47e321f714deaa43aeb6439d13927e0a2442640a5f564",
+    "size": 28216,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-focus-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-focus-dialog-contrast.json",
+    "sha256": "690ef918cdc412b2832224436a99c3c6ebf9596d3860e58a8ee099d5f27374f4",
+    "size": 3476,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-focus-dialog-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-focus-dialog.json",
+    "sha256": "83f75dae7ab98484c3e17a7611afc441359caa6a107c7511cd2e5d7026099610",
+    "size": 5699,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-focus-dialog.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-focus.json",
+    "sha256": "7f9399f7bc04ac0f2c8ccc266458d975d1cf30f10a804f491fc01f6d2ebb0ef6",
+    "size": 33003,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-focus.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-library-contrast.json",
+    "sha256": "0ac1637808ec1757a81a4ba3eb25d9849b4cc4b0b7ee12643442af66c44aadfb",
+    "size": 27771,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-library-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-library.json",
+    "sha256": "2c18f74265ea89479ce2d670ebfff1f527be040fc65a6c0bb101eb8645f6bd12",
+    "size": 29826,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-music-contrast.json",
+    "sha256": "28ced6eb523652cd9a20aac336ca76306ed6e6a47a3001ed5b5306ed9250e004",
+    "size": 39244,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-music-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-music.json",
+    "sha256": "ca19aa819bf9fc75233b667cbd3b5ff235b6365ac53cd519bd9b914945e427f0",
+    "size": 43116,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-music.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-project-contrast.json",
+    "sha256": "668424cc2d80a1eb55c3ad31d52b19f31f8fc6200511ab152d798a2d025bf079",
+    "size": 30580,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-project-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-project-form-contrast.json",
+    "sha256": "e64138df6e2b27684854de20b5c6ab90f9db14f87f15662e4964935eb8782956",
+    "size": 8586,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-project-form-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-project-form.json",
+    "sha256": "56cfee4e70a8b68942e3672af64134dd692d07abd70c4d918534706500e72ee3",
+    "size": 10754,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-project-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-project.json",
+    "sha256": "0c5f21dfc8f4eda0569ed11d38e42f7f0f1a8c0e1e32411c1f0c3e1c1138752a",
+    "size": 34762,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-project.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-reference-form-contrast.json",
+    "sha256": "051ab33b8aed19eb91c0eafb1a0c28cc8aef2b31db1a3b1d551e743b2c6ab321",
+    "size": 7593,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-reference-form-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-reference-form.json",
+    "sha256": "d94be42a53f8a20111bec58ace1cf8227fcd9fbe8a4022fc43c0cdc06c4f5cfb",
+    "size": 9901,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-reference-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-references-contrast.json",
+    "sha256": "3fce81ba7e2b9200c0df4ef3728f82391621efd52203076f6dc15966ac6966cd",
+    "size": 26118,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-references-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-references.json",
+    "sha256": "0bf7a31eddc79c6a42bdfbe078a51bfd87b94dfd6cc7fbf76a6baf97c8183064",
+    "size": 27693,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-references.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-search-contrast.json",
+    "sha256": "2e9b91e0cb02797cedffc84f576ae8fd9e92613557ad1416d41c1c2fff225472",
+    "size": 11666,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-search-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-search.json",
+    "sha256": "3da786b087603b78caf894d6e2c5f98a051a6e5a067d2a9729821aa22cdc6590",
+    "size": 13940,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-search.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-settings-contrast.json",
+    "sha256": "bc391ccfc1f05b31ef1dd91b6319de073def3d7b85d5b8cec9fddc78964685ee",
+    "size": 41721,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-settings-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-settings.json",
+    "sha256": "6a1ffbc6adffcb190ab741345558c731b93549f96a5aa1f3894c88dddf4aca86",
+    "size": 46077,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-task-form-contrast.json",
+    "sha256": "95f1a5f9b9c1b13d254248f3ac60ff43625d9b5f1acc05b1b4f78ab9ba2270d0",
+    "size": 6222,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-task-form-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-task-form.json",
+    "sha256": "6fb91823d874b5bdc218543dd152028773ed0dc37d453b15e17abb5947be9d8a",
+    "size": 8256,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-task-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-tasks-contrast.json",
+    "sha256": "3f67da552acd1e05dd6dc22591dc5867460b94173962518ae491c390c7d2fd41",
+    "size": 29537,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-tasks-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-tasks.json",
+    "sha256": "f5c34706286720d3c9f0e5c1cb1807fb11c81c602be6caf65402b5bb80b55074",
+    "size": 30990,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-tasks.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-widgets-contrast.json",
+    "sha256": "6d822bc78ed3c9f4d866cc4b09e3a2c4dbc6d919e17aac7437637e3c5c74522c",
+    "size": 36075,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-widgets-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-widgets.json",
+    "sha256": "6ee86c6a151937c51625b4b6cfaf1b8c1e5904d2e2a0a7744562ec01d11d9361",
+    "size": 40982,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/dark-390-widgets.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-customize-contrast.json",
+    "sha256": "5ca4ef877aa7a6a14003bc63ce82e05df510bf75b00d660eac63f607262cfb61",
+    "size": 25982,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-customize-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-customize.json",
+    "sha256": "b8269bd73af3ed1b6330ce6c82e7a3f7a6e19592b33814311aaf419bf53d845e",
+    "size": 30761,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-customize.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-dashboard-contrast.json",
+    "sha256": "a980726087d14acabb88db70f85b814960763e986591b0d84d8d7f54871b6928",
+    "size": 38482,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-dashboard-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-dashboard.json",
+    "sha256": "c78f78fc28b31bb3f28a75e692cd3e67620b07fe4c575661cd3707ba37c004f8",
+    "size": 42620,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-empty-contrast.json",
+    "sha256": "a288f50e9f8bdbb43457bc45b259c41fcddee3bc2c00bee2aee56e6e53ac9d1d",
+    "size": 26197,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-empty-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-empty.json",
+    "sha256": "47f41869b3c0d84e4b415c01c03e51ea3228efb40ca7364f78b6db5ba6dd69e1",
+    "size": 27622,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-empty.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-focus-contrast.json",
+    "sha256": "65a4e3e75b73e31bc7bfa146e08183047bc4410ff0d413b173f6e0ccf8ac8e0e",
+    "size": 28284,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-focus-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-focus-dialog-contrast.json",
+    "sha256": "d6cdcb9ee7b6d67e45882b8c7f08c5fe5cc63daa6a1f022cd3cb9d4b1f2ea410",
+    "size": 3476,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-focus-dialog-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-focus-dialog.json",
+    "sha256": "a371a8bbf5209807264dcf990210abb24ded3512de89a32c7b24b05c186f699f",
+    "size": 5684,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-focus-dialog.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-focus.json",
+    "sha256": "d487a2e3e7e5a11784340c9121e30639030189f0eb9dd55eadc7e12f04611de8",
+    "size": 32920,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-focus.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-library-contrast.json",
+    "sha256": "fab95f9ded827e331c6cd45f66397068b754c41146448ee2c3a1d432f2b2476b",
+    "size": 27844,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-library-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-library.json",
+    "sha256": "fbfea182a1af864e743278b6670380ca0c89d5efd80c3bc57005b1e0a0fe918f",
+    "size": 29751,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-music-contrast.json",
+    "sha256": "5c1aec6a75b70528ab32dce72fd9d77ec46554519c39f7cf2af88aa2935bf482",
+    "size": 39315,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-music-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-music.json",
+    "sha256": "160309b9008d47bc8836877e2414f33f2d391d0c81c67ec61ee04b7e922300a0",
+    "size": 42991,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-music.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-project-contrast.json",
+    "sha256": "91bde5be9a264d7e4261cf97c4fe2fc128ace3f0da637c3ffe70fac97d8d8e5c",
+    "size": 30661,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-project-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-project-form-contrast.json",
+    "sha256": "b95099b80e0f6021cd422afe05c36c2190f3764cd886f9240801f0a067ec7054",
+    "size": 8589,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-project-form-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-project-form.json",
+    "sha256": "0d263ca467584537006e484cb8962366c08a40429ee54ee9eb968b505cf586b2",
+    "size": 10718,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-project-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-project.json",
+    "sha256": "b180af6a0ae048a94f9e64aec266bfdf38f1c17d779feebbf34c2e31eacff4dd",
+    "size": 34672,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-project.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-reference-form-contrast.json",
+    "sha256": "ae34bc685f716a91683b952c3062e09046b9a22929e7111318c20be8167aa9cb",
+    "size": 7592,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-reference-form-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-reference-form.json",
+    "sha256": "452fae901764e74242080b21877829eeac8a4a6b32b726bf164e369e44da0c4c",
+    "size": 9867,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-reference-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-references-contrast.json",
+    "sha256": "1aaabc215fda872d481e1f296e973ef668f4dd9c9c60e75f290680d3b9e09b22",
+    "size": 26196,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-references-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-references.json",
+    "sha256": "8ac5d0e99afd0e029ab9e47b863fc3022942fca7390151eaf49f0858da1aa5c9",
+    "size": 27623,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-references.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-search-contrast.json",
+    "sha256": "5c85d6afff79e25671274956e68077eb9df9e556be21d9c3caee45a8c9d6b909",
+    "size": 11667,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-search-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-search.json",
+    "sha256": "8f0322d2162967a76edd5e35fc9cbc83966b1a2ac65eeaf45e9bcc60443a1296",
+    "size": 13884,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-search.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-settings-contrast.json",
+    "sha256": "2a0ff6ce19d9792de7ee3a1edc79abf8a67d3f5c72a6b6790724991e394a5613",
+    "size": 41794,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-settings-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-settings.json",
+    "sha256": "d74fab21a5d0724b4f99eb40a86706e05f319c92a870d3de551bccff88364ba5",
+    "size": 45947,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-task-form-contrast.json",
+    "sha256": "9e6340d383c219ad0758e9420d21d4d44ee920f89488f6d1971d153322996e33",
+    "size": 6219,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-task-form-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-task-form.json",
+    "sha256": "1cd365b1f5ed52123a56d9ec78021e567cc3093a672d847d8d1247ba57052d83",
+    "size": 8226,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-task-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-tasks-contrast.json",
+    "sha256": "9e08d84d44916be22cd57670f39fdaad744358eb92d04f947a10282ee7fabc92",
+    "size": 29615,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-tasks-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-tasks.json",
+    "sha256": "32293dc60a54f4235290947d79c762ffff1ebeca342e21b69e49661e87999b6d",
+    "size": 30904,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-tasks.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-widgets-contrast.json",
+    "sha256": "aeb2a1c1195765d5936dabab749f90b4f945aa697c3f831ea3333c8a76b9b24c",
+    "size": 36185,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-widgets-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-widgets.json",
+    "sha256": "0cbd0e3bb066b63bcb8610065dc35438b2a94c6ceb122266bb4c85026460b5c4",
+    "size": 40928,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/light-390-widgets.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/contrast/matrix.json",
+    "sha256": "d4fcb45477d272356b3ea313da1e31fadc4bf2264cd64a272d93c0376d8030ad",
+    "size": 11895,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/contrast/matrix.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/control-measurements.log",
+    "sha256": "5b81bef4344a7594f58dc9801c600b844fc3879976a25639f57b5c965235706a",
+    "size": 36,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/control-measurements.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/controls.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/controls.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3.log",
+    "sha256": "2a0453d266406c6622e0f3058a0c5789912e5410a094c886d09018f5155df737",
+    "size": 1936,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-dark-1440.json",
+    "sha256": "22cac0d26b632fd4e8ff6f9dce12d424e0dc4c780575d1ac8711ec411a132255",
+    "size": 4237,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-dark-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-dark-1920.json",
+    "sha256": "195f6e49a0e97434b0dd6afab5f1ba471d399f6a5f24c3b99af1aa4a945a702e",
+    "size": 4237,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-dark-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-dark-320.json",
+    "sha256": "ad6f98a17eb3245c2e65e12cee660c39b858eb1b438421200b392a416875017d",
+    "size": 4318,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-dark-390.json",
+    "sha256": "c81c4039cfd082b0f8a0e568399a9452ad60dda6703d2f07d969315180bd863a",
+    "size": 4318,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-dark-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-dark-768.json",
+    "sha256": "249926438901f025f0312825b1d619cc58b4c16e7da7386d2f5eb1507e252a63",
+    "size": 4318,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-dark-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-light-1440.json",
+    "sha256": "22cac0d26b632fd4e8ff6f9dce12d424e0dc4c780575d1ac8711ec411a132255",
+    "size": 4237,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-light-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-light-1920.json",
+    "sha256": "195f6e49a0e97434b0dd6afab5f1ba471d399f6a5f24c3b99af1aa4a945a702e",
+    "size": 4237,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-light-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-light-320.json",
+    "sha256": "50cf8b0ab402f16d5bc1b5fc367757f37a82fa6055c090c313f378b6a8116210",
+    "size": 4318,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-light-390.json",
+    "sha256": "843f1a0bbc0ac86776cbe185a1dcbaf96d57919ce95ad0e3cd472ec3299193ab",
+    "size": 4318,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-light-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-light-768.json",
+    "sha256": "249926438901f025f0312825b1d619cc58b4c16e7da7386d2f5eb1507e252a63",
+    "size": 4318,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-dashboard-light-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-dark-1440.json",
+    "sha256": "2d11e7c363469376bae31fb07c3921dca2870d7f663042162d1ee88f1cb23392",
+    "size": 5132,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-dark-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-dark-1920.json",
+    "sha256": "2d11e7c363469376bae31fb07c3921dca2870d7f663042162d1ee88f1cb23392",
+    "size": 5132,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-dark-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-dark-320.json",
+    "sha256": "2d11e7c363469376bae31fb07c3921dca2870d7f663042162d1ee88f1cb23392",
+    "size": 5132,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-dark-390.json",
+    "sha256": "2d11e7c363469376bae31fb07c3921dca2870d7f663042162d1ee88f1cb23392",
+    "size": 5132,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-dark-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-dark-768.json",
+    "sha256": "2d11e7c363469376bae31fb07c3921dca2870d7f663042162d1ee88f1cb23392",
+    "size": 5132,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-dark-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-light-1440.json",
+    "sha256": "2d11e7c363469376bae31fb07c3921dca2870d7f663042162d1ee88f1cb23392",
+    "size": 5132,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-light-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-light-1920.json",
+    "sha256": "2d11e7c363469376bae31fb07c3921dca2870d7f663042162d1ee88f1cb23392",
+    "size": 5132,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-light-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-light-320.json",
+    "sha256": "2d11e7c363469376bae31fb07c3921dca2870d7f663042162d1ee88f1cb23392",
+    "size": 5132,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-light-390.json",
+    "sha256": "2d11e7c363469376bae31fb07c3921dca2870d7f663042162d1ee88f1cb23392",
+    "size": 5132,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-light-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-light-768.json",
+    "sha256": "2d11e7c363469376bae31fb07c3921dca2870d7f663042162d1ee88f1cb23392",
+    "size": 5132,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-form-light-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-dark-1440.json",
+    "sha256": "d2a79d05a35264171453cf31deaae047971a3a0ec9c840e5c8a834bc406d588e",
+    "size": 4306,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-dark-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-dark-1920.json",
+    "sha256": "d2a79d05a35264171453cf31deaae047971a3a0ec9c840e5c8a834bc406d588e",
+    "size": 4306,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-dark-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-dark-320.json",
+    "sha256": "d7ee851c5f88aa49b8ffbfc03d7167add47607fe3704e1bc847fa76a4bc520d8",
+    "size": 4382,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-dark-390.json",
+    "sha256": "d7ee851c5f88aa49b8ffbfc03d7167add47607fe3704e1bc847fa76a4bc520d8",
+    "size": 4382,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-dark-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-dark-768.json",
+    "sha256": "a4ac63a428615e7f9451443508a561ebb776f545b23a475cbc05e8d2c22d096f",
+    "size": 4382,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-dark-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-light-1440.json",
+    "sha256": "d2a79d05a35264171453cf31deaae047971a3a0ec9c840e5c8a834bc406d588e",
+    "size": 4306,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-light-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-light-1920.json",
+    "sha256": "d2a79d05a35264171453cf31deaae047971a3a0ec9c840e5c8a834bc406d588e",
+    "size": 4306,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-light-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-light-320.json",
+    "sha256": "d7ee851c5f88aa49b8ffbfc03d7167add47607fe3704e1bc847fa76a4bc520d8",
+    "size": 4382,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-light-390.json",
+    "sha256": "d7ee851c5f88aa49b8ffbfc03d7167add47607fe3704e1bc847fa76a4bc520d8",
+    "size": 4382,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-light-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-light-768.json",
+    "sha256": "a4ac63a428615e7f9451443508a561ebb776f545b23a475cbc05e8d2c22d096f",
+    "size": 4382,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-overview-light-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-dark-1440.json",
+    "sha256": "8650fdca7f81a7cb355a45a3c9415c635bd1d7a8652ab7f2aeb56df7bd043baa",
+    "size": 4291,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-dark-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-dark-1920.json",
+    "sha256": "8650fdca7f81a7cb355a45a3c9415c635bd1d7a8652ab7f2aeb56df7bd043baa",
+    "size": 4291,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-dark-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-dark-320.json",
+    "sha256": "023e2e4d057006a087fd820040259e88d57c76e50873052934956713a43b163d",
+    "size": 4367,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-dark-390.json",
+    "sha256": "3059b3771af87af80dc279e14484cfbf69fadff89d127de59d1d149cc8f259c4",
+    "size": 4367,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-dark-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-dark-768.json",
+    "sha256": "9f83c044778e2c7e6c4931ebeeaffeddc43331128cc53c93209fa4e6a149a5b9",
+    "size": 4367,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-dark-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-light-1440.json",
+    "sha256": "8650fdca7f81a7cb355a45a3c9415c635bd1d7a8652ab7f2aeb56df7bd043baa",
+    "size": 4291,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-light-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-light-1920.json",
+    "sha256": "8650fdca7f81a7cb355a45a3c9415c635bd1d7a8652ab7f2aeb56df7bd043baa",
+    "size": 4291,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-light-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-light-320.json",
+    "sha256": "023e2e4d057006a087fd820040259e88d57c76e50873052934956713a43b163d",
+    "size": 4367,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-light-390.json",
+    "sha256": "3059b3771af87af80dc279e14484cfbf69fadff89d127de59d1d149cc8f259c4",
+    "size": 4367,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-light-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-light-768.json",
+    "sha256": "9f83c044778e2c7e6c4931ebeeaffeddc43331128cc53c93209fa4e6a149a5b9",
+    "size": 4367,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/axe-references-light-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/d3-browser-results.json",
+    "sha256": "822133324160be76f144b177a0b03505f554a7feed489fe533d6726669e973c7",
+    "size": 3245,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/d3-browser-results.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/d3/results.json",
+    "sha256": "03503f51d968625a4a90ec0149c780d8dd43944e00ecfd46c117c7617e887ed7",
+    "size": 3244,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/d3/results.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/e2.log",
+    "sha256": "fc5fc6dd5eae5ac845edbd2b9ee8cde8756cee15a0b95b486c26707760ddbed8",
+    "size": 2668,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/e2.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-dark-1440.json",
+    "sha256": "bf5dc75d5df1e7409d5d9577eba29db88875713e67efe8dc6dc644e64962e279",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-dark-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-dark-1920.json",
+    "sha256": "bf5dc75d5df1e7409d5d9577eba29db88875713e67efe8dc6dc644e64962e279",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-dark-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-dark-320.json",
+    "sha256": "32568365c2d572af7d4a69582f6dab7cd84922f9b32088bc5f5f8e6fb9286c47",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-dark-390.json",
+    "sha256": "32568365c2d572af7d4a69582f6dab7cd84922f9b32088bc5f5f8e6fb9286c47",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-dark-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-dark-768.json",
+    "sha256": "63d60f35bcb6a9e12030268e79f74b7ec829b00551600514bc8aa572afd8a4d3",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-dark-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-light-1440.json",
+    "sha256": "bf5dc75d5df1e7409d5d9577eba29db88875713e67efe8dc6dc644e64962e279",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-light-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-light-1920.json",
+    "sha256": "bf5dc75d5df1e7409d5d9577eba29db88875713e67efe8dc6dc644e64962e279",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-light-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-light-320.json",
+    "sha256": "32568365c2d572af7d4a69582f6dab7cd84922f9b32088bc5f5f8e6fb9286c47",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-light-390.json",
+    "sha256": "32568365c2d572af7d4a69582f6dab7cd84922f9b32088bc5f5f8e6fb9286c47",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-light-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-light-768.json",
+    "sha256": "63d60f35bcb6a9e12030268e79f74b7ec829b00551600514bc8aa572afd8a4d3",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/e2/axe-focus-light-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/e2/browser-results.json",
+    "sha256": "6cecf7ae917ba94c12bf8ec210e6c803e8fc2187c178ca3a1a15d0e14d305a35",
+    "size": 4137,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/e2/browser-results.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/e2/focus-geometry.json",
+    "sha256": "d932bf4e3363dc01e5789cb8b48d00cc4a94ed76310a1b324f0a05a2011c12f1",
+    "size": 7611,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/e2/focus-geometry.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1b.log",
+    "sha256": "f37768a1fb98080b0eeced37a2f56be0fed542edef9e0d72ed620fcd3b3d791c",
+    "size": 1291,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1b.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-dark-1440.json",
+    "sha256": "95a1a3c273cede464f96fbc4c3b076a6f303b15e1f741f4385a6f6cb05ccf9b6",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-dark-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-dark-1920.json",
+    "sha256": "95a1a3c273cede464f96fbc4c3b076a6f303b15e1f741f4385a6f6cb05ccf9b6",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-dark-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-dark-320.json",
+    "sha256": "51e4f10c1474d26f3fc64d7f07dfaff07cd0b4b5ffd488d2a808bc3948d6ac6d",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-dark-390.json",
+    "sha256": "51e4f10c1474d26f3fc64d7f07dfaff07cd0b4b5ffd488d2a808bc3948d6ac6d",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-dark-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-dark-768.json",
+    "sha256": "42a5814f8141c9c140d955345110a369afa7de6107eab0f3c260f8b373659aa1",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-dark-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-light-1440.json",
+    "sha256": "95a1a3c273cede464f96fbc4c3b076a6f303b15e1f741f4385a6f6cb05ccf9b6",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-light-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-light-1920.json",
+    "sha256": "95a1a3c273cede464f96fbc4c3b076a6f303b15e1f741f4385a6f6cb05ccf9b6",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-light-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-light-320.json",
+    "sha256": "51e4f10c1474d26f3fc64d7f07dfaff07cd0b4b5ffd488d2a808bc3948d6ac6d",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-light-390.json",
+    "sha256": "51e4f10c1474d26f3fc64d7f07dfaff07cd0b4b5ffd488d2a808bc3948d6ac6d",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-light-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-light-768.json",
+    "sha256": "42a5814f8141c9c140d955345110a369afa7de6107eab0f3c260f8b373659aa1",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1b/axe-recovery-light-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1b/f1b-browser-results.json",
+    "sha256": "1387a3b037a90120df8de68a0a36931a49077895cb74048623b42328f5f1d053",
+    "size": 1840,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1b/f1b-browser-results.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1b/geometry.json",
+    "sha256": "6d6a5ec130df965305b7874715a74a11ed63accf84099f6e5f7f9f34770c11ac",
+    "size": 8493,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1b/geometry.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1b/two-actions.json",
+    "sha256": "0e067144c2354fdba643c5f64c5f1c9db1d39ac9236a965b87c5f3e43493961c",
+    "size": 663,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1b/two-actions.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1c.log",
+    "sha256": "5658ef24f6450bd460c5cd23427a3d173d24bda77d98a46334e3daf90c05efe7",
+    "size": 1557,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1c.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1c/axe-feedback-dark-320.json",
+    "sha256": "ba08210da3ee571f8df7d43110ab2e737da2410d849d66c78d704528b5c0ed10",
+    "size": 4108,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1c/axe-feedback-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1c/axe-feedback-dark-390.json",
+    "sha256": "ba08210da3ee571f8df7d43110ab2e737da2410d849d66c78d704528b5c0ed10",
+    "size": 4108,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1c/axe-feedback-dark-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1c/axe-feedback-light-320.json",
+    "sha256": "ba08210da3ee571f8df7d43110ab2e737da2410d849d66c78d704528b5c0ed10",
+    "size": 4108,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1c/axe-feedback-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1c/axe-feedback-light-390.json",
+    "sha256": "ba08210da3ee571f8df7d43110ab2e737da2410d849d66c78d704528b5c0ed10",
+    "size": 4108,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1c/axe-feedback-light-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/f1c/preset-browser-results.json",
+    "sha256": "1f6c85d878f8f26baa9d931f293750d90735c6220f9722cbccdb93fff7f51bf6",
+    "size": 2266,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/f1c/preset-browser-results.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/js-client.json",
+    "sha256": "9eb2e322f02eb03651b1786db5ee132f8c54c23efabaee2cc5560c16c3c30aa1",
+    "size": 1412,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/js-client.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/js-preset.json",
+    "sha256": "a555a19e552264e14d689a1fb65f9972c1fb9119ce9ed321c72f1fd40c83453a",
+    "size": 2098,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/js-preset.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/js-recovery.json",
+    "sha256": "7ee7949b52ba443cf26f53d3bc2fddf2d0ce7033f733f0cc4570e86f91ffb8a1",
+    "size": 1988,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/js-recovery.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/keyboard.log",
+    "sha256": "f5fb41f66b51077c61aa94cd4cb8429901baa6ac96891155ea5656bc2b48b2b6",
+    "size": 930,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/keyboard.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/preferences/process-results.json",
+    "sha256": "5b1326d03ef42ba3e31bf852296e2a7069f910ddb8d10a5786b299aca5fc564a",
+    "size": 819,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/preferences/process-results.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/preferences/rails-tests.log",
+    "sha256": "499dae3d32022fc53081a33ac9a23ff71b2824bfca146b7663af4712fec64bf0",
+    "size": 360,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/preferences/rails-tests.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/prototype.log",
+    "sha256": "b7023f4855d28c09cadd8c375e1c615ae4a820e1af58d229b704c169c0ef3bb5",
+    "size": 6548,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/prototype.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/rails.log",
+    "sha256": "5b1326d03ef42ba3e31bf852296e2a7069f910ddb8d10a5786b299aca5fc564a",
+    "size": 819,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/rails.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/rubocop.log",
+    "sha256": "33483e736fc37b335d1f8d5cf7802df015a6ce5d3839a88808dd6edb1d2dad37",
+    "size": 188,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/rubocop.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/sql.log",
+    "sha256": "52878e0c899122309327025568417c2f57b6e4007ac9610202509c3df0bde3fa",
+    "size": 121,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/sql.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/sql/comparison.json",
+    "sha256": "88fc19216ed129ecc7fd6d1bfd60b9de764a4c8d359a650eb06eb1dff3d77bea",
+    "size": 212,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/sql/comparison.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/sql/loaded-tests.log",
+    "sha256": "eef2cd6d65369ba5641495aacacb6f72340efab201da7b1588193385d547946d",
+    "size": 179,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/sql/loaded-tests.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/sql/migrate.log",
+    "sha256": "fb085703408c07bff27b9c43121d8837e1a32ebe8aa5279a7b3803f421369004",
+    "size": 20234,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/sql/migrate.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/sql/migrated-tests.log",
+    "sha256": "b3a86e3b8c310211650cce2f615660884ddc8508af6421ca729093c46a2f0c94",
+    "size": 179,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/sql/migrated-tests.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/sql/migrated.json",
+    "sha256": "e0ecd4a74aff28d6becfe2728e5bf6191c1cb0f8c861e11e6558a7e29462a159",
+    "size": 23819,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/sql/migrated.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/sql/schema-load.log",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size": 1,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/sql/schema-load.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/sql/schema-loaded.json",
+    "sha256": "8e987bdd26feb0bdd7953a49e94de9bedd89bcc78791da4202ca356d02e1e44a",
+    "size": 23819,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/sql/schema-loaded.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/syntax.json",
+    "sha256": "8538c8ad86519b05f9bd83e130fa7b00010e6c88bdd88b668f1ddb4c2db2570f",
+    "size": 7075,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/syntax.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/closure/20261023/zeitwerk.log",
+    "sha256": "b72900d20b063373acc32103fa91dc57beae4caa9edc2adc0b023fa4d6b3e541",
+    "size": 58,
+    "archive_member": "docs/assets/p1.2f/f4/closure/20261023/zeitwerk.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/captures.json",
+    "sha256": "84b64881ae4f35f9617e4e361660121d9d3eb88227aefc3481e0921e4c7920b7",
+    "size": 271,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/captures.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/dark-1440-form.json",
+    "sha256": "70736dea36d661a757b2da7e3d6754242a28a979b41e9f98f903fde68492dd3d",
+    "size": 2618,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/dark-1440-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/dark-1440-library.json",
+    "sha256": "4b9e022ec9f631efd5b46b98f8eabe71f13e36af99fdbebd2653f8666f7d96f9",
+    "size": 1711,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/dark-1440-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/dark-1440-settings.json",
+    "sha256": "bdd10549aa41b4b3b1bdf10a64bf671fe3dcda5f169a03699a355ea002e63f0d",
+    "size": 1076,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/dark-1440-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/dark-320-form-background.png",
+    "sha256": "ec0d33e13ef2b51dd697cf5b97b1d7681ada64dace618d4930c2736a7d5e2064",
+    "size": 35307,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/dark-320-form-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/dark-320-form.json",
+    "sha256": "9a40e861499e44e5b455fcb1b7a3d0c861c318fbabd7022b237aef6f7a2452d4",
+    "size": 2597,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/dark-320-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/dark-320-form.png",
+    "sha256": "1e6f667dfdad00a009eecd67a281c0c5be3871ed6c49a84d7b7089f69e3a1346",
+    "size": 75667,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/dark-320-form.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/dark-320-library.json",
+    "sha256": "63f6dbfc072f04b930c4e181d91843e06c31c9bc090800360b25db8347fb6ea6",
+    "size": 1693,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/dark-320-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/dark-320-settings-background.png",
+    "sha256": "4896d04ad579278c3168dda8c221d9d17f89617d154d89cfd5f17febf7731973",
+    "size": 64975,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/dark-320-settings-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/dark-320-settings.json",
+    "sha256": "1015753ae3075dbdeb70b0e5d4fd98ceed5ebe4b53477c938e69ca03cf9fd23d",
+    "size": 1076,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/dark-320-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/dark-320-settings.png",
+    "sha256": "72475705adfde9d0f41437f52c85e38f965abf1b48da276273ae7d7cd553728b",
+    "size": 118939,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/dark-320-settings.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/light-1440-form.json",
+    "sha256": "d7aabea0a8dae33121feeba8a1b4597bea0276a0424e0b044bfdcf462b0a38a4",
+    "size": 2617,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/light-1440-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/light-1440-library.json",
+    "sha256": "fd627b9512fa46a562bfb828e80c55e2ded7810e6b8843dbb4f3e512cb2af1e7",
+    "size": 1710,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/light-1440-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/light-1440-settings.json",
+    "sha256": "a4cf7bd4fd7abf6d008f99ff0436a2be38e107bca95668bac1ffdd7b35834115",
+    "size": 1075,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/light-1440-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/light-320-form-background.png",
+    "sha256": "b8516de31b79b96032546bcef2a268634ff2512b0d09fcac4b3ebe5f1a2aa121",
+    "size": 34707,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/light-320-form-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/light-320-form.json",
+    "sha256": "d12f9547ce5378a4619bdc4db6fc1a1128ba838e9337983bb8ffe8b3bf0fd4bf",
+    "size": 2596,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/light-320-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/light-320-form.png",
+    "sha256": "1945340744f0cadb7813e8cb8e79566d4b192c00f74af8ace55f6f84de59164f",
+    "size": 76406,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/light-320-form.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/light-320-library.json",
+    "sha256": "9540c25d7490b0f924b07fab776727c15ac9fa4fd4e8bd115339ef7427e1f21f",
+    "size": 1692,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/light-320-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/light-320-settings-background.png",
+    "sha256": "0a9eea6c8c8704f1f8acaa37bb56e5dcc9ff3753662a1048b61f7d81c33ecfb8",
+    "size": 38527,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/light-320-settings-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/light-320-settings.json",
+    "sha256": "9e2b25d39018316e3a06621076d5e614453e6d2177fc274f6865549308ee4ef9",
+    "size": 1075,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/light-320-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/light-320-settings.png",
+    "sha256": "57fa658a2302747ced8f5f60247cd464228b827dc0b673cb35a7c67b2a0fdb72",
+    "size": 89602,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/light-320-settings.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-after/measurements.json",
+    "sha256": "82bb479e5a6e131574cba4fa138c105745cda679f01ed7b120df2bdc91d36bf5",
+    "size": 9481,
+    "archive_member": "docs/assets/p1.2f/f4/controls-after/measurements.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/captures.json",
+    "sha256": "84b64881ae4f35f9617e4e361660121d9d3eb88227aefc3481e0921e4c7920b7",
+    "size": 271,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/captures.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-1440-form.json",
+    "sha256": "56d1b23e0423224d94bbc55b29513de6b7da4c65835be2f324ef9549f894414f",
+    "size": 2614,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-1440-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-1440-library.json",
+    "sha256": "7eb10bad745110d22f8fe23fd722c6b15a85563bea99091fc61bb12d553ce914",
+    "size": 1709,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-1440-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-1440-settings.json",
+    "sha256": "b1b9e2ce5be4f52d501679823909a88a4a4e8a3c7ea6e97e839524bc94220423",
+    "size": 1075,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-1440-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-320-form-background.png",
+    "sha256": "ec0d33e13ef2b51dd697cf5b97b1d7681ada64dace618d4930c2736a7d5e2064",
+    "size": 35307,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-320-form-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-320-form.json",
+    "sha256": "8a27145438381d360af7639987804c093dd74e15909aefa898c27aca82b48306",
+    "size": 2593,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-320-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-320-form.png",
+    "sha256": "394fc1bdf932370f4d80b2c2771160e347fa94808fa538e2d4232cb2914e413b",
+    "size": 75221,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-320-form.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-320-library.json",
+    "sha256": "3f0fdfade5121bc2fd2d81891d76be20587ae3c56cc2bc5a84f8e22bd15d0cf2",
+    "size": 1691,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-320-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-320-settings-background.png",
+    "sha256": "4896d04ad579278c3168dda8c221d9d17f89617d154d89cfd5f17febf7731973",
+    "size": 64975,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-320-settings-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-320-settings.json",
+    "sha256": "0d1ee31f8b94be2f05f8528b85edb6cd195068677eae7621f2ef59cc7cdcbb42",
+    "size": 1075,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-320-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-320-settings.png",
+    "sha256": "8ed79761c4bc03d8ec8f4b10f1aa693ae648a0a4d8e1795dbac34f0b4cc494f7",
+    "size": 118539,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/dark-320-settings.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/light-1440-form.json",
+    "sha256": "17bb1b9c70f8cdace640f16dca9aa5c2c1a8af1fe813d8a1d0087c73b6cb5311",
+    "size": 2616,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/light-1440-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/light-1440-library.json",
+    "sha256": "ee6117114e7aec9e86f19839488f6963144d41175a59163d573e5b024e122e06",
+    "size": 1705,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/light-1440-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/light-1440-settings.json",
+    "sha256": "2d0169fe81afe0d4dd76500aed909f5aab6d9700a460881949ce52d94592af47",
+    "size": 1074,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/light-1440-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/light-320-form-background.png",
+    "sha256": "b8516de31b79b96032546bcef2a268634ff2512b0d09fcac4b3ebe5f1a2aa121",
+    "size": 34707,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/light-320-form-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/light-320-form.json",
+    "sha256": "34727ba432c89ff85d765e477ef6fac1fe4808cba717d95c185c9d3610697e03",
+    "size": 2595,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/light-320-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/light-320-form.png",
+    "sha256": "4dbf1f787ee61f88c1c36d9a6c72aa25e4822fe5a59cd6c15e3c383cfabc3df7",
+    "size": 75348,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/light-320-form.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/light-320-library.json",
+    "sha256": "c4befc6ec792a0e8c5f941c4ac912362143b2f05c8e17593f1c2bd43f9aa5ea0",
+    "size": 1687,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/light-320-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/light-320-settings-background.png",
+    "sha256": "0a9eea6c8c8704f1f8acaa37bb56e5dcc9ff3753662a1048b61f7d81c33ecfb8",
+    "size": 38527,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/light-320-settings-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/light-320-settings.json",
+    "sha256": "e86938968c41649cb376c0cbec382a709073925c5708099b05609ec31316edb9",
+    "size": 1074,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/light-320-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/light-320-settings.png",
+    "sha256": "19086321124fd6260ef6f5011ad533206a37c708322743f1c47a03691d7655ee",
+    "size": 89198,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/light-320-settings.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-before-wrapper/measurements.json",
+    "sha256": "23fbe431fed9c8d6c8a51c5dab3b90fe9e5049130deee2ba1fa43d0d1b8261e0",
+    "size": 9138,
+    "archive_member": "docs/assets/p1.2f/f4/controls-before-wrapper/measurements.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-closure-20261023/captures.json",
+    "sha256": "84b64881ae4f35f9617e4e361660121d9d3eb88227aefc3481e0921e4c7920b7",
+    "size": 271,
+    "archive_member": "docs/assets/p1.2f/f4/controls-closure-20261023/captures.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-closure-20261023/dark-1440-form.json",
+    "sha256": "c27bb36a8d31bd406af3e568abc975c13673ced97f0a4b1cbbe39a49572bb5ea",
+    "size": 2723,
+    "archive_member": "docs/assets/p1.2f/f4/controls-closure-20261023/dark-1440-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-closure-20261023/dark-1440-library.json",
+    "sha256": "bae866ccb71d5a2533345ab2aec394ac783302a5b38ba76ff87f021d654f8115",
+    "size": 1768,
+    "archive_member": "docs/assets/p1.2f/f4/controls-closure-20261023/dark-1440-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-closure-20261023/dark-1440-settings.json",
+    "sha256": "f08ef6564b1ce1b26cf08cb9b1342b9f4dfe0e479aa3d3e15d8abb5b4e1ba4e6",
+    "size": 1122,
+    "archive_member": "docs/assets/p1.2f/f4/controls-closure-20261023/dark-1440-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-closure-20261023/dark-320-form.json",
+    "sha256": "e851bef2bf27a44d2c453423e950c02bb7b4bd7a5a9e37ade11b8f5676519fea",
+    "size": 2702,
+    "archive_member": "docs/assets/p1.2f/f4/controls-closure-20261023/dark-320-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-closure-20261023/dark-320-library.json",
+    "sha256": "83f373d1d7616b8d907ffc1a21ab768e22cfb7a7be9feaa08c17c5cef3fc8980",
+    "size": 1765,
+    "archive_member": "docs/assets/p1.2f/f4/controls-closure-20261023/dark-320-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-closure-20261023/dark-320-settings.json",
+    "sha256": "b72d199d045544ba138694a79c4c986a00202ccdd64bc2c7796ae0eb3de95543",
+    "size": 1118,
+    "archive_member": "docs/assets/p1.2f/f4/controls-closure-20261023/dark-320-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-closure-20261023/light-1440-form.json",
+    "sha256": "d6263b03b40d7998347bff8d0c6a11de42fda6d8ab0f203ad1c73b0ac2506f0b",
+    "size": 2722,
+    "archive_member": "docs/assets/p1.2f/f4/controls-closure-20261023/light-1440-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-closure-20261023/light-1440-library.json",
+    "sha256": "935bae86760f4ab5a2b1ff8713e96597f7176c989ea1bc48cb99431219c58f5c",
+    "size": 1767,
+    "archive_member": "docs/assets/p1.2f/f4/controls-closure-20261023/light-1440-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-closure-20261023/light-1440-settings.json",
+    "sha256": "f755f08ef2ce9a7934605c6e4ab1c39a3c01a004c76deebe26e964373abf09cd",
+    "size": 1121,
+    "archive_member": "docs/assets/p1.2f/f4/controls-closure-20261023/light-1440-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-closure-20261023/light-320-form.json",
+    "sha256": "5e57ae964bb611bcaba8a667946b3c1bd64bf8f975523bdd5b4a0582de91b093",
+    "size": 2701,
+    "archive_member": "docs/assets/p1.2f/f4/controls-closure-20261023/light-320-form.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-closure-20261023/light-320-library.json",
+    "sha256": "b7d25aabe17306da2d4399b22dd977cd47fc4608d6f928445eaf534ffb7b3ff7",
+    "size": 1764,
+    "archive_member": "docs/assets/p1.2f/f4/controls-closure-20261023/light-320-library.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-closure-20261023/light-320-settings.json",
+    "sha256": "f5de0004088bd762be7c2b06a13907462b8a88ab3fa50c716f1beecfa9a53630",
+    "size": 1117,
+    "archive_member": "docs/assets/p1.2f/f4/controls-closure-20261023/light-320-settings.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/controls-closure-20261023/measurements.json",
+    "sha256": "076d29d42622c87244adc68f35a32a936473d7a883e0c54e7bb41d35ab8b3b9a",
+    "size": 9480,
+    "archive_member": "docs/assets/p1.2f/f4/controls-closure-20261023/measurements.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/diagnose-after/observations.json",
+    "sha256": "3bd909f708c5a5afa339884a34359074bd01a193eba5472674767509d6d9251c",
+    "size": 607,
+    "archive_member": "docs/assets/p1.2f/f4/diagnose-after/observations.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/diagnose-after/project-error-after.png",
+    "sha256": "5c6eda0a54f7752b6b51b094d7358583316aac3e4584edc8753e6e190150d384",
+    "size": 67587,
+    "archive_member": "docs/assets/p1.2f/f4/diagnose-after/project-error-after.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/diagnose-after/project-error.webm",
+    "sha256": "fa3cf657798960ecf1b6499de0683f5fb0b2121bb116607cc10700a4d6fddc9d",
+    "size": 25196,
+    "archive_member": "docs/assets/p1.2f/f4/diagnose-after/project-error.webm"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/diagnose-after/reference-error-after.png",
+    "sha256": "2afaee399a204647872a9e483d638719587d6de0be3ed1b7e23b366ff59b7adb",
+    "size": 60398,
+    "archive_member": "docs/assets/p1.2f/f4/diagnose-after/reference-error-after.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/diagnose-after/reference-error.webm",
+    "sha256": "cab6e154240f7cc8771205f4e7795aa27a791f4034d037de514f5f2653db1b33",
+    "size": 27760,
+    "archive_member": "docs/assets/p1.2f/f4/diagnose-after/reference-error.webm"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/diagnose-after/task-error-after.png",
+    "sha256": "61a4c78d216f14ad85ae847812ee38101961110ae3eb41c29cca55b89875bdb9",
+    "size": 54695,
+    "archive_member": "docs/assets/p1.2f/f4/diagnose-after/task-error-after.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/diagnose-after/task-error.webm",
+    "sha256": "3dc90661a2f61be1ec6ae240a72e15bc73e4528cec08ac098c92dfe65d8c69cf",
+    "size": 23816,
+    "archive_member": "docs/assets/p1.2f/f4/diagnose-after/task-error.webm"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/diagnose-before/observations.json",
+    "sha256": "5abc61acacb75fec523a06275310732119e8a811316e61243504fe67e21de502",
+    "size": 604,
+    "archive_member": "docs/assets/p1.2f/f4/diagnose-before/observations.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/diagnose-before/project-error-after.png",
+    "sha256": "90fec179ba5d0e2f2b497b6f4c8f3dbc89a4c0366634b7b53b6ccbb4b7b0f73a",
+    "size": 68297,
+    "archive_member": "docs/assets/p1.2f/f4/diagnose-before/project-error-after.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/diagnose-before/project-error.webm",
+    "sha256": "2b5fe8df7b823a44a644edc598d3acb2e6067ba3a55749646093607d2d40f8fa",
+    "size": 24153,
+    "archive_member": "docs/assets/p1.2f/f4/diagnose-before/project-error.webm"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/diagnose-before/reference-error-after.png",
+    "sha256": "4e5f79c727a0830531bed59aaca8a5151d7cb3443a9c013e840ae677d0818066",
+    "size": 59099,
+    "archive_member": "docs/assets/p1.2f/f4/diagnose-before/reference-error-after.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/diagnose-before/reference-error.webm",
+    "sha256": "5250b1254bb9c7002ca49c61eb93d4a60b0c9c04d9b6162b5b6e4fe71c13252d",
+    "size": 25886,
+    "archive_member": "docs/assets/p1.2f/f4/diagnose-before/reference-error.webm"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/diagnose-before/task-error-after.png",
+    "sha256": "6e9d537df4b3a0d8b7f5c03a26cb403d5d9a3246599e7f694c831041b62f9f05",
+    "size": 50846,
+    "archive_member": "docs/assets/p1.2f/f4/diagnose-before/task-error-after.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/diagnose-before/task-error.webm",
+    "sha256": "a0014993dbb308952c9ddeb52831ff5e2c7a0ad1f748ccae458c8827a981b0a4",
+    "size": 21865,
+    "archive_member": "docs/assets/p1.2f/f4/diagnose-before/task-error.webm"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/environment.json",
+    "sha256": "b538da3bd1ba74aed1de93e5c782be3596dc02d3d3c84466ffb8db550da8a2ae",
+    "size": 491,
+    "archive_member": "docs/assets/p1.2f/f4/environment.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/axe-error-project-dark-320.json",
+    "sha256": "bc35b1129e64eabafd561ca7c6f8d8bb30401596931049504f37bf08eaf9febf",
+    "size": 4514,
+    "archive_member": "docs/assets/p1.2f/f4/errors/axe-error-project-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/axe-error-project-light-320.json",
+    "sha256": "bc35b1129e64eabafd561ca7c6f8d8bb30401596931049504f37bf08eaf9febf",
+    "size": 4514,
+    "archive_member": "docs/assets/p1.2f/f4/errors/axe-error-project-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/axe-error-reference-dark-320.json",
+    "sha256": "c9699c9c08a6f8eb4efcaf8d9200bfecf3fcee838c555f7821a2f05d95a60366",
+    "size": 5105,
+    "archive_member": "docs/assets/p1.2f/f4/errors/axe-error-reference-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/axe-error-reference-light-320.json",
+    "sha256": "c9699c9c08a6f8eb4efcaf8d9200bfecf3fcee838c555f7821a2f05d95a60366",
+    "size": 5105,
+    "archive_member": "docs/assets/p1.2f/f4/errors/axe-error-reference-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/axe-error-task-dark-320.json",
+    "sha256": "726046bdb336226819c9eca9fef084008ccebea45a47fc3a905e32146fb006d0",
+    "size": 5257,
+    "archive_member": "docs/assets/p1.2f/f4/errors/axe-error-task-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/axe-error-task-light-320.json",
+    "sha256": "726046bdb336226819c9eca9fef084008ccebea45a47fc3a905e32146fb006d0",
+    "size": 5257,
+    "archive_member": "docs/assets/p1.2f/f4/errors/axe-error-task-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/browser-errors.json",
+    "sha256": "dad83578b68754c3d78e9e72e466105eb06fe6b57fec8b5252fabc96aa8bf048",
+    "size": 353,
+    "archive_member": "docs/assets/p1.2f/f4/errors/browser-errors.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/controlled-geometry.json",
+    "sha256": "4e9574f98fdb3a37f0fa3fd589c052c027facd4c610ebc2dc5e9e425f892e6f1",
+    "size": 1771,
+    "archive_member": "docs/assets/p1.2f/f4/errors/controlled-geometry.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/controlled-light-1440-dashboard-after.png",
+    "sha256": "39a51c9b2194564f716e27a7b705709d080596233fce831936b285aad4f5e5c6",
+    "size": 312984,
+    "archive_member": "docs/assets/p1.2f/f4/errors/controlled-light-1440-dashboard-after.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/controlled-light-1440-dashboard-before.png",
+    "sha256": "05833d19cd0ba5106a900d08cecc6638d4a024a13a6d171360725be61899d19e",
+    "size": 311610,
+    "archive_member": "docs/assets/p1.2f/f4/errors/controlled-light-1440-dashboard-before.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-project-dark-320-background.png",
+    "sha256": "06ada8f9fae580aa90712f45fdc24421ebd3566f3dfb0fa0929e95448b179f95",
+    "size": 37164,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-project-dark-320-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-project-dark-320-contrast.json",
+    "sha256": "2ee5506de8eb576c415148f00f77d10021eb2683c7786f315b1eaa593742e7c7",
+    "size": 9607,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-project-dark-320-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-project-dark-320.json",
+    "sha256": "557532710f80be53de17782324af79a2a8c627574de37ae1106c917f3a27a6aa",
+    "size": 11989,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-project-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-project-dark-320.png",
+    "sha256": "bd864be5d12e5ced6e6b8df1e5921e7483c9ac385b27729a2cc0b759f645902c",
+    "size": 69017,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-project-dark-320.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-project-light-320-background.png",
+    "sha256": "e1ba1004f2e339116b40a5ef331821f1d3b5ba83e5a7f79ca53154843f85f189",
+    "size": 37169,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-project-light-320-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-project-light-320-contrast.json",
+    "sha256": "4d5560f30de96f1d6e990e1863022138e84dcadd73be26ff3d1970c19991c087",
+    "size": 9613,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-project-light-320-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-project-light-320.json",
+    "sha256": "f23edef3247161b74f23c5057772770e055f0aa284d38c93c4f334910aaf0e81",
+    "size": 11950,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-project-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-project-light-320.png",
+    "sha256": "32b8b59c84b53262aaac7f94854aa221a0fc7770943cd2e62d8eb87fd29526d8",
+    "size": 69601,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-project-light-320.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-reference-dark-320-background.png",
+    "sha256": "93f34ab449f6ad9d53674510145decfb8ca80f692ef4a0a8c143f2cf381b873b",
+    "size": 26990,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-reference-dark-320-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-reference-dark-320-contrast.json",
+    "sha256": "d9088394d5b63050477d560dbdda1648ac06eb0f558cc7ca8805cdb82fcd37e6",
+    "size": 8697,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-reference-dark-320-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-reference-dark-320.json",
+    "sha256": "6f4483624be16dee36d9f1b3d9b264e3d61093c97bf9cdbc48a75c005705ff94",
+    "size": 11254,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-reference-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-reference-dark-320.png",
+    "sha256": "06a05bf311b5464983de3345d2856b416760ecda6c3fcdac90ad8025c79e9f05",
+    "size": 69429,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-reference-dark-320.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-reference-light-320-background.png",
+    "sha256": "464b4ed4e377acb40855c86833a1de17d74af9ad5e4089a2c0a6dbf81cdb38ec",
+    "size": 24069,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-reference-light-320-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-reference-light-320-contrast.json",
+    "sha256": "729b35d91c57be80951e5b20953ea24f6ea8e2a5da3fc591cd70616080dac735",
+    "size": 8697,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-reference-light-320-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-reference-light-320.json",
+    "sha256": "2464891b3057f7292f94795cb66da150b5beb34cdc78184ed4a22ef3e7989f92",
+    "size": 11215,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-reference-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-reference-light-320.png",
+    "sha256": "5fddf2816f21e8cb6f0fe06cb13f82ba30728a8973712f69c92353e45ab1b9e6",
+    "size": 66037,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-reference-light-320.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-task-dark-320-background.png",
+    "sha256": "dc44af7b06552d816e8ee38e7004ff5efdcbe71bee9d169ada2b2bda09bfddae",
+    "size": 30404,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-task-dark-320-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-task-dark-320-contrast.json",
+    "sha256": "9ece3442f37616b02c6463a24bb9fcbbfc423ef30c6906e8ad1b13be71513d23",
+    "size": 6903,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-task-dark-320-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-task-dark-320.json",
+    "sha256": "9ab26185c9eb537f42a98304c542b887d0c20ecf77eb5c1fb5d9967174d972c9",
+    "size": 9069,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-task-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-task-dark-320.png",
+    "sha256": "f6d43cfb9fb8d0e240644903b0d75f47bf9cc22dba201e9259a5a17c23b16624",
+    "size": 61743,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-task-dark-320.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-task-light-320-background.png",
+    "sha256": "e012711ac3c6c0a2fb3e38e41439a20fd9b39e67358d780e528bc54499bfdc15",
+    "size": 25226,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-task-light-320-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-task-light-320-contrast.json",
+    "sha256": "741a1ac66e0af4b4d19d436cc87c0368791164c8d9df7ac263d2639325e855ef",
+    "size": 6902,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-task-light-320-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-task-light-320.json",
+    "sha256": "b53d4f8d35fb09eb9b72ec23a184d4347684fc81a60faadd70acd331cd1dfc8e",
+    "size": 9037,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-task-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/error-task-light-320.png",
+    "sha256": "122eb501ed348392e0707a2a39d4759ae021173b370064f27b1d78587007d53a",
+    "size": 57912,
+    "archive_member": "docs/assets/p1.2f/f4/errors/error-task-light-320.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/errors/matrix.json",
+    "sha256": "2bcf3ff144c4271698f8dd3a732d2278a73f703616c7b6386951b12c90e22763",
+    "size": 4511,
+    "archive_member": "docs/assets/p1.2f/f4/errors/matrix.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/gate-output-note.txt",
+    "sha256": "2816486bd4c209053805751f1093b1a61734b81b45529c48e1a21a3866fbe59f",
+    "size": 468,
+    "archive_member": "docs/assets/p1.2f/f4/gate-output-note.txt"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/geometry-comparison.json",
+    "sha256": "9a9fbc872afc27b7eea3919991b469d1104ec4ece431650c3579ff6685d3498c",
+    "size": 14818,
+    "archive_member": "docs/assets/p1.2f/f4/geometry-comparison.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/hover/matrix.json",
+    "sha256": "d033bca3d8d69a24f9807f88548fae1df6609a4c0cd33130062d8d2e658d8997",
+    "size": 7503,
+    "archive_member": "docs/assets/p1.2f/f4/hover/matrix.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/js-client-final.json",
+    "sha256": "9eb2e322f02eb03651b1786db5ee132f8c54c23efabaee2cc5560c16c3c30aa1",
+    "size": 1412,
+    "archive_member": "docs/assets/p1.2f/f4/js-client-final.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/js-client.json",
+    "sha256": "9eb2e322f02eb03651b1786db5ee132f8c54c23efabaee2cc5560c16c3c30aa1",
+    "size": 1412,
+    "archive_member": "docs/assets/p1.2f/f4/js-client.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/js-preset-final.json",
+    "sha256": "a555a19e552264e14d689a1fb65f9972c1fb9119ce9ed321c72f1fd40c83453a",
+    "size": 2098,
+    "archive_member": "docs/assets/p1.2f/f4/js-preset-final.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/js-preset.json",
+    "sha256": "a555a19e552264e14d689a1fb65f9972c1fb9119ce9ed321c72f1fd40c83453a",
+    "size": 2098,
+    "archive_member": "docs/assets/p1.2f/f4/js-preset.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/js-recovery-final.json",
+    "sha256": "7ee7949b52ba443cf26f53d3bc2fddf2d0ce7033f733f0cc4570e86f91ffb8a1",
+    "size": 1988,
+    "archive_member": "docs/assets/p1.2f/f4/js-recovery-final.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/js-recovery.json",
+    "sha256": "7ee7949b52ba443cf26f53d3bc2fddf2d0ce7033f733f0cc4570e86f91ffb8a1",
+    "size": 1988,
+    "archive_member": "docs/assets/p1.2f/f4/js-recovery.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/keyboard-closure-20261023/console-errors.json",
+    "sha256": "dad83578b68754c3d78e9e72e466105eb06fe6b57fec8b5252fabc96aa8bf048",
+    "size": 353,
+    "archive_member": "docs/assets/p1.2f/f4/keyboard-closure-20261023/console-errors.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/keyboard-closure-20261023/empty-search-status.json",
+    "sha256": "8adf44e7ef7357dd747744a9f5517292880efc4df2ea659be0f94c1598699a23",
+    "size": 56,
+    "archive_member": "docs/assets/p1.2f/f4/keyboard-closure-20261023/empty-search-status.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/keyboard-closure-20261023/results.json",
+    "sha256": "c4af52ecb8cc7c6a35c4ab6a65aee0a5d364176783b6684e92d7a3fd82e263eb",
+    "size": 1573,
+    "archive_member": "docs/assets/p1.2f/f4/keyboard-closure-20261023/results.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/keyboard-closure-20261023/validation-error-axe.json",
+    "sha256": "bc35b1129e64eabafd561ca7c6f8d8bb30401596931049504f37bf08eaf9febf",
+    "size": 4514,
+    "archive_member": "docs/assets/p1.2f/f4/keyboard-closure-20261023/validation-error-axe.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/keyboard-final.log",
+    "sha256": "f5fb41f66b51077c61aa94cd4cb8429901baa6ac96891155ea5656bc2b48b2b6",
+    "size": 930,
+    "archive_member": "docs/assets/p1.2f/f4/keyboard-final.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/keyboard-final/console-errors.json",
+    "sha256": "dad83578b68754c3d78e9e72e466105eb06fe6b57fec8b5252fabc96aa8bf048",
+    "size": 353,
+    "archive_member": "docs/assets/p1.2f/f4/keyboard-final/console-errors.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/keyboard-final/empty-search-status.json",
+    "sha256": "8adf44e7ef7357dd747744a9f5517292880efc4df2ea659be0f94c1598699a23",
+    "size": 56,
+    "archive_member": "docs/assets/p1.2f/f4/keyboard-final/empty-search-status.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/keyboard-final/results.json",
+    "sha256": "c4af52ecb8cc7c6a35c4ab6a65aee0a5d364176783b6684e92d7a3fd82e263eb",
+    "size": 1573,
+    "archive_member": "docs/assets/p1.2f/f4/keyboard-final/results.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/keyboard-final/validation-error-axe.json",
+    "sha256": "bc35b1129e64eabafd561ca7c6f8d8bb30401596931049504f37bf08eaf9febf",
+    "size": 4514,
+    "archive_member": "docs/assets/p1.2f/f4/keyboard-final/validation-error-axe.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/keyboard-final/validation-error.png",
+    "sha256": "80609766428ebf6eea4215425225fbda0968c9be487dd9db084a736dbc00b1e9",
+    "size": 66863,
+    "archive_member": "docs/assets/p1.2f/f4/keyboard-final/validation-error.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/paint-review/after-reload.png",
+    "sha256": "8285f6fec4519c5a657ec85f1061c4f936e53aefc43144be471561ae4ace4bfb",
+    "size": 294321,
+    "archive_member": "docs/assets/p1.2f/f4/paint-review/after-reload.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/paint-review/clean-current.png",
+    "sha256": "8285f6fec4519c5a657ec85f1061c4f936e53aefc43144be471561ae4ace4bfb",
+    "size": 294321,
+    "archive_member": "docs/assets/p1.2f/f4/paint-review/clean-current.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/paint-review/observations.json",
+    "sha256": "6ab9cdbe7476fc3d384c6dbe45f8c4987f9c635332de7a551ed5bfb235c48ddd",
+    "size": 1411,
+    "archive_member": "docs/assets/p1.2f/f4/paint-review/observations.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/paint-review/original-css.png",
+    "sha256": "3d70db1a3832d1f749c10ce73cdf3f4cb1716e14440de9a77d4ca1b75c1a32f0",
+    "size": 293174,
+    "archive_member": "docs/assets/p1.2f/f4/paint-review/original-css.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/paint-review/restored-current.png",
+    "sha256": "784df7e77826c0079ece2f7411e6c66ba25d1265ba28f28b8558d9ae510d1055",
+    "size": 294417,
+    "archive_member": "docs/assets/p1.2f/f4/paint-review/restored-current.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/axe-dark-1440-northern-000000-dashboard.json",
+    "sha256": "b9490c4edb2813346b41acc95d90b6b268da46cb874283e2e7befe70a0f93b7b",
+    "size": 4239,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/axe-dark-1440-northern-000000-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/axe-dark-1440-northern-ffffff-dashboard.json",
+    "sha256": "b9490c4edb2813346b41acc95d90b6b268da46cb874283e2e7befe70a0f93b7b",
+    "size": 4239,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/axe-dark-1440-northern-ffffff-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/axe-light-1440-northern-000000-dashboard.json",
+    "sha256": "113d2b555bb78e57c89b3032e2e27281ae2ebfa18e57beb8c85d507d5b5e0f84",
+    "size": 4239,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/axe-light-1440-northern-000000-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/axe-light-1440-northern-ffffff-dashboard.json",
+    "sha256": "2964f0915840bc86a4d007913694a9b3dd45361a12ac8baa71728d7a93c5ccf3",
+    "size": 4239,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/axe-light-1440-northern-ffffff-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/browser-errors.json",
+    "sha256": "dad83578b68754c3d78e9e72e466105eb06fe6b57fec8b5252fabc96aa8bf048",
+    "size": 353,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/browser-errors.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/dark-1440-northern-000000-dashboard-background.png",
+    "sha256": "0b6c1c85b8db24dfcbc0eeeb1379295a337c5ffbf7853ffd0a65123da3286a0b",
+    "size": 376090,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/dark-1440-northern-000000-dashboard-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/dark-1440-northern-000000-dashboard-contrast.json",
+    "sha256": "61ea2c24c1b45bb93922e32c3e09e247a549b64ddeca662dc19b667d24c363f7",
+    "size": 59119,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/dark-1440-northern-000000-dashboard-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/dark-1440-northern-000000-dashboard.json",
+    "sha256": "d22512f790a7b23b73dbc2eb9a8595cb549cab9570b7b17b4c5d11d666825cb9",
+    "size": 65411,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/dark-1440-northern-000000-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/dark-1440-northern-000000-dashboard.png",
+    "sha256": "bfbf3e6bb3dd3a6c3ea17fd239ab8b54330222000728681a159788ca68cfada1",
+    "size": 505796,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/dark-1440-northern-000000-dashboard.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/dark-1440-northern-ffffff-dashboard-background.png",
+    "sha256": "9f3a66f3409198d9d8bd8a9d8b5e3cf324170ebe4f1b876ba3b56d5a312f2430",
+    "size": 377406,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/dark-1440-northern-ffffff-dashboard-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/dark-1440-northern-ffffff-dashboard-contrast.json",
+    "sha256": "4c835be38808132b7b05cf44268f6a54420282fbd9203087b4d0d60226b4505f",
+    "size": 59164,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/dark-1440-northern-ffffff-dashboard-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/dark-1440-northern-ffffff-dashboard.json",
+    "sha256": "bb8219c99f94f6d289b854b53db194acd5844ef10f3588e7502ee1ca3c9a1154",
+    "size": 65417,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/dark-1440-northern-ffffff-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/dark-1440-northern-ffffff-dashboard.png",
+    "sha256": "d0eb480cd6696ffc15668ac08296f8c519be011c2c20b717a1efaf687723dab6",
+    "size": 507156,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/dark-1440-northern-ffffff-dashboard.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/light-1440-northern-000000-dashboard-background.png",
+    "sha256": "149dbeee941140151e93a83b32920c5ef315408d0c5ddf34cc7a0fe115143670",
+    "size": 243410,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/light-1440-northern-000000-dashboard-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/light-1440-northern-000000-dashboard-contrast.json",
+    "sha256": "2f2e3fd2c60a41626c66eacba25fc237c15db49a09a51e59a7479daef6d24d6f",
+    "size": 59299,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/light-1440-northern-000000-dashboard-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/light-1440-northern-000000-dashboard.json",
+    "sha256": "8e975b37d45384b67ffe8477531f2e5a01562a2a17da44f8423dddb413662eca",
+    "size": 65211,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/light-1440-northern-000000-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/light-1440-northern-000000-dashboard.png",
+    "sha256": "b154794dca68c818ec1484a35ab2599ab7dd7b0b302f471243ec18ab590d4702",
+    "size": 353919,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/light-1440-northern-000000-dashboard.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/light-1440-northern-ffffff-dashboard-background.png",
+    "sha256": "1a2a80557218cfe97cb2b5949b535ab680d9ef5a05e285ec58f732676039738e",
+    "size": 241744,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/light-1440-northern-ffffff-dashboard-background.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/light-1440-northern-ffffff-dashboard-contrast.json",
+    "sha256": "afb966cc9aa166c6028be6eedb63ff8d411d487b0fe979b59ee739c4d9d2fe06",
+    "size": 59297,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/light-1440-northern-ffffff-dashboard-contrast.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/light-1440-northern-ffffff-dashboard.json",
+    "sha256": "438cbb2d17df2b8fe1bb4eb63ecefab9eb116a3d3dfbd782ea8237785552bd22",
+    "size": 65227,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/light-1440-northern-ffffff-dashboard.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/light-1440-northern-ffffff-dashboard.png",
+    "sha256": "5adf983eca8f993aa36bc6aa94ac4c558329a51718744be0a843923ea43d1d2a",
+    "size": 353164,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/light-1440-northern-ffffff-dashboard.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/palette-reviewed/matrix.json",
+    "sha256": "28e1002c4588e9ac3b3ad1bd08f44910870753d5bf144a41097bf8919978bbc7",
+    "size": 43283,
+    "archive_member": "docs/assets/p1.2f/f4/palette-reviewed/matrix.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/prototype-tests.log",
+    "sha256": "a25ae7c3f2115a0a2b73877d07d8756ce37dbccdac2457960832b8395e834e13",
+    "size": 6550,
+    "archive_member": "docs/assets/p1.2f/f4/prototype-tests.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/qa-loopback.txt",
+    "sha256": "f8bec0990f0319ebceae92c888e975c208e65e8570e5d05b11706b737245f10b",
+    "size": 234,
+    "archive_member": "docs/assets/p1.2f/f4/qa-loopback.txt"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/qa-shutdown.json",
+    "sha256": "45a4aae0e1ceb214ffbf669b6e59b51471bc5f4777a580a3cd3c37f5d71e4f86",
+    "size": 422,
+    "archive_member": "docs/assets/p1.2f/f4/qa-shutdown.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/rails-final.log",
+    "sha256": "7f7a410e2ca4cb7f54f096a73afc88f97e0832b1be3182772e9074145af21321",
+    "size": 819,
+    "archive_member": "docs/assets/p1.2f/f4/rails-final.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/backups/integration.json",
+    "sha256": "3ebe3ff6c8d322e4c4163c31a6e69a270d6b10b4ef973b48848e22c074cc3f9d",
+    "size": 4796,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/backups/integration.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/cleanup/integration.json",
+    "sha256": "49a692ea54f25fc9fc3937543e12bd3d818c0c8f7097995ed3a25c719e18aaf3",
+    "size": 1479,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/cleanup/integration.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-dark-1440.json",
+    "sha256": "4ab98703adc5a43f987d34b2ea09c5a161e09299408f382cda13157e3330ac25",
+    "size": 4238,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-dark-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-dark-1920.json",
+    "sha256": "ceda085f319b1556e2ada4ef78a7c8be297c966b4bbcc3e58413c457a2ddeb98",
+    "size": 4238,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-dark-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-dark-320.json",
+    "sha256": "c51dee089e38e94ca90dc99d1a54a5bf3cd05bbe872b8d80b892713086167493",
+    "size": 4320,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-dark-390.json",
+    "sha256": "cdedcf93bda6292474b7b02a2c3a517ec7ed29ccde88ec802a1b0ed4f5e2a096",
+    "size": 4320,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-dark-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-dark-768.json",
+    "sha256": "98178a319fa40db26b667577edde40c3f3315dfa4084a58841a3a585f1ac3867",
+    "size": 4320,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-dark-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-light-1440.json",
+    "sha256": "5760f9d981021407fe4ab38ee700926d55f050d52c3e3076cd9358366f3b270f",
+    "size": 4238,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-light-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-light-1920.json",
+    "sha256": "33b13eabe0a89799669c03b364c77b683594ec6b801ecdf1c78ad5e87714718d",
+    "size": 4238,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-light-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-light-320.json",
+    "sha256": "c51dee089e38e94ca90dc99d1a54a5bf3cd05bbe872b8d80b892713086167493",
+    "size": 4320,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-light-390.json",
+    "sha256": "cdedcf93bda6292474b7b02a2c3a517ec7ed29ccde88ec802a1b0ed4f5e2a096",
+    "size": 4320,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-light-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-light-768.json",
+    "sha256": "b84f195784e8dfcee903f88da0d2de388fdf98f63d64996512af29f805438822",
+    "size": 4320,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-dashboard-light-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-form-dark-1440.json",
+    "sha256": "1f468f9f20534f7ebbfcb6785c7c54573e173b3a2d4c190c1e105976e98ca421",
+    "size": 5133,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-form-dark-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-form-dark-1920.json",
+    "sha256": "1f468f9f20534f7ebbfcb6785c7c54573e173b3a2d4c190c1e105976e98ca421",
+    "size": 5133,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-form-dark-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-form-dark-320.json",
+    "sha256": "1f468f9f20534f7ebbfcb6785c7c54573e173b3a2d4c190c1e105976e98ca421",
+    "size": 5133,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-form-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-form-dark-390.json",
+    "sha256": "1f468f9f20534f7ebbfcb6785c7c54573e173b3a2d4c190c1e105976e98ca421",
+    "size": 5133,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-form-dark-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-form-dark-768.json",
+    "sha256": "1f468f9f20534f7ebbfcb6785c7c54573e173b3a2d4c190c1e105976e98ca421",
+    "size": 5133,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-form-dark-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-form-light-1440.json",
+    "sha256": "1f468f9f20534f7ebbfcb6785c7c54573e173b3a2d4c190c1e105976e98ca421",
+    "size": 5133,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-form-light-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-form-light-1920.json",
+    "sha256": "1f468f9f20534f7ebbfcb6785c7c54573e173b3a2d4c190c1e105976e98ca421",
+    "size": 5133,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-form-light-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-form-light-320.json",
+    "sha256": "1f468f9f20534f7ebbfcb6785c7c54573e173b3a2d4c190c1e105976e98ca421",
+    "size": 5133,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-form-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-form-light-390.json",
+    "sha256": "1f468f9f20534f7ebbfcb6785c7c54573e173b3a2d4c190c1e105976e98ca421",
+    "size": 5133,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-form-light-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-form-light-768.json",
+    "sha256": "1f468f9f20534f7ebbfcb6785c7c54573e173b3a2d4c190c1e105976e98ca421",
+    "size": 5133,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-form-light-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-dark-1440.json",
+    "sha256": "86657a1ca631157b8c1fd96dacf0ec311b3f319ee5944c0912997b948e32a199",
+    "size": 4307,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-dark-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-dark-1920.json",
+    "sha256": "86657a1ca631157b8c1fd96dacf0ec311b3f319ee5944c0912997b948e32a199",
+    "size": 4307,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-dark-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-dark-320.json",
+    "sha256": "979946d073fc0694d5f59788d36ed9670c2674cbbdfa23fe559d7d976b1e80a0",
+    "size": 4383,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-dark-390.json",
+    "sha256": "979946d073fc0694d5f59788d36ed9670c2674cbbdfa23fe559d7d976b1e80a0",
+    "size": 4383,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-dark-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-dark-768.json",
+    "sha256": "ce09e855c8aefdacae88d131319a5e1001f54a3a0cba4488a44a5dd86f267b74",
+    "size": 4383,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-dark-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-light-1440.json",
+    "sha256": "ed40a06187f238b4442cffdaa3471df1b3982863d0d58bffd5c6a63f64c3376e",
+    "size": 4307,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-light-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-light-1920.json",
+    "sha256": "ed40a06187f238b4442cffdaa3471df1b3982863d0d58bffd5c6a63f64c3376e",
+    "size": 4307,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-light-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-light-320.json",
+    "sha256": "979946d073fc0694d5f59788d36ed9670c2674cbbdfa23fe559d7d976b1e80a0",
+    "size": 4383,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-light-390.json",
+    "sha256": "979946d073fc0694d5f59788d36ed9670c2674cbbdfa23fe559d7d976b1e80a0",
+    "size": 4383,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-light-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-light-768.json",
+    "sha256": "ce09e855c8aefdacae88d131319a5e1001f54a3a0cba4488a44a5dd86f267b74",
+    "size": 4383,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-overview-light-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-references-dark-1440.json",
+    "sha256": "c433d8f90d08427e49db6ea2c805e015d28834d456c5dddb84f3211f5c389c42",
+    "size": 4292,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-references-dark-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-references-dark-1920.json",
+    "sha256": "c433d8f90d08427e49db6ea2c805e015d28834d456c5dddb84f3211f5c389c42",
+    "size": 4292,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-references-dark-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-references-dark-320.json",
+    "sha256": "4b560970900220d719bbc13887a91d9a07d3dd47377a7a8bd0433eb50b740d38",
+    "size": 4368,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-references-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-references-dark-390.json",
+    "sha256": "06374ecba98dcea158190805e58c299c64c5489508495e638f8fecafe08f59f1",
+    "size": 4368,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-references-dark-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-references-dark-768.json",
+    "sha256": "eece233987ad0f7c869db263b0b1531549a4ba2a88a40ebf0c285030dab8a2ee",
+    "size": 4368,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-references-dark-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-references-light-1440.json",
+    "sha256": "791a14cce2eccaccd4485a61510a00a824a1f24fa786b88cf3e34404a00668f1",
+    "size": 4292,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-references-light-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-references-light-1920.json",
+    "sha256": "791a14cce2eccaccd4485a61510a00a824a1f24fa786b88cf3e34404a00668f1",
+    "size": 4292,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-references-light-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-references-light-320.json",
+    "sha256": "4b560970900220d719bbc13887a91d9a07d3dd47377a7a8bd0433eb50b740d38",
+    "size": 4368,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-references-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-references-light-390.json",
+    "sha256": "06374ecba98dcea158190805e58c299c64c5489508495e638f8fecafe08f59f1",
+    "size": 4368,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-references-light-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/axe-references-light-768.json",
+    "sha256": "eece233987ad0f7c869db263b0b1531549a4ba2a88a40ebf0c285030dab8a2ee",
+    "size": 4368,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/axe-references-light-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/d3/d3-browser-results.json",
+    "sha256": "822133324160be76f144b177a0b03505f554a7feed489fe533d6726669e973c7",
+    "size": 3245,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/d3/d3-browser-results.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-dark-1440.json",
+    "sha256": "88fc199bf4aac948729d893ff9fffdf5cba6eb869baf0d42db2bd4cb9baa1f5d",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-dark-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-dark-1920.json",
+    "sha256": "88fc199bf4aac948729d893ff9fffdf5cba6eb869baf0d42db2bd4cb9baa1f5d",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-dark-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-dark-320.json",
+    "sha256": "32568365c2d572af7d4a69582f6dab7cd84922f9b32088bc5f5f8e6fb9286c47",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-dark-390.json",
+    "sha256": "32568365c2d572af7d4a69582f6dab7cd84922f9b32088bc5f5f8e6fb9286c47",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-dark-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-dark-768.json",
+    "sha256": "63d60f35bcb6a9e12030268e79f74b7ec829b00551600514bc8aa572afd8a4d3",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-dark-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-light-1440.json",
+    "sha256": "88fc199bf4aac948729d893ff9fffdf5cba6eb869baf0d42db2bd4cb9baa1f5d",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-light-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-light-1920.json",
+    "sha256": "88fc199bf4aac948729d893ff9fffdf5cba6eb869baf0d42db2bd4cb9baa1f5d",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-light-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-light-320.json",
+    "sha256": "32568365c2d572af7d4a69582f6dab7cd84922f9b32088bc5f5f8e6fb9286c47",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-light-390.json",
+    "sha256": "32568365c2d572af7d4a69582f6dab7cd84922f9b32088bc5f5f8e6fb9286c47",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-light-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-light-768.json",
+    "sha256": "63d60f35bcb6a9e12030268e79f74b7ec829b00551600514bc8aa572afd8a4d3",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/e2/axe-focus-light-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/e2/browser-results.json",
+    "sha256": "6cecf7ae917ba94c12bf8ec210e6c803e8fc2187c178ca3a1a15d0e14d305a35",
+    "size": 4137,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/e2/browser-results.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/e2/focus-geometry.json",
+    "sha256": "d932bf4e3363dc01e5789cb8b48d00cc4a94ed76310a1b324f0a05a2011c12f1",
+    "size": 7611,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/e2/focus-geometry.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-dark-1440.json",
+    "sha256": "6c7a1c0e634a268c9e43238b7bce10e0169af0e606809b1c5c1d7ea4762bd0c4",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-dark-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-dark-1920.json",
+    "sha256": "6c7a1c0e634a268c9e43238b7bce10e0169af0e606809b1c5c1d7ea4762bd0c4",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-dark-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-dark-320.json",
+    "sha256": "51e4f10c1474d26f3fc64d7f07dfaff07cd0b4b5ffd488d2a808bc3948d6ac6d",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-dark-390.json",
+    "sha256": "51e4f10c1474d26f3fc64d7f07dfaff07cd0b4b5ffd488d2a808bc3948d6ac6d",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-dark-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-dark-768.json",
+    "sha256": "42a5814f8141c9c140d955345110a369afa7de6107eab0f3c260f8b373659aa1",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-dark-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-light-1440.json",
+    "sha256": "6c7a1c0e634a268c9e43238b7bce10e0169af0e606809b1c5c1d7ea4762bd0c4",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-light-1440.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-light-1920.json",
+    "sha256": "6c7a1c0e634a268c9e43238b7bce10e0169af0e606809b1c5c1d7ea4762bd0c4",
+    "size": 4242,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-light-1920.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-light-320.json",
+    "sha256": "51e4f10c1474d26f3fc64d7f07dfaff07cd0b4b5ffd488d2a808bc3948d6ac6d",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-light-390.json",
+    "sha256": "51e4f10c1474d26f3fc64d7f07dfaff07cd0b4b5ffd488d2a808bc3948d6ac6d",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-light-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-light-768.json",
+    "sha256": "42a5814f8141c9c140d955345110a369afa7de6107eab0f3c260f8b373659aa1",
+    "size": 4124,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1b/axe-recovery-light-768.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1b/f1b-browser-results.json",
+    "sha256": "1387a3b037a90120df8de68a0a36931a49077895cb74048623b42328f5f1d053",
+    "size": 1840,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1b/f1b-browser-results.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1b/geometry.json",
+    "sha256": "6d6a5ec130df965305b7874715a74a11ed63accf84099f6e5f7f9f34770c11ac",
+    "size": 8493,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1b/geometry.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1b/two-actions.json",
+    "sha256": "2b1cc7f9b6c0e3e55a877896b1a0fad5bc81bed9a9b4f5abc644a7ac1c032d8c",
+    "size": 662,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1b/two-actions.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1c/axe-feedback-dark-320.json",
+    "sha256": "ba08210da3ee571f8df7d43110ab2e737da2410d849d66c78d704528b5c0ed10",
+    "size": 4108,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1c/axe-feedback-dark-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1c/axe-feedback-dark-390.json",
+    "sha256": "ba08210da3ee571f8df7d43110ab2e737da2410d849d66c78d704528b5c0ed10",
+    "size": 4108,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1c/axe-feedback-dark-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1c/axe-feedback-light-320.json",
+    "sha256": "ba08210da3ee571f8df7d43110ab2e737da2410d849d66c78d704528b5c0ed10",
+    "size": 4108,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1c/axe-feedback-light-320.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1c/axe-feedback-light-390.json",
+    "sha256": "ba08210da3ee571f8df7d43110ab2e737da2410d849d66c78d704528b5c0ed10",
+    "size": 4108,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1c/axe-feedback-light-390.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/f1c/preset-browser-results.json",
+    "sha256": "1f6c85d878f8f26baa9d931f293750d90735c6220f9722cbccdb93fff7f51bf6",
+    "size": 2266,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/f1c/preset-browser-results.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/legacy/round-trip-and-concurrency.json",
+    "sha256": "64eaccbaeee7bc922403d0a549489f2d40bbb7bb191e1763fdb6eeab9097a520",
+    "size": 8237,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/legacy/round-trip-and-concurrency.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/preferences-final/process-results.json",
+    "sha256": "7f7a410e2ca4cb7f54f096a73afc88f97e0832b1be3182772e9074145af21321",
+    "size": 819,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/preferences-final/process-results.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/preferences-final/rails-tests.log",
+    "sha256": "5cf438ab1ec31e7f2872b9f7ac3d9bb22c5a5e2f6a279d7959c97f6a19332f4c",
+    "size": 361,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/preferences-final/rails-tests.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/sql/comparison.json",
+    "sha256": "88fc19216ed129ecc7fd6d1bfd60b9de764a4c8d359a650eb06eb1dff3d77bea",
+    "size": 212,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/sql/comparison.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/sql/loaded-tests.log",
+    "sha256": "272b2f57a89687c57c2d48b3cb814404681318060e08f823b9989add4e4d2a9e",
+    "size": 179,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/sql/loaded-tests.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/sql/migrate.log",
+    "sha256": "e2896c1e3432e35e6fb53351a75f28b45f3b0a03e274ec802533372ababd4f30",
+    "size": 20234,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/sql/migrate.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/sql/migrated-tests.log",
+    "sha256": "1f127624bee1692ea5ff8d25f3fcffe46ea991b5e9308cf13ceed484577bc039",
+    "size": 179,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/sql/migrated-tests.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/sql/migrated.json",
+    "sha256": "e0ecd4a74aff28d6becfe2728e5bf6191c1cb0f8c861e11e6558a7e29462a159",
+    "size": 23819,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/sql/migrated.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/sql/schema-load.log",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size": 1,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/sql/schema-load.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/sql/schema-loaded.json",
+    "sha256": "8e987bdd26feb0bdd7953a49e94de9bedd89bcc78791da4202ca356d02e1e44a",
+    "size": 23819,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/sql/schema-loaded.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/tasks/rails-tests.log",
+    "sha256": "d1c99492664b5af17ad91227fb54f04fedd8b32dd01acc9cff217a0736204718",
+    "size": 359,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/tasks/rails-tests.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/regressions/tasks/task-process-results.json",
+    "sha256": "9253b3223e89fbbf5970c5e6f47b73662069a7bdd3ee6934dce7cb0849f0a334",
+    "size": 1587,
+    "archive_member": "docs/assets/p1.2f/f4/regressions/tasks/task-process-results.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/repository-review.json",
+    "sha256": "71f701f5d4235f8dfb818784e590130e20f548443c7f05b8e6f1bfb08b889cd8",
+    "size": 389168,
+    "archive_member": "docs/assets/p1.2f/f4/repository-review.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/rubocop-final.log",
+    "sha256": "33483e736fc37b335d1f8d5cf7802df015a6ce5d3839a88808dd6edb1d2dad37",
+    "size": 188,
+    "archive_member": "docs/assets/p1.2f/f4/rubocop-final.log"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/source-sha256.json",
+    "sha256": "6a543e0bc9cdc12f1d2260bace07b23e20f9e92175fe027ee237080bcfba733b",
+    "size": 2609,
+    "archive_member": "docs/assets/p1.2f/f4/source-sha256.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/summary.json",
+    "sha256": "a8140bc3bc040b413a0caf33e2ba68a24cd73b4354be15be852a3f9ae38c2c08",
+    "size": 457014,
+    "archive_member": "docs/assets/p1.2f/f4/summary.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/syntax-final.json",
+    "sha256": "b86ed552df35ad3c8e75f576520c2a346c511bd1392a5b627bcd63f17e64e9df",
+    "size": 8671,
+    "archive_member": "docs/assets/p1.2f/f4/syntax-final.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/visual-review/browser-errors.json",
+    "sha256": "dad83578b68754c3d78e9e72e466105eb06fe6b57fec8b5252fabc96aa8bf048",
+    "size": 353,
+    "archive_member": "docs/assets/p1.2f/f4/visual-review/browser-errors.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/visual-review/light-1440-dashboard.png",
+    "sha256": "14b81e51225b7f33bc264fcca453cdaff8bc0f0ca9b6427897f72435940ba3d8",
+    "size": 306315,
+    "archive_member": "docs/assets/p1.2f/f4/visual-review/light-1440-dashboard.png"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/visual-review/matrix.json",
+    "sha256": "5edbf643eac4d12d521b799cd88a9845d69e9cbc0fa659930aa4e6ec4bd0a524",
+    "size": 11959,
+    "archive_member": "docs/assets/p1.2f/f4/visual-review/matrix.json"
+  },
+  {
+    "path": "docs/assets/p1.2f/f4/zeitwerk-final.log",
+    "sha256": "b72900d20b063373acc32103fa91dc57beae4caa9edc2adc0b023fa4d6b3e541",
+    "size": 58,
+    "archive_member": "docs/assets/p1.2f/f4/zeitwerk-final.log"
+  }
+]

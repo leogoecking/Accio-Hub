@@ -1,0 +1,236 @@
+== 20261011010000 CreateAuthentication: migrating =============================
+-- create_table(:users)
+   -> 0.0006s
+-- add_index(:users, :email_address, {:unique=>true})
+   -> 0.0002s
+-- add_check_constraint(:users, "id = 1", {:name=>"one_administrator"})
+   -> 0.0044s
+-- create_table(:auth_sessions)
+   -> 0.0006s
+== 20261011010000 CreateAuthentication: migrated (0.0059s) ====================
+
+== 20261012010000 CreateProjectsAndTasks: migrating ===========================
+-- create_table(:projects)
+   -> 0.0010s
+-- add_index(:projects, [:user_id, :uid], {:unique=>true})
+   -> 0.0002s
+-- add_index(:projects, [:user_id, :id], {:unique=>true})
+   -> 0.0001s
+-- add_check_constraint(:projects, "length(trim(uid, char(9)||char(10)||char(13)||' ')) > 0 AND instr(uid, char(0)) = 0", {:name=>"projects_uid"})
+   -> 0.0100s
+-- add_check_constraint(:projects, "typeof(lock_version) = 'integer' AND lock_version >= 0", {:name=>"projects_version"})
+   -> 0.0199s
+-- add_index(:projects, [:user_id, :name_key], {:unique=>true})
+   -> 0.0002s
+-- add_index(:projects, [:user_id, :status])
+   -> 0.0001s
+-- add_index(:projects, [:user_id, :last_activity_at])
+   -> 0.0001s
+-- add_check_constraint(:projects, "length(trim(name)) BETWEEN 1 AND 80 AND length(name_key) > 0 AND length(description) <= 500", {:name=>"project_text"})
+   -> 0.0151s
+-- add_check_constraint(:projects, "status IN ('active','paused','archived') AND (archived_from IS NULL OR archived_from IN ('active','paused')) AND (status = 'archived' OR (archived_from IS NULL AND archived_at IS NULL))", {:name=>"project_status"})
+   -> 0.0222s
+-- add_check_constraint(:projects, "icon IN ('grid','code','book','target','rss','calendar','cloud','music','check','mail') AND tint IN ('mint','purple','pink','blue','orange','gold')", {:name=>"project_catalog"})
+   -> 0.0199s
+-- add_check_constraint(:projects, "color IS NULL OR (length(color) = 7 AND substr(color,1,1) = '#' AND substr(color,2) NOT GLOB '*[^0-9a-fA-F]*')", {:name=>"project_color"})
+   -> 0.0147s
+-- add_check_constraint(:projects, "favorite IN (0,1)", {:name=>"project_favorite"})
+   -> 0.0185s
+-- create_table(:tasks)
+   -> 0.0007s
+-- add_index(:tasks, [:user_id, :uid], {:unique=>true})
+   -> 0.0001s
+-- add_index(:tasks, [:user_id, :id], {:unique=>true})
+   -> 0.0001s
+-- add_check_constraint(:tasks, "length(trim(uid, char(9)||char(10)||char(13)||' ')) > 0 AND instr(uid, char(0)) = 0", {:name=>"tasks_uid"})
+   -> 0.0087s
+-- add_check_constraint(:tasks, "typeof(lock_version) = 'integer' AND lock_version >= 0", {:name=>"tasks_version"})
+   -> 0.0092s
+-- add_foreign_key(:tasks, :projects, {:column=>[:user_id, :project_id], :primary_key=>[:user_id, :id], :on_delete=>:restrict})
+   -> 0.0088s
+-- add_index(:tasks, [:user_id, :status, :position])
+   -> 0.0002s
+-- add_index(:tasks, [:user_id, :project_id, :status, :position])
+   -> 0.0002s
+-- add_check_constraint(:tasks, "length(trim(title)) BETWEEN 1 AND 120", {:name=>"task_title"})
+   -> 0.0120s
+-- add_check_constraint(:tasks, "status IN ('pending','completed') AND priority IN ('normal','high') AND (status = 'completed' OR completed_at IS NULL)", {:name=>"task_status"})
+   -> 0.0118s
+-- add_check_constraint(:tasks, "typeof(position) = 'integer' AND position >= 0", {:name=>"task_position"})
+   -> 0.0112s
+-- create_table(:project_references)
+   -> 0.0007s
+-- add_index(:project_references, [:user_id, :uid], {:unique=>true})
+   -> 0.0001s
+-- add_index(:project_references, [:user_id, :id], {:unique=>true})
+   -> 0.0001s
+-- add_check_constraint(:project_references, "length(trim(uid, char(9)||char(10)||char(13)||' ')) > 0 AND instr(uid, char(0)) = 0", {:name=>"project_references_uid"})
+   -> 0.0096s
+-- add_check_constraint(:project_references, "typeof(lock_version) = 'integer' AND lock_version >= 0", {:name=>"project_references_version"})
+   -> 0.0086s
+-- add_foreign_key(:project_references, :projects, {:column=>[:user_id, :project_id], :primary_key=>[:user_id, :id], :on_delete=>:restrict})
+   -> 0.0093s
+-- add_index(:project_references, [:user_id, :project_id, :position], {:name=>"reference_project_order"})
+   -> 0.0002s
+-- add_check_constraint(:project_references, "length(trim(title)) BETWEEN 1 AND 120 AND length(description) <= 2000", {:name=>"reference_text"})
+   -> 0.0112s
+-- add_check_constraint(:project_references, "kind IN ('link','material') AND (kind != 'link' OR length(trim(url)) > 0) AND (url = '' OR lower(url) LIKE 'http://%' OR lower(url) LIKE 'https://%')", {:name=>"reference_url"})
+   -> 0.0100s
+-- add_check_constraint(:project_references, "typeof(position) = 'integer' AND position >= 0", {:name=>"reference_position"})
+   -> 0.0113s
+== 20261012010000 CreateProjectsAndTasks: migrated (0.2470s) ==================
+
+== 20261012020000 CreatePreferencesAndPlacements: migrating ===================
+-- create_table(:user_preferences)
+   -> 0.0009s
+-- add_check_constraint(:user_preferences, "theme IN ('dark','light') AND wallpaper IN ('northern','ember','ocean','graphite') AND density = 'comfortable'", {:name=>"preference_appearance"})
+   -> 0.0072s
+-- add_check_constraint(:user_preferences, "length(accent) = 7 AND substr(accent,1,1) = '#' AND substr(accent,2) NOT GLOB '*[^0-9a-fA-F]*'", {:name=>"preference_accent"})
+   -> 0.0069s
+-- add_check_constraint(:user_preferences, "music_enabled IN (0,1) AND music_expanded IN (0,1) AND project_library_favorites_only IN (0,1)", {:name=>"preference_booleans"})
+   -> 0.0084s
+-- add_check_constraint(:user_preferences, "focus_duration_seconds IN (1500,2700) AND project_library_status IN ('all','active','paused','archived') AND project_library_sort IN ('name','recent')", {:name=>"preference_catalog"})
+   -> 0.0072s
+-- add_check_constraint(:user_preferences, "typeof(preferences_schema_version) = 'integer' AND preferences_schema_version > 0 AND typeof(lock_version) = 'integer' AND lock_version >= 0", {:name=>"preference_versions"})
+   -> 0.0071s
+-- add_check_constraint(:user_preferences, "legacy_cookie_digest IS NULL OR (length(legacy_cookie_digest) = 64 AND legacy_cookie_digest NOT GLOB '*[^0-9a-f]*')", {:name=>"preference_digest"})
+   -> 0.0082s
+-- add_check_constraint(:user_preferences, "legacy_cookie_backup IS NULL OR (json_valid(legacy_cookie_backup) AND json_type(legacy_cookie_backup) = 'object')", {:name=>"preference_backup"})
+   -> 0.0077s
+-- create_table(:dock_shortcuts)
+   -> 0.0005s
+-- add_index(:dock_shortcuts, [:user_id, :module_key], {:unique=>true})
+   -> 0.0001s
+-- add_index(:dock_shortcuts, [:user_id, :position], {:unique=>true})
+   -> 0.0001s
+-- add_check_constraint(:dock_shortcuts, "module_key IN ('tasks','calendar','focus','knowledge','projects','feed','backup','email')", {:name=>"dock_catalog"})
+   -> 0.0067s
+-- add_check_constraint(:dock_shortcuts, "typeof(position) = 'integer' AND position >= 0 AND visible IN (0,1) AND typeof(lock_version) = 'integer' AND lock_version >= 0", {:name=>"dock_values"})
+   -> 0.0081s
+-- create_table(:widget_placements)
+   -> 0.0006s
+-- add_foreign_key(:widget_placements, :projects, {:column=>[:user_id, :project_id], :primary_key=>[:user_id, :id], :on_delete=>:restrict})
+   -> 0.0061s
+-- add_check_constraint(:widget_placements, "(context = 'home' AND project_id IS NULL) OR (context = 'project' AND project_id IS NOT NULL)", {:name=>"widget_context"})
+   -> 0.0052s
+-- add_check_constraint(:widget_placements, "widget_key IN ('tasks','focus','calendar','feed','notes','backup','projects','info') AND span IN (3,4,5,6,8,12)", {:name=>"widget_catalog"})
+   -> 0.0057s
+-- add_check_constraint(:widget_placements, "(context = 'home' AND widget_key IN ('tasks','focus','calendar','feed','notes','backup','projects')) OR (context = 'project' AND widget_key IN ('tasks','focus','notes','info'))", {:name=>"widget_context_catalog"})
+   -> 0.0051s
+-- add_check_constraint(:widget_placements, "typeof(position) = 'integer' AND position >= 0 AND visible IN (0,1) AND typeof(lock_version) = 'integer' AND lock_version >= 0", {:name=>"widget_values"})
+   -> 0.0063s
+-- add_index(:widget_placements, [:user_id, :widget_key], {:unique=>true, :where=>"context = 'home'", :name=>"widget_home_key"})
+   -> 0.0001s
+-- add_index(:widget_placements, [:user_id, :position], {:unique=>true, :where=>"context = 'home'", :name=>"widget_home_position"})
+   -> 0.0001s
+-- add_index(:widget_placements, [:user_id, :project_id, :widget_key], {:unique=>true, :where=>"context = 'project'", :name=>"widget_project_key"})
+   -> 0.0001s
+-- add_index(:widget_placements, [:user_id, :project_id, :position], {:unique=>true, :where=>"context = 'project'", :name=>"widget_project_position"})
+   -> 0.0001s
+== 20261012020000 CreatePreferencesAndPlacements: migrated (0.0993s) ==========
+
+== 20261012030000 CreateFocusPersistence: migrating ===========================
+-- create_table(:focus_sessions)
+   -> 0.0008s
+-- add_index(:focus_sessions, [:user_id, :uid], {:unique=>true})
+   -> 0.0002s
+-- add_index(:focus_sessions, [:user_id, :id], {:unique=>true})
+   -> 0.0001s
+-- add_index(:focus_sessions, [:user_id, :status, :completed_at])
+   -> 0.0001s
+-- add_index(:focus_sessions, :user_id, {:unique=>true, :where=>"status IN ('ready','running','paused','awaiting_confirmation')", :name=>"one_global_focus"})
+   -> 0.0001s
+-- add_foreign_key(:focus_sessions, :projects, {:column=>[:user_id, :project_id], :primary_key=>[:user_id, :id], :on_delete=>:restrict})
+   -> 0.0129s
+-- add_foreign_key(:focus_sessions, :tasks, {:column=>[:user_id, :task_id], :primary_key=>[:user_id, :id], :on_delete=>:restrict})
+   -> 0.0137s
+-- add_check_constraint(:focus_sessions, "length(trim(uid, char(9)||char(10)||char(13)||' ')) > 0 AND instr(uid, char(0)) = 0", {:name=>"focus_uid"})
+   -> 0.0127s
+-- add_check_constraint(:focus_sessions, "status IN ('ready','running','paused','awaiting_confirmation','completed','cancelled')", {:name=>"focus_status"})
+   -> 0.0137s
+-- add_check_constraint(:focus_sessions, "duration_seconds IN (1500,2700) AND typeof(elapsed_seconds) = 'integer' AND elapsed_seconds BETWEEN 0 AND duration_seconds AND typeof(lock_version) = 'integer' AND lock_version >= 0", {:name=>"focus_durations"})
+   -> 0.0139s
+-- add_check_constraint(:focus_sessions, "(status = 'running' AND running_since IS NOT NULL AND deadline_at IS NOT NULL AND deadline_at > running_since) OR (status != 'running' AND running_since IS NULL AND deadline_at IS NULL)", {:name=>"focus_segment"})
+   -> 0.0160s
+-- add_check_constraint(:focus_sessions, "status NOT IN ('running','paused','awaiting_confirmation','completed') OR started_at IS NOT NULL", {:name=>"focus_started"})
+   -> 0.0140s
+-- add_check_constraint(:focus_sessions, "(status = 'paused' AND paused_at IS NOT NULL) OR (status != 'paused' AND paused_at IS NULL)", {:name=>"focus_paused"})
+   -> 0.0138s
+-- add_check_constraint(:focus_sessions, "(status = 'completed' AND completed_at IS NOT NULL) OR (status != 'completed' AND completed_at IS NULL)", {:name=>"focus_completed"})
+   -> 0.0138s
+-- add_check_constraint(:focus_sessions, "(status IN ('completed','cancelled') AND ended_at IS NOT NULL) OR (status NOT IN ('completed','cancelled') AND ended_at IS NULL)", {:name=>"focus_ended"})
+   -> 0.0134s
+-- add_check_constraint(:focus_sessions, "status NOT IN ('awaiting_confirmation','completed') OR elapsed_seconds = duration_seconds", {:name=>"focus_elapsed"})
+   -> 0.0143s
+-- add_check_constraint(:focus_sessions, "status != 'ready' OR (elapsed_seconds = 0 AND started_at IS NULL)", {:name=>"focus_ready"})
+   -> 0.0134s
+-- add_check_constraint(:focus_sessions, "end_reason IS NULL OR (status = 'cancelled' AND end_reason IN ('reset','cancelled','interrupted'))", {:name=>"focus_reason"})
+   -> 0.0150s
+-- create_table(:focus_commands)
+   -> 0.0005s
+-- add_index(:focus_commands, [:user_id, :command_id], {:unique=>true})
+   -> 0.0001s
+-- add_index(:focus_commands, [:user_id, :focus_session_id])
+   -> 0.0001s
+-- add_foreign_key(:focus_commands, :focus_sessions, {:column=>[:user_id, :focus_session_id], :primary_key=>[:user_id, :id], :on_delete=>:restrict})
+   -> 0.0077s
+-- add_check_constraint(:focus_commands, "length(trim(command_id)) > 0 AND instr(command_id,char(0)) = 0 AND kind IN ('start','pause','reset','complete') AND typeof(expected_lock_version) = 'integer' AND expected_lock_version >= 0", {:name=>"command_contract"})
+   -> 0.0084s
+-- add_check_constraint(:focus_commands, "length(request_digest) = 64 AND request_digest NOT GLOB '*[^0-9a-f]*'", {:name=>"command_digest"})
+   -> 0.0081s
+-- add_check_constraint(:focus_commands, "json_valid(parameters) AND json_type(parameters) = 'object' AND json_valid(result) AND json_type(result) = 'object'", {:name=>"command_json"})
+   -> 0.0077s
+== 20261012030000 CreateFocusPersistence: migrated (0.2156s) ==================
+
+== 20261012040000 EnforceRelationalWriteProtection: migrating =================
+-- execute("CREATE TRIGGER accio_projects_identity BEFORE UPDATE ON projects\nWHEN NEW.user_id IS NOT OLD.user_id OR NEW.uid IS NOT OLD.uid\nBEGIN SELECT RAISE(ABORT, 'Identidade e proprietário são imutáveis'); END\n")
+   -> 0.0003s
+-- execute("CREATE TRIGGER accio_tasks_identity BEFORE UPDATE ON tasks\nWHEN NEW.user_id IS NOT OLD.user_id OR NEW.uid IS NOT OLD.uid\nBEGIN SELECT RAISE(ABORT, 'Identidade e proprietário são imutáveis'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_project_references_identity BEFORE UPDATE ON project_references\nWHEN NEW.user_id IS NOT OLD.user_id OR NEW.uid IS NOT OLD.uid\nBEGIN SELECT RAISE(ABORT, 'Identidade e proprietário são imutáveis'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_focus_sessions_identity BEFORE UPDATE ON focus_sessions\nWHEN NEW.user_id IS NOT OLD.user_id OR NEW.uid IS NOT OLD.uid OR NEW.project_id IS NOT OLD.project_id OR NEW.task_id IS NOT OLD.task_id\nBEGIN SELECT RAISE(ABORT, 'Identidade e proprietário são imutáveis'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_user_preferences_identity BEFORE UPDATE ON user_preferences\nWHEN NEW.user_id IS NOT OLD.user_id\nBEGIN SELECT RAISE(ABORT, 'Identidade e proprietário são imutáveis'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_dock_shortcuts_identity BEFORE UPDATE ON dock_shortcuts\nWHEN NEW.user_id IS NOT OLD.user_id OR NEW.module_key IS NOT OLD.module_key\nBEGIN SELECT RAISE(ABORT, 'Identidade e proprietário são imutáveis'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_widget_placements_identity BEFORE UPDATE ON widget_placements\nWHEN NEW.user_id IS NOT OLD.user_id OR NEW.context IS NOT OLD.context OR NEW.project_id IS NOT OLD.project_id OR NEW.widget_key IS NOT OLD.widget_key\nBEGIN SELECT RAISE(ABORT, 'Identidade e proprietário são imutáveis'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_project_archived BEFORE UPDATE ON projects\nWHEN OLD.status = 'archived' AND NOT (NEW.status = coalesce(OLD.archived_from, 'active') AND NEW.archived_from IS NULL AND NEW.archived_at IS NULL AND NEW.user_id IS OLD.user_id AND NEW.uid IS OLD.uid AND NEW.name IS OLD.name AND NEW.name_key IS OLD.name_key AND NEW.description IS OLD.description AND NEW.icon IS OLD.icon AND NEW.tint IS OLD.tint AND NEW.color IS OLD.color AND NEW.favorite IS OLD.favorite AND NEW.created_at IS OLD.created_at AND NEW.origin_created_at IS OLD.origin_created_at AND NEW.origin_updated_at IS OLD.origin_updated_at)\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END\n")
+   -> 0.0002s
+-- execute("CREATE TRIGGER accio_project_delete BEFORE DELETE ON projects\nWHEN 1\nBEGIN SELECT RAISE(ABORT, 'Use arquivamento'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_tasks_archived_insert BEFORE INSERT ON tasks\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = NEW.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_tasks_archived_update BEFORE UPDATE ON tasks\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = OLD.project_id AND status = 'archived') OR EXISTS (SELECT 1 FROM projects WHERE id = NEW.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_tasks_archived_delete BEFORE DELETE ON tasks\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = OLD.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_project_references_archived_insert BEFORE INSERT ON project_references\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = NEW.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_project_references_archived_update BEFORE UPDATE ON project_references\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = OLD.project_id AND status = 'archived') OR EXISTS (SELECT 1 FROM projects WHERE id = NEW.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_project_references_archived_delete BEFORE DELETE ON project_references\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = OLD.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_widget_placements_archived_insert BEFORE INSERT ON widget_placements\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = NEW.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_widget_placements_archived_update BEFORE UPDATE ON widget_placements\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = OLD.project_id AND status = 'archived') OR EXISTS (SELECT 1 FROM projects WHERE id = NEW.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_widget_placements_archived_delete BEFORE DELETE ON widget_placements\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = OLD.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_focus_archived_context BEFORE INSERT ON focus_sessions\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = NEW.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Restaure o projeto antes de iniciar novo foco'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_focus_task_context BEFORE INSERT ON focus_sessions\nWHEN NEW.task_id IS NOT NULL AND EXISTS (SELECT 1 FROM tasks WHERE id = NEW.task_id AND project_id IS NOT NEW.project_id)\nBEGIN SELECT RAISE(ABORT, 'Contexto deve ser o da tarefa'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_focus_archived_write BEFORE UPDATE ON focus_sessions\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = OLD.project_id AND status = 'archived') AND NOT ((NEW.status IN ('paused','awaiting_confirmation','completed','cancelled') OR (NEW.status = 'running' AND OLD.status = 'running')) AND NEW.duration_seconds IS OLD.duration_seconds AND NEW.started_at IS OLD.started_at AND NEW.created_at IS OLD.created_at)\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado permite apenas encerrar ou reconciliar foco existente'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_focus_terminal BEFORE UPDATE ON focus_sessions\nWHEN OLD.status IN ('completed','cancelled')\nBEGIN SELECT RAISE(ABORT, 'Tentativa encerrada é imutável'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_focus_delete BEFORE DELETE ON focus_sessions\nWHEN 1\nBEGIN SELECT RAISE(ABORT, 'Tentativas de foco são preservadas'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_command_immutable_update BEFORE UPDATE ON focus_commands\nWHEN 1\nBEGIN SELECT RAISE(ABORT, 'Recibo de comando é imutável'); END\n")
+   -> 0.0001s
+-- execute("CREATE TRIGGER accio_command_immutable_delete BEFORE DELETE ON focus_commands\nWHEN 1\nBEGIN SELECT RAISE(ABORT, 'Recibo de comando é imutável'); END\n")
+   -> 0.0001s
+== 20261012040000 EnforceRelationalWriteProtection: migrated (0.0033s) ========
