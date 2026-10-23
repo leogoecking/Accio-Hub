@@ -1,0 +1,1206 @@
+{
+  "format": "accio-p12-f5-evidence-index",
+  "version": 1,
+  "generated_at": "2026-10-23",
+  "scope": "F5: reprodução histórica, correção restritiva, auditoria e gate de encerramento; dados exclusivamente sintéticos e sem pacotes privados.",
+  "files_excluding_this_manifest": 239,
+  "bytes_excluding_this_manifest": 13933593,
+  "retention": "Nenhuma evidência anterior removida; acervo F4 privado permanece intacto.",
+  "files": [
+    {
+      "path": "docs/assets/p1.2f/f5/backups/integration.json",
+      "bytes": 4794,
+      "sha256": "ac2bdf39321d7e32cd61e2626f65d585a0917b2d42364f8c54bfcba0e2be8e92"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/backups.log",
+      "bytes": 4794,
+      "sha256": "ac2bdf39321d7e32cd61e2626f65d585a0917b2d42364f8c54bfcba0e2be8e92"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/brakeman.log",
+      "bytes": 1941,
+      "sha256": "ac41f71df9a7da61e122487bed33464e006c39aee1666e7d06c22f2ebb437606"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/cleanup/integration.json",
+      "bytes": 1479,
+      "sha256": "49a692ea54f25fc9fc3937543e12bd3d818c0c8f7097995ed3a25c719e18aaf3"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/cleanup.log",
+      "bytes": 1479,
+      "sha256": "49a692ea54f25fc9fc3937543e12bd3d818c0c8f7097995ed3a25c719e18aaf3"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/artifact-review.json",
+      "bytes": 2633,
+      "sha256": "dc4b408dd645fd304a874896d645afdb47ed2392990bf28f13d09a88a76871b5"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/brakeman/run.log",
+      "bytes": 1941,
+      "sha256": "11076f048460fea41714e16df2cc02e1dfc8733f0df164616caab7b52ebcf10c"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/f3b/integration.json",
+      "bytes": 4796,
+      "sha256": "3f2efc9ba6d503f6bbb56b2e838c9f6db5e2657ba657df65bb0c897023004e22"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/f3b/run.log",
+      "bytes": 4796,
+      "sha256": "3f2efc9ba6d503f6bbb56b2e838c9f6db5e2657ba657df65bb0c897023004e22"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/f3c/integration.json",
+      "bytes": 1479,
+      "sha256": "49a692ea54f25fc9fc3937543e12bd3d818c0c8f7097995ed3a25c719e18aaf3"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/f3c/run.log",
+      "bytes": 1479,
+      "sha256": "49a692ea54f25fc9fc3937543e12bd3d818c0c8f7097995ed3a25c719e18aaf3"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/f501/cases.jsonl",
+      "bytes": 3010,
+      "sha256": "e81c914bec9c0b3fcf1ca6c69ffb8089a113f67196366ce38d8545d691f46f70"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/f501/run.log",
+      "bytes": 173,
+      "sha256": "2dfd4ce324df8839a113f15e8765a35f3f9ebcdfec1d9575aaaac0f305eb0786"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/focus-client-check/run.log",
+      "bytes": 1412,
+      "sha256": "9eb2e322f02eb03651b1786db5ee132f8c54c23efabaee2cc5560c16c3c30aa1"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/focus-preset-check/run.log",
+      "bytes": 2098,
+      "sha256": "a555a19e552264e14d689a1fb65f9972c1fb9119ce9ed321c72f1fd40c83453a"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/focus-recovery-check/run.log",
+      "bytes": 1988,
+      "sha256": "7ee7949b52ba443cf26f53d3bc2fddf2d0ce7033f733f0cc4570e86f91ffb8a1"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/gates.json",
+      "bytes": 2033,
+      "sha256": "2256b2af5bc0c21a2789af7b21b2172bdbc4dd23ca789113f110ceb85752fc75"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/axe-dark-1440-dashboard.json",
+      "bytes": 4239,
+      "sha256": "29f205a720ab10cbfa38dbbc89d70b267c2673ccbfe24a60470427b972f8b5ab"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/axe-dark-1440-focus.json",
+      "bytes": 4242,
+      "sha256": "3c6adf23f20dfc35c933dedf3a464d15172cf229f1f70f94df6e8d5442df36a6"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/axe-dark-1440-project.json",
+      "bytes": 4295,
+      "sha256": "a6234eb7524c85dfcf4d85fd1b1d5936355b71fd20414023c41c6b3028d71c24"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/axe-dark-390-dashboard.json",
+      "bytes": 4388,
+      "sha256": "ddd32fb97f85c40af65f32b223eed155d32f6cb93c8686ac9b6b92577947b5cd"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/axe-dark-390-focus.json",
+      "bytes": 4297,
+      "sha256": "c4dbaf0d7598a0820bba65b525f2eb70d45630ad1475f943a5f9ed896695b599"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/axe-dark-390-project.json",
+      "bytes": 4425,
+      "sha256": "0dd462b046ce82580b4821420f3c98cedfd03a00d63a306cf3375c26c1a9e892"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/axe-light-1440-dashboard.json",
+      "bytes": 4239,
+      "sha256": "29f205a720ab10cbfa38dbbc89d70b267c2673ccbfe24a60470427b972f8b5ab"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/axe-light-1440-focus.json",
+      "bytes": 4242,
+      "sha256": "3c6adf23f20dfc35c933dedf3a464d15172cf229f1f70f94df6e8d5442df36a6"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/axe-light-1440-project.json",
+      "bytes": 4295,
+      "sha256": "a6234eb7524c85dfcf4d85fd1b1d5936355b71fd20414023c41c6b3028d71c24"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/axe-light-390-dashboard.json",
+      "bytes": 4388,
+      "sha256": "ddd32fb97f85c40af65f32b223eed155d32f6cb93c8686ac9b6b92577947b5cd"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/axe-light-390-focus.json",
+      "bytes": 4297,
+      "sha256": "c4dbaf0d7598a0820bba65b525f2eb70d45630ad1475f943a5f9ed896695b599"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/axe-light-390-project.json",
+      "bytes": 4425,
+      "sha256": "0dd462b046ce82580b4821420f3c98cedfd03a00d63a306cf3375c26c1a9e892"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/backup-restore.json",
+      "bytes": 1206,
+      "sha256": "47799051361489ba836074e466d07143fa7bfdb9976f1486d5c014019f7196b1"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/browser-errors.json",
+      "bytes": 353,
+      "sha256": "dad83578b68754c3d78e9e72e466105eb06fe6b57fec8b5252fabc96aa8bf048"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/empty-projects.png",
+      "bytes": 232950,
+      "sha256": "9afa40f438b1ee4e0c54eef5e4bd8d81cf7df169ef47fe237d9bcdcff66305da"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/focus-dark-1440.png",
+      "bytes": 455597,
+      "sha256": "8e7ffeba4e7f4fe7b25049dd44622bcf3bc7ddb7aa101395deae2241655ad73a"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/focus-dark-1920.png",
+      "bytes": 567078,
+      "sha256": "09d8e0dc122dbd64a6284fc4862745adf2b374426117aed35ac6291226ac362c"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/focus-dark-320.png",
+      "bytes": 163819,
+      "sha256": "a7d6d94611334069be0fa163d12f2837b666fdc676dbf1a8ae866040bd7ba790"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/focus-dark-390.png",
+      "bytes": 193567,
+      "sha256": "4b7b5fe34a2ec46d26fe422db87d43170c6743bbac88f4b956bb76e3f2cddb03"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/focus-dark-768.png",
+      "bytes": 290537,
+      "sha256": "52cce0183b285049fa5b5ae88825cc3aff8fa7024e403e4e172ea02d0dfc8b06"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/focus-light-1440.png",
+      "bytes": 233576,
+      "sha256": "08819f8213244fa9a2ef68d32c8db554a989c946b84dc3e68e29dbb39b4cc9b0"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/focus-light-1920.png",
+      "bytes": 255310,
+      "sha256": "43c83a1f0fd94ef4c78aa304cd56304f3073307d91f6a28b50b91c61dc81b2d5"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/focus-light-320.png",
+      "bytes": 134226,
+      "sha256": "070b4adc13d33ac54e03df55b0399f031878b4977e5d11ab09335b65e0b2ba7c"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/focus-light-390.png",
+      "bytes": 155918,
+      "sha256": "e3ae6c119997679945a24789aded9441ea9cff9ea2c9f78ba4f24d4cfeeec661"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/focus-light-768.png",
+      "bytes": 237079,
+      "sha256": "6c1d9b77447529c86223488cec3e72532a6daefa59688a51f04eb6b52f4b3fd6"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/partial-recovery.png",
+      "bytes": 151004,
+      "sha256": "7f6654f9e47458b1961d648c2a812cdabe2b3128a81f4980f9b8f6e7533a145c"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/premature-http.json",
+      "bytes": 92,
+      "sha256": "a5e212bdf4c1e6b59cb19fe268e911155f0a3c4995b9c5d861edf31a41f71e11"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/restored-restart.json",
+      "bytes": 174,
+      "sha256": "a338860086131ebcf7bcdecc2d9d00cb1bbea99289c7d18660e3cc65f1632e60"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/results.json",
+      "bytes": 2024,
+      "sha256": "6cb250de5c7c8cc93b2ddcdef42f129875b79d2b0ba451462b69fde0720cd205"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/run.log",
+      "bytes": 1473,
+      "sha256": "47643a3a35d7d6cf61435e0a2aeba8a1252617ad083f1dfaebfe07862d38cd1f"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/source-fingerprints.json",
+      "bytes": 57025,
+      "sha256": "191c9c164dd1ddc34aaa52c5e238e5e33b25969dc5af0d04c2801ab86868139f"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/integrated/task-serialization.json",
+      "bytes": 278,
+      "sha256": "dd5bb11234911698a30b0a4e25997f7f3c08891a56a2ac92b788f58d36f1ae6f"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/matrix/after-matrix.json",
+      "bytes": 7076,
+      "sha256": "b900e694ee9f5efb92ff2a2040630e2844b131451041ff17e2aeaf7ca63c9bab"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/matrix/run.log",
+      "bytes": 3253,
+      "sha256": "c156cd36618ac5c1b32276afb8876207521f02e75a8843fc48e8b5e6848932e1"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/prototype.log",
+      "bytes": 6544,
+      "sha256": "5581281c4790d976dc616df90b9f215246496b85710ba4fadd572d6b82e9f2c0"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/rails/run.log",
+      "bytes": 379,
+      "sha256": "0368b02e5122ef17f5c690225ce95a3effda68654654df9508324f703902ef4e"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/repository-review.json",
+      "bytes": 3163,
+      "sha256": "1d1c455ca98c5181ecf8cb75d99fc2cb503491625bb262313777694f5a558e58"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/rubocop/run.log",
+      "bytes": 191,
+      "sha256": "3b6122c93e08ff5b8d42e22a2b2c51d94074c85fb0a78f912dd055244eddbcfc"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/schema/run.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/sql/comparison.json",
+      "bytes": 212,
+      "sha256": "88fc19216ed129ecc7fd6d1bfd60b9de764a4c8d359a650eb06eb1dff3d77bea"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/sql/loaded-tests.log",
+      "bytes": 179,
+      "sha256": "3135ceeb62833add8b0c3ad59c8f4422c657b53497920133eeb92c331347fa66"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/sql/migrate.log",
+      "bytes": 20234,
+      "sha256": "f0a35200c9d3220286fcd44b83569b0980bd4db11be7850aebc24c41324e2382"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/sql/migrated-tests.log",
+      "bytes": 179,
+      "sha256": "e7a2b25b6476ed558583000da9d6c3df9d57d6717194b10c60ee3cc3e179cc41"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/sql/migrated.json",
+      "bytes": 23819,
+      "sha256": "e0ecd4a74aff28d6becfe2728e5bf6191c1cb0f8c861e11e6558a7e29462a159"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/sql/run.log",
+      "bytes": 121,
+      "sha256": "52878e0c899122309327025568417c2f57b6e4007ac9610202509c3df0bde3fa"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/sql/schema-load.log",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/sql/schema-loaded.json",
+      "bytes": 23819,
+      "sha256": "8e987bdd26feb0bdd7953a49e94de9bedd89bcc78791da4202ca356d02e1e44a"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/syntax.json",
+      "bytes": 45,
+      "sha256": "702156b21ae41cf605635d0cbb0124701962eb2a39dff71ccf7f890a3be3e1fe"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/zeitwerk/run.log",
+      "bytes": 58,
+      "sha256": "b72900d20b063373acc32103fa91dc57beae4caa9edc2adc0b023fa4d6b3e541"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/diagnosis/contract-conditions.json",
+      "bytes": 288,
+      "sha256": "95fb5ef230f173ac0c3c377ba63f4c3619e35ec92e5052f9053ea0f20ff2d489"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/diagnosis/schema-probe-first.json",
+      "bytes": 2588,
+      "sha256": "78a4a5b529ffd4aee84507339a1cf37ba3287c8119cc6b2df206ef4386af0325"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/diagnosis/schema-probe.json",
+      "bytes": 2588,
+      "sha256": "78a4a5b529ffd4aee84507339a1cf37ba3287c8119cc6b2df206ef4386af0325"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-audit/adversarial_results.json",
+      "bytes": 2915,
+      "sha256": "44cfc8415eca55a0da94e797a4a57329b6b718bc5b9615908e58b6b375ca6b58"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-audit/adversarial_runner.rb",
+      "bytes": 10581,
+      "sha256": "574f2134ea0252bb0350cd32e953acd2f77eaa69fb4372ebb12ee3bacf746104"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-audit/inspect_diffs.rb",
+      "bytes": 3581,
+      "sha256": "6d698a4f31bf2ad8e64bf4cd36bd553225102378297a65c9d023e18b54c1e9ea"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-audit/matrix_results.json",
+      "bytes": 10133,
+      "sha256": "f67a01918bb75aa125687d8635262908e5e74fc5c1487f86a772636373ffd397"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-audit/matrix_runner.rb",
+      "bytes": 6136,
+      "sha256": "96d2bb255fda946d58d70fc367b9657322be7ae0f39068f943ded36195d5be26"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-audit/sql_literal_diff.json",
+      "bytes": 29137,
+      "sha256": "5e64882856e4df0745bb26a667e6a9ce2a8c050a6aaf65bb1b26d313808f1a6c"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/before-matrix-attempt-01.log",
+      "bytes": 743,
+      "sha256": "3df772c142ec10d23615a9728f922302fba0ea45e40ebcea5ddd57ca9477a54f"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/before-matrix.json",
+      "bytes": 6125,
+      "sha256": "ccbf344c10ea32e5297a6fbd3504164e0052bc77bce2e72089c2dc013810a692"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/before-matrix.log",
+      "bytes": 231,
+      "sha256": "6305efb9f1e2ec4ad1f2899401e0b9e768fbffda288087c14f4e04124723b75c"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/after-matrix.json",
+      "bytes": 7076,
+      "sha256": "b900e694ee9f5efb92ff2a2040630e2844b131451041ff17e2aeaf7ca63c9bab"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/after-matrix.log",
+      "bytes": 3253,
+      "sha256": "c156cd36618ac5c1b32276afb8876207521f02e75a8843fc48e8b5e6848932e1"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/brakeman-final.log",
+      "bytes": 1941,
+      "sha256": "d1bd72a8052d010c4108aab2dcf3232d8811f4f87a08b18a1fcfa932bfb3e849"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/contract-change.json",
+      "bytes": 433,
+      "sha256": "48d2d77efeeb4dacfa621e99eeffa2bd6278c31840bffb6db023d6ccdcf9582a"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/d1/project-process-results.json",
+      "bytes": 1290,
+      "sha256": "623df57aeaa47e78f9b7210356c99b7331e4f806353a0fc0cf46370f151fbd08"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/d1/rails-tests.log",
+      "bytes": 379,
+      "sha256": "9b9faaee70f7dfbef3a5ff45fe20bbbaa4f00100d686e4233fc7a0aa191ff61a"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/d1.log",
+      "bytes": 1290,
+      "sha256": "623df57aeaa47e78f9b7210356c99b7331e4f806353a0fc0cf46370f151fbd08"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/d2/rails-tests.log",
+      "bytes": 379,
+      "sha256": "51ddf4c47d068f23f3d8489f1627fffd479ce971a816e8f3002a13e45befb801"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/d2/task-process-results.json",
+      "bytes": 1593,
+      "sha256": "47f4783e00266881f00e21ff4b6ac1e2616e9d2f569b2d1412d9b1eb8e3169a8"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/d2.log",
+      "bytes": 1593,
+      "sha256": "47f4783e00266881f00e21ff4b6ac1e2616e9d2f569b2d1412d9b1eb8e3169a8"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/d3/rails-tests.log",
+      "bytes": 379,
+      "sha256": "7c2c69438cadd73ea99c610bc4d3d42a60bed65b06643c0cb2f375eb5804e789"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/d3/reference-process-results.json",
+      "bytes": 2840,
+      "sha256": "218e0212378db73b627d5355b60042f60dba292685eb3998df567d927523e9aa"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/d3.log",
+      "bytes": 2840,
+      "sha256": "218e0212378db73b627d5355b60042f60dba292685eb3998df567d927523e9aa"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/e1/process-results.json",
+      "bytes": 3480,
+      "sha256": "db05b2f1ea6fb7932d158d0912f79207d60ddfb48e59ef3cd0df82085982e828"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/e1/rails-tests.log",
+      "bytes": 379,
+      "sha256": "8e0eddf26d44e33f893ecf9442cacc90cc0b0d1066e89461cbb91e361071f3f2"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/e1/zeitwerk.log",
+      "bytes": 58,
+      "sha256": "b72900d20b063373acc32103fa91dc57beae4caa9edc2adc0b023fa4d6b3e541"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/e1.log",
+      "bytes": 3611,
+      "sha256": "d2378597cf6679059a81e0dc79390223fd680c089464cd72e5d5c498e071fb67"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/f3a/round-trip-and-concurrency.json",
+      "bytes": 8237,
+      "sha256": "10b6870a019eb777e41b6d45bb0dfaa03af2f6220cc153fffb3c3d190af2e31b"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/f3a.log",
+      "bytes": 8237,
+      "sha256": "10b6870a019eb777e41b6d45bb0dfaa03af2f6220cc153fffb3c3d190af2e31b"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/f3b/integration.json",
+      "bytes": 4796,
+      "sha256": "8e2dedf066b8e3d3cb354d1e5f1b9280e8b1d4a03a25b8463cf747c591ff7750"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/f3b.log",
+      "bytes": 4796,
+      "sha256": "8e2dedf066b8e3d3cb354d1e5f1b9280e8b1d4a03a25b8463cf747c591ff7750"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/f3c/integration.json",
+      "bytes": 1479,
+      "sha256": "49a692ea54f25fc9fc3937543e12bd3d818c0c8f7097995ed3a25c719e18aaf3"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/f3c.log",
+      "bytes": 1479,
+      "sha256": "49a692ea54f25fc9fc3937543e12bd3d818c0c8f7097995ed3a25c719e18aaf3"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/history/before-dual-whitelist-P1.2F5_01_CORRECTION_VERIFICATION.md",
+      "bytes": 8915,
+      "sha256": "a09c3e095e7e8a88886ece36ef823bec548bb979ea46dbaa794fe6f876de148f"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/history/before-dual-whitelist-P1.2F5_VERIFICATION.md",
+      "bytes": 17971,
+      "sha256": "f42756ca13ff44cdb4b943c7f18d1478c384368bfad0c9a45c24583458d31b99"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/axe-dark-1440-dashboard.json",
+      "bytes": 4239,
+      "sha256": "947efa176a70d139e0b01721a4c3463a915df4dca9825f880cf265831c26ae93"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/axe-dark-1440-focus.json",
+      "bytes": 4242,
+      "sha256": "6ab0d4cd1e273fea7671c39dcde147552264c8049de41743a6013f31d7bf2cbf"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/axe-dark-1440-project.json",
+      "bytes": 4295,
+      "sha256": "1bac2ec504f227022eb5f31cfe1a3b04f4275de3cecdd9e452d373d53ae43053"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/axe-dark-390-dashboard.json",
+      "bytes": 4388,
+      "sha256": "ddd32fb97f85c40af65f32b223eed155d32f6cb93c8686ac9b6b92577947b5cd"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/axe-dark-390-focus.json",
+      "bytes": 4297,
+      "sha256": "c4dbaf0d7598a0820bba65b525f2eb70d45630ad1475f943a5f9ed896695b599"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/axe-dark-390-project.json",
+      "bytes": 4425,
+      "sha256": "c06fa4410025804fb1030d4e3440e1bf3128558d1b566127aed5677fdce21887"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/axe-light-1440-dashboard.json",
+      "bytes": 4239,
+      "sha256": "947efa176a70d139e0b01721a4c3463a915df4dca9825f880cf265831c26ae93"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/axe-light-1440-focus.json",
+      "bytes": 4242,
+      "sha256": "6ab0d4cd1e273fea7671c39dcde147552264c8049de41743a6013f31d7bf2cbf"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/axe-light-1440-project.json",
+      "bytes": 4295,
+      "sha256": "1bac2ec504f227022eb5f31cfe1a3b04f4275de3cecdd9e452d373d53ae43053"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/axe-light-390-dashboard.json",
+      "bytes": 4388,
+      "sha256": "ddd32fb97f85c40af65f32b223eed155d32f6cb93c8686ac9b6b92577947b5cd"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/axe-light-390-focus.json",
+      "bytes": 4297,
+      "sha256": "c4dbaf0d7598a0820bba65b525f2eb70d45630ad1475f943a5f9ed896695b599"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/axe-light-390-project.json",
+      "bytes": 4425,
+      "sha256": "c06fa4410025804fb1030d4e3440e1bf3128558d1b566127aed5677fdce21887"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/backup-restore.json",
+      "bytes": 1206,
+      "sha256": "47799051361489ba836074e466d07143fa7bfdb9976f1486d5c014019f7196b1"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/browser-errors.json",
+      "bytes": 353,
+      "sha256": "dad83578b68754c3d78e9e72e466105eb06fe6b57fec8b5252fabc96aa8bf048"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/empty-projects.png",
+      "bytes": 232858,
+      "sha256": "4e08e1d7f00cb7c548df56b9f702ca0301533c37fd2d89c53dc3b6ae9f5b0e3e"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/focus-dark-1440.png",
+      "bytes": 455476,
+      "sha256": "5aa2f780401d83249992a8f78d6339f34d8cbcdeb1451691572689c8e199961e"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/focus-dark-1920.png",
+      "bytes": 566962,
+      "sha256": "f8da5f5fc25c8991a58193d6adc87eba02499d03f7e36f2de4f17dcdd8ee5143"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/focus-dark-320.png",
+      "bytes": 163819,
+      "sha256": "a7d6d94611334069be0fa163d12f2837b666fdc676dbf1a8ae866040bd7ba790"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/focus-dark-390.png",
+      "bytes": 193567,
+      "sha256": "4b7b5fe34a2ec46d26fe422db87d43170c6743bbac88f4b956bb76e3f2cddb03"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/focus-dark-768.png",
+      "bytes": 290537,
+      "sha256": "52cce0183b285049fa5b5ae88825cc3aff8fa7024e403e4e172ea02d0dfc8b06"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/focus-light-1440.png",
+      "bytes": 233451,
+      "sha256": "0bd59a7ebe281f8321bcc6dc77f0c1bd898295d44cebd987ab93294578cdbc1e"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/focus-light-1920.png",
+      "bytes": 255175,
+      "sha256": "9498ad48a5d2036bdc9c69084b639751806381e316064186b2de07168c42954d"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/focus-light-320.png",
+      "bytes": 134226,
+      "sha256": "070b4adc13d33ac54e03df55b0399f031878b4977e5d11ab09335b65e0b2ba7c"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/focus-light-390.png",
+      "bytes": 155918,
+      "sha256": "e3ae6c119997679945a24789aded9441ea9cff9ea2c9f78ba4f24d4cfeeec661"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/focus-light-768.png",
+      "bytes": 237079,
+      "sha256": "6c1d9b77447529c86223488cec3e72532a6daefa59688a51f04eb6b52f4b3fd6"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/partial-recovery.png",
+      "bytes": 154040,
+      "sha256": "5a7cf5898112007afa5b369517a6235a027d396442acf3535127fd8f4059b142"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/restored-restart.json",
+      "bytes": 174,
+      "sha256": "a338860086131ebcf7bcdecc2d9d00cb1bbea99289c7d18660e3cc65f1632e60"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/results.json",
+      "bytes": 1912,
+      "sha256": "413c2eb57cc01c1505489c0a845f3c623c64b543923a6f5b555f4646ccebbe37"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/source-fingerprints.json",
+      "bytes": 57025,
+      "sha256": "245595c296581b148c99f185ab9d38070c4457178bde8d92cb689237a239a90c"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated/task-serialization.json",
+      "bytes": 278,
+      "sha256": "dd5bb11234911698a30b0a4e25997f7f3c08891a56a2ac92b788f58d36f1ae6f"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/axe-dark-1440-dashboard.json",
+      "bytes": 4239,
+      "sha256": "f37e1bfcdf6d9c135636ae98f3c856eeefab46728b4da41c0c03ac4934ff310c"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/axe-dark-1440-focus.json",
+      "bytes": 4242,
+      "sha256": "e79f3c2d78a5cf9b6c018447113c4855bb5f0869fb9e83c67c0304c61587c4f8"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/axe-dark-1440-project.json",
+      "bytes": 4295,
+      "sha256": "0a69fcd2e03b2fde57b4a9b2ddc96e64b821bd6566a36c165f5969692b2eb2d3"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/axe-dark-390-dashboard.json",
+      "bytes": 4388,
+      "sha256": "ddd32fb97f85c40af65f32b223eed155d32f6cb93c8686ac9b6b92577947b5cd"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/axe-dark-390-focus.json",
+      "bytes": 4297,
+      "sha256": "c4dbaf0d7598a0820bba65b525f2eb70d45630ad1475f943a5f9ed896695b599"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/axe-dark-390-project.json",
+      "bytes": 4425,
+      "sha256": "76e1d8dee038856515391b6af7716963f90ce2f6efd0feb0d24481c432785559"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/axe-light-1440-dashboard.json",
+      "bytes": 4239,
+      "sha256": "f37e1bfcdf6d9c135636ae98f3c856eeefab46728b4da41c0c03ac4934ff310c"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/axe-light-1440-focus.json",
+      "bytes": 4242,
+      "sha256": "e79f3c2d78a5cf9b6c018447113c4855bb5f0869fb9e83c67c0304c61587c4f8"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/axe-light-1440-project.json",
+      "bytes": 4295,
+      "sha256": "0a69fcd2e03b2fde57b4a9b2ddc96e64b821bd6566a36c165f5969692b2eb2d3"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/axe-light-390-dashboard.json",
+      "bytes": 4388,
+      "sha256": "ddd32fb97f85c40af65f32b223eed155d32f6cb93c8686ac9b6b92577947b5cd"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/axe-light-390-focus.json",
+      "bytes": 4297,
+      "sha256": "c4dbaf0d7598a0820bba65b525f2eb70d45630ad1475f943a5f9ed896695b599"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/axe-light-390-project.json",
+      "bytes": 4425,
+      "sha256": "76e1d8dee038856515391b6af7716963f90ce2f6efd0feb0d24481c432785559"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/backup-restore.json",
+      "bytes": 1206,
+      "sha256": "47799051361489ba836074e466d07143fa7bfdb9976f1486d5c014019f7196b1"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/browser-errors.json",
+      "bytes": 353,
+      "sha256": "dad83578b68754c3d78e9e72e466105eb06fe6b57fec8b5252fabc96aa8bf048"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/empty-projects.png",
+      "bytes": 232870,
+      "sha256": "afdf7b4138661787f9061af759e1cf488146aaaa9418f9f1b0d22cc69a28bc2e"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/focus-dark-1440.png",
+      "bytes": 455345,
+      "sha256": "8ee969a53ef5f85fad701faf80400bfbff09d82fec014279894db113cbe9faa6"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/focus-dark-1920.png",
+      "bytes": 566821,
+      "sha256": "9fb61bace5c586df546410d2f7d9323fd8fca8517a14812208944ef341afb842"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/focus-dark-320.png",
+      "bytes": 163819,
+      "sha256": "a7d6d94611334069be0fa163d12f2837b666fdc676dbf1a8ae866040bd7ba790"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/focus-dark-390.png",
+      "bytes": 193567,
+      "sha256": "4b7b5fe34a2ec46d26fe422db87d43170c6743bbac88f4b956bb76e3f2cddb03"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/focus-dark-768.png",
+      "bytes": 290537,
+      "sha256": "52cce0183b285049fa5b5ae88825cc3aff8fa7024e403e4e172ea02d0dfc8b06"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/focus-light-1440.png",
+      "bytes": 233292,
+      "sha256": "b67b28ef81b74b2ad5471c74681757fbe6a2d850f841916e02659e92911e49a6"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/focus-light-1920.png",
+      "bytes": 255009,
+      "sha256": "b45312eb0c292dcb6d51b15a41d4f3084678b4f72a12b2203827c739131e2746"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/focus-light-320.png",
+      "bytes": 134226,
+      "sha256": "070b4adc13d33ac54e03df55b0399f031878b4977e5d11ab09335b65e0b2ba7c"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/focus-light-390.png",
+      "bytes": 155918,
+      "sha256": "e3ae6c119997679945a24789aded9441ea9cff9ea2c9f78ba4f24d4cfeeec661"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/focus-light-768.png",
+      "bytes": 237079,
+      "sha256": "6c1d9b77447529c86223488cec3e72532a6daefa59688a51f04eb6b52f4b3fd6"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/partial-recovery.png",
+      "bytes": 164521,
+      "sha256": "fa8f79fc8740b7d2033d3625f889befb60156f7434effcd2fc4de080bf9ae2ff"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/premature-http.json",
+      "bytes": 92,
+      "sha256": "a5e212bdf4c1e6b59cb19fe268e911155f0a3c4995b9c5d861edf31a41f71e11"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/restored-restart.json",
+      "bytes": 174,
+      "sha256": "a338860086131ebcf7bcdecc2d9d00cb1bbea99289c7d18660e3cc65f1632e60"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/results.json",
+      "bytes": 2024,
+      "sha256": "6cb250de5c7c8cc93b2ddcdef42f129875b79d2b0ba451462b69fde0720cd205"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/source-fingerprints.json",
+      "bytes": 57025,
+      "sha256": "3b1c32691549cc622965a5c366816be3f3e0d3e0e7f79e18fae7092ffa1ba12b"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final/task-serialization.json",
+      "bytes": 278,
+      "sha256": "dd5bb11234911698a30b0a4e25997f7f3c08891a56a2ac92b788f58d36f1ae6f"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated-final.log",
+      "bytes": 1473,
+      "sha256": "47643a3a35d7d6cf61435e0a2aeba8a1252617ad083f1dfaebfe07862d38cd1f"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/integrated.log",
+      "bytes": 1333,
+      "sha256": "010ee97ef2b097c674631ffc75c79382bd94e7ab37c281269027d7f85c204d3b"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/js-client.json",
+      "bytes": 1412,
+      "sha256": "9eb2e322f02eb03651b1786db5ee132f8c54c23efabaee2cc5560c16c3c30aa1"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/js-preset.json",
+      "bytes": 2098,
+      "sha256": "a555a19e552264e14d689a1fb65f9972c1fb9119ce9ed321c72f1fd40c83453a"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/js-recovery.json",
+      "bytes": 1988,
+      "sha256": "7ee7949b52ba443cf26f53d3bc2fddf2d0ce7033f733f0cc4570e86f91ffb8a1"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/prototype.log",
+      "bytes": 6552,
+      "sha256": "fa1a269dca5d346256b615d212ecf0277e18e6fe235e3ce8119bef25c0191137"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/rails-c/process-results.json",
+      "bytes": 819,
+      "sha256": "0e8b725e9867a686c85b32bd52dfe4d2a529a4424681ec58485c50e230b08f3a"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/rails-c/rails-tests.log",
+      "bytes": 378,
+      "sha256": "c5d2af98f511573dd6d47182b2c745e524d7eafd6f0b5411b7f0aced6af253e4"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/rails-c.log",
+      "bytes": 819,
+      "sha256": "0e8b725e9867a686c85b32bd52dfe4d2a529a4424681ec58485c50e230b08f3a"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/reconfirmation/before-matrix.json",
+      "bytes": 6125,
+      "sha256": "ccbf344c10ea32e5297a6fbd3504164e0052bc77bce2e72089c2dc013810a692"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/reconfirmation/before-matrix.log",
+      "bytes": 2349,
+      "sha256": "75990968414a9361b1fc79c2f673cee73bc698c84420529765a90007d15380c5"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/repository-review.json",
+      "bytes": 439,
+      "sha256": "7715b9a949120c21965fa11eebd5545b250c1da9d528d604cf82b8c47273a8c5"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/rubocop-final.log",
+      "bytes": 191,
+      "sha256": "3b6122c93e08ff5b8d42e22a2b2c51d94074c85fb0a78f912dd055244eddbcfc"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/rubocop.log",
+      "bytes": 1603,
+      "sha256": "9b26b20fcd2f2aae015f94da879c5d199e210fb6becdfd7712f0a911d218a3ed"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/source-sha256.json",
+      "bytes": 588,
+      "sha256": "556e6c486f56be9fce1b0e4eeffe39669436d4a02933f265fbc65104c647ce8d"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/sql/comparison.json",
+      "bytes": 212,
+      "sha256": "88fc19216ed129ecc7fd6d1bfd60b9de764a4c8d359a650eb06eb1dff3d77bea"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/sql/loaded-tests.log",
+      "bytes": 178,
+      "sha256": "84c87878574dd6cbdcea50b8bce805f57c6f65dd217c699d44e99f219e92a90a"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/sql/migrate.log",
+      "bytes": 20234,
+      "sha256": "56b5594105f49bde6218d6269613db795e6b756fcd81042abffd4de1de2a5ad6"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/sql/migrated-tests.log",
+      "bytes": 179,
+      "sha256": "5fde3e8b958db13a9e8d7ed3c94d7720624aa47efcb2ce32c3213e28cc5475b3"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/sql/migrated.json",
+      "bytes": 23819,
+      "sha256": "e0ecd4a74aff28d6becfe2728e5bf6191c1cb0f8c861e11e6558a7e29462a159"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/sql/schema-load.log",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/sql/schema-loaded.json",
+      "bytes": 23819,
+      "sha256": "8e987bdd26feb0bdd7953a49e94de9bedd89bcc78791da4202ca356d02e1e44a"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/sql.log",
+      "bytes": 121,
+      "sha256": "52878e0c899122309327025568417c2f57b6e4007ac9610202509c3df0bde3fa"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/syntax.json",
+      "bytes": 4318,
+      "sha256": "7a74ccaeae7dd19d9c5d1f305c9eb213229af60c50f3522c3491770b74e3b86a"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/tests/cases.jsonl",
+      "bytes": 3010,
+      "sha256": "9c67ccbea092388f6aefa5c5cb4637599df6c0b065f0c7383c2c04d0099143ce"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/tests/schema.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/tests/targeted.log",
+      "bytes": 173,
+      "sha256": "dca82d3d54eda089229345a51fe70f33f9b78d7d0de0a9ad57d94d094ec5d1e2"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/zeitwerk.log",
+      "bytes": 58,
+      "sha256": "b72900d20b063373acc32103fa91dc57beae4caa9edc2adc0b023fa4d6b3e541"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/stop-condition.json",
+      "bytes": 546,
+      "sha256": "ac85fa0d247ebc7ade0e9241b31aa1169448d1a519e64a9e6305f5e95bb2b26c"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/axe-dark-1440-dashboard.json",
+      "bytes": 4239,
+      "sha256": "2b65ef4080c3a27a15ead465ba7190b704ad289dec28c07a9ea1493eea4b6657"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/axe-dark-1440-focus.json",
+      "bytes": 4242,
+      "sha256": "4c91f434c99dea5cd0c7b5c32e7939b940ecfb1e3f5413c25fa420fbad1edefb"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/axe-dark-1440-project.json",
+      "bytes": 4295,
+      "sha256": "2b5abdbf8d3ca59756375e69039000c95bb88df486da170dc59e3c5aba4b6af1"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/axe-dark-390-dashboard.json",
+      "bytes": 4388,
+      "sha256": "ddd32fb97f85c40af65f32b223eed155d32f6cb93c8686ac9b6b92577947b5cd"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/axe-dark-390-focus.json",
+      "bytes": 4297,
+      "sha256": "c4dbaf0d7598a0820bba65b525f2eb70d45630ad1475f943a5f9ed896695b599"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/axe-dark-390-project.json",
+      "bytes": 4425,
+      "sha256": "33a9952eb7827ece126b606491b236cbb847dadb65126fdb7af9cd71ce501be3"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/axe-light-1440-dashboard.json",
+      "bytes": 4239,
+      "sha256": "2b65ef4080c3a27a15ead465ba7190b704ad289dec28c07a9ea1493eea4b6657"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/axe-light-1440-focus.json",
+      "bytes": 4242,
+      "sha256": "4c91f434c99dea5cd0c7b5c32e7939b940ecfb1e3f5413c25fa420fbad1edefb"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/axe-light-1440-project.json",
+      "bytes": 4295,
+      "sha256": "2b5abdbf8d3ca59756375e69039000c95bb88df486da170dc59e3c5aba4b6af1"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/axe-light-390-dashboard.json",
+      "bytes": 4388,
+      "sha256": "ddd32fb97f85c40af65f32b223eed155d32f6cb93c8686ac9b6b92577947b5cd"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/axe-light-390-focus.json",
+      "bytes": 4297,
+      "sha256": "c4dbaf0d7598a0820bba65b525f2eb70d45630ad1475f943a5f9ed896695b599"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/axe-light-390-project.json",
+      "bytes": 4425,
+      "sha256": "33a9952eb7827ece126b606491b236cbb847dadb65126fdb7af9cd71ce501be3"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/empty-projects.png",
+      "bytes": 232970,
+      "sha256": "08adcde0e3f56189b78eb3974b71b56e04765da4a12b51d40f606ea70808f360"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/failure.png",
+      "bytes": 288301,
+      "sha256": "359df11a7d500238f854b1452b84250966770bf4a26551c8c017ce3ca38b11b2"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/failure.txt",
+      "bytes": 847,
+      "sha256": "f498bf96db3a466c5a6245d5ca6c44dc0b1961cd149d07e6bb0105a23eb8020b"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/focus-dark-1440.png",
+      "bytes": 455632,
+      "sha256": "17655f1cf22fa1044a5f6466423d533837b2efdacc1d14b326ab184dd3dfedc3"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/focus-dark-1920.png",
+      "bytes": 567109,
+      "sha256": "9f3c4b54496d6003bd32a2974a62aa00ba0d84aee5ea185b488f85eab42d5a4b"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/focus-dark-320.png",
+      "bytes": 163819,
+      "sha256": "a7d6d94611334069be0fa163d12f2837b666fdc676dbf1a8ae866040bd7ba790"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/focus-dark-390.png",
+      "bytes": 193567,
+      "sha256": "4b7b5fe34a2ec46d26fe422db87d43170c6743bbac88f4b956bb76e3f2cddb03"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/focus-dark-768.png",
+      "bytes": 290537,
+      "sha256": "52cce0183b285049fa5b5ae88825cc3aff8fa7024e403e4e172ea02d0dfc8b06"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/focus-light-1440.png",
+      "bytes": 233612,
+      "sha256": "b89f75fe29a7e603435b03fca157abb85b50f28c82816c455d8a4382b930c948"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/focus-light-1920.png",
+      "bytes": 255344,
+      "sha256": "7c3eeb8d8d104dbc358ae78e9f82c2cc287461aa43f7a6fe8ceedb9814ffb1cd"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/focus-light-320.png",
+      "bytes": 134226,
+      "sha256": "070b4adc13d33ac54e03df55b0399f031878b4977e5d11ab09335b65e0b2ba7c"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/focus-light-390.png",
+      "bytes": 155918,
+      "sha256": "e3ae6c119997679945a24789aded9441ea9cff9ea2c9f78ba4f24d4cfeeec661"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/focus-light-768.png",
+      "bytes": 237079,
+      "sha256": "6c1d9b77447529c86223488cec3e72532a6daefa59688a51f04eb6b52f4b3fd6"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/partial-recovery.png",
+      "bytes": 156084,
+      "sha256": "b2b4fa315e99580cee91016a42bd9985abe6d39af9cebaf5fdb9df7a3bfa167c"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/results.json",
+      "bytes": 1538,
+      "sha256": "7a20588605a2ee78807fde83dce6d9123e84bacf0184b8b5814ba60a4e91b184"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/source-fingerprints.json",
+      "bytes": 57025,
+      "sha256": "43d538a5714b496fb1b29a75b65bc9abfe248c9bfebb51ab51577f64fe75b173"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated/task-serialization.json",
+      "bytes": 278,
+      "sha256": "dd5bb11234911698a30b0a4e25997f7f3c08891a56a2ac92b788f58d36f1ae6f"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated-attempt-01/empty-projects.png",
+      "bytes": 232899,
+      "sha256": "7a83f006290322f82d0dafa8bd7dba9936a1a8a50311476d58f9e0df0babb174"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated-attempt-01/failure.png",
+      "bytes": 75779,
+      "sha256": "695992f4e8eef39cb6f120c680fdb45d155f6292570a83d60938c88f58e798f3"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated-attempt-01/failure.txt",
+      "bytes": 962,
+      "sha256": "7e785576153e948239fe740f627ce6d23bd357137c4551dfd1e317296884736b"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated-attempt-01/partial-recovery.png",
+      "bytes": 150960,
+      "sha256": "4414bc6626f34c764a5341c0b28f858e74ca215005d6141784d27d017ab5952a"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated-attempt-01/results.json",
+      "bytes": 1061,
+      "sha256": "11315b20efe9e9ba1b836f857e4d280f54ea10b094635d522b2ee73707fb6f2f"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated-attempt-01.log",
+      "bytes": 2008,
+      "sha256": "b6e5d7022e6aeb823ddbb1e7eb947aa23265c275ceb4373dbede71039a021b12"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated.log",
+      "bytes": 1370,
+      "sha256": "9fa5cab1971d5023242e5b1931911c80b668aa8e97b6ba74cc0b9972999e8fd3"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/legacy/round-trip-and-concurrency.json",
+      "bytes": 8237,
+      "sha256": "2b145be73c9af7f59a7a016e82d3da183ee0d5aa9f330f09b6ad6a57712772ef"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/legacy.log",
+      "bytes": 8237,
+      "sha256": "2b145be73c9af7f59a7a016e82d3da183ee0d5aa9f330f09b6ad6a57712772ef"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/qa-shutdown.json",
+      "bytes": 414,
+      "sha256": "943a8fe55b8501c8a4aa2a451a6476a957830645bdc93017ead1bbb8c14b5935"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/repository-review.json",
+      "bytes": 701,
+      "sha256": "eb27610b9379037aea7a59bb09aacb8a6486d7c531e35d720d17ab085b23a795"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/rubocop.log",
+      "bytes": 189,
+      "sha256": "349190b304d8f43583412136b3448f684771cd5edf404fe537d4d4ff831e430a"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/schema-probe-final.log",
+      "bytes": 2588,
+      "sha256": "78a4a5b529ffd4aee84507339a1cf37ba3287c8119cc6b2df206ef4386af0325"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/schema-probe-first.log",
+      "bytes": 2588,
+      "sha256": "78a4a5b529ffd4aee84507339a1cf37ba3287c8119cc6b2df206ef4386af0325"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/schema-probe.log",
+      "bytes": 2588,
+      "sha256": "78a4a5b529ffd4aee84507339a1cf37ba3287c8119cc6b2df206ef4386af0325"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/source-sha256.json",
+      "bytes": 232,
+      "sha256": "3134b86d92676e1d0c13c1484c414eadde2f984b64a14f559a1aad0a81ee3f02"
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/teardown-check.json",
+      "bytes": 105,
+      "sha256": "82eedca5bac08c26c10a8f8aa911f609fb2c12063f8c237d11581336d757d179"
+    }
+  ]
+}

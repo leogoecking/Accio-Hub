@@ -1,0 +1,53 @@
+{
+  "capture": {
+    "verified": true,
+    "format_version": 1,
+    "tables": {
+      "ar_internal_metadata": 2,
+      "auth_sessions": 1,
+      "dock_shortcuts": 8,
+      "focus_commands": 13,
+      "focus_sessions": 2,
+      "project_references": 2,
+      "projects": 2,
+      "schema_migrations": 5,
+      "sqlite_sequence": 10,
+      "tasks": 2,
+      "user_preferences": 1,
+      "users": 1,
+      "widget_placements": 7
+    },
+    "triggers": 25,
+    "indexes": 36
+  },
+  "verified": {
+    "verified": true,
+    "format_version": 1,
+    "tables": {
+      "ar_internal_metadata": 2,
+      "auth_sessions": 1,
+      "dock_shortcuts": 8,
+      "focus_commands": 13,
+      "focus_sessions": 2,
+      "project_references": 2,
+      "projects": 2,
+      "schema_migrations": 5,
+      "sqlite_sequence": 10,
+      "tasks": 2,
+      "user_preferences": 1,
+      "users": 1,
+      "widget_placements": 7
+    },
+    "triggers": 25,
+    "indexes": 36
+  },
+  "restore": {
+    "prepared": true,
+    "revoked_sessions": 1,
+    "fidelity_verified_before_security": true
+  },
+  "source_unchanged": true,
+  "all_other_tables_identical": true,
+  "account_password_unchanged": true,
+  "source_fixture_required": true
+}

@@ -1,0 +1,87 @@
+{
+  "suite": "220 runs, 3595 assertions, 0 failures, 0 errors, 0 skips",
+  "create": [
+    {
+      "worker": "0",
+      "http": 200,
+      "parent_archived": false,
+      "task_status": null
+    },
+    {
+      "worker": "1",
+      "http": 200,
+      "parent_archived": false,
+      "task_status": null
+    }
+  ],
+  "incompatible": [
+    {
+      "worker": "0",
+      "http": 409,
+      "parent_archived": false,
+      "task_status": "pending"
+    },
+    {
+      "worker": "1",
+      "http": 200,
+      "parent_archived": false,
+      "task_status": "pending"
+    }
+  ],
+  "edit": [
+    {
+      "worker": "0",
+      "http": 200,
+      "parent_archived": false,
+      "task_status": "pending"
+    },
+    {
+      "worker": "1",
+      "http": 409,
+      "parent_archived": false,
+      "task_status": "pending"
+    }
+  ],
+  "archive_edit": [
+    {
+      "worker": "0",
+      "http": 409,
+      "parent_archived": false,
+      "task_status": "pending"
+    },
+    {
+      "worker": "1",
+      "http": 200,
+      "parent_archived": false,
+      "task_status": "pending"
+    }
+  ],
+  "archive_complete": [
+    {
+      "worker": "0",
+      "http": 409,
+      "parent_archived": false,
+      "task_status": "completed"
+    },
+    {
+      "worker": "1",
+      "http": 200,
+      "parent_archived": false,
+      "task_status": "completed"
+    }
+  ],
+  "integrity": {
+    "tasks": 2,
+    "triggers": 25,
+    "foreign_keys": true
+  },
+  "reopen": {
+    "new_process_identical": true
+  },
+  "contention": {
+    "writer_contention_http": 503
+  },
+  "rollback_reopen": {
+    "new_process_identical": true
+  }
+}

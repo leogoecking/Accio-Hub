@@ -1,9 +1,13 @@
 # Accio Hub — Arquitetura (ARCHITECTURE)
 
-> **Versão:** 0.3 (protótipo atual e arquitetura definitiva planejada)<br>
-> **Data-base:** 2026-10-12<br>
-> **Estado:** P0.4 e P1.1 homologadas; P1.0/P1.2A aprovadas; P1.2B homologada; P1.2C aprovada tecnicamente; planejamento P1.2D aprovado; D1 aprovada com ressalvas; D2 aprovada; D3 aprovada tecnicamente<br>
+> **Versão:** 0.4 (estado técnico P1.2 e arquitetura definitiva planejada)<br>
+> **Data-base:** 2026-10-23<br>
+> **Estado:** P0.4/P1.1 homologadas; P1.2 concluída tecnicamente no escopo sintético (A aprovado, B aprovado com ressalvas, C não autorizado). P1.3 não iniciada.<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ROADMAP.md](ROADMAP.md)
+
+## Situação consolidada — 2026-10-23
+
+[Encerramento técnico P1.2](P1.2_FINAL_CLOSURE.md) formalizado pelo commit desta entrega após gates e auditoria final independente. Rails/Hotwire/SQLite, preferências definitivas, projetos/tarefas/referências e foco global preservam seus contratos. F5 altera somente a whitelist literal do contrato de backup para quatro schemas homologados; não altera modelos, motor, migrações, gatilhos ou interface. Ferramentas administrativas continuam exclusivamente sintéticas. Restauração operacional sem origem e custódia de backups/chaves permanecem pendentes: não há liberação para dados pessoais importantes. As seções seguintes documentam a evolução histórica e os desenhos futuros; P1.3 não iniciada.
 
 ## Fundação homologada — P1.1
 

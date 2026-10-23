@@ -66,8 +66,7 @@ preparando o futuro Vault Markdown. Evitar refatorações grandes sem necessidad
 - SQLite
 - PWA
 
-P0.4 homologada, P1.0 arquitetural aprovada e P1.1 encerrada e homologada.
-P1.2A/P1.2B/P1.2C aprovadas tecnicamente; planejamento P1.2D aprovado; D1 aprovada tecnicamente com ressalvas e registrada; D2/D3 aprovadas; E1/E2/E3 aprovadas, E3 registrada em35a6671. Plano P1.2F aprovado com ajustes; F1b aprovada com ressalvas e registrada em 7ebfaeb. F1c aprovada com ressalvas e registrada em b262ce6. Exclusivamente F2a autorizada, sem commit da implementação. F2b/F3/F4/F5/P1.3 não autorizadas.
+P0.4 e P1.1 homologadas. P1.2A–F aprovadas no escopo técnico/sintético, após auditoria independente final de 23/10/2026 e autorização expressa de encerramento. O commit que contém docs/P1.2_FINAL_CLOSURE.md formaliza a entrega. Nível A aprovado; B aprovado com ressalvas; C não autorizado. P1.3 não iniciada: planejamento depende de autorização específica. Não importar dados pessoais nem presumir liberação operacional. Os registros cronológicos abaixo preservam autorizações e estados anteriores.
 A aprovação visual da P0.3 não autoriza iniciar Rails na P0.4.
 
 ## Arquitetura
@@ -128,6 +127,10 @@ Utilizar quando apropriado:
 7. Resumir mudanças e pendências.
 
 ## Fase atual
+
+P1.2: encerramento técnico sintético autorizado e formalizado pelo commit desta entrega, após gates; ver [docs/P1.2_FINAL_CLOSURE.md](docs/P1.2_FINAL_CLOSURE.md). Nenhum trabalho P1.3 autorizado/iniciado. Sem push, merge ou tag.
+
+### Histórico das etapas (não representa o estágio atual)
 
 P1.2C — Encerramento técnico aprovado em 2026-10-12 após auditoria independente do Antigravity.
 P1.2D1 encerrada tecnicamente em af5e24bab30d90bbb89c19b9798b69b20d1d9185 após aprovação independente com ressalvas.
@@ -267,3 +270,20 @@ F3c aprovada pelo Antigravity como **APROVADO COM RESSALVAS, SEM BLOQUEADORES**,
 ### Encerramento F4 autorizado e preparação F5 — 2026-10-23
 
 F4 aprovada pelo Antigravity com ressalvas, sem bloqueadores;22 hashes idênticos. Reconciliação documental:154 fail nas três primeiras matrizes,167 incluindo hover;56 logotipos/109 pontos/2 separadores pertencem ao universo completo. Acervo integral preservado em arquivo privado persistente fora do Git, com manifesto/hash e seleção curada rastreável; auditoria original/código aprovados intactos. Encerramento F4 em commit autorizado após gates. Somente após esse commit, F5 investigativa/sintética G1–G10 autorizada, sem correções automáticas nem ampliação funcional. Distinguir implementação técnica, homologação sintética e liberação pessoal; recuperação operacional sem origem e custódia/chaves continuam pendentes, sem implementação autorizada. F5 sem commit/staging para revisão e auditoria; não iniciar P1.3, dados pessoais, tag/push/merge ou operações Ubuntu.
+
+### F4 encerrada e F5 investigativa bloqueada — 2026-10-23
+
+F4 registrada em `7c1cea40cc180a3c03f5521d83219690294cdb1b` (688 arquivos/~30MiB), após hashes/gates e custódia integral privada do conjunto p12f4-20261023-b94d9cd9. [Encerramento F4](docs/P1.2F4_CLOSURE.md). F5 iniciou exclusivamente QA sintético; [verificação F5](docs/P1.2F5_VERIFICATION.md) registra13 checkpoints integrados e regressões aprovadas, mas **F5-01 bloqueia G5/B**: schema criado em development recebe SQL query tags e seu hash literal não é aceito pelo contrato de backup F3b. Recusa segura, origem intacta, reprodução mínima test/development confirmada; nenhum serviço/contrato alterado. Proposta corretiva depende de autorização específica. A parcialmente confirmada no conjunto, B não homologada, C não liberada; recuperação operacional sem origem/custódia/chaves e revisão humana continuam pendentes. QA/docs/evidências F5 sem commit/staging. Não iniciar P1.3, dados pessoais, tag/push/merge ou mudanças Ubuntu.
+
+### F5-01 — matriz anterior à correção interrompida — 2026-10-23
+
+Usuário confirmou contrato do HEAD como fonte de verdade e condicionou edição à reprodução dos quatro cenários. [Verificação](docs/P1.2F5_01_CORRECTION_VERIFICATION.md): test/migrate621ee16d, test/loadc8752c5a, development/migrate **edc335eb6c71b2062b5a65c4563fcbe0fe341deaa5ca55ac7383f8dd92ec5751**, development/loadb42e0bb5. Pares por método diferem apenas em34 tags de índices, com integridade e dados preservados. Novo hash de development/migrate não autorizado; condição de parada acionada. **Nenhuma edição do contrato**, nenhuma implementação funcional ou teste pós-correção; F5 não retomada. QA/docs/evidências sem commit/staging. Revisão/autorização específica necessária antes de catalogar outro fingerprint; P1.3, uso pessoal, tag/push/merge continuam não autorizados.
+
+### F5-01 — dois hashes autorizados, correção e fluxo completo para revisão
+
+Contrato do HEAD reconfirmado em quatro bancos novos; só34 tags distinguem cada development do test correspondente. Usuário autorizou edc335eb… e b42e0bb5…; somente esses dois hashes foram acrescentados ao JSON, com todos os campos/bytes restantes preservados. [Verificação](docs/P1.2F5_01_CORRECTION_VERIFICATION.md): quatro backups/restores,220 testes/3.595 asserções,17 novos/143 (12 negativos), regressões C/D/E/F2/F3 e17 checkpoints finais integrados aprovados. Mesmo banco da interface restaurado, sessões antigas recusadas, login/GET/restart e checkpoint/recibos preservados. Auditoria original/erros documentais preservados e corrigidos apenas por errata. A confirmada nos cenários, B executada sinteticamente para revisão/G10, **sem homologação automática**; C não liberada. Apenas config de produção alterada; correção/QA/docs sem commit/staging. Aguardar Antigravity/revisão; não iniciar P1.3, dados pessoais, recuperação operacional sem origem, tag/push/merge ou operações Ubuntu.
+
+
+### Encerramento técnico sintético P1.2 — 2026-10-23
+
+Antigravity concluiu auditoria final: APROVADO COM RESSALVAS, SEM BLOQUEADORES para A/B; usuário aceitou ressalvas e autorizou este commit. Seis hashes auditados coincidem, configuração de produção limitada à whitelist exata de quatro schemas, motor/modelos/SQL/UI preservados. Gate novo: Rails220/3.595, F5-01: 17/143, matriz4/4 com restore, fluxo17/17, F3b/F3c, SQL25/36 e ferramentas aprovados. [Encerramento](docs/P1.2_FINAL_CLOSURE.md): A APROVADO; B APROVADO COM RESSALVAS; C NÃO AUTORIZADO. Recuperação sem origem, proteção/redundância/custódia de backups e chaves, procedimento por operador, acessibilidade humana/Firefox, retenção definitiva e backup conjunto do futuro Vault seguem pendentes. Nada disso foi implementado. P1.3 não iniciada; nenhuma autorização implícita de dados pessoais, release, tag/push/merge ou operações Ubuntu.

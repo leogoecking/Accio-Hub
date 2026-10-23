@@ -1,0 +1,27 @@
+{
+  "branch": "p1-persistence",
+  "head": "7c1cea40cc180a3c03f5521d83219690294cdb1b",
+  "index_empty": true,
+  "application_and_contracts_unchanged": true,
+  "protected_paths": [
+    "rails/app",
+    "rails/db",
+    "rails/config",
+    "rails/lib",
+    "prototype",
+    "rails/Gemfile",
+    "rails/Gemfile.lock"
+  ],
+  "working_tree_at_review": [
+    " M AGENTS.md",
+    " M docs/ROADMAP.md",
+    "?? docs/P1.2F5_VERIFICATION.md",
+    "?? docs/assets/p1.2f/f5/",
+    "?? rails/script/final-backup-schema-probe.rb",
+    "?? rails/script/final-persistence-check.mjs"
+  ],
+  "personal_data_used": false,
+  "functional_correction_applied": false,
+  "f5_blocker": "F5-01",
+  "operational_release": false
+}

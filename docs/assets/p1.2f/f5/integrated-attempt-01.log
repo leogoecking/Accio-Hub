@@ -1,0 +1,37 @@
+PASS Authenticated empty database and genuine empty module states
+PASS Appearance, Dock/widgets and Music persist before real module creation
+PASS Projects created, renamed, favorited and filtered without changing UID
+PASS Personal/contextual tasks, global edit and permitted project move
+PASS Link/material creation and reference edit preserve identity and safe rendering
+PASS Dashboard derives counts from the same SQLite entities; knowledge remains reserved
+PASS 25/45 presets and one task-context session across Turbo pages
+PASS Two real tabs reject stale pause command without a blind toggle
+PASS 20-minute absence recovers in two explicit gestures; integral estimate only requests completion
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+Error: Command failed: agent-browser --session accio-f5-integrated --json wait --fn !document.querySelector('#task-check-u-MDMwYTQwNWEtMjU5Yy00ZTlmLWFlNzMtNzE0MDVjZDI2NTU0').checked
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:942:11)
+    at execFileSync (node:child_process:978:15)
+    at b (file:///home/goecking/Projects/Accio-HUB/rails/script/final-persistence-check.mjs:25:39)
+    at wait (file:///home/goecking/Projects/Accio-HUB/rails/script/final-persistence-check.mjs:27:18)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/final-persistence-check.mjs:60:342
+    at check (file:///home/goecking/Projects/Accio-HUB/rails/script/final-persistence-check.mjs:35:25)
+    at file:///home/goecking/Projects/Accio-HUB/rails/script/final-persistence-check.mjs:60:2
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  status: 1,
+  signal: null,
+  output: [
+    null,
+    '{"success":false,"data":null,"error":"Wait timed out after 25000ms"}\n',
+    ''
+  ],
+  pid: 2069112,
+  stdout: '{"success":false,"data":null,"error":"Wait timed out after 25000ms"}\n',
+  stderr: ''
+}
+
+Node.js v24.19.0

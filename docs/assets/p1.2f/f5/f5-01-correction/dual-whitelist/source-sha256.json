@@ -1,0 +1,7 @@
+{
+  "rails/config/sqlite_backup_contract.json": "cce26197bfa3afec45eaf90d978fc1a358d85dc520c73361f895bfdce43b9dd3",
+  "rails/script/backup-schema-contract-check.rb": "5e099e7c03b26cfbbeee8d0151f83bbb2298f85122573496a5c1c7f900b13cfa",
+  "rails/script/final-backup-schema-probe.rb": "d30cad3670ffa6f03622c62c8e62915514f36fd04799ec7afea5db56318ae1d7",
+  "rails/script/final-persistence-check.mjs": "dad5db0f2d4166e123bf12890397006d3aec72145f167ca27d36bc257db87545",
+  "rails/test/services/sqlite_backup_contract_test.rb": "c39da8a9496b23156d3df11a8caee926305115c2523b74a0e4308c85794c30a9"
+}

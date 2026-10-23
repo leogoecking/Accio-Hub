@@ -1,0 +1,16 @@
+{"type":"positive","creation":"development","preparation":"db:migrate","schema_sha256":"edc335eb6c71b2062b5a65c4563fcbe0fe341deaa5ca55ac7383f8dd92ec5751","verified":true,"source_unchanged":true}
+{"type":"negative","mutation":"index","schema_sha256":"22b24db4f5261fb643d03f416d2fa03abac7ff38995970a68646f143cc9e1133","refused":true,"no_artifact":true,"source_unchanged":true}
+{"type":"negative","mutation":"trigger","schema_sha256":"4dce5a6f3ed9dbd6b85c476e27cb2f191a7f42fc9cbd112d7ffa47a32b1e00de","refused":true,"no_artifact":true,"source_unchanged":true}
+{"type":"positive","creation":"development","preparation":"db:schema:load","schema_sha256":"b42e0bb59d064152d690856959275801ae4f1e034e291765d56bbc1874986470","verified":true,"source_unchanged":true}
+{"type":"negative","mutation":"check","schema_sha256":"25badc8bbfe73d945abd07347388292095bed4ec6671b755651f886ea9bda6ae","refused":true,"no_artifact":true,"source_unchanged":true}
+{"type":"negative","mutation":"unlisted_fingerprint","schema_sha256":"4417261c5654bfc2d286475b879d16730f97d2fd0eee61edfde78cca54311c2f","refused":true,"no_artifact":true,"source_unchanged":true}
+{"type":"negative","mutation":"column_type","schema_sha256":"49d7b3494d16129d836aaa4eb9935339752ae0d06c9b7626eff42827d9097552","refused":true,"no_artifact":true,"source_unchanged":true}
+{"type":"negative","mutation":"forged_tag","schema_sha256":"1006f40dd9c23f27ec757a1a262fe82f5447cbe56fbf25f3023f3345cc5f24ef","refused":true,"no_artifact":true,"source_unchanged":true}
+{"type":"negative","mutation":"unknown_schema","schema_sha256":"99ffccbb202cc7343e893da06458dfe38e2ae0a47eebc37a49daea42fe13b7b6","refused":true,"no_artifact":true,"source_unchanged":true}
+{"type":"positive","creation":"test","preparation":"db:migrate","schema_sha256":"621ee16d32be40ae482a50c92cc8a3fc55fc92d5aa27186e34506e1b77f529e8","verified":true,"source_unchanged":true}
+{"type":"negative","mutation":"foreign_key","schema_sha256":"8b455d2f4cb9c8d5bab85d878e05355dea45400e7d683e3fa9744b53a3beab08","refused":true,"no_artifact":true,"source_unchanged":true}
+{"type":"negative","mutation":"arbitrary_comment","schema_sha256":"cbdba8827ca7559b4b8e60f52432b2039d769ea416dd2c36855090066dd2ed6b","refused":true,"no_artifact":true,"source_unchanged":true}
+{"type":"negative","mutation":"partial_index","schema_sha256":"8d207bb99aef0e04d13735311daff560376fa3448bc70609994d9cfa3236312a","refused":true,"no_artifact":true,"source_unchanged":true}
+{"type":"negative","mutation":"renamed_table","schema_sha256":"c2e8b2ba6a288469cff7f4a6d387c396a772c609d2797b4c4449584032a5e90c","refused":true,"no_artifact":true,"source_unchanged":true}
+{"type":"positive","creation":"test","preparation":"db:schema:load","schema_sha256":"c8752c5aabda1b9064750d8982648e89eaacfb4d68d117f36c3ad1e77ca542f7","verified":true,"source_unchanged":true}
+{"type":"negative","mutation":"migrations","schema_sha256":"c8752c5aabda1b9064750d8982648e89eaacfb4d68d117f36c3ad1e77ca542f7","refused":true,"no_artifact":true,"source_unchanged":true}

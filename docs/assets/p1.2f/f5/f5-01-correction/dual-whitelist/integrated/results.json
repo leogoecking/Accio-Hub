@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Authenticated empty database and genuine empty module states",
+    "result": "PASS"
+  },
+  {
+    "name": "Appearance and Music persist before real module creation",
+    "result": "PASS"
+  },
+  {
+    "name": "Projects created, renamed, favorited and filtered without changing UID",
+    "result": "PASS"
+  },
+  {
+    "name": "Personal/contextual tasks, global edit and permitted project move",
+    "result": "PASS"
+  },
+  {
+    "name": "Link/material creation and reference edit preserve identity and safe rendering",
+    "result": "PASS"
+  },
+  {
+    "name": "Dashboard derives counts from the same SQLite entities; knowledge remains reserved",
+    "result": "PASS"
+  },
+  {
+    "name": "25/45 presets and one task-context session across Turbo pages",
+    "result": "PASS"
+  },
+  {
+    "name": "Two real tabs reject stale pause command without a blind toggle",
+    "result": "PASS"
+  },
+  {
+    "name": "20-minute absence recovers in two explicit gestures; integral estimate only requests completion",
+    "result": "PASS"
+  },
+  {
+    "name": "Task completion/reopen and archive/restore preserve every relationship",
+    "result": "PASS"
+  },
+  {
+    "name": "Both themes and five widths preserve shell/circle and semantic accessibility",
+    "result": "PASS"
+  },
+  {
+    "name": "Second running session remains one occupant with an explicit checkpoint",
+    "result": "PASS"
+  },
+  {
+    "name": "Rails restart/GET retains running history without writing or auto completion",
+    "result": "PASS"
+  },
+  {
+    "name": "Complete backup/verify and restore of the SAME browser-generated dataset",
+    "result": "PASS"
+  },
+  {
+    "name": "Old cookies fail on restored process; legitimate login recovers the same pending receipt",
+    "result": "PASS"
+  },
+  {
+    "name": "Restored GET and restart preserve account history checkpoint receipt and runtime isolation",
+    "result": "PASS"
+  }
+]

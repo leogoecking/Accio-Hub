@@ -1,0 +1,127 @@
+[
+  {
+    "name": "schema",
+    "exit_code": 0,
+    "seconds": 0.9,
+    "command": [
+      "bin/rails",
+      "db:schema:load"
+    ]
+  },
+  {
+    "name": "matrix",
+    "exit_code": 0,
+    "seconds": 16.14,
+    "command": [
+      "bundle",
+      "exec",
+      "ruby",
+      "script/backup-schema-contract-check.rb"
+    ]
+  },
+  {
+    "name": "f3b",
+    "exit_code": 0,
+    "seconds": 38.74,
+    "command": [
+      "bundle",
+      "exec",
+      "ruby",
+      "script/sqlite-backups-check.rb"
+    ]
+  },
+  {
+    "name": "f3c",
+    "exit_code": 0,
+    "seconds": 20.78,
+    "command": [
+      "bundle",
+      "exec",
+      "ruby",
+      "script/auth-sessions-check.rb"
+    ]
+  },
+  {
+    "name": "rails",
+    "exit_code": 0,
+    "seconds": 75.65,
+    "command": [
+      "bin/rails",
+      "test"
+    ]
+  },
+  {
+    "name": "f501",
+    "exit_code": 0,
+    "seconds": 15.8,
+    "command": [
+      "bin/rails",
+      "test",
+      "test/services/sqlite_backup_contract_test.rb"
+    ]
+  },
+  {
+    "name": "zeitwerk",
+    "exit_code": 0,
+    "seconds": 0.64,
+    "command": [
+      "bin/rails",
+      "zeitwerk:check"
+    ]
+  },
+  {
+    "name": "sql",
+    "exit_code": 0,
+    "seconds": 7.17,
+    "command": [
+      "bundle",
+      "exec",
+      "ruby",
+      "script/transversal-sql-check.rb"
+    ]
+  },
+  {
+    "name": "rubocop",
+    "exit_code": 0,
+    "seconds": 1.02,
+    "command": [
+      "bin/rubocop"
+    ]
+  },
+  {
+    "name": "brakeman",
+    "exit_code": 0,
+    "seconds": 5.12,
+    "command": [
+      "bin/brakeman",
+      "--no-pager"
+    ]
+  },
+  {
+    "name": "focus-client-check",
+    "exit_code": 0,
+    "seconds": 0.03,
+    "command": [
+      "node",
+      "script/focus-client-check.mjs"
+    ]
+  },
+  {
+    "name": "focus-recovery-check",
+    "exit_code": 0,
+    "seconds": 0.04,
+    "command": [
+      "node",
+      "script/focus-recovery-check.mjs"
+    ]
+  },
+  {
+    "name": "focus-preset-check",
+    "exit_code": 0,
+    "seconds": 0.04,
+    "command": [
+      "node",
+      "script/focus-preset-check.mjs"
+    ]
+  }
+]

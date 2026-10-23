@@ -1,0 +1,3 @@
+script/backup-schema-contract-check.rb:82:in `block in <main>': Unexpected legitimate fingerprint (RuntimeError)
+	from script/backup-schema-contract-check.rb:80:in `each'
+	from script/backup-schema-contract-check.rb:80:in `<main>'

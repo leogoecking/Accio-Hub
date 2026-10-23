@@ -1,0 +1,5 @@
+script/backup-schema-contract-check.rb:31:in `block (2 levels) in <main>': Synthetic preparation failed: /tmp/accio-f501-matrix-20261023-2209309-qed192/test-db-schema-load/generated-schema.rb doesn't exist yet. Run `bin/rails db:migrate` to create it, then try again. If you do not intend to use a database, you should instead alter /home/goecking/Projects/Accio-HUB/rails/config/application.rb to limit the frameworks that will be loaded. (RuntimeError)
+	from script/backup-schema-contract-check.rb:22:in `each'
+	from script/backup-schema-contract-check.rb:22:in `block in <main>'
+	from /home/goecking/.local/share/mise/installs/ruby/3.3.6/lib/ruby/3.3.0/tmpdir.rb:99:in `mktmpdir'
+	from script/backup-schema-contract-check.rb:21:in `<main>'

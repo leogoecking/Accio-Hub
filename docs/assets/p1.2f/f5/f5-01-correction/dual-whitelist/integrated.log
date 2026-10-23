@@ -1,0 +1,17 @@
+PASS Authenticated empty database and genuine empty module states
+PASS Appearance and Music persist before real module creation
+PASS Projects created, renamed, favorited and filtered without changing UID
+PASS Personal/contextual tasks, global edit and permitted project move
+PASS Link/material creation and reference edit preserve identity and safe rendering
+PASS Dashboard derives counts from the same SQLite entities; knowledge remains reserved
+PASS 25/45 presets and one task-context session across Turbo pages
+PASS Two real tabs reject stale pause command without a blind toggle
+PASS 20-minute absence recovers in two explicit gestures; integral estimate only requests completion
+PASS Task completion/reopen and archive/restore preserve every relationship
+PASS Both themes and five widths preserve shell/circle and semantic accessibility
+PASS Second running session remains one occupant with an explicit checkpoint
+PASS Rails restart/GET retains running history without writing or auto completion
+PASS Complete backup/verify and restore of the SAME browser-generated dataset
+PASS Old cookies fail on restored process; legitimate login recovers the same pending receipt
+PASS Restored GET and restart preserve account history checkpoint receipt and runtime isolation
+{"passed":16,"synthetic_only":true,"operational_release":false}

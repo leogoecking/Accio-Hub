@@ -1,8 +1,8 @@
 # Accio Hub — Roadmap de implementação (ROADMAP)
 
-> **Versão:** 0.4 (encerramento da P0.4 e backlog futuro)<br>
-> **Data-base:** 2026-10-11<br>
-> **Estado:** P0.3 aprovada visualmente; P0.4 e P1.1 homologadas; P1.0/P1.2A aprovadas; P1.2B homologada; P1.2C aprovada tecnicamente; planejamento P1.2D aprovado; D1 aprovada com ressalvas; D2 aprovada; D3 aprovada tecnicamente<br>
+> **Versão:** 0.5 (encerramento técnico sintético da P1.2)<br>
+> **Data-base:** 2026-10-23<br>
+> **Estado:** P0.4/P1.1 homologadas; P1.2 encerrada tecnicamente no commit desta entrega: A aprovado, B aprovado com ressalvas, C não autorizado. P1.3/P1.4 não iniciadas; v0.1 não liberada.<br>
 > **Documentos relacionados:** [DESIGN_BASELINE.md](DESIGN_BASELINE.md) · [PRODUCT.md](PRODUCT.md) · [ARCHITECTURE.md](ARCHITECTURE.md)
 
 ## 1. Objetivo do roadmap
@@ -109,8 +109,8 @@ continuam no backlog, sem autorização implícita.
 | Etapa | Entrega | Estado |
 |---|---|---|
 | P1.1 — Fundação Rails | Autenticação local e recuperação de senha por CLI, shell ERB/Turbo, temas, fundos, fontes, Dock, widgets e Music demonstrativo; personalização fundamental | Encerrada e homologada; tag anotada `p1.1-approved` |
-| P1.2 — SQLite | Modelos transacionais de projetos, tarefas, referências, preferências e foco global | A/B/C/D aprovadas e registradas; E1 em `0c74250`; E2 aprovada com ressalvas em `a0ab717`; E3 em `35a6671`; F1b em `7ebfaeb`; F1c aprovada com ressalvas em `b262ce6`; exclusivamente F2a entregue sem commit para revisão |
-| P1.3 — Vault Markdown | Arquivos reais, índice reconstruível, escrita segura, conflitos e recuperação | Não iniciada; exige autorização |
+| P1.2 — SQLite | Modelos transacionais, preferências, projetos, tarefas, referências, foco global e hardening | Encerramento técnico sintético formalizado pelo commit que contém [P1.2_FINAL_CLOSURE.md](P1.2_FINAL_CLOSURE.md); F5-01 resolvido; A aprovado, B aprovado com ressalvas, C não autorizado |
+| P1.3 — Vault Markdown | Arquivos reais, índice reconstruível, escrita segura, conflitos e recuperação | Não iniciada — planejamento depende de autorização específica |
 | P1.4 — Migração | Exportação/importação versionada, simulação, relatório e recuperação | Não iniciada; exige autorização |
 | P1.5 — Verificação final | Equivalência, segurança, visual e restauração | Não iniciada; exige autorização |
 
@@ -431,11 +431,12 @@ manual no Firefox informada pelo usuário. O relatório
 evidências, limites e pendências futuras. O commit final é identificado pela
 tag anotada `p0.4-approved`.
 
-P1.2C registrada em `a7f11ab`; [plano D aprovado](P1.2D_PLAN.md) em `7313e6e`; D1 em `af5e24b`, D2 em `cf95461` e D3 em `0e5323c`. Motor E1 homologado em `0c74250`; E2 aprovada com ressalvas e registrada em `a0ab717`. E3 integrada entregue para revisão, sem commit; F permanece não autorizada.
-Firefox C e contraste permanecem pendentes; retenção/descarte de snapshots legados fica preferencialmente na P1.2F.
+**P1.2: encerramento técnico e sintético aprovado com ressalvas**, após auditoria final independente do Antigravity de 23/10/2026 e aceite expresso do usuário. O registro torna-se efetivo no commit que contém [P1.2_FINAL_CLOSURE.md](P1.2_FINAL_CLOSURE.md), após os gates de encerramento. F5-01 resolvido, G1–G10 atendidos no escopo sintético; nenhum bloqueador técnico remanescente para B.
+
+**P1.3 — Não iniciada — planejamento depende de autorização específica.** P1.4 não iniciada. Não há autorização implícita de Vault, migração pessoal, release v0.1, tag, push ou merge. Antes de liberar dados pessoais importantes (C), são necessárias garantias operacionais adicionais: restauração sem origem, custódia/redundância de backups e chaves, procedimento por operador e validação humana complementar. Retenção definitiva dos snapshots continua pendente. As atualizações datadas abaixo preservam os estados históricos e não representam o estágio atual.
 A personalização avançada do Pomodoro permanece no backlog futuro de P10.
 
-As próximas entregas serão comparadas com a P0.3 no monitor de 27” e em tela móvel. Banco de dados, Vault real e integrações seguem nas fases definitivas, após autorização. O bootstrap de recuperação do Ubuntu foi **explicitamente adiado** e não faz parte do roadmap do Accio Hub.
+As próximas entregas continuarão comparadas com a baseline P0.3 e a P0.4 homologada. A persistência SQLite foi concluída tecnicamente na P1.2; Vault real, migração pessoal e integrações futuras dependem de autorização própria. O bootstrap de recuperação do Ubuntu foi **explicitamente adiado** e não faz parte do roadmap do Accio Hub.
 
 ### Situação D3 — 2026-10-13
 
@@ -495,3 +496,18 @@ F1c aprovada com ressalvas e encerrada em `b262ce6813d78a21d9454bb25e4e8a30b6f09
 ### Atualização de acompanhamento — P1.2F4, 2026-10-22
 
 F3c encerrada em `11d15fc` após auditoria independente aprovada com ressalvas. F4 implementa exclusivamente correções dirigidas de contraste, foco e feedback acessível; entrega sem commit/staging em [P1.2F4_VERIFICATION.md](P1.2F4_VERIFICATION.md), aguardando revisão e auditoria independente. Resultados inconclusivos, Firefox complementar, revisão humana e limitações da recuperação sintética permanecem explícitos. Nenhuma autorização de F5/P1.3, importação pessoal, distribuição, tag ou merge.
+
+### P1.2F5 — investigação em curso, 2026-10-23
+
+F4 encerrada em `7c1cea4`, evidências brutas preservadas integralmente fora do Git e seleção rastreável versionada. [Verificação F5](P1.2F5_VERIFICATION.md): fluxo integrado sintético interrompido no backup por F5-01 (schema development com tags de logging fora dos hashes aceitos). Sem correção funcional autorizada/aplicada. Homologação sintética e liberação pessoal não concluídas; solicitar corte corretivo específico antes de reexecutar o restante. Auditoria final/humana e garantias operacionais permanecem necessárias, sem avanço P1.3.
+
+### Retomada P1.2F5 após correção F5-01
+
+Após autorização específica, a whitelist recebeu somente os dois fingerprints development reproduzidos. Quatro variantes restauradas e17 checkpoints do fluxo integral aprovados, com220 testes Rails/3.595 asserções e negativos restritivos. [Relatório da correção](P1.2F5_01_CORRECTION_VERIFICATION.md). F5-01 tecnicamente resolvido; aguardam auditoria independente e revisão humana, sem encerramento P1.2 ou liberação de dados pessoais. Pendências operacionais/Firefox/acessibilidade/retenção mantidas. Tudo sem commit/staging; sem avanço P1.3 ou tag/push/merge.
+
+
+### Encerramento técnico sintético P1.2 — 2026-10-23
+
+Auditoria final [P1.2F5_AUDIT.md](P1.2F5_AUDIT.md): **APROVADO COM RESSALVAS, SEM BLOQUEADORES PARA O ENCERRAMENTO TÉCNICO SINTÉTICO**; usuário autorizou expressamente o encerramento. Gate final repetido no código auditado: Rails220/3.595, F5-01: 17/143, quatro backups/restores, fluxo integrado17/17, SQL25 gatilhos/36 índices, F3b/F3c, JS41 e ferramentas aprovados. Apenas dois hashes foram acrescentados ao contrato de produção; relatórios originais e errata preservados. O commit desta entrega formaliza F5/P1.2 após esses gates.
+
+**A: APROVADO. B: APROVADO COM RESSALVAS. C: NÃO AUTORIZADO.** Limitações e referências em [P1.2_FINAL_CLOSURE.md](P1.2_FINAL_CLOSURE.md). Este marco não equivale à liberação operacional do aplicativo e não antecipa v0.1. P1.3/P1.4 não iniciadas; nenhum trabalho posterior iniciado.

@@ -1,0 +1,12 @@
+{
+  "head": "7c1cea40cc180a3c03f5521d83219690294cdb1b",
+  "contract_unchanged": true,
+  "contract_sha256": "31fcfafc5fd0deaedeef454a4380c9365882a9bdedd186c2fa657b291df3f367",
+  "unexpected_development_migrate_fingerprint": "edc335eb6c71b2062b5a65c4563fcbe0fe341deaa5ca55ac7383f8dd92ec5751",
+  "new_fingerprint_added": false,
+  "post_fix_matrix_executed": false,
+  "negative_tests_executed": false,
+  "integrated_f5_resumed": false,
+  "pending_rails_test_draft": "private ignored scratch; not installed in test discovery",
+  "index_empty": true
+}

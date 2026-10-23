@@ -1,0 +1,186 @@
+{
+  "seed": {
+    "seeded": true,
+    "focus": "running",
+    "confirmed_checkpoint": 10,
+    "tables": {
+      "ar_internal_metadata": 2,
+      "auth_sessions": 2,
+      "dock_shortcuts": 8,
+      "focus_commands": 5,
+      "focus_sessions": 3,
+      "project_references": 2,
+      "projects": 3,
+      "schema_migrations": 5,
+      "sqlite_sequence": 10,
+      "tasks": 4,
+      "user_preferences": 1,
+      "users": 1,
+      "widget_placements": 7
+    }
+  },
+  "backup_cli": {
+    "verified": true,
+    "format_version": 1,
+    "tables": {
+      "ar_internal_metadata": 2,
+      "auth_sessions": 2,
+      "dock_shortcuts": 8,
+      "focus_commands": 5,
+      "focus_sessions": 3,
+      "project_references": 2,
+      "projects": 3,
+      "schema_migrations": 5,
+      "sqlite_sequence": 10,
+      "tasks": 4,
+      "user_preferences": 1,
+      "users": 1,
+      "widget_placements": 7
+    },
+    "triggers": 25,
+    "indexes": 36
+  },
+  "backup_seconds": 0.489,
+  "volumes": {
+    "source_sqlite_bytes": 237568,
+    "active_wal_bytes": 630392,
+    "backup_bytes": 276992
+  },
+  "unsafe_environment_refused_before_database_open": true,
+  "backup_verify_cli": {
+    "verified": true,
+    "format_version": 1,
+    "tables": {
+      "ar_internal_metadata": 2,
+      "auth_sessions": 2,
+      "dock_shortcuts": 8,
+      "focus_commands": 5,
+      "focus_sessions": 3,
+      "project_references": 2,
+      "projects": 3,
+      "schema_migrations": 5,
+      "sqlite_sequence": 10,
+      "tasks": 4,
+      "user_preferences": 1,
+      "users": 1,
+      "widget_placements": 7
+    },
+    "triggers": 25,
+    "indexes": 36
+  },
+  "live_wal_source_unchanged": true,
+  "http_prohibited_before_preparation": true,
+  "independent_active_record_oracle": {
+    "ten_models_all_attributes_compared": true,
+    "timestamps_with_microseconds": true,
+    "only_copied_auth_sessions_removed": true,
+    "original_password_digest_unchanged": true
+  },
+  "restore_logical_fidelity": {
+    "all_tables_columns_versions_uids_dates_preserved": true,
+    "only_auth_sessions_removed": true,
+    "source_unchanged": true,
+    "old_sessions_in_backup": 2,
+    "revoked_at_target": 2
+  },
+  "new_process_running_probe": {
+    "state": "running",
+    "checkpoint": 10,
+    "recovery_pending": false,
+    "focus_read_did_not_write": true,
+    "completed_history": 1,
+    "global_occupants": 1,
+    "wal_full_foreign_keys": true
+  },
+  "history_replay": {
+    "historical_replay_immutable": true,
+    "no_duplicate_receipt": true
+  },
+  "authentication": {
+    "old_cookie_rejected": true,
+    "post_capture_old_cookie_rejected_even_after_numeric_id_reuse": true,
+    "fresh_external_key": true,
+    "original_password_works": true,
+    "private_pages_reopened": true,
+    "repeated_get_no_writes": true
+  },
+  "http_restart": {
+    "new_session_still_valid": true,
+    "old_sessions_still_rejected": true
+  },
+  "source_after_http_unchanged": true,
+  "concurrency": [
+    {
+      "operation": "preferences",
+      "committed_at": "backup_verified",
+      "uncommitted_excluded": true,
+      "pinned_data_exact": true,
+      "writer_commit_preserved": true,
+      "wal_active": true
+    },
+    {
+      "operation": "project",
+      "committed_at": "backup_step",
+      "uncommitted_excluded": true,
+      "pinned_data_exact": true,
+      "writer_commit_preserved": true,
+      "wal_active": true
+    },
+    {
+      "operation": "task",
+      "committed_at": "backup_verified",
+      "uncommitted_excluded": true,
+      "pinned_data_exact": true,
+      "writer_commit_preserved": true,
+      "wal_active": true
+    },
+    {
+      "operation": "receipt",
+      "committed_at": "backup_step",
+      "uncommitted_excluded": true,
+      "pinned_data_exact": true,
+      "writer_commit_preserved": true,
+      "wal_active": true
+    }
+  ],
+  "additional_focus_states": [
+    {
+      "state": "paused",
+      "checkpoint": 10,
+      "recovery_pending": true,
+      "focus_read_did_not_write": true,
+      "completed_history": 1,
+      "global_occupants": 1,
+      "wal_full_foreign_keys": true,
+      "case": "recovery"
+    },
+    {
+      "state": "awaiting_confirmation",
+      "checkpoint": 2700,
+      "recovery_pending": false,
+      "focus_read_did_not_write": true,
+      "completed_history": 1,
+      "global_occupants": 1,
+      "wal_full_foreign_keys": true,
+      "case": "awaiting"
+    }
+  ],
+  "restore_cli": {
+    "prepared": true,
+    "revoked_sessions": 3,
+    "fidelity_verified_before_security": true
+  },
+  "sqlite": {
+    "triggers": 25,
+    "indexes": 36,
+    "logical_schema_exact": true,
+    "integrity": "ok",
+    "foreign_key_check": [],
+    "application_wal_full": true
+  },
+  "private_publication": {
+    "archive_mode": "600",
+    "directory_mode": "700",
+    "backups_or_secrets_in_evidence": false
+  }
+}

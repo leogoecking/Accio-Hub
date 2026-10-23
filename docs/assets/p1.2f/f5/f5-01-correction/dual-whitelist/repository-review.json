@@ -1,0 +1,11 @@
+{
+  "head": "7c1cea40cc180a3c03f5521d83219690294cdb1b",
+  "branch": "p1-persistence",
+  "production_change_only": "rails/config/sqlite_backup_contract.json",
+  "removing_only_two_entries_reconstructs_head_bytes": true,
+  "original_audit_sha256": "68349ae6a99d4e86b597aaa7a75a91c820c9c2190d3712dcdc0ab9c4c02ac38a",
+  "index_empty": true,
+  "personal_data_used": false,
+  "operational_release": false,
+  "functional_scope_expanded": false
+}

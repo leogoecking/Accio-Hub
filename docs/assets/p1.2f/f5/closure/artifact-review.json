@@ -1,0 +1,66 @@
+{
+  "forbidden_artifact_filenames": [],
+  "sensitive_literal_pattern_matches": [],
+  "whitespace_only_in_preserved_raw_evidence": [
+    {
+      "path": "docs/P1.2F5_01_AUDIT.md",
+      "sha256": "68349ae6a99d4e86b597aaa7a75a91c820c9c2190d3712dcdc0ab9c4c02ac38a",
+      "findings": [
+        "docs/P1.2F5_01_AUDIT.md:3: trailing whitespace.",
+        "docs/P1.2F5_01_AUDIT.md:4: trailing whitespace.",
+        "docs/P1.2F5_01_AUDIT.md:5: trailing whitespace.",
+        "docs/P1.2F5_01_AUDIT.md:6: trailing whitespace.",
+        "docs/P1.2F5_01_AUDIT.md:7: trailing whitespace.",
+        "docs/P1.2F5_01_AUDIT.md:250: trailing whitespace."
+      ]
+    },
+    {
+      "path": "docs/P1.2F5_AUDIT.md",
+      "sha256": "96e50a473b84a395438a6446b900209616ad7cf7f7cb9288228b10af82eb4b47",
+      "findings": [
+        "docs/P1.2F5_AUDIT.md:3: trailing whitespace.",
+        "docs/P1.2F5_AUDIT.md:4: trailing whitespace.",
+        "docs/P1.2F5_AUDIT.md:5: trailing whitespace.",
+        "docs/P1.2F5_AUDIT.md:6: trailing whitespace.",
+        "docs/P1.2F5_AUDIT.md:7: trailing whitespace.",
+        "docs/P1.2F5_AUDIT.md:331: trailing whitespace.",
+        "docs/P1.2F5_AUDIT.md:333: trailing whitespace.",
+        "docs/P1.2F5_AUDIT.md:335: trailing whitespace.",
+        "docs/P1.2F5_AUDIT.md:337: trailing whitespace.",
+        "docs/P1.2F5_AUDIT.md:339: trailing whitespace."
+      ]
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/brakeman.log",
+      "sha256": "ac41f71df9a7da61e122487bed33464e006c39aee1666e7d06c22f2ebb437606",
+      "findings": [
+        "docs/assets/p1.2f/f5/brakeman.log:42: new blank line at EOF."
+      ]
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/closure/brakeman/run.log",
+      "sha256": "11076f048460fea41714e16df2cc02e1dfc8733f0df164616caab7b52ebcf10c",
+      "findings": [
+        "docs/assets/p1.2f/f5/closure/brakeman/run.log:42: new blank line at EOF."
+      ]
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/brakeman-final.log",
+      "sha256": "d1bd72a8052d010c4108aab2dcf3232d8811f4f87a08b18a1fcfa932bfb3e849",
+      "findings": [
+        "docs/assets/p1.2f/f5/f5-01-correction/dual-whitelist/brakeman-final.log:42: new blank line at EOF."
+      ]
+    },
+    {
+      "path": "docs/assets/p1.2f/f5/integrated.log",
+      "sha256": "9fa5cab1971d5023242e5b1931911c80b668aa8e97b6ba74cc0b9972999e8fd3",
+      "findings": [
+        "docs/assets/p1.2f/f5/integrated.log:18: new blank line at EOF."
+      ]
+    }
+  ],
+  "strict_check_passes_for_all_other_files": true,
+  "no_history_removed": true,
+  "ignored_qa_not_staged": true,
+  "no_audited_source_changed": true
+}
