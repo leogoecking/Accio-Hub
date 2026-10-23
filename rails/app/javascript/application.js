@@ -4,6 +4,8 @@ import StudioController from "controllers/studio_controller"
 
 const application = Application.start()
 application.register("studio", StudioController)
+import LoginContrastController from 'controllers/login_contrast_controller'
+application.register('login-contrast', LoginContrastController)
 
 window.Stimulus = application
 import ProjectFormController from "controllers/project_form_controller"

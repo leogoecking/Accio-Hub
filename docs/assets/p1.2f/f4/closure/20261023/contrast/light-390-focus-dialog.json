@@ -1,0 +1,245 @@
+{
+  "accent": "#b1f07d",
+  "active": null,
+  "fontsLoaded": "loaded",
+  "geometry": [
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 1000,
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      "selector": "html > body > div.shell > aside.rail"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 57,
+        "width": 341,
+        "x": 49,
+        "y": 0
+      },
+      "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > header.headbar"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 49,
+        "width": 341,
+        "x": 49,
+        "y": 57
+      },
+      "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 418.84375,
+        "width": 311,
+        "x": 64,
+        "y": 197.046875
+      },
+      "selector": "#main-content > div.inner-page.focus-page > div.widget-grid:nth-of-type(2) > section.panel.panel-focus:nth-of-type(1)"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 170,
+        "width": 170,
+        "x": 134.5,
+        "y": 285.890625
+      },
+      "selector": "div.inner-page.focus-page > div.widget-grid:nth-of-type(2) > section.panel.panel-focus:nth-of-type(1) > div.focus-body:nth-of-type(2) > div.dial:nth-of-type(1)"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 375.21875,
+        "width": 311,
+        "x": 64,
+        "y": 626.890625
+      },
+      "selector": "#main-content > div.inner-page.focus-page > div.widget-grid:nth-of-type(2) > section.panel.span-8:nth-of-type(2)"
+    }
+  ],
+  "modal": null,
+  "nodes": [
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 109.5,
+          "x": 39,
+          "y": 392.984375
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "div.focus-shell > dialog.dialog.global-dialog:nth-of-type(4) > div.project-form-head:nth-of-type(1) > div > div.eyebrow",
+      "text": "POMODORO GLOBAL",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 21,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 27,
+          "width": 162.21875,
+          "x": 39,
+          "y": 423.40625
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#focus-dialog-title",
+      "text": "Usar 25 minutos?",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 14,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 18,
+          "width": 292.046875,
+          "x": 39,
+          "y": 483.828125
+        },
+        {
+          "height": 18,
+          "width": 229.234375,
+          "x": 39,
+          "y": 506.21875
+        },
+        {
+          "height": 18,
+          "width": 81.3125,
+          "x": 39,
+          "y": 528.609375
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#focus-dialog-description",
+      "text": "Este preset será usado nos próximos inícios. A aparência e os demais ajustes serão preservados.",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 34.625,
+          "x": 96.6875,
+          "y": 577
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.shell > div.focus-shell > dialog.dialog.global-dialog:nth-of-type(4) > div.project-form-actions:nth-of-type(2) > button.button.tertiary:nth-of-type(1)",
+      "text": "Voltar",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 59.046875,
+          "x": 246.46875,
+          "y": 577
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        16,
+        32,
+        28,
+        255
+      ],
+      "selector": "div.shell > div.focus-shell > dialog.dialog.global-dialog:nth-of-type(4) > div.project-form-actions:nth-of-type(2) > button.button.primary:nth-of-type(2)",
+      "text": "Confirmar",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 10.5,
+          "width": 10.5,
+          "x": 329.75,
+          "y": 400.734375
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "dialog.dialog.global-dialog:nth-of-type(4) > div.project-form-head:nth-of-type(1) > button.mini-control > svg > path",
+      "text": "Fechar diálogo do Pomodoro",
+      "unknown": []
+    }
+  ],
+  "overflow": false,
+  "theme": "light",
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 390
+  },
+  "wallpaper": "ocean"
+}

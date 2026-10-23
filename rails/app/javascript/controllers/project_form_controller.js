@@ -35,6 +35,7 @@ export default class extends Controller {
   async submit(event) {
     event.preventDefault()
     if (this.pending || !this.form.reportValidity()) return
+    const focused = document.activeElement
     this.pending = true; this.form.querySelector('[type=submit]').disabled = true
     try {
       const result = await request(this.form.action, new FormData(this.form))
@@ -59,7 +60,13 @@ export default class extends Controller {
     } finally {
       this.pending = false
       if (this.element.isConnected) this.form.querySelector('[type=submit]').disabled = false
+      this.restoreFormFocus(focused)
     }
+  }
+  restoreFormFocus(focused) {
+    if (!this.element.isConnected || !this.element.open || document.activeElement !== document.body) return
+    const target = focused?.isConnected && !focused.disabled ? focused : this.form.querySelector('button:not(:disabled)')
+    target?.focus({ preventScroll: true })
   }
   reapply() {
     this.form.querySelector('[name=version]').value = this.remote.lock_version

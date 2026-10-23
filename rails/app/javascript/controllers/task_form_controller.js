@@ -9,6 +9,7 @@ export default class extends ProjectFormController {
   async submit(event) {
     event.preventDefault()
     if (this.pending || this.blocked || !this.form.reportValidity()) return
+    const focused = document.activeElement
     this.pending = true; this.form.querySelector('[type=submit]').disabled = true
     try {
       const result = await request(this.form.action, new FormData(this.form))
@@ -26,6 +27,7 @@ export default class extends ProjectFormController {
     } finally {
       this.pending = false
       if (this.element.isConnected) this.form.querySelector('[type=submit]').disabled = !!this.blocked
+      this.restoreFormFocus(focused)
     }
   }
   reapply() { this.form.elements.version.value = this.remote.lock_version; this.form.requestSubmit() }

@@ -1,0 +1,22 @@
+{
+  "format_version": 1,
+  "set_id": "p12f4-20261023-b94d9cd9",
+  "archive_filename": "accio-hub-p12f4-20261023-b94d9cd9-complete.tar.gz",
+  "sha256": "d77cc239d1cb32df76aecc4aff79a3b24653ccb540439d7824bd69680507ee0a",
+  "archive_size_bytes": 467770348,
+  "source_files": 5725,
+  "archive_members": 5726,
+  "source_bytes": 537385170,
+  "generated_at": "2026-10-23T10:32:26.344277+00:00",
+  "scope": "Complete pre-curation F4 raw evidence including 2026-10-23 closure gates, original verification/audit and 22 audited source files. Closure note and this manifest are post-publication metadata. No personal database/export/runtime credentials.",
+  "private_location_logical": "$XDG_DATA_HOME/accio-hub-evidence/p12f4-20261023-b94d9cd9 (default base: ~/.local/share/accio-hub-evidence)",
+  "ubuntu_directory_mode": "0700",
+  "ubuntu_archive_mode": "0600",
+  "integrity_verified": "Every member reopened and compared by SHA-256 and size; gzip stream read fully; original files unchanged at capture",
+  "verification_command": "sha256sum \"$F4_ARCHIVE\"; gzip -t \"$F4_ARCHIVE\"; python3 rails/script/verify-f4-archive.py \"$F4_ARCHIVE\" docs/assets/p1.2f/f4/archive-manifest.json",
+  "selection_file": "selected-evidence.json",
+  "index_file": "archive-file-index.json",
+  "unselected_evidence": "Retained in complete archive and private raw/f4 directory; not discarded",
+  "selected_files": 654,
+  "selected_bytes": 29743274
+}

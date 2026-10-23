@@ -1,0 +1,419 @@
+{
+  "accent": "#b1f07d",
+  "active": "task-title",
+  "fontsLoaded": "loaded",
+  "geometry": [
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 1000,
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      "selector": "html > body > div.shell > aside.rail"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 57,
+        "width": 341,
+        "x": 49,
+        "y": 0
+      },
+      "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > header.headbar"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 49,
+        "width": 341,
+        "x": 49,
+        "y": 57
+      },
+      "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone"
+    }
+  ],
+  "modal": null,
+  "nodes": [
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 19,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 25,
+          "width": 98.328125,
+          "x": 43,
+          "y": 304.953125
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#task-dialog-title",
+      "text": "Nova tarefa",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 31.703125,
+          "x": 43,
+          "y": 348.453125
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#task-form > label:nth-of-type(1)",
+      "text": "Título",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 58.203125,
+          "x": 43,
+          "y": 429.453125
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#task-form > label:nth-of-type(2)",
+      "text": "Prioridade",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 40.296875,
+          "x": 43,
+          "y": 512.453125
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#task-form > label:nth-of-type(3)",
+      "text": "Projeto",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 243.71875,
+          "x": 43,
+          "y": 607.453125
+        },
+        {
+          "height": 14,
+          "width": 109.84375,
+          "x": 43,
+          "y": 624.5
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#task-form-hint",
+      "text": "Salva no SQLite. O ID e a data de conclusão serão preservados ao editar.",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 51.890625,
+          "x": 90.046875,
+          "y": 665.546875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#task-form > div.project-form-actions:nth-of-type(3) > button.button.tertiary:nth-of-type(1)",
+      "text": "Cancelar",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 74.1875,
+          "x": 248.90625,
+          "y": 665.546875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        16,
+        32,
+        28,
+        255
+      ],
+      "selector": "#task-form > div.project-form-actions:nth-of-type(3) > button.button:nth-of-type(2)",
+      "text": "Salvar tarefa",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "placeholder",
+      "opacity": 1,
+      "placeholderOpacity": 1,
+      "rects": [
+        {
+          "height": 34,
+          "width": 296,
+          "x": 47,
+          "y": 375.453125
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "#task-title",
+      "text": "O que precisa fazer?",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "value",
+      "opacity": 1,
+      "placeholderOpacity": 1,
+      "rects": [
+        {
+          "height": 36,
+          "width": 296,
+          "x": 47,
+          "y": 456.453125
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        22,
+        42,
+        60,
+        255
+      ],
+      "selector": "#task-priority",
+      "text": "Normal",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#task-title",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 42,
+          "width": 304,
+          "x": 43,
+          "y": 371.453125
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "selector": "#task-title",
+      "text": "Título",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#task-priority",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 44,
+          "width": 304,
+          "x": 43,
+          "y": 452.453125
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "selector": "#task-priority",
+      "text": "PrioridadeNormal\nAlta",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#task-project",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 44,
+          "width": 304,
+          "x": 43,
+          "y": 535.453125
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "selector": "#task-project",
+      "text": "ProjetoPessoal\nOutro projeto QA\nProjeto foco QA",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 11.66668701171875,
+          "width": 11.66668701171875,
+          "x": 324.1666564941406,
+          "y": 311.6197814941406
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#task-form > div.block-top:nth-of-type(1) > button.mini-control > svg > path",
+      "text": "Fechar formulário de tarefa",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "focus",
+      "offset": 3,
+      "opacity": 1,
+      "outline": "solid",
+      "rects": [
+        {
+          "height": 42,
+          "width": 304,
+          "x": 43,
+          "y": 371.453125
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#task-title",
+      "unknown": [],
+      "width": 2
+    }
+  ],
+  "overflow": false,
+  "theme": "light",
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 390
+  },
+  "wallpaper": "ocean"
+}

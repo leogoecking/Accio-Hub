@@ -39,3 +39,21 @@ a.task-play, a.add-row { text-decoration: none; color: inherit; }
 
 .focus-dialog .button:not(.tertiary),:root:not([data-theme=light]) .focus-body .round-btn.primary-action{color:var(--focus-action-ink,#10201c)}
 .focus-body :focus-visible,.focus-dialog :focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+
+/* F4: foregrounds and essential control edges; approved geometry/surfaces stay intact. */
+:root{--dim:#8999ad;--accent-label:color-mix(in srgb,var(--accent) 40%,var(--ink));--control-line:color-mix(in srgb,var(--muted) 85%,var(--panel2))}
+[data-theme=light]{--dim:#596a7c;--accent-label:color-mix(in srgb,var(--accent) 25%,var(--ink))}
+.eyebrow,.overline,.section-label-alone,.text-action,.rail-icon.active,.secondary-link:hover,.quiet-link:hover,.button.selected{color:var(--accent-label)}
+.rail-icon.active:before{background:var(--accent-label)}
+.rail-avatar{color:#0a0e14}
+.command-button kbd{color:var(--ink)}
+input::placeholder,textarea::placeholder{color:var(--muted);opacity:1}
+.button:not(.tertiary):not(.selected){color:var(--accent-action-ink,#101913)}
+.button:not(.tertiary):not(.selected):hover{filter:none}
+[data-theme=light] .featured-story .overline{color:color-mix(in srgb,#f7b18e 25%,var(--ink))}
+[data-theme=light] .calendar-track>span{color:color-mix(in srgb,#9fd4ff 25%,var(--ink))}
+[data-theme=light] .note-open{color:color-mix(in srgb,#e7bdd4 25%,var(--ink))}
+[data-theme=light] .badge.warn{color:color-mix(in srgb,#f6bc81 25%,var(--ink))}
+:is(.dialog,.setting-row,.project-order,.project-search,.login-card) :is(input:not([type=checkbox]):not([type=hidden]):not([type=submit]),select,textarea),.project-search{border-color:var(--control-line)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline-color:var(--ink)}
+.rail-icons .rail-icon:focus-visible{outline-offset:-3px}

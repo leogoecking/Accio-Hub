@@ -1,0 +1,377 @@
+{
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 320
+  },
+  "theme": "dark",
+  "wallpaper": "ember",
+  "accent": "#b1f07d",
+  "measurements": [
+    {
+      "kind": "text",
+      "selector": "#reference-dialog-title",
+      "text": "Nova referência",
+      "required": 3,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 17.731,
+      "samples": 1108,
+      "background_at_worst": [
+        10,
+        14,
+        20
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#reference-form > label:nth-of-type(1)",
+      "text": "Título",
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 17.731,
+      "samples": 162,
+      "background_at_worst": [
+        10,
+        14,
+        20
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#reference-form > label:nth-of-type(2)",
+      "text": "Tipo",
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 17.731,
+      "samples": 135,
+      "background_at_worst": [
+        10,
+        14,
+        20
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#reference-form > label:nth-of-type(3)",
+      "text": "URL",
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 17.731,
+      "samples": 120,
+      "background_at_worst": [
+        10,
+        14,
+        20
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#reference-form > label:nth-of-type(3) > span.project-optional",
+      "text": "obrigatória para links",
+      "required": 4.5,
+      "rgba": [
+        157,
+        169,
+        185,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 8.113,
+      "samples": 511,
+      "background_at_worst": [
+        10,
+        14,
+        20
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#reference-form > label:nth-of-type(4)",
+      "text": "Descrição do material ou link",
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 17.731,
+      "samples": 806,
+      "background_at_worst": [
+        10,
+        14,
+        20
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#reference-form > p.project-form-error:nth-of-type(1)",
+      "text": "Url use HTTP/HTTPS com host válido, sem credenciais ou caracteres inválidos",
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 16.333,
+      "samples": 1590,
+      "background_at_worst": [
+        17,
+        24,
+        35
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#reference-form-hint",
+      "text": "Salva no SQLite neste projeto. Materiais podem ser descritos sem URL; nenhum arquivo será anexado.",
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 17.731,
+      "samples": 2153,
+      "background_at_worst": [
+        10,
+        14,
+        20
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#reference-form > div.project-form-actions:nth-of-type(3) > button.button.tertiary:nth-of-type(1)",
+      "text": "Cancelar",
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 15.858,
+      "samples": 236,
+      "background_at_worst": [
+        23,
+        27,
+        32
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#reference-form > div.project-form-actions:nth-of-type(3) > button.button:nth-of-type(2)",
+      "text": "Salvar referência",
+      "required": 4.5,
+      "rgba": [
+        16,
+        32,
+        28,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 12.55,
+      "samples": 516,
+      "background_at_worst": [
+        177,
+        240,
+        125
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "value",
+      "selector": "#reference-title",
+      "text": "Referência inválida QA",
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 16.333,
+      "samples": 665,
+      "background_at_worst": [
+        17,
+        24,
+        35
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "value",
+      "selector": "#reference-kind",
+      "text": "Link",
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 16.333,
+      "samples": 119,
+      "background_at_worst": [
+        17,
+        24,
+        35
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "value",
+      "selector": "#reference-url",
+      "text": "https://user:pass@example.test",
+      "required": 4.5,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 16.333,
+      "samples": 979,
+      "background_at_worst": [
+        17,
+        24,
+        35
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#reference-title",
+      "text": "Título",
+      "required": 3,
+      "rgba": [
+        140,
+        151,
+        167,
+        248
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#reference-kind",
+      "text": "TipoLink\nMaterial",
+      "required": 3,
+      "rgba": [
+        140,
+        151,
+        167,
+        248
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#reference-url",
+      "text": "URL obrigatória para links",
+      "required": 3,
+      "rgba": [
+        140,
+        151,
+        167,
+        248
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#reference-description",
+      "text": "Descrição do material ou link",
+      "required": 3,
+      "rgba": [
+        140,
+        151,
+        167,
+        248
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "icon",
+      "selector": "#reference-form > div.block-top:nth-of-type(1) > button.mini-control > svg > path",
+      "text": "Fechar formulário de referência",
+      "required": 3,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.508,
+      "samples": 54,
+      "background_at_worst": [
+        26,
+        35,
+        48
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "focus",
+      "selector": "#reference-form > div.project-form-actions:nth-of-type(3) > button.button:nth-of-type(2)",
+      "text": null,
+      "required": 3,
+      "rgba": [
+        243,
+        245,
+        250,
+        255
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    }
+  ]
+}

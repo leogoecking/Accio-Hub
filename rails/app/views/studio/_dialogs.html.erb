@@ -3,7 +3,7 @@
 </dialog>
 <dialog id="search" class="foundation-overlay" aria-labelledby="search-title" data-action="cancel->studio#cancel close->studio#afterClose">
   <div class="scrim" data-backdrop><search class="search-modal" aria-label="Busca global de aplicativos"><h2 id="search-title" class="sr-only">Buscar aplicativos</h2><div class="search-field"><%= studio_icon("search", 21) %><input id="command-search" aria-label="Buscar aplicativos" autocomplete="off" placeholder="Buscar aplicativos..." data-controller="task-search" data-action="input->studio#search input->task-search#search keydown->studio#searchKeys"><span>ESC</span></div><nav class="search-results" aria-label="Resultados da busca">
-    <% Studio::NAV.each do |id, label, icon| %><%= link_to studio_path(id), data: {search_result: label}, class: "search-result" do %><%= studio_icon(icon, 18) %><span><%= label %><small>Aplicativo · <%= id == 'home' ? 'Seu espaço' : %w[projects tasks].include?(id) ? 'SQLite' : 'Demonstração P1.1' %></small></span><%= studio_icon('chevron', 14) %><% end %><% end %><p hidden data-search-empty>Nenhum resultado encontrado.</p>
+    <% Studio::NAV.each do |id, label, icon| %><%= link_to studio_path(id), data: {search_result: label}, class: "search-result" do %><%= studio_icon(icon, 18) %><span><%= label %><small>Aplicativo · <%= id == 'home' ? 'Seu espaço' : %w[projects tasks].include?(id) ? 'SQLite' : 'Demonstração P1.1' %></small></span><%= studio_icon('chevron', 14) %><% end %><% end %><p role="status" hidden data-search-empty>Nenhum resultado encontrado.</p>
     <div data-task-search-results></div>
   </nav></search></div>
 </dialog>

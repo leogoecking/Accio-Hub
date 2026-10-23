@@ -1,0 +1,237 @@
+{
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 320
+  },
+  "theme": "light",
+  "wallpaper": "ember",
+  "accent": "#000000",
+  "measurements": [
+    {
+      "kind": "text",
+      "selector": "html > body > main.shell.login-shell > section.dialog.login-card > div.eyebrow",
+      "text": "ACCIO HUB / ACESSO LOCAL",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.678,
+      "samples": 881,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#login-title",
+      "text": "Seu espaço",
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 2627,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "#login-title > span.title-stop",
+      "text": ".",
+      "required": 3,
+      "rgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 19.874,
+      "samples": 63,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "html > body > main.shell.login-shell > section.dialog.login-card > p.muted:nth-of-type(1)",
+      "text": "Entre com a conta de administrador deste computador.",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 1504,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "body > main.shell.login-shell > section.dialog.login-card > form > label:nth-of-type(1)",
+      "text": "E-mail",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 204,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "body > main.shell.login-shell > section.dialog.login-card > form > label:nth-of-type(2)",
+      "text": "Senha",
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 14.809,
+      "samples": 188,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "text",
+      "selector": "html > body > main.shell.login-shell > section.dialog.login-card > p.setting-note:nth-of-type(2)",
+      "text": "P1.1 · Fundação Rails. Acesso restrito ao administrador local.",
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 5.678,
+      "samples": 1243,
+      "background_at_worst": [
+        246,
+        249,
+        252
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "value",
+      "selector": "body > main.shell.login-shell > section.dialog.login-card > form > input.button:nth-of-type(4)",
+      "text": "Entrar",
+      "required": 4.5,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "status": "measured_pass",
+      "minimum": 21.0,
+      "samples": 184,
+      "background_at_worst": [
+        0,
+        0,
+        0
+      ],
+      "method": "computed foreground + rendered background at changed glyph/stroke positions"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#email_address",
+      "text": "E-mail",
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "#password",
+      "text": "Senha",
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "boundary",
+      "selector": "body > main.shell.login-shell > section.dialog.login-card > form > input.button:nth-of-type(4)",
+      "text": null,
+      "required": 3,
+      "rgba": [
+        181,
+        197,
+        210,
+        255
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    },
+    {
+      "kind": "focus",
+      "selector": "#email_address",
+      "text": null,
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "status": "manual_review",
+      "reason": "boundary/focus directed measurement required"
+    }
+  ]
+}

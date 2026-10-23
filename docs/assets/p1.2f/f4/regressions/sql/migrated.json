@@ -1,0 +1,611 @@
+{
+  "objects": [
+    {
+      "type": "index",
+      "name": "index_auth_sessions_on_user_id",
+      "tbl_name": "auth_sessions",
+      "sql": "CREATE INDEX \"index_auth_sessions_on_user_id\" ON \"auth_sessions\" (\"user_id\")"
+    },
+    {
+      "type": "index",
+      "name": "index_dock_shortcuts_on_user_id",
+      "tbl_name": "dock_shortcuts",
+      "sql": "CREATE INDEX \"index_dock_shortcuts_on_user_id\" ON \"dock_shortcuts\" (\"user_id\")"
+    },
+    {
+      "type": "index",
+      "name": "index_dock_shortcuts_on_user_id_and_module_key",
+      "tbl_name": "dock_shortcuts",
+      "sql": "CREATE UNIQUE INDEX \"index_dock_shortcuts_on_user_id_and_module_key\" ON \"dock_shortcuts\" (\"user_id\", \"module_key\")"
+    },
+    {
+      "type": "index",
+      "name": "index_dock_shortcuts_on_user_id_and_position",
+      "tbl_name": "dock_shortcuts",
+      "sql": "CREATE UNIQUE INDEX \"index_dock_shortcuts_on_user_id_and_position\" ON \"dock_shortcuts\" (\"user_id\", \"position\")"
+    },
+    {
+      "type": "index",
+      "name": "index_focus_commands_on_user_id",
+      "tbl_name": "focus_commands",
+      "sql": "CREATE INDEX \"index_focus_commands_on_user_id\" ON \"focus_commands\" (\"user_id\")"
+    },
+    {
+      "type": "index",
+      "name": "index_focus_commands_on_user_id_and_command_id",
+      "tbl_name": "focus_commands",
+      "sql": "CREATE UNIQUE INDEX \"index_focus_commands_on_user_id_and_command_id\" ON \"focus_commands\" (\"user_id\", \"command_id\")"
+    },
+    {
+      "type": "index",
+      "name": "index_focus_commands_on_user_id_and_focus_session_id",
+      "tbl_name": "focus_commands",
+      "sql": "CREATE INDEX \"index_focus_commands_on_user_id_and_focus_session_id\" ON \"focus_commands\" (\"user_id\", \"focus_session_id\")"
+    },
+    {
+      "type": "index",
+      "name": "index_focus_sessions_on_user_id",
+      "tbl_name": "focus_sessions",
+      "sql": "CREATE INDEX \"index_focus_sessions_on_user_id\" ON \"focus_sessions\" (\"user_id\")"
+    },
+    {
+      "type": "index",
+      "name": "index_focus_sessions_on_user_id_and_id",
+      "tbl_name": "focus_sessions",
+      "sql": "CREATE UNIQUE INDEX \"index_focus_sessions_on_user_id_and_id\" ON \"focus_sessions\" (\"user_id\", \"id\")"
+    },
+    {
+      "type": "index",
+      "name": "index_focus_sessions_on_user_id_and_status_and_completed_at",
+      "tbl_name": "focus_sessions",
+      "sql": "CREATE INDEX \"index_focus_sessions_on_user_id_and_status_and_completed_at\" ON \"focus_sessions\" (\"user_id\", \"status\", \"completed_at\")"
+    },
+    {
+      "type": "index",
+      "name": "index_focus_sessions_on_user_id_and_uid",
+      "tbl_name": "focus_sessions",
+      "sql": "CREATE UNIQUE INDEX \"index_focus_sessions_on_user_id_and_uid\" ON \"focus_sessions\" (\"user_id\", \"uid\")"
+    },
+    {
+      "type": "index",
+      "name": "index_project_references_on_user_id",
+      "tbl_name": "project_references",
+      "sql": "CREATE INDEX \"index_project_references_on_user_id\" ON \"project_references\" (\"user_id\")"
+    },
+    {
+      "type": "index",
+      "name": "index_project_references_on_user_id_and_id",
+      "tbl_name": "project_references",
+      "sql": "CREATE UNIQUE INDEX \"index_project_references_on_user_id_and_id\" ON \"project_references\" (\"user_id\", \"id\")"
+    },
+    {
+      "type": "index",
+      "name": "index_project_references_on_user_id_and_uid",
+      "tbl_name": "project_references",
+      "sql": "CREATE UNIQUE INDEX \"index_project_references_on_user_id_and_uid\" ON \"project_references\" (\"user_id\", \"uid\")"
+    },
+    {
+      "type": "index",
+      "name": "index_projects_on_user_id",
+      "tbl_name": "projects",
+      "sql": "CREATE INDEX \"index_projects_on_user_id\" ON \"projects\" (\"user_id\")"
+    },
+    {
+      "type": "index",
+      "name": "index_projects_on_user_id_and_id",
+      "tbl_name": "projects",
+      "sql": "CREATE UNIQUE INDEX \"index_projects_on_user_id_and_id\" ON \"projects\" (\"user_id\", \"id\")"
+    },
+    {
+      "type": "index",
+      "name": "index_projects_on_user_id_and_last_activity_at",
+      "tbl_name": "projects",
+      "sql": "CREATE INDEX \"index_projects_on_user_id_and_last_activity_at\" ON \"projects\" (\"user_id\", \"last_activity_at\")"
+    },
+    {
+      "type": "index",
+      "name": "index_projects_on_user_id_and_name_key",
+      "tbl_name": "projects",
+      "sql": "CREATE UNIQUE INDEX \"index_projects_on_user_id_and_name_key\" ON \"projects\" (\"user_id\", \"name_key\")"
+    },
+    {
+      "type": "index",
+      "name": "index_projects_on_user_id_and_status",
+      "tbl_name": "projects",
+      "sql": "CREATE INDEX \"index_projects_on_user_id_and_status\" ON \"projects\" (\"user_id\", \"status\")"
+    },
+    {
+      "type": "index",
+      "name": "index_projects_on_user_id_and_uid",
+      "tbl_name": "projects",
+      "sql": "CREATE UNIQUE INDEX \"index_projects_on_user_id_and_uid\" ON \"projects\" (\"user_id\", \"uid\")"
+    },
+    {
+      "type": "index",
+      "name": "index_tasks_on_user_id",
+      "tbl_name": "tasks",
+      "sql": "CREATE INDEX \"index_tasks_on_user_id\" ON \"tasks\" (\"user_id\")"
+    },
+    {
+      "type": "index",
+      "name": "index_tasks_on_user_id_and_id",
+      "tbl_name": "tasks",
+      "sql": "CREATE UNIQUE INDEX \"index_tasks_on_user_id_and_id\" ON \"tasks\" (\"user_id\", \"id\")"
+    },
+    {
+      "type": "index",
+      "name": "index_tasks_on_user_id_and_project_id_and_status_and_position",
+      "tbl_name": "tasks",
+      "sql": "CREATE INDEX \"index_tasks_on_user_id_and_project_id_and_status_and_position\" ON \"tasks\" (\"user_id\", \"project_id\", \"status\", \"position\")"
+    },
+    {
+      "type": "index",
+      "name": "index_tasks_on_user_id_and_status_and_position",
+      "tbl_name": "tasks",
+      "sql": "CREATE INDEX \"index_tasks_on_user_id_and_status_and_position\" ON \"tasks\" (\"user_id\", \"status\", \"position\")"
+    },
+    {
+      "type": "index",
+      "name": "index_tasks_on_user_id_and_uid",
+      "tbl_name": "tasks",
+      "sql": "CREATE UNIQUE INDEX \"index_tasks_on_user_id_and_uid\" ON \"tasks\" (\"user_id\", \"uid\")"
+    },
+    {
+      "type": "index",
+      "name": "index_user_preferences_on_user_id",
+      "tbl_name": "user_preferences",
+      "sql": "CREATE UNIQUE INDEX \"index_user_preferences_on_user_id\" ON \"user_preferences\" (\"user_id\")"
+    },
+    {
+      "type": "index",
+      "name": "index_users_on_email_address",
+      "tbl_name": "users",
+      "sql": "CREATE UNIQUE INDEX \"index_users_on_email_address\" ON \"users\" (\"email_address\")"
+    },
+    {
+      "type": "index",
+      "name": "index_widget_placements_on_user_id",
+      "tbl_name": "widget_placements",
+      "sql": "CREATE INDEX \"index_widget_placements_on_user_id\" ON \"widget_placements\" (\"user_id\")"
+    },
+    {
+      "type": "index",
+      "name": "one_global_focus",
+      "tbl_name": "focus_sessions",
+      "sql": "CREATE UNIQUE INDEX \"one_global_focus\" ON \"focus_sessions\" (\"user_id\") WHERE status IN ('ready','running','paused','awaiting_confirmation')"
+    },
+    {
+      "type": "index",
+      "name": "reference_project_order",
+      "tbl_name": "project_references",
+      "sql": "CREATE INDEX \"reference_project_order\" ON \"project_references\" (\"user_id\", \"project_id\", \"position\")"
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_ar_internal_metadata_1",
+      "tbl_name": "ar_internal_metadata",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_schema_migrations_1",
+      "tbl_name": "schema_migrations",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "widget_home_key",
+      "tbl_name": "widget_placements",
+      "sql": "CREATE UNIQUE INDEX \"widget_home_key\" ON \"widget_placements\" (\"user_id\", \"widget_key\") WHERE context = 'home'"
+    },
+    {
+      "type": "index",
+      "name": "widget_home_position",
+      "tbl_name": "widget_placements",
+      "sql": "CREATE UNIQUE INDEX \"widget_home_position\" ON \"widget_placements\" (\"user_id\", \"position\") WHERE context = 'home'"
+    },
+    {
+      "type": "index",
+      "name": "widget_project_key",
+      "tbl_name": "widget_placements",
+      "sql": "CREATE UNIQUE INDEX \"widget_project_key\" ON \"widget_placements\" (\"user_id\", \"project_id\", \"widget_key\") WHERE context = 'project'"
+    },
+    {
+      "type": "index",
+      "name": "widget_project_position",
+      "tbl_name": "widget_placements",
+      "sql": "CREATE UNIQUE INDEX \"widget_project_position\" ON \"widget_placements\" (\"user_id\", \"project_id\", \"position\") WHERE context = 'project'"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_command_immutable_delete",
+      "tbl_name": "focus_commands",
+      "sql": "CREATE TRIGGER accio_command_immutable_delete BEFORE DELETE ON focus_commands\nWHEN 1\nBEGIN SELECT RAISE(ABORT, 'Recibo de comando é imutável'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_command_immutable_update",
+      "tbl_name": "focus_commands",
+      "sql": "CREATE TRIGGER accio_command_immutable_update BEFORE UPDATE ON focus_commands\nWHEN 1\nBEGIN SELECT RAISE(ABORT, 'Recibo de comando é imutável'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_dock_shortcuts_identity",
+      "tbl_name": "dock_shortcuts",
+      "sql": "CREATE TRIGGER accio_dock_shortcuts_identity BEFORE UPDATE ON dock_shortcuts\nWHEN NEW.user_id IS NOT OLD.user_id OR NEW.module_key IS NOT OLD.module_key\nBEGIN SELECT RAISE(ABORT, 'Identidade e proprietário são imutáveis'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_focus_archived_context",
+      "tbl_name": "focus_sessions",
+      "sql": "CREATE TRIGGER accio_focus_archived_context BEFORE INSERT ON focus_sessions\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = NEW.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Restaure o projeto antes de iniciar novo foco'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_focus_archived_write",
+      "tbl_name": "focus_sessions",
+      "sql": "CREATE TRIGGER accio_focus_archived_write BEFORE UPDATE ON focus_sessions\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = OLD.project_id AND status = 'archived') AND NOT ((NEW.status IN ('paused','awaiting_confirmation','completed','cancelled') OR (NEW.status = 'running' AND OLD.status = 'running')) AND NEW.duration_seconds IS OLD.duration_seconds AND NEW.started_at IS OLD.started_at AND NEW.created_at IS OLD.created_at)\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado permite apenas encerrar ou reconciliar foco existente'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_focus_delete",
+      "tbl_name": "focus_sessions",
+      "sql": "CREATE TRIGGER accio_focus_delete BEFORE DELETE ON focus_sessions\nWHEN 1\nBEGIN SELECT RAISE(ABORT, 'Tentativas de foco são preservadas'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_focus_sessions_identity",
+      "tbl_name": "focus_sessions",
+      "sql": "CREATE TRIGGER accio_focus_sessions_identity BEFORE UPDATE ON focus_sessions\nWHEN NEW.user_id IS NOT OLD.user_id OR NEW.uid IS NOT OLD.uid OR NEW.project_id IS NOT OLD.project_id OR NEW.task_id IS NOT OLD.task_id\nBEGIN SELECT RAISE(ABORT, 'Identidade e proprietário são imutáveis'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_focus_task_context",
+      "tbl_name": "focus_sessions",
+      "sql": "CREATE TRIGGER accio_focus_task_context BEFORE INSERT ON focus_sessions\nWHEN NEW.task_id IS NOT NULL AND EXISTS (SELECT 1 FROM tasks WHERE id = NEW.task_id AND project_id IS NOT NEW.project_id)\nBEGIN SELECT RAISE(ABORT, 'Contexto deve ser o da tarefa'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_focus_terminal",
+      "tbl_name": "focus_sessions",
+      "sql": "CREATE TRIGGER accio_focus_terminal BEFORE UPDATE ON focus_sessions\nWHEN OLD.status IN ('completed','cancelled')\nBEGIN SELECT RAISE(ABORT, 'Tentativa encerrada é imutável'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_project_archived",
+      "tbl_name": "projects",
+      "sql": "CREATE TRIGGER accio_project_archived BEFORE UPDATE ON projects\nWHEN OLD.status = 'archived' AND NOT (NEW.status = coalesce(OLD.archived_from, 'active') AND NEW.archived_from IS NULL AND NEW.archived_at IS NULL AND NEW.user_id IS OLD.user_id AND NEW.uid IS OLD.uid AND NEW.name IS OLD.name AND NEW.name_key IS OLD.name_key AND NEW.description IS OLD.description AND NEW.icon IS OLD.icon AND NEW.tint IS OLD.tint AND NEW.color IS OLD.color AND NEW.favorite IS OLD.favorite AND NEW.created_at IS OLD.created_at AND NEW.origin_created_at IS OLD.origin_created_at AND NEW.origin_updated_at IS OLD.origin_updated_at)\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_project_delete",
+      "tbl_name": "projects",
+      "sql": "CREATE TRIGGER accio_project_delete BEFORE DELETE ON projects\nWHEN 1\nBEGIN SELECT RAISE(ABORT, 'Use arquivamento'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_project_references_archived_delete",
+      "tbl_name": "project_references",
+      "sql": "CREATE TRIGGER accio_project_references_archived_delete BEFORE DELETE ON project_references\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = OLD.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_project_references_archived_insert",
+      "tbl_name": "project_references",
+      "sql": "CREATE TRIGGER accio_project_references_archived_insert BEFORE INSERT ON project_references\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = NEW.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_project_references_archived_update",
+      "tbl_name": "project_references",
+      "sql": "CREATE TRIGGER accio_project_references_archived_update BEFORE UPDATE ON project_references\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = OLD.project_id AND status = 'archived') OR EXISTS (SELECT 1 FROM projects WHERE id = NEW.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_project_references_identity",
+      "tbl_name": "project_references",
+      "sql": "CREATE TRIGGER accio_project_references_identity BEFORE UPDATE ON project_references\nWHEN NEW.user_id IS NOT OLD.user_id OR NEW.uid IS NOT OLD.uid\nBEGIN SELECT RAISE(ABORT, 'Identidade e proprietário são imutáveis'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_projects_identity",
+      "tbl_name": "projects",
+      "sql": "CREATE TRIGGER accio_projects_identity BEFORE UPDATE ON projects\nWHEN NEW.user_id IS NOT OLD.user_id OR NEW.uid IS NOT OLD.uid\nBEGIN SELECT RAISE(ABORT, 'Identidade e proprietário são imutáveis'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_tasks_archived_delete",
+      "tbl_name": "tasks",
+      "sql": "CREATE TRIGGER accio_tasks_archived_delete BEFORE DELETE ON tasks\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = OLD.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_tasks_archived_insert",
+      "tbl_name": "tasks",
+      "sql": "CREATE TRIGGER accio_tasks_archived_insert BEFORE INSERT ON tasks\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = NEW.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_tasks_archived_update",
+      "tbl_name": "tasks",
+      "sql": "CREATE TRIGGER accio_tasks_archived_update BEFORE UPDATE ON tasks\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = OLD.project_id AND status = 'archived') OR EXISTS (SELECT 1 FROM projects WHERE id = NEW.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_tasks_identity",
+      "tbl_name": "tasks",
+      "sql": "CREATE TRIGGER accio_tasks_identity BEFORE UPDATE ON tasks\nWHEN NEW.user_id IS NOT OLD.user_id OR NEW.uid IS NOT OLD.uid\nBEGIN SELECT RAISE(ABORT, 'Identidade e proprietário são imutáveis'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_user_preferences_identity",
+      "tbl_name": "user_preferences",
+      "sql": "CREATE TRIGGER accio_user_preferences_identity BEFORE UPDATE ON user_preferences\nWHEN NEW.user_id IS NOT OLD.user_id\nBEGIN SELECT RAISE(ABORT, 'Identidade e proprietário são imutáveis'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_widget_placements_archived_delete",
+      "tbl_name": "widget_placements",
+      "sql": "CREATE TRIGGER accio_widget_placements_archived_delete BEFORE DELETE ON widget_placements\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = OLD.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_widget_placements_archived_insert",
+      "tbl_name": "widget_placements",
+      "sql": "CREATE TRIGGER accio_widget_placements_archived_insert BEFORE INSERT ON widget_placements\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = NEW.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_widget_placements_archived_update",
+      "tbl_name": "widget_placements",
+      "sql": "CREATE TRIGGER accio_widget_placements_archived_update BEFORE UPDATE ON widget_placements\nWHEN EXISTS (SELECT 1 FROM projects WHERE id = OLD.project_id AND status = 'archived') OR EXISTS (SELECT 1 FROM projects WHERE id = NEW.project_id AND status = 'archived')\nBEGIN SELECT RAISE(ABORT, 'Projeto arquivado é somente leitura'); END"
+    },
+    {
+      "type": "trigger",
+      "name": "accio_widget_placements_identity",
+      "tbl_name": "widget_placements",
+      "sql": "CREATE TRIGGER accio_widget_placements_identity BEFORE UPDATE ON widget_placements\nWHEN NEW.user_id IS NOT OLD.user_id OR NEW.context IS NOT OLD.context OR NEW.project_id IS NOT OLD.project_id OR NEW.widget_key IS NOT OLD.widget_key\nBEGIN SELECT RAISE(ABORT, 'Identidade e proprietário são imutáveis'); END"
+    }
+  ],
+  "foreign_keys": {
+    "ar_internal_metadata": [],
+    "auth_sessions": [
+      {
+        "id": 0,
+        "seq": 0,
+        "table": "users",
+        "from": "user_id",
+        "to": "id",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION",
+        "match": "NONE"
+      }
+    ],
+    "dock_shortcuts": [
+      {
+        "id": 0,
+        "seq": 0,
+        "table": "users",
+        "from": "user_id",
+        "to": "id",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION",
+        "match": "NONE"
+      }
+    ],
+    "focus_commands": [
+      {
+        "id": 0,
+        "seq": 0,
+        "table": "users",
+        "from": "user_id",
+        "to": "id",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION",
+        "match": "NONE"
+      },
+      {
+        "id": 1,
+        "seq": 0,
+        "table": "focus_sessions",
+        "from": "user_id",
+        "to": "user_id",
+        "on_update": "NO ACTION",
+        "on_delete": "RESTRICT",
+        "match": "NONE"
+      },
+      {
+        "id": 1,
+        "seq": 1,
+        "table": "focus_sessions",
+        "from": "focus_session_id",
+        "to": "id",
+        "on_update": "NO ACTION",
+        "on_delete": "RESTRICT",
+        "match": "NONE"
+      }
+    ],
+    "focus_sessions": [
+      {
+        "id": 0,
+        "seq": 0,
+        "table": "projects",
+        "from": "user_id",
+        "to": "user_id",
+        "on_update": "NO ACTION",
+        "on_delete": "RESTRICT",
+        "match": "NONE"
+      },
+      {
+        "id": 0,
+        "seq": 1,
+        "table": "projects",
+        "from": "project_id",
+        "to": "id",
+        "on_update": "NO ACTION",
+        "on_delete": "RESTRICT",
+        "match": "NONE"
+      },
+      {
+        "id": 1,
+        "seq": 0,
+        "table": "users",
+        "from": "user_id",
+        "to": "id",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION",
+        "match": "NONE"
+      },
+      {
+        "id": 2,
+        "seq": 0,
+        "table": "tasks",
+        "from": "user_id",
+        "to": "user_id",
+        "on_update": "NO ACTION",
+        "on_delete": "RESTRICT",
+        "match": "NONE"
+      },
+      {
+        "id": 2,
+        "seq": 1,
+        "table": "tasks",
+        "from": "task_id",
+        "to": "id",
+        "on_update": "NO ACTION",
+        "on_delete": "RESTRICT",
+        "match": "NONE"
+      }
+    ],
+    "project_references": [
+      {
+        "id": 0,
+        "seq": 0,
+        "table": "users",
+        "from": "user_id",
+        "to": "id",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION",
+        "match": "NONE"
+      },
+      {
+        "id": 1,
+        "seq": 0,
+        "table": "projects",
+        "from": "user_id",
+        "to": "user_id",
+        "on_update": "NO ACTION",
+        "on_delete": "RESTRICT",
+        "match": "NONE"
+      },
+      {
+        "id": 1,
+        "seq": 1,
+        "table": "projects",
+        "from": "project_id",
+        "to": "id",
+        "on_update": "NO ACTION",
+        "on_delete": "RESTRICT",
+        "match": "NONE"
+      }
+    ],
+    "projects": [
+      {
+        "id": 0,
+        "seq": 0,
+        "table": "users",
+        "from": "user_id",
+        "to": "id",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION",
+        "match": "NONE"
+      }
+    ],
+    "schema_migrations": [],
+    "tasks": [
+      {
+        "id": 0,
+        "seq": 0,
+        "table": "users",
+        "from": "user_id",
+        "to": "id",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION",
+        "match": "NONE"
+      },
+      {
+        "id": 1,
+        "seq": 0,
+        "table": "projects",
+        "from": "user_id",
+        "to": "user_id",
+        "on_update": "NO ACTION",
+        "on_delete": "RESTRICT",
+        "match": "NONE"
+      },
+      {
+        "id": 1,
+        "seq": 1,
+        "table": "projects",
+        "from": "project_id",
+        "to": "id",
+        "on_update": "NO ACTION",
+        "on_delete": "RESTRICT",
+        "match": "NONE"
+      }
+    ],
+    "user_preferences": [
+      {
+        "id": 0,
+        "seq": 0,
+        "table": "users",
+        "from": "user_id",
+        "to": "id",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION",
+        "match": "NONE"
+      }
+    ],
+    "users": [],
+    "widget_placements": [
+      {
+        "id": 0,
+        "seq": 0,
+        "table": "projects",
+        "from": "user_id",
+        "to": "user_id",
+        "on_update": "NO ACTION",
+        "on_delete": "RESTRICT",
+        "match": "NONE"
+      },
+      {
+        "id": 0,
+        "seq": 1,
+        "table": "projects",
+        "from": "project_id",
+        "to": "id",
+        "on_update": "NO ACTION",
+        "on_delete": "RESTRICT",
+        "match": "NONE"
+      },
+      {
+        "id": 1,
+        "seq": 0,
+        "table": "users",
+        "from": "user_id",
+        "to": "id",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION",
+        "match": "NONE"
+      }
+    ]
+  },
+  "checks": {
+    "integrity": "ok",
+    "foreign_key_violations": [],
+    "foreign_keys": 1,
+    "journal_mode": "wal",
+    "synchronous": 2,
+    "ignore_check_constraints": 0
+  }
+}

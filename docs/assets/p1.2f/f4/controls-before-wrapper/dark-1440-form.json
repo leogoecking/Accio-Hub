@@ -1,0 +1,142 @@
+{
+  "name": "dark-1440-form",
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 1440
+  },
+  "theme": "dark",
+  "controls": [
+    {
+      "border": 1,
+      "boundarySource": "#project-name",
+      "disabled": false,
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 42,
+          "width": 508,
+          "x": 466,
+          "y": 389.25
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        197,
+        222,
+        247,
+        31
+      ],
+      "selector": "#project-name",
+      "text": "Nome",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#project-description",
+      "disabled": false,
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 80,
+          "width": 508,
+          "x": 466,
+          "y": 470.25
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        197,
+        222,
+        247,
+        31
+      ],
+      "selector": "#project-description",
+      "text": "Descrição opcional",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#project-icon",
+      "disabled": false,
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 44,
+          "width": 395,
+          "x": 466,
+          "y": 593.25
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        197,
+        222,
+        247,
+        31
+      ],
+      "selector": "#project-icon",
+      "text": "ÍconeBlocos\nCódigo\nLivro\nFoco\nFeed\nCalendário\nNuvem\nMúsica\nTarefas\nCarta",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#project-color-hex",
+      "disabled": false,
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 34,
+          "width": 95,
+          "x": 879,
+          "y": 644.25
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        197,
+        222,
+        247,
+        31
+      ],
+      "selector": "#project-color-hex",
+      "text": "Cor hexadecimal",
+      "unknown": []
+    }
+  ],
+  "focus": [
+    {
+      "kind": "focus",
+      "offset": 3,
+      "opacity": 1,
+      "outline": "solid",
+      "rects": [
+        {
+          "height": 42,
+          "width": 508,
+          "x": 466,
+          "y": 389.25
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        177,
+        240,
+        125,
+        255
+      ],
+      "selector": "#project-name",
+      "unknown": [],
+      "width": 2
+    }
+  ]
+}

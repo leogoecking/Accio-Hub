@@ -1,0 +1,562 @@
+[
+  {
+    "capture": "dark-320-settings",
+    "kind": "boundary",
+    "selector": "#page-theme",
+    "color": [
+      140,
+      151,
+      167,
+      248
+    ],
+    "minimum": 4.305,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-320-settings",
+    "kind": "focus",
+    "selector": "#page-theme",
+    "color": [
+      243,
+      245,
+      250,
+      255
+    ],
+    "minimum": 16.504,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-320-library",
+    "kind": "boundary",
+    "selector": "#project-search",
+    "color": [
+      140,
+      151,
+      167,
+      248
+    ],
+    "minimum": 5.755,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-320-library",
+    "kind": "boundary",
+    "selector": "#project-order",
+    "color": [
+      140,
+      151,
+      167,
+      248
+    ],
+    "minimum": 5.656,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-320-library",
+    "kind": "focus",
+    "selector": "#project-search",
+    "color": [
+      243,
+      245,
+      250,
+      255
+    ],
+    "minimum": 16.313,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-320-form",
+    "kind": "boundary",
+    "selector": "#project-name",
+    "color": [
+      140,
+      151,
+      167,
+      248
+    ],
+    "minimum": 5.764,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-320-form",
+    "kind": "boundary",
+    "selector": "#project-description",
+    "color": [
+      140,
+      151,
+      167,
+      248
+    ],
+    "minimum": 5.764,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-320-form",
+    "kind": "boundary",
+    "selector": "#project-icon",
+    "color": [
+      140,
+      151,
+      167,
+      248
+    ],
+    "minimum": 5.764,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-320-form",
+    "kind": "boundary",
+    "selector": "#project-color-hex",
+    "color": [
+      140,
+      151,
+      167,
+      248
+    ],
+    "minimum": 5.764,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-320-form",
+    "kind": "focus",
+    "selector": "#project-name",
+    "color": [
+      243,
+      245,
+      250,
+      255
+    ],
+    "minimum": 17.731,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-1440-settings",
+    "kind": "boundary",
+    "selector": "#page-theme",
+    "color": [
+      140,
+      151,
+      167,
+      248
+    ],
+    "minimum": 4.305,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-1440-settings",
+    "kind": "focus",
+    "selector": "#page-theme",
+    "color": [
+      243,
+      245,
+      250,
+      255
+    ],
+    "minimum": 16.504,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-1440-library",
+    "kind": "boundary",
+    "selector": "#project-search",
+    "color": [
+      140,
+      151,
+      167,
+      248
+    ],
+    "minimum": 5.612,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-1440-library",
+    "kind": "boundary",
+    "selector": "#project-order",
+    "color": [
+      140,
+      151,
+      167,
+      248
+    ],
+    "minimum": 5.656,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-1440-library",
+    "kind": "focus",
+    "selector": "#project-search",
+    "color": [
+      243,
+      245,
+      250,
+      255
+    ],
+    "minimum": 15.903,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-1440-form",
+    "kind": "boundary",
+    "selector": "#project-name",
+    "color": [
+      140,
+      151,
+      167,
+      248
+    ],
+    "minimum": 5.764,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-1440-form",
+    "kind": "boundary",
+    "selector": "#project-description",
+    "color": [
+      140,
+      151,
+      167,
+      248
+    ],
+    "minimum": 5.764,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-1440-form",
+    "kind": "boundary",
+    "selector": "#project-icon",
+    "color": [
+      140,
+      151,
+      167,
+      248
+    ],
+    "minimum": 5.764,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-1440-form",
+    "kind": "boundary",
+    "selector": "#project-color-hex",
+    "color": [
+      140,
+      151,
+      167,
+      248
+    ],
+    "minimum": 5.764,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "dark-1440-form",
+    "kind": "focus",
+    "selector": "#project-name",
+    "color": [
+      243,
+      245,
+      250,
+      255
+    ],
+    "minimum": 17.731,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-320-settings",
+    "kind": "boundary",
+    "selector": "#page-theme",
+    "color": [
+      106,
+      122,
+      138,
+      252
+    ],
+    "minimum": 3.591,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-320-settings",
+    "kind": "focus",
+    "selector": "#page-theme",
+    "color": [
+      23,
+      36,
+      54,
+      255
+    ],
+    "minimum": 14.956,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-320-library",
+    "kind": "boundary",
+    "selector": "#project-search",
+    "color": [
+      106,
+      122,
+      138,
+      252
+    ],
+    "minimum": 3.813,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-320-library",
+    "kind": "boundary",
+    "selector": "#project-order",
+    "color": [
+      106,
+      122,
+      138,
+      252
+    ],
+    "minimum": 3.815,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-320-library",
+    "kind": "focus",
+    "selector": "#project-search",
+    "color": [
+      23,
+      36,
+      54,
+      255
+    ],
+    "minimum": 13.829,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-320-form",
+    "kind": "boundary",
+    "selector": "#project-name",
+    "color": [
+      106,
+      122,
+      138,
+      252
+    ],
+    "minimum": 3.756,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-320-form",
+    "kind": "boundary",
+    "selector": "#project-description",
+    "color": [
+      106,
+      122,
+      138,
+      252
+    ],
+    "minimum": 4.085,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-320-form",
+    "kind": "boundary",
+    "selector": "#project-icon",
+    "color": [
+      106,
+      122,
+      138,
+      252
+    ],
+    "minimum": 3.756,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-320-form",
+    "kind": "boundary",
+    "selector": "#project-color-hex",
+    "color": [
+      106,
+      122,
+      138,
+      252
+    ],
+    "minimum": 3.756,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-320-form",
+    "kind": "focus",
+    "selector": "#project-name",
+    "color": [
+      23,
+      36,
+      54,
+      255
+    ],
+    "minimum": 14.809,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-1440-settings",
+    "kind": "boundary",
+    "selector": "#page-theme",
+    "color": [
+      106,
+      122,
+      138,
+      252
+    ],
+    "minimum": 3.591,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-1440-settings",
+    "kind": "focus",
+    "selector": "#page-theme",
+    "color": [
+      23,
+      36,
+      54,
+      255
+    ],
+    "minimum": 14.956,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-1440-library",
+    "kind": "boundary",
+    "selector": "#project-search",
+    "color": [
+      106,
+      122,
+      138,
+      252
+    ],
+    "minimum": 3.804,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-1440-library",
+    "kind": "boundary",
+    "selector": "#project-order",
+    "color": [
+      106,
+      122,
+      138,
+      252
+    ],
+    "minimum": 3.815,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-1440-library",
+    "kind": "focus",
+    "selector": "#project-search",
+    "color": [
+      23,
+      36,
+      54,
+      255
+    ],
+    "minimum": 13.794,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-1440-form",
+    "kind": "boundary",
+    "selector": "#project-name",
+    "color": [
+      106,
+      122,
+      138,
+      252
+    ],
+    "minimum": 3.756,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-1440-form",
+    "kind": "boundary",
+    "selector": "#project-description",
+    "color": [
+      106,
+      122,
+      138,
+      252
+    ],
+    "minimum": 4.085,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-1440-form",
+    "kind": "boundary",
+    "selector": "#project-icon",
+    "color": [
+      106,
+      122,
+      138,
+      252
+    ],
+    "minimum": 3.756,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-1440-form",
+    "kind": "boundary",
+    "selector": "#project-color-hex",
+    "color": [
+      106,
+      122,
+      138,
+      252
+    ],
+    "minimum": 3.756,
+    "required": 3,
+    "status": "measured_pass"
+  },
+  {
+    "capture": "light-1440-form",
+    "kind": "focus",
+    "selector": "#project-name",
+    "color": [
+      23,
+      36,
+      54,
+      255
+    ],
+    "minimum": 14.809,
+    "required": 3,
+    "status": "measured_pass"
+  }
+]

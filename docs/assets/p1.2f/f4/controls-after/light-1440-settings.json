@@ -1,0 +1,64 @@
+{
+  "name": "light-1440-settings",
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 1440
+  },
+  "theme": "light",
+  "controls": [
+    {
+      "border": 1,
+      "boundarySource": "#page-theme",
+      "disabled": false,
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 34,
+          "width": 74,
+          "x": 1312,
+          "y": 629.4375
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "selector": "#page-theme",
+      "text": "Tema Claro e escuro",
+      "unknown": []
+    }
+  ],
+  "focus": [
+    {
+      "kind": "focus",
+      "offset": 3,
+      "opacity": 1,
+      "outline": "solid",
+      "rects": [
+        {
+          "height": 34,
+          "width": 74,
+          "x": 1312,
+          "y": 629.4375
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#page-theme",
+      "unknown": [],
+      "width": 2
+    }
+  ]
+}

@@ -1,0 +1,630 @@
+{
+  "accent": "#b1f07d",
+  "active": "command-search",
+  "fontsLoaded": "loaded",
+  "geometry": [
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 1000,
+        "width": 76,
+        "x": 0,
+        "y": 0
+      },
+      "selector": "html > body > div.shell > aside.rail"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 67,
+        "width": 1364,
+        "x": 76,
+        "y": 0
+      },
+      "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > header.headbar"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 49,
+        "width": 1364,
+        "x": 76,
+        "y": 67
+      },
+      "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone"
+    }
+  ],
+  "modal": "search",
+  "nodes": [
+    {
+      "disabled": false,
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 17.5,
+          "x": 975.5,
+          "y": 154.5
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "#search > div.scrim:nth-of-type(1) > search.search-modal > div.search-field > span",
+      "text": "ESC",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 28.234375,
+          "x": 471,
+          "y": 211
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.scrim:nth-of-type(1) > search.search-modal > nav.search-results > a.search-result:nth-of-type(1) > span",
+      "text": "Início",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 113.890625,
+          "x": 471,
+          "y": 231
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "search.search-modal > nav.search-results > a.search-result:nth-of-type(1) > span > small",
+      "text": "Aplicativo · Seu espaço",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 38.625,
+          "x": 471,
+          "y": 267
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.scrim:nth-of-type(1) > search.search-modal > nav.search-results > a.search-result:nth-of-type(2) > span",
+      "text": "Tarefas",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 88.984375,
+          "x": 471,
+          "y": 287
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "search.search-modal > nav.search-results > a.search-result:nth-of-type(2) > span > small",
+      "text": "Aplicativo · SQLite",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 41.1875,
+          "x": 471,
+          "y": 323
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.scrim:nth-of-type(1) > search.search-modal > nav.search-results > a.search-result:nth-of-type(3) > span",
+      "text": "Agenda",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 146.390625,
+          "x": 471,
+          "y": 343
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "search.search-modal > nav.search-results > a.search-result:nth-of-type(3) > span > small",
+      "text": "Aplicativo · Demonstração P1.1",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 26.59375,
+          "x": 471,
+          "y": 379
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.scrim:nth-of-type(1) > search.search-modal > nav.search-results > a.search-result:nth-of-type(4) > span",
+      "text": "Foco",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 146.390625,
+          "x": 471,
+          "y": 399
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "search.search-modal > nav.search-results > a.search-result:nth-of-type(4) > span > small",
+      "text": "Aplicativo · Demonstração P1.1",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 44.15625,
+          "x": 471,
+          "y": 435
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.scrim:nth-of-type(1) > search.search-modal > nav.search-results > a.search-result:nth-of-type(5) > span",
+      "text": "Projetos",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 88.984375,
+          "x": 471,
+          "y": 455
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "search.search-modal > nav.search-results > a.search-result:nth-of-type(5) > span > small",
+      "text": "Aplicativo · SQLite",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 80.109375,
+          "x": 471,
+          "y": 491
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.scrim:nth-of-type(1) > search.search-modal > nav.search-results > a.search-result:nth-of-type(6) > span",
+      "text": "Conhecimento",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 146.390625,
+          "x": 471,
+          "y": 511
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "search.search-modal > nav.search-results > a.search-result:nth-of-type(6) > span > small",
+      "text": "Aplicativo · Demonstração P1.1",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 57.1875,
+          "x": 471,
+          "y": 547
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.scrim:nth-of-type(1) > search.search-modal > nav.search-results > a.search-result:nth-of-type(7) > span",
+      "text": "AccioFeed",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5,
+          "width": 146.390625,
+          "x": 471,
+          "y": 567
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "search.search-modal > nav.search-results > a.search-result:nth-of-type(7) > span > small",
+      "text": "Aplicativo · Demonstração P1.1",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "font": 14,
+      "kind": "placeholder",
+      "opacity": 1,
+      "placeholderOpacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 475.5,
+          "x": 478,
+          "y": 154
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        117,
+        117,
+        117,
+        255
+      ],
+      "selector": "#command-search",
+      "text": "Buscar aplicativos...",
+      "unknown": []
+    },
+    {
+      "border": 0,
+      "disabled": false,
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 20,
+          "width": 481.5,
+          "x": 475,
+          "y": 151
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#command-search",
+      "text": "Buscar aplicativos",
+      "unknown": []
+    },
+    {
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 9.4813232421875,
+          "width": 14.50823974609375,
+          "x": 441.4107666015625,
+          "y": 615.02001953125
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "search.search-modal > nav.search-results > a.search-result:nth-of-type(8) > svg:nth-of-type(1) > path:nth-of-type(1)",
+      "text": "BackupsAplicativo · Demonstração P1.1",
+      "unknown": []
+    },
+    {
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5.25,
+          "width": 4.5,
+          "x": 446.75,
+          "y": 618.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "search.search-modal > nav.search-results > a.search-result:nth-of-type(8) > svg:nth-of-type(1) > path:nth-of-type(2)",
+      "text": "BackupsAplicativo · Demonstração P1.1",
+      "unknown": []
+    },
+    {
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 7,
+          "width": 3.5,
+          "x": 991.25,
+          "y": 616.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "search.search-modal > nav.search-results > a.search-result:nth-of-type(8) > svg:nth-of-type(2) > path",
+      "text": "BackupsAplicativo · Demonstração P1.1",
+      "unknown": []
+    },
+    {
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 10.5,
+          "width": 13.5,
+          "x": 442.25,
+          "y": 670.75
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "search.search-modal > nav.search-results > a.search-result:nth-of-type(9) > svg:nth-of-type(1) > rect",
+      "text": "E-mailsAplicativo · Demonstração P1.1",
+      "unknown": []
+    },
+    {
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 4.5,
+          "width": 12,
+          "x": 443,
+          "y": 672.25
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "search.search-modal > nav.search-results > a.search-result:nth-of-type(9) > svg:nth-of-type(1) > path",
+      "text": "E-mailsAplicativo · Demonstração P1.1",
+      "unknown": []
+    },
+    {
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 7,
+          "width": 3.5,
+          "x": 991.25,
+          "y": 672.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "search.search-modal > nav.search-results > a.search-result:nth-of-type(9) > svg:nth-of-type(2) > path",
+      "text": "E-mailsAplicativo · Demonstração P1.1",
+      "unknown": []
+    },
+    {
+      "kind": "focus",
+      "offset": 3,
+      "opacity": 1,
+      "outline": "none",
+      "rects": [
+        {
+          "height": 20,
+          "width": 481.5,
+          "x": 475,
+          "y": 151
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#command-search",
+      "unknown": [],
+      "width": 0
+    }
+  ],
+  "overflow": false,
+  "theme": "light",
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 1440
+  },
+  "wallpaper": "northern"
+}

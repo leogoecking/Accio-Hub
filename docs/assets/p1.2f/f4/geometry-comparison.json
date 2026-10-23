@@ -1,0 +1,596 @@
+[
+  {
+    "capture": "dark-1440-customize",
+    "same_wallpaper": true,
+    "changes": []
+  },
+  {
+    "capture": "dark-1440-dashboard",
+    "same_wallpaper": true,
+    "changes": []
+  },
+  {
+    "capture": "dark-1440-empty",
+    "same_wallpaper": true,
+    "changes": []
+  },
+  {
+    "capture": "dark-1440-focus-dialog",
+    "same_wallpaper": true,
+    "changes": []
+  },
+  {
+    "capture": "dark-1440-focus",
+    "same_wallpaper": true,
+    "changes": []
+  },
+  {
+    "capture": "dark-1440-library",
+    "same_wallpaper": true,
+    "changes": []
+  },
+  {
+    "capture": "dark-1440-music",
+    "same_wallpaper": true,
+    "changes": []
+  },
+  {
+    "capture": "dark-1440-project-form",
+    "same_wallpaper": true,
+    "changes": []
+  },
+  {
+    "capture": "dark-1440-project",
+    "same_wallpaper": true,
+    "changes": []
+  },
+  {
+    "capture": "dark-1440-reference-form",
+    "same_wallpaper": true,
+    "changes": []
+  },
+  {
+    "capture": "dark-1440-references",
+    "same_wallpaper": true,
+    "changes": []
+  },
+  {
+    "capture": "dark-1440-search",
+    "same_wallpaper": true,
+    "changes": []
+  },
+  {
+    "capture": "dark-1440-settings",
+    "same_wallpaper": true,
+    "changes": []
+  },
+  {
+    "capture": "dark-1440-task-form",
+    "same_wallpaper": true,
+    "changes": []
+  },
+  {
+    "capture": "dark-1440-tasks",
+    "same_wallpaper": true,
+    "changes": []
+  },
+  {
+    "capture": "dark-1440-widgets",
+    "same_wallpaper": true,
+    "changes": []
+  },
+  {
+    "capture": "dark-320-customize",
+    "same_wallpaper": true,
+    "changes": [
+      {
+        "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone",
+        "metric": "height",
+        "before": 221.28125,
+        "after": 49
+      }
+    ]
+  },
+  {
+    "capture": "dark-320-dashboard",
+    "same_wallpaper": true,
+    "changes": [
+      {
+        "selector": "body > div.shell > div.focus-shell:nth-of-type(1) > div.workspace:nth-of-type(1) > section.music-zone",
+        "metric": "height",
+        "before": 221.28125,
+        "after": 49
+      },
+      {
+        "selector": "#widget-grid > section.panel.panel-tasks:nth-of-type(1)",
+        "metric": "y",
+        "before": 940.28125,
+        "after": 768
+      },
+      {
+        "selector": "#widget-grid > section.panel.panel-focus:nth-of-type(2)",
+        "metric": "y",
+        "before": 1302.84375,
+        "after": 1130.5625
+      },
+      {
+        "selector": "#widget-grid > section.panel.panel-focus:nth-of-type(2) > div.focus-body:nth-of-type(2) > div.dial:nth-of-type(1)",
+        "metric": "y",
+        "before": 1368.84375,
+        "after": 1196.5625
+      },
+      {
+        "selector": "#widget-grid > section.panel.panel-calendar:nth-of-type(3)",
+        "metric": "y",
+        "before": 1706.84375,
+        "after": 1534.5625
+      },
+      {
+        "selector": "#widget-grid > section.panel.panel-feed:nth-of-type(4)",
+        "metric": "y",
+        "before": 1965.84375,
+        "after": 1793.5625
+      },
+      {
+        "selector": "#widget-grid > section.panel.panel-notes:nth-of-type(5)",
+        "metric": "y",
+        "before": 2321.578125,
+        "after": 2149.296875
+      },
+      {
+        "selector": "#widget-grid > section.panel.panel-backup:nth-of-type(6)",
+        "metric": "y",
+        "before": 2580.578125,
+        "after": 2408.296875
+      },
+      {
+        "selector": "#widget-grid > section.panel.panel-projects:nth-of-type(7)",
+        "metric": "y",
+        "before": 2839.578125,
+        "after": 2667.296875
+      }
+    ]
+  },
+  {
+    "capture": "dark-320-empty",
+    "same_wallpaper": true,
+    "changes": [
+      {
+        "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone",
+        "metric": "height",
+        "before": 221.28125,
+        "after": 49
+      }
+    ]
+  },
+  {
+    "capture": "dark-320-focus-dialog",
+    "same_wallpaper": true,
+    "changes": [
+      {
+        "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone",
+        "metric": "height",
+        "before": 221.28125,
+        "after": 49
+      },
+      {
+        "selector": "#main-content > div.inner-page.focus-page > div.widget-grid:nth-of-type(2) > section.panel.panel-focus:nth-of-type(1)",
+        "metric": "y",
+        "before": 369.328125,
+        "after": 197.046875
+      },
+      {
+        "selector": "div.inner-page.focus-page > div.widget-grid:nth-of-type(2) > section.panel.panel-focus:nth-of-type(1) > div.focus-body:nth-of-type(2) > div.dial:nth-of-type(1)",
+        "metric": "y",
+        "before": 485.171875,
+        "after": 312.890625
+      },
+      {
+        "selector": "#main-content > div.inner-page.focus-page > div.widget-grid:nth-of-type(2) > section.panel.span-8:nth-of-type(2)",
+        "metric": "y",
+        "before": 826.171875,
+        "after": 653.890625
+      }
+    ]
+  },
+  {
+    "capture": "dark-320-focus",
+    "same_wallpaper": true,
+    "changes": [
+      {
+        "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone",
+        "metric": "height",
+        "before": 221.28125,
+        "after": 49
+      },
+      {
+        "selector": "#main-content > div.inner-page.focus-page > div.widget-grid:nth-of-type(2) > section.panel.panel-focus:nth-of-type(1)",
+        "metric": "y",
+        "before": 369.328125,
+        "after": 197.046875
+      },
+      {
+        "selector": "div.inner-page.focus-page > div.widget-grid:nth-of-type(2) > section.panel.panel-focus:nth-of-type(1) > div.focus-body:nth-of-type(2) > div.dial:nth-of-type(1)",
+        "metric": "y",
+        "before": 485.171875,
+        "after": 312.890625
+      },
+      {
+        "selector": "#main-content > div.inner-page.focus-page > div.widget-grid:nth-of-type(2) > section.panel.span-8:nth-of-type(2)",
+        "metric": "y",
+        "before": 826.171875,
+        "after": 653.890625
+      }
+    ]
+  },
+  {
+    "capture": "dark-320-library",
+    "same_wallpaper": true,
+    "changes": [
+      {
+        "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone",
+        "metric": "height",
+        "before": 221.28125,
+        "after": 49
+      }
+    ]
+  },
+  {
+    "capture": "dark-320-music",
+    "same_wallpaper": true,
+    "changes": [
+      {
+        "selector": "body > div.shell > div.focus-shell:nth-of-type(1) > div.workspace:nth-of-type(1) > section.music-zone",
+        "metric": "height",
+        "before": 49,
+        "after": 221.28125
+      }
+    ]
+  },
+  {
+    "capture": "dark-320-project-form",
+    "same_wallpaper": true,
+    "changes": [
+      {
+        "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone",
+        "metric": "height",
+        "before": 221.28125,
+        "after": 49
+      }
+    ]
+  },
+  {
+    "capture": "dark-320-project",
+    "same_wallpaper": true,
+    "changes": [
+      {
+        "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone",
+        "metric": "height",
+        "before": 221.28125,
+        "after": 49
+      },
+      {
+        "selector": "#space-content > div.widget-grid.space-grid > section.panel.span-5:nth-of-type(1)",
+        "metric": "y",
+        "before": 727.75,
+        "after": 555.46875
+      },
+      {
+        "selector": "#space-content > div.widget-grid.space-grid > section.panel.panel-focus:nth-of-type(2)",
+        "metric": "y",
+        "before": 986.75,
+        "after": 814.46875
+      },
+      {
+        "selector": "#space-content > div.widget-grid.space-grid > section.panel.panel-focus:nth-of-type(2) > div.focus-body:nth-of-type(2) > div.dial:nth-of-type(1)",
+        "metric": "y",
+        "before": 1052.75,
+        "after": 880.46875
+      },
+      {
+        "selector": "#space-content > div.widget-grid.space-grid > section.panel.span-4:nth-of-type(3)",
+        "metric": "y",
+        "before": 1390.75,
+        "after": 1218.46875
+      },
+      {
+        "selector": "#space-content > div.widget-grid.space-grid > section.panel.span-12:nth-of-type(4)",
+        "metric": "y",
+        "before": 1695.53125,
+        "after": 1523.25
+      }
+    ]
+  },
+  {
+    "capture": "dark-320-reference-form",
+    "same_wallpaper": true,
+    "changes": [
+      {
+        "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone",
+        "metric": "height",
+        "before": 221.28125,
+        "after": 49
+      }
+    ]
+  },
+  {
+    "capture": "dark-320-references",
+    "same_wallpaper": true,
+    "changes": [
+      {
+        "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone",
+        "metric": "height",
+        "before": 221.28125,
+        "after": 49
+      }
+    ]
+  },
+  {
+    "capture": "dark-320-search",
+    "same_wallpaper": true,
+    "changes": [
+      {
+        "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone",
+        "metric": "height",
+        "before": 221.28125,
+        "after": 49
+      }
+    ]
+  },
+  {
+    "capture": "dark-320-settings",
+    "same_wallpaper": true,
+    "changes": [
+      {
+        "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone",
+        "metric": "height",
+        "before": 221.28125,
+        "after": 49
+      }
+    ]
+  },
+  {
+    "capture": "dark-320-task-form",
+    "same_wallpaper": true,
+    "changes": [
+      {
+        "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone",
+        "metric": "height",
+        "before": 221.28125,
+        "after": 49
+      }
+    ]
+  },
+  {
+    "capture": "dark-320-tasks",
+    "same_wallpaper": true,
+    "changes": [
+      {
+        "selector": "body > div.shell > div.focus-shell > div.workspace:nth-of-type(1) > section.music-zone",
+        "metric": "height",
+        "before": 221.28125,
+        "after": 49
+      }
+    ]
+  },
+  {
+    "capture": "dark-320-widgets",
+    "same_wallpaper": true,
+    "changes": [
+      {
+        "selector": "body > div.shell > div.focus-shell:nth-of-type(1) > div.workspace:nth-of-type(1) > section.music-zone",
+        "metric": "height",
+        "before": 221.28125,
+        "after": 49
+      },
+      {
+        "selector": "#widget-grid > section.panel.panel-tasks:nth-of-type(1)",
+        "metric": "y",
+        "before": 250.28125,
+        "after": 78
+      },
+      {
+        "selector": "#widget-grid > section.panel.panel-focus:nth-of-type(2)",
+        "metric": "y",
+        "before": 612.84375,
+        "after": 440.5625
+      },
+      {
+        "selector": "#widget-grid > section.panel.panel-focus:nth-of-type(2) > div.focus-body:nth-of-type(2) > div.dial:nth-of-type(1)",
+        "metric": "y",
+        "before": 678.84375,
+        "after": 506.5625
+      },
+      {
+        "selector": "#widget-grid > section.panel.panel-calendar:nth-of-type(3)",
+        "metric": "y",
+        "before": 1016.84375,
+        "after": 844.5625
+      },
+      {
+        "selector": "#widget-grid > section.panel.panel-feed:nth-of-type(4)",
+        "metric": "y",
+        "before": 1275.84375,
+        "after": 1103.5625
+      },
+      {
+        "selector": "#widget-grid > section.panel.panel-notes:nth-of-type(5)",
+        "metric": "y",
+        "before": 1631.578125,
+        "after": 1459.296875
+      },
+      {
+        "selector": "#widget-grid > section.panel.panel-backup:nth-of-type(6)",
+        "metric": "y",
+        "before": 1890.578125,
+        "after": 1718.296875
+      },
+      {
+        "selector": "#widget-grid > section.panel.panel-projects:nth-of-type(7)",
+        "metric": "y",
+        "before": 2149.578125,
+        "after": 1977.296875
+      }
+    ]
+  },
+  {
+    "capture": "light-1440-customize",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-1440-dashboard",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-1440-empty",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-1440-focus-dialog",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-1440-focus",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-1440-library",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-1440-music",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-1440-project-form",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-1440-project",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-1440-reference-form",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-1440-references",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-1440-search",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-1440-settings",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-1440-task-form",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-1440-tasks",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-1440-widgets",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-320-customize",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-320-dashboard",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-320-empty",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-320-focus-dialog",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-320-focus",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-320-library",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-320-music",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-320-project-form",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-320-project",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-320-reference-form",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-320-references",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-320-search",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-320-settings",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-320-task-form",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-320-tasks",
+    "same_wallpaper": false,
+    "changes": []
+  },
+  {
+    "capture": "light-320-widgets",
+    "same_wallpaper": false,
+    "changes": []
+  }
+]

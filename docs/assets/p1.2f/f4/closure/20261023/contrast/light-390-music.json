@@ -1,0 +1,1931 @@
+{
+  "accent": "#b1f07d",
+  "active": "Recolher player",
+  "fontsLoaded": "loaded",
+  "geometry": [
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 1000,
+        "width": 49,
+        "x": 0,
+        "y": 0
+      },
+      "selector": "html > body > div.shell > aside.rail"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 57,
+        "width": 341,
+        "x": 49,
+        "y": 0
+      },
+      "selector": "body > div.shell > div.focus-shell:nth-of-type(1) > div.workspace:nth-of-type(1) > header.headbar"
+    },
+    {
+      "font": "\"DM Sans\", Inter, system-ui, sans-serif",
+      "rect": {
+        "height": 151.140625,
+        "width": 341,
+        "x": 49,
+        "y": 57
+      },
+      "selector": "body > div.shell > div.focus-shell:nth-of-type(1) > div.workspace:nth-of-type(1) > section.music-zone"
+    }
+  ],
+  "modal": null,
+  "nodes": [
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 23,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 30,
+          "width": 10.546875,
+          "x": 16.21875,
+          "y": 18
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        19,
+        37,
+        25,
+        255
+      ],
+      "selector": "html > body > div.shell > aside.rail > a.brand-glyph",
+      "text": "a",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 14,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 18,
+          "width": 9.9375,
+          "x": 19.03125,
+          "y": 960
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        10,
+        14,
+        20,
+        255
+      ],
+      "selector": "div.shell > aside.rail > div.rail-bottom:nth-of-type(2) > form.button_to > button.rail-avatar",
+      "text": "A",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 20,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 26,
+          "width": 51.53125,
+          "x": 131.734375,
+          "y": 15
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.shell > div.focus-shell:nth-of-type(1) > div.workspace:nth-of-type(1) > header.headbar > a.mobile-brand",
+      "text": "accio",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 63.4375,
+          "x": 106,
+          "y": 66.5
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.workspace:nth-of-type(1) > section.music-zone > div.music-main:nth-of-type(1) > div.music-caption:nth-of-type(1) > strong",
+      "text": "Accio Music",
+      "unknown": [],
+      "weight": "700"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 131.578125,
+          "x": 106,
+          "y": 82.5
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        89,
+        106,
+        124,
+        255
+      ],
+      "selector": "div.workspace:nth-of-type(1) > section.music-zone > div.music-main:nth-of-type(1) > div.music-caption:nth-of-type(1) > small",
+      "text": "Escolha seu ambiente sonoro",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 15,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 19,
+          "width": 130.8125,
+          "x": 79,
+          "y": 120
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.workspace:nth-of-type(1) > section.music-zone > div.music-expanded:nth-of-type(2) > div > h2",
+      "text": "Seu som. Seu ritmo.",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 167.671875,
+          "x": 79,
+          "y": 143
+        },
+        {
+          "height": 14,
+          "width": 165.078125,
+          "x": 79,
+          "y": 160.046875
+        },
+        {
+          "height": 14,
+          "width": 177.265625,
+          "x": 79,
+          "y": 177.09375
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "div.workspace:nth-of-type(1) > section.music-zone > div.music-expanded:nth-of-type(2) > div > p",
+      "text": "Web rádios, favoritos e integração com Pomodoro estão planejados. Nenhum áudio é reproduzido na P1.1.",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 50.78125,
+          "x": 295.21875,
+          "y": 148.5625
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.focus-shell:nth-of-type(1) > div.workspace:nth-of-type(1) > section.music-zone > div.music-expanded:nth-of-type(2) > button.button.tertiary",
+      "text": "Recolher",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 10,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 160.609375,
+          "x": 64,
+          "y": 230.140625
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        61,
+        87,
+        72,
+        255
+      ],
+      "selector": "#main-content > div.inner-page.settings-page > div.subhead:nth-of-type(1) > div.eyebrow",
+      "text": "ACCIO HUB / SEU ESPAÇO",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 35,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 44,
+          "width": 219.421875,
+          "x": 64,
+          "y": 261.140625
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "#main-content > div.inner-page.settings-page > div.subhead:nth-of-type(1) > h1",
+      "text": "Personalização",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 35,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 44,
+          "width": 7.609375,
+          "x": 283.421875,
+          "y": 261.140625
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        177,
+        240,
+        125,
+        255
+      ],
+      "selector": "#main-content > div.inner-page.settings-page > div.subhead:nth-of-type(1) > h1 > span.title-stop",
+      "text": ".",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 13,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 17,
+          "width": 95.140625,
+          "x": 89,
+          "y": 345.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        36,
+        54,
+        72,
+        255
+      ],
+      "selector": "#main-content > div.inner-page.settings-page > div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(1) > h2",
+      "text": "Plano de fundo",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 35.09375,
+          "x": 102,
+          "y": 417.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(1) > div.wallpaper-options > button.wallpaper-swatch.wall-northern:nth-of-type(1) > span",
+      "text": "Aurora",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 52.3125,
+          "x": 237,
+          "y": 417.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(1) > div.wallpaper-options > button.wallpaper-swatch.wall-ember:nth-of-type(2) > span",
+      "text": "Pôr do sol",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 74.921875,
+          "x": 102,
+          "y": 494.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(1) > div.wallpaper-options > button.wallpaper-swatch.wall-ocean:nth-of-type(3) > span",
+      "text": "Azul profundo",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 36,
+          "x": 237,
+          "y": 494.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(1) > div.wallpaper-options > button.wallpaper-swatch.wall-graphite:nth-of-type(4) > span",
+      "text": "Grafite",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 13,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 17,
+          "width": 78.75,
+          "x": 89,
+          "y": 545.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        36,
+        54,
+        72,
+        255
+      ],
+      "selector": "#main-content > div.inner-page.settings-page > div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(2) > h2",
+      "text": "Preferências",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 90.921875,
+          "x": 89,
+          "y": 586.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.inner-page.settings-page > div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(2) > div.setting-row:nth-of-type(1) > label",
+      "text": "Cor de destaque",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 89.6875,
+          "x": 89,
+          "y": 606.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        89,
+        106,
+        124,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(2) > div.setting-row:nth-of-type(1) > label > small",
+      "text": "Botões e seleções",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 29.03125,
+          "x": 89,
+          "y": 645.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.inner-page.settings-page > div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(2) > div.setting-row:nth-of-type(2) > label",
+      "text": "Tema",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 71.21875,
+          "x": 89,
+          "y": 665.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        89,
+        106,
+        124,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(2) > div.setting-row:nth-of-type(2) > label > small",
+      "text": "Claro e escuro",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 65.453125,
+          "x": 89,
+          "y": 704.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.inner-page.settings-page > div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(2) > div.setting-row:nth-of-type(3) > label",
+      "text": "Accio Music",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 11,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14,
+          "width": 132.40625,
+          "x": 89,
+          "y": 724.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        89,
+        106,
+        124,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(2) > div.setting-row:nth-of-type(3) > label > small",
+      "text": "Barra global demonstrativa",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 13,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 17,
+          "width": 122.34375,
+          "x": 89,
+          "y": 777.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        36,
+        54,
+        72,
+        255
+      ],
+      "selector": "#main-content > div.inner-page.settings-page > div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > h2",
+      "text": "Dock de aplicativos",
+      "unknown": [],
+      "weight": "600"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 40.90625,
+          "x": 117,
+          "y": 823.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(1) > label.show-label",
+      "text": "E-mails",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": true,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 0.4,
+      "rects": [
+        {
+          "height": 16,
+          "width": 10.296875,
+          "x": 297.84375,
+          "y": 823.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(1) > button.mini-control:nth-of-type(1)",
+      "text": "↑",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 10.296875,
+          "x": 330.84375,
+          "y": 823.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(1) > button.mini-control:nth-of-type(2)",
+      "text": "↓",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 45.921875,
+          "x": 117,
+          "y": 874.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(2) > label.show-label",
+      "text": "Backups",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 10.296875,
+          "x": 297.84375,
+          "y": 874.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(2) > button.mini-control:nth-of-type(1)",
+      "text": "↑",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 10.296875,
+          "x": 330.84375,
+          "y": 874.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(2) > button.mini-control:nth-of-type(2)",
+      "text": "↓",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 57.1875,
+          "x": 117,
+          "y": 925.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(3) > label.show-label",
+      "text": "AccioFeed",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 10.296875,
+          "x": 297.84375,
+          "y": 925.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(3) > button.mini-control:nth-of-type(1)",
+      "text": "↑",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 10.296875,
+          "x": 330.84375,
+          "y": 925.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(3) > button.mini-control:nth-of-type(2)",
+      "text": "↓",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 44.15625,
+          "x": 117,
+          "y": 976.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(4) > label.show-label",
+      "text": "Projetos",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 10.296875,
+          "x": 297.84375,
+          "y": 976.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(4) > button.mini-control:nth-of-type(1)",
+      "text": "↑",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "text",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16,
+          "width": 10.296875,
+          "x": 330.84375,
+          "y": 976.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "div.inner-block:nth-of-type(2) > div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(4) > button.mini-control:nth-of-type(2)",
+      "text": "↓",
+      "unknown": [],
+      "weight": "400"
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "font": 12,
+      "kind": "value",
+      "opacity": 1,
+      "placeholderOpacity": 1,
+      "rects": [
+        {
+          "height": 26,
+          "width": 66,
+          "x": 280,
+          "y": 649.1875
+        }
+      ],
+      "required": 4.5,
+      "rgba": [
+        28,
+        48,
+        64,
+        255
+      ],
+      "selector": "#page-theme",
+      "text": "Claro",
+      "unknown": []
+    },
+    {
+      "border": 1,
+      "boundarySource": "#page-theme",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 34,
+          "width": 74,
+          "x": 276,
+          "y": 645.1875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        106,
+        122,
+        138,
+        252
+      ],
+      "selector": "#page-theme",
+      "text": "Tema Claro e escuro",
+      "unknown": []
+    },
+    {
+      "border": 0,
+      "boundarySource": "#page-music",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 13,
+          "x": 334,
+          "y": 714.6875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "selector": "#page-music",
+      "text": "Accio Music Barra global demonstrativa",
+      "unknown": []
+    },
+    {
+      "border": 0,
+      "boundarySource": "div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(1) > label.show-label > input",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 13,
+          "x": 93,
+          "y": 824.6875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "selector": "div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(1) > label.show-label > input",
+      "text": "E-mails",
+      "unknown": []
+    },
+    {
+      "border": 0,
+      "boundarySource": "div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(2) > label.show-label > input",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 13,
+          "x": 93,
+          "y": 875.6875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "selector": "div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(2) > label.show-label > input",
+      "text": "Backups",
+      "unknown": []
+    },
+    {
+      "border": 0,
+      "boundarySource": "div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(3) > label.show-label > input",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 13,
+          "x": 93,
+          "y": 926.6875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "selector": "div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(3) > label.show-label > input",
+      "text": "AccioFeed",
+      "unknown": []
+    },
+    {
+      "border": 0,
+      "boundarySource": "div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(4) > label.show-label > input",
+      "disabled": false,
+      "effects": [],
+      "kind": "boundary",
+      "native": true,
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13,
+          "width": 13,
+          "x": 93,
+          "y": 977.6875
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "selector": "div.setting-group:nth-of-type(3) > div.widget-settings > div.setting-row:nth-of-type(4) > label.show-label > input",
+      "text": "Projetos",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 14.166664123535156,
+          "width": 15,
+          "x": 16.5,
+          "y": 98.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(1) > svg > path:nth-of-type(1)",
+      "text": "Início",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5.8333282470703125,
+          "width": 5,
+          "x": 21.5,
+          "y": 106.83333587646484
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(1) > svg > path:nth-of-type(2)",
+      "text": "Início",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 15,
+          "width": 15,
+          "x": 16.5,
+          "y": 147.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(2) > svg > rect",
+      "text": "Tarefas",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5,
+          "width": 6.666666030883789,
+          "x": 20.66666603088379,
+          "y": 152.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(2) > svg > path",
+      "text": "Tarefas",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13.333328247070312,
+          "width": 15,
+          "x": 16.5,
+          "y": 198.1666717529297
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(3) > svg > rect",
+      "text": "Agenda",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5.8333282470703125,
+          "width": 15,
+          "x": 16.5,
+          "y": 196.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(3) > svg > path",
+      "text": "Agenda",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 15,
+          "width": 15,
+          "x": 16.5,
+          "y": 245.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(4) > svg > circle:nth-of-type(1)",
+      "text": "Foco",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 8.333328247070312,
+          "width": 8.333333969116211,
+          "x": 19.83333396911621,
+          "y": 248.8333282470703
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(4) > svg > circle:nth-of-type(2)",
+      "text": "Foco",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 1.666656494140625,
+          "width": 1.6666641235351562,
+          "x": 23.166667938232425,
+          "y": 252.1666717529297
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(4) > svg > circle:nth-of-type(3)",
+      "text": "Foco",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5.833343505859375,
+          "width": 5.833332061767578,
+          "x": 16.5,
+          "y": 294.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(5) > svg > rect:nth-of-type(1)",
+      "text": "Projetos",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5.833343505859375,
+          "width": 5.833332061767578,
+          "x": 25.666667938232425,
+          "y": 294.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(5) > svg > rect:nth-of-type(2)",
+      "text": "Projetos",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5.833343505859375,
+          "width": 5.833332061767578,
+          "x": 16.5,
+          "y": 303.6666564941406
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(5) > svg > rect:nth-of-type(3)",
+      "text": "Projetos",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5.833343505859375,
+          "width": 5.833332061767578,
+          "x": 25.666667938232425,
+          "y": 303.6666564941406
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(5) > svg > rect:nth-of-type(4)",
+      "text": "Projetos",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13.880706787109377,
+          "width": 15,
+          "x": 16.5,
+          "y": 344.6192932128906
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(6) > svg > path:nth-of-type(1)",
+      "text": "Conhecimento",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 12.5,
+          "width": 12.499998092651367,
+          "x": 17.33333396911621,
+          "y": 394.1666564941406
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(7) > svg > path",
+      "text": "AccioFeed",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 1.666656494140625,
+          "width": 1.666666030883789,
+          "x": 17.33333396911621,
+          "y": 405
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(7) > svg > circle",
+      "text": "AccioFeed",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 10.534759521484377,
+          "width": 16.120285034179688,
+          "x": 15.567516326904297,
+          "y": 443.4667053222656
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(8) > svg > path:nth-of-type(1)",
+      "text": "Backups",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5.83331298828125,
+          "width": 5,
+          "x": 21.5,
+          "y": 447.3333435058594
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(8) > svg > path:nth-of-type(2)",
+      "text": "Backups",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 11.66668701171875,
+          "width": 15,
+          "x": 16.5,
+          "y": 492.1666564941406
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(9) > svg > rect",
+      "text": "E-mails",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5,
+          "width": 13.333332061767578,
+          "x": 17.33333396911621,
+          "y": 493.8333435058594
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "aside.rail > nav.rail-icons > a.rail-icon:nth-of-type(9) > svg > path",
+      "text": "E-mails",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 5,
+          "width": 5,
+          "x": 21.5,
+          "y": 913.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        61,
+        87,
+        72,
+        255
+      ],
+      "selector": "aside.rail > div.rail-bottom:nth-of-type(2) > a.rail-icon.active > svg > circle",
+      "text": "Configurações",
+      "unknown": []
+    },
+    {
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 16.6666259765625,
+          "width": 16.666667938232422,
+          "x": 15.666666984558104,
+          "y": 907.6666870117188
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        61,
+        87,
+        72,
+        255
+      ],
+      "selector": "aside.rail > div.rail-bottom:nth-of-type(2) > a.rail-icon.active > svg > path",
+      "text": "Configurações",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 9.333332061767578,
+          "width": 9.333343505859377,
+          "x": 264.5333251953125,
+          "y": 22.53333282470703
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.command-button:nth-of-type(1) > svg > circle",
+      "text": "Buscar aplicativos",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 3.333332061767578,
+          "width": 3.333343505859375,
+          "x": 272.6666564941406,
+          "y": 30.666667938232425
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.command-button:nth-of-type(1) > svg > path",
+      "text": "Buscar aplicativos",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 13.333330154418944,
+          "width": 13.33331298828125,
+          "x": 318.3333435058594,
+          "y": 21.33333396911621
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.head-icon:nth-of-type(2) > svg > path",
+      "text": "Captura rápida demonstrativa",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 8.333333969116211,
+          "width": 13.33331298828125,
+          "x": 356.3333435058594,
+          "y": 23.83333396911621
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.head-icon:nth-of-type(3) > svg > path",
+      "text": "Personalizar seu espaço",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 3.333333969116211,
+          "width": 3.33331298828125,
+          "x": 358.8333435058594,
+          "y": 22.16666603088379
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.head-icon:nth-of-type(3) > svg > circle:nth-of-type(1)",
+      "text": "Personalizar seu espaço",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 3.333332061767578,
+          "width": 3.33331298828125,
+          "x": 363.8333435058594,
+          "y": 30.5
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "header.headbar > div.head-right:nth-of-type(2) > button.head-icon:nth-of-type(3) > svg > circle:nth-of-type(2)",
+      "text": "Personalizar seu espaço",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 9.333328247070312,
+          "width": 7.33331298828125,
+          "x": 316.3333435058594,
+          "y": 76.33333587646484
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        83,
+        101,
+        120,
+        255
+      ],
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > button.music-button:nth-of-type(1) > svg > path",
+      "text": "Reprodução demonstrativa",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 6.6666717529296875,
+          "width": 10.66668701171875,
+          "x": 355.6666564941406,
+          "y": 77.66666412353516
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > button.music-button:nth-of-type(2) > svg > path",
+      "text": "Recolher player",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 2.666664123535156,
+          "width": 2.66668701171875,
+          "x": 357.6666564941406,
+          "y": 76.33333587646484
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > button.music-button:nth-of-type(2) > svg > circle:nth-of-type(1)",
+      "text": "Recolher player",
+      "unknown": []
+    },
+    {
+      "disabled": false,
+      "effects": [],
+      "kind": "icon",
+      "opacity": 1,
+      "rects": [
+        {
+          "height": 2.666664123535156,
+          "width": 2.66668701171875,
+          "x": 361.6666564941406,
+          "y": 83
+        }
+      ],
+      "required": 3,
+      "rgba": [
+        23,
+        36,
+        54,
+        255
+      ],
+      "selector": "section.music-zone > div.music-main:nth-of-type(1) > button.music-button:nth-of-type(2) > svg > circle:nth-of-type(2)",
+      "text": "Recolher player",
+      "unknown": []
+    }
+  ],
+  "overflow": false,
+  "theme": "light",
+  "viewport": {
+    "dpr": 1,
+    "height": 1000,
+    "scale": 1,
+    "width": 390
+  },
+  "wallpaper": "ocean"
+}

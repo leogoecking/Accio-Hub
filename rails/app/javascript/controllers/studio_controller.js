@@ -1,4 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
+import { actionInk } from "controllers/focus_presenter"
 
 let navigated = false
 
@@ -103,6 +104,7 @@ export default class extends Controller {
     document.documentElement.dataset.theme = p.theme
     document.documentElement.dataset.wallpaper = p.wallpaper
     document.documentElement.style.setProperty("--accent", p.accent)
+    document.documentElement.style.setProperty("--accent-action-ink", actionInk(p.accent))
     this.all("[data-pref]").forEach(el => { if (el.type === "checkbox") el.checked = p[el.dataset.pref]; else el.value = p[el.dataset.pref] })
     this.all("[data-wallpaper]").forEach(el => { const selected = el.dataset.wallpaper === p.wallpaper; el.classList.toggle("active", selected); el.setAttribute("aria-pressed", String(selected)) })
     this.all(".music-zone").forEach(el => { el.hidden = !p.music })

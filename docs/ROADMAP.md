@@ -491,3 +491,7 @@ F1b aprovada com ressalvas pelo Antigravity e encerrada em `7ebfaebe16027b9338ed
 ### F2a — entregue para revisão e auditoria independente
 
 F1c aprovada com ressalvas e encerrada em `b262ce6813d78a21d9454bb25e4e8a30b6f09ab8`. Exclusivamente F2a implementada **sem commit**: URLs numéricas ambíguas rejeitadas, DNS legítimo preservado, legados consultáveis sem href e sem normalização automática. [Verificação](P1.2F2A_VERIFICATION.md): Rails 133/2.555, matriz local Ruby/Chromium 114 URLs, 43 cenários UI, 41 JS de foco; 25 gatilhos, 36 índices e FKs preservados. Sem modelos/schema novos, redesign, DNS/HTTP para destinos ou alteração do Pomodoro/C. Aguardar revisão/auditoria; F2b/F3/F4/F5/P1.3 não autorizadas. Firefox complementar e contraste inconclusivo mantidos; sem tag/push/merge/importação/descarte real.
+
+### Atualização de acompanhamento — P1.2F4, 2026-10-22
+
+F3c encerrada em `11d15fc` após auditoria independente aprovada com ressalvas. F4 implementa exclusivamente correções dirigidas de contraste, foco e feedback acessível; entrega sem commit/staging em [P1.2F4_VERIFICATION.md](P1.2F4_VERIFICATION.md), aguardando revisão e auditoria independente. Resultados inconclusivos, Firefox complementar, revisão humana e limitações da recuperação sintética permanecem explícitos. Nenhuma autorização de F5/P1.3, importação pessoal, distribuição, tag ou merge.

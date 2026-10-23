@@ -1,0 +1,35 @@
+{
+  "skip_native_false": {
+    "active": "MAIN",
+    "hash": "#main-content",
+    "id": "main-content",
+    "modal": false
+  },
+  "skip_native_true": {
+    "active": "MAIN",
+    "hash": "#main-content",
+    "id": "main-content",
+    "modal": false
+  },
+  "project_error": {
+    "active": "BODY",
+    "hash": "",
+    "id": "",
+    "modal": true,
+    "within": false
+  },
+  "task_error": {
+    "active": "BODY",
+    "hash": "",
+    "id": "",
+    "modal": true,
+    "within": false
+  },
+  "reference_error": {
+    "active": "BODY",
+    "hash": "",
+    "id": "",
+    "modal": true,
+    "within": false
+  }
+}
