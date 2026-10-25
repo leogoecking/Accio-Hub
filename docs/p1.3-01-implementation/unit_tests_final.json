@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-25T18:34:30.505394+00:00",
+  "results": [
+    {
+      "location": "tmp",
+      "environment": {
+        "MT_NO_PLUGINS": "1",
+        "ACCIO_VAULT_SYNTHETIC_LOCATION": "tmp"
+      },
+      "command": [
+        "bundle",
+        "exec",
+        "ruby",
+        "-Itest",
+        "-e",
+        "Dir[\"test/services/vault/*_test.rb\"].sort.each { |path| require_relative path }; Minitest.after_run { abort \"unexpected Rails/database load\" if defined?(Rails) || defined?(ActiveRecord) || $LOADED_FEATURES.any? { |path| path.include?(\"sqlite3\") }; puts \"ISOLATION Rails=false ActiveRecord=false sqlite3=false\"; puts \"Minitest runtime=#{Minitest::VERSION} gemspec=#{Gem.loaded_specs.fetch(\"minitest\").version}\" }"
+      ],
+      "exit_code": 0,
+      "stdout": "Run options: --seed 44105\n\n# Running:\n\n..........................................................\n\nFinished in 0.163420s, 354.9128 runs/s, 3677.6308 assertions/s.\n\n58 runs, 601 assertions, 0 failures, 0 errors, 0 skips\nISOLATION Rails=false ActiveRecord=false sqlite3=false\nMinitest runtime=5.26.2 gemspec=5.27.0\n",
+      "stderr": ""
+    },
+    {
+      "location": "var-tmp",
+      "environment": {
+        "MT_NO_PLUGINS": "1",
+        "ACCIO_VAULT_SYNTHETIC_LOCATION": "var-tmp"
+      },
+      "command": [
+        "bundle",
+        "exec",
+        "ruby",
+        "-Itest",
+        "-e",
+        "Dir[\"test/services/vault/*_test.rb\"].sort.each { |path| require_relative path }; Minitest.after_run { abort \"unexpected Rails/database load\" if defined?(Rails) || defined?(ActiveRecord) || $LOADED_FEATURES.any? { |path| path.include?(\"sqlite3\") }; puts \"ISOLATION Rails=false ActiveRecord=false sqlite3=false\"; puts \"Minitest runtime=#{Minitest::VERSION} gemspec=#{Gem.loaded_specs.fetch(\"minitest\").version}\" }"
+      ],
+      "exit_code": 0,
+      "stdout": "Run options: --seed 17214\n\n# Running:\n\n..........................................................\n\nFinished in 0.168184s, 344.8607 runs/s, 3573.4702 assertions/s.\n\n58 runs, 601 assertions, 0 failures, 0 errors, 0 skips\nISOLATION Rails=false ActiveRecord=false sqlite3=false\nMinitest runtime=5.26.2 gemspec=5.27.0\n",
+      "stderr": ""
+    }
+  ],
+  "final_source_sha256": {
+    "app/services/vault/result.rb": "6c8a6a405aa318220301bf70012a9336ad21fe3f705858644decaac1c0616dc7",
+    "app/services/vault/configuration.rb": "7abc928c887090285e6a4cfc702a0816d0a529855ad35550d4152c2d58a2739c",
+    "app/services/vault/path_policy.rb": "ea361d7a463bc80fa27965823bf74654c7fd303644d490be9fb0e73661fdbbb6",
+    "app/services/vault/linux_filesystem.rb": "192a503b3e3cb468cb7ff11ee64c791ede666ca4334818b5f89d7e85a480d748",
+    "app/services/vault/root.rb": "39067046eff1f9f4947c6427fb6476b03e1f41627607e26a647665a346b598f9",
+    "app/services/vault/reader.rb": "fbc15222a7bd852b1de024064a3e0fca07965ca1f9362d1cc60e5ea28035cbef",
+    "app/services/vault/inventory.rb": "acad1fbabe9ebe9b2f5853c5063b17b1de515dcd567fd24199c093588a93372e",
+    "test/services/vault/linux_filesystem_test.rb": "3b6d498f979639e5dae2bc242dc3b417db99286f4f68acb67d99e1899210c7c2",
+    "test/services/vault/reader_test.rb": "43f82377cfe53e9eaefe979763250a0566c833b126542d4de363f13e194fe697",
+    "test/services/vault/inventory_test.rb": "82b23ec23f962e0cd63bc8a657c92d02247f666eaec8005e6e874c5b00920aed",
+    "test/services/vault/path_policy_test.rb": "6b82b3e2275c89c78abe8cbd22d9156e3b5416fecfe3ce02d408034252cbe1cf",
+    "test/services/vault/root_test.rb": "f5cfa0c5911033eb013e5c86ebd064625967a234057b8e7886e40cd302231b79",
+    "test/services/vault/configuration_test.rb": "524b0264a881878af5b79f7cf6a43ea96a45bb5028c9737d3122cc6c318a7c94",
+    "test/services/vault/result_test.rb": "80511fd6b4d629c848ce218fe439c81c6ede2012f072760194e7cd4a9c4e9d3c",
+    "test/support/vault_adapter_test_helper.rb": "8a9be06cd133d5cab41095fcc74075be27aeede29377908285ecfc950466a419",
+    "test/support/vault_service_test_helper.rb": "7a5f290a062b478851077041d39bbc25d6e30e58da46e15e7bbf0a8c3b9167a0",
+    "script/vault-readonly-measure.rb": "c93122632be44d4c796cd658f68b86fd95f131cadcebb7ecaaad2b6ec818cf5c"
+  }
+}

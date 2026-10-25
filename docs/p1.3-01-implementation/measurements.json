@@ -1,0 +1,1082 @@
+{
+  "purpose": "synthetic read-only measurements; no personal data or Vault release approval",
+  "ruby": "ruby 3.3.6 (2024-11-05 revision 75015d4c1f) [x86_64-linux]",
+  "kernel": "Linux 7.0.0-38-generic x86_64",
+  "repeats": 5,
+  "cases": [
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.01153477900152211,
+        0.012037376000080258,
+        0.010495033999177394,
+        0.010931011000138824,
+        0.010663125998689793
+      ],
+      "p95_seconds": 0.012037376000080258,
+      "baseline_rss_kib": 20968,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        }
+      ],
+      "name": "document_2097151",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 34004
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.012784296999598155,
+        0.012255788999027573,
+        0.01111774299897661,
+        0.012679675999606843,
+        0.012194458999147173
+      ],
+      "p95_seconds": 0.012784296999598155,
+      "baseline_rss_kib": 20972,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        }
+      ],
+      "name": "document_2097152",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 34012
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.00042627600123523735,
+        0.00012751200119964778,
+        0.00011781200009863824,
+        0.00012617199899978004,
+        0.0001185710007121088
+      ],
+      "p95_seconds": 0.00042627600123523735,
+      "baseline_rss_kib": 20980,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        }
+      ],
+      "name": "document_2097153",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 21144
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.004138980999414343,
+        0.0027607499996520346,
+        0.0028571520015248097,
+        0.002954282999780844,
+        0.004997094001737423
+      ],
+      "p95_seconds": 0.004997094001737423,
+      "baseline_rss_kib": 18936,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        }
+      ],
+      "name": "depth_7",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 20416
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.003968768000049749,
+        0.003585132000807789,
+        0.0035216019987274194,
+        0.00497840299976815,
+        0.003707003999807057
+      ],
+      "p95_seconds": 0.00497840299976815,
+      "baseline_rss_kib": 18944,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        }
+      ],
+      "name": "depth_8",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 20652
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.003942727998946793,
+        0.003695814000820974,
+        0.0035749830003624083,
+        0.004765960000440828,
+        0.00360861200169893
+      ],
+      "p95_seconds": 0.004765960000440828,
+      "baseline_rss_kib": 18940,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        }
+      ],
+      "name": "depth_9",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 20660
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        1.027160472000105,
+        1.0061190230007924,
+        0.985778685000696,
+        0.98004574100014,
+        1.0384819179998885
+      ],
+      "p95_seconds": 1.0384819179998885,
+      "baseline_rss_kib": 39576,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        }
+      ],
+      "name": "entries_9999",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 60368
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        1.007525244000135,
+        1.012433374999091,
+        0.9948065080006927,
+        1.0063690770002722,
+        0.9878092850012763
+      ],
+      "p95_seconds": 1.012433374999091,
+      "baseline_rss_kib": 39632,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        }
+      ],
+      "name": "entries_10000",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 69112
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        1.0540528959991207,
+        1.0239271739992546,
+        0.9973944559988013,
+        1.0019451619991742,
+        0.9821731820011337
+      ],
+      "p95_seconds": 1.0540528959991207,
+      "baseline_rss_kib": 39616,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        }
+      ],
+      "name": "entries_10001",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 69144
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.19223515799967572,
+        0.18758460099888907,
+        0.1824205949997122,
+        0.18023195300156658,
+        0.17722483900070074
+      ],
+      "p95_seconds": 0.19223515799967572,
+      "baseline_rss_kib": 23028,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        }
+      ],
+      "name": "operation_33554431",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 38156
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.19523451299937733,
+        0.1854756200009433,
+        0.1902601699985098,
+        0.1829557119999663,
+        0.18091317300059018
+      ],
+      "p95_seconds": 0.19523451299937733,
+      "baseline_rss_kib": 23028,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        }
+      ],
+      "name": "operation_33554432",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 37868
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.19609165599831613,
+        0.18798321599933843,
+        0.18922678499984613,
+        0.2007299230008357,
+        0.20476704300017445
+      ],
+      "p95_seconds": 0.20476704300017445,
+      "baseline_rss_kib": 22836,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        }
+      ],
+      "name": "operation_33554433",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 37916
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.013351376001082826,
+        0.013792472000204725,
+        0.01529359499909333,
+        0.010861558999749832,
+        0.010481253999387263
+      ],
+      "p95_seconds": 0.01529359499909333,
+      "baseline_rss_kib": 20788,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        }
+      ],
+      "name": "document_2097151",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 33704
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.013145902999895043,
+        0.011924075000933954,
+        0.01438701099868922,
+        0.01052222399994207,
+        0.013569488999564783
+      ],
+      "p95_seconds": 0.01438701099868922,
+      "baseline_rss_kib": 20852,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        }
+      ],
+      "name": "document_2097152",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 36984
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.0007070299998304108,
+        0.00022501300009025726,
+        0.00015982199874997605,
+        0.00013563200081989635,
+        0.00015173300016613211
+      ],
+      "p95_seconds": 0.0007070299998304108,
+      "baseline_rss_kib": 20852,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        }
+      ],
+      "name": "document_2097153",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 21144
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.00411339099991892,
+        0.00339514900042559,
+        0.0037061250004626345,
+        0.003150365999317728,
+        0.004881451999608544
+      ],
+      "p95_seconds": 0.004881451999608544,
+      "baseline_rss_kib": 18816,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        }
+      ],
+      "name": "depth_7",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 20476
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.004838901000766782,
+        0.0041270809997513425,
+        0.005631441999867093,
+        0.005526101000214112,
+        0.004578436999508995
+      ],
+      "p95_seconds": 0.005631441999867093,
+      "baseline_rss_kib": 18816,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        }
+      ],
+      "name": "depth_8",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 20644
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.004848081000091042,
+        0.004262403001121129,
+        0.005311447999702068,
+        0.005696412999895983,
+        0.003593723000449245
+      ],
+      "p95_seconds": 0.005696412999895983,
+      "baseline_rss_kib": 18816,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        }
+      ],
+      "name": "depth_9",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 20744
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        1.0266310739989422,
+        1.0398952790001204,
+        0.999804700999448,
+        1.0002747569997155,
+        1.0496753420011373
+      ],
+      "p95_seconds": 1.0496753420011373,
+      "baseline_rss_kib": 39896,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        }
+      ],
+      "name": "entries_9999",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 60444
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        1.0172554970013152,
+        0.9931118320000678,
+        0.9774375130000408,
+        0.9952042730001267,
+        0.9751994500002183
+      ],
+      "p95_seconds": 1.0172554970013152,
+      "baseline_rss_kib": 39980,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        }
+      ],
+      "name": "entries_10000",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 60668
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        1.0691518179992272,
+        1.1055167610011267,
+        1.0955062539997016,
+        1.0270581309996487,
+        1.073132875999363
+      ],
+      "p95_seconds": 1.1055167610011267,
+      "baseline_rss_kib": 40004,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        }
+      ],
+      "name": "entries_10001",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 60004
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.22456036299990956,
+        0.1955866580010479,
+        0.25947564499983855,
+        0.1825927469999442,
+        0.18146990100103721
+      ],
+      "p95_seconds": 0.25947564499983855,
+      "baseline_rss_kib": 22900,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        }
+      ],
+      "name": "operation_33554431",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 38108
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.20178863000001002,
+        0.19501425999987987,
+        0.1821868919996632,
+        0.1783921559999726,
+        0.17717929799982812
+      ],
+      "p95_seconds": 0.20178863000001002,
+      "baseline_rss_kib": 22900,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        }
+      ],
+      "name": "operation_33554432",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 37964
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.1906965259986464,
+        0.17802208099965355,
+        0.18134572900089552,
+        0.1845643659999041,
+        0.18284300100094697
+      ],
+      "p95_seconds": 0.1906965259986464,
+      "baseline_rss_kib": 22900,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        }
+      ],
+      "name": "operation_33554433",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 38172
+    }
+  ],
+  "lexical_boundaries": [
+    {
+      "path_bytes": 4095,
+      "accepted_by_outer_lexical_guard": true
+    },
+    {
+      "path_bytes": 4096,
+      "accepted_by_outer_lexical_guard": true
+    },
+    {
+      "path_bytes": 4097,
+      "accepted_by_outer_lexical_guard": false
+    }
+  ],
+  "memory_method": "VmHWM per forked workload; includes runtime, fixture setup, snapshots and repeated operations; not an allocation-only delta",
+  "p95_method": "nearest rank over five samples; small descriptive sample, not an SLA",
+  "rails_loaded": false,
+  "database_loaded": false
+}

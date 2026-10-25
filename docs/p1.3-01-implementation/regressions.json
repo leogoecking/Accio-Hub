@@ -1,0 +1,115 @@
+{
+  "utc": "2026-10-25T18:26:50.873184+00:00",
+  "scope": "new private synthetic database, explicit ACCIO_DATABASE_PATH; no existing database read or migrated",
+  "results": [
+    {
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "db:schema:load"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "test"
+      ],
+      "exit_code": 0,
+      "stdout": "Run options: --seed 33514\n\n# Running:\n\n.....................................................................................................................................................................................................................................................................................\n\nFinished in 72.648292s, 3.8129 runs/s, 57.5650 assertions/s.\n277 runs, 4182 assertions, 0 failures, 0 errors, 0 skips\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "bundle",
+        "exec",
+        "ruby",
+        "script/transversal-sql-check.rb"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "script/transversal-sql-check.rb:9:in `fetch': key not found: \"ACCIO_QA_EVIDENCE\" (KeyError)\n\tfrom script/transversal-sql-check.rb:9:in `<main>'\n"
+    },
+    {
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "zeitwerk:check"
+      ],
+      "exit_code": 0,
+      "stdout": "Hold on, I am eager loading the application.\nAll is good!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "bundle",
+        "exec",
+        "brakeman",
+        "--no-pager",
+        "--exit-on-warn",
+        "--exit-on-error"
+      ],
+      "exit_code": 0,
+      "stdout": "\n== Brakeman Report ==\n\nApplication Path: /home/goecking/Projects/Accio-HUB/rails\nRails Version: 8.1.3.1\nBrakeman Version: 8.1.0\nScan Date: 2026-10-25 15:28:07 -0300\nDuration: 1.25961852 seconds\nChecks Run: BasicAuth, BasicAuthTimingAttack, CSRFTokenForgeryCVE, ContentTag, CookieSerialization, CreateWith, CrossSiteScripting, DefaultRoutes, Deserialize, DetailedExceptions, DigestDoS, DynamicFinders, EOLRails, EOLRuby, EscapeFunction, Evaluation, Execute, FileAccess, FileDisclosure, FilterSkipping, ForgerySetting, HeaderDoS, I18nXSS, JRubyXML, JSONEncoding, JSONEntityEscape, JSONParsing, LinkTo, LinkToHref, MailTo, MassAssignment, MimeTypeDoS, ModelAttrAccessible, ModelAttributes, ModelSerialize, NestedAttributes, NestedAttributesBypass, NumberToCurrency, PageCachingCVE, Pathname, PermitAttributes, QuoteTableName, Ransack, Redirect, RegexDoS, Render, RenderDoS, RenderInline, RenderRCE, ResponseSplitting, RouteDoS, SQL, SQLCVEs, SSLVerify, SafeBufferManipulation, SanitizeConfigCve, SanitizeMethods, SelectTag, SelectVulnerability, Send, SendFile, SessionManipulation, SessionSettings, SimpleFormat, SingleQuotes, SkipBeforeFilter, SprocketsPathTraversal, StripTags, SymbolDoSCVE, TemplateInjection, TranslateBug, UnsafeReflection, UnsafeReflectionMethods, ValidationRegex, VerbConfusion, WeakRSAKey, WithoutProtection, XMLDoS, YAMLParsing\n\n== Overview ==\n\nControllers: 7\nModels: 12\nTemplates: 39\nErrors: 0\nSecurity Warnings: 0\n\n== Warning Types ==\n\n\nNo warnings found\n\n",
+      "stderr": "Brakeman v8.1.0\nLoading scanner...\nScanning /home/goecking/Projects/Accio-HUB/rails\nProcessing gems...\nProcessing configuration...\nFinding files...\nParsing files...\nDetecting file types...\nProcessing initializers...\nProcessing libraries...\nProcessing routes...\nProcessing templates...\nProcessing data flow...\nProcessing models...\nProcessing controllers...\nProcessing data flow...\nIndexing method calls...\nRunning 79 checks in parallel...\nGenerating report...\n"
+    },
+    {
+      "command": [
+        "bundle",
+        "exec",
+        "rubocop",
+        "--format",
+        "simple"
+      ],
+      "exit_code": 0,
+      "stdout": "\n144 files inspected, no offenses detected\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "script/focus-client-check.mjs"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"passed\": 11,\n  \"results\": [\n    {\n      \"name\": \"Delayed GET cannot replace newer snapshot\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Lower version of same UID cannot regress even on a later response\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Lost response retains identical command ID payload URL and method; replay uses current\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Command invalidates outstanding read; same client serializes writes\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Definitive rejection releases intent; 401 and 503 preserve the identical retry\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Unicode and legacy route UIDs preserve UTF8 without changing stored ID\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Successful reconnection clears a read failure without dropping a pending command\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Subscriptions disconnect without duplicate notifications\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Accent contrast preserves default ink and adapts purple and middle gray\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Monotonic interpolation is visual only and stops at zero or unconfirmed/hidden state\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Authenticated transport has CSRF no-store timeout cleanup and retains error status\",\n      \"result\": \"PASS\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "script/focus-recovery-check.mjs"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"passed\": 15,\n  \"results\": [\n    {\n      \"name\": \"Partial candidate accepts then resumes with two owned receipts and fixed versions\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Integral candidate awaits explicit completion without resume or complete\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Invalid or stale candidate cannot be accepted\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Lost resolve response and similar GET do not authorize resume; explicit replay does\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Lost resume response replays only that same resume and never repeats resolve\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"503 or timeout before resume retains accepted checkpoint and identical envelope\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Archived project or completed task rejects resume but keeps accepted time\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Another tab changes version after own resolve: never borrow its version to resume\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Another tab cancels or replaces session after own resolve: no continuation\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"GET failure after own resolve does not start work on an unconfirmed snapshot\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"A rejected resolve cannot be inferred from matching state from another operation\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Wrong receipt ID command ID version decision or result rejects acknowledgement and preserves retry\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Repeated activation while busy creates only one resolution and one resume\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Reload loses continuation and GET never automatically retries or resumes\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Historical resume replay cannot regress current state or send another command\",\n      \"result\": \"PASS\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "script/focus-preset-check.mjs"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"passed\": 15,\n  \"results\": [\n    {\n      \"name\": \"A: Normal HTTP success confirms requested preset and changes only its field\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"B/E: Lost response before write reconciles different value without automatic reapply\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"B/D: Lost response after commit confirms equal current value without claiming authorship\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"C/F: Unavailable GET preserves original envelope; explicit retry gets 409 then confirms equal value\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"409 plus failed reconciliation retains exact obsolete version until a read succeeds\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"G: Other tab saves same requested value; 409 cannot prove original authorship\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"G: Concurrent theme Dock widgets or filters are never resent by preset reconciliation\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Timeout and 503 preserve envelope while GET fails; no automatic retry on reads\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"HTTP success followed by failed GET distinguishes saved acknowledgement from unavailable current state\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Success then concurrent change reports both acknowledged request and different current preset\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Only 25 and 45 presets are sent; occupied sessions remain unchanged and reject PATCH\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Reload loses pending envelope and GET does not create or retry PATCH\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Identical shared coordinator serializes duplicate activations and explicit retry\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Incompatible HTTP success cannot masquerade as acknowledged write\",\n      \"result\": \"PASS\"\n    },\n    {\n      \"name\": \"Preset acknowledgement never updates detached missing pending or dirty appearance editors\",\n      \"result\": \"PASS\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "../prototype/tests/knowledge.test.mjs",
+        "../prototype/tests/project-space.test.mjs",
+        "../prototype/tests/projects.test.mjs",
+        "../prototype/tests/state.test.mjs"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2714 migra\u00e7\u00e3o legacy-p03: preserva conte\u00fado, IDs/prefer\u00eancias, origem e reaplica\u00e7\u00e3o (4.892992ms)\n\u2714 migra\u00e7\u00e3o schema-1: preserva conte\u00fado, IDs/prefer\u00eancias, origem e reaplica\u00e7\u00e3o (0.908994ms)\n\u2714 migra\u00e7\u00e3o schema-2: preserva conte\u00fado, IDs/prefer\u00eancias, origem e reaplica\u00e7\u00e3o (1.792436ms)\n\u2714 migra\u00e7\u00e3o schema-3: preserva conte\u00fado, IDs/prefer\u00eancias, origem e reaplica\u00e7\u00e3o (0.761971ms)\n\u2714 metadados extens\u00edveis existentes preservados; extens\u00e3o incompat\u00edvel n\u00e3o \u00e9 descartada (1.164607ms)\n\u2714 falha de backup e de autosave preservam origem; retentativa salva conte\u00fado exato (4.78538ms)\n\u2714 mudan\u00e7a em outra aba impede sobrescrita e mant\u00e9m edi\u00e7\u00e3o na sess\u00e3o antiga (0.782651ms)\n\u2714 pastas aninhadas, mover/renomear mant\u00eam IDs e notas; ciclos e irm\u00e3os duplicados rejeitados (1.703595ms)\n\u2714 busca t\u00edtulo/corpo/tags, favoritos, cole\u00e7\u00f5es e filtro de projeto combinado (0.997134ms)\n\u2714 nota compartilhada e renomea\u00e7\u00e3o preservam ID, extras, projetos e corpo original (0.66376ms)\n\u2714 wiki links preparados por ID resistem a renomea\u00e7\u00e3o; ambiguidades ficam sem destino (1.818016ms)\n\u2714 valida\u00e7\u00e3o de nota \u00e9 at\u00f4mica: projeto/pasta inexistente ou cole\u00e7\u00e3o inv\u00e1lida n\u00e3o alteram nada (0.902683ms)\n\u2714 Markdown: t\u00edtulos, listas, cita\u00e7\u00e3o, links e c\u00f3digo; nunca modifica fonte (0.564318ms)\n\u2714 Markdown adversarial: HTML/scripts, eventos, entidades e protocolos n\u00e3o viram conte\u00fado execut\u00e1vel (0.385145ms)\n\u2714 wiki link preparado quando alvo \u00e9 criado no projeto mant\u00e9m ID ap\u00f3s renomea\u00e7\u00e3o contextual (1.225528ms)\n\u2714 edi\u00e7\u00e3o de corpo n\u00e3o renomeia nem bloqueia t\u00edtulos legados fora do limite do novo formul\u00e1rio (2.396405ms)\n\u2714 schema 2 real: migra\u00e7\u00e3o pura adiciona apenas refer\u00eancias; origem copiada exatamente e reabertura idempotente (3.508222ms)\n\u2714 falha no backup de schema 2 impede substitui\u00e7\u00e3o; schema 2 inv\u00e1lido n\u00e3o \u00e9 promovido (0.743751ms)\n\u2714 campo references pr\u00e9-existente \u00e9 preservado se compat\u00edvel; conte\u00fado desconhecido protege a origem (0.911903ms)\n\u2714 rotas usam IDs codificados e aceitam somente abas conhecidas; malformadas n\u00e3o quebram app (0.336855ms)\n\u2714 tarefas contextualizadas: edi\u00e7\u00e3o preserva ID, v\u00ednculo e extras, sem alterar outras tarefas (1.805837ms)\n\u2714 notas compartilhadas mant\u00eam \u00fanico registro e Markdown exato; edi\u00e7\u00e3o propaga e atualiza ambas atividades (2.438285ms)\n\u2714 vincular nota existente funciona sem c\u00f3pia; recentidade considera edi\u00e7\u00e3o global ou contextual (0.318495ms)\n\u2714 refer\u00eancias/materiais t\u00eam IDs est\u00e1veis e persistem; URLs execut\u00e1veis/credenciais e dados inv\u00e1lidos n\u00e3o mutam estado (1.605173ms)\n\u2714 renomear/arquivar/restaurar preserva todas cole\u00e7\u00f5es e rejeita escrita no espa\u00e7o arquivado (3.743984ms)\n\u2714 projeto inexistente, v\u00ednculos inv\u00e1lidos, prioridade e t\u00edtulo inv\u00e1lidos n\u00e3o causam muta\u00e7\u00e3o parcial (1.002595ms)\n\u2714 schema 1 real: preserva IDs, conte\u00fado, extras, prefer\u00eancias e backup anterior (3.802996ms)\n\u2714 backup de schema 1 obrigat\u00f3rio antes de qualquer altera\u00e7\u00e3o (0.627329ms)\n\u2714 cria\u00e7\u00e3o \u00fanica com ID persistente, cor, \u00edcone e datas; evita colis\u00f5es (2.173572ms)\n\u2714 duplica\u00e7\u00e3o acidental \u00e9 rejeitada antes de gerar ID; inclusive nome arquivado (1.015455ms)\n\u2714 edi\u00e7\u00e3o renomeia sem romper tarefas/notas, mant\u00e9m extras e n\u00e3o duplica registros (0.945524ms)\n\u2714 arquivar/restaurar \u00e9 idempotente, preserva conte\u00fado e retorna ao status pausado (0.796232ms)\n\u2714 favoritos/status/cores/prefer\u00eancias persistem e sele\u00e7\u00e3o n\u00e3o altera a ordem original (1.017355ms)\n\u2714 pesquisa nome/descri\u00e7\u00e3o sem acentos, filtros independentes e ordena\u00e7\u00e3o recente (13.999166ms)\n\u2714 atividade considera v\u00ednculos por ID, favoritismo n\u00e3o inventa atividade (0.739981ms)\n\u2714 biblioteca vazia permanece vazia at\u00e9 cria\u00e7\u00e3o expl\u00edcita (0.768411ms)\n\u2714 campos inv\u00e1lidos n\u00e3o causam muta\u00e7\u00e3o parcial (1.925839ms)\n\u2714 schema 4 inv\u00e1lido/futuro \u00e9 protegido sem sobrescrita (3.136016ms)\n\u2714 sem dados: grava schema 4 com exemplos apenas na primeira inicializa\u00e7\u00e3o e IDs persistentes (4.823931ms)\n\u2714 P0.3: preserva conte\u00fado, IDs, prefer\u00eancias, campos extras e backup byte a byte (0.961394ms)\n\u2714 migra\u00e7\u00e3o pura e repetida: nenhum ID/registo/backup adicional (1.537373ms)\n\u2714 renomear/reordenar projetos preserva tarefa, nota e sele\u00e7\u00e3o vinculadas pelo ID (0.719231ms)\n\u2714 legado incompleto: IDs ausentes/duplicados corrigidos, cole\u00e7\u00f5es ausentes vazias, sem novos exemplos (4.600577ms)\n\u2714 gera\u00e7\u00e3o de IDs reserva IDs de registros posteriores e distingue IDs DOM por valor (0.395126ms)\n\u2714 notas aceitam m\u00faltiplos v\u00ednculos; IDs \u00f3rf\u00e3os s\u00e3o recuperados sem mudar o ID (0.416356ms)\n\u2714 Pessoal \u00e9 aus\u00eancia de v\u00ednculo, salvo quando existe um projeto expl\u00edcito com esse nome (0.434436ms)\n\u2714 chave mais antiga preservada; fallback somente para cole\u00e7\u00f5es ausentes da P0.3 (0.760052ms)\n\u2714 dados inv\u00e1lidos/desconhecidos protegidos: {inv\u00e1lido (0.68388ms)\n\u2714 dados inv\u00e1lidos/desconhecidos protegidos: null (0.302885ms)\n\u2714 dados inv\u00e1lidos/desconhecidos protegidos: [] (0.226004ms)\n\u2714 dados inv\u00e1lidos/desconhecidos protegidos: {\"schemaVersion\":99,\"tasks\":[]} (0.263004ms)\n\u2714 dados inv\u00e1lidos/desconhecidos protegidos: {\"schemaVersion\":0} (0.229963ms)\n\u2714 dados inv\u00e1lidos/desconhecidos protegidos: {\"schemaVersion\":\"1\"} (0.265144ms)\n\u2714 dados inv\u00e1lidos/desconhecidos protegidos: {\"unknown\":\"opaque\"} (0.316845ms)\n\u2714 dados inv\u00e1lidos/desconhecidos protegidos: {\"tasks\":\"texto\"} (0.368255ms)\n\u2714 dados inv\u00e1lidos/desconhecidos protegidos: {\"notes\":[{\"body\":123}]} (0.819142ms)\n\u2714 schema atual estruturalmente inv\u00e1lido tamb\u00e9m \u00e9 preservado (0.754932ms)\n\u2714 erro de acesso ao localStorage (getter/leitura) bloqueia qualquer grava\u00e7\u00e3o (0.67052ms)\n\u2714 falha ao criar backup impede sobrescrita da origem; repeti\u00e7\u00e3o grava mesmos IDs (1.505142ms)\n\u2714 falha ap\u00f3s backup preserva ambos os JSONs; grava\u00e7\u00e3o pode ser repetida sem duplicar backup (0.550559ms)\n\u2714 backup anterior diferente nunca \u00e9 sobrescrito (0.551688ms)\n\u2714 falha de grava\u00e7\u00e3o normal mant\u00e9m estado salvo e informa estado s\u00f3 em mem\u00f3ria; recuperar permite salvar (0.439206ms)\n\u2714 outra aba/vers\u00e3o futura bloqueia sess\u00e3o antiga e preserva o valor novo (0.322295ms)\n\u2714 widgets desconhecidos e cole\u00e7\u00f5es vazias n\u00e3o s\u00e3o eliminados nem repovoados (0.267994ms)\n\u2714 nomes amb\u00edguos n\u00e3o ganham v\u00ednculos arbitr\u00e1rios (0.226774ms)\n\u2714 estado transit\u00f3rio da UI n\u00e3o entra na persist\u00eancia, sem afetar prefer\u00eancias (0.335375ms)\n\u2139 tests 66\n\u2139 suites 0\n\u2139 pass 66\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 112.087273\n",
+      "stderr": ""
+    }
+  ]
+}

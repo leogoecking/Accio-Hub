@@ -1,0 +1,113 @@
+{
+  "purpose": "primitive feasibility only; no Vault service approval",
+  "ruby": "ruby 3.3.6 (2024-11-05 revision 75015d4c1f) [x86_64-linux]",
+  "platform": "x86_64-linux",
+  "privileged": false,
+  "cases": [
+    {
+      "case": "public_api_surface",
+      "result": "observed_as_expected",
+      "seconds": 0.0003299750005680835
+    },
+    {
+      "case": "final_nofollow_rejects_symlink",
+      "result": "observed_as_expected",
+      "seconds": 0.00023094299922377104
+    },
+    {
+      "case": "negative_control_nofollow_does_not_protect_parent",
+      "result": "observed_as_expected",
+      "seconds": 0.0018308150001757895
+    },
+    {
+      "case": "openat_child_identity_and_cloexec",
+      "result": "observed_as_expected",
+      "seconds": 0.00028793399997084634
+    },
+    {
+      "case": "pin_types_without_reading_fifo_socket_symlink_directory",
+      "result": "observed_as_expected",
+      "seconds": 0.00032948399984888965
+    },
+    {
+      "case": "openat_directory_rejects_symlink_parent",
+      "result": "observed_as_expected",
+      "seconds": 0.00021257299977150979
+    },
+    {
+      "case": "anchored_parent_survives_name_replacement",
+      "result": "observed_as_expected",
+      "seconds": 0.0016234629993050476
+    },
+    {
+      "case": "root_replacement_detectable_by_identity",
+      "result": "observed_as_expected",
+      "seconds": 0.001517290999800025
+    },
+    {
+      "case": "limitation_open_directory_can_be_moved_outside_root",
+      "result": "observed_as_expected",
+      "seconds": 0.0017235230006917845
+    },
+    {
+      "case": "hardlink_visible_in_fstat_not_realpath",
+      "result": "observed_as_expected",
+      "seconds": 0.0002618139997139224
+    },
+    {
+      "case": "late_hardlink_visible_on_pinned_inode",
+      "result": "observed_as_expected",
+      "seconds": 0.0017086640000343323
+    },
+    {
+      "case": "proc_reopen_uses_pinned_regular_inode_after_replace",
+      "result": "observed_as_expected",
+      "seconds": 0.0016992329992717714
+    },
+    {
+      "case": "nofollow_nonblock_fifo_swap_does_not_wait_for_writer",
+      "result": "observed_as_expected",
+      "seconds": 0.0016425029998572427
+    },
+    {
+      "case": "lstat_fstat_detect_target_replacement",
+      "result": "observed_as_expected",
+      "seconds": 0.0017251830004170188
+    },
+    {
+      "case": "in_place_change_observed_between_chunks",
+      "result": "observed_as_expected",
+      "seconds": 0.0015754220003145747
+    },
+    {
+      "case": "dir_for_fd_enumerates_without_cwd_change",
+      "result": "observed_as_expected",
+      "seconds": 0.0002566739995017997
+    },
+    {
+      "case": "fchdir_cwd_visible_to_other_threads",
+      "result": "observed_as_expected",
+      "seconds": 0.00031846399997448316
+    },
+    {
+      "case": "read_preserves_bytes_mode_mtime_ctime_names_identity",
+      "result": "observed_as_expected",
+      "seconds": 0.0009447630000067875
+    },
+    {
+      "case": "unreadable_regular_file_cannot_be_reopened_for_content",
+      "result": "observed_as_expected",
+      "seconds": 0.00030934400001569884
+    },
+    {
+      "case": "fiddle_already_installed_native_bridge_available",
+      "result": "observed_as_expected",
+      "seconds": 0.0017337740000584745
+    }
+  ],
+  "count": 20,
+  "skips": 0,
+  "seconds": 0.020326610000665823,
+  "rails_loaded": false,
+  "database_loaded": false
+}
