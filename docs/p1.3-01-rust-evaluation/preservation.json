@@ -1,0 +1,38 @@
+{
+  "purpose": "Integrity check of the checkout as found at the start of this evaluation; not a P1.2 functional regression run",
+  "date": "2026-10-25",
+  "branch_before": "p1.3-vault",
+  "branch_after": "p1.3-vault",
+  "head_before": "56a1189c7bdaa800cb44168a51edc3292cc95a76",
+  "head_after": "56a1189c7bdaa800cb44168a51edc3292cc95a76",
+  "scope": "git ls-files -co --exclude-standard: preexisting regular tracked and nonignored untracked files; ignored runtime/private files not inventoried",
+  "preexisting_file_count": 4125,
+  "changed_or_missing_preexisting_files": [],
+  "all_preexisting_hashes_equal": true,
+  "selected_preexisting_sha256": {
+    "AGENTS.md": "2393b0527a999472d7d3f69a8d09dbb210bdc52b0561732f3f451c537a12b8ac",
+    "docs/P1.3_01_IMPLEMENTATION_PLAN.md": "bf3ec3eba5c9b6e98a6955b5a2fa96f2e89f0a351e92aec74743a05f262749ee",
+    "docs/P1.3_01_VERIFICATION.md": "8bd66bd25f0ccbf867442c48fb3e5a7a1aa01decfeb750f7c313ece82d1ae5af",
+    "docs/P1.3_01_PRIMITIVES.json": "373f01acec04f89c52ad9bcfe6c4276104defbb1be5083a2ad6a934875fc998c",
+    "docs/P1.3_01_GIT_PRESERVATION.json": "9e1bd59720c35980284c5e015f60b69c862adbb87877eaa5710b22bf632e6b10",
+    "rails/script/vault-filesystem-probe.rb": "3c2450de7f6e80c22b6974adb33b84340d49aa4fdf7bf80c45be4dba08dff2cb",
+    "rails/Gemfile": "d8e53e698c606c03646cdf2068649f4e3b6b6b23533479283c13f37735bba6ef",
+    "rails/Gemfile.lock": "08f98bc32640bbc5bf1446c24381130a8f21fd573854b3ccdc6d019bb6ee8f3f",
+    ".github/workflows/ci.yml": "3ec5b6d822cc37a8caf7caa845447a8406143bdfc1fa1cc82d3fd53e67a1f570",
+    "rails/db/schema.rb": "3e5f217b645754edff66aa21a9b8fca42491869af66cedaa33b5a5572dfa662a",
+    "rails/config/sqlite_backup_contract.json": "cce26197bfa3afec45eaf90d978fc1a358d85dc520c73361f895bfdce43b9dd3"
+  },
+  "added_files": [
+    "docs/P1.3_01_RUST_EVALUATION.md",
+    "docs/p1.3-01-rust-evaluation/kernel_probe.rb",
+    "docs/p1.3-01-rust-evaluation/kernel_results.json",
+    "docs/p1.3-01-rust-evaluation/preservation.json"
+  ],
+  "added_artifact_sha256_excluding_this_summary": {
+    "docs/P1.3_01_RUST_EVALUATION.md": "e7e7ee19a475146e1f5d01f3a1b0437bbf0a8f86f0297fc9960287ef7ab3128b",
+    "docs/p1.3-01-rust-evaluation/kernel_probe.rb": "df0aab168c8918ea7033bea5d3bb19f0c7888742837ddbb3820a4434029bcb8d",
+    "docs/p1.3-01-rust-evaluation/kernel_results.json": "7c969af6636efb78b4ed8cdb903263e0af6f9c27ec16130f80605b9e15edad79"
+  },
+  "staged_changes": false,
+  "note": "AGENTS.md was already modified and nine files were already untracked. Their bytes were preserved. No branch, worktree, commit, push, merge, dependency installation or Rails/database boot performed by this evaluation."
+}

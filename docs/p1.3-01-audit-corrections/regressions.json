@@ -1,0 +1,78 @@
+{
+  "utc": "2026-10-25T20:14:54.908300+00:00",
+  "scope": "new private synthetic database and evidence paths; runtime secret not recorded; no existing database accessed",
+  "results": [
+    {
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "db:schema:load"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "test"
+      ],
+      "exit_code": 0,
+      "stdout": "Run options: --seed 25175\n\n# Running:\n\n.....................................................................................................................................................................................................................................................................................................\n\nFinished in 67.693569s, 4.3283 runs/s, 66.4317 assertions/s.\n293 runs, 4497 assertions, 0 failures, 0 errors, 0 skips\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "bundle",
+        "exec",
+        "ruby",
+        "script/transversal-sql-check.rb"
+      ],
+      "exit_code": 0,
+      "stdout": "Two new synthetic databases: migrations/schema identical; 25 triggers, 36 indexes, FKs, WAL/FULL and SQL tests approved.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "bundle",
+        "exec",
+        "rubocop",
+        "--format",
+        "simple"
+      ],
+      "exit_code": 0,
+      "stdout": "\n145 files inspected, no offenses detected\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "bundle",
+        "exec",
+        "brakeman",
+        "--no-pager",
+        "--exit-on-warn",
+        "--exit-on-error"
+      ],
+      "exit_code": 0,
+      "stdout": "\n== Brakeman Report ==\n\nApplication Path: /home/goecking/Projects/Accio-HUB/rails\nRails Version: 8.1.3.1\nBrakeman Version: 8.1.0\nScan Date: 2026-10-25 17:16:13 -0300\nDuration: 1.169906781 seconds\nChecks Run: BasicAuth, BasicAuthTimingAttack, CSRFTokenForgeryCVE, ContentTag, CookieSerialization, CreateWith, CrossSiteScripting, DefaultRoutes, Deserialize, DetailedExceptions, DigestDoS, DynamicFinders, EOLRails, EOLRuby, EscapeFunction, Evaluation, Execute, FileAccess, FileDisclosure, FilterSkipping, ForgerySetting, HeaderDoS, I18nXSS, JRubyXML, JSONEncoding, JSONEntityEscape, JSONParsing, LinkTo, LinkToHref, MailTo, MassAssignment, MimeTypeDoS, ModelAttrAccessible, ModelAttributes, ModelSerialize, NestedAttributes, NestedAttributesBypass, NumberToCurrency, PageCachingCVE, Pathname, PermitAttributes, QuoteTableName, Ransack, Redirect, RegexDoS, Render, RenderDoS, RenderInline, RenderRCE, ResponseSplitting, RouteDoS, SQL, SQLCVEs, SSLVerify, SafeBufferManipulation, SanitizeConfigCve, SanitizeMethods, SelectTag, SelectVulnerability, Send, SendFile, SessionManipulation, SessionSettings, SimpleFormat, SingleQuotes, SkipBeforeFilter, SprocketsPathTraversal, StripTags, SymbolDoSCVE, TemplateInjection, TranslateBug, UnsafeReflection, UnsafeReflectionMethods, ValidationRegex, VerbConfusion, WeakRSAKey, WithoutProtection, XMLDoS, YAMLParsing\n\n== Overview ==\n\nControllers: 7\nModels: 12\nTemplates: 39\nErrors: 0\nSecurity Warnings: 0\n\n== Warning Types ==\n\n\nNo warnings found\n\n",
+      "stderr": "Brakeman v8.1.0\nLoading scanner...\nScanning /home/goecking/Projects/Accio-HUB/rails\nProcessing gems...\nProcessing configuration...\nFinding files...\nParsing files...\nDetecting file types...\nProcessing initializers...\nProcessing libraries...\nProcessing routes...\nProcessing templates...\nProcessing data flow...\nProcessing models...\nProcessing controllers...\nProcessing data flow...\nIndexing method calls...\nRunning 79 checks in parallel...\nGenerating report...\n"
+    },
+    {
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "zeitwerk:check"
+      ],
+      "exit_code": 0,
+      "stdout": "Hold on, I am eager loading the application.\nAll is good!\n",
+      "stderr": ""
+    }
+  ],
+  "comparison.json": "{\n  \"exact_objects_sql_and_semantic_fk_and_pragmas_match\": true,\n  \"fk_internal_id_order_differs\": true,\n  \"triggers\": 25,\n  \"indexes\": 36,\n  \"independent_migrations_and_schema_load\": true,\n  \"integrity\": \"ok\"\n}\n",
+  "migrated-tests.log": "Run options: --seed 47239\n\n# Running:\n\n.....................\n\nFinished in 0.798139s, 26.3112 runs/s, 304.4582 assertions/s.\n21 runs, 243 assertions, 0 failures, 0 errors, 0 skips\n",
+  "loaded-tests.log": "Run options: --seed 49949\n\n# Running:\n\n.....................\n\nFinished in 0.842976s, 24.9117 runs/s, 288.2644 assertions/s.\n21 runs, 243 assertions, 0 failures, 0 errors, 0 skips\n"
+}

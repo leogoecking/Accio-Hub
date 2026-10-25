@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-25",
+  "purpose": "Integrity of ACH-VAULT-01/02/03 corrections; human acceptance still pending",
+  "branch_before": "p1.3-vault",
+  "branch_after": "p1.3-vault",
+  "head_before": "56a1189c7bdaa800cb44168a51edc3292cc95a76",
+  "head_after": "56a1189c7bdaa800cb44168a51edc3292cc95a76",
+  "scope": "Preexisting regular tracked and nonignored untracked files from git ls-files -co --exclude-standard; ignored runtime/private files not inventoried",
+  "preexisting_file_count": 4156,
+  "unchanged_preexisting_file_count": 4152,
+  "intentionally_changed": [
+    {
+      "path": "rails/app/services/vault/configuration.rb",
+      "before_sha256": "7abc928c887090285e6a4cfc702a0816d0a529855ad35550d4152c2d58a2739c",
+      "after_sha256": "135978409d04d79580a56e866d39643fa9b3ca9a2bdb8afca29396d16fc041a4"
+    },
+    {
+      "path": "rails/app/services/vault/inventory.rb",
+      "before_sha256": "acad1fbabe9ebe9b2f5853c5063b17b1de515dcd567fd24199c093588a93372e",
+      "after_sha256": "d401c64890cf4c2ba075d6564f360ca4aad9887bc06e01b4502d53508ba11452"
+    },
+    {
+      "path": "rails/app/services/vault/result.rb",
+      "before_sha256": "6c8a6a405aa318220301bf70012a9336ad21fe3f705858644decaac1c0616dc7",
+      "after_sha256": "16385c45c44c8984d19f24f5452f7cf06e4b109f5483ca1b85c1878dbfb32521"
+    },
+    {
+      "path": "rails/app/services/vault/root.rb",
+      "before_sha256": "39067046eff1f9f4947c6427fb6476b03e1f41627607e26a647665a346b598f9",
+      "after_sha256": "b3b1d0d3a36b99c8f4c429c4d71d55c54e1986147a1d4eaa657734a16ddfb9bb"
+    }
+  ],
+  "selected_unchanged_sha256": {
+    "AGENTS.md": "2393b0527a999472d7d3f69a8d09dbb210bdc52b0561732f3f451c537a12b8ac",
+    "docs/P1.3_01_ANTIGRAVITY_AUDIT.md": "286cbf2e96629593cbe41304d018304a5f7870336bd364cd25470ddc7792891f",
+    "docs/P1.3_01_IMPLEMENTATION_PLAN.md": "bf3ec3eba5c9b6e98a6955b5a2fa96f2e89f0a351e92aec74743a05f262749ee",
+    "docs/P1.3_01_VERIFICATION.md": "3e5d3be91e60b415949df4dd5725566a6984c27390bad1efb3b5dc7ba6088353",
+    "rails/app/services/vault/linux_filesystem.rb": "192a503b3e3cb468cb7ff11ee64c791ede666ca4334818b5f89d7e85a480d748",
+    "rails/app/services/vault/reader.rb": "fbc15222a7bd852b1de024064a3e0fca07965ca1f9362d1cc60e5ea28035cbef",
+    "rails/app/services/vault/path_policy.rb": "ea361d7a463bc80fa27965823bf74654c7fd303644d490be9fb0e73661fdbbb6",
+    "rails/Gemfile": "d8e53e698c606c03646cdf2068649f4e3b6b6b23533479283c13f37735bba6ef",
+    "rails/Gemfile.lock": "08f98bc32640bbc5bf1446c24381130a8f21fd573854b3ccdc6d019bb6ee8f3f",
+    "rails/db/schema.rb": "3e5f217b645754edff66aa21a9b8fca42491869af66cedaa33b5a5572dfa662a",
+    "rails/config/sqlite_backup_contract.json": "cce26197bfa3afec45eaf90d978fc1a358d85dc520c73361f895bfdce43b9dd3",
+    ".github/workflows/ci.yml": "3ec5b6d822cc37a8caf7caa845447a8406143bdfc1fa1cc82d3fd53e67a1f570",
+    "rails/script/vault-readonly-measure.rb": "c93122632be44d4c796cd658f68b86fd95f131cadcebb7ecaaad2b6ec818cf5c"
+  },
+  "added_files": [
+    "docs/P1.3_01_AUDIT_CORRECTIONS.md",
+    "docs/p1.3-01-audit-corrections/before.json",
+    "docs/p1.3-01-audit-corrections/measurements.json",
+    "docs/p1.3-01-audit-corrections/regressions.json",
+    "docs/p1.3-01-audit-corrections/verification.json",
+    "rails/test/services/vault/audit_corrections_test.rb",
+    "docs/p1.3-01-audit-corrections/preservation.json"
+  ],
+  "added_artifact_sha256_excluding_this_summary": {
+    "docs/P1.3_01_AUDIT_CORRECTIONS.md": "be4d85461a3ea1173c677dcfe2739440eb297688576e8225d407cb3a9ec977b7",
+    "docs/p1.3-01-audit-corrections/before.json": "8991d80fe066a958d3946aa38659f3f98f99938970d770d7092d618d7ac62ffb",
+    "docs/p1.3-01-audit-corrections/measurements.json": "ad646ccf309df8cd974c79988f0d886bfca8f5ce7c4d03e2ce49e03953f1d77d",
+    "docs/p1.3-01-audit-corrections/regressions.json": "f22ffb7131491b16ae63b7cecbc405e13668871880d1f9d673df7ea7f09c56d9",
+    "docs/p1.3-01-audit-corrections/verification.json": "5063f8d61a296168174755b453f9425dd9a33cd751ba78d05ad5990c30581d39",
+    "rails/test/services/vault/audit_corrections_test.rb": "32763a6b03fc669fc991d18e2e528793ae7f5cca71f8ee46a14e32b98e491688"
+  },
+  "all_preexisting_tests_unchanged": true,
+  "original_audit_and_all_prior_evidence_unchanged": true,
+  "no_staging_commit_push_merge_tag_or_branch_worktree_creation": true,
+  "note": "AGENTS.md was modified and P1.3 files were untracked before this correction. These preexisting changes have been preserved; only the four authorized service corrections modify preexisting bytes. No dependencies, database schema, CI, interface or native filesystem bindings changed."
+}

@@ -1,0 +1,31 @@
+{
+  "stage": "adapter gate before any consumers were created",
+  "utc": "2026-10-25T18:14:57.795971+00:00",
+  "environment": {
+    "MT_NO_PLUGINS": "1"
+  },
+  "command": [
+    "bundle",
+    "exec",
+    "ruby",
+    "-Itest",
+    "-e",
+    "require \"./test/services/vault/linux_filesystem_test\"; Minitest.after_run { abort \"Rails/database loaded\" if defined?(Rails) || defined?(ActiveRecord) || $LOADED_FEATURES.any? { |p| p.include?(\"sqlite3\") }; puts \"ISOLATION: Rails=false ActiveRecord=false sqlite3=false\" }"
+  ],
+  "exit_code": 0,
+  "stdout": "Run options: --seed 26196\n\n# Running:\n\n............................\n\nFinished in 0.078757s, 355.5255 runs/s, 4824.9885 assertions/s.\n\n28 runs, 380 assertions, 0 failures, 0 errors, 0 skips\nISOLATION: Rails=false ActiveRecord=false sqlite3=false\n",
+  "stderr": "",
+  "lint": "\n3 files inspected, no offenses detected\n",
+  "source_sha256": {
+    "app/services/vault/linux_filesystem.rb": "64774b453e7e630c9222a81b8dce5b3709067a4190d326b4ecc6e3b9bf3beb65",
+    "test/services/vault/linux_filesystem_test.rb": "8e08008c9f8052a0bd037b08587ac987b8918330ff3aca08a74641f70004e1b0",
+    "test/support/vault_adapter_test_helper.rb": "2fc7175ac9f544d8cc0ab391f0d1dcc819907b13adf781f0ec6d72deff4851b6"
+  },
+  "technical_decision": "pass within documented Linux/local threat model; not independent audit or personal data approval",
+  "unexecuted": [
+    "real device-node IO",
+    "real mount injection",
+    "Windows",
+    "universal containment after the last revalidation"
+  ]
+}

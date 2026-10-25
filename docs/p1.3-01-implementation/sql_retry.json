@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-25T18:30:16.052914+00:00",
+  "purpose": "retry of existing SQL checker with its required ACCIO_QA_EVIDENCE; original missing-variable failure remains in regressions.json",
+  "command": [
+    "bundle",
+    "exec",
+    "ruby",
+    "script/transversal-sql-check.rb"
+  ],
+  "exit_code": 0,
+  "stdout": "Two new synthetic databases: migrations/schema identical; 25 triggers, 36 indexes, FKs, WAL/FULL and SQL tests approved.\n",
+  "stderr": "",
+  "comparison.json": "{\n  \"exact_objects_sql_and_semantic_fk_and_pragmas_match\": true,\n  \"fk_internal_id_order_differs\": true,\n  \"triggers\": 25,\n  \"indexes\": 36,\n  \"independent_migrations_and_schema_load\": true,\n  \"integrity\": \"ok\"\n}\n",
+  "migrated-tests.log": "Run options: --seed 21197\n\n# Running:\n\n.....................\n\nFinished in 0.909186s, 23.0976 runs/s, 267.2721 assertions/s.\n21 runs, 243 assertions, 0 failures, 0 errors, 0 skips\n",
+  "loaded-tests.log": "Run options: --seed 2816\n\n# Running:\n\n.....................\n\nFinished in 0.902826s, 23.2603 runs/s, 269.1550 assertions/s.\n21 runs, 243 assertions, 0 failures, 0 errors, 0 skips\n"
+}

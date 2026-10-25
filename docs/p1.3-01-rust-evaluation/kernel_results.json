@@ -1,0 +1,148 @@
+{
+  "purpose": "Kernel / Ruby Fiddle observations; not Rust or Vault validation",
+  "ruby": "ruby 3.3.6 (2024-11-05 revision 75015d4c1f) [x86_64-linux]",
+  "fiddle": "1.1.2",
+  "kernel": "Linux 7.0.0-38-generic",
+  "fixture_location": "fresh private directories inside repository; removed after each case",
+  "resolve_flags": 15,
+  "open_how_bytes": 24,
+  "rust_executed": false,
+  "rails_loaded": false,
+  "database_loaded": false,
+  "count": 11,
+  "skips": 0,
+  "cases": [
+    {
+      "case": "openat2_available_with_all_four_resolve_flags",
+      "result": "observed_as_expected",
+      "descriptor_set_preserved": true,
+      "observed": {
+        "regular": true,
+        "close_on_exec": true,
+        "content_read": false,
+        "open_how_bytes": 24
+      }
+    },
+    {
+      "case": "intermediate_symlink_openat_control_vs_openat2",
+      "result": "observed_as_expected",
+      "descriptor_set_preserved": true,
+      "observed": {
+        "openat_followed_parent_metadata_only": true,
+        "openat2": {
+          "errno": 40,
+          "error": "Errno::ELOOP"
+        },
+        "internal_symlink_blocked": true
+      }
+    },
+    {
+      "case": "escape_and_absolute_path_rejected_by_kernel",
+      "result": "observed_as_expected",
+      "descriptor_set_preserved": true,
+      "observed": {
+        "openat_allows_dotdot": true,
+        "openat2_traversal": {
+          "errno": 18,
+          "error": "Errno::EXDEV"
+        },
+        "openat2_absolute": {
+          "errno": 18,
+          "error": "Errno::EXDEV"
+        }
+      }
+    },
+    {
+      "case": "final_symlink_is_pinned_not_followed_with_opath_nofollow",
+      "result": "observed_as_expected",
+      "descriptor_set_preserved": true,
+      "observed": {
+        "type": "link",
+        "application_must_reject": true,
+        "content_read": false
+      }
+    },
+    {
+      "case": "directory_replacement_after_precheck",
+      "result": "observed_as_expected",
+      "descriptor_set_preserved": true,
+      "observed": {
+        "root_relative_openat2": {
+          "errno": 40,
+          "error": "Errno::ELOOP"
+        },
+        "old_parent_fd_pins_original": true
+      }
+    },
+    {
+      "case": "moved_directory_dirfd_does_not_prove_original_root_membership",
+      "result": "observed_as_expected",
+      "descriptor_set_preserved": true,
+      "observed": {
+        "root_relative": {
+          "errno": 2,
+          "error": "Errno::ENOENT"
+        },
+        "moved_parent_relative_openat2_succeeds": true,
+        "content_read": false
+      }
+    },
+    {
+      "case": "movement_after_open_remains_possible",
+      "result": "observed_as_expected",
+      "descriptor_set_preserved": true,
+      "observed": {
+        "pin_remains_valid_outside": true,
+        "content_read": false,
+        "containment_is_at_resolution": true
+      }
+    },
+    {
+      "case": "fifo_socket_directory_pinned_without_content_open",
+      "result": "observed_as_expected",
+      "descriptor_set_preserved": true,
+      "observed": {
+        "types": [
+          "fifo",
+          "socket",
+          "directory"
+        ],
+        "content_read": false,
+        "device_nodes_not_tested": true
+      }
+    },
+    {
+      "case": "hardlinks_are_allowed_by_openat2_application_must_reject",
+      "result": "observed_as_expected",
+      "descriptor_set_preserved": true,
+      "observed": {
+        "existing_nlink": 2,
+        "late_nlink": 2,
+        "content_read": false
+      }
+    },
+    {
+      "case": "regular_pin_reopen_identity_bytes_and_metadata",
+      "result": "observed_as_expected",
+      "descriptor_set_preserved": true,
+      "observed": {
+        "identity_and_controlled_metadata_preserved": true,
+        "atime_not_restored": true,
+        "trusted_procfs_required": true
+      }
+    },
+    {
+      "case": "errno_and_exception_cleanup_repeated_without_gc",
+      "result": "observed_as_expected",
+      "descriptor_set_preserved": true,
+      "observed": {
+        "iterations": 100,
+        "expected_errors": [
+          "ENOENT",
+          "EINVAL"
+        ],
+        "forced_gc": false
+      }
+    }
+  ]
+}

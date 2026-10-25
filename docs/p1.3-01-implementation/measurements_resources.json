@@ -1,0 +1,1451 @@
+{
+  "purpose": "synthetic read-only measurements; no personal data or Vault release approval",
+  "ruby": "ruby 3.3.6 (2024-11-05 revision 75015d4c1f) [x86_64-linux]",
+  "kernel": "Linux 7.0.0-38-generic x86_64",
+  "repeats": 5,
+  "cases": [
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.012407391999659012,
+        0.013413327000307618,
+        0.014270278999902075,
+        0.009953115999451256,
+        0.010182079000514932
+      ],
+      "p95_seconds": 0.014270278999902075,
+      "baseline_rss_kib": 21280,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        }
+      ],
+      "name": "document_2097151",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 33992,
+      "native_owned_acquisitions": 395,
+      "native_owned_releases": 395,
+      "peak_native_owned_descriptors": 7
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.016122347000418813,
+        0.01325945399912598,
+        0.014501022000331432,
+        0.010846199998923112,
+        0.014862587999232346
+      ],
+      "p95_seconds": 0.016122347000418813,
+      "baseline_rss_kib": 21280,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        }
+      ],
+      "name": "document_2097152",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 36292,
+      "native_owned_acquisitions": 395,
+      "native_owned_releases": 395,
+      "peak_native_owned_descriptors": 7
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.0005901989989069989,
+        0.00018171299961977638,
+        0.00013721200048166793,
+        0.00013714200031245127,
+        0.000131662000057986
+      ],
+      "p95_seconds": 0.0005901989989069989,
+      "baseline_rss_kib": 21280,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        }
+      ],
+      "name": "document_2097153",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 21296,
+      "native_owned_acquisitions": 35,
+      "native_owned_releases": 35,
+      "peak_native_owned_descriptors": 5
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.004808200999832479,
+        0.003897637001500698,
+        0.003854706999845803,
+        0.0033384990001650294,
+        0.005352317999495426
+      ],
+      "p95_seconds": 0.005352317999495426,
+      "baseline_rss_kib": 19240,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        }
+      ],
+      "name": "depth_7",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 21028,
+      "native_owned_acquisitions": 1065,
+      "native_owned_releases": 1065,
+      "peak_native_owned_descriptors": 22
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.0055564920003234874,
+        0.004588837000483181,
+        0.003874017000271124,
+        0.00586498600023333,
+        0.003603363000365789
+      ],
+      "p95_seconds": 0.00586498600023333,
+      "baseline_rss_kib": 19240,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        }
+      ],
+      "name": "depth_8",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 21188,
+      "native_owned_acquisitions": 1305,
+      "native_owned_releases": 1305,
+      "peak_native_owned_descriptors": 24
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.006100379001509282,
+        0.0043786940004793,
+        0.0040107289987645345,
+        0.006532446001074277,
+        0.0036771939994650893
+      ],
+      "p95_seconds": 0.006532446001074277,
+      "baseline_rss_kib": 19244,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        }
+      ],
+      "name": "depth_9",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 21224,
+      "native_owned_acquisitions": 1305,
+      "native_owned_releases": 1305,
+      "peak_native_owned_descriptors": 24
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        1.0929317560003255,
+        1.057616889000201,
+        1.1243940770000336,
+        1.076673578001646,
+        1.140411172000313
+      ],
+      "p95_seconds": 1.140411172000313,
+      "baseline_rss_kib": 40264,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        }
+      ],
+      "name": "entries_9999",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 60164,
+      "native_owned_acquisitions": 300025,
+      "native_owned_releases": 300025,
+      "peak_native_owned_descriptors": 8
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        1.1039268670010642,
+        1.0738372769992566,
+        1.131452020999859,
+        1.1478411520001828,
+        1.0821299580002233
+      ],
+      "p95_seconds": 1.1478411520001828,
+      "baseline_rss_kib": 40324,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        }
+      ],
+      "name": "entries_10000",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 60368,
+      "native_owned_acquisitions": 300055,
+      "native_owned_releases": 300055,
+      "peak_native_owned_descriptors": 8
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        1.078443463999065,
+        1.0666488210008538,
+        1.067395881000266,
+        1.0662275759987097,
+        1.05238571100017
+      ],
+      "p95_seconds": 1.078443463999065,
+      "baseline_rss_kib": 40332,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        }
+      ],
+      "name": "entries_10001",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 60408,
+      "native_owned_acquisitions": 300055,
+      "native_owned_releases": 300055,
+      "peak_native_owned_descriptors": 8
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.1977435600001627,
+        0.17980993699893588,
+        0.18060967800010985,
+        0.17992065799990087,
+        0.1805751979991328
+      ],
+      "p95_seconds": 0.1977435600001627,
+      "baseline_rss_kib": 23328,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        }
+      ],
+      "name": "operation_33554431",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 38016,
+      "native_owned_acquisitions": 6320,
+      "native_owned_releases": 6320,
+      "peak_native_owned_descriptors": 7
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.1938624920003349,
+        0.17602602099941578,
+        0.17603019200032577,
+        0.1789384740004607,
+        0.17656994900062273
+      ],
+      "p95_seconds": 0.1938624920003349,
+      "baseline_rss_kib": 23328,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        }
+      ],
+      "name": "operation_33554432",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 38016,
+      "native_owned_acquisitions": 6320,
+      "native_owned_releases": 6320,
+      "peak_native_owned_descriptors": 7
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.20186190999993414,
+        0.17757824399996025,
+        0.17760436400021717,
+        0.17700728599993454,
+        0.1778006969998387
+      ],
+      "p95_seconds": 0.20186190999993414,
+      "baseline_rss_kib": 23328,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        }
+      ],
+      "name": "operation_33554433",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 38016,
+      "native_owned_acquisitions": 6355,
+      "native_owned_releases": 6355,
+      "peak_native_owned_descriptors": 7
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.0010669460007193265,
+        0.00035704500078281853,
+        0.0003705750004883157,
+        0.0003858560012304224,
+        0.0004249260000506183
+      ],
+      "p95_seconds": 0.0010669460007193265,
+      "baseline_rss_kib": 18964,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "simulated_seconds": 4.999,
+          "bytes_read": 9
+        },
+        {
+          "state": "complete",
+          "simulated_seconds": 4.999,
+          "bytes_read": 9
+        },
+        {
+          "state": "complete",
+          "simulated_seconds": 4.999,
+          "bytes_read": 9
+        },
+        {
+          "state": "complete",
+          "simulated_seconds": 4.999,
+          "bytes_read": 9
+        },
+        {
+          "state": "complete",
+          "simulated_seconds": 4.999,
+          "bytes_read": 9
+        }
+      ],
+      "name": "deadline_4.999",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 19336,
+      "native_owned_acquisitions": 85,
+      "native_owned_releases": 85,
+      "peak_native_owned_descriptors": 7
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.0009190540004055947,
+        0.00022662300034426153,
+        0.00023141299971030094,
+        0.00021739400108344853,
+        0.00022644299860985484
+      ],
+      "p95_seconds": 0.0009190540004055947,
+      "baseline_rss_kib": 18964,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.0,
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.0,
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.0,
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.0,
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.0,
+          "bytes_read": 0
+        }
+      ],
+      "name": "deadline_5.0",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 19268,
+      "native_owned_acquisitions": 50,
+      "native_owned_releases": 50,
+      "peak_native_owned_descriptors": 6
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.000983384999926784,
+        0.00023572300051455386,
+        0.00023206399964692537,
+        0.0003275239996582968,
+        0.00045643699922948144
+      ],
+      "p95_seconds": 0.000983384999926784,
+      "baseline_rss_kib": 18964,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.001,
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.001,
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.001,
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.001,
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.001,
+          "bytes_read": 0
+        }
+      ],
+      "name": "deadline_5.001",
+      "temporary_parent": "/tmp",
+      "process_peak_kib": 19268,
+      "native_owned_acquisitions": 50,
+      "native_owned_releases": 50,
+      "peak_native_owned_descriptors": 6
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.012404541999785579,
+        0.012970750000022235,
+        0.014316430000690161,
+        0.009476368999457918,
+        0.009822113999689464
+      ],
+      "p95_seconds": 0.014316430000690161,
+      "baseline_rss_kib": 21284,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097151
+        }
+      ],
+      "name": "document_2097151",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 34056,
+      "native_owned_acquisitions": 395,
+      "native_owned_releases": 395,
+      "peak_native_owned_descriptors": 7
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.013753500999882817,
+        0.013109282999721472,
+        0.014837386999715818,
+        0.010814748999109725,
+        0.010912800000369316
+      ],
+      "p95_seconds": 0.014837386999715818,
+      "baseline_rss_kib": 21284,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        },
+        {
+          "state": "complete",
+          "bytes_read": 2097152
+        }
+      ],
+      "name": "document_2097152",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 36296,
+      "native_owned_acquisitions": 395,
+      "native_owned_releases": 395,
+      "peak_native_owned_descriptors": 7
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.0006345590009004809,
+        0.0001580320003995439,
+        0.00014968299910833593,
+        0.00013107100130582694,
+        0.0001502129998698365
+      ],
+      "p95_seconds": 0.0006345590009004809,
+      "baseline_rss_kib": 21284,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 0
+        }
+      ],
+      "name": "document_2097153",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 21304,
+      "native_owned_acquisitions": 35,
+      "native_owned_releases": 35,
+      "peak_native_owned_descriptors": 5
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.005410368999946513,
+        0.003813085999354371,
+        0.0032997779999277554,
+        0.003695585000969004,
+        0.007807893998688087
+      ],
+      "p95_seconds": 0.007807893998688087,
+      "baseline_rss_kib": 19244,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 8,
+          "bytes_read": 0
+        }
+      ],
+      "name": "depth_7",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 21128,
+      "native_owned_acquisitions": 1065,
+      "native_owned_releases": 1065,
+      "peak_native_owned_descriptors": 22
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.00562297200121975,
+        0.004655808999814326,
+        0.003953378000005614,
+        0.006056058999092784,
+        0.0036966740008210763
+      ],
+      "p95_seconds": 0.006056058999092784,
+      "baseline_rss_kib": 19248,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "entries": 9,
+          "bytes_read": 0
+        }
+      ],
+      "name": "depth_8",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 21216,
+      "native_owned_acquisitions": 1305,
+      "native_owned_releases": 1305,
+      "peak_native_owned_descriptors": 24
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.006982422000874067,
+        0.004940803000863525,
+        0.00398368800051685,
+        0.007955086999572814,
+        0.0036493129991868045
+      ],
+      "p95_seconds": 0.007955086999572814,
+      "baseline_rss_kib": 19248,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "entries": 9,
+          "bytes_read": 0
+        }
+      ],
+      "name": "depth_9",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 21220,
+      "native_owned_acquisitions": 1305,
+      "native_owned_releases": 1305,
+      "peak_native_owned_descriptors": 24
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        1.073719545000131,
+        1.0826942559997406,
+        1.0566572049992828,
+        1.0566965349989914,
+        1.0603155879998667
+      ],
+      "p95_seconds": 1.0826942559997406,
+      "baseline_rss_kib": 40740,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 9999,
+          "bytes_read": 0
+        }
+      ],
+      "name": "entries_9999",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 61252,
+      "native_owned_acquisitions": 300025,
+      "native_owned_releases": 300025,
+      "peak_native_owned_descriptors": 8
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        1.0546376949987462,
+        1.0330186369992589,
+        1.0555496590004623,
+        1.0575053470001876,
+        1.07143970099969
+      ],
+      "p95_seconds": 1.07143970099969,
+      "baseline_rss_kib": 40484,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "complete",
+          "code": null,
+          "entries": 10000,
+          "bytes_read": 0
+        }
+      ],
+      "name": "entries_10000",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 60976,
+      "native_owned_acquisitions": 300055,
+      "native_owned_releases": 300055,
+      "peak_native_owned_descriptors": 8
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        1.093550094999955,
+        1.0690935170005105,
+        1.0760595989995636,
+        1.0637197679989185,
+        1.073662544000399
+      ],
+      "p95_seconds": 1.093550094999955,
+      "baseline_rss_kib": 40392,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        },
+        {
+          "state": "partial",
+          "code": "entry_limit",
+          "entries": 10000,
+          "bytes_read": 0
+        }
+      ],
+      "name": "entries_10001",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 60892,
+      "native_owned_acquisitions": 300055,
+      "native_owned_releases": 300055,
+      "peak_native_owned_descriptors": 8
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.19336886599921854,
+        0.17886432299928856,
+        0.18101152399867715,
+        0.18000212900005863,
+        0.17999785000029078
+      ],
+      "p95_seconds": 0.19336886599921854,
+      "baseline_rss_kib": 23328,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554431,
+          "requested_bytes": 33554431
+        }
+      ],
+      "name": "operation_33554431",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 39292,
+      "native_owned_acquisitions": 6320,
+      "native_owned_releases": 6320,
+      "peak_native_owned_descriptors": 7
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.199983701999372,
+        0.18190314799903717,
+        0.18710715300039737,
+        0.18105531500077632,
+        0.1804249160013569
+      ],
+      "p95_seconds": 0.199983701999372,
+      "baseline_rss_kib": 23332,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        },
+        {
+          "state": "complete",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554432
+        }
+      ],
+      "name": "operation_33554432",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 36772,
+      "native_owned_acquisitions": 6320,
+      "native_owned_releases": 6320,
+      "peak_native_owned_descriptors": 7
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.1914020359999995,
+        0.18026307400032238,
+        0.17796121900028083,
+        0.1765513890004513,
+        0.17668480099928274
+      ],
+      "p95_seconds": 0.1914020359999995,
+      "baseline_rss_kib": 23332,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        },
+        {
+          "state": "limit_exceeded",
+          "bytes_read": 33554432,
+          "requested_bytes": 33554433
+        }
+      ],
+      "name": "operation_33554433",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 38268,
+      "native_owned_acquisitions": 6355,
+      "native_owned_releases": 6355,
+      "peak_native_owned_descriptors": 7
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.0010628059990267502,
+        0.0004050759998790454,
+        0.00038781600051152054,
+        0.0004046159992867615,
+        0.0012376280010357732
+      ],
+      "p95_seconds": 0.0012376280010357732,
+      "baseline_rss_kib": 18976,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "complete",
+          "simulated_seconds": 4.999,
+          "bytes_read": 9
+        },
+        {
+          "state": "complete",
+          "simulated_seconds": 4.999,
+          "bytes_read": 9
+        },
+        {
+          "state": "complete",
+          "simulated_seconds": 4.999,
+          "bytes_read": 9
+        },
+        {
+          "state": "complete",
+          "simulated_seconds": 4.999,
+          "bytes_read": 9
+        },
+        {
+          "state": "complete",
+          "simulated_seconds": 4.999,
+          "bytes_read": 9
+        }
+      ],
+      "name": "deadline_4.999",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 19348,
+      "native_owned_acquisitions": 85,
+      "native_owned_releases": 85,
+      "peak_native_owned_descriptors": 7
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.0012959989999217214,
+        0.0005143269991094712,
+        0.0004959679990861332,
+        0.00032328399902326055,
+        0.0003089050005655736
+      ],
+      "p95_seconds": 0.0012959989999217214,
+      "baseline_rss_kib": 18976,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.0,
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.0,
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.0,
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.0,
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.0,
+          "bytes_read": 0
+        }
+      ],
+      "name": "deadline_5.0",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 19284,
+      "native_owned_acquisitions": 50,
+      "native_owned_releases": 50,
+      "peak_native_owned_descriptors": 6
+    },
+    {
+      "repeats": 5,
+      "wall_seconds": [
+        0.0009545640004944289,
+        0.0002377439996052999,
+        0.0002472930009389529,
+        0.00021142399964446668,
+        0.00024314300026162528
+      ],
+      "p95_seconds": 0.0009545640004944289,
+      "baseline_rss_kib": 18976,
+      "controlled_tree_preserved": true,
+      "descriptors_preserved": true,
+      "observations": [
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.001,
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.001,
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.001,
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.001,
+          "bytes_read": 0
+        },
+        {
+          "state": "limit_exceeded",
+          "simulated_seconds": 5.001,
+          "bytes_read": 0
+        }
+      ],
+      "name": "deadline_5.001",
+      "temporary_parent": "/var/tmp",
+      "process_peak_kib": 19284,
+      "native_owned_acquisitions": 50,
+      "native_owned_releases": 50,
+      "peak_native_owned_descriptors": 6
+    }
+  ],
+  "lexical_boundaries": [
+    {
+      "path_bytes": 4095,
+      "accepted_by_outer_lexical_guard": true
+    },
+    {
+      "path_bytes": 4096,
+      "accepted_by_outer_lexical_guard": true
+    },
+    {
+      "path_bytes": 4097,
+      "accepted_by_outer_lexical_guard": false
+    }
+  ],
+  "component_boundaries": [
+    {
+      "component_bytes": 254,
+      "accepted": true
+    },
+    {
+      "component_bytes": 255,
+      "accepted": true
+    },
+    {
+      "component_bytes": 256,
+      "accepted": false
+    }
+  ],
+  "descriptor_method": "instrumented Native ownership block acquisitions/releases and peak, plus exact /proc/self/fd sets before/after; not syscall tracing",
+  "memory_method": "VmHWM per forked workload; includes runtime, fixture setup, snapshots and repeated operations; not an allocation-only delta",
+  "p95_method": "nearest rank over five samples; small descriptive sample, not an SLA",
+  "rails_loaded": false,
+  "database_loaded": false
+}

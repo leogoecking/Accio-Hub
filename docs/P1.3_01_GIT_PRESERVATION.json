@@ -1,0 +1,54 @@
+{
+  "source_checkout": "/home/goecking/Projects/Accio-HUB",
+  "source_before": {
+    "branch": "docs/w2-ai-memory-workflow",
+    "head": "56a1189c7bdaa800cb44168a51edc3292cc95a76",
+    "status": " M AGENTS.md\n?? docs/ADR_PLATFORM_STRATEGY.md\n?? docs/AGENTS_HISTORY.md\n?? docs/AI_MEMORY_WORKFLOW.md\n?? docs/P1.3_01_IMPLEMENTATION_PLAN.md\n?? docs/P1.3_PHASE0_AUDIT.md\n?? docs/P1.3_PHASE0_DECISIONS.md\n?? docs/P1.3_PLAN.md\n?? docs/W2_VERIFICATION.md\n?? docs/agents-reorganization/TRACEABILITY.md\n?? docs/agents-reorganization/VERIFICATION.md\n?? docs/agents-reorganization/checks.json\n?? docs/agents-reorganization/state-before.json\n",
+    "files": {
+      "AGENTS.md": "2393b0527a999472d7d3f69a8d09dbb210bdc52b0561732f3f451c537a12b8ac",
+      "docs/ADR_PLATFORM_STRATEGY.md": "54c96c6aa5d862561419597b2dc34d0a88501a04efa471a4caa00e73cb33d759",
+      "docs/AGENTS_HISTORY.md": "5d6e0eaa06a0254022edba58e31cad3a6d6e075aeb5646d349ac579d836dcb87",
+      "docs/AI_MEMORY_WORKFLOW.md": "e94d768422c7ad24235a8d8d4c8f15b288c8ac3bf5ca8e15b58bc01fe562e197",
+      "docs/P1.3_01_IMPLEMENTATION_PLAN.md": "bf3ec3eba5c9b6e98a6955b5a2fa96f2e89f0a351e92aec74743a05f262749ee",
+      "docs/P1.3_PHASE0_AUDIT.md": "177528004d0cee244f5695c5983ac4874eebec4cee8826aa9037d394e5d7e61e",
+      "docs/P1.3_PHASE0_DECISIONS.md": "e9c545b59ac862423f30aa26c649dd9f2f838513cbe3d6b8cc87b0d863a0020f",
+      "docs/P1.3_PLAN.md": "6e5533e66c8617d0f2f4080d414d618a5f387cccaf9b8a7bd721d2411cb3a5e3",
+      "docs/W2_VERIFICATION.md": "221667872c6919318dd64c472fef6c96438866d5a0415edad3f5dd5bdfff824d",
+      "docs/agents-reorganization/TRACEABILITY.md": "9f673537979bc5b7788e8bc81b421ba888b516cfcfd35695629385860673e5e1",
+      "docs/agents-reorganization/VERIFICATION.md": "56824eca56eb1e0ef5c7e269b53e190c4f58100d12c8d43d3ece099b869e83ae",
+      "docs/agents-reorganization/checks.json": "29271f4edf65c9130e21bbab11587d72988a5f8c1de67270974f905977462027",
+      "docs/agents-reorganization/state-before.json": "a1e061cd2bdc317f076a4e5d2fe50ed0f83c592ac1cc0714c9a969b9f89f4f1a"
+    }
+  },
+  "source_after_sha256": {
+    "AGENTS.md": "2393b0527a999472d7d3f69a8d09dbb210bdc52b0561732f3f451c537a12b8ac",
+    "docs/ADR_PLATFORM_STRATEGY.md": "54c96c6aa5d862561419597b2dc34d0a88501a04efa471a4caa00e73cb33d759",
+    "docs/AGENTS_HISTORY.md": "5d6e0eaa06a0254022edba58e31cad3a6d6e075aeb5646d349ac579d836dcb87",
+    "docs/AI_MEMORY_WORKFLOW.md": "e94d768422c7ad24235a8d8d4c8f15b288c8ac3bf5ca8e15b58bc01fe562e197",
+    "docs/P1.3_01_IMPLEMENTATION_PLAN.md": "bf3ec3eba5c9b6e98a6955b5a2fa96f2e89f0a351e92aec74743a05f262749ee",
+    "docs/P1.3_PHASE0_AUDIT.md": "177528004d0cee244f5695c5983ac4874eebec4cee8826aa9037d394e5d7e61e",
+    "docs/P1.3_PHASE0_DECISIONS.md": "e9c545b59ac862423f30aa26c649dd9f2f838513cbe3d6b8cc87b0d863a0020f",
+    "docs/P1.3_PLAN.md": "6e5533e66c8617d0f2f4080d414d618a5f387cccaf9b8a7bd721d2411cb3a5e3",
+    "docs/W2_VERIFICATION.md": "221667872c6919318dd64c472fef6c96438866d5a0415edad3f5dd5bdfff824d",
+    "docs/agents-reorganization/TRACEABILITY.md": "9f673537979bc5b7788e8bc81b421ba888b516cfcfd35695629385860673e5e1",
+    "docs/agents-reorganization/VERIFICATION.md": "56824eca56eb1e0ef5c7e269b53e190c4f58100d12c8d43d3ece099b869e83ae",
+    "docs/agents-reorganization/checks.json": "29271f4edf65c9130e21bbab11587d72988a5f8c1de67270974f905977462027",
+    "docs/agents-reorganization/state-before.json": "a1e061cd2bdc317f076a4e5d2fe50ed0f83c592ac1cc0714c9a969b9f89f4f1a"
+  },
+  "source_status_identical": true,
+  "source_head_and_branch_identical": true,
+  "required_source_sha256": {
+    "AGENTS.md": "2393b0527a999472d7d3f69a8d09dbb210bdc52b0561732f3f451c537a12b8ac",
+    "docs/P1.3_PLAN.md": "6e5533e66c8617d0f2f4080d414d618a5f387cccaf9b8a7bd721d2411cb3a5e3",
+    "docs/P1.3_PHASE0_DECISIONS.md": "e9c545b59ac862423f30aa26c649dd9f2f838513cbe3d6b8cc87b0d863a0020f",
+    "docs/P1.3_01_IMPLEMENTATION_PLAN.md": "bf3ec3eba5c9b6e98a6955b5a2fa96f2e89f0a351e92aec74743a05f262749ee",
+    "docs/P1.3_PHASE0_AUDIT.md": "177528004d0cee244f5695c5983ac4874eebec4cee8826aa9037d394e5d7e61e",
+    "docs/ADR_PLATFORM_STRATEGY.md": "54c96c6aa5d862561419597b2dc34d0a88501a04efa471a4caa00e73cb33d759",
+    "docs/P1.2_FINAL_CLOSURE.md": "716cc8961d7e82e32c05fa7ae2c205e1c9eabf530490d7de0a97c080fe1c57f8"
+  },
+  "worktree": "/tmp/accio-hub-p1.3-vault",
+  "implementation_branch": "p1.3-vault",
+  "base": "56a1189c7bdaa800cb44168a51edc3292cc95a76",
+  "tracked_diff_against_base_empty": true,
+  "staged_diff_empty": true
+}
