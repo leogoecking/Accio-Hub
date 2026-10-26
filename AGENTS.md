@@ -20,6 +20,31 @@
 Leia este AGENTS.md integralmente antes de decidir escopo ou autorização;
 não considere um trecho truncado como instrução completa.
 
+## Estado vigente — encerramento técnico da P1.3-02
+
+Em **26/10/2026**, o responsável pelo projeto aceitou a auditoria independente
+**APROVADA PARA ENCERRAMENTO** e autorizou exclusivamente a documentação final
+e um único commit local da P1.3-02 em `p1.3-metadata`.
+Referências: [encerramento técnico02](docs/P1.3_02_CLOSURE.md) e
+[auditoria da implementação](docs/P1.3_02_IMPLEMENTATION_AUDIT.md).
+
+- P1.3-02 encerrada somente no escopo técnico/sintético: Document, Metadata,
+  Serializer e auxiliares limitados de parsing/identidade, com C-01–C-11 e
+  R1/R2/R3. Serialização exclusivamente em memória; sem escrita no Vault,
+  índice persistente, scanner operacional ou integração com dados pessoais.
+- Preservar as limitações Linux/openat2/procfs da01, observação não atômica,
+  processos do mesmo UID/root e limites cooperativos/experimentais de CPU/RSS.
+  Rascunho não comprova unicidade nem autoriza publicação futura.
+- P1.3-03 e demais cortes exigem autorização própria. Nível C, Vault pessoal,
+  escrita, distribuição, alterações globais, push, merge, tag e modificação
+  da main não são autorizados por este encerramento.
+- O commit local desta entrega é a exceção específica autorizada; não concede
+  autorização para outros commits ou início automático da próxima etapa.
+
+O bloco da01 abaixo é preservado como registro de 25/10/2026. Sua exigência de
+autorização própria da02 foi satisfeita pelos pedidos posteriores específicos;
+as demais restrições e os registros históricos permanecem preservados.
+
 ## Estado vigente — encerramento técnico da P1.3-01
 
 Em **25/10/2026**, o usuário aceitou a auditoria final independente do
