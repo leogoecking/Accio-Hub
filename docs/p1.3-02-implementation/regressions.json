@@ -1,0 +1,476 @@
+{
+  "environment": "test",
+  "database": "tmp/p1.3-02-regression-qvlioqou/synthetic.sqlite3",
+  "private_directory_mode": "0o700",
+  "new_database": true,
+  "results": [
+    {
+      "check": "schema",
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "db:schema:load"
+      ],
+      "exit_code": 0,
+      "seconds": 1.2137395669997204,
+      "log": "tmp/p1.3-02-regression-qvlioqou/evidence/schema.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "rails",
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "test"
+      ],
+      "exit_code": 0,
+      "seconds": 0.6410736389989324,
+      "log": "tmp/p1.3-02-regression-qvlioqou/evidence/rails.log",
+      "valid_evidence": false,
+      "reason": "MT_NO_PLUGINS=1 disables Rails plugin and all file loading, including explicit arguments; zero tests, superseded",
+      "log_sha256": "eda95ff0715c3db2aa32677248656b67c8f704e64d5702d90f4b3299a64801ff"
+    },
+    {
+      "check": "sql",
+      "command": [
+        "bundle",
+        "exec",
+        "ruby",
+        "script/transversal-sql-check.rb"
+      ],
+      "exit_code": 0,
+      "seconds": 4.730768722998619,
+      "log": "tmp/p1.3-02-regression-qvlioqou/evidence/sql.log",
+      "valid_test_evidence": false,
+      "structural_comparison_executed": true,
+      "reason": "SQL schema/pragmas checked; child Rails tests ran zero with plugin disabled; superseded",
+      "log_sha256": "52878e0c899122309327025568417c2f57b6e4007ac9610202509c3df0bde3fa"
+    },
+    {
+      "check": "rubocop",
+      "command": [
+        "bundle",
+        "exec",
+        "rubocop",
+        "--format",
+        "simple"
+      ],
+      "exit_code": 0,
+      "seconds": 1.0826695520008798,
+      "log": "tmp/p1.3-02-regression-qvlioqou/evidence/rubocop.log",
+      "log_sha256": "fc3e6f78f773c623455f7d513421253ef0ea6bedc96e752d147ad0ddcaf184a1"
+    },
+    {
+      "check": "brakeman",
+      "command": [
+        "bundle",
+        "exec",
+        "brakeman",
+        "--no-pager",
+        "--exit-on-warn",
+        "--exit-on-error"
+      ],
+      "exit_code": 0,
+      "seconds": 2.0148576720002893,
+      "log": "tmp/p1.3-02-regression-qvlioqou/evidence/brakeman.log",
+      "summary": {
+        "errors": 0,
+        "security_warnings": 0
+      },
+      "log_sha256": "4b1523ef3df0fc94c9956315f5c3030a160920a7a889d01a8a970eabdc3f1d3e"
+    },
+    {
+      "check": "zeitwerk",
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "zeitwerk:check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.8395728319992486,
+      "log": "tmp/p1.3-02-regression-qvlioqou/evidence/zeitwerk.log",
+      "log_sha256": "b72900d20b063373acc32103fa91dc57beae4caa9edc2adc0b023fa4d6b3e541"
+    },
+    {
+      "check": "prototype",
+      "command": [
+        "node",
+        "--test",
+        "/home/goecking/Projects/Accio-HUB/prototype/tests/knowledge.test.mjs",
+        "/home/goecking/Projects/Accio-HUB/prototype/tests/project-space.test.mjs",
+        "/home/goecking/Projects/Accio-HUB/prototype/tests/projects.test.mjs",
+        "/home/goecking/Projects/Accio-HUB/prototype/tests/state.test.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.15277674200115143,
+      "log": "tmp/p1.3-02-regression-qvlioqou/evidence/prototype.log",
+      "log_sha256": "2b1b473f7594f85852d83c478419918dfdcb2ffc9e19fe9c45d1437e83c3cabf"
+    },
+    {
+      "check": "focus-js",
+      "command": [
+        "node",
+        "script/focus-client-check.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.051134762999936356,
+      "log": "tmp/p1.3-02-regression-qvlioqou/evidence/focus-js.log",
+      "summary": {
+        "passed": 11,
+        "cases": 11
+      },
+      "log_sha256": "9eb2e322f02eb03651b1786db5ee132f8c54c23efabaee2cc5560c16c3c30aa1"
+    },
+    {
+      "check": "recovery-js",
+      "command": [
+        "node",
+        "script/focus-recovery-check.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.04170410900042043,
+      "log": "tmp/p1.3-02-regression-qvlioqou/evidence/recovery-js.log",
+      "summary": {
+        "passed": 15,
+        "cases": 15
+      },
+      "log_sha256": "7ee7949b52ba443cf26f53d3bc2fddf2d0ce7033f733f0cc4570e86f91ffb8a1"
+    },
+    {
+      "check": "preset-js",
+      "command": [
+        "node",
+        "script/focus-preset-check.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.038513117000547936,
+      "log": "tmp/p1.3-02-regression-qvlioqou/evidence/preset-js.log",
+      "summary": {
+        "passed": 15,
+        "cases": 15
+      },
+      "log_sha256": "a555a19e552264e14d689a1fb65f9972c1fb9119ce9ed321c72f1fd40c83453a"
+    },
+    {
+      "check": "schema-explicit",
+      "exit_code": 0,
+      "seconds": 1.1670122909999918,
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "db:schema:load"
+      ],
+      "log": "tmp/p1.3-02-rails-m_hulqb7/evidence/schema-explicit.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "rails-explicit",
+      "exit_code": 0,
+      "seconds": 0.43523528999867267,
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "test",
+        "test/integration/admin_password_reset_test.rb",
+        "test/integration/appearance_persistence_test.rb",
+        "test/integration/focus_test.rb",
+        "test/integration/foundation_test.rb",
+        "test/integration/project_references_test.rb",
+        "test/integration/projects_test.rb",
+        "test/integration/tasks_test.rb",
+        "test/integration/transversal_security_test.rb",
+        "test/lib/loopback_test.rb",
+        "test/models/foundation_test.rb",
+        "test/models/relational_domain_test.rb",
+        "test/models/relational_sql_test.rb",
+        "test/models/relational_transactions_test.rb",
+        "test/models/transversal_identity_test.rb",
+        "test/services/admin_password_reset_test.rb",
+        "test/services/appearance_preferences_test.rb",
+        "test/services/focus_commands_test.rb",
+        "test/services/focus_sql_compatibility_test.rb",
+        "test/services/focus_time_test.rb",
+        "test/services/legacy_snapshot_archive_test.rb",
+        "test/services/safe_reference_url_test.rb",
+        "test/services/sqlite_backup_contract_test.rb",
+        "test/services/synthetic_auth_session_cleanup_test.rb",
+        "test/services/synthetic_sqlite_backup_test.rb",
+        "test/services/vault/audit_corrections_test.rb",
+        "test/services/vault/configuration_test.rb",
+        "test/services/vault/document_test.rb",
+        "test/services/vault/inventory_test.rb",
+        "test/services/vault/linux_filesystem_test.rb",
+        "test/services/vault/metadata_identity_test.rb",
+        "test/services/vault/metadata_integration_test.rb",
+        "test/services/vault/metadata_limits_test.rb",
+        "test/services/vault/metadata_test.rb",
+        "test/services/vault/path_policy_test.rb",
+        "test/services/vault/reader_test.rb",
+        "test/services/vault/result_test.rb",
+        "test/services/vault/root_test.rb",
+        "test/services/vault/serializer_test.rb"
+      ],
+      "log": "tmp/p1.3-02-rails-m_hulqb7/evidence/rails-explicit.log",
+      "valid_evidence": false,
+      "reason": "MT_NO_PLUGINS=1 disables Rails plugin and all file loading, including explicit arguments; zero tests, superseded",
+      "log_sha256": "54c5731ee73cbd621430ba23966548d12df7ffb2e6d4a009945f2d6c2fcdb314"
+    },
+    {
+      "check": "schema-plugin-enabled",
+      "exit_code": 0,
+      "seconds": 1.0541451659992163,
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "db:schema:load"
+      ],
+      "log": "tmp/p1.3-02-final-rails-f76ykim2/evidence/schema-plugin-enabled.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "rails-plugin-enabled",
+      "exit_code": 0,
+      "seconds": 69.89225413299937,
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "test"
+      ],
+      "log": "tmp/p1.3-02-final-rails-f76ykim2/evidence/rails-plugin-enabled.log",
+      "summary": [
+        330,
+        6175,
+        0,
+        0,
+        0
+      ],
+      "valid_evidence": true,
+      "log_sha256": "29eddb8195026372797a336cbf45d60e69035e70fc4f707ac3a7e8f0e4e8af90"
+    },
+    {
+      "check": "sql-plugin-enabled",
+      "exit_code": 0,
+      "seconds": 8.765428090000569,
+      "command": [
+        "bundle",
+        "exec",
+        "ruby",
+        "script/transversal-sql-check.rb"
+      ],
+      "log": "tmp/p1.3-02-final-rails-f76ykim2/evidence/sql-plugin-enabled.log",
+      "sql_summary": {
+        "exact_objects_sql_and_semantic_fk_and_pragmas_match": true,
+        "fk_internal_id_order_differs": true,
+        "triggers": 25,
+        "indexes": 36,
+        "independent_migrations_and_schema_load": true,
+        "integrity": "ok"
+      },
+      "child_tests": {
+        "migrated": [
+          21,
+          243,
+          0,
+          0,
+          0
+        ],
+        "loaded": [
+          21,
+          243,
+          0,
+          0,
+          0
+        ]
+      },
+      "structure_sha256": {
+        "migrated.json": "e0ecd4a74aff28d6becfe2728e5bf6191c1cb0f8c861e11e6558a7e29462a159",
+        "schema-loaded.json": "8e987bdd26feb0bdd7953a49e94de9bedd89bcc78791da4202ca356d02e1e44a"
+      },
+      "log_sha256": "52878e0c899122309327025568417c2f57b6e4007ac9610202509c3df0bde3fa"
+    },
+    {
+      "check": "schema-final",
+      "exit_code": 0,
+      "seconds": 1.146096717000546,
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "db:schema:load"
+      ],
+      "log": "tmp/p1.3-02-audit-ready-ybmrzxno/evidence/schema-final.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "rails-final",
+      "exit_code": 0,
+      "seconds": 70.43957328599936,
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "test"
+      ],
+      "log": "tmp/p1.3-02-audit-ready-ybmrzxno/evidence/rails-final.log",
+      "summary": [
+        330,
+        6182,
+        0,
+        0,
+        0
+      ],
+      "valid_evidence": true,
+      "log_sha256": "cc3f080e5bb9de624eaa29d7ccb86629c995f791d293e3ec902c948c9229573e"
+    },
+    {
+      "check": "brakeman-final",
+      "exit_code": 0,
+      "seconds": 2.0047339989996544,
+      "command": [
+        "bundle",
+        "exec",
+        "brakeman",
+        "--no-pager",
+        "--exit-on-warn",
+        "--exit-on-error"
+      ],
+      "log": "tmp/p1.3-02-audit-ready-ybmrzxno/evidence/brakeman-final.log",
+      "summary": {
+        "errors": 0,
+        "security_warnings": 0
+      },
+      "log_sha256": "4aa3c1db75c017f1b214b90f66b10ada710d5b6411e1c834e2da0073ebe20465"
+    },
+    {
+      "check": "zeitwerk-final",
+      "exit_code": 0,
+      "seconds": 0.8726944669997465,
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "zeitwerk:check"
+      ],
+      "log": "tmp/p1.3-02-audit-ready-ybmrzxno/evidence/zeitwerk-final.log",
+      "log_sha256": "b72900d20b063373acc32103fa91dc57beae4caa9edc2adc0b023fa4d6b3e541"
+    },
+    {
+      "check": "schema-nel-final",
+      "exit_code": 0,
+      "seconds": 1.111680559000888,
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "db:schema:load"
+      ],
+      "log": "tmp/p1.3-02-nel-final-i27kl06j/evidence/schema-nel-final.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "rails-nel-final",
+      "exit_code": 0,
+      "seconds": 73.9077138040011,
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "test"
+      ],
+      "log": "tmp/p1.3-02-nel-final-i27kl06j/evidence/rails-nel-final.log",
+      "summary": [
+        330,
+        6245,
+        0,
+        0,
+        0
+      ],
+      "valid_evidence": true,
+      "log_sha256": "07afe7f16ca46d94ba10a40840ab4cae88a7210cfd0d57f5429081654b044f6f"
+    },
+    {
+      "check": "brakeman-nel-final",
+      "exit_code": 0,
+      "seconds": 2.0646004270001868,
+      "command": [
+        "bundle",
+        "exec",
+        "brakeman",
+        "--no-pager",
+        "--exit-on-warn",
+        "--exit-on-error"
+      ],
+      "log": "tmp/p1.3-02-nel-final-i27kl06j/evidence/brakeman-nel-final.log",
+      "log_sha256": "509f76380320357c9873ace7ccf6fd2b111869fd10e9e361d6ee509e15d65fa3",
+      "summary": {
+        "errors": 0,
+        "security_warnings": 0
+      }
+    },
+    {
+      "check": "schema-complete",
+      "exit_code": 0,
+      "seconds": 1.1802682239995193,
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "db:schema:load"
+      ],
+      "log": "tmp/p1.3-02-complete-850vtsqb/evidence/schema-complete.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "rails-complete",
+      "exit_code": 0,
+      "seconds": 73.58000107100088,
+      "command": [
+        "bundle",
+        "exec",
+        "rails",
+        "test"
+      ],
+      "log": "tmp/p1.3-02-complete-850vtsqb/evidence/rails-complete.log",
+      "log_sha256": "c06d755056cab9b2594853805c2f10613f70c78638d1b24f135ea147fa5ae820",
+      "summary": [
+        330,
+        6249,
+        0,
+        0,
+        0
+      ],
+      "valid_evidence": true
+    },
+    {
+      "check": "brakeman-complete",
+      "exit_code": 0,
+      "seconds": 2.031420794000951,
+      "command": [
+        "bundle",
+        "exec",
+        "brakeman",
+        "--no-pager",
+        "--exit-on-warn",
+        "--exit-on-error"
+      ],
+      "log": "tmp/p1.3-02-complete-850vtsqb/evidence/brakeman-complete.log",
+      "log_sha256": "7821a3a64e9308ef478bd881e259188f891830049e73a547b9c3aeecd91c09e3",
+      "summary": {
+        "errors": 0,
+        "security_warnings": 0
+      }
+    }
+  ],
+  "explicit_rails_database": "tmp/p1.3-02-rails-m_hulqb7/synthetic.sqlite3",
+  "final_rails_database": "tmp/p1.3-02-final-rails-f76ykim2/synthetic.sqlite3",
+  "audit_ready_database": "tmp/p1.3-02-audit-ready-ybmrzxno/synthetic.sqlite3",
+  "final_unchanged_source_database": "tmp/p1.3-02-nel-final-i27kl06j/synthetic.sqlite3",
+  "complete_database": "tmp/p1.3-02-complete-850vtsqb/synthetic.sqlite3"
+}
