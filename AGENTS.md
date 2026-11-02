@@ -208,17 +208,25 @@ Utilizar quando apropriado:
 - bug-hunt
 - diagnose
 - agent-browser
+- dev-loop (coordenação de tarefas já autorizadas, sem relatórios intermediários por padrão)
 
 ## Fluxo de trabalho
 
 1. Ler a documentação.
 2. Inspecionar o código existente.
 3. Apresentar plano.
-4. Implementar após aprovação.
+4. Implementar após autorização da tarefa ou fase, sem exigir nova aprovação para cada subtarefa comum.
 5. Executar testes.
 6. Verificar regressões.
 7. Resumir mudanças e pendências.
 
+### Continuidade da execução
+
+Em tarefas ou fases expressamente autorizadas, aplique a skill `dev-loop`: executar, testar, corrigir e avançar apenas entre subtarefas já previstas no escopo aprovado. Um plano técnico apresentado não exige nova autorização quando a tarefa já estiver autorizada e a operação não acrescentar riscos relevantes.
+
+Não gerar relatórios Markdown de implementação e testes por padrão. Use um resumo final curto; preserve contratos, decisões duráveis, evidências obrigatórias e auditorias exigidas pelo projeto. O AI Memory auxilia a continuidade, mas não substitui a verificação de código nem a evidência necessária para homologação.
+
+Esta regra não altera os limites de segurança, a exigência de autorização por nova fase, o escopo sintético vigente, nem as restrições de commit, push, merge, publicação e dados pessoais descritas neste AGENTS.md.
 
 ## Contratos atuais de implementação e segurança
 
