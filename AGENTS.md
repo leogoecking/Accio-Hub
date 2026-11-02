@@ -208,8 +208,11 @@ Utilizar quando apropriado:
 - bug-hunt
 - diagnose
 - agent-browser
+- dev-loop (coordena tarefas autorizadas sem relatórios intermediários por padrão)
 
 ## Fluxo de trabalho — autonomia supervisionada (Fase A)
+
+Use a skill `dev-loop` como coordenadora apenas em tarefas ou fases já autorizadas. Continue entre subtarefas aprovadas sem novos prompts e apresente resumo final curto em vez de relatórios Markdown intermediários por padrão. Preserve documentação durável, contratos e evidências obrigatórias; nenhuma autorização, limite de segurança ou regra deste AGENTS.md é ampliada pela skill.
 
 Este fluxo vale para tarefas **já autorizadas pelo usuário**. Ele não autoriza
 novas fases ou cortes do roadmap, alterações de infraestrutura, dados pessoais,
