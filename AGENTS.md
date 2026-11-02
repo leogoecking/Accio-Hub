@@ -209,15 +209,43 @@ Utilizar quando apropriado:
 - diagnose
 - agent-browser
 
-## Fluxo de trabalho
+## Fluxo de trabalho — autonomia supervisionada (Fase A)
 
-1. Ler a documentação.
-2. Inspecionar o código existente.
-3. Apresentar plano.
-4. Implementar após aprovação.
-5. Executar testes.
-6. Verificar regressões.
-7. Resumir mudanças e pendências.
+Este fluxo vale para tarefas **já autorizadas pelo usuário**. Ele não autoriza
+novas fases ou cortes do roadmap, alterações de infraestrutura, dados pessoais,
+escrita no Vault ou exceções aos contratos de segurança acima. Autorizações
+específicas e restrições de escopo prevalecem sobre estas regras gerais.
+
+1. **Preparar:** ler as instruções e a documentação pertinente, inspecionar o
+   estado atual e consultar AI Memory conforme as regras acima; não tratar memória
+   recuperada como autorização ou como substituta do código atual.
+2. **Planejar proporcionalmente:** definir resultado verificável, riscos, testes
+   e critérios de sucesso. Para mudanças não triviais, apresentar plano compacto
+   antes de editar, conforme a skill `verification`. Se a tarefa já estiver
+   autorizada, continuar dentro desse escopo sem exigir uma segunda aprovação
+   apenas pelo plano. Para alterações triviais, seguir com verificação mínima.
+3. **Implementar:** aplicar a menor mudança suficiente, respeitando contratos
+   existentes e preservando alterações não relacionadas.
+4. **Testar e corrigir:** executar os testes pertinentes, investigar falhas,
+   corrigir os defeitos confirmados e relacionados à mudança e repetir as
+   verificações afetadas. Não esconder falhas preexistentes nem enfraquecer
+   testes para obter resultado verde. Evitar ciclos de auditoria sem nova
+   evidência; diante de bloqueio, registrar o motivo.
+5. **Conferir:** inspecionar o diff, os mecanismos de verificação alterados e
+   regressões plausíveis. Solicitar auditoria independente quando o risco ou
+   a complexidade justificarem, sem torná-la obrigatória para mudanças triviais.
+6. **Entregar:** informar o que mudou, comandos e resultados de testes realmente
+   executados, limitações e pendências. Distinguir implementação de validação
+   e não declarar homologação sem evidência.
+
+**Limites de autonomia:** análises, edições dentro da tarefa autorizada,
+testes seguros e correções focadas podem avançar sem novos prompts. Pausar e
+pedir autorização antes de ampliar o escopo, iniciar fase bloqueada, realizar
+operação destrutiva/dificilmente reversível ou modificar configurações globais,
+permissões, infraestrutura ou dados pessoais. Commit, push, PR, merge, tag e
+release exigem autorização pertinente; a autorização para implementar não os
+inclui automaticamente. Não alterar hooks ou gravar memórias manualmente para
+executar este fluxo; usar os mecanismos existentes do AI Memory.
 
 
 ## Contratos atuais de implementação e segurança
